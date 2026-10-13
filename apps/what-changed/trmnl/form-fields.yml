@@ -1,17 +1,15 @@
 - keyname: author
   field_type: author_bio
-  name: About What Changed?
+  name: About The Daily TRMNL
   category: news,productivity
-  description: A calm briefing with a memory. Choose technology, business, world news or science. New and updated stories come first, with attributed headlines and short excerpts. Each installation keeps its own bounded history. The website offers original-source links and a live content preview. No AI or personal API key required. Independent community project, not affiliated with its news sources or TRMNL.
+  description: Build a briefing from your interests. Use the website to include or exclude ten preset topics, add your own interests, and copy the generated prompt into News prompt below. Real attributed headlines and short source excerpts, new/updated-story history, and clear freshness. Global discovery uses the GDELT Project (https://www.gdeltproject.org/) alongside public source feeds. No personal API key required. Independent community project.
   github_url: https://github.com/Manny4C/trmnl-community
-  learn_more_url: https://what-changed-nine.vercel.app
-- keyname: topic
-  field_type: select
-  name: News topic
-  description: Choose the topic for this briefing.
-  options:
-    - Technology
-    - Business
-    - World
-    - Science
-  default: technology
+  learn_more_url: https://the-daily-trmnl.vercel.app
+- keyname: news_prompt
+  field_type: text
+  name: Your news prompt
+  description: Describe topics, companies, or places to follow. Add Avoid or Exclude for unwanted topics. Create a prompt with ten preset choices on the website, then paste it here.
+  default: Find recent news about AI and technology.
+  placeholder: AI startups, Y Combinator, and Nintendo. Avoid celebrity news.
+  maxlength: 600
+  rows: 4

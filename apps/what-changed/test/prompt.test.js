@@ -1,0 +1,25 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {buildPrompt,compilePrompt,matchScore} from '../public/prompt.js';
+import {getCustomBriefing,parseArticles} from '../lib/custom-news.js';
+const now=Date.parse('2026-10-13T19:00:00Z');
+const story=(title,url='https://example.com/story')=>({id:title,fingerprint:'v1',title,snippet:'Read the source.',url,source:'Example',published_at:new Date(now-10000).toISOString()});
+const poolFetcher=async()=>({stories:[story('Nintendo announces a new game'),story('OpenAI releases a new model','https://example.com/ai'),story('Celebrity gossip about Nintendo','https://example.com/celeb')],fetched_at:new Date(now).toISOString(),stale:false,unavailable_sources:[]});
+const fetcher=async()=>({ok:true,text:async()=>JSON.stringify({articles:[]})});
+test('Included and excluded presets compose a readable prompt',()=>{assert.equal(buildPrompt({video_games:'include',markets_stocks:'exclude'},'Follow Nintendo.'),'Find recent news about video games. Follow Nintendo. Exclude markets and stocks.');});
+test('Matching uses interests and actually removes exclusions',()=>{const c=compilePrompt('Nintendo games. Avoid celebrity gossip.');assert.ok(matchScore(story('Nintendo announces a new game'),c)>0);assert.equal(matchScore(story('Celebrity gossip about Nintendo'),c),-1);assert.equal(matchScore(story('Other unrelated story'),c),0);const ai=compilePrompt('Find recent news about AI and technology.');assert.ok(matchScore(story('AI models improve'),ai)>0);});
+test('Local prompt follows the named location rather than all local reporting',()=>{const c=compilePrompt(buildPrompt({local_news:'include'},'','San Francisco'));assert.deepEqual(c.include,['san francisco']);});
+test('Prompt limits and empty interests reject safely; URL text stays a search term',()=>{assert.throws(()=>compilePrompt(''),RangeError);assert.throws(()=>compilePrompt('x'.repeat(601)),RangeError);const c=compilePrompt('Nintendo, domain:localhost http://127.0.0.1');assert.ok(!c.query.includes('domain:localhost'));});
+test('Different prompts have independent history keys and relevant feeds',async()=>{const a=await getCustomBriefing('Nintendo. Avoid celebrity.',{now,fetcher,poolFetcher});const b=await getCustomBriefing('OpenAI.',{now:now+10000,fetcher,poolFetcher});assert.notEqual(a.feed_key,b.feed_key);assert.equal(a.stories.length,1);assert.match(a.stories[0].title,/Nintendo/);assert.equal(b.stories.length,1);assert.match(b.stories[0].title,/OpenAI/);assert.ok(Buffer.byteLength(JSON.stringify(a))<4800);});
+test('No results are explicit and never filled with unrelated news',async()=>{const a=await getCustomBriefing('Quetzalcoatl rockets.',{now:now+20000,fetcher,poolFetcher});assert.equal(a.empty,true);assert.deepEqual(a.stories,[]);assert.equal(a.stale,false);});
+test('A real outage preserves the successful edition timestamp',async()=>{const a=await getCustomBriefing('Nintendo. Avoid celebrity.',{now:now+1000000,fetcher:async()=>{throw Error();},poolFetcher:async()=>{throw Error();}});assert.equal(a.stale,true);assert.equal(a.fetched_at,new Date(now).toISOString());});
+test('Search article dates are indexed dates and unsafe links are removed',()=>{const a=parseArticles({articles:[{title:'Nintendo news',url:'https://example.com/a',seendate:'20261013T185959Z'},{title:'bad',url:'javascript:alert(1)',seendate:'20261013T185959Z'}]},now);assert.equal(a.length,1);assert.equal(a[0].time_kind,'indexed');});
+
+test('YC interest requires a YC mention rather than any Show HN launch',()=>{const c=compilePrompt('Y Combinator.');assert.equal(matchScore(story('Show HN: My new app'),c),0);assert.ok(matchScore(story('YC launches a new program'),c)>0);});
+
+test('A named company does not broaden silently into an entire category',()=>{const c=compilePrompt('Nintendo.');assert.equal(matchScore(story('Epic Games changes direction'),c),0);assert.ok(matchScore(story('Nintendo changes direction'),c)>0);const ai=compilePrompt('OpenAI.');assert.equal(matchScore(story('Another AI company releases software'),ai),0);});
+test('Local exclusions target the named place',()=>{const c=compilePrompt(buildPrompt({video_games:'include',local_news:'exclude'},'','San Francisco'));assert.equal(matchScore(story('San Francisco hosts a video game event'),c),-1);});
+
+test('Free AI interests and crypto/celebrity exclusions recognize common variants',()=>{const c=compilePrompt('AI. Avoid crypto and celebrity news.');assert.ok(matchScore(story('New AI model arrives'),c)>0);assert.equal(matchScore(story('AI news about Bitcoin'),c),-1);assert.equal(matchScore(story('AI portraits of celebrities'),c),-1);});
+
+test('Partial coverage loss keeps a dated prior matching edition',async()=>{const d=await getCustomBriefing('Nintendo. Avoid celebrity.',{now:now+1100000,fetcher:async()=>{throw Error();},poolFetcher:async()=>({stories:[story('Unrelated current news')],stale:false,fetched_at:new Date(now+1100000).toISOString(),unavailable_sources:['Original source']})});assert.equal(d.stale,true);assert.match(d.stories[0].title,/Nintendo/);assert.equal(d.fetched_at,new Date(now).toISOString());});

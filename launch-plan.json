@@ -29,37 +29,45 @@
     {
       "day": 1,
       "targetDate": "2026-10-13",
-      "name": "What Changed?",
+      "name": "The Daily TRMNL",
       "slug": "what-changed",
       "status": "submitted_awaiting_review",
-      "scope": "Personalized news briefing with bounded per-install history, repeat suppression, source links and timestamps.",
-      "websiteUrl": "https://what-changed-nine.vercel.app",
+      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search.",
+      "websiteUrl": "https://the-daily-trmnl.vercel.app",
       "pluginId": 505118,
       "deviceInstallationStatus": "added_to_playlist",
       "publicationStatus": "submitted_for_public_human_review",
       "buildCompletedOn": "2026-10-13",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "testStatus": "15 automated checks passed; rapid topic changes verified; actual local server outage retained five dated stories; four OG layouts and X portrait reviewed; improved X landscape typography verified; production phone preview has no horizontal overflow and all three source labels fit",
-      "physicalDeviceVerification": "Owner installation remains on playlist. Timeline reports only the initial pre-layout screen delivered at 11:24:17 PDT; finished screens rendered later, but finished-screen device receipt and physical display have not been confirmed. Final updated version queued for next check-in.",
+      "testStatus": "30 automated checks passed; live include/exclude prompt composition and mixed AI/YC/gaming feed verified; mobile composer has ten options and no horizontal overflow; all four renamed OG layouts visually verified with personalized data; anonymous production API gives matching results, explicit no matches, and 400 for an empty prompt",
+      "physicalDeviceVerification": "Personalized The Daily TRMNL render verified in the actual TRMNL editor on OG B/W/R/Y; installed playlist entry retained. Physical display/receipt of the renamed version has not been confirmed.",
       "pendingActions": [
         "Monitor human Recipe review",
         "Confirm finished screen on physical device at next playlist appearance"
       ],
-      "featuredImageStatus": "generated_from_finished_screen",
+      "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Persisted TRMNL settings show Plugin in review: This plugin has been submitted to our team. Stand by.",
-      "latestDeploymentId": "dpl_7ni2oQX1hpJMYs5Mb3ZUupkd1jPD",
+      "reviewStatus": "Renamed existing Recipe 505118 to The Daily TRMNL; prompt field, canonical polling URL, all four layouts and Serverless memory saved; marketplace image regenerated; remains Plugin in review.",
+      "latestDeploymentId": "dpl_Z2mP4PjhmRSjzANXeqfPCvRYsn5M",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
       "recipe": {
-        "name": "What Changed?",
+        "name": "The Daily TRMNL",
         "status": "in_review",
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
-        "reviewVerifiedAt": "2026-10-13T20:18:56.478212+00:00"
-      }
+        "reviewVerifiedAt": "2026-10-13T21:22:19.645906+00:00"
+      },
+      "previousName": "What Changed?",
+      "publicSlug": "the-daily-trmnl",
+      "sourceDirectory": "apps/what-changed",
+      "legacyWebsiteUrl": "https://what-changed-nine.vercel.app",
+      "globalSearchStatus": "GDELT was rate-limited during live checks. Matching source-feed fallback is working and the website exposes the partial status.",
+      "promptMatchingMode": "topic_keyword_and_phrase_matching",
+      "pollingUrl": "https://the-daily-trmnl.vercel.app/api/briefing?prompt={{ news_prompt | url_encode }}",
+      "upgradedOn": "2026-10-13"
     },
     {
       "day": 2,
@@ -167,7 +175,7 @@
     "Each built idea includes its own separate public TRMNL Recipe submission; after approval add the verified Recipe install URL to its website."
   ],
   "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
-  "publicLicenseApproval": "Approved by Manuel for What Changed? public submission on 2026-10-13",
+  "publicLicenseApproval": "Approved by Manuel for this Recipe public submission on 2026-10-13, originally named What Changed? and now renamed The Daily TRMNL.",
   "browserFileAccess": "Chrome local uploads remain unavailable; TRMNL built-in free icon generator completed, so local upload permission is no longer required for this release.",
   "creatorFund": {
     "source": "https://trmnl.com/blog/creator-fund-09-2026",

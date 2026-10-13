@@ -1,14 +1,14 @@
 <div class="layout layout--col"><div class="wc wc--vertical">
-  <div class="wc-head"><span class="wc-brand">WHAT CHANGED?</span><span class="wc-topic">{{ topic | capitalize }}</span></div>
+  <div class="wc-head"><span class="wc-brand">THE DAILY TRMNL</span><span class="wc-topic">{{ topic_label | default: topic | capitalize }}</span></div>
   <div class="wc-label">{{ briefing_label | escape }}{% if stale %} · Cached{% endif %}{% if unavailable_sources.size > 0 %} · Partial sources{% endif %}</div>
   <div class="wc-list">
   {% for story in stories limit: 2 %}
     <div class="wc-card">
       <div class="wc-title">{% if story.change != blank %}<span class="wc-badge">{{ story.change }}</span>{% endif %}{{ story.title | escape }}</div>
       <div class="wc-snippet">{{ story.snippet | escape }}</div>
-      <div class="wc-source">{{ story.source | escape }} · {{ story.published_at | date: "%b %d" }}</div>
+      <div class="wc-source">{{ story.source | escape }} · {% if story.time_kind == "indexed" %}Indexed {% endif %}{{ story.published_at | date: "%b %d" }}</div>
     </div>
-  {% else %}<div class="wc-empty">Briefing temporarily unavailable.<br>Please check again later.</div>{% endfor %}
+  {% else %}<div class="wc-empty">{% if empty %}No matching stories yet.<br>Try a broader news prompt.{% else %}Briefing temporarily unavailable.<br>Please check again later.{% endif %}</div>{% endfor %}
   </div>
-  <div class="wc-foot"><span>{{ topic | capitalize }} · Checked {{ fetched_at | date: "%b %d %H:%M" }} UTC</span><span>what-changed-nine.vercel.app</span></div>
+  <div class="wc-foot"><span>{{ topic_label | default: topic | capitalize }} · Checked {{ fetched_at | date: "%b %d %H:%M" }} UTC</span><span>the-daily-trmnl.vercel.app</span></div>
 </div></div>

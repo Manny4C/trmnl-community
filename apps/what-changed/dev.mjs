@@ -16,4 +16,4 @@ createServer(async (req,res) => {
     res.setHeader('Content-Type', {'.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml', '.json':'application/json'}[extname(file)] || 'text/plain');
     res.end(data);
   } catch {res.statusCode=404;res.end('Not found');}
-}).listen(Number(process.env.PORT || 4317), '127.0.0.1', () => console.log('What Changed? ready at http://127.0.0.1:'+Number(process.env.PORT || 4317)));
+}).listen(Number(process.env.PORT || 4317), '127.0.0.1', () => console.log('The Daily TRMNL ready at http://127.0.0.1:'+Number(process.env.PORT || 4317)));

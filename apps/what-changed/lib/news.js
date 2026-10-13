@@ -24,8 +24,9 @@ export function canonicalUrl(value) {
     const u = new URL(value);
     if (!['https:', 'http:'].includes(u.protocol)) return null;
     u.hash = '';
-    for (const key of [...u.searchParams.keys()]) if (/^(utm_|fbclid|gclid|ref$)/i.test(key)) u.searchParams.delete(key);
-    return u.toString();
+    for (const key of [...u.searchParams.keys()]) if (/^(utm_|at_medium$|at_campaign$|fbclid|gclid|ref$)/i.test(key)) u.searchParams.delete(key);
+    const normalized=u.toString();
+    return normalized.length<=1200?normalized:null;
   } catch { return null; }
 }
 function words(title) {
@@ -91,4 +92,21 @@ export async function getBriefing(topic, {fetcher = fetch, now = Date.now()} = {
   while (Buffer.byteLength(JSON.stringify(body)) > 4800 && body.stories.length > 1) body.stories.pop();
   cache.set(topic, {at: now, body});
   return body;
+}
+
+let sourcePool=null;
+export async function getSourcePool({fetcher=fetch,now=Date.now()}={}) {
+  if(sourcePool && now-sourcePool.at<900000)return sourcePool.body;
+  const feeds=[...new Map(Object.values(FEEDS).flat().map(f=>[f[1],f])).values()];
+  const replies=await Promise.all(feeds.map(async ([source,url])=>{
+    try {const r=await fetcher(url,{signal:AbortSignal.timeout(8000),headers:{'User-Agent':'TheDailyTRMNL/2.0'}});if(!r.ok)throw Error();const xml=await r.text();if(xml.length>1500000)throw Error();return {source,items:parseFeed(xml,source,now),ok:true};}
+    catch {return {source,items:[],ok:false};}
+  }));
+  const stories=deduplicate(replies.flatMap(r=>r.items));
+  if(!stories.length) {
+    if(sourcePool&&now-sourcePool.at<86400000)return {...sourcePool.body,stale:true};
+    throw new Error('Sources unavailable');
+  }
+  const body={stories,stale:false,fetched_at:new Date(now).toISOString(),unavailable_sources:replies.filter(r=>!r.ok).map(r=>r.source)};
+  sourcePool={at:now,body};return body;
 }

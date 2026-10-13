@@ -8,7 +8,7 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 
 | Day | Target | App |
 | --- | --- | --- |
-| 1 | Tue, October 13, 2026 | What Changed? — a news briefing with memory |
+| 1 | Tue, October 13, 2026 | The Daily TRMNL — a customized news briefing with memory |
 | 2 | Wed, October 14 | YC Scout — verified YC companies and launches |
 | 3 | Thu, October 15 | Sounds Like My Company — similar recently launched companies |
 | 4 | Fri, October 16 | Desk Editor — a dynamic off-device editor |
@@ -16,16 +16,26 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 | 6 | Tue, October 20 | Game Night Radar — updates for followed Steam games |
 | 7 | Wed, October 21 | Local Morning Brief — local news, weather and transit |
 
-## What Changed?
+## The Daily TRMNL
 
-- [Production website](https://what-changed-nine.vercel.app)
-- [Live data](https://what-changed-nine.vercel.app/api/briefing?topic=technology)
+- [Production website](https://the-daily-trmnl.vercel.app)
+- [Live data](https://the-daily-trmnl.vercel.app/api/briefing?prompt=Find+recent+news+about+AI+and+technology.)
 - [Support](https://github.com/Manny4C/trmnl-community/issues)
 - Owner's private TRMNL instance: `505118`, installed on Manuel's TRMNL.
 
-The What Changed? Recipe (master ID `505118`) was submitted for public TRMNL review on October 13, 2026. Its [owner review status](https://trmnl.com/plugin_settings/505118/edit) is **Plugin in review**; its public install URL is pending approval. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
+The The Daily TRMNL Recipe (master ID `505118`) was submitted for public TRMNL review on October 13, 2026. Its [owner review status](https://trmnl.com/plugin_settings/505118/edit) is **Plugin in review**; its public install URL is pending approval. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
 
 Public listing status is tracked separately in `launch-plan.json` and the app's `public/release.json`. Do not label a pending Recipe as publicly approved.
+
+## Personalized news
+
+The Daily TRMNL replaces the original four-topic selector with ten Include / Exclude / Leave out interests: AI and technology, startups, Y Combinator, markets and stocks, video games, world affairs, science and space, climate and energy, business and economy, and local news. Users add their own interests, companies, places, or exclusions. The website composes a readable prompt, generates a live feed, and copies that prompt into the Recipe's **Your news prompt** field. Local include/exclude choices require a place.
+
+Prompts are matched as topics, keywords, names and phrases. This is a free source-matching service; it does not promise to interpret arbitrary writing instructions. Named companies remain specific; Show HN alone is not treated as YC affiliation. No matching articles yields an explicit empty state, never unrelated filler. Histories are separate per prompt and browser storage retains at most eight feed profiles.
+
+The public API supports `/api/briefing?prompt=...` (600-character limit). The four legacy `?topic=` endpoints remain supported for existing manual installations. The old site address remains a compatibility alias. The new address is registered as a **production project domain**, so normal production deployments update it automatically and public users/devices can fetch without Vercel authentication. Keep deployment protection enabled for preview URLs.
+
+Source discovery combines a cached allowlist of public source feeds with the [GDELT DOC API](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/). GDELT [permits commercial use with attribution](https://www.gdeltproject.org/about.html#termsofuse); the website and Recipe credit it. Search was rate-limited during live verification; source-feed fallback continues matching the actual prompt and displays a partial-source notice. Narrow or local prompts may have no matches when global search is unavailable. Headlines and excerpts retain source attribution; GDELT discovery dates are labeled Indexed.
 
 ## Creator Fund follow-up
 
@@ -37,7 +47,7 @@ From `apps/what-changed`, install dependencies with `npm install`, run `npm test
 
 The data service uses a fixed allowlist of public RSS sources. It removes markup and tracking parameters, filters unsafe URLs, suppresses obvious duplicates, limits payloads, and reports partial outages. Successful data is cached; stale fallbacks preserve their real timestamp. It does not accept arbitrary feed URLs or store account credentials.
 
-The website remembers its displayed briefing in browser-local storage and keeps a dated last-successful copy for outages, expiring after 24 hours. It refreshes automatically while visible and cancels superseded topic requests. The TRMNL Serverless function maintains a separate bounded Saved State for each installation, detects changed story fingerprints, and preserves prior stories through outages. Smaller layouts show a subset of the full edition. The plugin cannot know whether a person actually looked at a screen.
+The website remembers its displayed briefing separately for each prompt in browser-local storage and keeps a dated last-successful copy for outages, expiring after 24 hours. It refreshes automatically while visible and cancels superseded topic requests. The TRMNL Serverless function maintains a separate bounded Saved State for each installation, detects changed story fingerprints, and preserves prior stories through outages. Smaller layouts show a subset of the full edition. The plugin cannot know whether a person actually looked at a screen.
 
 All four Liquid layouts, shared styles and the Serverless memory function live in `apps/what-changed/trmnl/`. Rebuild `public/plugin.zip` after changing these files. Test in a separate private clone after the Recipe is published, because edits to a Recipe master reach installed copies automatically.
 

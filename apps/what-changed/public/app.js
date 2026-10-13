@@ -72,8 +72,14 @@ $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.write
 $('forget').addEventListener('click',()=>{try {for(const topic of Object.keys(names)){localStorage.removeItem('what-changed:'+topic);localStorage.removeItem('what-changed:last:'+topic);}}catch{}if(current)render(current);});
 fetch('/release.json').then(r=>r.json()).then(release=>{
   if(release.support_url)$('support').href=release.support_url;
-  if(release.recipe_status==='submitted')$('recipe-status').textContent='Submitted to TRMNL for public review. Developer setup is available below while the listing is pending.';
+  if(release.recipe_status==='submitted'){
+    $('recipe-status').textContent='The What Changed? Recipe has been submitted for public review. Its install link will appear here once TRMNL approves it. Developer setup is available below.';
+    $('recipe-link').removeAttribute('href');
+    $('recipe-link').setAttribute('aria-disabled','true');
+    $('recipe-link').textContent='Recipe awaiting approval';
+  }
   if(release.recipe_url && release.recipe_status==='approved'){
+    $('recipe-link').removeAttribute('aria-disabled');
     $('recipe-link').href=release.recipe_url;
     $('recipe-link').textContent='Install What Changed? ↗';
     $('recipe-status').textContent='Published on TRMNL. Install to receive future updates.';

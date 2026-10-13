@@ -1,6 +1,6 @@
 # TRMNL Community
 
-A personal project by Manuel: seven useful TRMNL apps, built one per weekday. Each app has its own Vercel website and hosts the data service for its TRMNL Recipe.
+A personal project by Manuel: seven useful TRMNL apps, built one per weekday. Each app has its own Vercel website, plugin data service, and separate TRMNL Recipe submitted under that app's name. Each Recipe includes all four layouts, configuration, icon and marketplace preview; each website displays its real review status and links to installation after approval.
 
 GitHub owner: **Manny4C**. Vercel team: **Manuel's Personal Projects (`manny4c-personal`)**. Never deploy this project to Paper Star.
 
@@ -23,7 +23,7 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 - [Support](https://github.com/Manny4C/trmnl-community/issues)
 - Owner's private TRMNL instance: `505118`, installed on Manuel's TRMNL.
 
-Submitted for public TRMNL review on October 13, 2026. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
+The What Changed? Recipe (master ID `505118`) was submitted for public TRMNL review on October 13, 2026. Its [owner review status](https://trmnl.com/plugin_settings/505118/edit) is **Plugin in review**; its public install URL is pending approval. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
 
 Public listing status is tracked separately in `launch-plan.json` and the app's `public/release.json`. Do not label a pending Recipe as publicly approved.
 

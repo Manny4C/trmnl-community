@@ -22,7 +22,7 @@
     "Meaningful behavior and failure tests",
     "Four TRMNL layouts previewed",
     "Installed on owner's device playlist",
-    "Public Recipe submitted, with actual review status recorded",
+    "Separate TRMNL Recipe created and submitted under this app's name, with four layouts, icon, marketplace preview, Recipe ID and actual review status recorded",
     "User asked for edits after delivery"
   ],
   "apps": [
@@ -49,8 +49,17 @@
       "featuredImageStatus": "generated_from_finished_screen",
       "submittedOn": "2026-10-13",
       "reviewStatus": "Persisted TRMNL settings show Plugin in review: This plugin has been submitted to our team. Stand by.",
-      "latestDeploymentId": "dpl_8kmc8hBangfttY7GrXV4wMpyXbyw",
-      "completedOn": "2026-10-13"
+      "latestDeploymentId": "dpl_7ni2oQX1hpJMYs5Mb3ZUupkd1jPD",
+      "completedOn": "2026-10-13",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "What Changed?",
+        "status": "in_review",
+        "pluginId": 505118,
+        "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
+        "publicInstallUrl": null,
+        "reviewVerifiedAt": "2026-10-13T20:18:56.478212+00:00"
+      }
     },
     {
       "day": 2,
@@ -58,7 +67,15 @@
       "name": "YC Scout",
       "slug": "yc-scout",
       "status": "planned",
-      "scope": "Sourced YC company discovery, batch verification, launches and sector filters; do not infer YC affiliation from Show HN."
+      "scope": "Sourced YC company discovery, batch verification, launches and sector filters; do not infer YC affiliation from Show HN.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "YC Scout",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     },
     {
       "day": 3,
@@ -66,7 +83,15 @@
       "name": "Sounds Like My Company",
       "slug": "sounds-like-my-company",
       "status": "planned",
-      "scope": "Use company description, customers and category to discover recently launched companies across permitted launch feeds. Explain similarity with cited evidence and distinguish similarity from direct competition."
+      "scope": "Use company description, customers and category to discover recently launched companies across permitted launch feeds. Explain similarity with cited evidence and distinguish similarity from direct competition.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "Sounds Like My Company",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     },
     {
       "day": 4,
@@ -74,7 +99,15 @@
       "name": "Desk Editor",
       "slug": "desk-editor",
       "status": "planned",
-      "scope": "Off-device editor selects useful sourced cards dynamically, with stable layouts, time-of-day priorities, bounded switching and explicit freshness. Full LLM reasoning depends on an authorized model budget."
+      "scope": "Off-device editor selects useful sourced cards dynamically, with stable layouts, time-of-day priorities, bounded switching and explicit freshness. Full LLM reasoning depends on an authorized model budget.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "Desk Editor",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     },
     {
       "day": 5,
@@ -82,7 +115,15 @@
       "name": "TRMNL Plays: Tiny Planet",
       "slug": "tiny-planet",
       "status": "planned",
-      "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate."
+      "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "TRMNL Plays: Tiny Planet",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     },
     {
       "day": 6,
@@ -90,7 +131,15 @@
       "name": "Game Night Radar",
       "slug": "game-night-radar",
       "status": "planned",
-      "scope": "Follow Steam games, show developer updates, patches and announced events, with source links and new-since-previous-edition history."
+      "scope": "Follow Steam games, show developer updates, patches and announced events, with source links and new-since-previous-edition history.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "Game Night Radar",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     },
     {
       "day": 7,
@@ -98,7 +147,15 @@
       "name": "Local Morning Brief",
       "slug": "local-morning-brief",
       "status": "planned",
-      "scope": "One verified location's local news, weather and transit disruption briefing using reliable supported sources."
+      "scope": "One verified location's local news, weather and transit disruption briefing using reliable supported sources.",
+      "recipeRequired": true,
+      "recipe": {
+        "name": "Local Morning Brief",
+        "status": "not_created",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      }
     }
   ],
   "executionRules": [
@@ -106,7 +163,8 @@
     "External TRMNL review can remain pending while the next app is built",
     "Do not modify sources/ or remove existing device content",
     "Preserve truthful distinction between deployed, submitted, approved and physically displayed",
-    "Daily game operation includes weekends; app development does not"
+    "Daily game operation includes weekends; app development does not",
+    "Each built idea includes its own separate public TRMNL Recipe submission; after approval add the verified Recipe install URL to its website."
   ],
   "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
   "publicLicenseApproval": "Approved by Manuel for What Changed? public submission on 2026-10-13",

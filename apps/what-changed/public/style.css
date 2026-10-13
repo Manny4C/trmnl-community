@@ -5,3 +5,5 @@
 /* Keep the scaled device preview's source line visible on small screens. */
 .screen{line-height:1.2;padding:3% 4%}.screen-name{line-height:1.1;padding-bottom:5px;flex-shrink:0}.screen-subtitle{padding:5px 0;flex-shrink:0}.screen-footer{font-size:8px;padding-top:4px;flex-shrink:0}.screen-story{padding:3px 0}.screen-story p{margin-top:2px}
 @media(max-width:550px){.screen-name{font-size:12px;padding-bottom:4px}.screen-subtitle{font-size:7px;padding:4px 0}.screen-footer{font-size:6px}.screen-story h4{font-size:9.5px}.screen-story p:last-child{font-size:7px}}
+
+.button[aria-disabled="true"]{background:#e1e2d6;color:var(--ink);cursor:default}

@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {parseFeed, deduplicate, canonicalUrl, getBriefing} from '../lib/news.js';
+const now=Date.parse('2026-10-13T16:00:00Z');
+const xml='<rss><channel><item><title>A real &amp; useful headline</title><link>https://example.com/story?utm_source=feed</link><description>&lt;p&gt;Read the &lt;b&gt;source&lt;/b&gt;.&lt;/p&gt;</description><pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate></item><item><title>Unsafe</title><link>javascript:alert(1)</link><pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate></item></channel></rss>';
+test('Feed parsing strips markup, tracking and unsafe links',()=>{const stories=parseFeed(xml,'Test',now);assert.equal(stories.length,1);assert.equal(stories[0].title,'A real & useful headline');assert.equal(stories[0].snippet,'Read the source .');assert.equal(stories[0].url,'https://example.com/story');assert.equal(canonicalUrl('file:///etc/passwd'),null);});
+test('Dedup keeps one story per URL while preserving distinct stories',()=>{const stories=parseFeed(xml,'Test',now);assert.equal(deduplicate([...stories,...stories,{...stories[0],url:'https://example.com/new',title:'Something entirely different'}]).length,2);});
+test('Unsupported topics cannot turn the service into an arbitrary proxy',async()=>{await assert.rejects(()=>getBriefing('http://127.0.0.1'),RangeError);});
+test('Successful briefing is compact and source failures are visible',async()=>{const data=await getBriefing('technology',{now,fetcher:async url=>{if(url.includes('arstechnica'))throw Error();return {ok:true,text:async()=>xml};}});assert.equal(data.stories.length,1);assert.deepEqual(data.unavailable_sources,['Ars Technica']);assert.ok(Buffer.byteLength(JSON.stringify(data))<4800);});
+test('All-source failure returns last successful briefing without claiming freshness',async()=>{const data=await getBriefing('technology',{now:now+600000,fetcher:async()=>{throw Error();}});assert.equal(data.stale,true);assert.equal(data.fetched_at,new Date(now).toISOString());});
+test('No previous data plus an outage produces an explicit failure',async()=>{await assert.rejects(()=>getBriefing('science',{now,fetcher:async()=>{throw Error();}}));});
+test('Default public briefing filters explicit headlines and HN hiring ads',()=>{assert.equal(parseFeed(xml.replace('A real &amp; useful headline','A story about sexual assault'),'Test',now).length,0);assert.equal(parseFeed(xml.replace('A real &amp; useful headline','Company (YC S22) Is Hiring Engineers'),'Hacker News',now).length,0);});

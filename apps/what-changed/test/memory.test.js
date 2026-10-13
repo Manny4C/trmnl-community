@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+const context=vm.createContext({});
+vm.runInContext(readFileSync(new URL('../trmnl/transform.js',import.meta.url),'utf8'),context);
+const transform=input=>JSON.parse(JSON.stringify(context.run(input)));
+const stories=Array.from({length:8},(_,i)=>({id:'id'+i,fingerprint:'v1',title:'Story '+i,snippet:'Short excerpt',source:'Test',published_at:'2026-10-13T10:00:00Z'}));
+test('Memory promotes only unseen candidates and detects updates',()=>{const a=transform({topic:'technology',stories});assert.equal(a.briefing_label,'Your first briefing');assert.equal(Object.keys(a.trmnl_state.seen).length,3);const b=transform({topic:'technology',stories,trmnl:{state:a.trmnl_state}});assert.equal(b.stories[0].id,'id3');assert.equal(b.stories[0].change,'NEW');const state={topic:'technology',seen:Object.fromEntries(stories.map(s=>[s.id,s.fingerprint]))};const c=transform({topic:'technology',stories:[{...stories[0],fingerprint:'v2'}],trmnl:{state}});assert.equal(c.stories[0].change,'UPDATED');});
+test('Topic changes reset history and outages retain prior stories',()=>{const a=transform({topic:'technology',stories});const b=transform({topic:'science',stories,trmnl:{state:a.trmnl_state}});assert.equal(b.briefing_label,'Your first briefing');const c=transform({topic:'technology',trmnl:{state:a.trmnl_state}});assert.equal(c.stale,true);assert.deepEqual(c.stories,a.stories);assert.equal(c.trmnl_state,undefined);});
+test('Bounded state stays comfortably below TRMNL 8192-byte limit',()=>{let state={};for(let i=0;i<100;i++){state=transform({topic:'technology',stories:stories.map(s=>({...s,id:s.id+i})),trmnl:{state}}).trmnl_state;}assert.equal(Object.keys(state.seen).length,60);assert.ok(Buffer.byteLength(JSON.stringify(state))<8192);});
+test('Larger landscape and portrait devices remember the correct edition size',()=>{const landscape=transform({topic:'technology',stories,trmnl:{device:{width:1040,height:780}}});const portrait=transform({topic:'technology',stories,trmnl:{device:{width:780,height:1040}}});assert.equal(Object.keys(landscape.trmnl_state.seen).length,4);assert.equal(Object.keys(portrait.trmnl_state.seen).length,6);});

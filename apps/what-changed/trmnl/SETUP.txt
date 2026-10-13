@@ -1,0 +1,16 @@
+WHAT CHANGED? — TRMNL PLUGIN SETUP
+
+Use the public Recipe for the simplest installation once its review is complete.
+For Developer Edition users:
+1. Create a Private Plugin using the Polling strategy.
+2. Paste the site's /api/briefing?topic={{ topic }} endpoint into Polling URL.
+3. Paste form-fields.yml into Form Fields and save. Choose Technology by default.
+4. Open Edit Markup. Paste shared.liquid into Shared and each matching .liquid file into its Full, Half Vertical, Half Horizontal and Quadrant tab.
+5. In Serverless, choose Node and paste transform.js. This keeps bounded per-installation history.
+6. Save, Force Refresh, and add the plugin to your device's playlist.
+7. Allow at least 15 minutes between automatic content updates. Faster playlist rotation does not make the data refresh sooner.
+
+History compares previous editions, not whether a person actually looked at the device.
+Full-screen editions remember three stories on OG, four on a larger landscape display, or six on a larger portrait display. Smaller mashups show a subset of that same edition.
+Data-source failures are shown explicitly. Force Refresh may clear current data but leaves Saved State intact.
+No passwords, account identifiers or API keys are required. The data endpoint receives only the selected topic and ordinary web request information.

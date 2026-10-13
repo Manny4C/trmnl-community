@@ -1,0 +1,105 @@
+{
+  "timezone": "America/Los_Angeles",
+  "buildSchedule": "Weekdays at 10:00",
+  "automationId": "trmnl-weekday-app-launches",
+  "authorization": "Build one complete app per weekday, deploy each to Vercel, create and submit its community Recipe, install on Manuel's TRMNL, and ask for edits after delivery.",
+  "repositoryOwner": "Manny4C",
+  "vercelTeam": "manny4c-personal",
+  "device": {
+    "name": "Manuel's TRMNL",
+    "id": 44452,
+    "access": "Authenticated Chrome dashboard"
+  },
+  "companyProfile": null,
+  "localBriefingCity": null,
+  "budget": {
+    "authorizedPaidSpend": 0,
+    "policy": "Use existing authorized subscriptions and free services; no new paid commitments without a budget."
+  },
+  "dailyDefinitionOfDone": [
+    "Usable production Vercel website with working plugin endpoint",
+    "Live screen preview, setup and support instructions",
+    "Meaningful behavior and failure tests",
+    "Four TRMNL layouts previewed",
+    "Installed on owner's device playlist",
+    "Public Recipe submitted, with actual review status recorded",
+    "User asked for edits after delivery"
+  ],
+  "apps": [
+    {
+      "day": 1,
+      "targetDate": "2026-10-13",
+      "name": "What Changed?",
+      "slug": "what-changed",
+      "status": "awaiting_public_submission",
+      "scope": "Personalized news briefing with bounded per-install history, repeat suppression, source links and timestamps.",
+      "websiteUrl": "https://what-changed-nine.vercel.app",
+      "pluginId": 505118,
+      "deviceInstallationStatus": "added_to_playlist",
+      "publicationStatus": "awaiting_license_confirmation",
+      "buildCompletedOn": "2026-10-13",
+      "websiteDeploymentStatus": "ready",
+      "iconStatus": "awaiting_browser_file_permission",
+      "testStatus": "11 automated tests passed; four OG layouts visually verified; mobile website verified; larger landscape and portrait editions configured",
+      "physicalDeviceVerification": "Completed screen has not yet been confirmed on hardware; prior pre-layout screen was delivered at 11:24 PDT, final render followed at 11:24:36; next scheduled playlist appearance 13:09 PDT."
+    },
+    {
+      "day": 2,
+      "targetDate": "2026-10-14",
+      "name": "YC Scout",
+      "slug": "yc-scout",
+      "status": "planned",
+      "scope": "Sourced YC company discovery, batch verification, launches and sector filters; do not infer YC affiliation from Show HN."
+    },
+    {
+      "day": 3,
+      "targetDate": "2026-10-15",
+      "name": "Sounds Like My Company",
+      "slug": "sounds-like-my-company",
+      "status": "planned",
+      "scope": "Use company description, customers and category to discover recently launched companies across permitted launch feeds. Explain similarity with cited evidence and distinguish similarity from direct competition."
+    },
+    {
+      "day": 4,
+      "targetDate": "2026-10-16",
+      "name": "Desk Editor",
+      "slug": "desk-editor",
+      "status": "planned",
+      "scope": "Off-device editor selects useful sourced cards dynamically, with stable layouts, time-of-day priorities, bounded switching and explicit freshness. Full LLM reasoning depends on an authorized model budget."
+    },
+    {
+      "day": 5,
+      "targetDate": "2026-10-19",
+      "name": "TRMNL Plays: Tiny Planet",
+      "slug": "tiny-planet",
+      "status": "planned",
+      "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate."
+    },
+    {
+      "day": 6,
+      "targetDate": "2026-10-20",
+      "name": "Game Night Radar",
+      "slug": "game-night-radar",
+      "status": "planned",
+      "scope": "Follow Steam games, show developer updates, patches and announced events, with source links and new-since-previous-edition history."
+    },
+    {
+      "day": 7,
+      "targetDate": "2026-10-21",
+      "name": "Local Morning Brief",
+      "slug": "local-morning-brief",
+      "status": "planned",
+      "scope": "One verified location's local news, weather and transit disruption briefing using reliable supported sources."
+    }
+  ],
+  "executionRules": [
+    "At most one new app per local weekday; delayed work shifts remaining dates",
+    "External TRMNL review can remain pending while the next app is built",
+    "Do not modify sources/ or remove existing device content",
+    "Preserve truthful distinction between deployed, submitted, approved and physically displayed",
+    "Daily game operation includes weekends; app development does not"
+  ],
+  "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
+  "publicLicenseApproval": "Requested for What Changed?; awaiting human response",
+  "browserFileAccess": "User authorized enabling file URL access, but tools cannot open Chrome internal settings; manual toggle requested"
+}

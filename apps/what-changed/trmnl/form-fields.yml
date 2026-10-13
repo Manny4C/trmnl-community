@@ -1,0 +1,17 @@
+- keyname: author
+  field_type: author_bio
+  name: About What Changed?
+  category: news,productivity
+  description: A calm briefing with a memory. Choose technology, business, world news or science. New and updated stories come first, with attributed headlines and short excerpts. Each installation keeps its own bounded history. The website offers original-source links and a live content preview. No AI or personal API key required. Independent community project, not affiliated with its news sources or TRMNL.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://what-changed-nine.vercel.app
+- keyname: topic
+  field_type: select
+  name: News topic
+  description: Choose the topic for this briefing.
+  options:
+    - Technology
+    - Business
+    - World
+    - Science
+  default: technology

@@ -1,0 +1,18 @@
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve, extname} from 'node:path';
+import handler from './api/briefing.js';
+const root = resolve('public');
+createServer(async (req,res) => {
+  res.status = code => {res.statusCode = code; return res;};
+  res.json = object => {res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(object));};
+  const path = new URL(req.url, 'http://localhost').pathname;
+  if (path === '/api/briefing') return handler(req,res);
+  const file = resolve(root, '.' + (path === '/' ? '/index.html' : path));
+  if (!file.startsWith(root + '/')) {res.statusCode=403; return res.end();}
+  try {
+    const data = await readFile(file);
+    res.setHeader('Content-Type', {'.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml', '.json':'application/json'}[extname(file)] || 'text/plain');
+    res.end(data);
+  } catch {res.statusCode=404;res.end('Not found');}
+}).listen(Number(process.env.PORT || 4317), '127.0.0.1', () => console.log('What Changed? ready at http://127.0.0.1:4317'));

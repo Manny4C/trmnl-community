@@ -23,7 +23,13 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 - [Support](https://github.com/Manny4C/trmnl-community/issues)
 - Owner's private TRMNL instance: `505118`, installed on Manuel's TRMNL.
 
+Submitted for public TRMNL review on October 13, 2026. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
+
 Public listing status is tracked separately in `launch-plan.json` and the app's `public/release.json`. Do not label a pending Recipe as publicly approved.
+
+## Creator Fund follow-up
+
+The [September 2026 fund report](https://trmnl.com/blog/creator-fund-09-2026), verified October 13, reports a minimum of **50 connections (installs + forks)** for monthly payout qualification. Earnings depend on age on active playlists, playlist presence and actual device impressions relative to other community plugins; publication alone does not establish earnings. After review approval, add the verified install link to the website, track connections and uninstall reasons in TRMNL Analytics, and prioritize fixes that keep the app useful in daily playlists. Verify the current threshold and payout requirements before claiming eligibility.
 
 ## Development
 
@@ -31,7 +37,7 @@ From `apps/what-changed`, install dependencies with `npm install`, run `npm test
 
 The data service uses a fixed allowlist of public RSS sources. It removes markup and tracking parameters, filters unsafe URLs, suppresses obvious duplicates, limits payloads, and reports partial outages. Successful data is cached; stale fallbacks preserve their real timestamp. It does not accept arbitrary feed URLs or store account credentials.
 
-The website remembers its displayed briefing in browser-local storage. The TRMNL Serverless function maintains a separate bounded Saved State for each installation, detects changed story fingerprints, and preserves prior stories through outages. Smaller layouts show a subset of the full edition. The plugin cannot know whether a person actually looked at a screen.
+The website remembers its displayed briefing in browser-local storage and keeps a dated last-successful copy for outages, expiring after 24 hours. It refreshes automatically while visible and cancels superseded topic requests. The TRMNL Serverless function maintains a separate bounded Saved State for each installation, detects changed story fingerprints, and preserves prior stories through outages. Smaller layouts show a subset of the full edition. The plugin cannot know whether a person actually looked at a screen.
 
 All four Liquid layouts, shared styles and the Serverless memory function live in `apps/what-changed/trmnl/`. Rebuild `public/plugin.zip` after changing these files. Test in a separate private clone after the Recipe is published, because edits to a Recipe master reach installed copies automatically.
 

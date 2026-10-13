@@ -31,22 +31,26 @@
       "targetDate": "2026-10-13",
       "name": "What Changed?",
       "slug": "what-changed",
-      "status": "awaiting_public_submission",
+      "status": "submitted_awaiting_review",
       "scope": "Personalized news briefing with bounded per-install history, repeat suppression, source links and timestamps.",
       "websiteUrl": "https://what-changed-nine.vercel.app",
       "pluginId": 505118,
       "deviceInstallationStatus": "added_to_playlist",
-      "publicationStatus": "awaiting_license_confirmation",
+      "publicationStatus": "submitted_for_public_human_review",
       "buildCompletedOn": "2026-10-13",
-      "websiteDeploymentStatus": "ready",
-      "iconStatus": "awaiting_browser_file_permission",
-      "testStatus": "11 automated tests passed; four OG layouts visually verified; mobile website verified; six-story TRMNL X portrait render verified; final OG render has three stories and all source labels fit",
-      "physicalDeviceVerification": "Completed screen has not yet been confirmed on hardware; prior pre-layout screen was delivered at 11:24 PDT, final render followed at 11:24:36; next scheduled playlist appearance 13:09 PDT.",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "iconStatus": "generated_and_saved_in_trmnl",
+      "testStatus": "15 automated checks passed; rapid topic changes verified; actual local server outage retained five dated stories; four OG layouts and X portrait reviewed; improved X landscape typography verified; production phone preview has no horizontal overflow and all three source labels fit",
+      "physicalDeviceVerification": "Owner installation remains on playlist. Timeline reports only the initial pre-layout screen delivered at 11:24:17 PDT; finished screens rendered later, but finished-screen device receipt and physical display have not been confirmed. Final updated version queued for next check-in.",
       "pendingActions": [
-        "Manual Chrome ChatGPT extension Allow access to file URLs toggle for icon upload",
-        "Human confirmation of TRMNL Community Plugin License before public submission",
+        "Monitor human Recipe review",
         "Confirm finished screen on physical device at next playlist appearance"
-      ]
+      ],
+      "featuredImageStatus": "generated_from_finished_screen",
+      "submittedOn": "2026-10-13",
+      "reviewStatus": "Persisted TRMNL settings show Plugin in review: This plugin has been submitted to our team. Stand by.",
+      "latestDeploymentId": "dpl_8kmc8hBangfttY7GrXV4wMpyXbyw",
+      "completedOn": "2026-10-13"
     },
     {
       "day": 2,
@@ -105,6 +109,19 @@
     "Daily game operation includes weekends; app development does not"
   ],
   "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
-  "publicLicenseApproval": "Requested for What Changed?; awaiting human response",
-  "browserFileAccess": "User authorized enabling file URL access, but tools cannot open Chrome internal settings; manual toggle requested"
+  "publicLicenseApproval": "Approved by Manuel for What Changed? public submission on 2026-10-13",
+  "browserFileAccess": "Chrome local uploads remain unavailable; TRMNL built-in free icon generator completed, so local upload permission is no longer required for this release.",
+  "creatorFund": {
+    "source": "https://trmnl.com/blog/creator-fund-09-2026",
+    "verifiedOn": "2026-10-13",
+    "minimumConnectionsReported": 50,
+    "connectionsDefinition": "installs + forks",
+    "earningFactors": [
+      "age on live playlists",
+      "playlist presence",
+      "device impressions relative to other community plugins"
+    ],
+    "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
+    "earningsStatus": "No earnings or eligibility confirmed"
+  }
 }

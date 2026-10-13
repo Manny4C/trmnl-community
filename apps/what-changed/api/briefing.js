@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   if (!TOPICS.includes(topic)) return res.status(400).json({error: 'Unknown topic', topics: TOPICS});
   try {
     const body = await getBriefing(topic);
-    res.setHeader('Cache-Control', body.stale ? 'public, s-maxage=60' : 'public, s-maxage=900, stale-while-revalidate=3600');
+    res.setHeader('Cache-Control', body.stale ? 'public, max-age=0, s-maxage=60' : 'public, max-age=0, s-maxage=900, stale-while-revalidate=3600');
     return res.status(200).json(body);
   } catch {
     res.setHeader('Cache-Control', 'no-store');

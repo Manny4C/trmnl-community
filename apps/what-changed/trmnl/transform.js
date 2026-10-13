@@ -10,7 +10,9 @@ function run(input) {
   const stories = input.stories.map(story => ({...story, change: first ? '' : !seen[story.id] ? 'NEW' : seen[story.id] !== story.fingerprint ? 'UPDATED' : ''}));
   const changed = stories.filter(story => story.change);
   const selected = [...changed, ...stories.filter(story => !story.change)].slice(0, 6);
-  const displayLimit = input.trmnl?.device?.height >= 1000 ? 6 : input.trmnl?.device?.width >= 1000 ? 4 : 3;
+  const width = Number(input.trmnl?.device?.width || 800);
+  const height = Number(input.trmnl?.device?.height || 480);
+  const displayLimit = height >= 1000 && height > width ? 6 : width >= 1000 ? 4 : 3;
   // Keep extra candidates for larger previews; remember the actual device's edition.
   for (const story of selected.slice(0, displayLimit)) {delete seen[story.id]; seen[story.id] = story.fingerprint;}
   const state = {topic, seen: Object.fromEntries(Object.entries(seen).slice(-60)), last_stories: selected, fetched_at: input.fetched_at};

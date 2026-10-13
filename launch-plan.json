@@ -40,8 +40,13 @@
       "buildCompletedOn": "2026-10-13",
       "websiteDeploymentStatus": "ready",
       "iconStatus": "awaiting_browser_file_permission",
-      "testStatus": "11 automated tests passed; four OG layouts visually verified; mobile website verified; larger landscape and portrait editions configured",
-      "physicalDeviceVerification": "Completed screen has not yet been confirmed on hardware; prior pre-layout screen was delivered at 11:24 PDT, final render followed at 11:24:36; next scheduled playlist appearance 13:09 PDT."
+      "testStatus": "11 automated tests passed; four OG layouts visually verified; mobile website verified; six-story TRMNL X portrait render verified; final OG render has three stories and all source labels fit",
+      "physicalDeviceVerification": "Completed screen has not yet been confirmed on hardware; prior pre-layout screen was delivered at 11:24 PDT, final render followed at 11:24:36; next scheduled playlist appearance 13:09 PDT.",
+      "pendingActions": [
+        "Manual Chrome ChatGPT extension Allow access to file URLs toggle for icon upload",
+        "Human confirmation of TRMNL Community Plugin License before public submission",
+        "Confirm finished screen on physical device at next playlist appearance"
+      ]
     },
     {
       "day": 2,

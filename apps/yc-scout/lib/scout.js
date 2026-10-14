@@ -21,7 +21,7 @@ export function selectCompanies(items,config,now=Date.now()){
   const day=new Date(now).toISOString().slice(0,10);
   companies=companies.map(c=>({c,h:createHash('sha256').update(day+':'+c.id).digest('hex')})).sort((a,b)=>a.h.localeCompare(b.h)).map(x=>x.c);
  }
- return {companies:companies.slice(0,6),total};
+ return {companies:companies.slice(0,10),total};
 }
 export async function jsonFetch(url,fetcher=fetch){
  const response=await fetcher(url,{signal:AbortSignal.timeout(6000),headers:{'Accept':'application/json','User-Agent':'YC-Scout/1.0 (https://yc-launch-scout.vercel.app)'}});
@@ -52,7 +52,20 @@ export function createService({fetcher=fetch,clock=Date.now}={}){
   }
   const {companies,total}=selectCompanies(pool.companies,config,now);
   const result={name:'YC Scout',config,filter_label:`${SECTORS[config.sector]}${config.batch?' · '+config.batch:''} · ${config.days}d`,mode_label:config.mode==='discover'?'Daily discovery':'Latest launches',edition_day:new Date(now).toISOString().slice(0,10),fetched_at:pool.verified_at,stale,partial:pool.partial,empty:total===0,total,coverage_count:pool.companies.length,companies};
-  while(Buffer.byteLength(JSON.stringify(result))>4700&&result.companies.length>1)result.companies.pop();
+  // Keep all ten launches under the device budget; shorten excerpts rather than removing rows.
+  if(Buffer.byteLength(JSON.stringify(result))>4700){
+   result.companies=result.companies.map(({sectors,...company})=>company);
+   for(const limit of [180,140,100,70,40]){
+    if(Buffer.byteLength(JSON.stringify(result))<=4700)break;
+    result.companies=result.companies.map(company=>({...company,name:utf8Excerpt(company.name,limit===40?60:80),description:utf8Excerpt(company.description,limit)}));
+   }
+  }
   return result;
  };
+}
+
+function utf8Excerpt(value,maxBytes){
+ if(Buffer.byteLength(value)<=maxBytes)return value;
+ let excerpt='';for(const char of value){if(Buffer.byteLength(excerpt+char+'…')>maxBytes)break;excerpt+=char;}
+ return excerpt.trimEnd()+'…';
 }

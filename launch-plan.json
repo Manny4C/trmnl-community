@@ -75,7 +75,7 @@
       "name": "YC Scout",
       "slug": "yc-scout",
       "status": "submitted_awaiting_review",
-      "scope": "Launch HN startup radar with eight title-matched sectors, optional source-evidenced YC batch and product/company search, 30/90/365-day windows, latest or deterministic daily discovery. Each displayed announcement is verified via official HN API; no Show HN inference or YC directory scraping. Bounded coverage (79 announcements at launch), not all YC companies.",
+      "scope": "Launch HN startup radar with eight title-matched sectors, optional source-evidenced YC batch and product/company search, 30/90/365-day windows, latest or deterministic daily discovery. Each displayed announcement is verified via official HN API; no Show HN inference or YC directory scraping. Full-screen latest edition shows up to ten launches in descending posting order. Bounded coverage (79 announcements at launch), not all YC companies.",
       "recipeRequired": true,
       "recipe": {
         "name": "YC Scout",
@@ -84,7 +84,7 @@
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
         "aiReviewId": 1185,
-        "reviewVerifiedAt": "2026-10-14T17:26:05.067167+00:00"
+        "reviewVerifiedAt": "2026-10-14T17:46:34.437992+00:00"
       },
       "sourceDirectory": "apps/yc-scout",
       "websiteUrl": "https://yc-launch-scout.vercel.app",
@@ -94,20 +94,23 @@
       "buildCompletedOn": "2026-10-14",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "featuredImageStatus": "generated_for_og_and_x",
-      "testStatus": "12 automated checks passed; live source verification, sector/batch filtering, no matches and invalid parameters verified anonymously in production; mobile width 390 without overflow; all four OG layouts visually verified; full X landscape four cards and portrait six visually verified",
-      "physicalDeviceVerification": "TRMNL editor and Timeline confirm successful renders, owner installation and planned rotation. No actual hardware receipt recorded as of verification.",
+      "featuredImageStatus": "regenerated_for_ten_launch_full_layout_og_and_x",
+      "testStatus": "13 automated checks passed, including ten newest in chronological order and ten multibyte rows under 4700 bytes; anonymous production returns ten launches (2586 bytes); actual OG ten-row full layout visually verified with the tenth row and footer visible. Ten-row X landscape/portrait and mobile width 390 also verified; the existing smaller layouts keep their own limits.",
+      "physicalDeviceVerification": "Updated ten-launch full layout verified in actual TRMNL editor on owner OG B/W/R/Y and X landscape/portrait. Manual refresh generated the updated edition; actual physical receipt has not been confirmed.",
       "pendingActions": [
         "Monitor human Recipe review; after approval publish the verified public install URL",
         "Confirm actual device receipt at next playlist appearance"
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
-      "latestDeploymentId": "dpl_DeCJxrhq6oXEBNLwaqYXeF7r5paQ",
+      "latestDeploymentId": "dpl_BF58f5G58PFoATEiYEyohwL7Waze",
       "reviewStatus": "Final public submission succeeded after Manuel approved the Community Plugin License on October 14. Reloaded settings verify Plugin in review. Human approval and public install link remain pending.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
-      "licenseApproval": "Manuel explicitly approved YC Scout public submission under TRMNL Community Plugin License on October 14, 2026."
+      "licenseApproval": "Manuel explicitly approved YC Scout public submission under TRMNL Community Plugin License on October 14, 2026.",
+      "densityUpdateRequestedOn": "2026-10-14",
+      "fullScreenLimit": 10,
+      "densityUpdatedOn": "2026-10-14"
     },
     {
       "day": 3,

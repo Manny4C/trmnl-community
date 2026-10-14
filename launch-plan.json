@@ -58,7 +58,7 @@
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
-        "reviewVerifiedAt": "2026-10-13T21:22:19.645906+00:00"
+        "reviewVerifiedAt": "2026-10-14T17:18:17.056126+00:00"
       },
       "previousName": "What Changed?",
       "publicSlug": "the-daily-trmnl",
@@ -74,16 +74,38 @@
       "targetDate": "2026-10-14",
       "name": "YC Scout",
       "slug": "yc-scout",
-      "status": "planned",
-      "scope": "Sourced YC company discovery, batch verification, launches and sector filters; do not infer YC affiliation from Show HN.",
+      "status": "built_awaiting_license_confirmation",
+      "scope": "Launch HN startup radar with eight title-matched sectors, optional source-evidenced YC batch and product/company search, 30/90/365-day windows, latest or deterministic daily discovery. Each displayed announcement is verified via official HN API; no Show HN inference or YC directory scraping. Bounded coverage (79 announcements at launch), not all YC companies.",
       "recipeRequired": true,
       "recipe": {
         "name": "YC Scout",
-        "status": "not_created",
-        "pluginId": null,
-        "settingsUrl": null,
-        "publicInstallUrl": null
-      }
+        "status": "ready_for_submission_awaiting_license_confirmation",
+        "pluginId": 506494,
+        "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
+        "publicInstallUrl": null,
+        "aiReviewId": 1185,
+        "reviewVerifiedAt": "2026-10-14T17:18:17.056126+00:00"
+      },
+      "sourceDirectory": "apps/yc-scout",
+      "websiteUrl": "https://yc-launch-scout.vercel.app",
+      "pluginId": 506494,
+      "deviceInstallationStatus": "added_to_playlist",
+      "publicationStatus": "ready_for_final_submission",
+      "buildCompletedOn": "2026-10-14",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "iconStatus": "generated_and_saved_in_trmnl",
+      "featuredImageStatus": "generated_for_og_and_x",
+      "testStatus": "12 automated checks passed; live source verification, sector/batch filtering, no matches and invalid parameters verified anonymously in production; mobile width 390 without overflow; all four OG layouts visually verified; full X landscape four cards and portrait six visually verified",
+      "physicalDeviceVerification": "TRMNL editor and Timeline confirm successful renders, owner installation and planned rotation. No actual hardware receipt recorded as of verification.",
+      "pendingActions": [
+        "Final public Recipe submission awaits action-time license confirmation requested in chat on October 14; do not repeat unchanged request",
+        "After submission monitor human review and publish verified public install URL after approval",
+        "Confirm actual device receipt at next playlist appearance"
+      ],
+      "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
+      "latestDeploymentId": "dpl_FhvgXMgtj8HiUCwh55y9F2g5YYdS",
+      "reviewStatus": "Automated publishing checks and AI Chef complete. Large-screen density suggestion implemented and verified. Final Submit anyway not clicked pending action-time binding license confirmation.",
+      "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00"
     },
     {
       "day": 3,

@@ -1,0 +1,24 @@
+const $=s=>document.querySelector(s),form=$('#filters');
+let data=null,controller=null,request=0;
+const fieldNames=['sector','batch','days','mode','q'];
+const initial=new URLSearchParams(location.search);for(const k of fieldNames)if(initial.has(k))form.elements[k].value=initial.get(k);
+function params(){const p=new URLSearchParams(new FormData(form));p.set('batch',p.get('batch').trim().toUpperCase());return p;}
+function make(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;}
+function date(s){return new Date(s).toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'});}
+function render(){
+ if(!data)return;const layout=$('#layout').value;$('#screen').className='screen '+layout;
+ $('#screen-mode').textContent=data.mode_label;$('#screen-filter').textContent=data.filter_label;
+ $('#screen-time').textContent=`${data.stale?'CACHED · ':''}${data.partial?'PARTIAL · ':''}Checked ${new Date(data.fetched_at).toISOString().slice(5,16).replace('T',' ')} UTC`;
+ const count={full:3,vertical:2,horizontal:2,quadrant:1}[layout];$('#screen-cards').replaceChildren();
+ for(const c of data.companies.slice(0,count)){const el=make('div',null,'screen-card');el.append(make('h3',c.name),make('p',c.description,'desc'),make('div',`YC ${c.batch} · Launch HN · ${date(c.published_at)}`,'meta'));$('#screen-cards').append(el);}
+ if(!data.companies.length)$('#screen-cards').append(make('p','No matching launches. Try a wider window or fewer filters.','screen-empty'));
+ $('#companies').replaceChildren();for(const c of data.companies){const el=make('article',null,'company');const link=make('a','Read the launch discussion ↗');link.href=c.url;link.target='_blank';link.rel='noopener noreferrer';el.append(make('small',`YC ${c.batch} / ${date(c.published_at)}`),make('h3',c.name),make('p',c.description),link);$('#companies').append(el);}
+ $('#status').textContent=`${data.stale?'Source refresh unavailable — showing a dated cached edition. ':''}${data.partial?'Some announcements could not be checked. ':''}${data.total?`${data.total} matching launches. ${data.config.mode==='discover'?'Today’s discovery order stays the same until midnight UTC.':'Newest first.'}`:'No matches in this source window. Try removing the batch or search filter.'}`;
+ $('#coverage').textContent=`Coverage: ${data.coverage_count} official HN announcements checked ${date(data.fetched_at)}. This is a bounded launch feed, not a complete YC company directory.`;
+}
+async function load(){const seq=++request;controller?.abort();controller=new AbortController();$('#status').textContent='Checking launch sources…';try{const response=await fetch('/api/scout?'+params(),{signal:controller.signal});const result=await response.json();if(!response.ok)throw new Error(result.error||'Sources unavailable.');if(seq!==request)return;data=result;render();}catch(e){if(e.name==='AbortError'||seq!==request)return;$('#status').textContent=e.message+' Use Update radar to retry.';data=null;$('#screen-cards').replaceChildren(make('p','Launch sources unavailable. Please check again later.','screen-empty'));$('#companies').replaceChildren();$('#screen-time').textContent='Sources unavailable';$('#coverage').textContent='No live edition available.';}}
+form.addEventListener('submit',event=>{event.preventDefault();history.replaceState(null,'','?'+params());load();});$('#layout').addEventListener('change',render);
+const poll='https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}';$('#poll-url').textContent=poll;
+$('#copy-url').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(poll);$('#copy-url').textContent='Copied';}catch{$('#copy-url').textContent='Select and copy the URL above';}});
+fetch('/release.json').then(r=>r.json()).then(release=>{if(release.recipe_url&&/^https:\/\/trmnl.com\/recipes\//.test(release.recipe_url)){const link=$('#install');link.href=release.recipe_url;link.textContent='Install YC Scout ↗';link.classList.remove('disabled');link.removeAttribute('aria-disabled');$('#release-note').textContent='Free community Recipe. A TRMNL device is required.';}else if(release.recipe_status==='submitted'){$('#install').textContent='Recipe awaiting approval';$('#release-note').textContent='Submitted to TRMNL for review. The public install link will appear here after approval.';}}).catch(()=>{});
+load();document.addEventListener('visibilitychange',()=>{if(!document.hidden)load();});setInterval(()=>{if(!document.hidden)load();},15*60*1000);

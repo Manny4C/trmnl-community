@@ -9,7 +9,7 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 | Day | Target | App |
 | --- | --- | --- |
 | 1 | Tue, October 13, 2026 | The Daily TRMNL — a customized news briefing with memory |
-| 2 | Wed, October 14 | YC Scout — verified YC companies and launches |
+| 2 | Wed, October 14 | YC Scout — source-checked Launch HN announcements |
 | 3 | Thu, October 15 | Sounds Like My Company — similar recently launched companies |
 | 4 | Fri, October 16 | Desk Editor — a dynamic off-device editor |
 | 5 | Mon, October 19 | TRMNL Plays: Tiny Planet — one shared cooperative world |
@@ -23,9 +23,21 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 - [Support](https://github.com/Manny4C/trmnl-community/issues)
 - Owner's private TRMNL instance: `505118`, installed on Manuel's TRMNL.
 
-The The Daily TRMNL Recipe (master ID `505118`) was submitted for public TRMNL review on October 13, 2026. Its [owner review status](https://trmnl.com/plugin_settings/505118/edit) is **Plugin in review**; its public install URL is pending approval. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
+The Daily TRMNL Recipe (master ID `505118`) was submitted for public TRMNL review on October 13, 2026. Its [owner review status](https://trmnl.com/plugin_settings/505118/edit) is **Plugin in review**; its public install URL is pending approval. Human approval is pending. Manuel approved the [Community Plugin License](https://trmnl.com/plugin-license) for this Recipe; its design, parsing logic and markup are reusable under CC BY 4.0. Source articles retain their publishers' rights.
 
 Public listing status is tracked separately in `launch-plan.json` and the app's `public/release.json`. Do not label a pending Recipe as publicly approved.
+
+## YC Scout
+
+- [Production website](https://yc-launch-scout.vercel.app)
+- [Live launch data](https://yc-launch-scout.vercel.app/api/scout)
+- [Owner Recipe settings](https://trmnl.com/plugin_settings/506494/edit), master `506494`, added to Manuel's playlist.
+
+Eight title-matched sectors, optional YC batch and product/company search, launch window, latest launches or daily discovery. Every displayed post is checked through the official Hacker News API. Batch evidence comes from its Launch HN title; the bounded feed does not represent the complete YC directory. Show HN is excluded. No YC directory extraction or unlicensed directory mirror is used. Source links, coverage and timestamps remain visible.
+
+Twelve automated checks passed, alongside live filtering/empty-state checks, mobile review, four OG layouts and full TRMNL X landscape/portrait renders. The separate Recipe has saved configuration, icon and marketplace previews. Automated publishing checks are complete; the final public submission awaits the action-time license confirmation requested in chat. Do not label it submitted or approved until verified. Physical receipt remains unconfirmed.
+
+See [app documentation](apps/yc-scout/README.md) for source scope, cache/outage behavior and developer setup. Production Vercel project `yc-scout` belongs to `manny4c-personal`; deploy from `apps/yc-scout` only.
 
 ## Personalized news
 

@@ -1,0 +1,50 @@
+- keyname: author
+  field_type: author_bio
+  name: About YC Scout
+  category: programming,news
+  description: A sourced YC launch radar. Launch HN announcements are discovered through HN Search and checked against the official Hacker News API. Batch is from the announcement title; sectors are title-based topic matches. Covers a bounded feed, not the full YC directory. Independent community project, not affiliated with Y Combinator or TRMNL.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://yc-launch-scout.vercel.app
+- keyname: sector
+  field_type: select
+  name: Sector
+  description: Topic matches based on the launch title, not official YC categories.
+  default: all
+  options:
+  - All sectors: all
+  - AI and agents: ai
+  - Developer tools: developer
+  - Robotics and hardware: robotics
+  - Health and biotech: health
+  - Finance and insurance: finance
+  - Business software: business
+  - Climate and energy: climate
+  - Consumer and games: consumer
+- keyname: batch
+  field_type: string
+  optional: true
+  name: YC batch (optional)
+  description: Leave blank for any batch. Use a code such as S26, F26, W26, P26 or X25.
+  placeholder: S26
+  maxlength: 3
+- keyname: days
+  field_type: select
+  name: Launch window
+  default: '90'
+  options:
+  - Past 30 days: '30'
+  - Past 90 days: '90'
+  - Past 365 days: '365'
+- keyname: edition
+  field_type: select
+  name: Edition
+  default: latest
+  options:
+  - Latest launches: latest
+  - Daily discovery: discover
+- keyname: search
+  field_type: string
+  optional: true
+  name: Company or product search (optional)
+  description: A word or exact phrase to match in the company name or launch subtitle. Leave blank for all matches.
+  maxlength: 80

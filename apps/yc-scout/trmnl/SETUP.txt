@@ -1,0 +1,10 @@
+YC Scout — https://yc-launch-scout.vercel.app
+Create a private TRMNL plugin using Polling, refresh Hourly.
+Paste form-fields.yml into Form fields; save.
+Polling URL (single line):
+https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}
+Paste full.liquid, half_vertical.liquid, half_horizontal.liquid, quadrant.liquid into their matching layouts; shared.liquid into Shared.
+No transform or API key required. Empty and cached source states are explicit. If the service returns 503 TRMNL retains its last successfully generated screen; review Timeline for errors.
+Data: HN Search discovers IDs. The official HN API supplies every displayed title, batch and date. Only Launch HN: Name (YC BATCH) – subtitle is accepted; Show HN is excluded. The feed covers up to 80 announcements discovered in a 200-hit search, not all YC companies. Dates are HN posting dates. Sectors use title keyword rules. Daily discovery rotates once per UTC day.
+Independent community project by Manny4C, not endorsed by Y Combinator or TRMNL.
+Support/source: https://github.com/Manny4C/trmnl-community/issues

@@ -26,3 +26,15 @@ Profile settings are public descriptions in request URLs; up to two words go to 
 ## Publication
 
 Separate Recipe under this app's name; update `public/release.json` truthfully after submission/approval. Never invent a public installation URL while review is pending. Public ZIP contains configuration, four layouts, shared styles and setup. Deployment, owner playlist installation, review and physical display are separate states.
+
+## October 15 automated preflight feedback
+
+The first AI Chef review (1195) was automated feedback, not human marketplace approval. Before final public submission, the layouts were migrated to native framework typography, `lg:`/`portrait:` variants, flex and border utilities, and a shared `title_bar` template placed beside the layout. Seven small CSS selectors remain for equal rows and bounded text clipping; hardcoded font sizes, colors and font-family declarations were removed from the device styles.
+
+Full-screen font size now follows the requested result count explicitly: 3 uses `text--xlarge` (26 px OG, 38 px X), 6 uses `text--large` (21 px OG, 38 px X), and 8 uses `text--base` (16 px OG, 26 px X). The response exposes `result_count` and the Liquid loop uses it as the limit. Native title-bar and label typography replace the old 10/11 px footer and metadata. All four layouts retain their bounded counts and source labels.
+
+The author text and owner profile were checked: the profile is a generic, labeled developer-infrastructure demo, with no confidential company information. The public form description now explicitly says that request URLs may appear in standard hosting logs. A TRMNL Test request returned HTTP 200 with the expected six-row public demo. Privacy notices describe the actual data flow; no claim is made that an arbitrary user-entered profile is private.
+
+A second automated review (1197) led to native `data-clamp` attributes in place of handwritten clamping, a one-line title for the six/eight-result editions, and larger X fonts. The bot also called `text--bold` and `border--h-black` undocumented; both are explicitly present in the current official framework docs, so those classes remain. Automated hints are reviewed against actual docs and renders, not treated as a human approval or a definitive validator.
+
+Final automated review 1198 described the six-row OG/X editions as clean and had no critical findings. Its company_name concern was checked against the polling URL and backend: the field maps to `name`, which the API returns and the header renders. Manuel approved the Community Plugin License on October 15; final public submission succeeded, and reloading Recipe 507810 confirms **Plugin in review**. This is pending human approval, not a public catalog release.

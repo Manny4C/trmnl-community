@@ -10,7 +10,14 @@
     "id": 44452,
     "access": "Authenticated Chrome dashboard"
   },
-  "companyProfile": null,
+  "companyProfile": {
+    "name": "Echo",
+    "description": "A managed agent platform building opinionated multi-step workflows to scale your business.",
+    "alternativeDescription": "Echo turns repeatable business processes into managed, multi-step agent workflows, helping teams get work done and scale their operations.",
+    "source": "Manuel supplied the description in this chat on October 15, 2026. Alternative is editorial wording based only on that description.",
+    "ownerConfigurationStatus": "prepared_not_saved_to_trmnl",
+    "pendingReason": "Manuel asked to stop controlling his screen before owner fields were changed."
+  },
   "localBriefingCity": null,
   "budget": {
     "authorizedPaidSpend": 0,
@@ -124,34 +131,34 @@
       "targetDate": "2026-10-15",
       "name": "Sounds Like My Company",
       "slug": "sounds-like-my-company",
-      "status": "built_awaiting_public_license_confirmation",
+      "status": "submitted_awaiting_review",
       "scope": "Public company description and customer wording launch radar across Launch HN and Show HN. Verified source titles and dates, product signals required, evidence-backed shared words and explicit related-topic groups, optional must-have/excluded words, 30/90/365-day windows and 3/6/8 results. Bounded HN coverage, not a complete company directory or a verified competitor list.",
       "recipeRequired": true,
       "recipe": {
         "name": "Sounds Like My Company",
-        "status": "prepared_awaiting_license_confirmation",
+        "status": "in_review",
         "pluginId": 507810,
         "settingsUrl": "https://trmnl.com/plugin_settings/507810/edit",
         "publicInstallUrl": null,
-        "aiReviewId": 1195,
-        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
+        "aiReviewId": 1198,
+        "reviewVerifiedAt": "2026-10-15T18:25:53.454544+00:00"
       },
       "sourceDirectory": "apps/sounds-like-my-company",
       "websiteUrl": "https://sounds-like-my-company.vercel.app",
       "pluginId": 507810,
       "deviceInstallationStatus": "added_to_playlist",
-      "publicationStatus": "awaiting_action_time_license_confirmation",
+      "publicationStatus": "submitted_for_public_human_review",
       "buildCompletedOn": "2026-10-15",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "featuredImageStatus": "generated_and_verified_final_og_and_x",
-      "latestDeploymentId": "dpl_HVwUb7AuEKEp8EhuWw8FaqFksJc4",
+      "featuredImageStatus": "Native framework marketplace previews regenerated before submission; latest image blob IDs not re-read after user requested no screen control.",
+      "latestDeploymentId": "dpl_5eo79bYETKXRJz6yKEZjNWHq2GDz",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
       "physicalDeviceVerification": "Owner playlist installed and successful manual renders recorded in TRMNL Timeline through 10:33:46 PDT. Final owner setting restored to six results with a clearly labeled Developer infrastructure demo. Actual device receipt is not confirmed.",
       "pendingActions": [
-        "Manuel action-time approval of the Community Plugin License for final public submission",
-        "After public submission monitor human review and publish the verified installation URL on approval",
-        "Confirm physical display at a later device check-in"
+        "Monitor human Recipe review; on approval publish the verified public installation URL",
+        "Confirm physical device display later; Manuel is away from the device",
+        "Apply user-provided Echo company profile to existing owner installation when browser interaction is explicitly requested again; do not claim it is already installed."
       ],
       "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
       "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
@@ -159,8 +166,19 @@
         19345706,
         19345707
       ],
-      "reviewStatus": "Prepared, not publicly submitted. Automated AI Chef preflight 1195 is complete. Generic public demo/profile and public author description contain no confidential company information. Large-screen and four-layout suggestions were checked against actual rendered previews. Final public submit is waiting for the action-time Community Plugin License confirmation requested once in this chat.",
-      "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets)."
+      "reviewStatus": "Public submission succeeded after Manuel approved the license. Reloaded settings verify Plugin in review. Automated AI Chef feedback is not human approval. Reviews 1195, 1197 and 1198 were evaluated; layout/readability/privacy changes saved before final submission through 1198.",
+      "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets).",
+      "submittedOn": "2026-10-15",
+      "completedOn": "2026-10-15",
+      "licenseApproval": "Manuel explicitly approved public submission under TRMNL Community Plugin License in this chat on October 15, 2026.",
+      "reviewFeedbackResolution": {
+        "nativeFramework": "Shared title_bar render, native text/label/border/flex classes, lg: and portrait: adaptations. Seven equal-row sizing helpers remain; handwritten font sizes and clamping removed from device styles.",
+        "readability": "Full 6-row OG title 21 px, X title 38 px; one-line title for 6/8 avoids overlap. Native data-clamp controls title/reason truncation. Row fitting checked across all four OG layouts; X landscape/portrait verified. Native labels/title bar replace the previous tiny footer.",
+        "explicitDensity": "API result_count controls loop limit and 3/6/8 size branches explicitly. Eight OG rows fit at 16 px; three uses 26 px title with two-line detail.",
+        "privacy": "Public author text and generic developer-infrastructure demo contain no confidential company information. Form states that URL parameters can appear in standard hosting logs. Owner profile/name/audience and six-result setting restored and actual TRMNL Test request gives HTTP 200.",
+        "verifiedFalsePositives": "Current official docs explicitly support text--bold and border--h-black. company_name is mapped to the name query parameter by the polling URL and returned by the backend as name, which is displayed in the header. These suggestions do not indicate missing behavior.",
+        "latestAutomatedReview": "1198: well-built recipe, clean six-row OG and X views, neatly clamped titles, sensible field defaults; remaining suggestions/nitpicks, no critical findings. This does not establish human approval."
+      }
     },
     {
       "day": 4,
@@ -250,5 +268,6 @@
     ],
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
-  }
+  },
+  "computerUsePreference": "As of October 15, 2026: stop controlling the screen. Work in the background; do not reopen or interact with browsers unless Manuel explicitly asks. Do not bypass this preference with alternate browser automation."
 }

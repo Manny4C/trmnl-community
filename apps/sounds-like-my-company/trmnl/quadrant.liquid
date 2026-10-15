@@ -1,6 +1,5 @@
-<div class="layout layout--col"><div class="sm sm--quadrant">
-<div class="sm-head"><span class="sm-brand">SOUNDS LIKE MY COMPANY</span><span class="sm-window">{{ window_days }} days</span></div>
-<div class="sm-profile">{{ name | escape }} · {% if order == 'latest' %}Newest matches{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</div>
-<div class="sm-cards">{% for item in matches limit: 1 %}<div class="sm-card"><div class="sm-row"><div class="sm-title">{{ item.title | escape }}</div><div class="sm-meta">{{ item.source | escape }} · {{ item.published_at | date: "%b %d" }}</div></div><div class="sm-reason">{{ item.reason | escape }}</div></div>{% else %}<div class="sm-empty">No matching announcements.<br>Try a wider window or fewer filters.</div>{% endfor %}</div>
-<div class="sm-foot"><span>Checked {{ checked_at | date: "%b %d %H:%M" }} UTC</span><span>Shared wording ≠ direct competitor</span></div>
-</div></div>
+<div class="layout layout--col gap--small sm--compact sm--quadrant">
+<div class="flex flex--row flex--between gap--small w--full shrink-0"><span class="label label--base lg:label--large sm-profile">{{ name | escape }} · {% if order == 'latest' %}Newest matches{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
+<div class="flex flex--col flex--stretch-x w--full sm-cards">{% for item in matches limit: 1 %}<div class="sm-card flex flex--col flex--left flex--center-y gap--xsmall w--full">{% unless forloop.first %}<div class="border--h-black w--full shrink-0"></div>{% endunless %}<div class="flex flex--col flex--left gap--xsmall w--full"><div data-clamp="2" class="sm-title text--bold text--large lg:text--xlarge">{{ item.title | escape }}</div><div class="sm-meta label label--small lg:label--base">{{ item.source | escape }} · {{ item.published_at | date: "%b %d" }}</div></div><div data-clamp="2" class="sm-reason label label--small lg:label--large">{{ item.reason | escape }}</div></div>{% else %}<div class="sm-empty description lg:description--large">No matching announcements.<br>Try a wider window or fewer filters.</div>{% endfor %}</div>
+</div>
+{% render 'title_bar', checked_at: checked_at %}

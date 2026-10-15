@@ -2,7 +2,7 @@
   field_type: author_bio
   name: About Sounds Like My Company
   category: programming,news
-  description: Find launch announcements with product or customer wording like yours. Launch HN and Show HN titles and dates are verified with the official Hacker News API. Explainable rules, not a verified competitor list. Show HN includes projects, not just companies. Bounded source coverage. Use a public company description only; up to two topic words are sent to HN Search. No API key required.
+  description: Find launch announcements with product or customer wording like yours. Launch HN and Show HN titles and dates are verified with the official Hacker News API. Explainable rules, not a verified competitor list. Show HN includes projects, not just companies. Bounded source coverage. Use a public company description only; up to two topic words are sent to HN Search. Public descriptions only. These fields are sent in request URLs and may appear in standard hosting logs. No API key required.
   github_url: https://github.com/Manny4C/trmnl-community
   learn_more_url: https://sounds-like-my-company.vercel.app
 - keyname: company_name

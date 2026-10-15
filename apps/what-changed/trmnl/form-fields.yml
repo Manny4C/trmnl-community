@@ -13,3 +13,11 @@
   placeholder: AI startups, Y Combinator, and Nintendo. Avoid celebrity news.
   maxlength: 600
   rows: 4
+- keyname: headline_count
+  field_type: number
+  name: Number of headlines
+  description: Full screen shows up to this many matching stories. 1–3 gives more detail; 4–8 is a compact list; 9–20 uses two columns. Half and quadrant layouts show a smaller subset. Fewer matches can mean fewer headlines.
+  default: 8
+  min: 1
+  max: 20
+  step: 1

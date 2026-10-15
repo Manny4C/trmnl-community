@@ -20,8 +20,8 @@ test('Malformed and mismatched responses are rejected',()=>{
   assert.equal(savedBriefing({getItem:()=>'{bad'},'technology'),null);
 });
 test('Change counts describe displayed stories and previously unseen items rotate next',()=>{
-  const first=selectEdition(stories,{});assert.equal(first.first,true);assert.equal(first.changedCount,0);
+  const first=selectEdition(stories,{},5);assert.equal(first.first,true);assert.equal(first.changedCount,0);
   const history=Object.fromEntries(first.selected.map(s=>[s.id,s.fingerprint]));
-  const next=selectEdition(stories,history);assert.equal(next.changedCount,3);assert.equal(next.selected[0].id,'id5');
+  const next=selectEdition(stories,history,5);assert.equal(next.changedCount,3);assert.equal(next.selected[0].id,'id5');
   const updated=selectEdition([{...stories[0],fingerprint:'v2'}],history);assert.equal(updated.selected[0].status,'UPDATED');
 });

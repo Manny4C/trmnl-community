@@ -14,12 +14,13 @@ export function parseArticles(data,now=Date.now()) {
     return [{id:createHash('sha256').update(url).digest('hex').slice(0,12),fingerprint:createHash('sha256').update(title).digest('hex').slice(0,12),title,snippet:'Open the source for the full reporting.',url,source,published_at:new Date(time).toISOString(),time_kind:'indexed'}];
   });
 }
-export async function getCustomBriefing(prompt,{fetcher=fetch,now=Date.now(),poolFetcher=getSourcePool}={}) {
+export async function getCustomBriefing(prompt,{fetcher=fetch,now=Date.now(),poolFetcher=getSourcePool,count=8}={}) {
   const compiled=compilePrompt(prompt);
   const key=createHash('sha256').update(compiled.prompt).digest('hex').slice(0,16);
-  const cached=cache.get(key);
+  const cacheKey=key+':'+count;
+  const cached=cache.get(cacheKey);
   if(cached&&now-cached.at<900000)return cached.body;
-  if(pending.has(key))return pending.get(key);
+  if(pending.has(cacheKey))return pending.get(cacheKey);
   const work=(async()=>{
     const poolPromise=poolFetcher({fetcher,now}).catch(()=>null);
     let searchOk=false,searchStories=[];
@@ -44,7 +45,7 @@ export async function getCustomBriefing(prompt,{fetcher=fetch,now=Date.now(),poo
     const counts={};const diverse=ordered.filter(s=>{counts[s.source]=(counts[s.source]||0)+1;return counts[s.source]<=3;});
     const representatives=[];
     for(const group of compiled.includeGroups){const candidate=ordered.find(s=>!representatives.includes(s)&&group.some(t=>containsTerm((s.title+' '+s.snippet).toLowerCase(),t)));if(candidate)representatives.push(candidate);}
-    const selected=[...representatives,...diverse.filter(s=>!representatives.includes(s)),...ordered.filter(s=>!representatives.includes(s)&&!diverse.includes(s))].slice(0,8);
+    const selected=[...representatives,...diverse.filter(s=>!representatives.includes(s)),...ordered.filter(s=>!representatives.includes(s)&&!diverse.includes(s))].slice(0,count);
     if(!selected.length && !searchOk && cached?.body.stories.length && now-cached.at<86400000){
       return {...cached.body,stale:true,unavailable_sources:[...new Set([...(pool?.unavailable_sources||[]),'Global news search'])],notice:'Search coverage is temporarily reduced. Showing the last successful briefing.'};
     }
@@ -58,10 +59,9 @@ export async function getCustomBriefing(prompt,{fetcher=fetch,now=Date.now(),poo
     const body={topic:'custom',topic_label:'Your brief',feed_key:key,prompt:compiled.prompt,fetched_at:searchOk?new Date(now).toISOString():pool.fetched_at,stale:false,empty:selected.length===0,unavailable_sources:unavailable,stories:selected};
     if(searchStories.length)body.attribution={name:'GDELT Project',url:'https://www.gdeltproject.org/'};
     if(body.empty)body.notice='No matching stories in the available sources. Try a broader topic or fewer exclusions.';
-    while(Buffer.byteLength(JSON.stringify(body))>4800&&body.stories.length>1)body.stories.pop();
     if(cache.size>=100)cache.delete(cache.keys().next().value);
-    cache.set(key,{at:now,body});return body;
+    cache.set(cacheKey,{at:now,body});return body;
   })();
-  pending.set(key,work);
-  try{return await work;}finally{pending.delete(key);}
+  pending.set(cacheKey,work);
+  try{return await work;}finally{pending.delete(cacheKey);}
 }

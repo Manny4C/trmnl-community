@@ -46,7 +46,7 @@ export function deduplicate(items) {
   }
   return result;
 }
-export function parseFeed(xml, source, now = Date.now()) {
+export function parseFeed(xml, source, now = Date.now(), excerptLength = 150) {
   const data = parser.parse(xml);
   const entries = data.rss?.channel?.item || data.feed?.entry || [];
   return (Array.isArray(entries) ? entries : [entries]).flatMap(entry => {
@@ -57,7 +57,7 @@ export function parseFeed(xml, source, now = Date.now()) {
     const url = canonicalUrl(link);
     const time = Date.parse(entry.pubDate || entry.published || entry.updated || '');
     if (!title || !url || !Number.isFinite(time) || time > now + 3600000 || time < now - 7 * 86400000) return [];
-    let snippet = source === 'Hacker News' ? 'A story being discussed by the Hacker News community.' : cleanText(entry.description || entry.summary || '').slice(0, 150);
+    let snippet = source === 'Hacker News' ? 'A story being discussed by the Hacker News community.' : cleanText(entry.description || entry.summary || '').slice(0, excerptLength);
     const id = createHash('sha256').update(url).digest('hex').slice(0, 12);
     const fingerprint = createHash('sha256').update(title + snippet).digest('hex').slice(0, 12);
     // Public TRMNL Recipes require a family-friendly default.
@@ -99,7 +99,7 @@ export async function getSourcePool({fetcher=fetch,now=Date.now()}={}) {
   if(sourcePool && now-sourcePool.at<900000)return sourcePool.body;
   const feeds=[...new Map(Object.values(FEEDS).flat().map(f=>[f[1],f])).values()];
   const replies=await Promise.all(feeds.map(async ([source,url])=>{
-    try {const r=await fetcher(url,{signal:AbortSignal.timeout(8000),headers:{'User-Agent':'TheDailyTRMNL/2.0'}});if(!r.ok)throw Error();const xml=await r.text();if(xml.length>1500000)throw Error();return {source,items:parseFeed(xml,source,now),ok:true};}
+    try {const r=await fetcher(url,{signal:AbortSignal.timeout(8000),headers:{'User-Agent':'TheDailyTRMNL/2.0'}});if(!r.ok)throw Error();const xml=await r.text();if(xml.length>1500000)throw Error();return {source,items:parseFeed(xml,source,now,420),ok:true};}
     catch {return {source,items:[],ok:false};}
   }));
   const stories=deduplicate(replies.flatMap(r=>r.items));

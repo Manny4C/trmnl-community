@@ -32,7 +32,7 @@
       "name": "The Daily TRMNL",
       "slug": "what-changed",
       "status": "submitted_awaiting_review",
-      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search.",
+      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1\u201320 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9\u201320.",
       "websiteUrl": "https://the-daily-trmnl.vercel.app",
       "pluginId": 505118,
       "deviceInstallationStatus": "added_to_playlist",
@@ -40,16 +40,16 @@
       "buildCompletedOn": "2026-10-13",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "testStatus": "30 automated checks passed; live include/exclude prompt composition and mixed AI/YC/gaming feed verified; mobile composer has ten options and no horizontal overflow; all four renamed OG layouts visually verified with personalized data; anonymous production API gives matching results, explicit no matches, and 400 for an empty prompt",
-      "physicalDeviceVerification": "Personalized The Daily TRMNL render verified in the actual TRMNL editor on OG B/W/R/Y; installed playlist entry retained. Physical display/receipt of the renamed version has not been confirmed.",
+      "testStatus": "35 checks passed, including 1\u201320 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
+      "physicalDeviceVerification": "Count setting saved to 8 on owner installation, original news prompt retained; compact polling URL, memory transform and all four layouts saved. Actual OG full 1/8/20 and smaller layout previews verified; refreshed edition queued for device check-in. Physical receipt of this density upgrade is not confirmed.",
       "pendingActions": [
         "Monitor human Recipe review",
         "Confirm finished screen on physical device at next playlist appearance"
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Renamed existing Recipe 505118 to The Daily TRMNL; prompt field, canonical polling URL, all four layouts and Serverless memory saved; marketplace image regenerated; remains Plugin in review.",
-      "latestDeploymentId": "dpl_Z2mP4PjhmRSjzANXeqfPCvRYsn5M",
+      "reviewStatus": "Existing Recipe 505118 remains Plugin in review after adding the count field, compact polling and adaptive layouts. Original submission retained; no duplicate.",
+      "latestDeploymentId": "dpl_Et5q6QKQbj8VGeUERqJPjNs2QkPL",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
       "recipe": {
@@ -58,7 +58,7 @@
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
-        "reviewVerifiedAt": "2026-10-14T17:18:17.056126+00:00"
+        "reviewVerifiedAt": "2026-10-15T00:34:17.147556+00:00"
       },
       "previousName": "What Changed?",
       "publicSlug": "the-daily-trmnl",
@@ -66,8 +66,15 @@
       "legacyWebsiteUrl": "https://what-changed-nine.vercel.app",
       "globalSearchStatus": "GDELT was rate-limited during live checks. Matching source-feed fallback is working and the website exposes the partial status.",
       "promptMatchingMode": "topic_keyword_and_phrase_matching",
-      "pollingUrl": "https://the-daily-trmnl.vercel.app/api/briefing?prompt={{ news_prompt | url_encode }}",
-      "upgradedOn": "2026-10-13"
+      "pollingUrl": "https://the-daily-trmnl.vercel.app/api/briefing?prompt={{ news_prompt | url_encode }}&count={{ headline_count }}&format=trmnl",
+      "upgradedOn": "2026-10-13",
+      "headlineCount": {
+        "default": 8,
+        "minimum": 1,
+        "maximum": 20,
+        "twoColumnsFrom": 9
+      },
+      "headlineCountUpdatedOn": "2026-10-14"
     },
     {
       "day": 2,

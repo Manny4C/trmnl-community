@@ -58,7 +58,7 @@
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
-        "reviewVerifiedAt": "2026-10-15T00:34:17.147556+00:00"
+        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
       },
       "previousName": "What Changed?",
       "publicSlug": "the-daily-trmnl",
@@ -91,7 +91,7 @@
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
         "aiReviewId": 1185,
-        "reviewVerifiedAt": "2026-10-14T17:46:34.437992+00:00"
+        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
       },
       "sourceDirectory": "apps/yc-scout",
       "websiteUrl": "https://yc-launch-scout.vercel.app",
@@ -124,16 +124,43 @@
       "targetDate": "2026-10-15",
       "name": "Sounds Like My Company",
       "slug": "sounds-like-my-company",
-      "status": "planned",
-      "scope": "Use company description, customers and category to discover recently launched companies across permitted launch feeds. Explain similarity with cited evidence and distinguish similarity from direct competition.",
+      "status": "built_awaiting_public_license_confirmation",
+      "scope": "Public company description and customer wording launch radar across Launch HN and Show HN. Verified source titles and dates, product signals required, evidence-backed shared words and explicit related-topic groups, optional must-have/excluded words, 30/90/365-day windows and 3/6/8 results. Bounded HN coverage, not a complete company directory or a verified competitor list.",
       "recipeRequired": true,
       "recipe": {
         "name": "Sounds Like My Company",
-        "status": "not_created",
-        "pluginId": null,
-        "settingsUrl": null,
-        "publicInstallUrl": null
-      }
+        "status": "prepared_awaiting_license_confirmation",
+        "pluginId": 507810,
+        "settingsUrl": "https://trmnl.com/plugin_settings/507810/edit",
+        "publicInstallUrl": null,
+        "aiReviewId": 1195,
+        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
+      },
+      "sourceDirectory": "apps/sounds-like-my-company",
+      "websiteUrl": "https://sounds-like-my-company.vercel.app",
+      "pluginId": 507810,
+      "deviceInstallationStatus": "added_to_playlist",
+      "publicationStatus": "awaiting_action_time_license_confirmation",
+      "buildCompletedOn": "2026-10-15",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "iconStatus": "generated_and_saved_in_trmnl",
+      "featuredImageStatus": "generated_and_verified_final_og_and_x",
+      "latestDeploymentId": "dpl_HVwUb7AuEKEp8EhuWw8FaqFksJc4",
+      "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
+      "physicalDeviceVerification": "Owner playlist installed and successful manual renders recorded in TRMNL Timeline through 10:33:46 PDT. Final owner setting restored to six results with a clearly labeled Developer infrastructure demo. Actual device receipt is not confirmed.",
+      "pendingActions": [
+        "Manuel action-time approval of the Community Plugin License for final public submission",
+        "After public submission monitor human review and publish the verified installation URL on approval",
+        "Confirm physical display at a later device check-in"
+      ],
+      "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
+      "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
+      "featuredImageBlobIds": [
+        19345706,
+        19345707
+      ],
+      "reviewStatus": "Prepared, not publicly submitted. Automated AI Chef preflight 1195 is complete. Generic public demo/profile and public author description contain no confidential company information. Large-screen and four-layout suggestions were checked against actual rendered previews. Final public submit is waiting for the action-time Community Plugin License confirmation requested once in this chat.",
+      "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets)."
     },
     {
       "day": 4,

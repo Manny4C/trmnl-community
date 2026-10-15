@@ -39,6 +39,16 @@ Thirteen automated checks passed, alongside live filtering/empty-state checks, m
 
 See [app documentation](apps/yc-scout/README.md) for source scope, cache/outage behavior and developer setup. Production Vercel project `yc-scout` belongs to `manny4c-personal`; deploy from `apps/yc-scout` only.
 
+## Sounds Like My Company
+
+- [Production website](https://sounds-like-my-company.vercel.app)
+- [Owner Recipe settings](https://trmnl.com/plugin_settings/507810/edit), master `507810`, installed in Manuel's playlist.
+- [App documentation](apps/sounds-like-my-company/README.md)
+
+Public product/customer description radar across Launch HN and Show HN, with source-based matching explanations, keyword exclusions and 3/6/8-result editions. An audience match alone cannot qualify an unrelated product. Each title and date is checked through the official HN API. Coverage is a bounded sample of two HN feeds, not every recently launched company or a verified competitor list.
+
+Seventeen automated checks passed, including matching quality, source/recency filters, stale and cold outages, deduplication and the 5 kB payload limit. Four OG layouts, TRMNL X landscape/portrait and a 390-pixel-wide website were reviewed. The separate Recipe has an icon and marketplace previews. Final public submission awaits the required action-time license confirmation; it is **not submitted or approved yet**. Physical receipt remains unconfirmed. The owner installation uses a labeled developer-infrastructure demo until Manuel chooses a company profile.
+
 ## Personalized news
 
 The Daily TRMNL replaces the original four-topic selector with ten Include / Exclude / Leave out interests: AI and technology, startups, Y Combinator, markets and stocks, video games, world affairs, science and space, climate and energy, business and economy, and local news. Users add their own interests, companies, places, or exclusions. The website composes a readable prompt, generates a live feed, and copies that prompt into the Recipe's **Your news prompt** field. Local include/exclude choices require a place.

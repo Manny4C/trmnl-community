@@ -1,0 +1,13 @@
+{
+  "name": "sounds-like-my-company",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node dev.mjs",
+    "test": "node --test"
+  }
+}

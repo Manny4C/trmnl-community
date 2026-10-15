@@ -1,0 +1,17 @@
+Sounds Like My Company — private plugin setup
+
+1. Create a Private Plugin at https://trmnl.com/plugin_settings/new?keyname=private_plugin
+2. Choose Polling, GET. Paste form-fields.yml into Form Fields. Save.
+3. Use a public product description (10–300 characters), optional customers and keywords. Your company name is a label, not a website lookup. Fields are placed in a request URL; never enter confidential information.
+4. Set polling URL to the single line below:
+https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl
+5. Refresh hourly or slower. There is no serverless transform or personal API key.
+6. Paste shared.liquid into Shared. Paste the four matching .liquid files into Full, Half vertical, Half horizontal and Quadrant. Save every tab.
+7. Preview your device type. Full shows up to your 3/6/8 setting, half shows two and quadrant one. Force a refresh and add to your playlist if needed.
+
+Matching uses title words, explicit related-word groups and customer wording, not an LLM or verified competitor research. Must-have keywords are alternatives: any one must appear as a word. Exclusions remove any matching word. No-match results stay empty.
+Coverage is bounded to Launch HN and Show HN. Up to two specific words from the public profile/keywords are sent to HN Search; at most 100 unique announcements are checked through official HN API per refresh. Show HN may be a project rather than a company. Dates are post dates. Older cached and partial-source editions are labeled. Cold outages return 503 instead of a fabricated edition.
+
+Support: https://github.com/Manny4C/trmnl-community/issues
+Website: https://sounds-like-my-company.vercel.app
+Source: https://github.com/Manny4C/trmnl-community/tree/main/apps/sounds-like-my-company

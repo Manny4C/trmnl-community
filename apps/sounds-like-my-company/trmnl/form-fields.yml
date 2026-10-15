@@ -1,0 +1,68 @@
+- keyname: author
+  field_type: author_bio
+  name: About Sounds Like My Company
+  category: programming,news
+  description: Find launch announcements with product or customer wording like yours. Launch HN and Show HN titles and dates are verified with the official Hacker News API. Explainable rules, not a verified competitor list. Show HN includes projects, not just companies. Bounded source coverage. Use a public company description only; up to two topic words are sent to HN Search. No API key required.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://sounds-like-my-company.vercel.app
+- keyname: company_name
+  field_type: string
+  optional: true
+  name: Company name
+  description: A label only. We do not look up or crawl your company.
+  maxlength: 40
+- keyname: profile
+  field_type: text
+  name: Public product description
+  description: Describe what you build in 10–300 characters. Use specific product words, not only a name or website. This appears in the polling URL, so use public information only.
+  default: We build developer infrastructure for API deployment and database observability.
+  maxlength: 300
+- keyname: audience
+  field_type: string
+  optional: true
+  name: Customers (optional)
+  description: Customer words to prioritize when they also appear in an announcement title.
+  maxlength: 100
+- keyname: keywords
+  field_type: string
+  optional: true
+  name: Must include any (optional)
+  description: At least one of these words must appear in the title. Separate words with commas or spaces. Leave blank for broader topic matching.
+  maxlength: 100
+- keyname: exclude
+  field_type: string
+  optional: true
+  name: Exclude any (optional)
+  description: Remove titles containing any of these words. Matches words, not arbitrary instructions.
+  maxlength: 100
+- keyname: days
+  field_type: select
+  name: Announcement window
+  default: '90'
+  options:
+  - Past 30 days: '30'
+  - Past 90 days: '90'
+  - Past 365 days: '365'
+- keyname: source
+  field_type: select
+  name: Launch feed
+  default: all
+  options:
+  - Launch HN and Show HN: all
+  - Launch HN only: launch
+  - Show HN only: show
+- keyname: sort_order
+  field_type: select
+  name: Sort by
+  default: relevance
+  options:
+  - Closest wording first: relevance
+  - Newest matches first: latest
+- keyname: result_count
+  field_type: select
+  name: Full-screen results
+  default: '6'
+  options:
+  - Three with more room: '3'
+  - Six matches: '6'
+  - Eight compact matches: '8'

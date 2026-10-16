@@ -164,19 +164,19 @@
       "buildCompletedOn": "2026-10-15",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "featuredImageStatus": "Native framework marketplace previews regenerated before submission; latest image blob IDs not re-read after user requested no screen control.",
-      "latestDeploymentId": "dpl_5eo79bYETKXRJz6yKEZjNWHq2GDz",
+      "featuredImageStatus": "Redesigned OG and X marketplace previews regenerated and new blob IDs verified October 16.",
+      "latestDeploymentId": "dpl_CJJ76a7An29YD9eMX6UqBBgfC1gm",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
-      "physicalDeviceVerification": "Echo owner configuration persisted on Recipe 507810; actual OG preview shows six filtered meeting/agent matches. Timeline confirms manual Echo renders at 10:22:41 and final focused-keyword edition at 10:23:23 PDT on October 16. Existing owner playlist item 866518 is active. Menu reports next shown in about one hour; another Refresh now request succeeded. Delivery of the new Echo edition is not yet logged; earlier generic-demo device deliveries do not prove Echo receipt.",
+      "physicalDeviceVerification": "New radar design successfully rendered October 16 at 10:36:52/53 PDT; after playlist font override, render 10:37:19 PDT. Timeline has not recorded physical delivery of the redesigned Echo edition. Existing active playlist retained; next appearance scheduled in normal rotation. Earlier 10:08:43 delivery was the generic demo and is not evidence of new design receipt.",
       "pendingActions": [
         "Monitor human Recipe review; on approval publish the verified public installation URL",
-        "Verify delivery of the new Echo edition at its next scheduled rotation; last confirmed final render October 16 10:23:23 PDT, delivery not yet logged."
+        "Verify physical delivery of redesigned Echo edition at next playlist rotation; native successful render last observed October 16 10:37:19 PDT, new-design delivery not yet logged."
       ],
       "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
       "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
       "featuredImageBlobIds": [
-        19345706,
-        19345707
+        19473463,
+        19473464
       ],
       "reviewStatus": "Public submission succeeded after Manuel approved the license. Reloaded settings verify Plugin in review. Automated AI Chef feedback is not human approval. Reviews 1195, 1197 and 1198 were evaluated; layout/readability/privacy changes saved before final submission through 1198.",
       "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets).",
@@ -202,9 +202,19 @@
         "source": "all",
         "order": "relevance",
         "refresh": "hourly",
-        "savedAndVerifiedOn": "2026-10-16"
+        "savedAndVerifiedOn": "2026-10-16",
+        "font": "TRMNL playlist override"
       },
-      "ownerPreviewScreenshot": "apps/sounds-like-my-company/artifacts/echo-owner-preview.png"
+      "ownerPreviewScreenshot": "apps/sounds-like-my-company/artifacts/echo-owner-preview.png",
+      "uiRedesign": {
+        "completedOn": "2026-10-16",
+        "design": "Launch radar masthead, red signal mark, numbered cards, yellow Launch HN/window badges, concise overlap text and clean native title bar. Full six/eight uses two columns; three uses one roomy column. Native 1-bit black/white fallbacks; all four layouts share components.",
+        "ownerPresentation": "Playlist item 866518 now explicitly uses TRMNL font, verified selected checkmark. Other entries and device-wide Classic setting preserved. Device model confirmed OG B/W/R/Y.",
+        "validation": "17 existing product/data tests passed. 24 Liquid render checks passed across four layouts, counts 3/6/8, escaped content and empty results. Actual native OG full color/BW plus both halves/quadrant and X landscape/portrait reviewed; cards and reasons fit. Website eight/three-result editions fit; width390 actual pageWidth390 and eight cards without overflow. Public HTML/JS/CSS/ZIP content hashes match local final files.",
+        "colorScreenshot": "apps/sounds-like-my-company/artifacts/radar-full-color.png",
+        "bwScreenshot": "apps/sounds-like-my-company/artifacts/radar-full-bw.png",
+        "reviewStatus": "Existing Recipe 507810 retained; in human review, no duplicate or human approval claimed."
+      }
     },
     {
       "day": 4,

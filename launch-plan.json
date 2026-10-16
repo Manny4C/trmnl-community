@@ -225,7 +225,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_CuPvuEn4XNVRCPreEwweH39bqssB",
+      "latestDeploymentId": "dpl_4Snwkgm9DXdCnSqhzSFX8TD5L7GM",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
@@ -254,7 +254,7 @@
         "Publish verified public installation URL only after human approval; physical receipt separate"
       ],
       "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
-      "verificationTimestamp": "2026-10-16T17:33:34.134018+00:00",
+      "verificationTimestamp": "2026-10-16T17:34:09.247925+00:00",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
         "https://desk-editor-trmnl.vercel.app",
@@ -280,7 +280,7 @@
         "architecture": "GitHub-hosted hourly runner reserves budget using its ephemeral repository token, then invokes the protected Vercel curator. Curator claims exact reservation SHA once with repository write access before using the Sensitive runtime OpenAI key. Public visits and replay/race requests cannot invoke inference.",
         "firstSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/38940080432",
         "conservativeReservedUsd": 0.005585,
-        "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens."
+        "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens. Final gaming classification requires explicit gaming terms in broad NVIDIA titles; corporate AI/gaming boilerplate no longer qualifies hardware/model stories."
       }
     },
     {

@@ -34,7 +34,7 @@ export function storyInterests(feed,title,excerpt){
  if(feed.id!=='nvidia')return feed.interests;
  const text=title+' '+excerpt, interests=['technology'];
  if(/\b(?:AI|Nemotron|models?|agents?|inference|data centers?|machine learning)\b/i.test(text))interests.push('ai');
- if(/\b(?:GeForce|DLSS|gaming|games?|gamers?|G-SYNC)\b/i.test(text))interests.push('gaming');
+ if(/\b(?:GeForce|DLSS|gaming|games?|gamers?|G-SYNC)\b/i.test(title))interests.push('gaming');
  return interests;
 }
 function imageFor(entry,feed){

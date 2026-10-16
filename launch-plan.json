@@ -452,9 +452,11 @@
       "result": "All three actual review-ticket threads found in HEY. Latest email in each is automated Submitted / pick up soon acknowledgment, dated October13,14,15 respectively. No approval or human reviewer feedback in those threads. These messages were missed by earlier sender-name search; exact Recipe Review subject search found them.",
       "localEvidence": "artifacts/review-status-2026-10-16.json",
       "dashboardStatusNotRechecked": true,
-      "outboundFollowUpSent": false,
+      "outboundFollowUpSent": true,
       "officialTypicalReviewDays": "1\u20132 days; not an SLA.",
-      "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins"
+      "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins",
+      "followUpSentOn": "2026-10-16",
+      "followUpStatus": "User explicitly authorized one follow-up. Sent once in oldest existing review thread, covering all three submissions and asking about blockers/review ETA. Sent message verified in HEY. No authorization for additional outbound follow-ups. Private correspondence details are only in local ignored artifacts/review-status-2026-10-16.json."
     }
   }
 }

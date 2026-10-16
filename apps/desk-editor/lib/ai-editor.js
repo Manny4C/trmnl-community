@@ -37,5 +37,5 @@ export function parseDecisions(response,stories){
 export async function callEditor(body,key,{fetcher=fetch}={}){
  if(!key)throw Error('AI key not configured.');
  const r=await fetcher('https://api.openai.com/v1/responses',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${key}`},body:JSON.stringify(body),signal:AbortSignal.timeout(90000),redirect:'error'});
- if(!r.ok)throw Error(`AI request failed (${r.status}); no automatic retry.`);return r.json();
+ if(!r.ok){const error=Error(`AI request failed (${r.status}); no automatic retry.`);error.status=r.status;throw error;}return r.json();
 }

@@ -225,7 +225,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_BXp3Hus6J2Xo8rox6XqNrEwwQE5J",
+      "latestDeploymentId": "dpl_FuVHFKPbdGHXXi5dMEJwv4watkWy",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
@@ -255,7 +255,7 @@
         "Publish verified public installation URL only after human approval; physical receipt separate"
       ],
       "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
-      "verificationTimestamp": "2026-10-16T16:49:04.292994+00:00",
+      "verificationTimestamp": "2026-10-16T17:25:37.626100+00:00",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
         "https://desk-editor-trmnl.vercel.app",
@@ -275,7 +275,9 @@
         "budgetPolicy": "Durable compare-and-swap reservation before each single paid call; maximum input/output; 2x standard model prices plus overhead; failed calls keep reservations; no automatic retry or per-viewer inference. UTC monthly reset.",
         "authorizedKeyChoice": "Manuel chose to keep the existing key with a user-reported 15-day expiration instead of creating a new OpenAI project. API usage bills its owning project. Hosting and repository remain personal.",
         "keyStatus": "Production variable exists but the saved value is only 11 characters and fails full secret-key shape validation. User asked once to replace it; do not copy this incomplete value to GitHub or make paid requests with it.",
-        "actualPaidCalls": 0
+        "actualPaidCalls": 0,
+        "workflowVerified": "GitHub recognizes active workflow ID 386943860; zero runs. Activation variable remains false, secret not configured because saved Vercel value is incomplete.",
+        "expiryHandling": "401/403 pauses further calls for the same credential fingerprint until replacement; a dated freshness fallback remains. The first failure keeps its conservative reservation."
       }
     },
     {

@@ -9,5 +9,15 @@
   "scripts": {
     "dev": "node dev.mjs",
     "test": "node --test"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.2",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "happy-dom": "^21.0.3",
+    "jsqr": "^1.4.0",
+    "liquidjs": "^10.30.0",
+    "pngjs": "^7.0.0"
   }
 }

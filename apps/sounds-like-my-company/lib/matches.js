@@ -101,5 +101,5 @@ export function createService({fetcher=fetch,clock=Date.now}={}){
 }
 export function excerpt(value,bytes){let out='';if(Buffer.byteLength(value)<=bytes)return value;for(const c of value){if(Buffer.byteLength(out+c+'…')>bytes)break;out+=c;}return out.trimEnd()+'…';}
 export function devicePayload(data){
- return {name:excerpt(data.name,60),result_count:data.result_count||6,window_days:data.window_days,order:data.order,checked_at:data.checked_at,stale:data.stale,partial:data.partial,coverage_count:data.coverage_count,total:data.total,matches:data.matches.map(m=>({title:excerpt(m.title,190),source:m.source,batch:m.batch,published_at:m.published_at.slice(0,10),reason:excerpt(m.reason,110)}))};
+ return {links_code:data.links_code||null,links_url:data.links_url||null,links_qr_url:data.links_qr_url||null,links_status:data.links_status||null,name:excerpt(data.name,60),result_count:data.result_count||6,window_days:data.window_days,order:data.order,checked_at:data.checked_at,stale:data.stale,partial:data.partial,coverage_count:data.coverage_count,total:data.total,matches:data.matches.map(m=>({title:excerpt(m.title,190),source:m.source,batch:m.batch,published_at:m.published_at.slice(0,10),reason:excerpt(m.reason,110)}))};
 }

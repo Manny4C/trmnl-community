@@ -15,3 +15,11 @@ Coverage is bounded to Launch HN and Show HN. Up to two specific words from the 
 Support: https://github.com/Manny4C/trmnl-community/issues
 Website: https://sounds-like-my-company.vercel.app
 Source: https://github.com/Manny4C/trmnl-community/tree/main/apps/sounds-like-my-company
+
+
+Personalized clickable links (October 16 update)
+Every successful TRMNL poll saves the public settings once and returns a stable 12-character links code. Full screen adds a black/white QR with a quiet zone; all four layouts show the code. Scan the full-screen QR or go to https://sounds-like-my-company.vercel.app and enter the code in “Open your TRMNL links.” The page applies the same settings and provides live clickable announcement links. It may show newer matches than an older device screen; check its source timestamp. Bookmark the page for next time.
+
+There is no account or device credential. The code is a shareable link, not proof of TRMNL ownership. Anyone with it can read the public profile and matches. Never enter confidential company information. Different settings produce a different stable code; old pages remain available. Profile records are immutable, stored in private Vercel Blob on Manuel’s personal Hobby team (free quotas; no overage billing). No per-viewer AI calls. If storage is unavailable/quota-limited, matching still works but the device omits the new code/QR rather than displaying a nonexistent page. Existing saved pages retain their code and can be retried later. No local-memory-only codes or device API keys.
+
+An existing installed Recipe must receive the updated Shared and four layout tabs to show code/QR. Updating the website alone does not save those tabs to TRMNL. Browser-dependent changes remain deferred under the owner's no-screen-control instruction; do not claim the new QR/code is on the physical device until saved and verified.

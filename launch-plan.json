@@ -165,12 +165,13 @@
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
       "featuredImageStatus": "Redesigned OG and X marketplace previews regenerated and new blob IDs verified October 16.",
-      "latestDeploymentId": "dpl_CJJ76a7An29YD9eMX6UqBBgfC1gm",
+      "latestDeploymentId": "dpl_DujDB3XXSPuXCUJU7rA44d45AV6S",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
       "physicalDeviceVerification": "New radar design successfully rendered October 16 at 10:36:52/53 PDT; after playlist font override, render 10:37:19 PDT. Timeline has not recorded physical delivery of the redesigned Echo edition. Existing active playlist retained; next appearance scheduled in normal rotation. Earlier 10:08:43 delivery was the generic demo and is not evidence of new design receipt.",
       "pendingActions": [
         "Monitor human Recipe review; on approval publish the verified public installation URL",
-        "Verify physical delivery of redesigned Echo edition at next playlist rotation; native successful render last observed October 16 10:37:19 PDT, new-design delivery not yet logged."
+        "Verify physical delivery of redesigned Echo edition at next playlist rotation; native successful render last observed October 16 10:37:19 PDT, new-design delivery not yet logged.",
+        "When screen control is explicitly requested again, save updated Shared and all four markup tabs on existing Recipe 507810 and verify code/QR on actual OG/X renders; refresh previews if needed. Prepared package and live personal links are ready; no duplicate Recipe."
       ],
       "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
       "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
@@ -214,6 +215,20 @@
         "colorScreenshot": "apps/sounds-like-my-company/artifacts/radar-full-color.png",
         "bwScreenshot": "apps/sounds-like-my-company/artifacts/radar-full-bw.png",
         "reviewStatus": "Existing Recipe 507810 retained; in human review, no duplicate or human approval claimed."
+      },
+      "personalizedLinks": {
+        "implementedOn": "2026-10-16",
+        "status": "production_verified_recipe_markup_prepared_not_saved",
+        "storage": "Private Vercel Blob sounds-company-links, store_Kzk66hJKySc7C7Dn, Production only on personal Hobby team manny4c-personal. Free usage quotas; no overage billing.",
+        "operation": "Each successful device poll automatically saves the canonical public profile once and returns a stable grouped 12-character code, shareable page URL and QR image URL. Website code entry resolves the saved filters to current clickable HN links. Changing settings creates a new code. Same settings share one page. Anyone with code/link can view its public profile and matches; not account authentication or device verification.",
+        "ownerLinksCode": "V26N-FLJR-QZ9F",
+        "ownerLinksUrl": "https://sounds-like-my-company.vercel.app/r/V26NFLJRQZ9F",
+        "ownerPageVerifiedMatches": 6,
+        "verification": "Production POST saves Echo settings, independent GET resolves correct profile and six clickable launches, /r/ route HTTP 200, live 82px PNG decodes to exact personal URL; normal device poll returns same code and 1499-byte payload. 28 checks pass, including cold persistence, immutable/race-safe configs, errors, browser DOM opening/editing flows and 24 four-layout/count/link-presence Liquid render combinations. No actual browser/official renderer or physical QR scan QA under no-screen-control preference.",
+        "recipeRollout": "Existing Recipe 507810 remains installed/in review. Backend creates its profile on next successful poll, but new code/QR markup is only prepared in trmnl files/public ZIP and NOT saved in TRMNL. Full prepared view has native 82px QR; all four show code. No new Recipe or device receipt claimed.",
+        "failureBehavior": "Storage timeout/quota/outage omits code/QR but preserves launch data. Existing page lookup gives honest unavailable state; no reset, no ephemeral-only codes.",
+        "testCount": 28,
+        "lastVerifiedAt": "2026-10-16T18:46:56.182127+00:00"
       }
     },
     {

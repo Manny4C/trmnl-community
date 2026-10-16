@@ -1,6 +1,7 @@
 import {INTERESTS,FEEDS,fallbackScore,clean} from './editor.js';
 export const MODEL='gpt-6-luna';
-export const MONTHLY_LIMIT_MICROUSD=5_000_000;
+import {MONTHLY_LIMIT_MICROUSD,MONTHLY_LIMIT_USD} from './budget.js';
+export {MONTHLY_LIMIT_MICROUSD} from './budget.js';
 export const MAX_OUTPUT_TOKENS=3000;
 // Conservative pricing: reserve 2x current standard input plus 2x output, no cache discount.
 // Docs verified 2026-10-16: standard gpt-6-luna $0.10 input / $0.50 output per 1M.
@@ -24,7 +25,7 @@ export function reserveBudget(previous,amount,now=new Date(),runId='manual'){
  const month=now.toISOString().slice(0,7);const old=previous?.month===month?previous:{month,reserved_microusd:0,calls:0};
  if(!Number.isSafeInteger(old.reserved_microusd)||old.reserved_microusd<0||!Number.isSafeInteger(old.calls)||old.calls<0)throw Error('Invalid budget ledger; stopping closed.');
  if((old.last_run===runId)||old.reserved_microusd+amount>MONTHLY_LIMIT_MICROUSD)return null;
- return {month,limit_usd:5,reserved_microusd:old.reserved_microusd+amount,calls:old.calls+1,last_run:runId,last_reserved_at:now.toISOString(),pricing_policy:'2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called.'};
+ return {month,limit_usd:MONTHLY_LIMIT_USD,reserved_microusd:old.reserved_microusd+amount,calls:old.calls+1,last_run:runId,last_reserved_at:now.toISOString(),pricing_policy:'2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called.'};
 }
 export function parseDecisions(response,stories){
  if(response.status&&response.status!=='completed')throw Error('AI response incomplete.');

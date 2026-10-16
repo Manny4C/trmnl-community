@@ -33,8 +33,8 @@
   },
   "localBriefingCity": null,
   "budget": {
-    "authorizedPaidSpend": 5,
-    "policy": "Up to $5 per UTC calendar month authorized for Newsflash AI editor only on October 16. Existing 15-day key accepted by Manuel in latest steering; API bills its owning project. All hosting/source stay personal. Other apps use free services/existing subscriptions; no other new paid commitments."
+    "authorizedPaidSpend": 15,
+    "policy": "Up to $15 per UTC calendar month authorized for Newsflash AI editor only on October 16. Existing 15-day key accepted by Manuel in latest steering; API bills its owning project. All hosting/source stay personal. Other apps use free services/existing subscriptions; no other new paid commitments."
   },
   "dailyDefinitionOfDone": [
     "Usable production Vercel website with working plugin endpoint",
@@ -222,7 +222,7 @@
       "name": "Newsflash",
       "slug": "newsflash",
       "status": "deployed_ai_active_recipe_pending",
-      "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $5 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
+      "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
         "name": "Newsflash",
@@ -235,7 +235,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_4Snwkgm9DXdCnSqhzSFX8TD5L7GM",
+      "latestDeploymentId": "dpl_FxfixRULgYwpFStYfmgF2f84bA4E",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
@@ -244,7 +244,7 @@
       "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel\u2019s request.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
-      "testStatus": "29 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Additional protected-curator checks verify one-time claim, unauthorized write rejection, parallel/replay exclusion and expired-key pause. Actual browser/official TRMNL renderer and physical device display remain unverified. Final checks also cover raw-host/Contents fallback, gaming isolation of broad AI-model posts and priority of eligible AI-reviewed leads over unreviewed clips.",
+      "testStatus": "30 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Additional protected-curator checks verify one-time claim, unauthorized write rejection, parallel/replay exclusion and expired-key pause. Actual browser/official TRMNL renderer and physical device display remain unverified. Final checks also cover raw-host/Contents fallback, gaming isolation of broad AI-model posts and priority of eligible AI-reviewed leads over unreviewed clips.",
       "pollingUrl": "https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode }}&follow={{ follow | url_encode }}&hours={{ news_window }}&format=trmnl",
       "defaults": {
         "interests": [
@@ -264,7 +264,7 @@
         "Publish verified public installation URL only after human approval; physical receipt separate"
       ],
       "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
-      "verificationTimestamp": "2026-10-16T17:34:09.247925+00:00",
+      "verificationTimestamp": "2026-10-16T17:56:51.235410+00:00",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
         "https://desk-editor-trmnl.vercel.app",
@@ -280,7 +280,7 @@
         "dataBranch": "newsflash-data",
         "dataFile": "newsflash.json",
         "githubActivationVariable": "NEWSFLASH_AI_ENABLED=true; hourly schedule active",
-        "monthlyLimitUsd": 5,
+        "monthlyLimitUsd": 15,
         "budgetPolicy": "Durable compare-and-swap reservation before each single paid call; maximum input/output; 2x standard model prices plus overhead; failed calls keep reservations; no automatic retry or per-viewer inference. UTC monthly reset.",
         "authorizedKeyChoice": "Manuel chose to keep the existing key with a user-reported 15-day expiration instead of creating a new OpenAI project. API usage bills its owning project. Hosting and repository remain personal.",
         "keyStatus": "Sensitive Vercel Production key configured by Manuel. Key is never exported. Earlier 11-character check measured a mask and was incorrect. No further user key setup is required.",
@@ -290,7 +290,52 @@
         "architecture": "GitHub-hosted hourly runner reserves budget using its ephemeral repository token, then invokes the protected Vercel curator. Curator claims exact reservation SHA once with repository write access before using the Sensitive runtime OpenAI key. Public visits and replay/race requests cannot invoke inference.",
         "firstSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/38940080432",
         "conservativeReservedUsd": 0.005585,
-        "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens. Final gaming classification requires explicit gaming terms in broad NVIDIA titles; corporate AI/gaming boilerplate no longer qualifies hardware/model stories."
+        "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens. Final gaming classification requires explicit gaming terms in broad NVIDIA titles; corporate AI/gaming boilerplate no longer qualifies hardware/model stories.",
+        "budgetUpdatedOn": "2026-10-16",
+        "costForecast": {
+          "verifiedOn": "2026-10-16",
+          "currentImageGenerationUsd": 0,
+          "imageGenerationEnabled": false,
+          "hourlyEditor30DayConservativeReserveUsd": 4.0212,
+          "hourlyEditor31DayConservativeReserveUsd": 4.15524,
+          "actualProviderBillMeasured": false,
+          "generatedImageAssumptions": "GPT Image 2.5 Standard, 1024x768, 200 text prompt tokens, no image inputs/partial images/retries; official calculator estimates, not measured calls. One shared generated image per hour, not per user. Generation remains disabled.",
+          "imageOptions": [
+            {
+              "quality": "low",
+              "outputTokens": 134,
+              "outputUsd": 0.00402,
+              "assumedPromptTokens": 200,
+              "estimatedImageUsd": 0.00502,
+              "hourly30DayImageUsd": 3.6144,
+              "hourly30DayIncludingConservativeEditorReserveUsd": 7.6356
+            },
+            {
+              "quality": "medium",
+              "outputTokens": 301,
+              "outputUsd": 0.00903,
+              "assumedPromptTokens": 200,
+              "estimatedImageUsd": 0.01003,
+              "hourly30DayImageUsd": 7.2216,
+              "hourly30DayIncludingConservativeEditorReserveUsd": 11.2428
+            },
+            {
+              "quality": "high",
+              "outputTokens": 1204,
+              "outputUsd": 0.03612,
+              "assumedPromptTokens": 200,
+              "estimatedImageUsd": 0.03712,
+              "hourly30DayImageUsd": 26.7264,
+              "hourly30DayIncludingConservativeEditorReserveUsd": 30.7476
+            }
+          ],
+          "refreshPolicy": "Hourly shared AI editor; prepared TRMNL setup recommends 30 min; visible website refresh 10 min. Viewer/device polling does not trigger model calls.",
+          "sources": [
+            "https://developers.openai.com/api/docs/pricing",
+            "https://developers.openai.com/api/docs/guides/image-generation/index.html#gpt-image-25-and-gpt-image-2-output-tokens"
+          ]
+        },
+        "budgetVerification": "Owner increased to $15 per UTC month October 16. Application code, live CAS ledger and published package synchronized; previous $0.005585 reservation, call count and AI snapshot preserved. No extra paid model request for this budget change."
       }
     },
     {

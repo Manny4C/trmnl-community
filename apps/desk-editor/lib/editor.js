@@ -1,3 +1,4 @@
+import {MONTHLY_LIMIT_USD} from './budget.js';
 import {XMLParser,XMLValidator} from 'fast-xml-parser';
 import {createHash} from 'node:crypto';
 export const INTERESTS={technology:'Technology',ai:'AI & breakthroughs',gaming:'Video games',baseball:'Baseball',basketball:'Basketball',ev:'Tesla & electric cars',creators:'New video drops',space:'Space & science'};
@@ -90,7 +91,7 @@ export async function getEditor({fetcher=fetch,clock=()=>Date.now()}={}){
 }
 export async function getFlash(config,{poolFetcher=getPool,editorFetcher=getEditor,now=Date.now()}={}){
  const [pool,editor]=await Promise.all([poolFetcher(),editorFetcher()]);const selection=select(pool,config,editor,now);
- return {app:'Newsflash',checked_at:pool.checked_at,served_at:new Date(now).toISOString(),stale:pool.stale,config:{interests:config.interests,follow:config.follow,hours:config.hours},...selection,unavailable_sources:pool.unavailable_sources,sources:pool.sources,budget:editor?.budget?{month:editor.budget.month,limit_usd:5,reserved_usd:editor.budget.reserved_microusd/1000000}:null,coverage:'A bounded visual feed of selected official sports, technology, AI, games, car and space publishers/channels; not all world news. A video thumbnail is not claimed to be the decisive frame.'};
+ return {app:'Newsflash',checked_at:pool.checked_at,served_at:new Date(now).toISOString(),stale:pool.stale,config:{interests:config.interests,follow:config.follow,hours:config.hours},...selection,unavailable_sources:pool.unavailable_sources,sources:pool.sources,budget:editor?.budget?{month:editor.budget.month,limit_usd:MONTHLY_LIMIT_USD,reserved_usd:editor.budget.reserved_microusd/1000000}:null,coverage:'A bounded visual feed of selected official sports, technology, AI, games, car and space publishers/channels; not all world news. A video thumbnail is not claimed to be the decisive frame.'};
 }
 function bytes(s,max){const chars=Array.from(clean(s,1500));while(Buffer.byteLength(chars.join(''))>max)chars.pop();return chars.join('');}
 export function devicePayload(d){const l=d.lead;return {app:'Newsflash',checked_at:d.checked_at,stale:d.stale,partial:d.unavailable_sources.length>0,ai_status:d.ai_status,ai_generated_at:d.ai_generated_at,empty:!l,headline:l?bytes(l.title,360):'No visual story matches yet.',reason:l?bytes(l.reason,300):'Try broader interests, fewer follow words, or a wider news window.',source:l?.source||'Newsflash',published_at:l?.published_at||null,source_url:l?.url||null,image_url:l?.image.url||null,image_kind:l?.image.kind||null,image_credit:l?.image.credit||null,image_caption:l?bytes(l.image.caption,200):null,selection_method:l?.selection_method||'none'};}

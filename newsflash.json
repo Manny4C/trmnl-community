@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 5,
@@ -9,8 +9,160 @@
     "last_reserved_at": "2026-10-16T17:29:46.331Z",
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
-  "snapshot": null,
+  "snapshot": {
+    "generated_at": "2026-10-16T17:29:58.752Z",
+    "model": "gpt-6-luna",
+    "decisions": [
+      {
+        "id": "39a4d0f9a34091f6",
+        "importance": 72,
+        "reason": "MVP-focused highlights from a championship-series run; notable timely baseball coverage."
+      },
+      {
+        "id": "3d17fced0cb26d80",
+        "importance": 24,
+        "reason": "Fan-atmosphere feature, less consequential than the series result."
+      },
+      {
+        "id": "ac08974461a25a30",
+        "importance": 92,
+        "reason": "Sweep and World Series berth are a major, timely postseason turning point."
+      },
+      {
+        "id": "a1712c3191d11f79",
+        "importance": 38,
+        "reason": "Recent league highlights, but a routine nightly recap."
+      },
+      {
+        "id": "f9ac84008ae9e3b7",
+        "importance": 37,
+        "reason": "Recent individual performance feature; no broader significance indicated."
+      },
+      {
+        "id": "4d075985173aa7b4",
+        "importance": 23,
+        "reason": "Tesla Roadster promotional clip; no specifications or substantive announcement provided."
+      },
+      {
+        "id": "8d54d90471a46158",
+        "importance": 20,
+        "reason": "Promotional Roadster stunt clip with little product detail in the title."
+      },
+      {
+        "id": "6c05762eee64362d",
+        "importance": 30,
+        "reason": "Event listing may cover a product launch, but the supplied context gives no details."
+      },
+      {
+        "id": "d3eb90531c10d3e4",
+        "importance": 34,
+        "reason": "A recent creator review offers product impressions, though its specific findings are absent."
+      },
+      {
+        "id": "876b81013246184f",
+        "importance": 31,
+        "reason": "Fresh game launch trailer, but trailer-only coverage is limited in substance."
+      },
+      {
+        "id": "1f8a2c7f544ae0f9",
+        "importance": 29,
+        "reason": "Launch trailer for a Switch 2 release; no further launch details supplied."
+      },
+      {
+        "id": "0b81912d5d786443",
+        "importance": 15,
+        "reason": "Weekly Xbox roundup teaser; title provides little substantive information."
+      },
+      {
+        "id": "8f79ef73c4c53122",
+        "importance": 31,
+        "reason": "Fresh launch trailer indicates a release, but offers no detail beyond the title."
+      },
+      {
+        "id": "e3c6b593a30ca66e",
+        "importance": 31,
+        "reason": "Fresh launch trailer indicates a release, but offers no detail beyond the title."
+      },
+      {
+        "id": "53618f5f2d97ad79",
+        "importance": 18,
+        "reason": "Seasonal game-list video is promotional and not a substantive news development."
+      },
+      {
+        "id": "1265fc25e1307a8c",
+        "importance": 35,
+        "reason": "First-party AI coding feature announcement, but capabilities and impact are unspecified."
+      },
+      {
+        "id": "b59764543ac26de9",
+        "importance": 46,
+        "reason": "OpenAI reports voice and accent improvements; potentially useful product update, unverified here."
+      },
+      {
+        "id": "46e7cecee360222a",
+        "importance": 45,
+        "reason": "NVIDIA launch announcement is timely, but supplied context is truncated and sparse."
+      },
+      {
+        "id": "b655aadac97a3117",
+        "importance": 66,
+        "reason": "Reported release of new open AI models is a substantive technical update; first-party claim."
+      },
+      {
+        "id": "f899e30222bf644b",
+        "importance": 28,
+        "reason": "Artemis II heat-shield follow-up, but context is unclear and references an earlier splashdown."
+      },
+      {
+        "id": "3b5dbc13df98572c",
+        "importance": 13,
+        "reason": "Personnel/profile-style article rather than a major space development."
+      },
+      {
+        "id": "5cdba47e6d60c85b",
+        "importance": 20,
+        "reason": "Roadster promotional clip; title provides no substantive product information."
+      },
+      {
+        "id": "96160adf1c9cd382",
+        "importance": 20,
+        "reason": "Roadster promotional stunt clip; title provides no substantive product information."
+      },
+      {
+        "id": "fce2f2ac695c8316",
+        "importance": 16,
+        "reason": "Game-update promotional video with no details about the update."
+      },
+      {
+        "id": "ea64cb5ced2446d1",
+        "importance": 20,
+        "reason": "Celebratory Brewers post, less informative than coverage of the postseason result."
+      },
+      {
+        "id": "13146824d3d887c0",
+        "importance": 17,
+        "reason": "Preseason game highlights have limited stakes and routine scope."
+      },
+      {
+        "id": "f8a9696822398cb4",
+        "importance": 25,
+        "reason": "Recent player highlights, but no exceptional result or wider significance is given."
+      },
+      {
+        "id": "249fd8d9e74a7921",
+        "importance": 58,
+        "reason": "ISS solar-array rollout could materially affect station power; timely operational update."
+      },
+      {
+        "id": "ec7a3b45638121f8",
+        "importance": 38,
+        "reason": "NASA research flights are a concrete science activity, though purpose and findings are unspecified."
+      }
+    ],
+    "source_checked_at": "2026-10-16T17:29:46.662Z"
+  },
   "last_attempt_at": "2026-10-16T17:29:46.331Z",
   "pending_reservation_microusd": 5585,
-  "pending_source_checked_at": "2026-10-16T17:29:46.662Z"
+  "pending_source_checked_at": "2026-10-16T17:29:46.662Z",
+  "last_success_at": "2026-10-16T17:29:58.752Z"
 }

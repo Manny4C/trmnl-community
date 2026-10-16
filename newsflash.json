@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "editor_unavailable",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -179,5 +179,6 @@
   "last_attempt_at": "2026-10-16T23:41:24.535Z",
   "pending_reservation_microusd": 5440,
   "pending_source_checked_at": "2026-10-16T23:41:24.829Z",
-  "last_success_at": "2026-10-16T21:16:24.301Z"
+  "last_success_at": "2026-10-16T21:16:24.301Z",
+  "last_error_status": null
 }

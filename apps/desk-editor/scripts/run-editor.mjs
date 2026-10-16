@@ -1,24 +1,15 @@
-import {createHash} from 'node:crypto';
 import {getPool} from '../lib/editor.js';
-import {MODEL,candidatesForAI,requestBody,reservationFor,reserveBudget,parseDecisions,callEditor} from '../lib/ai-editor.js';
-const token=process.env.GITHUB_TOKEN,key=process.env.NEWSFLASH_OPENAI_API_KEY;
-const repo='Manny4C/trmnl-community',branch='newsflash-data',path='newsflash.json';
-if(!token)throw Error('GitHub workflow credential is required.');
-const api=`https://api.github.com/repos/${repo}/contents/${path}`;
-async function read(){const r=await fetch(api+'?ref='+branch,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('Cannot read durable Newsflash state; stopping closed.');const file=await r.json();return {sha:file.sha,state:JSON.parse(Buffer.from(file.content,'base64').toString())};}
-async function write(state,sha,message){const r=await fetch(api,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({branch,sha,message,content:Buffer.from(JSON.stringify(state,null,2)+'\n').toString('base64')}),signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('Atomic state write failed; no model call will be attempted or retried.');const result=await r.json();return result.content.sha;}
-const now=new Date(),runId=process.env.GITHUB_RUN_ID||`manual-${now.toISOString()}`;
-let {state,sha}=await read();
-if(!state.budget||!/^\d{4}-\d{2}$/.test(state.budget.month)||state.budget.limit_usd!==5||!Number.isSafeInteger(state.budget.reserved_microusd)||state.budget.reserved_microusd<0||!Number.isSafeInteger(state.budget.calls)||state.budget.calls<0)throw Error('Missing or invalid durable budget ledger; stopping closed.');
-if(state.budget.month===now.toISOString().slice(0,7)&&state.budget.last_run===runId){console.log('This run already reserved its request; no retry call made.');process.exit(0);}
-if(!key){state.status='awaiting_api_key';state.last_attempt_at=now.toISOString();await write(state,sha,'Newsflash: awaiting editor credential');console.log('AI activation pending; no model request made.');process.exit(0);}
-const fingerprint=createHash('sha256').update(key).digest('hex').slice(0,16);
-if(state.status==='credential_unavailable'&&state.credential_fingerprint===fingerprint){console.log('The editor credential needs replacement; no new model request made.');process.exit(0);}
-const pool=await getPool();if(pool.stale)throw Error('Live feeds unavailable; keep prior AI snapshot.');
-const stories=candidatesForAI(pool);if(!stories.length)throw Error('No visual stories available.');
-const body=requestBody(stories,now),amount=reservationFor(body);const budget=reserveBudget(state.budget,amount,now,runId);
-if(!budget){state.status='budget_paused';state.last_attempt_at=now.toISOString();await write(state,sha,'Newsflash: monthly budget gate stopped editor');console.log('Budget gate closed; no model request made.');process.exit(0);}
-// Persist the conservative charge BEFORE the only paid request. CAS and workflow concurrency fail closed.
-state={...state,status:'editing',budget,last_attempt_at:now.toISOString()};sha=await write(state,sha,'Newsflash: reserve bounded AI editor request');
-try{const response=await callEditor(body,key);const decisions=parseDecisions(response,stories);state={...state,status:'ready',snapshot:{generated_at:new Date().toISOString(),model:MODEL,decisions,source_checked_at:pool.checked_at},last_success_at:new Date().toISOString()};await write(state,sha,'Newsflash: publish current grounded AI decisions');console.log(`AI edition published for ${decisions.length} visual stories. Budget reservation $${(amount/1000000).toFixed(5)}.`);}
-catch(error){state.status=[401,403].includes(error.status)?'credential_unavailable':'editor_unavailable';if(state.status==='credential_unavailable')state.credential_fingerprint=fingerprint;await write(state,sha,'Newsflash: editor unavailable; retain dated snapshot');throw Error('AI edit failed; previous snapshot retained, reservation retained, no automatic retry.');}
+import {candidatesForAI,requestBody,reservationFor,reserveBudget} from '../lib/ai-editor.js';
+import {githubStore,validLedger} from '../lib/store.js';
+const token=process.env.GITHUB_TOKEN;if(!token)throw Error('Repository workflow credential is required.');
+const store=githubStore(token),now=new Date(),runId=process.env.GITHUB_RUN_ID||`manual-${now.toISOString()}`;
+let {state,sha}=await store.read();if(!validLedger(state))throw Error('Invalid budget ledger; stopping closed.');
+if(state.budget.month===now.toISOString().slice(0,7)&&state.budget.last_run===runId){console.log('Run already reserved; no retry request made.');process.exit(0);}
+if(state.status==='credential_unavailable'){console.log('The Vercel editor credential needs replacement and activation; no model request made.');process.exit(0);}
+const pool=await getPool();if(pool.stale)throw Error('Live source outage; retaining previous edition.');
+const stories=candidatesForAI(pool);if(!stories.length)throw Error('No visual stories.');
+const amount=reservationFor(requestBody(stories,now)),budget=reserveBudget(state.budget,amount,now,runId);
+if(!budget){state.status='budget_paused';await store.write(state,sha,'Newsflash: monthly budget stopped scheduled editor');console.log('Budget gate closed.');process.exit(0);}
+state={...state,status:'editing',budget,last_attempt_at:now.toISOString(),pending_reservation_microusd:amount,pending_source_checked_at:pool.checked_at};sha=await store.write(state,sha,'Newsflash: reserve one bounded AI edit');
+const r=await fetch('https://newsflash-trmnl.vercel.app/api/curate',{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify({run_id:runId,state_sha:sha,stories}),signal:AbortSignal.timeout(120000),redirect:'error'});
+if(!r.ok)throw Error('Cloud editor did not complete; reservation retained, no automatic retry.');const result=await r.json();console.log(`AI edition published for ${result.edited_count} stories. Conservative budget reservation $${(amount/1000000).toFixed(5)}. The API key stayed inside Vercel.`);

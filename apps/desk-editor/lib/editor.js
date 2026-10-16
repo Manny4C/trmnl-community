@@ -74,8 +74,8 @@ export function select(pool,config,editor,now=Date.now()){
 }
 let editorCache=null,editorPending=null;
 export async function getEditor({fetcher=fetch,clock=()=>Date.now()}={}){
- const now=clock();if(editorCache&&now-editorCache.at<5*60000)return editorCache.value;if(editorPending)return editorPending;
- editorPending=(async()=>{try{const r=await fetcher('https://raw.githubusercontent.com/Manny4C/trmnl-community/newsflash-data/newsflash.json',{signal:AbortSignal.timeout(4000),redirect:'error'});if(!r.ok)throw Error();const s=await r.text();if(s.length>500000)throw Error();const value=JSON.parse(s);editorCache={at:now,value};return value;}catch{return editorCache?.value||{status:'awaiting_api_key',snapshot:null};}})().finally(()=>{editorPending=null;});return editorPending;
+ const now=clock();if(editorCache&&now-editorCache.at<60000)return editorCache.value;if(editorPending)return editorPending;
+ editorPending=(async()=>{try{const r=await fetcher('https://raw.githubusercontent.com/Manny4C/trmnl-community/newsflash-data/newsflash.json?edition='+Math.floor(now/60000),{signal:AbortSignal.timeout(4000),redirect:'error'});if(!r.ok)throw Error();const s=await r.text();if(s.length>500000)throw Error();const value=JSON.parse(s);editorCache={at:now,value};return value;}catch{return editorCache?.value||{status:'awaiting_api_key',snapshot:null};}})().finally(()=>{editorPending=null;});return editorPending;
 }
 export async function getFlash(config,{poolFetcher=getPool,editorFetcher=getEditor,now=Date.now()}={}){
  const [pool,editor]=await Promise.all([poolFetcher(),editorFetcher()]);const selection=select(pool,config,editor,now);

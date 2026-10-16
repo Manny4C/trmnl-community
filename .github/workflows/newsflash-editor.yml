@@ -28,4 +28,3 @@ jobs:
         working-directory: apps/desk-editor
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NEWSFLASH_OPENAI_API_KEY: ${{ secrets.NEWSFLASH_OPENAI_API_KEY }}

@@ -8,6 +8,9 @@
     },
     "api/flash.js": {
       "maxDuration": 30
+    },
+    "api/curate.js": {
+      "maxDuration": 60
     }
   },
   "headers": [

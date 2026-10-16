@@ -441,5 +441,11 @@
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
   },
-  "computerUsePreference": "Avoid unnecessary screen takeover. Manuel explicitly authorized browser actions to finish Echo owner configuration October 16; this permits the focused TRMNL update and verification. Preserve the broader background-only preference for unrelated/scheduled work unless separately authorized."
+  "computerUsePreference": "Avoid unnecessary screen takeover. Manuel explicitly authorized browser actions to finish Echo owner configuration October 16; this permits the focused TRMNL update and verification. Preserve the broader background-only preference for unrelated/scheduled work unless separately authorized.",
+  "lastPublicReviewCheck": {
+    "checkedAt": "2026-10-16T19:28:25.427026+00:00",
+    "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
+    "privateDashboard": "Not opened under no-screen-control preference. All three last verified in review October 15; do not advance their private review verification timestamps.",
+    "remainingOwnerAction": "A specifically authorized TRMNL dashboard session would allow saving the prepared four-character-code/QR layouts on existing Sounds Like My Company 507810 and creating/installing/submitting the separate prepared Newsflash Recipe. No extra key or spending approval required."
+  }
 }

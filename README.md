@@ -11,7 +11,7 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 | 1 | Tue, October 13, 2026 | The Daily TRMNL — a customized news briefing with memory |
 | 2 | Wed, October 14 | YC Scout — source-checked Launch HN announcements |
 | 3 | Thu, October 15 | Sounds Like My Company — similar recently launched companies |
-| 4 | Fri, October 16 | Desk Editor — a dynamic off-device editor |
+| 4 | Fri, October 16 | Newsflash — an image-first AI news editor |
 | 5 | Mon, October 19 | TRMNL Plays: Tiny Planet — one shared cooperative world |
 | 6 | Tue, October 20 | Game Night Radar — updates for followed Steam games |
 | 7 | Wed, October 21 | Local Morning Brief — local news, weather and transit |
@@ -47,17 +47,19 @@ See [app documentation](apps/yc-scout/README.md) for source scope, cache/outage 
 
 Public product/customer description radar across Launch HN and Show HN, with source-based matching explanations, keyword exclusions and 3/6/8-result editions. An audience match alone cannot qualify an unrelated product. Each title and date is checked through the official HN API. Coverage is a bounded sample of two HN feeds, not every recently launched company or a verified competitor list.
 
-Seventeen automated checks passed, including matching quality, source/recency filters, stale and cold outages, deduplication and the 5 kB payload limit. Automated preflight feedback was addressed before submission with native framework typography, a shared title bar, responsive sizing and native clamping. Four OG layouts, TRMNL X landscape/portrait and a 390-pixel-wide website were reviewed. The separate Recipe has an icon and marketplace previews. Manuel approved the Community Plugin License on October 15 and the final public submission succeeded. Reloaded settings verify **Plugin in review**; human approval and the public installation URL remain pending. Physical receipt remains unconfirmed. The owner installation still uses the labeled developer-infrastructure demo. Manuel supplied an Echo profile; applying it is deferred under his instruction not to control the screen.
+Seventeen automated checks passed, including matching quality, source/recency filters, stale and cold outages, deduplication and the 5 kB payload limit. Automated preflight feedback was addressed before submission with native framework typography, a shared title bar, responsive sizing and native clamping. Four OG layouts, TRMNL X landscape/portrait and a 390-pixel-wide website were reviewed. The separate Recipe has an icon and marketplace previews. Manuel approved the Community Plugin License on October 15 and the final public submission succeeded. Reloaded settings verify **Plugin in review**; human approval and the public installation URL remain pending. Physical receipt remains unconfirmed. The owner installation is configured for Echo’s Mac AI notetaker and managed agents platform, using the user-provided public descriptions, six results and focused meeting/agent/workflow keywords. Settings were saved and a fresh render requested on October 16.
 
-## Desk Editor
+## Newsflash
 
-- [Production website](https://desk-editor-trmnl.vercel.app)
-- [Prepared Recipe package](https://desk-editor-trmnl.vercel.app/plugin.zip)
+- [Production website](https://newsflash-trmnl.vercel.app)
+- [Prepared Recipe package](https://newsflash-trmnl.vercel.app/plugin.zip)
 - [App documentation](apps/desk-editor/README.md)
 
-Day 4 was built early on October 16. The free, rules-based agent selects a lead and up to two supporting cards based on local time, chosen editorial mode and dated public sources. It includes real HN posts, a chosen GitHub release, optional weather for six US cities and clearly labeled original routines. Every choice has an explanation. Website includes a live preview, four approximate layouts, source notebook and a time-of-day demo. No language model or private account access is used.
+Day 4 was rebuilt on October 16 at Manuel’s request, replacing Desk Editor completely. An image-first news editor selects one current visual story for the user’s chosen interests, with original headline, source image/video preview, attribution, dates and a selection reason. Eight interests cover technology, AI, video games, baseball, basketball, Tesla/electric cars, video drops and space/science. The actual source pool is a bounded set of official channels and feeds; it does not cover all world news. A source video thumbnail is not claimed to be the decisive frame. No routines, forecasts or software-release dashboard remains.
 
-Twenty-one automated checks passed and the personal Vercel production service and ZIP are verified. All four Liquid templates were rendered in automated checks; actual browser/device layout verification remains pending. The **separate Recipe is prepared but has not been created, installed or submitted** because Manuel asked us to stop controlling his screen. Four layouts, shared markup, configuration, icon and setup notes are ready; marketplace image generation, owner installation and submission require later browser access. No approval or public install URL is claimed. This app consumes Friday's build slot; Tiny Planet remains Monday's next new app.
+Twenty-one automated checks pass, including safe image-first Liquid rendering, image/source allowlists, interest filters, stale/outage states, output validation, the 5 kB data budget and the $5 monthly AI budget gate. Sources and real thumbnail URLs are verified in production. The shared hourly cloud AI workflow and durable reservation ledger are prepared; activation is pending a complete valid API secret. Browsing/device polls never trigger model calls, and pending or expired AI choices use a labeled freshness fallback. Hosting/source remain personal. Legacy Desk Editor URLs serve the replacement.
+
+The **separate Newsflash Recipe is prepared but has not been created, installed or submitted** under Manuel’s instruction not to control his screen. All four image-led layouts, shared title bar, configuration, icon and setup notes are ready. Actual browser/official renderer visual QA, marketplace images, owner installation and submission remain pending. This remains Day 4; Tiny Planet is Monday’s next new app.
 
 ## Personalized news
 

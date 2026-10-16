@@ -1,32 +1,31 @@
-# Desk Editor — Recipe setup
+# Newsflash — separate Recipe setup
 
-The website is deployed independently. A separate TRMNL Recipe has not yet been created or submitted. These files prepare that Recipe; downloading them does not install it or establish approval.
+This completely replaces the earlier Desk Editor concept in the same Day 4 app and personal Vercel project. No Desk Editor Recipe exists, so create ONE separate Recipe named Newsflash. Never duplicate the existing Daily, YC Scout or Sounds Like My Company Recipes.
 
-1. With TRMNL Developer add-on or BYOD access, create one private plugin named **Desk Editor**. Preserve existing plugins and playlist entries.
-2. Select Polling, GET, no headers/body, no Serverless transform, framework 3.4. Choose 30-minute refresh or a supported account interval.
-3. Paste `form-fields.yml` as the custom fields. Set polling URL to:
+1. Create private plugin **Newsflash** with Polling GET, framework 3.4, no headers/body and no Serverless transform.
+2. Paste `form-fields.yml` into custom fields. Polling URL:
 
 ```
-https://desk-editor-trmnl.vercel.app/api/editor?mode={{ editorial_mode }}&timezone={{ timezone | url_encode }}&city={{ city }}&repo={{ repository }}&topics={{ topics | url_encode }}&cadence={{ cadence }}&format=trmnl
+https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode }}&follow={{ follow | url_encode }}&hours={{ news_window }}&format=trmnl
 ```
 
-4. Paste `shared.liquid` into Shared. Paste the four named `.liquid` files into their matching Full, Half horizontal, Half vertical and Quadrant tabs. No extra JS transform is needed.
-5. Icon is `icon.svg` in the archive. Generate marketplace previews only after reviewing actual OG and X landscape/portrait renders. This package does not claim actual renderer or hardware verification.
-6. Test the configured URL. Default is balanced, America/Los_Angeles, no weather, Node.js, no topic filter, one-hour selection window. No company, home city or paid account is inferred.
-7. Add the private plugin to the owner's playlist without replacing entries. Confirm renders separately from physical device receipt.
-8. Publish this existing master as its own Recipe under **Desk Editor**, description “A little judgment for your desk.”, support/source GitHub Manny4C/trmnl-community, website https://desk-editor-trmnl.vercel.app. The author has authorized public Recipe submissions; keep actual license acceptance requirements and persisted review state distinct.
-9. Record Recipe ID, owner settings URL, submission state and verified public install URL in launch-plan.json. Website release.json remains prepared until submission succeeds, then submitted; set approved and the real recipe_url only after human approval.
+3. Shared receives shared.liquid. Paste the four matching Liquid files into their Full/Half horizontal/Half vertical/Quadrant tabs. Icon is icon.svg. The native image-dither class asks the TRMNL platform to dither source imagery to the actual device palette. Images are URLs, not embedded payloads.
+4. Refresh interval 30 minutes or an account-supported interval; the AI cloud editor is hourly and may be delayed. Device refreshes never spend model tokens. Interest choices filter the shared ranked pool.
+5. Validate actual OG and X landscape/portrait image loading, long headlines, empty state, AI/fallback/cached labels and provenance. Automated Liquid checks are not official-renderer or physical-device verification. Generate marketplace previews only after this.
+6. Install on Manuel’s playlist without removing any existing plugins. Source images/thumbnails keep their source attribution. A video thumbnail is not necessarily the actual winning frame. TRMNL displays still images, never video playback.
+7. Publish as a separate Newsflash Recipe, short description “Your world. In a flash.”, support/source GitHub Manny4C/trmnl-community, website https://newsflash-trmnl.vercel.app. Record real Recipe ID/settings/submission/review/install URL in launch-plan.json. There is no Recipe ID until created.
+8. Website release.json remains prepared until public submission actually succeeds, then submitted. After human approval, set approved and the verified recipe_url. Never guess installation links.
 
-## Data policy
+## Operation and provenance
 
-Only fixed public source endpoints are fetched. No API key is required. Preferences are public query parameters and may appear in standard hosting logs. No private inbox, calendar, tasks or business account data is connected. NWS is supported for six listed US cities only. Weather is a periodically refreshed snapshot, not emergency monitoring. No new paid services or language model are used.
+Official source feeds: MLB, NBA, Tesla, Marques Brownlee, Nintendo, Xbox, PlayStation, OpenAI, Google DeepMind, Google AI, NVIDIA and NASA. Bounded recent posts (72-hour maximum), not every story or all world news. Source images only in the first version; automatic paid image generation is disabled. Label a future generated illustration as such, never as documentary photography. No arbitrary video downloading or frame extraction.
 
-## Freshness and selection
+The AI model sees bounded source titles/context and returns only candidate IDs, importance and reasons. It cannot supply arbitrary URLs, alter headlines or invent images. Freshness fallback is explicitly labeled if a story lacks a recent AI decision. Full source links and source/AI timestamps are on the website. Requests to provider feeds may fail; source availability is exposed. Source cache ten minutes, dated outage fallback six hours, AI decisions expire after six hours. Feed publication dates still determine eligibility.
 
-HN: up to 24 front-page items from the last 72 hours, checked every ten minutes per warm service. GitHub: latest stable release, checked hourly. NWS forecast: checked every fifteen minutes; active severe/extreme alerts: every five minutes. Device refresh can be slower. Cached sources keep their original check time; stale alerts are never replayed after a failed check. Routine suggestions are authored content, not source events.
+## Cloud AI and budget
 
-Selection is deterministic within 30/60/120-minute windows for the same candidate set and source states. A new source item or an active alert can change it sooner. The source pool rotates; no persistent cross-instance memory or scheduled model run is required. All selection happens on the server when polled; TRMNL receives compact JSON under 5 kB and renders an image. A website time demo only reranks its fetched snapshot and never changes device settings.
+User authorized $5/month for Newsflash on October 16, 2026. Manuel later authorized keeping his existing 15-day key instead of creating a new OpenAI project. Hosting/source remain personal; API usage bills the project that owns the selected key. Do not change any other project’s limit. Production NEWSFLASH_OPENAI_API_KEY is stored in the personal Vercel project and copied securely to the same-named secret in Manny4C/trmnl-community. Keys never enter tracked files, browser UI, logs or chat.
 
-Source docs: https://github.com/HackerNews/API ; https://docs.github.com/en/rest/releases/releases ; https://www.weather.gov/documentation/services-web-api ; https://trmnl.com/framework/docs/3.4
+Set repository variable NEWSFLASH_AI_ENABLED to true only after installing the complete owner-authorized secret. It stays false before activation. GitHub workflow .github/workflows/newsflash-editor.yml runs hourly on hosted runners, independent of Manuel’s Mac. It reads a durable CAS-protected state file newsflash.json on branch newsflash-data. It reserves a conservative worst-case request cost BEFORE making exactly one Responses API call. GITHUB_TOKEN scopes only this repository. Model gpt-6-luna, Standard/default tier, no tools, no caching discount, reasoning none, maximum 3000 output tokens, serialized body at most 18,000 bytes. Pricing reserve doubles current standard input/output prices, adds 4096 input-token overhead and never refunds failed reservations. The hard application gate stops before total reservations exceed $5 per UTC calendar month. It stops closed on invalid/missing ledger or a concurrent update conflict. Workflow concurrency serializes scheduled/manual runs; retries have the same run ID and cannot spend twice. Model/provider pricing changes need review before changing this policy. This gate covers this application, not other use of the account/key. OpenAI’s own project hard limit is a separate account control.
 
-Our original source and markup are offered under CC BY 4.0. Source stories, project release notes and third-party marks retain their own rights. Support: https://github.com/Manny4C/trmnl-community/issues
+Current actual activation/Recipe state is recorded in launch-plan.json; file preparation alone does not establish a successful AI call or Recipe submission.

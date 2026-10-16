@@ -1,57 +1,27 @@
 - keyname: author
   field_type: author_bio
-  name: About Desk Editor
-  category: productivity,news
-  description: A small rules-based agent edits your screen through the day. One lead card, up to two supporting cards and a reason for every choice. Recent Hacker News stories, a stable software release, optional US NWS weather and original routine suggestions. No language model, account key or calendar access. Public preferences appear in request URLs and may appear in standard hosting logs. Weather is a periodically refreshed snapshot, not an emergency notification service.
+  name: About Newsflash
+  category: news
+  description: Your interests, one important visual story. An off-device AI editor ranks recent stories from a bounded set of official sports, tech, AI, gaming, Tesla, creator and NASA feeds. Source images or video previews lead; original headlines, attribution and dates stay visible. A thumbnail is not necessarily an event frame. New or unreviewed stories use a labeled freshness fallback. Not comprehensive world news or a live video player. Public preference fields travel in URLs and may appear in hosting logs. No viewer API key required.
   github_url: https://github.com/Manny4C/trmnl-community
-  learn_more_url: https://desk-editor-trmnl.vercel.app
-- keyname: editorial_mode
-  field_type: select
-  name: Editorial mode
-  default: balanced
-  options:
-  - A balanced desk: balanced
-  - The builder's desk: builder
-  - A quieter desk: quiet
-- keyname: timezone
+  learn_more_url: https://newsflash-trmnl.vercel.app
+- keyname: interests
   field_type: string
-  name: Your time zone
-  description: IANA time zone, independent of the weather city. For example America/Los_Angeles or Europe/London.
-  default: America/Los_Angeles
-  maxlength: 80
-- keyname: city
-  field_type: select
-  name: Optional US weather
-  default: 'off'
-  options:
-  - No weather: 'off'
-  - San Francisco: sf
-  - New York: nyc
-  - Seattle: seattle
-  - Los Angeles: la
-  - Austin: austin
-  - Chicago: chicago
-- keyname: repository
-  field_type: select
-  name: Project to follow
-  default: node
-  options:
-  - Node.js: node
-  - React: react
-  - Next.js: next
-  - No releases: 'off'
-- keyname: topics
+  name: Your interests
+  description: Comma-separated choices. Use technology, ai, gaming, baseball, basketball, ev, creators or space. Pick one or more. The website creates the exact mix for you.
+  default: technology,ai,gaming,baseball,ev,creators,space
+  maxlength: 100
+- keyname: follow
   field_type: string
   optional: true
-  name: HN title words (optional)
-  description: Match any listed word in a recent front-page title. Not a writing prompt. Use public interests only; do not enter private information. Leave blank for broader stories.
+  name: Follow words (optional)
+  description: Keep stories matching any word in the headline or feed description. For example Brewers, Roadster, Nintendo. Public interests only; not an arbitrary writing prompt.
   maxlength: 100
-- keyname: cadence
+- keyname: news_window
   field_type: select
-  name: Selection window
-  description: Controls stable ranking windows. Device refresh is configured separately in TRMNL.
-  default: '60'
+  name: News window
+  default: '48'
   options:
-  - 30 minutes: '30'
-  - One hour: '60'
-  - Two hours: '120'
+  - Past 24 hours: '24'
+  - Past 48 hours: '48'
+  - Past 72 hours: '72'

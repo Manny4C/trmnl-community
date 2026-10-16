@@ -18,22 +18,23 @@
       "managedAgentsPlatform": "Echo lets teams build and run AI agents that use context from conversations and connected tools to carry out work\u2014from updating customer records to coordinating follow-ups and onboarding."
     },
     "source": "Manuel supplied both public product descriptions and requested their use for his owner installation on October 16, 2026. Supersedes earlier description and editorial alternative.",
-    "ownerConfigurationStatus": "prepared_not_saved_to_trmnl",
-    "pendingReason": "Hidden in-app browser redirects to sign-in. Authenticated Chrome has no visibility capability; no visible tab was created. Respect no-screen-takeover preference.",
-    "preparedOwnerFields": {
+    "ownerConfigurationStatus": "saved_to_existing_trmnl_recipe",
+    "profileLength": 233,
+    "savedOn": "2026-10-16",
+    "ownerFields": {
       "company_name": "Echo",
       "profile": "Mac AI notetaker: bot-free meeting capture, notes, summaries and live assistance. Managed agents: teams build and run AI agents using conversations and connected tools to update customer records, coordinate follow-ups and onboarding.",
       "audience": "teams",
-      "keywords": "",
+      "keywords": "notetaker meeting meetings agent agents workflow workflows onboarding transcription",
       "exclude": "",
       "result_count": 6
     },
-    "profileLength": 233
+    "verification": "TRMNL configuration updated successfully; revisited settings retain Echo, combined two-product profile, audience teams and focused keywords; hourly refresh and six results retained. Production endpoint HTTP 200, six relevant matches, compact response 1291 bytes."
   },
   "localBriefingCity": null,
   "budget": {
-    "authorizedPaidSpend": 0,
-    "policy": "Use existing authorized subscriptions and free services; no new paid commitments without a budget."
+    "authorizedPaidSpend": 5,
+    "policy": "Up to $5 per UTC calendar month authorized for Newsflash AI editor only on October 16. Existing 15-day key accepted by Manuel in latest steering; API bills its owning project. All hosting/source stay personal. Other apps use free services/existing subscriptions; no other new paid commitments."
   },
   "dailyDefinitionOfDone": [
     "Usable production Vercel website with working plugin endpoint",
@@ -166,11 +167,10 @@
       "featuredImageStatus": "Native framework marketplace previews regenerated before submission; latest image blob IDs not re-read after user requested no screen control.",
       "latestDeploymentId": "dpl_5eo79bYETKXRJz6yKEZjNWHq2GDz",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
-      "physicalDeviceVerification": "Owner playlist installed and successful manual renders recorded in TRMNL Timeline through 10:33:46 PDT. Final owner setting restored to six results with a clearly labeled Developer infrastructure demo. Actual device receipt is not confirmed.",
+      "physicalDeviceVerification": "Echo owner configuration saved and new render requested by Save. Plugin remains in original playlist and is marked Displayed now. Historical generic-demo device delivery confirmed through October 16 10:08:43 PDT. Awaiting explicit timeline confirmation for the new filtered Echo edition; do not conflate earlier deliveries with Echo.",
       "pendingActions": [
         "Monitor human Recipe review; on approval publish the verified public installation URL",
-        "Confirm physical device display later; Manuel is away from the device",
-        "Apply October 16 Echo profile (both desktop AI notetaker and managed agents platform) to existing owner installation. Prepared text fits 300 characters; not saved because background browser is signed out and authenticated Chrome cannot guarantee hidden control."
+        "Confirm physical device display later; Manuel is away from the device"
       ],
       "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
       "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
@@ -190,54 +190,80 @@
         "privacy": "Public author text and generic developer-infrastructure demo contain no confidential company information. Form states that URL parameters can appear in standard hosting logs. Owner profile/name/audience and six-result setting restored and actual TRMNL Test request gives HTTP 200.",
         "verifiedFalsePositives": "Current official docs explicitly support text--bold and border--h-black. company_name is mapped to the name query parameter by the polling URL and returned by the backend as name, which is displayed in the header. These suggestions do not indicate missing behavior.",
         "latestAutomatedReview": "1198: well-built recipe, clean six-row OG and X views, neatly clamped titles, sensible field defaults; remaining suggestions/nitpicks, no critical findings. This does not establish human approval."
-      }
+      },
+      "ownerProfileUpdatedOn": "2026-10-16"
     },
     {
       "day": 4,
       "targetDate": "2026-10-16",
-      "name": "Desk Editor",
-      "slug": "desk-editor",
-      "status": "deployed_recipe_pending",
-      "scope": "Off-device rules-based editor selects one lead and up to two supporting kinds from official HN recent front-page posts, a selected stable GitHub release, optional US NWS forecast/active severe alerts and original routine suggestions. Time-of-day and Balanced/Builder/Quiet modes determine priority, with per-card reasons and bounded 30/60/120-minute selection windows. No paid model or private account connections.",
+      "name": "Newsflash",
+      "slug": "newsflash",
+      "status": "deployed_recipe_and_ai_activation_pending",
+      "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $5 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
-        "name": "Desk Editor",
+        "name": "Newsflash",
         "status": "prepared_not_created",
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
       },
       "sourceDirectory": "apps/desk-editor",
-      "websiteUrl": "https://desk-editor-trmnl.vercel.app",
-      "legacyWebsiteUrl": "https://desk-editor-two.vercel.app",
+      "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
       "latestDeploymentId": "dpl_BXp3Hus6J2Xo8rox6XqNrEwwQE5J",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "publicationStatus": "recipe_prepared_not_created_or_submitted",
+      "publicationStatus": "newsflash_recipe_prepared_not_created_or_submitted",
       "deviceInstallationStatus": "not_installed",
-      "physicalDeviceVerification": "Not installed or physically verified. Browser/native UI operations deferred under Manuel\u2019s request not to control his screen.",
+      "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel\u2019s request.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
-      "testStatus": "21 automated behavior checks passed, including time zones/DST, contextual priority, active-alert gating, no stale alert replay, concurrent fetch coalescing, partial/stale/cold outages, exact topic words, source URL validation, 72-hour story expiry, compact UTF-8 payload under 4800 bytes and safe Liquid rendering of all four templates. Anonymous production website, ZIP, release state and valid/invalid API requests verified. Live standard device response 1242 bytes; optional SF weather edition 1364 bytes; unmatched topic/no-release 544 bytes with one routine. Actual browser visual QA, official TRMNL renderer and physical device display are not verified.",
-      "pollingUrl": "https://desk-editor-trmnl.vercel.app/api/editor?mode={{ editorial_mode }}&timezone={{ timezone | url_encode }}&city={{ city }}&repo={{ repository }}&topics={{ topics | url_encode }}&cadence={{ cadence }}&format=trmnl",
+      "testStatus": "21 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Actual browser/official TRMNL renderer and physical device display remain unverified.",
+      "pollingUrl": "https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode }}&follow={{ follow | url_encode }}&hours={{ news_window }}&format=trmnl",
       "defaults": {
-        "mode": "balanced",
-        "timezone": "America/Los_Angeles",
-        "city": "off",
-        "repo": "node",
-        "topics": "",
-        "cadence": 60
+        "interests": [
+          "technology",
+          "ai",
+          "gaming",
+          "baseball",
+          "ev",
+          "creators",
+          "space"
+        ],
+        "hours": 48,
+        "follow": ""
       },
       "pendingActions": [
-        "When browser use is explicitly requested again, create ONE separate Recipe named Desk Editor using the prepared package, validate actual OG/X landscape/portrait layouts, generate marketplace images, install on the owner playlist without removing entries, submit and record actual status",
-        "After human approval publish the verified public Recipe install URL",
-        "Confirm physical display separately from server renders"
+        "Obtain the complete owner-authorized 15-day OpenAI secret in existing personal Vercel Production NEWSFLASH_OPENAI_API_KEY; user asked once, no key in chat. Transfer securely to the same-named repository Actions secret, enable NEWSFLASH_AI_ENABLED, dispatch and verify one actual AI edit and production selection. Keep $5 application cap.",
+        "When browser use is explicitly requested again, create ONE separate Newsflash Recipe from prepared package, verify actual OG/X layouts and image loading, generate marketplace previews, preserve existing playlist, install and submit; record real status",
+        "Publish verified public installation URL only after human approval; physical receipt separate"
       ],
-      "reviewStatus": "Not submitted. Recipe package contains four layouts, shared markup, configuration, original SVG icon and setup notes. No Recipe ID or marketplace previews exist yet. Existing three Recipes were last verified in review on October 15; they were not rechecked via browser today.",
-      "verificationTimestamp": "2026-10-16T16:49:04.292994+00:00"
+      "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
+      "verificationTimestamp": "2026-10-16T16:49:04.292994+00:00",
+      "previousName": "Desk Editor",
+      "legacyWebsiteUrls": [
+        "https://desk-editor-trmnl.vercel.app",
+        "https://desk-editor-two.vercel.app"
+      ],
+      "redesignedOn": "2026-10-16",
+      "aiEditor": {
+        "status": "awaiting_complete_api_key",
+        "model": "gpt-6-luna",
+        "schedule": "hourly GitHub Actions, minute 17 UTC, independent of Mac; dispatches may be delayed",
+        "workflow": ".github/workflows/newsflash-editor.yml",
+        "workflowUrl": "https://github.com/Manny4C/trmnl-community/actions/workflows/newsflash-editor.yml",
+        "dataBranch": "newsflash-data",
+        "dataFile": "newsflash.json",
+        "githubActivationVariable": "NEWSFLASH_AI_ENABLED=false until a usable secret is installed",
+        "monthlyLimitUsd": 5,
+        "budgetPolicy": "Durable compare-and-swap reservation before each single paid call; maximum input/output; 2x standard model prices plus overhead; failed calls keep reservations; no automatic retry or per-viewer inference. UTC monthly reset.",
+        "authorizedKeyChoice": "Manuel chose to keep the existing key with a user-reported 15-day expiration instead of creating a new OpenAI project. API usage bills its owning project. Hosting and repository remain personal.",
+        "keyStatus": "Production variable exists but the saved value is only 11 characters and fails full secret-key shape validation. User asked once to replace it; do not copy this incomplete value to GitHub or make paid requests with it.",
+        "actualPaidCalls": 0
+      }
     },
     {
       "day": 5,
@@ -313,5 +339,5 @@
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
   },
-  "computerUsePreference": "As of October 15, 2026: stop controlling the screen. Work in the background; do not reopen or interact with browsers unless Manuel explicitly asks. Do not bypass this preference with alternate browser automation."
+  "computerUsePreference": "Avoid unnecessary screen takeover. Manuel explicitly authorized browser actions to finish Echo owner configuration October 16; this permits the focused TRMNL update and verification. Preserve the broader background-only preference for unrelated/scheduled work unless separately authorized."
 }

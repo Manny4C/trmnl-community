@@ -1,16 +1,9 @@
-{% assign lead = cards.first %}
-<div class="layout layout--col gap--small">
-<div class="flex flex--row flex--between gap--small w--full shrink-0"><span class="label label--base lg:label--large">{{ phase | capitalize }} / {{ mode | capitalize }}</span><span class="label label--small lg:label--base">{{ checked_at | date: "%H:%M" }} UTC{% if partial %} · PARTIAL{% endif %}</span></div>
-<div class="de-body flex flex--col flex--stretch-x gap--small w--full">
-{% if lead %}<div class="de-lead flex flex--col flex--left flex--top gap--xsmall w--full">
-<div class="border--h-black w--full shrink-0"></div><span class="label label--small lg:label--base">LEAD / {{ lead.kind | upcase }}{% if lead.stale %} · CACHED{% endif %}</span>
-<div class="text--xlarge lg:text--xxlarge text--bold de-line" data-clamp="2" data-clamp-lg="2">{{ lead.title | escape }}</div>
-<div class="description lg:description--large de-line" data-clamp="2" data-clamp-lg="3">{{ lead.summary | escape }}</div>
-<div class="label label--small lg:label--base de-line" data-clamp="2">{{ lead.reason | escape }}</div>
-<span class="label label--small lg:label--base de-line" data-clamp="1">{{ lead.source | escape }}{% if lead.published_at %} · {{ lead.published_at | date: "%b %d" }}{% endif %}{% if lead.stale %} · checked {{ lead.checked_at | date: "%b %d %H:%M" }} UTC{% endif %}</span></div>
-{% else %}<div class="description">No edition available. Refresh to try again.</div>{% endif %}
-<div class="de-support flex flex--row portrait:flex--col gap--medium w--full">
-{% for card in cards offset: 1 limit: 2 %}<div class="de-card flex flex--col flex--left flex--top gap--xsmall"><div class="border--h-black w--full shrink-0"></div><span class="label label--small lg:label--base">{{ card.kind | upcase }}{% if card.stale %} · CACHED{% endif %}</span><div class="text--large lg:text--xlarge text--bold de-line" data-clamp="2">{{ card.title | escape }}</div><div class="label label--small lg:label--base de-line" data-clamp="2">{{ card.reason | escape }}</div><span class="label label--small lg:label--base de-line" data-clamp="1">{{ card.source | escape }}{% if card.published_at %} · {{ card.published_at | date: "%b %d" }}{% endif %}</span></div>{% endfor %}
+<div class="layout layout--col gap--xsmall">
+{% if image_url %}<div class="nf-photo"><img class="image image-dither image--contain" src="{{ image_url | escape }}" alt="{{ image_caption | escape }}"></div>{% endif %}
+<div class="nf-copy flex flex--col flex--left gap--xsmall w--full">
+<div class="label label--small lg:label--base" data-clamp="1">{{ source | escape }}{% if published_at %} · {{ published_at | date: "%b %d %H:%M" }} UTC{% endif %}{% if image_kind == 'video_thumbnail' %} · VIDEO PREVIEW{% endif %}</div>
+<div class="text--xlarge lg:text--xxlarge text--bold" data-clamp="2" data-clamp-lg="2">{{ headline | escape }}</div>
+<div class="label label--small lg:label--base" data-clamp="1">{{ reason | escape }}</div>
+{% if image_credit %}<div class="label label--small lg:label--base" data-clamp="1">Image: {{ image_credit | escape }} · checked {{ checked_at | date: "%H:%M" }} UTC</div>{% endif %}
 </div></div>
-</div>
-{% render 'title_bar', phase: phase, partial: partial %}
+{% render 'title_bar', stale: stale, selection_method: selection_method, partial: partial %}

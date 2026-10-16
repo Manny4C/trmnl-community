@@ -1,5 +1,7 @@
-{% assign lead = cards.first %}
 <div class="layout layout--col gap--xsmall">
-{% if lead %}<span class="label label--small lg:label--base">{{ lead.kind | upcase }}{% if lead.stale %} · CACHED{% endif %}</span><div class="text--large lg:text--xlarge text--bold de-line" data-clamp="3">{{ lead.title | escape }}</div><div class="label label--small lg:label--base de-line" data-clamp="2">{{ lead.reason | escape }}</div><span class="label label--small lg:label--base de-line" data-clamp="1">{{ lead.source | escape }}</span>{% else %}<div class="description">Waiting for the next edition.</div>{% endif %}
-</div>
-{% render 'title_bar', phase: phase, partial: partial %}
+{% if image_url %}<div class="nf-photo"><img class="image image-dither image--contain" src="{{ image_url | escape }}" alt="{{ image_caption | escape }}"></div>{% endif %}
+<div class="nf-copy flex flex--col flex--left gap--xsmall w--full">
+<div class="text--base lg:text--large text--bold" data-clamp="2">{{ headline | escape }}</div>
+<span class="label label--small lg:label--base" data-clamp="1">{{ source | escape }}{% if image_kind == 'video_thumbnail' %} · VIDEO{% endif %}{% if published_at %} · {{ published_at | date: "%b %d" }}{% endif %}</span>
+</div></div>
+{% render 'title_bar', stale: stale, selection_method: selection_method, partial: partial %}

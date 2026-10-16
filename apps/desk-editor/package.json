@@ -1,1 +1,20 @@
-{"name":"desk-editor","version":"1.0.0","private":true,"type":"module","engines":{"node":"22.x"},"scripts":{"dev":"node dev.mjs","test":"node --test"},"devDependencies":{"liquidjs":"^10.30.0"}}
+{
+  "name": "newsflash",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node dev.mjs",
+    "test": "node --test",
+    "edit": "node scripts/run-editor.mjs"
+  },
+  "devDependencies": {
+    "liquidjs": "^10.30.0"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2"
+  }
+}

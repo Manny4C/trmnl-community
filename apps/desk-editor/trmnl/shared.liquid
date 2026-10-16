@@ -1,7 +1,7 @@
 {% template title_bar %}
-<div class="title_bar"><span class="title">Desk Editor</span><span class="instance">{{ phase | capitalize }}{% if partial %} · PARTIAL{% endif %}</span></div>
+<div class="title_bar"><span class="title">Newsflash</span><span class="instance">{% if stale %}CACHED · {% endif %}{% if selection_method == 'ai' %}AI EDITED{% else %}FRESHNESS PICK{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
 {% endtemplate %}
 <style>
-/* Only bounded card sizing is custom; typography and layout use the framework. */
-.de-body{flex:1;min-height:0;min-width:0;overflow:hidden}.de-lead{flex:1.5;min-height:0;min-width:0;overflow:hidden}.de-support{flex:1;min-height:0;min-width:0;overflow:hidden}.de-card{flex:1;min-width:0;overflow:hidden}.de-line{min-width:0;overflow:hidden}
+/* Bounded photo regions are specific to this image-led Recipe. */
+.nf-photo{flex:1;min-height:0;min-width:0;overflow:hidden;width:100%}.nf-photo img{width:100%;height:100%;object-fit:contain}.nf-copy{flex-shrink:0;min-width:0}.nf-row-photo{flex:1.3;min-width:0;min-height:0;overflow:hidden}.nf-row-photo img{width:100%;height:100%;object-fit:contain}.nf-row-copy{flex:1;min-width:0;overflow:hidden}
 </style>

@@ -30,6 +30,13 @@ export function options(p){
  const hours=Number(p.get('hours')||48);if(![24,48,72].includes(hours))throw Error('Choose 24, 48 or 72 hours.');
  return {interests,follow,words,hours};
 }
+export function storyInterests(feed,title,excerpt){
+ if(feed.id!=='nvidia')return feed.interests;
+ const text=title+' '+excerpt, interests=['technology'];
+ if(/\b(?:AI|Nemotron|models?|agents?|inference|data centers?|machine learning)\b/i.test(text))interests.push('ai');
+ if(/\b(?:GeForce|DLSS|gaming|games?|gamers?|G-SYNC)\b/i.test(text))interests.push('gaming');
+ return interests;
+}
 function imageFor(entry,feed){
  const group=entry['media:group']||{},content=entry['content:encoded']||entry.content||entry.description||entry.summary||'';
  const html=typeof content==='object'?content['#text']||'':String(content);
@@ -46,7 +53,7 @@ export function parseFeed(xml,feed,now=Date.now()){
   const url=safeUrl(link,feed.links),stamp=Date.parse(e.pubDate||e.published||e.updated||'');
   const image=imageFor(e,feed);if(!title||!url||!image||!Number.isFinite(stamp)||stamp>now+60000||now-stamp>72*3600000)return [];
   if(/\b(?:gore|behead\w*|porn\w*|sexual assault|suicide)\b/i.test(title))return [];
-  return [{id:createHash('sha256').update(url).digest('hex').slice(0,16),title,url,source:feed.name,source_id:feed.id,kind:feed.kind,interests:feed.interests,published_at:new Date(stamp).toISOString(),excerpt:clean(e.description||e.summary||'',180),image}];
+  return [{id:createHash('sha256').update(url).digest('hex').slice(0,16),title,url,source:feed.name,source_id:feed.id,kind:feed.kind,interests:storyInterests(feed,title,clean(e.description||e.summary||'',180)),published_at:new Date(stamp).toISOString(),excerpt:clean(e.description||e.summary||'',180),image}];
  }).slice(0,18);
 }
 async function text(fetcher,url){
@@ -68,14 +75,18 @@ export function select(pool,config,editor,now=Date.now()){
  const editedAt=Date.parse(editor?.snapshot?.generated_at||''),freshEditor=Number.isFinite(editedAt)&&editedAt<=now+60000&&now-editedAt<=6*3600000;
  const decisions=new Map(freshEditor?(editor.snapshot.decisions||[]).map(d=>[d.id,d]):[]);
  const matches=pool.stories.filter(s=>s.interests.some(t=>config.interests.includes(t))&&now-Date.parse(s.published_at)<=config.hours*3600000&&Date.parse(s.published_at)<=now+60000).filter(s=>!config.words.length||config.words.some(w=>(`${s.title} ${s.excerpt}`.toLowerCase().match(/[\p{L}\p{N}+#]+/gu)||[]).includes(w)));
- const ranked=matches.map(s=>{const d=decisions.get(s.id);const ai=d&&Number.isFinite(d.importance)&&d.importance>=0&&d.importance<=100&&typeof d.reason==='string';return {...s,importance:ai?d.importance:fallbackScore(s,now),selection_method:ai?'ai':'freshness_fallback',reason:ai?clean(d.reason,160):'Selected by freshness and event wording while this story awaits AI review.',ai_edited_at:ai?editor.snapshot.generated_at:null};}).sort((a,b)=>b.importance-a.importance||Date.parse(b.published_at)-Date.parse(a.published_at)||a.id.localeCompare(b.id));
+ const ranked=matches.map(s=>{const d=decisions.get(s.id);const ai=d&&Number.isFinite(d.importance)&&d.importance>=0&&d.importance<=100&&typeof d.reason==='string';return {...s,importance:ai?d.importance:fallbackScore(s,now),selection_method:ai?'ai':'freshness_fallback',reason:ai?clean(d.reason,160):'Selected by freshness and event wording while this story awaits AI review.',ai_edited_at:ai?editor.snapshot.generated_at:null};}).sort((a,b)=>(b.selection_method==='ai')-(a.selection_method==='ai')||b.importance-a.importance||Date.parse(b.published_at)-Date.parse(a.published_at)||a.id.localeCompare(b.id));
  // Image-led ranking never substitutes unrelated stock art for the selected source story.
  const lead=ranked[0]||null;return {lead,alternatives:ranked.slice(1,7),candidate_count:matches.length,ai_status:editor?.status==='budget_paused'?'budget_paused':freshEditor?'ready':editor?.snapshot?'stale':editor?.status||'awaiting_api_key',ai_generated_at:freshEditor?editor.snapshot.generated_at:null};
 }
 let editorCache=null,editorPending=null;
 export async function getEditor({fetcher=fetch,clock=()=>Date.now()}={}){
  const now=clock();if(editorCache&&now-editorCache.at<60000)return editorCache.value;if(editorPending)return editorPending;
- editorPending=(async()=>{try{const r=await fetcher('https://raw.githubusercontent.com/Manny4C/trmnl-community/newsflash-data/newsflash.json?edition='+Math.floor(now/60000),{signal:AbortSignal.timeout(4000),redirect:'error'});if(!r.ok)throw Error();const s=await r.text();if(s.length>500000)throw Error();const value=JSON.parse(s);editorCache={at:now,value};return value;}catch{return editorCache?.value||{status:'awaiting_api_key',snapshot:null};}})().finally(()=>{editorPending=null;});return editorPending;
+ editorPending=(async()=>{
+ const endpoints=[['https://raw.githubusercontent.com/Manny4C/trmnl-community/newsflash-data/newsflash.json?edition='+Math.floor(now/60000),'application/json'],['https://api.github.com/repos/Manny4C/trmnl-community/contents/newsflash.json?ref=newsflash-data','application/vnd.github.raw+json']];
+ for(const [url,accept] of endpoints){try{const r=await fetcher(url,{headers:{Accept:accept,'User-Agent':'Newsflash/2.0 (https://github.com/Manny4C/trmnl-community)'},signal:AbortSignal.timeout(5000),redirect:'error'});if(!r.ok){console.warn('Newsflash snapshot source unavailable',r.status);continue;}const text=await r.text();if(text.length>500000)continue;let value=JSON.parse(text);if(value.encoding==='base64'&&value.content)value=JSON.parse(Buffer.from(value.content,'base64').toString('utf8'));if(typeof value.status!=='string')continue;editorCache={at:now,value};return value;}catch{console.warn('Newsflash snapshot source request failed');}}
+ return editorCache?.value||{status:'editor_unavailable',snapshot:null};
+ })().finally(()=>{editorPending=null;});return editorPending;
 }
 export async function getFlash(config,{poolFetcher=getPool,editorFetcher=getEditor,now=Date.now()}={}){
  const [pool,editor]=await Promise.all([poolFetcher(),editorFetcher()]);const selection=select(pool,config,editor,now);

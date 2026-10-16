@@ -211,7 +211,7 @@
       "targetDate": "2026-10-16",
       "name": "Newsflash",
       "slug": "newsflash",
-      "status": "deployed_recipe_and_ai_activation_pending",
+      "status": "deployed_ai_active_recipe_pending",
       "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $5 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
@@ -225,7 +225,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_FuVHFKPbdGHXXi5dMEJwv4watkWy",
+      "latestDeploymentId": "dpl_CuPvuEn4XNVRCPreEwweH39bqssB",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
@@ -234,7 +234,7 @@
       "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel\u2019s request.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
-      "testStatus": "21 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Actual browser/official TRMNL renderer and physical device display remain unverified.",
+      "testStatus": "29 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Additional protected-curator checks verify one-time claim, unauthorized write rejection, parallel/replay exclusion and expired-key pause. Actual browser/official TRMNL renderer and physical device display remain unverified. Final checks also cover raw-host/Contents fallback, gaming isolation of broad AI-model posts and priority of eligible AI-reviewed leads over unreviewed clips.",
       "pollingUrl": "https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode }}&follow={{ follow | url_encode }}&hours={{ news_window }}&format=trmnl",
       "defaults": {
         "interests": [
@@ -250,12 +250,11 @@
         "follow": ""
       },
       "pendingActions": [
-        "Obtain the complete owner-authorized 15-day OpenAI secret in existing personal Vercel Production NEWSFLASH_OPENAI_API_KEY; user asked once, no key in chat. Transfer securely to the same-named repository Actions secret, enable NEWSFLASH_AI_ENABLED, dispatch and verify one actual AI edit and production selection. Keep $5 application cap.",
         "When browser use is explicitly requested again, create ONE separate Newsflash Recipe from prepared package, verify actual OG/X layouts and image loading, generate marketplace previews, preserve existing playlist, install and submit; record real status",
         "Publish verified public installation URL only after human approval; physical receipt separate"
       ],
       "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
-      "verificationTimestamp": "2026-10-16T17:25:37.626100+00:00",
+      "verificationTimestamp": "2026-10-16T17:33:34.134018+00:00",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
         "https://desk-editor-trmnl.vercel.app",
@@ -263,21 +262,25 @@
       ],
       "redesignedOn": "2026-10-16",
       "aiEditor": {
-        "status": "awaiting_complete_api_key",
+        "status": "active_verified",
         "model": "gpt-6-luna",
         "schedule": "hourly GitHub Actions, minute 17 UTC, independent of Mac; dispatches may be delayed",
         "workflow": ".github/workflows/newsflash-editor.yml",
         "workflowUrl": "https://github.com/Manny4C/trmnl-community/actions/workflows/newsflash-editor.yml",
         "dataBranch": "newsflash-data",
         "dataFile": "newsflash.json",
-        "githubActivationVariable": "NEWSFLASH_AI_ENABLED=false until a usable secret is installed",
+        "githubActivationVariable": "NEWSFLASH_AI_ENABLED=true; hourly schedule active",
         "monthlyLimitUsd": 5,
         "budgetPolicy": "Durable compare-and-swap reservation before each single paid call; maximum input/output; 2x standard model prices plus overhead; failed calls keep reservations; no automatic retry or per-viewer inference. UTC monthly reset.",
         "authorizedKeyChoice": "Manuel chose to keep the existing key with a user-reported 15-day expiration instead of creating a new OpenAI project. API usage bills its owning project. Hosting and repository remain personal.",
-        "keyStatus": "Production variable exists but the saved value is only 11 characters and fails full secret-key shape validation. User asked once to replace it; do not copy this incomplete value to GitHub or make paid requests with it.",
-        "actualPaidCalls": 0,
-        "workflowVerified": "GitHub recognizes active workflow ID 386943860; zero runs. Activation variable remains false, secret not configured because saved Vercel value is incomplete.",
-        "expiryHandling": "401/403 pauses further calls for the same credential fingerprint until replacement; a dated freshness fallback remains. The first failure keeps its conservative reservation."
+        "keyStatus": "Sensitive Vercel Production key configured by Manuel. Key is never exported. Earlier 11-character check measured a mask and was incorrect. No further user key setup is required.",
+        "actualPaidCalls": 1,
+        "workflowVerified": "GitHub-hosted run 38940080432 succeeded, 29 decisions published at 2026-10-16T17:29:58.752Z. Earlier run 38939721801 verified scheduler setup but made no model request because the old runner lacked a GitHub key; its success was not inference.",
+        "expiryHandling": "401/403 records credential_unavailable and stops subsequent scheduled model calls until owner replacement/activation. Conservative reservation remains. No OpenAI credential is exported.",
+        "architecture": "GitHub-hosted hourly runner reserves budget using its ephemeral repository token, then invokes the protected Vercel curator. Curator claims exact reservation SHA once with repository write access before using the Sensitive runtime OpenAI key. Public visits and replay/race requests cannot invoke inference.",
+        "firstSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/38940080432",
+        "conservativeReservedUsd": 0.005585,
+        "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens."
       }
     },
     {

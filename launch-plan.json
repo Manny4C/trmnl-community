@@ -68,7 +68,7 @@
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Existing Recipe 505118 remains Plugin in review after adding the count field, compact polling and adaptive layouts. Original submission retained; no duplicate.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "latestDeploymentId": "dpl_Et5q6QKQbj8VGeUERqJPjNs2QkPL",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
@@ -78,7 +78,7 @@
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
-        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
+        "reviewVerifiedAt": "2026-10-16T20:03:59.932617+00:00"
       },
       "previousName": "What Changed?",
       "publicSlug": "the-daily-trmnl",
@@ -111,7 +111,7 @@
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
         "aiReviewId": 1185,
-        "reviewVerifiedAt": "2026-10-15T17:38:14.908730+00:00"
+        "reviewVerifiedAt": "2026-10-16T20:03:59.932617+00:00"
       },
       "sourceDirectory": "apps/yc-scout",
       "websiteUrl": "https://yc-launch-scout.vercel.app",
@@ -130,7 +130,7 @@
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
       "latestDeploymentId": "dpl_BF58f5G58PFoATEiYEyohwL7Waze",
-      "reviewStatus": "Final public submission succeeded after Manuel approved the Community Plugin License on October 14. Reloaded settings verify Plugin in review. Human approval and public install link remain pending.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
@@ -154,7 +154,7 @@
         "settingsUrl": "https://trmnl.com/plugin_settings/507810/edit",
         "publicInstallUrl": null,
         "aiReviewId": 1198,
-        "reviewVerifiedAt": "2026-10-15T18:25:53.454544+00:00"
+        "reviewVerifiedAt": "2026-10-16T20:03:59.932617+00:00"
       },
       "sourceDirectory": "apps/sounds-like-my-company",
       "websiteUrl": "https://sounds-like-my-company.vercel.app",
@@ -179,7 +179,7 @@
         19473463,
         19473464
       ],
-      "reviewStatus": "Public submission succeeded after Manuel approved the license. Reloaded settings verify Plugin in review. Automated AI Chef feedback is not human approval. Reviews 1195, 1197 and 1198 were evaluated; layout/readability/privacy changes saved before final submission through 1198.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets).",
       "submittedOn": "2026-10-15",
       "completedOn": "2026-10-15",
@@ -445,18 +445,23 @@
   "lastPublicReviewCheck": {
     "checkedAt": "2026-10-16T19:28:25.427026+00:00",
     "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
-    "privateDashboard": "Not opened under no-screen-control preference. All three last verified in review October 15; do not advance their private review verification timestamps.",
+    "privateDashboard": "Rechecked live October 16 after Manuel explicitly asked to open the review pages. All three settings show Plugin in review and submitted confirmation; Messenger Tickets list shows all three Submitted. This was a scoped read-only browser request, not permission for unrelated screen control or Recipe editing.",
     "remainingOwnerAction": "A specifically authorized TRMNL dashboard session would allow saving the prepared four-character-code/QR layouts on existing Sounds Like My Company 507810 and creating/installing/submitting the separate prepared Newsflash Recipe. No extra key or spending approval required.",
     "heyReviewCheck": {
       "checkedAt": "2026-10-16T19:31:22.142368+00:00",
       "result": "All three actual review-ticket threads found in HEY. Latest email in each is automated Submitted / pick up soon acknowledgment, dated October13,14,15 respectively. No approval or human reviewer feedback in those threads. These messages were missed by earlier sender-name search; exact Recipe Review subject search found them.",
       "localEvidence": "artifacts/review-status-2026-10-16.json",
-      "dashboardStatusNotRechecked": true,
+      "dashboardStatusNotRechecked": false,
       "outboundFollowUpSent": true,
       "officialTypicalReviewDays": "1\u20132 days; not an SLA.",
       "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins",
       "followUpSentOn": "2026-10-16",
-      "followUpStatus": "User explicitly authorized one follow-up. Sent once in oldest existing review thread, covering all three submissions and asking about blockers/review ETA. Sent message verified in HEY. No authorization for additional outbound follow-ups. Private correspondence details are only in local ignored artifacts/review-status-2026-10-16.json."
+      "followUpStatus": "User explicitly authorized one follow-up. Sent once in oldest existing review thread, covering all three submissions and asking about blockers/review ETA. Sent message verified in HEY. No authorization for additional outbound follow-ups. Private correspondence details are only in local ignored artifacts/review-status-2026-10-16.json.",
+      "liveTicketVerification": {
+        "checkedAt": "2026-10-16T20:03:59.932617+00:00",
+        "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
+        "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
+      }
     }
   }
 }

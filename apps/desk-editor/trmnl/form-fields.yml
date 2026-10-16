@@ -1,0 +1,57 @@
+- keyname: author
+  field_type: author_bio
+  name: About Desk Editor
+  category: productivity,news
+  description: A small rules-based agent edits your screen through the day. One lead card, up to two supporting cards and a reason for every choice. Recent Hacker News stories, a stable software release, optional US NWS weather and original routine suggestions. No language model, account key or calendar access. Public preferences appear in request URLs and may appear in standard hosting logs. Weather is a periodically refreshed snapshot, not an emergency notification service.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://desk-editor-trmnl.vercel.app
+- keyname: editorial_mode
+  field_type: select
+  name: Editorial mode
+  default: balanced
+  options:
+  - A balanced desk: balanced
+  - The builder's desk: builder
+  - A quieter desk: quiet
+- keyname: timezone
+  field_type: string
+  name: Your time zone
+  description: IANA time zone, independent of the weather city. For example America/Los_Angeles or Europe/London.
+  default: America/Los_Angeles
+  maxlength: 80
+- keyname: city
+  field_type: select
+  name: Optional US weather
+  default: 'off'
+  options:
+  - No weather: 'off'
+  - San Francisco: sf
+  - New York: nyc
+  - Seattle: seattle
+  - Los Angeles: la
+  - Austin: austin
+  - Chicago: chicago
+- keyname: repository
+  field_type: select
+  name: Project to follow
+  default: node
+  options:
+  - Node.js: node
+  - React: react
+  - Next.js: next
+  - No releases: 'off'
+- keyname: topics
+  field_type: string
+  optional: true
+  name: HN title words (optional)
+  description: Match any listed word in a recent front-page title. Not a writing prompt. Use public interests only; do not enter private information. Leave blank for broader stories.
+  maxlength: 100
+- keyname: cadence
+  field_type: select
+  name: Selection window
+  description: Controls stable ranking windows. Device refresh is configured separately in TRMNL.
+  default: '60'
+  options:
+  - 30 minutes: '30'
+  - One hour: '60'
+  - Two hours: '120'

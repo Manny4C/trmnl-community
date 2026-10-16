@@ -47,7 +47,17 @@ See [app documentation](apps/yc-scout/README.md) for source scope, cache/outage 
 
 Public product/customer description radar across Launch HN and Show HN, with source-based matching explanations, keyword exclusions and 3/6/8-result editions. An audience match alone cannot qualify an unrelated product. Each title and date is checked through the official HN API. Coverage is a bounded sample of two HN feeds, not every recently launched company or a verified competitor list.
 
-Seventeen automated checks passed, including matching quality, source/recency filters, stale and cold outages, deduplication and the 5 kB payload limit. Automated preflight feedback was addressed before submission with native framework typography, a shared title bar, responsive sizing and native clamping. Four OG layouts, TRMNL X landscape/portrait and a 390-pixel-wide website were reviewed. The separate Recipe has an icon and marketplace previews. Manuel approved the Community Plugin License on October 15 and the final public submission succeeded. Reloaded settings verify **Plugin in review**; human approval and the public installation URL remain pending. Physical receipt remains unconfirmed. The owner installation uses a labeled developer-infrastructure demo until Manuel chooses a company profile.
+Seventeen automated checks passed, including matching quality, source/recency filters, stale and cold outages, deduplication and the 5 kB payload limit. Automated preflight feedback was addressed before submission with native framework typography, a shared title bar, responsive sizing and native clamping. Four OG layouts, TRMNL X landscape/portrait and a 390-pixel-wide website were reviewed. The separate Recipe has an icon and marketplace previews. Manuel approved the Community Plugin License on October 15 and the final public submission succeeded. Reloaded settings verify **Plugin in review**; human approval and the public installation URL remain pending. Physical receipt remains unconfirmed. The owner installation still uses the labeled developer-infrastructure demo. Manuel supplied an Echo profile; applying it is deferred under his instruction not to control the screen.
+
+## Desk Editor
+
+- [Production website](https://desk-editor-trmnl.vercel.app)
+- [Prepared Recipe package](https://desk-editor-trmnl.vercel.app/plugin.zip)
+- [App documentation](apps/desk-editor/README.md)
+
+Day 4 was built early on October 16. The free, rules-based agent selects a lead and up to two supporting cards based on local time, chosen editorial mode and dated public sources. It includes real HN posts, a chosen GitHub release, optional weather for six US cities and clearly labeled original routines. Every choice has an explanation. Website includes a live preview, four approximate layouts, source notebook and a time-of-day demo. No language model or private account access is used.
+
+Twenty-one automated checks passed and the personal Vercel production service and ZIP are verified. All four Liquid templates were rendered in automated checks; actual browser/device layout verification remains pending. The **separate Recipe is prepared but has not been created, installed or submitted** because Manuel asked us to stop controlling his screen. Four layouts, shared markup, configuration, icon and setup notes are ready; marketplace image generation, owner installation and submission require later browser access. No approval or public install URL is claimed. This app consumes Friday's build slot; Tiny Planet remains Monday's next new app.
 
 ## Personalized news
 

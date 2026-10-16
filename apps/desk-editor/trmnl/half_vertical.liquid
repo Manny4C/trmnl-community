@@ -1,0 +1,5 @@
+{% assign lead = cards.first %}
+<div class="layout layout--col gap--small">
+{% if lead %}<span class="label label--small lg:label--base">{{ lead.kind | upcase }} / {{ mode | capitalize }}{% if lead.stale %} · CACHED{% endif %}</span><div class="text--xlarge lg:text--xxlarge text--bold de-line" data-clamp="3">{{ lead.title | escape }}</div><div class="description lg:description--large de-line" data-clamp="4">{{ lead.summary | escape }}</div><div class="label label--small lg:label--base de-line" data-clamp="3">{{ lead.reason | escape }}</div><span class="label label--small lg:label--base de-line" data-clamp="2">{{ lead.source | escape }}{% if lead.published_at %} · {{ lead.published_at | date: "%b %d" }}{% endif %}{% if lead.stale %} · checked {{ lead.checked_at | date: "%b %d %H:%M" }} UTC{% endif %}</span>{% else %}<div class="description">Waiting for the next edition.</div>{% endif %}
+</div>
+{% render 'title_bar', phase: phase, partial: partial %}

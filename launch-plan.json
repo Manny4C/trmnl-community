@@ -446,6 +446,15 @@
     "checkedAt": "2026-10-16T19:28:25.427026+00:00",
     "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
     "privateDashboard": "Not opened under no-screen-control preference. All three last verified in review October 15; do not advance their private review verification timestamps.",
-    "remainingOwnerAction": "A specifically authorized TRMNL dashboard session would allow saving the prepared four-character-code/QR layouts on existing Sounds Like My Company 507810 and creating/installing/submitting the separate prepared Newsflash Recipe. No extra key or spending approval required."
+    "remainingOwnerAction": "A specifically authorized TRMNL dashboard session would allow saving the prepared four-character-code/QR layouts on existing Sounds Like My Company 507810 and creating/installing/submitting the separate prepared Newsflash Recipe. No extra key or spending approval required.",
+    "heyReviewCheck": {
+      "checkedAt": "2026-10-16T19:31:22.142368+00:00",
+      "result": "All three actual review-ticket threads found in HEY. Latest email in each is automated Submitted / pick up soon acknowledgment, dated October13,14,15 respectively. No approval or human reviewer feedback in those threads. These messages were missed by earlier sender-name search; exact Recipe Review subject search found them.",
+      "localEvidence": "artifacts/review-status-2026-10-16.json",
+      "dashboardStatusNotRechecked": true,
+      "outboundFollowUpSent": false,
+      "officialTypicalReviewDays": "1\u20132 days; not an SLA.",
+      "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins"
+    }
   }
 }

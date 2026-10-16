@@ -1,5 +1,5 @@
 {
-  "status": "awaiting_personal_key",
+  "status": "awaiting_api_key",
   "budget": {
     "month": "2026-10",
     "limit_usd": 5,

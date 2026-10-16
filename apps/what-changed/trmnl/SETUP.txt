@@ -14,3 +14,7 @@ Developer Edition manual setup:
 Automatic data updates are limited to every 15 minutes. Prompt changes reset that feed's history. History compares previous editions, not whether a person looked at a screen. Choose 1–20 headlines; default is 8. Full screen gives 1–3 stories more detail, 4–8 a compact list, and 9–20 two columns. Mashups show a smaller subset. Only matching stories are shown, so an edition can contain fewer than requested. The compact device endpoint keeps twenty rows within the 5 kB polling budget; website responses retain full source links.
 
 Prompt matching searches for interests, names and phrases; it supports Avoid/Exclude, but does not interpret every possible writing instruction. Original-source headlines and short excerpts are attributed. GDELT dates are labeled Indexed because they are discovery times, rather than verified publication times. No matches are distinct from an outage; saved outage editions retain their original timestamp. Endpoint receives your prompt and ordinary web request information. No account or API key is required.
+
+
+COLOR AND BLACK & WHITE
+Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.

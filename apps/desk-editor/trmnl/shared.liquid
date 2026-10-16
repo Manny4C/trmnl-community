@@ -1,5 +1,5 @@
 {% template title_bar %}
-<div class="title_bar"><span class="title">Newsflash</span><span class="instance">{% if stale %}CACHED · {% endif %}{% if selection_method == 'ai' %}AI EDITED{% else %}FRESHNESS PICK{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
+<div class="title_bar"><span class="title text--red 1bit:text--black 2bit:text--black 4bit:text--black">Newsflash</span><span class="instance bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{% if stale %}CACHED · {% endif %}{% if selection_method == 'ai' %}AI EDITED{% else %}FRESHNESS PICK{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
 {% endtemplate %}
 <style>
 /* Bounded photo regions are specific to this image-led Recipe. */

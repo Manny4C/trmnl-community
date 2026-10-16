@@ -31,3 +31,7 @@ Set repository variable NEWSFLASH_AI_ENABLED to true only after deploying the pr
 Current actual activation/Recipe state is recorded in launch-plan.json; file preparation alone does not establish a successful AI call or Recipe submission.
 
 The cloud runner reserves budget, then posts the source candidates and exact reservation SHA to the protected Vercel /api/curate endpoint using its short-lived repository token. Vercel requires a matching current reservation and a successful one-time CAS claim with repository write access before using its own Sensitive key. No OpenAI key is copied into GitHub, source, logs or chat. A failed provider credential pauses the schedule until replacement/activation; do not repeatedly retry it.
+
+
+COLOR AND BLACK & WHITE
+Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.

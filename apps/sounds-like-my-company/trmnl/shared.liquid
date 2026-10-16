@@ -4,16 +4,16 @@
 {% template radar_header %}
 <div class="sm-masthead flex flex--row flex--between gap--small w--full shrink-0">
   <div class="flex flex--row flex--left gap--small sm-heading">
-    <div class="sm-signal bg--red 1bit:bg--black text--white"><span></span><span></span><span></span></div>
+    <div class="sm-signal bg--red 1bit:bg--black 2bit:bg--black 4bit:bg--black text--white"><span></span><span></span><span></span></div>
     <div class="flex flex--col flex--left gap--xsmall sm-heading"><span class="label label--small lg:label--base text--bold">YOUR LAUNCH RADAR{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span><div class="sm-company text--xlarge lg:text--xxlarge text--bold" data-clamp="1">{{ name | default: 'Your company' | escape }}</div></div>
   </div>
-  <div class="sm-edition flex flex--col flex--right gap--xsmall"><span class="sm-window label label--small lg:label--base bg--yellow 1bit:bg--white px--2 py--1">{{ window_days }} DAY WINDOW</span><span class="label label--small lg:label--base">{% if order == 'latest' %}Newest first{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
+  <div class="sm-edition flex flex--col flex--right gap--xsmall"><span class="sm-window label label--small lg:label--base bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black px--2 py--1">{{ window_days }} DAY WINDOW</span><span class="label label--small lg:label--base">{% if order == 'latest' %}Newest first{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
 {% if links_code and links_qr_url %}<div class="sm-qr flex flex--col flex--center shrink-0"><img src="{{ links_qr_url | escape }}" width="82" height="82" alt="Open your launch links"></div>{% endif %}
 </div>
 {% endtemplate %}
 {% template launch_card %}
 <article class="sm-card flex flex--col flex--left gap--xsmall bg--white {{ card_padding | default: 'p--2 lg:p--3' }}">
-  <div class="sm-card-meta flex flex--row flex--between w--full gap--small"><div class="flex flex--row flex--left gap--small"><span class="sm-number label label--small lg:label--base text--bold text--red 1bit:text--black">{% if index < 10 %}0{% endif %}{{ index }}</span><span class="sm-source label label--small lg:label--base text--bold {% if item.source == 'Launch HN' %}bg--yellow 1bit:bg--white{% else %}bg--black text--white{% endif %} px--1 py--0">{{ item.source | escape }}</span></div><span class="label label--small lg:label--base">{{ item.published_at | date: "%b %d" }}</span></div>
+  <div class="sm-card-meta flex flex--row flex--between w--full gap--small"><div class="flex flex--row flex--left gap--small"><span class="sm-number label label--small lg:label--base text--bold text--red 1bit:text--black 2bit:text--black 4bit:text--black">{% if index < 10 %}0{% endif %}{{ index }}</span><span class="sm-source label label--small lg:label--base text--bold {% if item.source == 'Launch HN' %}bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black{% else %}bg--black text--white{% endif %} px--1 py--0">{{ item.source | escape }}</span></div><span class="label label--small lg:label--base">{{ item.published_at | date: "%b %d" }}</span></div>
   <div class="sm-title {{ title_size }} text--bold w--full" data-clamp="{{ title_lines }}" data-clamp-lg="{{ title_lines }}">{{ item.title | escape }}</div>
   <div class="sm-reason label label--small lg:label--base w--full" data-clamp="1">↳ {{ item.reason | remove: 'Required keyword: ' | remove: 'Shared product wording: ' | remove: 'Related topic: ' | escape }}</div>
 </article>

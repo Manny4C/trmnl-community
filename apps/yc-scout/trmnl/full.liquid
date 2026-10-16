@@ -1,5 +1,5 @@
 <div class="layout layout--col"><div class="sc sc--full">
-<div class="sc-head"><span class="sc-brand">↗ YC SCOUT</span><span class="sc-edition">{{ mode_label | escape }}</span></div>
+<div class="sc-head"><span class="sc-brand text--red 1bit:text--black 2bit:text--black 4bit:text--black">↗ YC SCOUT</span><span class="sc-edition bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ mode_label | escape }}</span></div>
 <div class="sc-filter">{{ filter_label | escape }}{% if stale %} · CACHED{% endif %}{% if partial %} · Partial sources{% endif %}</div>
 <div class="sc-cards">{% for company in companies limit: 10 %}<div class="sc-card"><div class="sc-row-head"><div class="sc-name">{{ company.name | escape }}</div><div class="sc-meta">YC {{ company.batch | escape }} · {{ company.published_at | date: "%b %d" }}</div></div><div class="sc-desc">{{ company.description | escape }}</div></div>{% else %}<div class="sc-empty">{% if total == 0 %}No matching launches.<br>Try fewer filters or a wider window.{% else %}Launch sources unavailable.<br>Please check again later.{% endif %}</div>{% endfor %}</div>
 <div class="sc-foot"><span>Checked {{ fetched_at | date: "%b %d %H:%M" }} UTC</span><span>yc-launch-scout.vercel.app</span></div>

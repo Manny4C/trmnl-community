@@ -1,10 +1,10 @@
 <div class="layout layout--col"><div class="wc wc--quadrant">
-  <div class="wc-head"><span class="wc-brand">THE DAILY TRMNL</span><span class="wc-topic">{{ topic_label | default: topic | capitalize }}</span></div>
+  <div class="wc-head"><span class="wc-brand text--red 1bit:text--black 2bit:text--black 4bit:text--black">THE DAILY TRMNL</span><span class="wc-topic">{{ topic_label | default: topic | capitalize }}</span></div>
   <div class="wc-label">{{ briefing_label | escape }}{% if stale %} · Cached{% endif %}{% if unavailable_sources.size > 0 %} · Partial sources{% endif %}</div>
   <div class="wc-list">
   {% assign small_count = headline_count | at_most: 1 %}{% for story in stories limit: small_count %}
     <div class="wc-card">
-      <div class="wc-title">{% if story.change != blank %}<span class="wc-badge">{{ story.change }}</span>{% endif %}{{ story.title | escape }}</div>
+      <div class="wc-title">{% if story.change != blank %}<span class="wc-badge bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ story.change }}</span>{% endif %}{{ story.title | escape }}</div>
       <div class="wc-snippet">{{ story.snippet | escape }}</div>
       <div class="wc-source">{{ story.source | escape }} · {% if story.time_kind == "indexed" %}Indexed {% endif %}{{ story.published_at | date: "%b %d" }}</div>
     </div>

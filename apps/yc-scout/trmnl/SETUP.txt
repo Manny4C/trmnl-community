@@ -8,3 +8,7 @@ No transform or API key required. Empty and cached source states are explicit. I
 Data: HN Search discovers IDs. The official HN API supplies every displayed title, batch and date. Only Launch HN: Name (YC BATCH) – subtitle is accepted; Show HN is excluded. The feed covers up to 80 announcements discovered in a 200-hit search, not all YC companies. Dates are HN posting dates. Sectors use title keyword rules. Daily discovery rotates once per UTC day.
 Independent community project by Manny4C, not endorsed by Y Combinator or TRMNL.
 Support/source: https://github.com/Manny4C/trmnl-community/issues
+
+
+COLOR AND BLACK & WHITE
+Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.

@@ -23,3 +23,7 @@ Every successful TRMNL poll saves the public settings once and returns a stable 
 There is no account or device credential. The code is a shareable link, not proof of TRMNL ownership. Anyone with it can read the public profile and matches. Never enter confidential company information. Different settings produce a different stable code; old pages remain available. Profile records are immutable, stored in private Vercel Blob on Manuel’s personal Hobby team (free quotas; no overage billing). No per-viewer AI calls. If storage is unavailable/quota-limited, matching still works but the device omits the new code/QR rather than displaying a nonexistent page. Existing saved pages retain their code and can be retried later. No local-memory-only codes or device API keys.
 
 An existing installed Recipe must receive the updated Shared and four layout tabs to show code/QR. Updating the website alone does not save those tabs to TRMNL. Browser-dependent changes remain deferred under the owner's no-screen-control instruction; do not claim the new QR/code is on the physical device until saved and verified.
+
+
+COLOR AND BLACK & WHITE
+Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.

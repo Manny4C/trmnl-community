@@ -15,7 +15,7 @@
     "description": "Mac AI notetaker: bot-free meeting capture, notes, summaries and live assistance. Managed agents: teams build and run AI agents using conversations and connected tools to update customer records, coordinate follow-ups and onboarding.",
     "productDescriptions": {
       "desktopAiNotetaker": "Echo is an AI notetaker for Mac that captures meetings without a bot joining the call, turns conversations into clear notes and summaries, and offers live assistance while you talk.",
-      "managedAgentsPlatform": "Echo lets teams build and run AI agents that use context from conversations and connected tools to carry out work\u2014from updating customer records to coordinating follow-ups and onboarding."
+      "managedAgentsPlatform": "Echo lets teams build and run AI agents that use context from conversations and connected tools to carry out work—from updating customer records to coordinating follow-ups and onboarding."
     },
     "source": "Manuel supplied both public product descriptions and requested their use for his owner installation on October 16, 2026. Supersedes earlier description and editorial alternative.",
     "ownerConfigurationStatus": "saved_to_existing_trmnl_recipe",
@@ -52,7 +52,7 @@
       "name": "The Daily TRMNL",
       "slug": "what-changed",
       "status": "submitted_awaiting_review",
-      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1\u201320 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9\u201320.",
+      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1–20 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9–20.",
       "websiteUrl": "https://the-daily-trmnl.vercel.app",
       "pluginId": 505118,
       "deviceInstallationStatus": "added_to_playlist",
@@ -60,7 +60,7 @@
       "buildCompletedOn": "2026-10-13",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "testStatus": "35 checks passed, including 1\u201320 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
+      "testStatus": "35 checks passed, including 1–20 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
       "physicalDeviceVerification": "Count setting saved to 8 on owner installation, original news prompt retained; compact polling URL, memory transform and all four layouts saved. Actual OG full 1/8/20 and smaller layout previews verified; refreshed edition queued for device check-in. Physical receipt of this density upgrade is not confirmed.",
       "pendingActions": [
         "Monitor human Recipe review",
@@ -68,8 +68,8 @@
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
-      "latestDeploymentId": "dpl_Et5q6QKQbj8VGeUERqJPjNs2QkPL",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "latestDeploymentId": "dpl_5nGvz8vtuyXEcCCjG9HXSdtA1DZe",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
       "recipe": {
@@ -94,7 +94,15 @@
         "maximum": 20,
         "twoColumnsFrom": 9
       },
-      "headlineCountUpdatedOn": "2026-10-14"
+      "headlineCountUpdatedOn": "2026-10-14",
+      "colorUpdate": {
+        "updatedOn": "2026-10-16",
+        "websiteStatus": "production_html_css_and_zip_verified",
+        "packageStatus": "all_four_layouts_updated",
+        "recipeStatus": "saved_to_existing_recipe",
+        "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
+        "physicalReceipt": "unconfirmed"
+      }
     },
     {
       "day": 2,
@@ -129,15 +137,23 @@
         "Confirm actual device receipt at next playlist appearance"
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
-      "latestDeploymentId": "dpl_BF58f5G58PFoATEiYEyohwL7Waze",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "latestDeploymentId": "dpl_4ijHM3TPSX97n9TEZGaf62BezTpN",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
       "licenseApproval": "Manuel explicitly approved YC Scout public submission under TRMNL Community Plugin License on October 14, 2026.",
       "densityUpdateRequestedOn": "2026-10-14",
       "fullScreenLimit": 10,
-      "densityUpdatedOn": "2026-10-14"
+      "densityUpdatedOn": "2026-10-14",
+      "colorUpdate": {
+        "updatedOn": "2026-10-16",
+        "websiteStatus": "production_html_css_and_zip_verified",
+        "packageStatus": "all_four_layouts_updated",
+        "recipeStatus": "saved_to_existing_recipe",
+        "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
+        "physicalReceipt": "unconfirmed"
+      }
     },
     {
       "day": 3,
@@ -165,7 +181,7 @@
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
       "featuredImageStatus": "Redesigned OG and X marketplace previews regenerated and new blob IDs verified October 16.",
-      "latestDeploymentId": "dpl_5CvA7jphdXpFAhd29bNkmFiMce9b",
+      "latestDeploymentId": "dpl_B1t7SRW81EVhAFPVkj2GLEbF7TX1",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
       "physicalDeviceVerification": "New radar design successfully rendered October 16 at 10:36:52/53 PDT; after playlist font override, render 10:37:19 PDT. Timeline has not recorded physical delivery of the redesigned Echo edition. Existing active playlist retained; next appearance scheduled in normal rotation. Earlier 10:08:43 delivery was the generic demo and is not evidence of new design receipt.",
       "pendingActions": [
@@ -179,7 +195,7 @@
         19473463,
         19473464
       ],
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets).",
       "submittedOn": "2026-10-15",
       "completedOn": "2026-10-15",
@@ -232,6 +248,14 @@
         "legacyOwnerLinksUrl": "https://sounds-like-my-company.vercel.app/r/V26NFLJRQZ9F",
         "codeLength": 4,
         "shortCodePolicy": "Four uppercase letters/numbers. Prefer company name prefix if free; deterministic fallback candidates and atomic write-once alias creation resolve collisions without reassignment. Earlier 12-character links still work and return the new four-character code."
+      },
+      "colorUpdate": {
+        "updatedOn": "2026-10-16",
+        "websiteStatus": "production_html_css_and_zip_verified",
+        "packageStatus": "all_four_layouts_updated",
+        "recipeStatus": "saved_to_existing_recipe",
+        "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
+        "physicalReceipt": "unconfirmed"
       }
     },
     {
@@ -240,7 +264,7 @@
       "name": "Newsflash",
       "slug": "newsflash",
       "status": "deployed_ai_active_recipe_pending",
-      "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
+      "scope": "Completely rebuilt at Manuel’s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
         "name": "Newsflash",
@@ -253,13 +277,13 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_FxfixRULgYwpFStYfmgF2f84bA4E",
+      "latestDeploymentId": "dpl_EE4ak5hAuuqKyEqXaTkLovyKGD8k",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
       "publicationStatus": "newsflash_recipe_prepared_not_created_or_submitted",
       "deviceInstallationStatus": "not_installed",
-      "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel\u2019s request.",
+      "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel’s request.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
       "testStatus": "30 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Additional protected-curator checks verify one-time claim, unauthorized write rejection, parallel/replay exclusion and expired-key pause. Actual browser/official TRMNL renderer and physical device display remain unverified. Final checks also cover raw-host/Contents fallback, gaming isolation of broad AI-model posts and priority of eligible AI-reviewed leads over unreviewed clips.",
@@ -365,6 +389,14 @@
           "maximumScheduled31DayConservativeReserveUsd": 5.52048,
           "onBudgetExhaustion": "Stop paid calls; keep dated content and labeled freshness fallback. Preserve all prior reservations."
         }
+      },
+      "colorUpdate": {
+        "updatedOn": "2026-10-16",
+        "websiteStatus": "production_html_css_and_zip_verified",
+        "packageStatus": "all_four_layouts_updated",
+        "recipeStatus": "prepared_only_not_created",
+        "nativeQa": "pending_separate_recipe_creation",
+        "physicalReceipt": "unconfirmed"
       }
     },
     {
@@ -381,7 +413,8 @@
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
-      }
+      },
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
     },
     {
       "day": 6,
@@ -397,7 +430,8 @@
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
-      }
+      },
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
     },
     {
       "day": 7,
@@ -413,7 +447,8 @@
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
-      }
+      },
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
     }
   ],
   "executionRules": [
@@ -453,7 +488,7 @@
       "localEvidence": "artifacts/review-status-2026-10-16.json",
       "dashboardStatusNotRechecked": false,
       "outboundFollowUpSent": true,
-      "officialTypicalReviewDays": "1\u20132 days; not an SLA.",
+      "officialTypicalReviewDays": "1–2 days; not an SLA.",
       "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins",
       "followUpSentOn": "2026-10-16",
       "followUpStatus": "User explicitly authorized one follow-up. Sent once in oldest existing review thread, covering all three submissions and asking about blockers/review ETA. Sent message verified in HEY. No authorization for additional outbound follow-ups. Private correspondence details are only in local ignored artifacts/review-status-2026-10-16.json.",
@@ -463,5 +498,14 @@
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       }
     }
+  },
+  "displayDesignPolicy": {
+    "requestedOn": "2026-10-16",
+    "scope": "All current and future TRMNL apps, their websites, live previews and four Recipe layouts.",
+    "color": "Use native framework red/yellow accents and original source imagery; keep headlines, body text and source credits black on white.",
+    "monochrome": "Explicit 1bit/2bit/4bit black/white fallbacks. Labels, borders and shape carry meaning without color. QR codes remain pure black/white without image-dither.",
+    "preview": "Every website offers a Color/Black & white preview control. Browser photos are approximations; TRMNL image-dither renders to the target palette.",
+    "validation": "118 checks passed: existing 35 Daily, 13 YC, 32 Sounds and 30 Newsflash, plus eight cross-app palette/render/preview checks. Native TRMNL OG B/W/R/Y and 1-bit previews checked across all four layouts of all three existing Recipes (24 combinations). YC full color and BW screenshots saved. Actual physical receipt unconfirmed.",
+    "futureApps": "Required for Tiny Planet, Game Night Radar, Local Morning Brief and later maintenance. See DISPLAY-DESIGN.md."
   }
 }

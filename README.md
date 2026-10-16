@@ -94,3 +94,7 @@ A labeled owner autopilot must make at least one move every calendar day, includ
 ## Release practice
 
 Finish the first useful version, run meaningful tests, verify the responsive website and TRMNL layouts, deploy on the personal Vercel team, install on the owner's device, and submit for TRMNL review. Ask for edits after delivery. Preserve existing device content. Never publish secrets or claim physical screen verification based only on an editor preview.
+
+## Color and black & white
+
+All current and future apps must follow [DISPLAY-DESIGN.md](DISPLAY-DESIGN.md): native red/yellow accents, readable monochrome fallbacks, labeled states and pure black/white QR codes. All websites include a palette preview. After installing the Sounds Like My Company development dependencies, run `node --test test/color.test.mjs` from the repository root to verify cross-app palette behavior alongside each app’s own tests.

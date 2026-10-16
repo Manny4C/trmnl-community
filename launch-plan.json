@@ -335,7 +335,18 @@
             "https://developers.openai.com/api/docs/guides/image-generation/index.html#gpt-image-25-and-gpt-image-2-output-tokens"
           ]
         },
-        "budgetVerification": "Owner increased to $15 per UTC month October 16. Application code, live CAS ledger and published package synchronized; previous $0.005585 reservation, call count and AI snapshot preserved. No extra paid model request for this budget change."
+        "budgetVerification": "Owner increased to $15 per UTC month October 16. Application code, live CAS ledger and published package synchronized; previous $0.005585 reservation, call count and AI snapshot preserved. No extra paid model request for this budget change.",
+        "selectedOperatingPolicy": {
+          "chosenOn": "2026-10-16",
+          "authorizedBy": "Manuel asked us to choose an approach that stays within $15/month.",
+          "newsSelection": "One shared bounded AI edit hourly; no per-viewer or per-device inference.",
+          "images": "Existing story-linked publisher photos and official video thumbnails only; paid image generation remains disabled. If no relevant source image exists, show the honest empty/fallback state instead of generating art.",
+          "deviceRefresh": "Prepared Recipe recommends 30-minute checks; Newsflash is not installed yet, so actual device refresh is unverified.",
+          "monthlyApplicationLimitUsd": 15,
+          "expected30DayConservativeReserveUsd": 4.0212,
+          "maximumScheduled31DayConservativeReserveUsd": 5.52048,
+          "onBudgetExhaustion": "Stop paid calls; keep dated content and labeled freshness fallback. Preserve all prior reservations."
+        }
       }
     },
     {

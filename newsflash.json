@@ -2,7 +2,7 @@
   "status": "ready",
   "budget": {
     "month": "2026-10",
-    "limit_usd": 5,
+    "limit_usd": 15,
     "reserved_microusd": 5585,
     "calls": 1,
     "last_run": "38940080432",

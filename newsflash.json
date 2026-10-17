@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,175 +10,175 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-17T09:26:49.974Z",
+    "generated_at": "2026-10-17T13:46:25.529Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
         "id": "aac486900e5c6e67",
-        "importance": 23,
-        "reason": "Career retrospective is timely but not a new development."
+        "importance": 48,
+        "reason": "Career retrospective, including a notable World Series moment; less timely than current postseason news."
       },
       {
         "id": "97a6a223880b4dc3",
-        "importance": 94,
-        "reason": "Fresh highlights of a conference-final sweep and decisive finish."
+        "importance": 92,
+        "reason": "Fresh highlights of a claimed NLCS sweep and decisive final out; major postseason turning point."
       },
       {
         "id": "0691229134a767c0",
-        "importance": 35,
-        "reason": "Current-night plays recap; preseason timing limits stakes."
+        "importance": 39,
+        "reason": "Recent nightly plays roundup, but preseason-era basketball highlights have limited stakes."
       },
       {
         "id": "58f447b3f3274548",
-        "importance": 27,
-        "reason": "Preseason game recap, with limited competitive consequence."
+        "importance": 34,
+        "reason": "Full preseason game highlights; timely, though an exhibition carries limited consequence."
       },
       {
         "id": "4d075985173aa7b4",
-        "importance": 20,
-        "reason": "Roadster performance teaser; no substantiated specs or announcement."
+        "importance": 31,
+        "reason": "Tesla Roadster acceleration-themed promo; no specific substantiated product details in context."
       },
       {
         "id": "8d54d90471a46158",
-        "importance": 16,
-        "reason": "Promotional Roadster teaser with little concrete information."
+        "importance": 25,
+        "reason": "Roadster-branded teaser with little information beyond its promotional title."
       },
       {
         "id": "6c05762eee64362d",
-        "importance": 28,
-        "reason": "Event video may contain news, but title gives no details."
+        "importance": 34,
+        "reason": "An event video may offer product news, but the title and context give no details."
       },
       {
         "id": "a4f2c48ea8aa8ee7",
-        "importance": 43,
-        "reason": "Recent independent reaction to the Roadster, though specifics are absent."
+        "importance": 47,
+        "reason": "Recent independent creator reaction to the Roadster, but title alone gives no findings."
       },
       {
         "id": "876b81013246184f",
-        "importance": 25,
-        "reason": "Launch trailer is timely but promotional and limited in broader impact."
+        "importance": 42,
+        "reason": "Launch trailer signals a game release, but this is promotional and details are absent."
       },
       {
         "id": "1f8a2c7f544ae0f9",
-        "importance": 31,
-        "reason": "Launch trailer for a Switch 2 release; no further context supplied."
+        "importance": 39,
+        "reason": "Launch trailer for a Switch 2 release; useful gaming news but promotional."
       },
       {
         "id": "50b07391b1b1a4a8",
-        "importance": 24,
-        "reason": "Story trailer offers a game update, not a confirmed launch."
+        "importance": 35,
+        "reason": "Story trailer offers a new game preview, with no release or substantive details supplied."
       },
       {
         "id": "df05a5a223633290",
-        "importance": 30,
-        "reason": "Launch trailer is timely, though significance and game details are unclear."
+        "importance": 40,
+        "reason": "Launch trailer indicates a game launch, though the title gives little context."
       },
       {
         "id": "d3004b0505cc92f3",
-        "importance": 13,
-        "reason": "Routine game-mode promotion with little substantive news."
+        "importance": 23,
+        "reason": "Routine sports-game promotional content, not a substantive announcement."
       },
       {
         "id": "0e701358b33f8754",
-        "importance": 24,
-        "reason": "Story trailer gives a timely game preview, but no release detail."
+        "importance": 35,
+        "reason": "Story trailer for a game, but no launch timing or further details are provided."
       },
       {
         "id": "e3c6b593a30ca66e",
-        "importance": 29,
-        "reason": "Launch trailer signals a release, but wider significance is unclear."
+        "importance": 37,
+        "reason": "Launch trailer suggests a new release; limited context and promotional format temper impact."
       },
       {
         "id": "9e0ef413006ae2f5",
-        "importance": 12,
-        "reason": "Vague promotional title provides no clear feature or context."
+        "importance": 18,
+        "reason": "Cryptic promotional title gives no clear product news or context."
       },
       {
         "id": "4bd93ae62726939c",
-        "importance": 32,
-        "reason": "Signals a practical ChatGPT team-work feature, but details are sparse."
+        "importance": 44,
+        "reason": "Potentially useful shared-task feature for ChatGPT, but the title offers few specifics."
       },
       {
         "id": "46e7cecee360222a",
-        "importance": 39,
-        "reason": "Upcoming RTX Spark launch may matter to PC users; article context is truncated."
+        "importance": 42,
+        "reason": "NVIDIA launch article signals a new PC product, but supplied context is truncated."
       },
       {
         "id": "b655aadac97a3117",
-        "importance": 60,
-        "reason": "NVIDIA announces new open models, including a 120-billion-parameter model."
+        "importance": 61,
+        "reason": "NVIDIA describes new open models, including a 120-billion-parameter model; vendor claims unverified."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 31,
-        "reason": "NASA leadership appointment is a substantive agency update, not a mission milestone."
+        "importance": 47,
+        "reason": "NASA names a center director, a meaningful agency leadership update but not a mission milestone."
       },
       {
         "id": "f899e30222bf644b",
-        "importance": 59,
-        "reason": "Artemis II heat-shield follow-up concerns a key crewed-mission safety issue."
+        "importance": 20,
+        "reason": "Context refers to a past splashdown despite the recent publication; limited fresh significance."
       },
       {
         "id": "5cdba47e6d60c85b",
-        "importance": 14,
-        "reason": "Promotional Roadster teaser with no concrete details."
+        "importance": 23,
+        "reason": "Roadster-themed promotional teaser; no concrete news stated."
       },
       {
         "id": "1265fc25e1307a8c",
-        "importance": 20,
-        "reason": "Codex use-case promotion; title gives few details about what changed."
+        "importance": 31,
+        "reason": "Codex use-case video for personal sites; limited detail and likely product promotion."
       },
       {
         "id": "b59764543ac26de9",
-        "importance": 38,
-        "reason": "Announces voice and accent improvements, but scope and evidence are limited."
+        "importance": 49,
+        "reason": "OpenAI claims improved live voices and accents, a product update with no supporting detail."
       },
       {
         "id": "587dc84b8df6169d",
-        "importance": 15,
-        "reason": "Routine overview trailer with no notable release details."
+        "importance": 24,
+        "reason": "Overview trailer is promotional and provides no release or broader gaming significance."
       },
       {
         "id": "81fa23f6b9476bf4",
-        "importance": 63,
-        "reason": "Highlights an unusual first-in-MLB postseason sweep; source claim is unverified."
+        "importance": 72,
+        "reason": "Notable claimed first-in-MLB postseason reversal, though the source's claim is unverified."
       },
       {
         "id": "eac5bede1c7fadc2",
-        "importance": 48,
-        "reason": "Postseason performance recap with notable claimed pitching numbers."
+        "importance": 53,
+        "reason": "Specific postseason pitching line highlights a strong run, but is a team-source claim."
       },
       {
         "id": "db7b9a6b93df787d",
-        "importance": 29,
-        "reason": "Preseason moments compilation is timely but low-stakes."
+        "importance": 36,
+        "reason": "Season-wide preseason recap is recent but lacks regular-season or playoff stakes."
       },
       {
         "id": "c88e8c9213cfad06",
-        "importance": 22,
-        "reason": "Preseason game highlights have limited competitive significance."
+        "importance": 32,
+        "reason": "Preseason game highlights are timely but have limited competitive significance."
       },
       {
         "id": "96160adf1c9cd382",
-        "importance": 15,
-        "reason": "Another Roadster kickflip teaser, with no substantiated details."
+        "importance": 24,
+        "reason": "Duplicate Roadster kickflip teaser with no additional context."
       },
       {
         "id": "3b5dbc13df98572c",
-        "importance": 21,
-        "reason": "Personal profile provides little direct mission or program news."
+        "importance": 29,
+        "reason": "NASA profile of an Artemis team member; context is incomplete and not a mission update."
       },
       {
         "id": "249fd8d9e74a7921",
-        "importance": 48,
-        "reason": "Reports a space-station power-supply improvement; useful infrastructure update."
+        "importance": 55,
+        "reason": "ISS solar-array rollout concerns station power supply, a substantive operational update."
       }
     ],
-    "source_checked_at": "2026-10-17T09:26:39.252Z"
+    "source_checked_at": "2026-10-17T13:46:14.012Z"
   },
   "last_attempt_at": "2026-10-17T13:46:13.548Z",
   "pending_reservation_microusd": 5721,
   "pending_source_checked_at": "2026-10-17T13:46:14.012Z",
-  "last_success_at": "2026-10-17T09:26:49.974Z",
+  "last_success_at": "2026-10-17T13:46:25.529Z",
   "last_error_status": null
 }

@@ -1,12 +1,12 @@
 {
-  "status": "ready",
+  "status": "editing",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
-    "reserved_microusd": 32953,
-    "calls": 6,
-    "last_run": "39037916437",
-    "last_reserved_at": "2026-10-17T13:46:13.548Z",
+    "reserved_microusd": 38674,
+    "calls": 7,
+    "last_run": "39052956631",
+    "last_reserved_at": "2026-10-17T17:15:35.955Z",
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
@@ -176,9 +176,9 @@
     ],
     "source_checked_at": "2026-10-17T13:46:14.012Z"
   },
-  "last_attempt_at": "2026-10-17T13:46:13.548Z",
+  "last_attempt_at": "2026-10-17T17:15:35.955Z",
   "pending_reservation_microusd": 5721,
-  "pending_source_checked_at": "2026-10-17T13:46:14.012Z",
+  "pending_source_checked_at": "2026-10-17T17:15:36.241Z",
   "last_success_at": "2026-10-17T13:46:25.529Z",
   "last_error_status": null
 }

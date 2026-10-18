@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,95 +10,50 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-18T01:07:54.659Z",
+    "generated_at": "2026-10-18T05:58:50.360Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "49775c3f23e96378",
-        "importance": 73,
-        "reason": "Fresh, substantive first-inning playoff-style game highlights; the stated early lead is a notable turning point."
-      },
-      {
-        "id": "c11f156bbb6cc02b",
-        "importance": 67,
-        "reason": "A fresh nine-pitch at-bat puts the Guardians on the board, a meaningful game moment."
-      },
-      {
-        "id": "aac486900e5c6e67",
-        "importance": 31,
-        "reason": "Career compilation is useful baseball viewing, but not a timely new development."
-      },
-      {
-        "id": "e6529415addb2abe",
-        "importance": 13,
-        "reason": "Light fan-content video with little basketball news significance."
-      },
-      {
-        "id": "3fce04d4b2840e66",
-        "importance": 21,
-        "reason": "Vague player highlight teaser; the supplied title gives no specific achievement or context."
-      },
-      {
         "id": "3e1bb6f4d9024765",
         "importance": 57,
-        "reason": "Reports RTX Spark PCs are now available, a notable product launch; details come from NVIDIA."
+        "reason": "New RTX laptops are reported available; a notable product launch, though the source is promotional."
       },
       {
         "id": "46e7cecee360222a",
-        "importance": 24,
-        "reason": "Launch teaser is promotional and now superseded by the availability announcement."
+        "importance": 19,
+        "reason": "Launch celebration teaser is promotional and offers little substantive detail."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 43,
-        "reason": "NASA leadership appointment is a substantive agency update, though not a mission milestone."
+        "importance": 37,
+        "reason": "NASA leadership appointment is a substantive agency update, with limited broader impact."
       },
       {
         "id": "f899e30222bf644b",
-        "importance": 55,
-        "reason": "Artemis II heat-shield coverage concerns a consequential crewed-mission safety topic; context is limited."
+        "importance": 66,
+        "reason": "Artemis II heat-shield coverage after splashdown concerns a major crewed space mission; context is brief."
       },
       {
         "id": "b655aadac97a3117",
-        "importance": 58,
-        "reason": "NVIDIA says it released open AI models, a potentially notable technology update; claims are first-party."
+        "importance": 62,
+        "reason": "NVIDIA reports releasing new open AI models; potentially consequential, but claims are first-party."
       },
       {
         "id": "efd79f8f5d3d6f6b",
-        "importance": 35,
-        "reason": "DLSS 4.5 reaching GeForce NOW matters to users, but this is a relatively routine feature update."
-      },
-      {
-        "id": "82fdad55c05d0639",
-        "importance": 61,
-        "reason": "Brewers celebration video suggests a recent postseason result, a meaningful baseball moment."
-      },
-      {
-        "id": "93e3758e6fad3284",
-        "importance": 26,
-        "reason": "Preseason highlight is entertaining but has limited stakes and no specific game context."
-      },
-      {
-        "id": "e5eb2fe67aa00870",
-        "importance": 13,
-        "reason": "Personal preseason ritual content is light promotional filler, not a major basketball update."
+        "importance": 40,
+        "reason": "Cloud gaming feature update is useful but incremental and narrowly relevant."
       },
       {
         "id": "3b5dbc13df98572c",
-        "importance": 19,
-        "reason": "Profile-style NASA feature offers little evident timely mission news from the supplied context."
-      },
-      {
-        "id": "249fd8d9e74a7921",
-        "importance": 59,
-        "reason": "Solar arrays boosting station power supply is a substantive space infrastructure update."
+        "importance": 24,
+        "reason": "Personal Artemis profile appears human-interest content, not a substantive mission update."
       }
     ],
-    "source_checked_at": "2026-10-18T01:07:46.660Z"
+    "source_checked_at": "2026-10-18T05:58:43.880Z"
   },
   "last_attempt_at": "2026-10-18T05:58:43.591Z",
   "pending_reservation_microusd": 4597,
   "pending_source_checked_at": "2026-10-18T05:58:43.880Z",
-  "last_success_at": "2026-10-18T01:07:54.659Z",
+  "last_success_at": "2026-10-18T05:58:50.360Z",
   "last_error_status": null
 }

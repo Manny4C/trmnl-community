@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,165 +10,160 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-18T14:39:46.287Z",
+    "generated_at": "2026-10-18T18:10:11.144Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
         "id": "09926caf2ab6fa4f",
-        "importance": 58,
-        "reason": "Full-play coverage of a consequential ALCS game, though the title gives no result."
+        "importance": 72,
+        "reason": "Comprehensive footage of a consequential ALCS game; timely postseason coverage."
       },
       {
         "id": "7ea7fd98faa334bd",
-        "importance": 43,
-        "reason": "A timely short recap of ALCS Game 4, but less substantive than full highlights."
+        "importance": 56,
+        "reason": "Timely short recap of an ALCS game, but less complete than full highlights."
+      },
+      {
+        "id": "b85833345b38eed8",
+        "importance": 29,
+        "reason": "Preseason player highlights are entertaining but have limited competitive stakes."
       },
       {
         "id": "40632e9f5beb5fd6",
-        "importance": 31,
-        "reason": "Preseason highlights offer entertainment, not a major competitive result."
-      },
-      {
-        "id": "e6529415addb2abe",
-        "importance": 9,
-        "reason": "A cute fan moment is light social filler."
+        "importance": 34,
+        "reason": "A season-wide preseason plays roundup, with limited significance before regular-season play."
       },
       {
         "id": "4d075985173aa7b4",
-        "importance": 19,
-        "reason": "Tesla promotional Roadster clip; title offers little verifiable detail."
+        "importance": 39,
+        "reason": "Roadster performance-focused promo; supplied context gives no verified specifications."
       },
       {
         "id": "8d54d90471a46158",
-        "importance": 17,
-        "reason": "A promotional stunt-themed Roadster clip, with no substantive details."
+        "importance": 26,
+        "reason": "Feature-themed Roadster promo, with no substantive details supplied."
       },
       {
         "id": "6c05762eee64362d",
-        "importance": 24,
-        "reason": "An event video may contain product news, but the title gives no specifics."
+        "importance": 43,
+        "reason": "A Roadster event video may contain product news, but the title gives no details."
       },
       {
         "id": "a4f2c48ea8aa8ee7",
-        "importance": 32,
-        "reason": "A creator reaction to the Roadster could add perspective, but no details are supplied."
+        "importance": 45,
+        "reason": "Independent reaction to a new Roadster, though no specific findings are provided."
       },
       {
         "id": "876b81013246184f",
-        "importance": 24,
-        "reason": "A game launch trailer is timely but mainly promotional."
+        "importance": 32,
+        "reason": "Launch trailer signals a game release, but offers no details on its significance."
       },
       {
         "id": "1f8a2c7f544ae0f9",
-        "importance": 31,
-        "reason": "Launch trailer for a named game on Switch 2; promotional, with no further context."
+        "importance": 37,
+        "reason": "Launch trailer for a Switch 2 release; context gives no further news."
       },
       {
         "id": "50b07391b1b1a4a8",
-        "importance": 22,
-        "reason": "Story trailer offers a game update but no launch or other stakes."
+        "importance": 29,
+        "reason": "Story trailer is promotional and provides little evidence of a substantive update."
       },
       {
         "id": "df05a5a223633290",
-        "importance": 25,
-        "reason": "A launch trailer signals a release, though it is promotional and details are absent."
+        "importance": 33,
+        "reason": "Launch trailer suggests availability, but no broader significance is supplied."
       },
       {
         "id": "3e1a4330f77ad30e",
-        "importance": 10,
-        "reason": "Cryptic character-themed clip; no substantive news evident from the title."
+        "importance": 16,
+        "reason": "Cryptic promotional clip with no clear news or game details."
       },
       {
         "id": "d3004b0505cc92f3",
-        "importance": 17,
-        "reason": "Promotional game-mode video with no specific news in the title."
+        "importance": 20,
+        "reason": "Seasonal game promotion, with no substantive update described."
       },
       {
         "id": "e3c6b593a30ca66e",
-        "importance": 23,
-        "reason": "A launch trailer is timely for a game release, but the title provides little context."
+        "importance": 30,
+        "reason": "Launch trailer marks a release, though the supplied title gives no context."
       },
       {
         "id": "9e0ef413006ae2f5",
-        "importance": 20,
-        "reason": "Vague OpenAI promotional title does not establish what is new."
+        "importance": 34,
+        "reason": "Vague OpenAI product teaser; the title does not clarify what is new."
       },
       {
         "id": "4bd93ae62726939c",
-        "importance": 31,
-        "reason": "Promotes shared team tasks in ChatGPT, but no feature details or impact are given."
+        "importance": 43,
+        "reason": "Introduces a team-task use case for ChatGPT, but details and impact are absent."
       },
       {
         "id": "3e1bb6f4d9024765",
-        "importance": 57,
-        "reason": "NVIDIA says RTX Spark laptops are now available; first-party launch claim, with limited details."
-      },
-      {
-        "id": "46e7cecee360222a",
-        "importance": 20,
-        "reason": "A launch teaser, now superseded by the later availability announcement."
+        "importance": 51,
+        "reason": "Reports RTX Spark laptop availability, but source claims aren't independently verified."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 34,
-        "reason": "NASA leadership appointment is substantive institutional news, though scope is limited."
+        "importance": 35,
+        "reason": "NASA leadership appointment is concrete but less consequential than mission news."
       },
       {
         "id": "f899e30222bf644b",
-        "importance": 48,
-        "reason": "Artemis II heat-shield follow-up concerns mission safety; supplied context is brief."
+        "importance": 44,
+        "reason": "Artemis II heat-shield coverage is mission-relevant; article details are limited."
       },
       {
         "id": "1265fc25e1307a8c",
-        "importance": 19,
-        "reason": "A Codex use-case video, likely promotional, with no concrete details supplied."
+        "importance": 31,
+        "reason": "Codex tutorial-style promotion, with no substantive product announcement in the title."
       },
       {
         "id": "0e701358b33f8754",
-        "importance": 22,
-        "reason": "A story trailer for a game; promotional and duplicated by another platform's listing."
+        "importance": 29,
+        "reason": "Story trailer is promotional; no new release or wider impact is established."
       },
       {
         "id": "46005f807b5fc522",
-        "importance": 57,
-        "reason": "Postgame analysis highlights the ALCS being tied, a meaningful series turning point."
+        "importance": 54,
+        "reason": "Analysis of a tied ALCS signals a close series, but is commentary rather than game footage."
       },
       {
         "id": "8b6317e6bba95584",
-        "importance": 68,
-        "reason": "Full highlights of a fresh ALCS game provide timely postseason coverage."
+        "importance": 78,
+        "reason": "Full highlights of a recent ALCS game provide timely postseason coverage."
+      },
+      {
+        "id": "e6529415addb2abe",
+        "importance": 8,
+        "reason": "Cute fan clip is light entertainment, not consequential basketball news."
       },
       {
         "id": "3fce04d4b2840e66",
-        "importance": 16,
-        "reason": "A player-focused highlight clip, with no game result or broader news."
-      },
-      {
-        "id": "93e3758e6fad3284",
-        "importance": 15,
-        "reason": "A preseason highlight from last week; light sports content, not a turning point."
+        "importance": 21,
+        "reason": "A player-focused highlight clip, with no game or outcome context."
       },
       {
         "id": "5cdba47e6d60c85b",
-        "importance": 16,
-        "reason": "Promotional Roadster clip with no product specifics in the title."
+        "importance": 25,
+        "reason": "Roadster-themed promotional clip with no concrete product information supplied."
       },
       {
         "id": "96160adf1c9cd382",
-        "importance": 16,
-        "reason": "Another promotional Roadster kickflip clip, with no substantive details."
+        "importance": 25,
+        "reason": "Repeat Roadster feature promo; no substantive details are provided."
       },
       {
         "id": "3b5dbc13df98572c",
-        "importance": 18,
-        "reason": "NASA staff profile has limited public stakes; context is fragmentary."
+        "importance": 19,
+        "reason": "Personal profile tied to Artemis, with limited mission or program news in context."
       }
     ],
-    "source_checked_at": "2026-10-18T14:39:35.297Z"
+    "source_checked_at": "2026-10-18T18:09:59.779Z"
   },
   "last_attempt_at": "2026-10-18T18:09:59.524Z",
   "pending_reservation_microusd": 5510,
   "pending_source_checked_at": "2026-10-18T18:09:59.779Z",
-  "last_success_at": "2026-10-18T14:39:46.287Z",
+  "last_success_at": "2026-10-18T18:10:11.144Z",
   "last_error_status": null
 }

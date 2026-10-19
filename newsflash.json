@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,130 +10,145 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-19T10:50:20.995Z",
+    "generated_at": "2026-10-19T17:31:20.000Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "5d4a47b6c40f131b",
-        "importance": 45,
-        "reason": "Recent ALCS Game 5 recap, but the short format offers limited detail."
+        "id": "c222946efa5d1d98",
+        "importance": 89,
+        "reason": "Fresh breakdown of a pivotal ALCS Game 5 result, with a World Series berth at stake."
       },
       {
-        "id": "ebcd035307a097fd",
-        "importance": 62,
-        "reason": "Full-play coverage of a recent ALCS game; useful for fans, though not a result update."
+        "id": "024b45c421a21fd2",
+        "importance": 25,
+        "reason": "Anniversary retrospective on a notable game, not current postseason news."
       },
       {
-        "id": "8e72ee557ef86625",
-        "importance": 38,
-        "reason": "Reaction video; its World Series claim is promotional framing, not independent confirmation."
+        "id": "e19fe4907a156252",
+        "importance": 65,
+        "reason": "Timely preview of the Rays' chance to clinch a World Series berth."
       },
       {
-        "id": "141a494bab3519e1",
-        "importance": 22,
-        "reason": "Preseason highlight with no broader news significance."
+        "id": "f41d998e983f3807",
+        "importance": 21,
+        "reason": "Entertainment compilation; little current basketball news value."
       },
       {
-        "id": "cd75586e388c4090",
-        "importance": 10,
-        "reason": "Vague, lighthearted clip title gives little substantive context."
+        "id": "a6da8833ba8aa0b0",
+        "importance": 39,
+        "reason": "Season preview offers broad basketball context, but is not a consequential update."
       },
       {
         "id": "3d95169260461f0d",
         "importance": 12,
-        "reason": "Wholesome retrospective moment from the 2024 Finals, not current news."
+        "reason": "Older feel-good Finals moment, with little current news value."
       },
       {
         "id": "a4f2c48ea8aa8ee7",
-        "importance": 38,
-        "reason": "Creator reaction to a new Roadster, but no concrete product details are supplied."
+        "importance": 32,
+        "reason": "Creator reaction to a new Roadster, but no details here to assess substantive news."
       },
       {
-        "id": "876b81013246184f",
-        "importance": 31,
-        "reason": "Launch trailer for a game-party collection; modest gaming-news value."
+        "id": "248ff599280f048f",
+        "importance": 34,
+        "reason": "Fresh launch trailer for several games on Switch 2; promotional, with no further context."
       },
       {
         "id": "50b07391b1b1a4a8",
-        "importance": 29,
-        "reason": "Story trailer offers a game update, but no release or gameplay details are given."
+        "importance": 25,
+        "reason": "Story trailer is promotional; no release or gameplay details supplied."
       },
       {
         "id": "df05a5a223633290",
+        "importance": 31,
+        "reason": "Launch trailer signals a game release, but the older post and sparse context limit significance."
+      },
+      {
+        "id": "131025e8581e9923",
+        "importance": 29,
+        "reason": "New release-date trailer is a modest gaming update; date and details are absent."
+      },
+      {
+        "id": "684213a095d137dd",
+        "importance": 28,
+        "reason": "Release-date trailer is promotional, with no date or game details supplied."
+      },
+      {
+        "id": "3a52c4905955a13a",
         "importance": 34,
-        "reason": "Launch trailer is a substantive game release item, though details are absent."
+        "reason": "Launch trailer is timely gaming news, though no game details or wider significance are given."
       },
       {
-        "id": "3e1a4330f77ad30e",
-        "importance": 8,
-        "reason": "Cryptic, light promotional clip with no clear news information."
+        "id": "7bf99cfa9e2084d0",
+        "importance": 35,
+        "reason": "Legal AI trust discussion may matter, but the title gives no specific claims or findings."
       },
       {
-        "id": "d3004b0505cc92f3",
-        "importance": 18,
-        "reason": "Madden promotional feature; the title gives no notable update or specifics."
+        "id": "0452d9595751d8af",
+        "importance": 34,
+        "reason": "Duplicate legal AI video listing; substantive content is unclear from the title."
       },
       {
-        "id": "e3c6b593a30ca66e",
-        "importance": 30,
-        "reason": "Launch trailer signals a game release, with no further context supplied."
-      },
-      {
-        "id": "70a739ab27824d4f",
-        "importance": 66,
-        "reason": "Very recent announcement of a new ChatGPT voice feature; claims are first-party."
-      },
-      {
-        "id": "00bdd2d23103be02",
-        "importance": 65,
-        "reason": "Very recent first-party presentation of a new ChatGPT voice feature."
+        "id": "ca2be23ea0a1d609",
+        "importance": 40,
+        "reason": "New announcement on AI security for media, but the supplied excerpt is incomplete."
       },
       {
         "id": "3e1bb6f4d9024765",
-        "importance": 45,
-        "reason": "Reports RTX Spark laptops are available, but the excerpt gives few specifics."
+        "importance": 42,
+        "reason": "NVIDIA says new RTX laptops are available; first-party promotional claim, with limited detail."
+      },
+      {
+        "id": "c6f3ba05ddf4993d",
+        "importance": 20,
+        "reason": "Technical NASA instrumentation item; excerpt lacks enough detail to judge broader significance."
+      },
+      {
+        "id": "fbdb630466dd91a3",
+        "importance": 37,
+        "reason": "Fresh Curiosity Mars-dawn imagery is a substantive space update, though details are sparse."
+      },
+      {
+        "id": "70a739ab27824d4f",
+        "importance": 51,
+        "reason": "New ChatGPT voice rollout is potentially significant; this is a regional promotional video."
+      },
+      {
+        "id": "00bdd2d23103be02",
+        "importance": 50,
+        "reason": "New ChatGPT voice rollout is potentially significant; this is a regional promotional video."
+      },
+      {
+        "id": "f0e58fe61fa51fbf",
+        "importance": 30,
+        "reason": "Release trailer signals a game launch, but provides no detail beyond promotion."
+      },
+      {
+        "id": "f912c95f69efc276",
+        "importance": 38,
+        "reason": "Recent postseason highlights spotlight a player, but do not add a major result."
+      },
+      {
+        "id": "141a494bab3519e1",
+        "importance": 17,
+        "reason": "Preseason highlight is entertainment rather than consequential basketball news."
+      },
+      {
+        "id": "cd75586e388c4090",
+        "importance": 10,
+        "reason": "Vague humorous clip title offers little news context."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 27,
-        "reason": "NASA leadership appointment is a concrete update, with limited wider impact."
-      },
-      {
-        "id": "f899e30222bf644b",
-        "importance": 37,
-        "reason": "Artemis II heat-shield post-splashdown coverage is substantive, though delayed."
-      },
-      {
-        "id": "9d85e8af4f3c59e2",
-        "importance": 65,
-        "reason": "Recent first-party video about a new ChatGPT voice feature; claims remain unverified."
-      },
-      {
-        "id": "0e701358b33f8754",
-        "importance": 29,
-        "reason": "Story trailer for a game; no additional release or gameplay context."
-      },
-      {
-        "id": "4bec7a9d3cb004c6",
-        "importance": 64,
-        "reason": "Full highlights from a recent ALCS game are timely and relevant to baseball fans."
-      },
-      {
-        "id": "da91bbfbc1472803",
-        "importance": 15,
-        "reason": "Retrospective player highlight rather than a current basketball development."
-      },
-      {
-        "id": "3b5dbc13df98572c",
-        "importance": 16,
-        "reason": "NASA profile with little context and no clear timely mission development."
+        "importance": 39,
+        "reason": "NASA center leadership appointment is a substantive agency update, posted several days ago."
       }
     ],
-    "source_checked_at": "2026-10-19T10:50:09.240Z"
+    "source_checked_at": "2026-10-19T17:31:07.681Z"
   },
   "last_attempt_at": "2026-10-19T17:31:07.290Z",
   "pending_reservation_microusd": 5439,
   "pending_source_checked_at": "2026-10-19T17:31:07.681Z",
-  "last_success_at": "2026-10-19T10:50:20.995Z",
+  "last_success_at": "2026-10-19T17:31:20.000Z",
   "last_error_status": null
 }

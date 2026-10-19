@@ -1,0 +1,26 @@
+name: Tiny Planet owner autopilot
+on:
+  schedule:
+    - cron: '17 0 * * *'
+    - cron: '47 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tiny-planet-autopilot
+  cancel-in-progress: false
+jobs:
+  move:
+    if: vars.TINY_PLANET_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node apps/tiny-planet/scripts/autopilot.mjs
+        env:
+          TINY_PLANET_CRON_SECRET: ${{ secrets.TINY_PLANET_CRON_SECRET }}

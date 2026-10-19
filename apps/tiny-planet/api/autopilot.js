@@ -1,0 +1,3 @@
+import {db} from '../lib/db.js';import {equal} from '../lib/auth.js';import {headers,fail,error} from '../lib/http.js';
+export function autopilotHandler({database=db,secret=()=>process.env.TINY_PLANET_CRON_SECRET}={}){return async(req,res)=>{headers(res);if(req.method!=='POST')return res.status(405).json({error:'Use POST.'});try{const expected=secret();if(!expected||!equal(req.headers.authorization,'Bearer '+expected))throw error('Scheduler authorization required.',401);const [r]=await database()`SELECT tp_autopilot() AS result`;return res.status(200).json(r.result);}catch(e){return fail(res,e);}};}
+export default autopilotHandler();

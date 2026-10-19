@@ -1,0 +1,2 @@
+import {world} from '../lib/db.js';import {headers,fail} from '../lib/http.js';import {devicePayload} from '../lib/game.js';
+export default async function handler(req,res){headers(res);if(req.method!=='GET')return res.status(405).json({error:'Use GET.'});try{const w=await world();return res.status(200).json(new URL(req.url,'https://local').searchParams.get('format')==='trmnl'?devicePayload(w):w);}catch(e){return fail(res,e);}}

@@ -404,17 +404,70 @@
       "targetDate": "2026-10-19",
       "name": "TRMNL Plays: Tiny Planet",
       "slug": "tiny-planet",
-      "status": "planned",
+      "status": "deployed_preview_activation_pending",
       "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate.",
       "recipeRequired": true,
       "recipe": {
         "name": "TRMNL Plays: Tiny Planet",
-        "status": "not_created",
+        "status": "prepared_not_created",
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
       },
-      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
+      "sourceDirectory": "apps/tiny-planet",
+      "websiteUrl": "https://tiny-planet-trmnl.vercel.app",
+      "legacyWebsiteUrl": "https://tiny-planet-beta.vercel.app",
+      "vercelProject": "tiny-planet",
+      "vercelProjectId": "prj_AzCfpKbCm4q4RVBky3fhF18fM6w6",
+      "buildCompletedOn": "2026-10-19",
+      "websiteDeploymentStatus": "production_preview_verified_shared_service_not_activated",
+      "publicationStatus": "recipe_prepared_not_created_or_submitted",
+      "deviceInstallationStatus": "not_installed",
+      "physicalDeviceVerification": "No Tiny Planet Recipe exists or is installed. Native OG/X renderer, mobile visual QA and physical receipt remain unverified. No browser/native UI used in scheduled build; focused background setup permission was requested once after deploying the reviewable preview.",
+      "iconStatus": "original_black_white_svg_in_package",
+      "featuredImageStatus": "not_generated_in_trmnl",
+      "testStatus": "28 checks passed using actual PostgreSQL-engine SQL through local PGlite, including competing quota attempts, 25 accounts in one day, atomic rollback/idempotency, UTC reset, resource/practice parity, game progression and recovery, daily autopilot catch-up, OAuth one-time callback/state/expiry, credential encryption, upstream ownership failures, CSRF, protected scheduler, migration splitting, 48-cell compact payload below 3 kB, all four Liquid renders and website practice/B&W controls. Hosted Neon concurrency, live TRMNL OAuth and native visual rendering are not yet verified.",
+      "pollingUrl": "https://tiny-planet-trmnl.vercel.app/api/world?format=trmnl",
+      "database": {
+        "provider": "Neon via personal Vercel integration",
+        "selectedPlan": "free_v3",
+        "status": "not_provisioned_terms_acceptance_required",
+        "termsUrl": "https://vercel.com/manny4c-personal/~/integrations/accept-terms/neon?source=cli",
+        "paidCommitment": false,
+        "atomicity": "PostgreSQL row lock; world, resources, turn, history, unique nonce and account/day quota commit together. No local file, browser store or ephemeral in-memory shared state fallback."
+      },
+      "ownership": {
+        "status": "implemented_registration_and_live_verification_pending",
+        "method": "TRMNL OAuth authorization-code PKCE, read/profile scopes; server GET /api/me + /api/devices before every accepted move; hashed account ID supplies one quota across devices and sessions. Public/code links never establish ownership.",
+        "registerUrl": "https://trmnl.com/developer_apps",
+        "redirectUri": "https://tiny-planet-trmnl.vercel.app/api/auth?step=callback",
+        "clientType": "public PKCE (Cannot keep a secret)",
+        "credentialStatus": "No TRMNL access credential requested or stored yet. Client ID and secure session configuration remain pending."
+      },
+      "autopilot": {
+        "status": "prepared_not_active",
+        "workflow": ".github/workflows/tiny-planet-autopilot.yml",
+        "schedule": "Daily 00:17 UTC plus hourly :47, all seven days, independent of Mac and weekday build automation. Disabled until TINY_PLANET_ENABLED=true after production verification.",
+        "quota": "Separate owner-autopilot actor, one idempotent move per UTC day, row lock and unique daily nonce. Up to 31 missed days caught up transparently with quota day plus actual timestamps.",
+        "productionMoveVerified": false
+      },
+      "pendingActions": [
+        "Accept Neon Free marketplace terms; provision only free_v3 on personal Vercel, migrate production DB and configure private session/scheduler secrets",
+        "Register public TRMNL OAuth app and set public Client ID; verify live callback and owner device/account identity",
+        "Activate and verify production scheduler with one owner autopilot move plus replay protection, then next scheduled run",
+        "Complete native OG color/B&W and X orientations/four-layout QA, marketplace previews, owner installation and separate Recipe public submission; browser setup requested once and remains pending",
+        "Record actual review status, public install URL only on approval, and physical receipt separately"
+      ],
+      "colorUpdate": {
+        "updatedOn": "2026-10-19",
+        "websiteStatus": "color_and_bw_preview_implemented",
+        "packageStatus": "all_four_layouts_prepared",
+        "recipeStatus": "prepared_only_not_created",
+        "nativeQa": "not_verified",
+        "physicalReceipt": "not_installed"
+      },
+      "latestDeploymentId": "dpl_HYEbfginiqcHFPyAEejZHmxcJPGW"
     },
     {
       "day": 6,
@@ -496,7 +549,9 @@
         "checkedAt": "2026-10-16T20:03:59.932617+00:00",
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
-      }
+      },
+      "latestCheckedOn": "2026-10-19",
+      "latestResult": "Read all three existing HEY review threads October 19: Daily still contains original Submitted and our authorized October16 follow-up only; YC and Sounds have Submitted acknowledgments only. No human reply or approval found in those threads. No new email sent. Dashboard not revisited under background-only preference."
     }
   },
   "displayDesignPolicy": {

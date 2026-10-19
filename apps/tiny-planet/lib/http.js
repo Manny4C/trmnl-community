@@ -1,0 +1,6 @@
+import {ORIGIN} from './game.js';
+export const error=(message,status=400)=>Object.assign(Error(message),{status});
+export function headers(res){res.setHeader('Cache-Control','no-store');res.setHeader('Content-Type','application/json');}
+export function sameOrigin(req){if(req.headers.origin!==ORIGIN)throw error('Open Tiny Planet directly to make a move.',403);}
+export function body(req){let b=req.body;if(Buffer.isBuffer(b)||typeof b==='string'){if(Buffer.byteLength(b)>2048)throw error('Request too large',413);try{b=JSON.parse(b.toString());}catch{throw error('Invalid JSON');}}if(JSON.stringify(b||{}).length>2048)throw error('Request too large',413);return b||{};}
+export function fail(res,e){const known=['daily_quota','nonce_conflict','invalid_cell','invalid_action','clear_needs_sapling_or_grove','plant_needs_meadow_and_seed','water_needs_sapling_and_water','gather_needs_water_grove_or_rock','beacon_needs_meadow_6_wood_4_stone','sail_needs_beacon_and_8_groves'];const code=known.find(c=>e.message?.includes(c));return res.status(code?409:e.status||503).json({error:code==='daily_quota'?'You already moved today. Your next move unlocks at 00:00 UTC.':code?'The planet changed or that action is unavailable. Refresh and choose again.':e.status?e.message:'The shared planet is temporarily unavailable. No move is confirmed. Please refresh before retrying.'});}

@@ -98,3 +98,7 @@ Finish the first useful version, run meaningful tests, verify the responsive web
 ## Color and black & white
 
 All current and future apps must follow [DISPLAY-DESIGN.md](DISPLAY-DESIGN.md): native red/yellow accents, readable monochrome fallbacks, labeled states and pure black/white QR codes. All websites include a palette preview. After installing the Sounds Like My Company development dependencies, run `node --test test/color.test.mjs` from the repository root to verify cross-app palette behavior alongside each app’s own tests.
+
+## TRMNL Plays: Tiny Planet
+
+[Practice island and website](https://tiny-planet-trmnl.vercel.app) · [Source and activation notes](apps/tiny-planet/README.md). One shared original island, server-verified TRMNL ownership, one account move per UTC day, atomic PostgreSQL state and a separately labeled daily owner autopilot. The deployed preview is local practice only until the free Neon database terms are accepted and TRMNL OAuth is registered. Shared play, production autopilot and its separate Recipe are not activated/installed/submitted yet.

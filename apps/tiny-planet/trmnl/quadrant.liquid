@@ -1,0 +1,2 @@
+<div class="layout layout--col gap--xsmall tp--quadrant">{% render 'tp_head',chapter:chapter %}
+{% if tiles.size > 0 %}<div class="tp-body"><div class="tp-board">{% render 'tp_map',tiles:tiles,cell_type:'text--base lg:text--large' %}</div></div><span class="label label--small">{{ groves }}/8 groves · Build beacon → Sail</span>{% else %}<span class="description">Planet unavailable. Check website.</span>{% endif %}</div>{% render 'title_bar',turn:turn,checked_at:checked_at %}

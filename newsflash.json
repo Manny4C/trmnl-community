@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,40 +10,130 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-19T04:48:06.631Z",
+    "generated_at": "2026-10-19T10:50:20.995Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
+        "id": "5d4a47b6c40f131b",
+        "importance": 45,
+        "reason": "Recent ALCS Game 5 recap, but the short format offers limited detail."
+      },
+      {
+        "id": "ebcd035307a097fd",
+        "importance": 62,
+        "reason": "Full-play coverage of a recent ALCS game; useful for fans, though not a result update."
+      },
+      {
+        "id": "8e72ee557ef86625",
+        "importance": 38,
+        "reason": "Reaction video; its World Series claim is promotional framing, not independent confirmation."
+      },
+      {
+        "id": "141a494bab3519e1",
+        "importance": 22,
+        "reason": "Preseason highlight with no broader news significance."
+      },
+      {
+        "id": "cd75586e388c4090",
+        "importance": 10,
+        "reason": "Vague, lighthearted clip title gives little substantive context."
+      },
+      {
+        "id": "3d95169260461f0d",
+        "importance": 12,
+        "reason": "Wholesome retrospective moment from the 2024 Finals, not current news."
+      },
+      {
+        "id": "a4f2c48ea8aa8ee7",
+        "importance": 38,
+        "reason": "Creator reaction to a new Roadster, but no concrete product details are supplied."
+      },
+      {
         "id": "876b81013246184f",
-        "importance": 53,
-        "reason": "A new game launch trailer is relevant to players, but its wider significance is limited."
+        "importance": 31,
+        "reason": "Launch trailer for a game-party collection; modest gaming-news value."
+      },
+      {
+        "id": "50b07391b1b1a4a8",
+        "importance": 29,
+        "reason": "Story trailer offers a game update, but no release or gameplay details are given."
+      },
+      {
+        "id": "df05a5a223633290",
+        "importance": 34,
+        "reason": "Launch trailer is a substantive game release item, though details are absent."
+      },
+      {
+        "id": "3e1a4330f77ad30e",
+        "importance": 8,
+        "reason": "Cryptic, light promotional clip with no clear news information."
+      },
+      {
+        "id": "d3004b0505cc92f3",
+        "importance": 18,
+        "reason": "Madden promotional feature; the title gives no notable update or specifics."
+      },
+      {
+        "id": "e3c6b593a30ca66e",
+        "importance": 30,
+        "reason": "Launch trailer signals a game release, with no further context supplied."
+      },
+      {
+        "id": "70a739ab27824d4f",
+        "importance": 66,
+        "reason": "Very recent announcement of a new ChatGPT voice feature; claims are first-party."
+      },
+      {
+        "id": "00bdd2d23103be02",
+        "importance": 65,
+        "reason": "Very recent first-party presentation of a new ChatGPT voice feature."
       },
       {
         "id": "3e1bb6f4d9024765",
-        "importance": 60,
-        "reason": "A hardware availability announcement may interest PC and AI audiences; details are limited and first-party."
+        "importance": 45,
+        "reason": "Reports RTX Spark laptops are available, but the excerpt gives few specifics."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 35,
-        "reason": "A NASA center leadership appointment is a routine institutional update."
+        "importance": 27,
+        "reason": "NASA leadership appointment is a concrete update, with limited wider impact."
       },
       {
         "id": "f899e30222bf644b",
-        "importance": 46,
-        "reason": "Artemis II heat-shield coverage may be significant, but the brief context gives little detail."
+        "importance": 37,
+        "reason": "Artemis II heat-shield post-splashdown coverage is substantive, though delayed."
+      },
+      {
+        "id": "9d85e8af4f3c59e2",
+        "importance": 65,
+        "reason": "Recent first-party video about a new ChatGPT voice feature; claims remain unverified."
+      },
+      {
+        "id": "0e701358b33f8754",
+        "importance": 29,
+        "reason": "Story trailer for a game; no additional release or gameplay context."
+      },
+      {
+        "id": "4bec7a9d3cb004c6",
+        "importance": 64,
+        "reason": "Full highlights from a recent ALCS game are timely and relevant to baseball fans."
+      },
+      {
+        "id": "da91bbfbc1472803",
+        "importance": 15,
+        "reason": "Retrospective player highlight rather than a current basketball development."
       },
       {
         "id": "3b5dbc13df98572c",
-        "importance": 25,
-        "reason": "An individual-focused NASA feature is less consequential than mission or program news."
+        "importance": 16,
+        "reason": "NASA profile with little context and no clear timely mission development."
       }
     ],
-    "source_checked_at": "2026-10-19T04:48:00.314Z"
+    "source_checked_at": "2026-10-19T10:50:09.240Z"
   },
   "last_attempt_at": "2026-10-19T10:50:08.610Z",
   "pending_reservation_microusd": 5266,
   "pending_source_checked_at": "2026-10-19T10:50:09.240Z",
-  "last_success_at": "2026-10-19T04:48:06.631Z",
+  "last_success_at": "2026-10-19T10:50:20.995Z",
   "last_error_status": null
 }

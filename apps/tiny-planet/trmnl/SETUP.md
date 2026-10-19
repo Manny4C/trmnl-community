@@ -1,12 +1,14 @@
 # TRMNL Plays: Tiny Planet
 
-Status at initial delivery: production preview and game code ready. Shared PostgreSQL database awaits Neon Free plan terms acceptance. TRMNL OAuth app registration is pending. No Recipe has been created, installed or submitted; no physical receipt or official renderer verification is claimed.
+Owner release state, October 19: the Neon Free database is initialized and the shared world is online. Public TRMNL PKCE app 262 is registered; the sign-in redirect works, while actual owner consent/callback and a player move remain unverified. The first protected production owner-autopilot move succeeded, and a same-day replay kept the world at turn 1. Hosted daily and hourly checks are enabled, including weekends; the first scheduled execution is still awaiting verification.
 
-Create one separate private plugin called TRMNL Plays: Tiny Planet. Use Polling, GET and framework 3.4.3 or later. Refresh every 30 minutes or slower.
+Existing owner Recipe **512639** is created and added to Manuel’s playlist with Shared and all four layouts saved. Continue that Recipe at https://trmnl.com/plugin_settings/512639/edit; do not create a duplicate. It is a private draft, not publicly submitted or approved. Icon upload, marketplace images, native OG/X visual checks and physical receipt remain pending.
+
+For a manual copy in your own account while community approval is pending, create a private plugin called TRMNL Plays: Tiny Planet. Use Polling, GET and framework 3.4.3 or later. Refresh every 30 minutes or slower.
 
 Polling URL: https://tiny-planet-trmnl.vercel.app/api/world?format=trmnl
 
-No authentication header, Serverless transform or personal configuration is required: everyone sees the same island. Copy shared.liquid to Shared and the four other Liquid files to their corresponding Full, Half horizontal, Half vertical and Quadrant tabs. Use icon.svg (also available at https://tiny-planet-trmnl.vercel.app/icon.svg). The package includes an original black/white icon. Before public submission verify all four views on OG color/B&W and X landscape/portrait, generate marketplace previews, install on the owner playlist without removing other entries and record the new Recipe ID. The community license acceptance is a separate final action.
+No authentication header, Serverless transform or personal configuration is required: everyone sees the same island. Copy shared.liquid to Shared and the four other Liquid files to their corresponding Full, Half horizontal, Half vertical and Quadrant tabs. Use icon.svg (also available at https://tiny-planet-trmnl.vercel.app/icon.svg). The package includes an original black/white icon. Before public submission finish the icon, verify all four views on OG color/B&W and X landscape/portrait, and generate marketplace previews on existing owner Recipe 512639. Preserve its installation and all other playlist entries. The community license acceptance is a separate final action.
 
 Red/yellow accents use native utilities, with explicit 1bit/2bit/4bit black/white fallbacks. Symbols and labels carry meaning independently of color. Body text stays black. No client game code runs on TRMNL; the website sends accepted moves to the server and devices receive snapshots on their normal refresh.
 

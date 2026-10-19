@@ -1,1 +1,8 @@
-{"recipe_status": "draft_installed", "recipe_id": 512639, "recipe_url": null, "shared_world_status": "online", "ownership_status": "oauth_app_registered_live_verification_pending", "autopilot_status": "configured_production_run_pending_verification"}
+{
+  "recipe_status": "draft_installed",
+  "recipe_id": 512639,
+  "recipe_url": null,
+  "shared_world_status": "online",
+  "ownership_status": "oauth_app_registered_live_verification_pending",
+  "autopilot_status": "enabled_production_move_and_replay_verified_scheduled_check_pending"
+}

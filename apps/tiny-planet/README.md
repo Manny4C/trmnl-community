@@ -12,7 +12,7 @@ Tiny Planet private Recipe512639 is created and added to the owner playlist, wit
 
 Free database terms approval: https://vercel.com/manny4c-personal/~/integrations/accept-terms/neon?source=cli
 
-After approval, provision on the linked **personal** project (never a work team):
+The free resource has already been provisioned. The reproducible command below is reference only; do not create another resource on the live project:
 
 ```sh
 vercel integration add neon --name tiny-planet --plan free_v3 --metadata region=iad1 --metadata auth=false --environment production --no-env-pull --scope manny4c-personal --format json
@@ -22,7 +22,7 @@ Only `free_v3` is authorized; stop if a paid plan is required. Use the linked Ve
 
 ## TRMNL sign-in
 
-Register a public PKCE app at https://trmnl.com/developer_apps called **TRMNL Plays: Tiny Planet** with this exact redirect:
+Existing public PKCE app **262** is registered at https://trmnl.com/developer_apps/262. Do not duplicate it. Its exact redirect is:
 
 `https://tiny-planet-trmnl.vercel.app/api/auth?step=callback`
 
@@ -38,7 +38,7 @@ Use a random 32-byte-or-longer `TINY_PLANET_SESSION_SECRET` stored as Sensitive 
 
 `tp_autopilot` runs within the same database transaction/lock and uses the dedicated `owner-autopilot` actor, one quota day and nonce per UTC date. It tends the island, builds a beacon and sails after 8 groves. A bounded 31-day catch-up is transparently recorded with original quota dates and actual execution times; this does not claim execution occurred on missed days.
 
-Generate a random `TINY_PLANET_CRON_SECRET`; place it in Sensitive Vercel Production configuration and the repository's GitHub Actions secret of the same name using stdin, not arguments/logs. The owner workflow is `.github/workflows/tiny-planet-autopilot.yml`: daily at 00:17 UTC plus hourly at :47, seven days/week, independent of weekday build automation and Manuel's Mac. It waits for a healthy production world before attempting a move: repository variable `TINY_PLANET_ENABLED=true` enables it. Manually dispatch once, verify one production move and idempotent replay, then verify its next scheduled run before calling it active. Cloud schedule delays/outages remain possible and are exposed rather than hidden.
+Generate a random `TINY_PLANET_CRON_SECRET`; place it in Sensitive Vercel Production configuration and the repository's GitHub Actions secret of the same name using stdin, not arguments/logs. The owner workflow is `.github/workflows/tiny-planet-autopilot.yml`: daily at 00:17 UTC plus hourly at :47, seven days/week, independent of weekday build automation and Manuel's Mac. It waits for a healthy production world before attempting a move: repository variable `TINY_PLANET_ENABLED=true` enables it. The enabled workflow was manually dispatched successfully on October 19: run 39335978085 watered one sapling at 22:35:15 UTC, recording quota day 2026-10-19, turn 1 and the Owner autopilot label. Replaying that same run succeeded without a second move. The first automatic scheduled execution remains to be checked separately. Cloud schedule delays/outages remain possible and are exposed rather than hidden.
 
 ## Tests and preview
 
@@ -54,6 +54,6 @@ The production website never substitutes an in-memory practice island for the sh
 
 ## Release follow-through
 
-After activation, update public release status/copy and launch-plan.json, deploy again, verify anonymous viewer plus a real connected owner move and scheduler idempotency, create ONE separate Recipe from `public/plugin.zip`, verify native OG color/B&W and X orientations/four views, generate marketplace previews and install without removing other playlist entries. Accept the Community Plugin License only with action-time human confirmation if the browser requires it. Submit and record actual status; approval and physical receipt are separate.
+The anonymous live world and protected owner-autopilot move/replay are verified. Next verify real owner OAuth consent/callback and a player move, then continue EXISTING private Recipe 512639: save its icon, verify native OG color/B&W and X orientations/four views, and generate marketplace previews. Preserve its owner installation and all other playlist entries; do not create another Recipe. Accept the Community Plugin License only with action-time human confirmation if the browser requires it. Submit and record actual status; approval and physical receipt are separate.
 
 Official references: [TRMNL Developer Apps](https://help.trmnl.com/en/articles/17225165-developer-apps), [account API](https://docs.trmnl.com/go/private-api/account), [private plugins and payload limits](https://help.trmnl.com/en/articles/9510536-private-plugins), [Vercel integrations CLI](https://vercel.com/docs/cli/integration).

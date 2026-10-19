@@ -1,6 +1,8 @@
 # Newsflash — separate Recipe setup
 
-This completely replaces the earlier Desk Editor concept in the same Day 4 app and personal Vercel project. No Desk Editor Recipe exists, so create ONE separate Recipe named Newsflash. Never duplicate the existing Daily, YC Scout or Sounds Like My Company Recipes.
+This completely replaces the earlier Desk Editor concept in the same Day 4 app and personal Vercel project. Existing owner Newsflash Recipe **512643** is created and added to Manuel’s playlist: https://trmnl.com/plugin_settings/512643/edit. Its configuration, Shared and all four layouts are saved, and the native data Test request returned HTTP 200 with a real AI-selected MLB headline and source thumbnail. The actual image/layout render has not been visually verified. Icon upload, marketplace images, native OG/X checks and public submission remain pending. It is a private draft, not submitted or approved; physical receipt is unconfirmed. Continue this Recipe and never create a duplicate Desk Editor or Newsflash master.
+
+The following instructions also allow another user to make a manual private copy before a public install link is available.
 
 1. Create private plugin **Newsflash** with Polling GET, framework 3.4, no headers/body and no Serverless transform.
 2. Paste `form-fields.yml` into custom fields. Polling URL:
@@ -12,9 +14,9 @@ https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode
 3. Shared receives shared.liquid. Paste the four matching Liquid files into their Full/Half horizontal/Half vertical/Quadrant tabs. Icon is icon.svg. The native image-dither class asks the TRMNL platform to dither source imagery to the actual device palette. Images are URLs, not embedded payloads.
 4. Refresh interval 30 minutes or an account-supported interval; the AI cloud editor is hourly and may be delayed. Device refreshes never spend model tokens. Interest choices filter the shared ranked pool.
 5. Validate actual OG and X landscape/portrait image loading, long headlines, empty state, AI/fallback/cached labels and provenance. Automated Liquid checks are not official-renderer or physical-device verification. Generate marketplace previews only after this.
-6. Install on Manuel’s playlist without removing any existing plugins. Source images/thumbnails keep their source attribution. A video thumbnail is not necessarily the actual winning frame. TRMNL displays still images, never video playback.
-7. Publish as a separate Newsflash Recipe, short description “Your world. In a flash.”, support/source GitHub Manny4C/trmnl-community, website https://newsflash-trmnl.vercel.app. Record real Recipe ID/settings/submission/review/install URL in launch-plan.json. There is no Recipe ID until created.
-8. Website release.json remains prepared until public submission actually succeeds, then submitted. After human approval, set approved and the verified recipe_url. Never guess installation links.
+6. Preserve existing owner Recipe 512643 and every other playlist entry; it is already added to Manuel’s playlist. For a manual copy, add it to your own playlist. Source images/thumbnails keep their source attribution. A video thumbnail is not necessarily the actual winning frame. TRMNL displays still images, never video playback.
+7. Publish as a separate Newsflash Recipe, short description “Your world. In a flash.”, support/source GitHub Manny4C/trmnl-community, website https://newsflash-trmnl.vercel.app. Record actual submission/review/install status against existing Recipe 512643 in launch-plan.json. Do not infer approval from creation or a successful data test.
+8. Website release.json is draft_installed while the owner Recipe is private; change to submitted only after public submission actually succeeds. After human approval, set approved and the verified recipe_url. Never guess installation links.
 
 ## Operation and provenance
 

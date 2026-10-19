@@ -277,10 +277,10 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_EE4ak5hAuuqKyEqXaTkLovyKGD8k",
+      "latestDeploymentId": "dpl_3jbP5BnxPN6RSgcgX5aasZU8LxZr",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
-      "websiteDeploymentStatus": "ready_and_production_verified",
+      "websiteDeploymentStatus": "ready_and_production_package_verified",
       "publicationStatus": "private_draft_not_submitted",
       "deviceInstallationStatus": "added_to_playlist",
       "physicalDeviceVerification": "Creation success confirms added to playlist October19. Configuration and Shared/all four image-first layouts saved; native data Test request returns HTTP200 with AI-selected MLB headline and source thumbnail. Full native render remained blank/loading in brief browser inspection; not verified. Physical receipt not confirmed.",
@@ -307,7 +307,7 @@
         "Record human review/public install URL and physical receipt separately"
       ],
       "reviewStatus": "Separate Newsflash Recipe512643 created; private draft, NOT submitted or approved. No duplicate Desk Editor Recipe.",
-      "verificationTimestamp": "2026-10-16T17:56:51.235410+00:00",
+      "verificationTimestamp": "2026-10-19T22:40:19Z",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
         "https://desk-editor-trmnl.vercel.app",
@@ -384,7 +384,7 @@
           "authorizedBy": "Manuel asked us to choose an approach that stays within $15/month.",
           "newsSelection": "One shared bounded AI edit hourly; no per-viewer or per-device inference.",
           "images": "Existing story-linked publisher photos and official video thumbnails only; paid image generation remains disabled. If no relevant source image exists, show the honest empty/fallback state instead of generating art.",
-          "deviceRefresh": "Prepared Recipe recommends 30-minute checks; Newsflash is not installed yet, so actual device refresh is unverified.",
+          "deviceRefresh": "Owner Recipe 512643 actual refresh saved at 30 minutes; physical receipt remains unconfirmed.",
           "monthlyApplicationLimitUsd": 15,
           "expected30DayConservativeReserveUsd": 4.0212,
           "maximumScheduled31DayConservativeReserveUsd": 5.52048,
@@ -396,7 +396,7 @@
         "websiteStatus": "production_html_css_and_zip_verified",
         "packageStatus": "all_four_layouts_updated",
         "recipeStatus": "shared_and_four_layouts_saved",
-        "nativeQa": "pending_separate_recipe_creation",
+        "nativeQa": "data_test_200_actual_image_and_layout_visual_qa_pending",
         "physicalReceipt": "unconfirmed"
       },
       "pluginId": 512643
@@ -423,10 +423,10 @@
       "vercelProject": "tiny-planet",
       "vercelProjectId": "prj_AzCfpKbCm4q4RVBky3fhF18fM6w6",
       "buildCompletedOn": "2026-10-19",
-      "websiteDeploymentStatus": "shared_world_endpoint_200_after_activation_deployment",
+      "websiteDeploymentStatus": "ready_shared_world_and_production_package_verified",
       "publicationStatus": "private_draft_not_submitted",
       "deviceInstallationStatus": "added_to_playlist",
-      "physicalDeviceVerification": "TRMNL creation success confirmed added to playlist October19; Shared and all four markup tabs saved. Production activation deployment is in Vercel system build queue, native full render and physical receipt not verified.",
+      "physicalDeviceVerification": "Creation success confirmed added to playlist October 19; Shared and all four markup tabs saved. Shared-world GET is live. Native visual render and physical receipt remain unverified.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
       "testStatus": "32 checks passed using actual PostgreSQL-engine SQL through local PGlite, including competing quota attempts, 25 accounts in one day, atomic rollback/idempotency, UTC reset, resource/practice parity, game progression and recovery, daily autopilot catch-up, OAuth one-time callback/state/expiry, credential encryption, upstream ownership failures, CSRF, protected scheduler, migration splitting, 48-cell compact payload below 3 kB, all four Liquid renders and website practice/B&W controls. Hosted Neon concurrency, live TRMNL OAuth and native visual rendering are not yet verified. Four scheduler readiness checks added: pending deployment makes no POST, healthy world permits protected POST, real outages/malformed state fail visibly, unauthorized result is not called success.",
@@ -456,17 +456,27 @@
         "verification": "Production /api/auth gives302 to trmnl.com with secure HttpOnly SameSite cookie; no owner consent, upstream token or player move verified yet."
       },
       "autopilot": {
-        "status": "configured_readiness_guard_pending_production_deployment",
+        "status": "enabled_production_move_and_replay_verified_scheduled_check_pending",
         "workflow": ".github/workflows/tiny-planet-autopilot.yml",
-        "schedule": "Daily 00:17 UTC plus hourly :47, all seven days, independent of Mac and weekday build automation. Disabled until TINY_PLANET_ENABLED=true after production verification.",
+        "schedule": "Daily 00:17 UTC plus hourly :47, all seven days, independent of Mac and weekday build automation. TINY_PLANET_ENABLED=true.",
         "quota": "Separate owner-autopilot actor, one idempotent move per UTC day, row lock and unique daily nonce. Up to 31 missed days caught up transparently with quota day plus actual timestamps.",
-        "productionMoveVerified": false,
+        "productionMoveVerified": true,
         "failedInitialRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/39335130966",
-        "failure": "Initial dispatch reached older unconfigured deployment and returned Scheduler authorization required; no move. Schedule was paused while a readiness guard was prepared; only a verified-ready production world may receive a scheduled move."
+        "failure": "Initial dispatch reached older unconfigured deployment and returned Scheduler authorization required; no move. Schedule was paused while a readiness guard was prepared; only a verified-ready production world may receive a scheduled move.",
+        "firstSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/39335978085",
+        "firstProductionMove": {
+          "turn": 1,
+          "kind": "autopilot",
+          "action": "water",
+          "quotaDay": "2026-10-19",
+          "executedAt": "2026-10-19T22:35:15.675557+00:00"
+        },
+        "replayVerification": "GitHub run attempt 2 succeeded; public world remained turn 1 with exactly one event for October 19. No duplicate move.",
+        "firstScheduledRunVerified": false
       },
       "pendingActions": [
         "Verify a real owner TRMNL OAuth consent/callback and player move; public shared-world GET200 and secure sign-in redirect verified",
-        "Verify one protected production owner autopilot move and idempotent replay; daily/hourly workflow must wait for ready production world",
+        "Verify the next automatic scheduled autopilot check separately; first protected move and replay are verified and the seven-day workflow is enabled",
         "Complete native OG color/B&W and X/four layouts, icon/marketplace assets and public submission on EXISTING Recipe512639; do not duplicate",
         "Confirm physical receipt separately; only publish actual public install URL after approval"
       ],
@@ -478,10 +488,13 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
+      "latestDeploymentId": "dpl_4oQid8nfbcgUM3zLUh8bHAvPX8si",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
-      "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy"
+      "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
+      "verificationTimestamp": "2026-10-19T22:41:05.839048+00:00",
+      "activationEvidence": "artifacts/tiny-planet-activation-2026-10-19.json",
+      "anonymousProductionChecks": "GET world200, device650bytes, anonymous me200/sign_in_ready true, valid-shaped anonymous move401 and unauthenticated autopilot401. No player move or fake identity used."
     },
     {
       "day": 6,
@@ -548,7 +561,7 @@
     "checkedAt": "2026-10-16T19:28:25.427026+00:00",
     "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
     "privateDashboard": "Rechecked live October 16 after Manuel explicitly asked to open the review pages. All three settings show Plugin in review and submitted confirmation; Messenger Tickets list shows all three Submitted. This was a scoped read-only browser request, not permission for unrelated screen control or Recipe editing.",
-    "remainingOwnerAction": "A specifically authorized TRMNL dashboard session would allow saving the prepared four-character-code/QR layouts on existing Sounds Like My Company 507810 and creating/installing/submitting the separate prepared Newsflash Recipe. No extra key or spending approval required.",
+    "remainingOwnerAction": "No new API key or paid commitment is required. Live owner sign-in/play verification and native visual/public-submission steps remain on existing Tiny Planet 512639 and Newsflash 512643. Sounds 507810 four-character-code/QR markup remains prepared but unsaved.",
     "heyReviewCheck": {
       "checkedAt": "2026-10-16T19:31:22.142368+00:00",
       "result": "All three actual review-ticket threads found in HEY. Latest email in each is automated Submitted / pick up soon acknowledgment, dated October13,14,15 respectively. No approval or human reviewer feedback in those threads. These messages were missed by earlier sender-name search; exact Recipe Review subject search found them.",

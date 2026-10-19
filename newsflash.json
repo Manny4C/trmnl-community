@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,160 +10,40 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-18T23:18:10.822Z",
+    "generated_at": "2026-10-19T04:48:06.631Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "0e7e589f20a285c2",
-        "importance": 69,
-        "reason": "Recent ALCS highlight with a potentially consequential throw; the title gives no game outcome."
-      },
-      {
-        "id": "f8692055531cb832",
-        "importance": 25,
-        "reason": "First-pitch ceremony is timely but not a substantive game development."
-      },
-      {
-        "id": "10a49db32a2e34a9",
-        "importance": 17,
-        "reason": "Lighthearted Luka clip, with no basketball news indicated."
-      },
-      {
-        "id": "5f85e1ca34e9daac",
-        "importance": 16,
-        "reason": "Practice humor is promotional filler rather than a substantive basketball update."
-      },
-      {
-        "id": "3d95169260461f0d",
-        "importance": 12,
-        "reason": "A wholesome 2024 Finals moment, but archival and not timely."
-      },
-      {
-        "id": "4d075985173aa7b4",
-        "importance": 29,
-        "reason": "Roadster performance-themed promotional clip; no specs or independently verifiable details supplied."
-      },
-      {
-        "id": "8d54d90471a46158",
-        "importance": 22,
-        "reason": "A promotional stunt teaser, not evidence of a product breakthrough."
-      },
-      {
-        "id": "6c05762eee64362d",
-        "importance": 31,
-        "reason": "Roadster event could be relevant to EV news, but title gives no announcements or details."
-      },
-      {
-        "id": "a4f2c48ea8aa8ee7",
-        "importance": 37,
-        "reason": "A recent independent creator reaction to the Roadster event, but its substance is unknown."
-      },
-      {
         "id": "876b81013246184f",
-        "importance": 38,
-        "reason": "Launch trailer for a new game release; limited broader significance."
-      },
-      {
-        "id": "1f8a2c7f544ae0f9",
-        "importance": 37,
-        "reason": "Launch trailer signals a Switch 2 release, though no further context is supplied."
-      },
-      {
-        "id": "50b07391b1b1a4a8",
-        "importance": 27,
-        "reason": "Story trailer offers a game preview, not a consequential launch or update."
-      },
-      {
-        "id": "df05a5a223633290",
-        "importance": 40,
-        "reason": "Launch trailer marks a game release, with no details on its reception or significance."
-      },
-      {
-        "id": "3e1a4330f77ad30e",
-        "importance": 15,
-        "reason": "Vague character clip with no substantive gaming news indicated."
-      },
-      {
-        "id": "d3004b0505cc92f3",
-        "importance": 19,
-        "reason": "Promotional Madden content; title gives no meaningful update."
-      },
-      {
-        "id": "e3c6b593a30ca66e",
-        "importance": 38,
-        "reason": "Launch trailer for a game, but no broader importance or reception is provided."
-      },
-      {
-        "id": "9e0ef413006ae2f5",
-        "importance": 12,
-        "reason": "Vague OpenAI promotional title gives too little information to assess."
-      },
-      {
-        "id": "4bd93ae62726939c",
-        "importance": 30,
-        "reason": "Practical ChatGPT workflow explainer, but no major product change is stated."
+        "importance": 53,
+        "reason": "A new game launch trailer is relevant to players, but its wider significance is limited."
       },
       {
         "id": "3e1bb6f4d9024765",
-        "importance": 54,
-        "reason": "Reports RTX Spark laptops are available, though this is an NVIDIA-sourced announcement."
+        "importance": 60,
+        "reason": "A hardware availability announcement may interest PC and AI audiences; details are limited and first-party."
       },
       {
         "id": "472f9f8e7d3f265b",
-        "importance": 43,
-        "reason": "NASA leadership appointment is an institutional update, not a major mission development."
+        "importance": 35,
+        "reason": "A NASA center leadership appointment is a routine institutional update."
       },
       {
         "id": "f899e30222bf644b",
-        "importance": 49,
-        "reason": "Artemis II heat-shield coverage concerns a major mission, but article context is sparse."
-      },
-      {
-        "id": "0e701358b33f8754",
-        "importance": 27,
-        "reason": "Another story trailer for a game; no substantive update is described."
-      },
-      {
-        "id": "de80b212c9943f71",
-        "importance": 67,
-        "reason": "Timely full-inning ALCS highlight; the title does not establish the game's result."
-      },
-      {
-        "id": "09926caf2ab6fa4f",
-        "importance": 48,
-        "reason": "Full-game highlights from the prior ALCS game, useful but less timely than live action."
-      },
-      {
-        "id": "141a494bab3519e1",
-        "importance": 22,
-        "reason": "Preseason highlight is entertaining but not current competitive news."
-      },
-      {
-        "id": "cd75586e388c4090",
-        "importance": 15,
-        "reason": "Vague NBA humor clip, with no substantive news indicated."
-      },
-      {
-        "id": "5cdba47e6d60c85b",
-        "importance": 21,
-        "reason": "Tesla promotional stunt clip, with no product details or verification."
-      },
-      {
-        "id": "96160adf1c9cd382",
-        "importance": 21,
-        "reason": "Duplicate-style Roadster kickflip promotion, not a substantive development."
+        "importance": 46,
+        "reason": "Artemis II heat-shield coverage may be significant, but the brief context gives little detail."
       },
       {
         "id": "3b5dbc13df98572c",
-        "importance": 26,
-        "reason": "NASA profile of an employee is informational but not a major space development."
+        "importance": 25,
+        "reason": "An individual-focused NASA feature is less consequential than mission or program news."
       }
     ],
-    "source_checked_at": "2026-10-18T23:18:00.249Z"
+    "source_checked_at": "2026-10-19T04:48:00.314Z"
   },
   "last_attempt_at": "2026-10-19T04:48:00.045Z",
   "pending_reservation_microusd": 4440,
   "pending_source_checked_at": "2026-10-19T04:48:00.314Z",
-  "last_success_at": "2026-10-18T23:18:10.822Z",
+  "last_success_at": "2026-10-19T04:48:06.631Z",
   "last_error_status": null
 }

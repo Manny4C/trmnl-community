@@ -263,14 +263,14 @@
       "targetDate": "2026-10-16",
       "name": "Newsflash",
       "slug": "newsflash",
-      "status": "deployed_ai_active_recipe_pending",
+      "status": "recipe_draft_installed_submission_pending",
       "scope": "Completely rebuilt at Manuel’s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
         "name": "Newsflash",
-        "status": "prepared_not_created",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_installed",
+        "pluginId": 512643,
+        "settingsUrl": "https://trmnl.com/plugin_settings/512643/edit",
         "publicInstallUrl": null
       },
       "sourceDirectory": "apps/desk-editor",
@@ -281,10 +281,10 @@
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "publicationStatus": "newsflash_recipe_prepared_not_created_or_submitted",
-      "deviceInstallationStatus": "not_installed",
-      "physicalDeviceVerification": "No Newsflash Recipe exists or is installed. No physical receipt or official renderer verification. Browser controls remain off; only key setup pages were explicitly opened at Manuel’s request.",
-      "iconStatus": "original_black_white_svg_in_package",
+      "publicationStatus": "private_draft_not_submitted",
+      "deviceInstallationStatus": "added_to_playlist",
+      "physicalDeviceVerification": "Creation success confirms added to playlist October19. Configuration and Shared/all four image-first layouts saved; native data Test request returns HTTP200 with AI-selected MLB headline and source thumbnail. Full native render remained blank/loading in brief browser inspection; not verified. Physical receipt not confirmed.",
+      "iconStatus": "original_svg_prepared_local_upload_blocked_by_Chrome_file_access",
       "featuredImageStatus": "not_generated_in_trmnl",
       "testStatus": "30 checks pass: interest/word matching, exact title/image provenance, source URL allowlists, unsafe XML, stale/partial/cold outages, valid AI output and ID coverage, no per-viewer model call, conservative monthly budget stop/retry/month rollover, one Responses request/no retry, UTF-8 compact payload below 5 kB and safe rendering of all four image-first Liquid layouts. Production baseball/EV/gaming return valid source thumbnails (HTTP 200 image/jpeg), unmatched follow words yield a no-image empty state. Additional protected-curator checks verify one-time claim, unauthorized write rejection, parallel/replay exclusion and expired-key pause. Actual browser/official TRMNL renderer and physical device display remain unverified. Final checks also cover raw-host/Contents fallback, gaming isolation of broad AI-model posts and priority of eligible AI-reviewed leads over unreviewed clips.",
       "pollingUrl": "https://newsflash-trmnl.vercel.app/api/flash?interests={{ interests | url_encode }}&follow={{ follow | url_encode }}&hours={{ news_window }}&format=trmnl",
@@ -302,10 +302,11 @@
         "follow": ""
       },
       "pendingActions": [
-        "When browser use is explicitly requested again, create ONE separate Newsflash Recipe from prepared package, verify actual OG/X layouts and image loading, generate marketplace previews, preserve existing playlist, install and submit; record real status",
-        "Publish verified public installation URL only after human approval; physical receipt separate"
+        "Finish native OG/X image and layout QA on existing Recipe512643; data Test request is HTTP200 but actual image render not confirmed",
+        "Save icon, generate marketplace previews, submit public Recipe under applicable license confirmation",
+        "Record human review/public install URL and physical receipt separately"
       ],
-      "reviewStatus": "Separate Newsflash Recipe package replaces the never-created Desk Editor package. No ID, marketplace preview, installation, public submission or approval claimed. Existing three Recipes not rechecked since October 15.",
+      "reviewStatus": "Separate Newsflash Recipe512643 created; private draft, NOT submitted or approved. No duplicate Desk Editor Recipe.",
       "verificationTimestamp": "2026-10-16T17:56:51.235410+00:00",
       "previousName": "Desk Editor",
       "legacyWebsiteUrls": [
@@ -394,24 +395,25 @@
         "updatedOn": "2026-10-16",
         "websiteStatus": "production_html_css_and_zip_verified",
         "packageStatus": "all_four_layouts_updated",
-        "recipeStatus": "prepared_only_not_created",
+        "recipeStatus": "shared_and_four_layouts_saved",
         "nativeQa": "pending_separate_recipe_creation",
         "physicalReceipt": "unconfirmed"
-      }
+      },
+      "pluginId": 512643
     },
     {
       "day": 5,
       "targetDate": "2026-10-19",
       "name": "TRMNL Plays: Tiny Planet",
       "slug": "tiny-planet",
-      "status": "deployed_preview_activation_pending",
+      "status": "shared_world_online_owner_verification_pending",
       "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate.",
       "recipeRequired": true,
       "recipe": {
         "name": "TRMNL Plays: Tiny Planet",
-        "status": "prepared_not_created",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_installed",
+        "pluginId": 512639,
+        "settingsUrl": "https://trmnl.com/plugin_settings/512639/edit",
         "publicInstallUrl": null
       },
       "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
@@ -421,53 +423,65 @@
       "vercelProject": "tiny-planet",
       "vercelProjectId": "prj_AzCfpKbCm4q4RVBky3fhF18fM6w6",
       "buildCompletedOn": "2026-10-19",
-      "websiteDeploymentStatus": "production_preview_verified_shared_service_not_activated",
-      "publicationStatus": "recipe_prepared_not_created_or_submitted",
-      "deviceInstallationStatus": "not_installed",
-      "physicalDeviceVerification": "No Tiny Planet Recipe exists or is installed. Native OG/X renderer, mobile visual QA and physical receipt remain unverified. No browser/native UI used in scheduled build; focused background setup permission was requested once after deploying the reviewable preview.",
+      "websiteDeploymentStatus": "shared_world_endpoint_200_after_activation_deployment",
+      "publicationStatus": "private_draft_not_submitted",
+      "deviceInstallationStatus": "added_to_playlist",
+      "physicalDeviceVerification": "TRMNL creation success confirmed added to playlist October19; Shared and all four markup tabs saved. Production activation deployment is in Vercel system build queue, native full render and physical receipt not verified.",
       "iconStatus": "original_black_white_svg_in_package",
       "featuredImageStatus": "not_generated_in_trmnl",
-      "testStatus": "28 checks passed using actual PostgreSQL-engine SQL through local PGlite, including competing quota attempts, 25 accounts in one day, atomic rollback/idempotency, UTC reset, resource/practice parity, game progression and recovery, daily autopilot catch-up, OAuth one-time callback/state/expiry, credential encryption, upstream ownership failures, CSRF, protected scheduler, migration splitting, 48-cell compact payload below 3 kB, all four Liquid renders and website practice/B&W controls. Hosted Neon concurrency, live TRMNL OAuth and native visual rendering are not yet verified.",
+      "testStatus": "32 checks passed using actual PostgreSQL-engine SQL through local PGlite, including competing quota attempts, 25 accounts in one day, atomic rollback/idempotency, UTC reset, resource/practice parity, game progression and recovery, daily autopilot catch-up, OAuth one-time callback/state/expiry, credential encryption, upstream ownership failures, CSRF, protected scheduler, migration splitting, 48-cell compact payload below 3 kB, all four Liquid renders and website practice/B&W controls. Hosted Neon concurrency, live TRMNL OAuth and native visual rendering are not yet verified. Four scheduler readiness checks added: pending deployment makes no POST, healthy world permits protected POST, real outages/malformed state fail visibly, unauthorized result is not called success.",
       "pollingUrl": "https://tiny-planet-trmnl.vercel.app/api/world?format=trmnl",
       "database": {
         "provider": "Neon via personal Vercel integration",
         "selectedPlan": "free_v3",
-        "status": "not_provisioned_terms_acceptance_required",
+        "status": "provisioned_free_schema_initialized_verified",
         "termsUrl": "https://vercel.com/manny4c-personal/~/integrations/accept-terms/neon?source=cli",
         "paidCommitment": false,
-        "atomicity": "PostgreSQL row lock; world, resources, turn, history, unique nonce and account/day quota commit together. No local file, browser store or ephemeral in-memory shared state fallback."
+        "atomicity": "PostgreSQL row lock; world, resources, turn, history, unique nonce and account/day quota commit together. No local file, browser store or ephemeral in-memory shared state fallback.",
+        "resourceId": "store_gNLjwqaw24sofZWu",
+        "externalResourceId": "misty-union-62716909",
+        "termsAcceptedOn": "2026-10-19",
+        "schemaVerification": "Migration transaction completed via private production runtime; SELECT confirms chapter1, turn0, moves0. No production game moves were fabricated."
       },
       "ownership": {
-        "status": "implemented_registration_and_live_verification_pending",
+        "status": "registered_auth_start_verified_owner_consent_pending",
         "method": "TRMNL OAuth authorization-code PKCE, read/profile scopes; server GET /api/me + /api/devices before every accepted move; hashed account ID supplies one quota across devices and sessions. Public/code links never establish ownership.",
         "registerUrl": "https://trmnl.com/developer_apps",
         "redirectUri": "https://tiny-planet-trmnl.vercel.app/api/auth?step=callback",
         "clientType": "public PKCE (Cannot keep a secret)",
-        "credentialStatus": "No TRMNL access credential requested or stored yet. Client ID and secure session configuration remain pending."
+        "credentialStatus": "Public PKCE client ID configured in Vercel; Sensitive session and cron secrets generated privately. No owner access token/consent granted yet.",
+        "developerAppId": 262,
+        "developerAppUrl": "https://trmnl.com/developer_apps/262",
+        "publicClientId": "HbDWtEVQcKu9vaSdW_rb3AgjmNB2uTk4ruZt2ASIRTE",
+        "verification": "Production /api/auth gives302 to trmnl.com with secure HttpOnly SameSite cookie; no owner consent, upstream token or player move verified yet."
       },
       "autopilot": {
-        "status": "prepared_not_active",
+        "status": "configured_readiness_guard_pending_production_deployment",
         "workflow": ".github/workflows/tiny-planet-autopilot.yml",
         "schedule": "Daily 00:17 UTC plus hourly :47, all seven days, independent of Mac and weekday build automation. Disabled until TINY_PLANET_ENABLED=true after production verification.",
         "quota": "Separate owner-autopilot actor, one idempotent move per UTC day, row lock and unique daily nonce. Up to 31 missed days caught up transparently with quota day plus actual timestamps.",
-        "productionMoveVerified": false
+        "productionMoveVerified": false,
+        "failedInitialRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/39335130966",
+        "failure": "Initial dispatch reached older unconfigured deployment and returned Scheduler authorization required; no move. Schedule was paused while a readiness guard was prepared; only a verified-ready production world may receive a scheduled move."
       },
       "pendingActions": [
-        "Accept Neon Free marketplace terms; provision only free_v3 on personal Vercel, migrate production DB and configure private session/scheduler secrets",
-        "Register public TRMNL OAuth app and set public Client ID; verify live callback and owner device/account identity",
-        "Activate and verify production scheduler with one owner autopilot move plus replay protection, then next scheduled run",
-        "Complete native OG color/B&W and X orientations/four-layout QA, marketplace previews, owner installation and separate Recipe public submission; browser setup requested once and remains pending",
-        "Record actual review status, public install URL only on approval, and physical receipt separately"
+        "Verify a real owner TRMNL OAuth consent/callback and player move; public shared-world GET200 and secure sign-in redirect verified",
+        "Verify one protected production owner autopilot move and idempotent replay; daily/hourly workflow must wait for ready production world",
+        "Complete native OG color/B&W and X/four layouts, icon/marketplace assets and public submission on EXISTING Recipe512639; do not duplicate",
+        "Confirm physical receipt separately; only publish actual public install URL after approval"
       ],
       "colorUpdate": {
         "updatedOn": "2026-10-19",
         "websiteStatus": "color_and_bw_preview_implemented",
         "packageStatus": "all_four_layouts_prepared",
-        "recipeStatus": "prepared_only_not_created",
+        "recipeStatus": "shared_and_four_layouts_saved",
         "nativeQa": "not_verified",
-        "physicalReceipt": "not_installed"
+        "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_HYEbfginiqcHFPyAEejZHmxcJPGW"
+      "latestDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
+      "pluginId": 512639,
+      "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
+      "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy"
     },
     {
       "day": 6,
@@ -529,7 +543,7 @@
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
   },
-  "computerUsePreference": "Avoid unnecessary screen takeover. Manuel explicitly authorized browser actions to finish Echo owner configuration October 16; this permits the focused TRMNL update and verification. Preserve the broader background-only preference for unrelated/scheduled work unless separately authorized.",
+  "computerUsePreference": "Manuel authorized screen control for FIVE MINUTES October19 starting about22:25UTC; scoped TRMNL app/Recipe and Neon setup completed during that window, then screen control stopped. Do not treat this as ongoing permission; continue background-only work unless explicitly authorized again.",
   "lastPublicReviewCheck": {
     "checkedAt": "2026-10-16T19:28:25.427026+00:00",
     "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",

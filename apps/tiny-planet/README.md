@@ -6,7 +6,9 @@ Production preview: https://tiny-planet-trmnl.vercel.app
 
 ## Current release state
 
-Website/practice experience and Recipe package are ready. Shared production play is deliberately unavailable until the personal Neon Free database is provisioned and the TRMNL OAuth application is registered. No live database, community move, owner autopilot run, Recipe ID, installation, public submission or physical receipt is claimed. Existing device content has not been changed.
+The personal Neon Free database is provisioned and its schema initialized. TRMNL public PKCE app262 is registered and its Client ID plus private session/scheduler secrets are configured. Activation deployment9Q3oGum2j3ue5kqB5mAgM6ZkD6oB left the Vercel system build queue; public world now returns200 and sign-in begins with a secure cookie/302 to TRMNL. Real owner consent/callback and a player move still require live verification.
+
+Tiny Planet private Recipe512639 is created and added to the owner playlist, with Shared and all four layouts saved. It is NOT publicly submitted or approved. Marketplace/icon/native visual checks and physical receipt remain pending. Newsflash's separate private Recipe512643 is likewise created/added with configuration/four layouts saved; no duplicate should be created. Screen control was limited to five minutes on October19 and has ended.
 
 Free database terms approval: https://vercel.com/manny4c-personal/~/integrations/accept-terms/neon?source=cli
 
@@ -36,7 +38,7 @@ Use a random 32-byte-or-longer `TINY_PLANET_SESSION_SECRET` stored as Sensitive 
 
 `tp_autopilot` runs within the same database transaction/lock and uses the dedicated `owner-autopilot` actor, one quota day and nonce per UTC date. It tends the island, builds a beacon and sails after 8 groves. A bounded 31-day catch-up is transparently recorded with original quota dates and actual execution times; this does not claim execution occurred on missed days.
 
-Generate a random `TINY_PLANET_CRON_SECRET`; place it in Sensitive Vercel Production configuration and the repository's GitHub Actions secret of the same name using stdin, not arguments/logs. The owner workflow is `.github/workflows/tiny-planet-autopilot.yml`: daily at 00:17 UTC plus hourly at :47, seven days/week, independent of weekday build automation and Manuel's Mac. It remains OFF until verified production storage exists: repository variable `TINY_PLANET_ENABLED=true` enables it. Manually dispatch once, verify one production move and idempotent replay, then verify its next scheduled run before calling it active. Cloud schedule delays/outages remain possible and are exposed rather than hidden.
+Generate a random `TINY_PLANET_CRON_SECRET`; place it in Sensitive Vercel Production configuration and the repository's GitHub Actions secret of the same name using stdin, not arguments/logs. The owner workflow is `.github/workflows/tiny-planet-autopilot.yml`: daily at 00:17 UTC plus hourly at :47, seven days/week, independent of weekday build automation and Manuel's Mac. It waits for a healthy production world before attempting a move: repository variable `TINY_PLANET_ENABLED=true` enables it. Manually dispatch once, verify one production move and idempotent replay, then verify its next scheduled run before calling it active. Cloud schedule delays/outages remain possible and are exposed rather than hidden.
 
 ## Tests and preview
 
@@ -46,7 +48,7 @@ npm test
 npm run dev
 ```
 
-28 checks currently pass, including real PostgreSQL-engine SQL executed through PGlite, competing account attempts, many-account aggregation, resource rollback, practice/SQL agreement, retry identity, day reset, autopilot recovery/progression, ownership and authorization failures, CSRF, protected scheduling, migration splitting, a 48-cell payload below 3 kB, all four Liquid renders and the actual website practice/B&W controls. PGlite is a local PostgreSQL engine, not a hosted Neon concurrency test. Real production database races, OAuth, native TRMNL renderer, mobile visual layout and physical receipt remain unverified until access/setup is finished.
+32 checks currently pass, including real PostgreSQL-engine SQL executed through PGlite, competing account attempts, many-account aggregation, resource rollback, practice/SQL agreement, retry identity, day reset, autopilot recovery/progression, ownership and authorization failures, CSRF, protected scheduling, migration splitting, a 48-cell payload below 3 kB, all four Liquid renders and the actual website practice/B&W controls. PGlite is a local PostgreSQL engine, not a hosted Neon concurrency test. Real production database races, OAuth, native TRMNL renderer, mobile visual layout and physical receipt remain unverified until access/setup is finished.
 
 The production website never substitutes an in-memory practice island for the shared world. Practice is explicitly labeled, local, ephemeral and cannot submit a community move. Shared endpoints return 503 during missing database configuration. The public website polls every 30 seconds while visible; devices follow their configured refresh.
 

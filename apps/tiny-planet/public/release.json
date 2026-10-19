@@ -1,1 +1,1 @@
-{"recipe_status":"prepared_not_created","recipe_url":null,"shared_world_status":"awaiting_database_activation","ownership_status":"awaiting_oauth_registration","autopilot_status":"prepared_not_active"}
+{"recipe_status": "draft_installed", "recipe_id": 512639, "recipe_url": null, "shared_world_status": "online", "ownership_status": "oauth_app_registered_live_verification_pending", "autopilot_status": "configured_production_run_pending_verification"}

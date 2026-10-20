@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,145 +10,55 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-19T22:24:38.394Z",
+    "generated_at": "2026-10-20T01:52:17.898Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "e1144780554f8332",
-        "importance": 60,
-        "reason": "Timely World Series analysis, though it is preview content from MLB."
-      },
-      {
-        "id": "c222946efa5d1d98",
-        "importance": 79,
-        "reason": "Analysis of a recent ALCS Game 5 win is timely and tied to a playoff turning point."
-      },
-      {
-        "id": "71b1296c3317bc37",
-        "importance": 35,
-        "reason": "Prominent classic-game highlight, but archival rather than current news."
-      },
-      {
-        "id": "0e95d657f51ad1be",
-        "importance": 15,
-        "reason": "Light jersey-day feature with little evident news significance."
-      },
-      {
-        "id": "3d95169260461f0d",
-        "importance": 20,
-        "reason": "Wholesome archival moment, not a substantive current basketball update."
-      },
-      {
-        "id": "7ec4e1c49c0f1d05",
-        "importance": 18,
-        "reason": "Vague speed-focused Tesla promotional clip; no supporting details."
-      },
-      {
         "id": "a4f2c48ea8aa8ee7",
-        "importance": 40,
-        "reason": "Creator reaction to the Roadster may interest tech fans, but gives no specifics."
-      },
-      {
-        "id": "65696a1c4b64084e",
-        "importance": 34,
-        "reason": "A timely launch trailer, though the game’s broader significance is unclear."
-      },
-      {
-        "id": "248ff599280f048f",
-        "importance": 45,
-        "reason": "Launch trailer for three recognizable games on a new platform; no further context."
-      },
-      {
-        "id": "131025e8581e9923",
-        "importance": 25,
-        "reason": "Release-date trailer is a modest gaming update with no date or details supplied."
-      },
-      {
-        "id": "684213a095d137dd",
-        "importance": 25,
-        "reason": "Release-date trailer is a modest gaming update with no date or details supplied."
-      },
-      {
-        "id": "3a52c4905955a13a",
-        "importance": 40,
-        "reason": "Launch trailer for a PS5 title is timely, but context offers no game details."
-      },
-      {
-        "id": "7bf99cfa9e2084d0",
-        "importance": 37,
-        "reason": "Legal AI trust discussion is relevant, but the title gives no substantive findings."
-      },
-      {
-        "id": "0452d9595751d8af",
-        "importance": 37,
-        "reason": "Duplicate listing of a legal AI discussion; no substantive findings are supplied."
+        "importance": 44,
+        "reason": "Recent first-person reaction to a notable vehicle reveal; video substance is unclear."
       },
       {
         "id": "494a9fa3bb713759",
-        "importance": 54,
-        "reason": "Industrial AI ambitions and NVIDIA’s role are consequential topics, framed by a company source."
+        "importance": 61,
+        "reason": "Potentially consequential industrial AI initiative, but details are limited and NVIDIA is promoting it."
       },
       {
         "id": "ca2be23ea0a1d609",
-        "importance": 36,
-        "reason": "Media security initiative is a niche industry update from NVIDIA."
+        "importance": 42,
+        "reason": "Media-security technology announcement; first-party framing and limited context temper significance."
       },
       {
         "id": "6cab8ea372fc6c9d",
-        "importance": 48,
-        "reason": "NASA’s improved rocket vibration analysis may aid spaceflight; context is limited."
+        "importance": 53,
+        "reason": "NASA reports improved rocket vibration analysis, relevant to launch safety; impact is unspecified."
       },
       {
         "id": "e15503340f1d14f1",
-        "importance": 10,
-        "reason": "Generic title and sparse context make the news significance unclear."
+        "importance": 12,
+        "reason": "Generic title and sparse context make the NASA item’s significance unclear."
       },
       {
         "id": "3e1bb6f4d9024765",
-        "importance": 35,
-        "reason": "PC availability is a product launch update, but the promotional framing and older post limit weight."
-      },
-      {
-        "id": "70a739ab27824d4f",
-        "importance": 63,
-        "reason": "A current ChatGPT Voice feature video could be significant, but details are absent."
-      },
-      {
-        "id": "024b45c421a21fd2",
-        "importance": 26,
-        "reason": "Archival postseason-game feature, not a current baseball development."
-      },
-      {
-        "id": "f912c95f69efc276",
-        "importance": 38,
-        "reason": "Postseason highlights are timely, though the promotional title gives little detail."
-      },
-      {
-        "id": "9c1894fc24a23529",
-        "importance": 28,
-        "reason": "Opening-week compilation is timely entertainment, not a specific major development."
-      },
-      {
-        "id": "09a2a4801abbd678",
-        "importance": 17,
-        "reason": "Retrospective jersey-swap feature with little current news value."
+        "importance": 24,
+        "reason": "Product availability announcement is promotional, with no broader impact established."
       },
       {
         "id": "134d7d2f1a2e8c4c",
-        "importance": 12,
-        "reason": "Broad NASA facilities title and brief context do not identify a specific finding."
+        "importance": 13,
+        "reason": "Generic NASA facilities item with too little context to assess importance."
       },
       {
         "id": "a66ace63ea8798dc",
-        "importance": 53,
-        "reason": "A simulated Mars crew’s one-year milestone is a substantive space research update."
+        "importance": 55,
+        "reason": "A year-long simulated Mars mission is a substantive human-spaceflight milestone, though not a real mission."
       }
     ],
-    "source_checked_at": "2026-10-19T22:24:26.093Z"
+    "source_checked_at": "2026-10-20T01:52:11.870Z"
   },
   "last_attempt_at": "2026-10-20T01:52:11.529Z",
   "pending_reservation_microusd": 4630,
   "pending_source_checked_at": "2026-10-20T01:52:11.870Z",
-  "last_success_at": "2026-10-19T22:24:38.394Z",
+  "last_success_at": "2026-10-20T01:52:17.898Z",
   "last_error_status": null
 }

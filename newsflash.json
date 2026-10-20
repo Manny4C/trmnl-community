@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,55 +10,135 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-20T01:52:17.898Z",
+    "generated_at": "2026-10-20T07:40:00.258Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "a4f2c48ea8aa8ee7",
-        "importance": 44,
-        "reason": "Recent first-person reaction to a notable vehicle reveal; video substance is unclear."
+        "id": "f0982f726e449c52",
+        "importance": 95,
+        "reason": "ALCS final-out calls capture a championship-series clincher and World Series berth."
+      },
+      {
+        "id": "ceca81653d07be7b",
+        "importance": 76,
+        "reason": "Timely reaction to the Rays reaching the World Series; discussion is less substantive than game coverage."
+      },
+      {
+        "id": "71b1296c3317bc37",
+        "importance": 45,
+        "reason": "Classic-game feature revisits a notable 52-point performance, but is not current news."
+      },
+      {
+        "id": "0e95d657f51ad1be",
+        "importance": 12,
+        "reason": "Light jersey-day social post with little news value."
+      },
+      {
+        "id": "3d95169260461f0d",
+        "importance": 18,
+        "reason": "Wholesome retrospective clip from the 2024 Finals, not a current development."
+      },
+      {
+        "id": "7ec4e1c49c0f1d05",
+        "importance": 14,
+        "reason": "Vague Tesla promotional teaser; no vehicle or performance details supplied."
+      },
+      {
+        "id": "65696a1c4b64084e",
+        "importance": 25,
+        "reason": "A game launch trailer, but no release details or wider significance are given."
+      },
+      {
+        "id": "248ff599280f048f",
+        "importance": 35,
+        "reason": "Launch trailer for three established games on Switch 2; details are limited."
+      },
+      {
+        "id": "f677bdac118f9f41",
+        "importance": 20,
+        "reason": "New game announcement trailer, but no title details or release information supplied."
+      },
+      {
+        "id": "8d3e7b22a094dc33",
+        "importance": 14,
+        "reason": "Character trailer is promotional and offers no broader game news in the supplied text."
+      },
+      {
+        "id": "ff813c314f196074",
+        "importance": 22,
+        "reason": "Crossover launch trailer is timely, but no release or gameplay details are supplied."
+      },
+      {
+        "id": "791c3f0449e80ff3",
+        "importance": 10,
+        "reason": "Episode title alone gives no indication of substantive AI news."
+      },
+      {
+        "id": "7bf99cfa9e2084d0",
+        "importance": 27,
+        "reason": "Legal AI trust discussion may matter, but the supplied title gives no concrete findings."
+      },
+      {
+        "id": "64133903258a4e47",
+        "importance": 39,
+        "reason": "Regional AI startup support is relevant, though the brief context lacks specifics or outcomes."
       },
       {
         "id": "494a9fa3bb713759",
-        "importance": 61,
-        "reason": "Potentially consequential industrial AI initiative, but details are limited and NVIDIA is promoting it."
-      },
-      {
-        "id": "ca2be23ea0a1d609",
-        "importance": 42,
-        "reason": "Media-security technology announcement; first-party framing and limited context temper significance."
+        "importance": 37,
+        "reason": "Industrial AI plans and NVIDIA's role are consequential topics, but details are sparse."
       },
       {
         "id": "6cab8ea372fc6c9d",
-        "importance": 53,
-        "reason": "NASA reports improved rocket vibration analysis, relevant to launch safety; impact is unspecified."
+        "importance": 47,
+        "reason": "NASA reports improved rocket shock and vibration analysis, a potentially useful engineering advance."
       },
       {
         "id": "e15503340f1d14f1",
-        "importance": 12,
-        "reason": "Generic title and sparse context make the NASA item’s significance unclear."
+        "importance": 8,
+        "reason": "Generic title and truncated context make the subject and significance unclear."
       },
       {
-        "id": "3e1bb6f4d9024765",
+        "id": "ca2be23ea0a1d609",
         "importance": 24,
-        "reason": "Product availability announcement is promotional, with no broader impact established."
+        "reason": "Media security announcement appears industry-focused and promotional, with few supplied details."
+      },
+      {
+        "id": "5e8c9828a90e88db",
+        "importance": 71,
+        "reason": "Full Game 6 play-by-play offers substantive coverage of the ALCS clincher."
+      },
+      {
+        "id": "0b32bf3d8e5013bd",
+        "importance": 54,
+        "reason": "Timely Game 6 recap, but a short-form summary is less comprehensive."
+      },
+      {
+        "id": "9c1894fc24a23529",
+        "importance": 27,
+        "reason": "Historical highlight compilation is entertainment, not a current basketball development."
+      },
+      {
+        "id": "09a2a4801abbd678",
+        "importance": 13,
+        "reason": "Rookie-year jersey-swap feature is retrospective and promotional."
       },
       {
         "id": "134d7d2f1a2e8c4c",
-        "importance": 13,
-        "reason": "Generic NASA facilities item with too little context to assess importance."
+        "importance": 11,
+        "reason": "Generic facilities page title gives no clear news or notable development."
       },
       {
         "id": "a66ace63ea8798dc",
-        "importance": 55,
-        "reason": "A year-long simulated Mars mission is a substantive human-spaceflight milestone, though not a real mission."
+        "importance": 52,
+        "reason": "A simulated Mars crew reaching one year is a notable mission milestone, though details are limited."
       }
     ],
-    "source_checked_at": "2026-10-20T01:52:11.870Z"
+    "source_checked_at": "2026-10-20T07:39:44.733Z"
   },
   "last_attempt_at": "2026-10-20T07:39:44.342Z",
   "pending_reservation_microusd": 5403,
   "pending_source_checked_at": "2026-10-20T07:39:44.733Z",
-  "last_success_at": "2026-10-20T01:52:17.898Z",
+  "last_success_at": "2026-10-20T07:40:00.258Z",
   "last_error_status": null
 }

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,145 +10,140 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-20T13:36:28.828Z",
+    "generated_at": "2026-10-20T18:29:40.927Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "395eef6776e8d2e5",
-        "importance": 91,
-        "reason": "World Series matchup is set; a major, timely baseball milestone."
+        "id": "39c176794a62a23b",
+        "importance": 72,
+        "reason": "Fresh collection of postseason highlights, with World Series-relevant moments."
       },
       {
-        "id": "390a38639f2711b6",
-        "importance": 52,
-        "reason": "Postseason home-run calls offer timely highlights, but limited broader significance."
+        "id": "213debff1947dcd1",
+        "importance": 49,
+        "reason": "Previews a major series but offers no reported development or analysis details."
       },
       {
-        "id": "ceca81653d07be7b",
-        "importance": 76,
-        "reason": "Immediate reaction to the Rays reaching the World Series; timely but speculative on next steps."
+        "id": "3b7e790dc4524315",
+        "importance": 17,
+        "reason": "Opening-day arrival clip; ceremonial rather than substantive basketball news."
       },
       {
-        "id": "71b1296c3317bc37",
-        "importance": 37,
-        "reason": "Retrospective star performance, with no new development indicated."
-      },
-      {
-        "id": "0e95d657f51ad1be",
-        "importance": 15,
-        "reason": "Jersey-day feature is light promotional content."
-      },
-      {
-        "id": "3d95169260461f0d",
-        "importance": 19,
-        "reason": "Wholesome retrospective from the 2024 Finals, not a current development."
+        "id": "2e860e8dd2843b93",
+        "importance": 17,
+        "reason": "Opening-day arrival clip; limited news value."
       },
       {
         "id": "7ec4e1c49c0f1d05",
-        "importance": 16,
-        "reason": "Vague acceleration tease provides no concrete product details."
+        "importance": 13,
+        "reason": "Vague Tesla promotional teaser with no vehicle or performance details."
+      },
+      {
+        "id": "58374db242b2e5e8",
+        "importance": 29,
+        "reason": "A new game-season trailer, but routine gaming promotion."
       },
       {
         "id": "c463c958a8a2cee4",
-        "importance": 43,
-        "reason": "Fresh launch trailer for a Switch 2 game; significance beyond the launch is unclear."
+        "importance": 30,
+        "reason": "Launch trailer signals a release, though no further launch details are provided."
       },
       {
-        "id": "65696a1c4b64084e",
-        "importance": 35,
-        "reason": "Launch trailer is relevant to players, but the title's broader impact is unclear."
+        "id": "431295b5ac735a26",
+        "importance": 24,
+        "reason": "New game announcement, but title alone gives little substantive information."
+      },
+      {
+        "id": "aae60fb684cd3a65",
+        "importance": 23,
+        "reason": "Announcement trailer for a game; no details establish broader significance."
       },
       {
         "id": "c76df8288aba3c86",
-        "importance": 41,
-        "reason": "Timely launch trailer, with no further details to assess its significance."
-      },
-      {
-        "id": "0c91c6b7a006fb29",
         "importance": 31,
-        "reason": "New game trailer, but no release or gameplay details in the supplied context."
+        "reason": "Launch trailer for a game, with limited context on its release or impact."
       },
       {
-        "id": "46614171a5a98dcf",
-        "importance": 8,
-        "reason": "Cryptic cross-promotion gives little information about a game or development."
+        "id": "dc5366d754b50d8a",
+        "importance": 26,
+        "reason": "Remaster announcement is timely but primarily a game promotion."
       },
       {
-        "id": "ff813c314f196074",
-        "importance": 34,
-        "reason": "Launch trailer ties a game to a known franchise; wider significance is unclear."
+        "id": "1be6a3ecabf9e63b",
+        "importance": 25,
+        "reason": "Story trailer for a remaster; little information beyond promotion."
       },
       {
         "id": "96239b7e2e959b59",
-        "importance": 18,
-        "reason": "Vague promotional video title offers no concrete AI product information."
+        "importance": 22,
+        "reason": "OpenAI video title is promotional and too vague to establish product significance."
       },
       {
         "id": "791c3f0449e80ff3",
-        "importance": 24,
-        "reason": "First episode of a Codex-themed series; the title gives little substantive detail."
+        "importance": 23,
+        "reason": "First episode in a Codex series, but title gives no substantive AI development."
       },
       {
         "id": "64133903258a4e47",
         "importance": 38,
-        "reason": "Regional AI startup accelerator is notable, but the supplied context is fragmentary."
+        "reason": "Regional AI startup support is relevant, but supplied context is sparse."
       },
       {
         "id": "494a9fa3bb713759",
-        "importance": 35,
-        "reason": "Industrial AI plans and NVIDIA's role are relevant, but context is limited and promotional."
+        "importance": 41,
+        "reason": "Industrial AI plans and NVIDIA involvement are notable, though details are limited."
       },
       {
-        "id": "6cab8ea372fc6c9d",
-        "importance": 47,
-        "reason": "NASA engineering work on rocket vibration analysis has practical spaceflight relevance."
+        "id": "d84f2255ba8f6501",
+        "importance": 69,
+        "reason": "Progress on a nuclear power module for a Mars-bound mission is consequential."
       },
       {
-        "id": "e15503340f1d14f1",
-        "importance": 12,
-        "reason": "Generic title and sparse context make the research topic unclear."
+        "id": "e210cf95d60b3f53",
+        "importance": 59,
+        "reason": "NASA is developing longer-flight Mars helicopter blades, a meaningful exploration advance."
       },
       {
         "id": "ca2be23ea0a1d609",
-        "importance": 27,
-        "reason": "Media security announcement is industry-focused and comes from a promotional source."
+        "importance": 34,
+        "reason": "Media-security technology update, but supplied context lacks specifics or demonstrated impact."
       },
       {
-        "id": "29c79f6921cfb163",
-        "importance": 7,
-        "reason": "Minimal title and no context; likely promotional, with little assessable substance."
+        "id": "10070575053cb496",
+        "importance": 63,
+        "reason": "Timely postseason recap of the Rays' path to the World Series."
       },
       {
-        "id": "f0982f726e449c52",
-        "importance": 65,
-        "reason": "Final-out calls capture the decisive ALCS moment, though the matchup announcement is bigger news."
+        "id": "feb128803d695249",
+        "importance": 55,
+        "reason": "Spotlights a major ALCS homer, though the clip is an individual celebration."
       },
       {
-        "id": "9c1894fc24a23529",
-        "importance": 28,
-        "reason": "Historical highlight compilation is entertainment, not a current basketball development."
+        "id": "f1bc3621834045e4",
+        "importance": 20,
+        "reason": "Cryptic celebration clip with insufficient context to judge significance."
       },
       {
-        "id": "09a2a4801abbd678",
-        "importance": 17,
-        "reason": "Retrospective jersey-swap feature tied to a past rookie campaign."
+        "id": "5214cc4c4f5d4a98",
+        "importance": 61,
+        "reason": "LeBron's reported record 24th season is a notable basketball milestone."
       },
       {
-        "id": "134d7d2f1a2e8c4c",
-        "importance": 11,
-        "reason": "Generic NASA facilities listing with little context or news value."
+        "id": "e94a5ee8d763551a",
+        "importance": 58,
+        "reason": "NASA progress on planned lunar rovers is substantive, though details are limited."
       },
       {
-        "id": "a66ace63ea8798dc",
-        "importance": 54,
-        "reason": "A year-long simulated Mars crew milestone is a substantive, timely space update."
+        "id": "a98449d413b9a678",
+        "importance": 47,
+        "reason": "New Webb stellar-jet release is a timely science item; context says image was released earlier."
       }
     ],
-    "source_checked_at": "2026-10-20T13:36:15.052Z"
+    "source_checked_at": "2026-10-20T18:29:29.970Z"
   },
   "last_attempt_at": "2026-10-20T18:29:29.584Z",
   "pending_reservation_microusd": 5432,
   "pending_source_checked_at": "2026-10-20T18:29:29.970Z",
-  "last_success_at": "2026-10-20T13:36:28.828Z",
+  "last_success_at": "2026-10-20T18:29:40.927Z",
   "last_error_status": null
 }

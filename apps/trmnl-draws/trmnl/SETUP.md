@@ -1,0 +1,19 @@
+# TRMNL Draws — separate prepared Recipe
+
+Create ONE separate private plugin called TRMNL Draws. Do not replace or duplicate any existing Recipe. Configuration is public metadata only; every device sees the same canvas. Strategy Polling GET, framework3.4.3 or later, no headers/body/Serverless transform. Refresh30minutes or slower.
+
+https://trmnl-draws.vercel.app/api/canvas?format=trmnl
+
+Copy shared.liquid to Shared, and each of the four files to its matching layout. Save icon.svg. Full-bleed imagery intentionally does not use the usual padded layout/title_bar: the user explicitly requested that the canvas fill the screen. The protected bottom-right24%width×50%height QR corner is common to all layouts. Pixels are stretched to keep the complete canvas visible on different aspect ratios; the separate QR stays square. Each logical drawing cell maps to an image, not thousands of merge variables; compact payload is below5kB.
+
+Native1bit/2bit/4bit variants select the server's smart monochrome image. Perceptual lightness becomes stable ordered patterns; similar-lightness neighboring colors gain a fine contrasting keyline. Color screens receive RGB source art through native image-dither and map to their actual palette. The QR is pure black/white with its quiet zone and NEVER image-dither. No JavaScript, touch input or animation runs on TRMNL.
+
+Scan the QR or type its four-character code at the website. It is a public, expiring daily doorway, NOT a secret ownership proof. Everyone receives unique account-bound daily access only after actual TRMNL OAuth/device verification. All users see the same daily entry code; copying it, reconnecting or owning more devices cannot create extra allowance. Access lasts at most2hours and ends at midnightUTC; scan today's entry again if expired. Scopes read/profile through the existing Tiny Planet developer app262, with a fixed-origin one-time PKCE-protected handoff back to Draws and a private server-to-server proof exchange. No new API key or broader scope. The server rechecks account/device ownership for EVERY batch.
+
+Ten placements/account/dayUTC; no cap on aggregate community placements. One batch may contain1–10 distinct changed pixels. Repainting a coordinate in a later batch costs another placement. No-op, invalid, stale-conflicting or over-quota batches reject atomically with no charge. Retry the exact nonce after an uncertain response; accepted edits cannot be charged twice. The browser preserves an uncertain request in the current tab's session storage. The seed cat is initial artwork, not a community edit. No automatic artist overwrites users' drawing.
+
+Backend shares the existing free personal Neon database but uses distinct td_ tables/quotas/sessions. Row lock applies artwork, version, daily usage, audit edit and versioned snapshot in one transaction. Last256 image snapshots retained; public history contains counts/times only, no account identifier. Native device refresh follows its playlist interval; public website checks every20seconds while visible. Physical display is not a real-time game client.
+
+Recipe status is PREPARED until actual creation. Native OG color/B&W and X landscape/portrait/four-layout QA, icon/marketplace images, owner playlist installation and public submission remain separate and must be recorded. Browser control remains disallowed after the earlier five-minute permission expired; no duplicate Recipe or claimed installation/publication/physical receipt. After renewed authorization, record the master ID immediately; install preserving other entries, verify actual images/QR and all layouts, save marketplace previews, then complete applicable public license/submission. Set public/release.json only to the real status; add a public install URL only after approval.
+
+Website/source/support: https://trmnl-draws.vercel.app / https://github.com/Manny4C/trmnl-community/tree/main/apps/trmnl-draws

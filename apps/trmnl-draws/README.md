@@ -1,0 +1,23 @@
+# TRMNL Draws
+
+Explicit additional game requested by Manuel after Game Night Radar; this does not replace Tiny Planet or consume Local Morning Brief's next weekday slot. One shared100×60 pixel canvas initialized once with an original black cat. Ten pixel placements per verified TRMNL account per UTC day. Public viewer/editor website, full-screen art, daily four-character QR doorway,16-color palette and smart mono rendering.
+
+No paid model or new paid service. Reuses existing PERSONAL Neon database and Tiny Planet OAuth app262. Credentials remain private runtime configuration; nothing goes into code/chat/logs. Each game keeps its own Sensitive credential-encryption key. A one-time server-to-server proof exchange transfers the verified session privately; no key is exported. Public browser access never receives upstream tokens. Tiny Planet's gameplay/quota/playlist remain independent.
+
+## Transaction and access
+
+Tables td_canvas,td_usage,td_edits,td_snapshots,td_entries,td_sessions,td_handoffs. td_paint serializes on one canvas row. Artwork/version/day usage/audit/snapshot commit together.10placements/account/day,1–10 distinct changed coordinates/batch, expected palette value per cell, no-op/conflict/invalid/over-quota rollback, unique nonce stores exact request for idempotent retry. Server derives actor/day from verified session and database clock; caller-provided identities/dates are ignored. Owning more devices or reconnecting never multiplies quota. Independent cells can be edited despite other changes elsewhere. Last256 immutable image snapshots retained, bounded free storage; full audit remains for quota/retry/support.
+
+Daily public entry is4characters and expires00:00UTC. It is not ownership proof; website can display it too. GET /e/CODE validates and creates a private daily-entry cookie. Draws auth start creates state/verifier and redirects to existing Tiny Planet OAuth integration. Its registered upstream callback stays unchanged. Tiny Planet seals the bridge request into the upstream handshake, verifies TRMNL identity/devices, and creates a hashed one-time2minute handoff code bound to Draws S256 challenge. Only the fixed Draws callback can receive it. Draws redeems it server-to-server at Tiny Planet with its private verifier, plus state/daily-entry checks and creates a separate opaque session. Its upstream token stays AES-GCM encrypted under the receiving game’s separate key in PostgreSQL; no raw token reaches a browser or URL. Sessions last at most2hours and end at midnightUTC. CSRF+exactOrigin+JSON required to paint, fresh server TRMNL /api/me+devices verification before EVERY batch. No API keys from players. Revoke under Connected agents. A public code/link/IP/localStorage is never quota identity.
+
+The shared integration appears as Tiny Planet on TRMNL's consent screen; the website explains this. No new app registration, browser cookies, hidden UI automation or expanded scopes are used. Actual owner consent/callback still requires a human live-account check; mocks and an auth redirect alone do not prove it works.
+
+## Display
+
+Source pixel values0–F,16named RGB colors. Pure JS/pngjs renders800×480 PNG. Every canvas pixel remains visible when stretched to a panel's aspect ratio. Native display variants choose color (image-dither) or monochrome. Mono converts sRGB to perceptual lightness, preserves solid black/white, applies stable4×4 Bayer pattern phases and adds fine keylines for adjacent similar-lightness hues. It is not simple threshold/grayscale. QR remains independently square, pure black/white with a quiet zone. Protected24%×50%corner equals720logicalcells, leaving5280editablepixels; artwork fills the full view. No native padded layout/title_bar is intentional.
+
+## Operation
+
+npm ci; npm test; npm run dev (127.0.0.1:4327). Node22production. Install/migrate only through the existing personal production runtime; scripts/setup-runtime.mjs --initialize-secret is for first setup only and uses stdin for Sensitive Vercel env values and initializes tables/seed idempotently without overwriting any edits. NEVER rerun a reset against production or print credentials. scripts/migrate.mjs requires DATABASE_URL privately; seed insertion ON CONFLICT DO NOTHING.
+
+Prepared Recipe: public/plugin.zip includes four layouts, shared CSS/native variants, original icon, metadata and setup. Actual creation/install/public submission/visual/physical verification are separate; see launch-plan.json. No screen control is currently authorized. Public release metadata/website must reflect actual states. The website polls20seconds while visible, and devices follow normal TRMNL refresh; no realtime/push guarantee.

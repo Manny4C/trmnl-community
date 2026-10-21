@@ -1,0 +1,2 @@
+import {canvas,todayEntry,devicePayload} from '../lib/db.js';import {headers,fail} from '../lib/http.js';import {ORIGIN} from '../lib/game.js';
+export default async function handler(req,res){headers(res);if(req.method!=='GET')return res.status(405).json({error:'Use GET.'});try{const w=await canvas(),q=new URL(req.url,ORIGIN);return res.status(200).json(q.searchParams.get('format')==='trmnl'?devicePayload(w,await todayEntry()):{...w,width:100,height:60,limit:10});}catch(e){return fail(res,e);}}

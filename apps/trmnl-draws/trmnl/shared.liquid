@@ -1,0 +1,13 @@
+{% template canvas_screen %}
+<div class="draws-screen w--full h--full">
+{% if image_color_url and image_bw_url %}
+<img class="draws-art image-dither visible 1bit:hidden 2bit:hidden 4bit:hidden" src="{{ image_color_url | escape }}" alt="TRMNL Draws shared canvas, revision {{ version }}">
+<img class="draws-art hidden 1bit:visible 2bit:visible 4bit:visible" src="{{ image_bw_url | escape }}" alt="Smart monochrome shared canvas, revision {{ version }}">
+<div class="draws-join bg--white text--black"><img class="draws-qr" src="{{ qr_url | escape }}" alt="Scan for today's TRMNL-verified drawing access"><span class="label label--small text--bold">{{ entry_code | escape }} · 10/day</span></div>
+{% else %}<div class="layout layout--col"><span class="title title--small">Shared canvas unavailable</span><span class="description">TRMNL Draws · please try again later.</span></div>{% endif %}
+</div>
+{% endtemplate %}
+<style>
+/* Full-bleed art and a fixed protected QR corner intentionally replace layout padding/title_bar. */
+.draws-screen{position:relative;overflow:hidden;background:#fff}.draws-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;image-rendering:pixelated}.draws-join{position:absolute;right:0;bottom:0;width:24%;height:50%;border:2px solid #000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:4px;overflow:hidden}.draws-qr{width:100%;min-height:0;flex:1;object-fit:contain;image-rendering:pixelated;background:#fff}.draws-join>span{flex-shrink:0;line-height:1;white-space:nowrap}
+</style>

@@ -1,0 +1,4 @@
+import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import {randomBytes} from 'node:crypto';
+if(!process.argv.includes('--initialize-secret'))throw Error('Initial setup requires explicit --initialize-secret. For later schema updates use migrate.mjs alone.');
+const cwd=fileURLToPath(new URL('..',import.meta.url));if(!process.env.DATABASE_URL)throw Error('Missing private database runtime.');const settings={DATABASE_URL:process.env.DATABASE_URL,DRAWS_SESSION_SECRET:randomBytes(48).toString('base64url')};for(const [name,value] of Object.entries(settings)){const child=spawnSync('vercel',['env','add',name,'production','--sensitive','--force','--yes','--scope','manny4c-personal'],{cwd,input:value+'\n',encoding:'utf8',stdio:['pipe','pipe','pipe']});if(child.status!==0)throw Error('Could not privately configure '+name);console.log('Configured '+name+' privately.');}
+await import('./migrate.mjs');

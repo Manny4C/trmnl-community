@@ -494,13 +494,18 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_8KoS76zAaDU9CJvHAyTz1dAu5kkr",
+      "latestDeploymentId": "dpl_CQq9TZxCtuGKZFQ5wnYGNqETKTj6",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
       "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
       "verificationTimestamp": "2026-10-19T22:41:05.839048+00:00",
       "activationEvidence": "artifacts/tiny-planet-activation-2026-10-19.json",
-      "anonymousProductionChecks": "GET world200, device650bytes, anonymous me200/sign_in_ready true, valid-shaped anonymous move401 and unauthenticated autopilot401. No player move or fake identity used."
+      "anonymousProductionChecks": "GET world200, device650bytes, anonymous me200/sign_in_ready true, valid-shaped anonymous move401 and unauthenticated autopilot401. No player move or fake identity used.",
+      "drawsBrokerExtension": {
+        "addedOn": "2026-10-21",
+        "scope": "Only a fixed-origin one-use PKCE handoff and server exchange for Draws. Upstream scopes/client/redirect and gameplay/quotas/playlist unchanged. Sensitive keys remain separate and are never exported.",
+        "verification": "23Draws integration/security tests and32original tests pass; public auth chain verified. No human consent/token/player edit fabricated."
+      }
     },
     {
       "day": 6,
@@ -640,5 +645,58 @@
   "scheduleAdjustment": {
     "updatedOn": "2026-10-21",
     "reason": "October20 Game Night Radar had no completed build in saved state. Preserve order and at most one new app/weekday: Game Night Radar October21, Local Morning Brief October22."
-  }
+  },
+  "additionalApps": [
+    {
+      "name": "TRMNL Draws",
+      "slug": "trmnl-draws",
+      "requestedOn": "2026-10-21",
+      "explicitAdditionalBuild": true,
+      "outsideScheduledSevenAppSeries": true,
+      "status": "shared_canvas_online_recipe_prepared",
+      "sourceDirectory": "apps/trmnl-draws",
+      "websiteUrl": "https://trmnl-draws.vercel.app",
+      "vercelProject": "trmnl-draws",
+      "vercelProjectId": "prj_NSKHBi7QCWakVslBnUclptaGD6wp",
+      "scope": "One shared100x60pixel canvas seeded once with an original black cat. Ten pixel placements per verified TRMNL account per UTC day.16colors, perceptual patterned B/W, full-bleed art/protected12%QR corner. Four-character daily public entry followed by unique account-bound access; a link never proves ownership. Fresh device/account check before each atomic1–10pixel batch, per-cell conflict detection, durable quota, idempotent nonce and versioned images.",
+      "recipe": {
+        "name": "TRMNL Draws",
+        "status": "prepared",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      },
+      "deviceInstallationStatus": "not_installed",
+      "publicationStatus": "prepared_not_submitted",
+      "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Five-minute authorization remains expired.",
+      "testStatus": "23 new checks passed: PostgreSQL-engine quotas/races/25accounts/UTC reset/rollback/conflicts/noops/replay; entry expiry; anonymous/CSRF/revocation/forged identity failures; fixed-origin PKCE broker one-use server exchange/independent keys/expired sessions; full color/binary smart mono PNG; independent QR decode74/82/88/164px; four Liquid layouts/native palette and public browser drafts. Existing Tiny Planet32checks pass. Hosted Neon races, actual human OAuth/native rendering/physical receipt remain unverified.",
+      "database": {
+        "provider": "Existing PERSONAL Neon Free PostgreSQL",
+        "status": "production_schema_and_seed_initialized_verified",
+        "newPaidCommitment": false,
+        "schema": "Separate td_ tables/quotas/sessions; no tp_ game changes",
+        "seedPolicy": "Idempotent INSERT ON CONFLICT DO NOTHING, never reset shared edits"
+      },
+      "ownership": {
+        "method": "Existing Tiny Planet PKCE app262/unchanged redirect and scopes. Fixed-origin2minute one-use handoff redeemed by server with private verifier; each game retains its own Sensitive encryption key. No key exported; raw token stays server-side, never in a browser/URL/log. Sessions <=2h/midnightUTC. Fresh account/device verification before each batch.",
+        "status": "production_redirect_chain_verified_live_consent_pending"
+      },
+      "pendingActions": [
+        "Verify a real human consent/callback and pixel batch; never fabricate a player",
+        "After renewed browser authorization create ONE separate Recipe, recordID, verify native OG color/BW and X/four layouts/QR, save icon/marketplace, install preserving all entries, then public submission under applicable license confirmation",
+        "Confirm physical receipt and approved install URL separately"
+      ],
+      "buildCompletedOn": "2026-10-21",
+      "websiteDeploymentStatus": "ready_anonymous_production_verified",
+      "latestDeploymentId": "dpl_D6yiJC12hRChSCTMyMEiX1PEFJig",
+      "verificationTimestamp": "2026-10-21T17:16:31.421867+00:00",
+      "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
+      "productionEvidence": "artifacts/trmnl-draws/production-2026-10-21.json",
+      "productionVerification": "World v0/6000pixels/zero fabricated edits. Device366bytes. ColorPNG3126bytes and binary smartBWPNG10198bytes match seed pixels; actual QR decodes. Daily entry sets valid cookie while anonymous remains disconnected. Auth redirects through Tiny Planet to registered TRMNL PKCE read/profile flow. Anonymous valid-shaped paint401; invalid handoff proof400. Original Tiny Planet world remains turn3 and live. Public website/JS/ZIP match saved source. Real consent/accepted human paint/native renderer/device receipt not verified.",
+      "iconStatus": "original_cat_svg_in_package",
+      "featuredImageStatus": "not_generated_no_recipe_created",
+      "testRuntime": "All23new checks passed under production-compatible Node22, after the developer-machine Node26 filtered-run hook issue. Full suite remains passing; no production identity or drawing was fabricated.",
+      "cachePolicy": "Versioned public images and fixed QR images have immutable one-day CDN/browser cache; dynamic canvas/session/paint/entry/auth data is no-store."
+    }
+  ]
 }

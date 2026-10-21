@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,155 +10,50 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-20T22:20:30.065Z",
+    "generated_at": "2026-10-21T01:39:01.976Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "192786cb0a5c9e4e",
-        "importance": 44,
-        "reason": "Fresh postseason homer highlight, but the title gives no game stakes or outcome."
-      },
-      {
-        "id": "83699d5824a43d01",
-        "importance": 38,
-        "reason": "Postseason player montage; entertaining, with no specific pivotal play stated."
-      },
-      {
-        "id": "213debff1947dcd1",
-        "importance": 22,
-        "reason": "World Series preview is timely, but framed as general promotional analysis."
-      },
-      {
-        "id": "b9ca14024d5e3cdd",
-        "importance": 18,
-        "reason": "Vague promotional clip; no substantive basketball news described."
-      },
-      {
-        "id": "18d46f35101c08f6",
-        "importance": 68,
-        "reason": "A 38-point debut and claimed Celtics record make this a notable fresh performance."
-      },
-      {
-        "id": "7ec4e1c49c0f1d05",
-        "importance": 8,
-        "reason": "Teasing acceleration claim without details; likely promotional."
-      },
-      {
-        "id": "465850fc793a90f6",
-        "importance": 35,
-        "reason": "New prologue demo trailer offers a concrete gaming release, though limited context."
-      },
-      {
-        "id": "58374db242b2e5e8",
-        "importance": 20,
-        "reason": "Season trailer is routine game promotion with no update details."
-      },
-      {
-        "id": "c463c958a8a2cee4",
-        "importance": 39,
-        "reason": "Launch trailer signals a game release, but gives no further details."
-      },
-      {
-        "id": "757b556557c3fe48",
-        "importance": 30,
-        "reason": "Showcase recap may summarize announcements, but the title supplies none."
-      },
-      {
-        "id": "8c13abc614bdd0fc",
-        "importance": 27,
-        "reason": "Update trailer is a modest game announcement without described changes."
-      },
-      {
-        "id": "c76df8288aba3c86",
-        "importance": 40,
-        "reason": "Launch trailer marks a release, though no game details or broader significance are given."
-      },
-      {
-        "id": "3e45e9a321084ec1",
-        "importance": 17,
-        "reason": "Release-window trailer is a routine promotion; no launch timing stated."
-      },
-      {
-        "id": "4c89ff74d421afe1",
-        "importance": 27,
-        "reason": "Game update trailer is modest news with no changes specified."
-      },
-      {
-        "id": "dc5366d754b50d8a",
-        "importance": 40,
-        "reason": "Remaster announcement is a concrete gaming item, but details are absent."
-      },
-      {
-        "id": "96239b7e2e959b59",
-        "importance": 12,
-        "reason": "Cryptic promotional teaser gives no information about the product or capability."
-      },
-      {
-        "id": "791c3f0449e80ff3",
-        "importance": 15,
-        "reason": "First-episode branded video, with no substantive AI development stated."
-      },
-      {
-        "id": "64133903258a4e47",
-        "importance": 34,
-        "reason": "Regional AI startup support is potentially useful, but context is only a fragment."
-      },
-      {
-        "id": "494a9fa3bb713759",
-        "importance": 34,
-        "reason": "Industrial AI initiative may matter, but this is a company-led claim with sparse context."
-      },
-      {
-        "id": "ec7a3b45638121f8",
-        "importance": 29,
-        "reason": "NASA flight activity is timely but the article was originally published days earlier."
-      },
-      {
         "id": "d84f2255ba8f6501",
-        "importance": 56,
-        "reason": "Progress on a Mars-bound nuclear power module is a consequential space update."
-      },
-      {
-        "id": "ca2be23ea0a1d609",
-        "importance": 25,
-        "reason": "NVIDIA security announcement is industry-specific and context gives few concrete details."
-      },
-      {
-        "id": "c922f0b0415420c6",
-        "importance": 13,
-        "reason": "Clubhouse celebration clip is light entertainment, not substantive baseball news."
-      },
-      {
-        "id": "ebfe8bd5dfff969a",
-        "importance": 12,
-        "reason": "Historical throwback, not current baseball news."
-      },
-      {
-        "id": "187aebe613dbb250",
-        "importance": 57,
-        "reason": "Fresh full-game highlights cover a notable Celtics-Pistons matchup, though no result is stated."
-      },
-      {
-        "id": "847f5311ed79e2be",
-        "importance": 72,
-        "reason": "A claimed 23-0 late run is a striking, consequential game turning point."
+        "importance": 75,
+        "reason": "Progress on a nuclear power module for a Mars-bound spacecraft is a consequential space development."
       },
       {
         "id": "e210cf95d60b3f53",
-        "importance": 51,
-        "reason": "Longer-flight Mars helicopter research is a substantive exploration advance."
+        "importance": 67,
+        "reason": "Longer-flight Mars helicopter blade research could expand future planetary exploration."
       },
       {
         "id": "e94a5ee8d763551a",
+        "importance": 61,
+        "reason": "A progress update on lunar rovers is relevant to NASA’s Moon Base plans, but details are limited."
+      },
+      {
+        "id": "ec7a3b45638121f8",
+        "importance": 54,
+        "reason": "NASA flight activity over Texas is timely, though the supplied context gives little detail."
+      },
+      {
+        "id": "64133903258a4e47",
         "importance": 49,
-        "reason": "Moon-base rover progress is a meaningful NASA update, but details are limited."
+        "reason": "Regional AI accelerator activity may matter locally; the NVIDIA source is promotional."
+      },
+      {
+        "id": "494a9fa3bb713759",
+        "importance": 46,
+        "reason": "Industrial AI plans could be significant, but this NVIDIA-sourced item is promotional and vague."
+      },
+      {
+        "id": "ca2be23ea0a1d609",
+        "importance": 40,
+        "reason": "Media-security applications are noted, but the context suggests an event announcement with limited specifics."
       }
     ],
-    "source_checked_at": "2026-10-20T22:20:19.087Z"
+    "source_checked_at": "2026-10-21T01:38:53.819Z"
   },
   "last_attempt_at": "2026-10-21T01:38:53.329Z",
   "pending_reservation_microusd": 4609,
   "pending_source_checked_at": "2026-10-21T01:38:53.819Z",
-  "last_success_at": "2026-10-20T22:20:30.065Z",
+  "last_success_at": "2026-10-21T01:39:01.976Z",
   "last_error_status": null
 }

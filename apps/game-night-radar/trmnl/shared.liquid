@@ -1,0 +1,13 @@
+{% template title_bar %}<div class="title_bar"><span class="title">Game Night Radar</span><span class="instance">{{ checked_at | date: "%H:%M" }} UTC</span></div>{% endtemplate %}
+{% template radar_header %}<div class="flex flex--row flex--between gap--small w--full"><span class="title title--small lg:title--large text--red 1bit:text--black 2bit:text--black 4bit:text--black">GAME NIGHT RADAR</span><span class="label label--small lg:label--base bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ days | default: 30 }} DAYS</span></div>{% endtemplate %}
+{% template radar_rows %}
+{% if items.size > 0 %}
+<div class="flex flex--col flex--left {{ list_gap | default: 'gap--xsmall' }} w--full">
+{% for item in items limit: row_limit %}<div class="flex flex--col flex--left gap--none w--full border--top {{ row_padding | default: 'pt--1 lg:pt--2' }}">
+<div class="flex flex--row flex--between w--full gap--small"><span class="label label--small lg:label--base text--bold" data-clamp="1">{{ item.game | escape }}</span><span class="label label--small lg:label--base">{% if item.is_new %}<span class="text--bold bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">NEW</span> · {% endif %}{{ item.kind | escape }} · {{ item.published_at | date: "%b %d" }}</span></div>
+<span class="{{ text_size | default: 'text--base lg:text--large' }} text--bold w--full" data-clamp="{{ lines | default: 1 }}" data-clamp-lg="{{ lines | default: 1 }}">{{ item.title | escape }}</span>
+</div>{% endfor %}
+</div>
+{% else %}<div class="flex flex--col flex--center gap--small w--full"><span class="title title--small">No matching posts</span><span class="description">Try a longer window or all announcements.<br>No news was invented to fill this screen.</span></div>{% endif %}
+{% endtemplate %}
+{% template radar_status %}<span class="label label--small lg:label--base w--full" data-clamp="1">{% if stale %}CACHED · Source {{ source_checked_at | date: "%b %d %H:%M" }} UTC{% elsif partial %}PARTIAL · Some games unavailable{% else %}{{ status | default: 'Steam developer announcements' | escape }}{% endif %}</span>{% endtemplate %}

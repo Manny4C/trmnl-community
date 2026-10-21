@@ -1,6 +1,6 @@
 # TRMNL Plays: Tiny Planet
 
-Owner release state, October 19: the Neon Free database is initialized and the shared world is online. Public TRMNL PKCE app 262 is registered; the sign-in redirect works, while actual owner consent/callback and a player move remain unverified. The first protected production owner-autopilot move succeeded, and a same-day replay kept the world at turn 1. Hosted daily and hourly checks are enabled, including weekends; the first scheduled execution is still awaiting verification.
+Owner release state, October 19: the Neon Free database is initialized and the shared world is online. Public TRMNL PKCE app 262 is registered; the sign-in redirect works, while actual owner consent/callback and a player move remain unverified. The first protected production owner-autopilot move succeeded, and a same-day replay kept the world at turn 1. Hosted daily and hourly checks are enabled, including weekends; automatic scheduled execution is verified with one daily Owner autopilot move on October 19, 20 and 21.
 
 Existing owner Recipe **512639** is created and added to Manuel’s playlist with Shared and all four layouts saved. Continue that Recipe at https://trmnl.com/plugin_settings/512639/edit; do not create a duplicate. It is a private draft, not publicly submitted or approved. Icon upload, marketplace images, native OG/X visual checks and physical receipt remain pending.
 

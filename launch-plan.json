@@ -327,12 +327,11 @@
         "budgetPolicy": "Durable compare-and-swap reservation before each single paid call; maximum input/output; 2x standard model prices plus overhead; failed calls keep reservations; no automatic retry or per-viewer inference. UTC monthly reset.",
         "authorizedKeyChoice": "Manuel chose to keep the existing key with a user-reported 15-day expiration instead of creating a new OpenAI project. API usage bills its owning project. Hosting and repository remain personal.",
         "keyStatus": "Sensitive Vercel Production key configured by Manuel. Key is never exported. Earlier 11-character check measured a mask and was incorrect. No further user key setup is required.",
-        "actualPaidCalls": 1,
         "workflowVerified": "GitHub-hosted run 38940080432 succeeded, 29 decisions published at 2026-10-16T17:29:58.752Z. Earlier run 38939721801 verified scheduler setup but made no model request because the old runner lacked a GitHub key; its success was not inference.",
         "expiryHandling": "401/403 records credential_unavailable and stops subsequent scheduled model calls until owner replacement/activation. Conservative reservation remains. No OpenAI credential is exported.",
         "architecture": "GitHub-hosted hourly runner reserves budget using its ephemeral repository token, then invokes the protected Vercel curator. Curator claims exact reservation SHA once with repository write access before using the Sensitive runtime OpenAI key. Public visits and replay/race requests cannot invoke inference.",
         "firstSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/38940080432",
-        "conservativeReservedUsd": 0.005585,
+        "conservativeReservedUsd": 0.150462,
         "productionVerification": "Public rich and compact device endpoints serve AI decisions from successful run 38940080432. Baseball/gaming/EV leads verified as AI-selected with live source image URLs. Snapshot reader includes GitHub Contents fallback. Key stays Sensitive in Vercel; source checks/visits do not spend tokens. Final gaming classification requires explicit gaming terms in broad NVIDIA titles; corporate AI/gaming boilerplate no longer qualifies hardware/model stories.",
         "budgetUpdatedOn": "2026-10-16",
         "costForecast": {
@@ -389,7 +388,12 @@
           "expected30DayConservativeReserveUsd": 4.0212,
           "maximumScheduled31DayConservativeReserveUsd": 5.52048,
           "onBudgetExhaustion": "Stop paid calls; keep dated content and labeled freshness fallback. Preserve all prior reservations."
-        }
+        },
+        "verifiedSuccessfulPaidCallsAtActivation": 1,
+        "budgetReservationCount": 28,
+        "latestBudgetCheckedOn": "2026-10-21",
+        "latestSuccessfulRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/39611694952",
+        "latestLedgerStatus": "ready;28 reservations through October21 13:51:46UTC; $0.150462 conservatively reserved of$15. Reservations are not actual provider billing or a verified count of paid requests."
       },
       "colorUpdate": {
         "updatedOn": "2026-10-16",
@@ -456,7 +460,7 @@
         "verification": "Production /api/auth gives302 to trmnl.com with secure HttpOnly SameSite cookie; no owner consent, upstream token or player move verified yet."
       },
       "autopilot": {
-        "status": "enabled_production_move_and_replay_verified_scheduled_check_pending",
+        "status": "enabled_scheduled_execution_verified",
         "workflow": ".github/workflows/tiny-planet-autopilot.yml",
         "schedule": "Daily 00:17 UTC plus hourly :47, all seven days, independent of Mac and weekday build automation. TINY_PLANET_ENABLED=true.",
         "quota": "Separate owner-autopilot actor, one idempotent move per UTC day, row lock and unique daily nonce. Up to 31 missed days caught up transparently with quota day plus actual timestamps.",
@@ -472,11 +476,13 @@
           "executedAt": "2026-10-19T22:35:15.675557+00:00"
         },
         "replayVerification": "GitHub run attempt 2 succeeded; public world remained turn 1 with exactly one event for October 19. No duplicate move.",
-        "firstScheduledRunVerified": false
+        "firstScheduledRunVerified": true,
+        "latestSuccessfulScheduledRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/39627649528",
+        "scheduledVerification": "October21 public world turn3: one labeled Owner autopilot move per UTC day October19,20,21. October20 water executed01:18:37UTC; October21 plant executed00:10:17UTC. Scheduled GitHub runs succeed and repeated checks return moves0. No player moves verified.",
+        "publicStatusSynchronizedOn": "2026-10-21"
       },
       "pendingActions": [
         "Verify a real owner TRMNL OAuth consent/callback and player move; public shared-world GET200 and secure sign-in redirect verified",
-        "Verify the next automatic scheduled autopilot check separately; first protected move and replay are verified and the seven-day workflow is enabled",
         "Complete native OG color/B&W and X/four layouts, icon/marketplace assets and public submission on EXISTING Recipe512639; do not duplicate",
         "Confirm physical receipt separately; only publish actual public install URL after approval"
       ],
@@ -488,7 +494,7 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_4oQid8nfbcgUM3zLUh8bHAvPX8si",
+      "latestDeploymentId": "dpl_8KoS76zAaDU9CJvHAyTz1dAu5kkr",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
       "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
@@ -498,24 +504,65 @@
     },
     {
       "day": 6,
-      "targetDate": "2026-10-20",
+      "targetDate": "2026-10-21",
       "name": "Game Night Radar",
       "slug": "game-night-radar",
-      "status": "planned",
+      "status": "website_deployed_recipe_prepared",
       "scope": "Follow Steam games, show developer updates, patches and announced events, with source links and new-since-previous-edition history.",
       "recipeRequired": true,
       "recipe": {
         "name": "Game Night Radar",
-        "status": "not_created",
+        "status": "prepared",
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
       },
-      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
+      "sourceDirectory": "apps/game-night-radar",
+      "websiteUrl": "https://game-night-radar.vercel.app",
+      "vercelProject": "game-night-radar",
+      "buildCompletedOn": "2026-10-21",
+      "publicationStatus": "prepared_not_submitted",
+      "deviceInstallationStatus": "not_installed",
+      "physicalDeviceVerification": "Not verified; no browser/native UI used under expired five-minute authorization.",
+      "testStatus": "17 automated checks passed: strict App ID/URL options; developer feed/app/time/URL validation; per-game single-flight cache; newest/window/filter order; partial, cold and dated fallback outages; oversized/malformed response rejection; 8 multibyte rows under4600bytes; per-Recipe history/reset/cached handling and entire transform including Saved State under4800bytes; no runtime context is returned; HTTP400/405/503; all four safe Liquid layouts; browser DOM source links/settings/palette/history and cold failure. Native visual OG/X and actual browser/mobile QA remain unverified.",
+      "pollingUrl": "https://game-night-radar.vercel.app/api/radar?apps={{ apps | url_encode }}&days={{ days }}&count={{ result_count }}&kind={{ kind }}&format=trmnl",
+      "pendingActions": [
+        "Create ONE separate Game Night Radar Recipe after explicitly renewed browser authorization; record ID immediately, never duplicate another app",
+        "Verify native OG color/B&W and X orientations/four views, save icon and marketplace previews",
+        "Install preserving all playlist entries, submit public Recipe under applicable license confirmation, record actual review status",
+        "Confirm physical device receipt separately; publish only verified public install link after approval"
+      ],
+      "defaults": {
+        "apps": [
+          548430,
+          892970,
+          105600
+        ],
+        "days": 30,
+        "count": 8,
+        "kind": "all"
+      },
+      "sourcePolicy": "Documented public Steam News v2, steam_community_announcements only, max24 recent posts per1–6 games. No model/private library/Steam sign-in/key. Event labels from titles, not verified live event times.",
+      "colorUpdate": {
+        "websiteStatus": "implemented_color_bw_preview",
+        "packageStatus": "shared_and_four_layouts_prepared",
+        "recipeStatus": "not_created",
+        "nativeQa": "not_verified",
+        "physicalReceipt": "unconfirmed"
+      },
+      "vercelProjectId": "prj_0p8YgRq32xJBG36l1yfF7ECav5NP",
+      "websiteDeploymentStatus": "ready_anonymous_production_verified",
+      "latestDeploymentId": "dpl_7hDj6tGGwvUMo1uiedsGJpzsjCBf",
+      "verificationTimestamp": "2026-10-21T16:39:51.248064+00:00",
+      "productionEvidence": "artifacts/game-night-radar-production-2026-10-21.json",
+      "productionVerification": "Production website200, source8rows3271bytes, device8rows981bytes, Valheim7dayupdates1post, Terraria7dayempty200, invalidhost400, public ZIP/app.js match source, releaseprepared with no invented RecipeID/install URL. Native visual/mobile/physical checks remain unverified.",
+      "iconStatus": "original_svg_in_prepared_package",
+      "featuredImageStatus": "not_generated_no_recipe_created"
     },
     {
       "day": 7,
-      "targetDate": "2026-10-21",
+      "targetDate": "2026-10-22",
       "name": "Local Morning Brief",
       "slug": "local-morning-brief",
       "status": "planned",
@@ -577,8 +624,8 @@
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       },
-      "latestCheckedOn": "2026-10-19",
-      "latestResult": "Read all three existing HEY review threads October 19: Daily still contains original Submitted and our authorized October16 follow-up only; YC and Sounds have Submitted acknowledgments only. No human reply or approval found in those threads. No new email sent. Dashboard not revisited under background-only preference."
+      "latestCheckedOn": "2026-10-21",
+      "latestResult": "Read the same three HEY review threads October21: only original Submitted acknowledgments and our one authorizedOctober16 follow-up, no human reply/approval. No new email sent; private dashboard not revisited."
     }
   },
   "displayDesignPolicy": {
@@ -589,5 +636,9 @@
     "preview": "Every website offers a Color/Black & white preview control. Browser photos are approximations; TRMNL image-dither renders to the target palette.",
     "validation": "118 checks passed: existing 35 Daily, 13 YC, 32 Sounds and 30 Newsflash, plus eight cross-app palette/render/preview checks. Native TRMNL OG B/W/R/Y and 1-bit previews checked across all four layouts of all three existing Recipes (24 combinations). YC full color and BW screenshots saved. Actual physical receipt unconfirmed.",
     "futureApps": "Required for Tiny Planet, Game Night Radar, Local Morning Brief and later maintenance. See DISPLAY-DESIGN.md."
+  },
+  "scheduleAdjustment": {
+    "updatedOn": "2026-10-21",
+    "reason": "October20 Game Night Radar had no completed build in saved state. Preserve order and at most one new app/weekday: Game Night Radar October21, Local Morning Brief October22."
   }
 }

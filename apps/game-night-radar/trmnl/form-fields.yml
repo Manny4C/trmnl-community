@@ -1,0 +1,37 @@
+- keyname: author
+  field_type: author_bio
+  name: About Game Night Radar
+  category: games,news
+  description: Follow up to six Steam games for developer announcements, patch notes and event posts. Reads up to 24 recent posts per game from Steam's public news API; labels use title words and are not verified event schedules. No Steam login, friends list or library access. Independent project, not affiliated with Valve, Steam or TRMNL. Data is as is and as available; source and full Steam data terms are on our website. Only public App IDs belong in the fields and polling URL. New-since-refresh history is local to each Recipe installation.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://game-night-radar.vercel.app
+- keyname: apps
+  field_type: string
+  name: Steam games (1–6 App IDs)
+  description: Comma-separated Steam App IDs, or Steam store app URLs. Find the ID in store.steampowered.com/app/ID/. Quick picks are 548430 Deep Rock Galactic, 892970 Valheim and 105600 Terraria. Other IDs show as Steam app ID. Public information only.
+  default: 548430,892970,105600
+  maxlength: 1000
+- keyname: days
+  field_type: select
+  name: Look back
+  default: '30'
+  options:
+  - Past 7 days: '7'
+  - Past 30 days: '30'
+  - Past 90 days: '90'
+- keyname: result_count
+  field_type: select
+  name: Maximum posts (full screen)
+  default: '8'
+  options:
+  - Four posts: '4'
+  - Six posts: '6'
+  - Eight posts: '8'
+- keyname: kind
+  field_type: select
+  name: Announcement filter
+  default: all
+  options:
+  - All developer announcements: all
+  - Patches and updates: updates
+  - Event and season posts: events

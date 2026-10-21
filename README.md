@@ -1,6 +1,6 @@
 # TRMNL Community
 
-A personal project by Manuel: seven useful TRMNL apps, built one per weekday. Each app has its own Vercel website, plugin data service, and separate TRMNL Recipe submitted under that app's name. Each Recipe includes all four layouts, configuration, icon and marketplace preview; each website displays its real review status and links to installation after approval.
+A personal project by Manuel: seven useful TRMNL apps, built one per weekday. The release checklist for each app includes a Vercel website, plugin data service, separate TRMNL Recipe, all four layouts, configuration, icon and marketplace preview. Each website displays its actual release status and adds a public installation link after approval. Draft and deferred work are recorded in launch-plan.json.
 
 GitHub owner: **Manny4C**. Vercel team: **Manuel's Personal Projects (`manny4c-personal`)**. Never deploy this project to Paper Star.
 
@@ -13,8 +13,8 @@ The launch automation returns to the original Codex chat at **10 a.m. Pacific on
 | 3 | Thu, October 15 | Sounds Like My Company — similar recently launched companies |
 | 4 | Fri, October 16 | Newsflash — an image-first AI news editor |
 | 5 | Mon, October 19 | TRMNL Plays: Tiny Planet — one shared cooperative world |
-| 6 | Tue, October 20 | Game Night Radar — updates for followed Steam games |
-| 7 | Wed, October 21 | Local Morning Brief — local news, weather and transit |
+| 6 | Wed, October 21 | Game Night Radar — updates for followed Steam games |
+| 7 | Thu, October 22 | Local Morning Brief — local news, weather and transit |
 
 ## The Daily TRMNL
 
@@ -59,7 +59,7 @@ Day 4 was rebuilt on October 16 at Manuel’s request, replacing Desk Editor com
 
 Thirty automated checks pass, including safe image-first Liquid rendering, image/source allowlists, interest filters, stale/outage states, output validation, the 5 kB data budget and the $15 monthly AI budget gate. Sources and real thumbnail URLs are verified in production. The shared hourly cloud AI workflow and durable reservation ledger are prepared; the first cloud AI run succeeded with 29 decisions and the public feed serves the verified AI edition. The $15 application gate reserved $0.005585 for that run. Browsing/device polls never trigger model calls, and pending or expired AI choices use a labeled freshness fallback. Hosting/source remain personal. Legacy Desk Editor URLs serve the replacement.
 
-The **separate Newsflash Recipe is prepared but has not been created, installed or submitted** under Manuel’s instruction not to control his screen. All four image-led layouts, shared title bar, configuration, icon and setup notes are ready. Actual browser/official renderer visual QA, marketplace images, owner installation and submission remain pending. This remains Day 4; Tiny Planet is Monday’s next new app.
+The **separate Newsflash Recipe 512643 is created and added to the owner playlist**, with configuration, Shared and four layouts saved on October 19 during the five-minute authorized setup window. It remains a private draft, not publicly submitted or approved. Native data Test request succeeded, but actual image/layout visual QA, icon upload, marketplace images and public submission remain pending. Physical receipt is unconfirmed. This remains Day 4.
 
 ## Personalized news
 
@@ -101,4 +101,10 @@ All current and future apps must follow [DISPLAY-DESIGN.md](DISPLAY-DESIGN.md): 
 
 ## TRMNL Plays: Tiny Planet
 
-[Shared island and website](https://tiny-planet-trmnl.vercel.app) · [Source and activation notes](apps/tiny-planet/README.md). One shared original island, server-verified TRMNL ownership, one account move per UTC day, atomic PostgreSQL state and a separately labeled daily owner autopilot. The free Neon database is initialized and the shared-world service is online. TRMNL OAuth app262 is registered; real owner sign-in still needs verification. Private Recipe512639 is created/added to the owner playlist with all four layouts saved, pending native visual checks, marketplace assets and public submission. The seven-day autopilot is enabled: its first protected production move and same-day replay are verified; first automatic scheduled execution remains to be checked. Actual execution evidence is recorded in launch-plan.json.
+[Shared island and website](https://tiny-planet-trmnl.vercel.app) · [Source and activation notes](apps/tiny-planet/README.md). One shared original island, server-verified TRMNL ownership, one account move per UTC day, atomic PostgreSQL state and a separately labeled daily owner autopilot. The free Neon database is initialized and the shared-world service is online. TRMNL OAuth app262 is registered; real owner sign-in still needs verification. Private Recipe512639 is created/added to the owner playlist with all four layouts saved, pending native visual checks, marketplace assets and public submission. The seven-day autopilot is enabled: its first protected production move and same-day replay are verified; scheduled execution is verified, with exactly one daily autopilot move on October 19, 20 and 21. Actual execution evidence is recorded in launch-plan.json.
+
+## Game Night Radar
+
+[Production website](https://game-night-radar.vercel.app) · [App documentation](apps/game-night-radar/README.md) · [Prepared Recipe package](https://game-night-radar.vercel.app/plugin.zip). Follow one to six public Steam App IDs or store URLs; default Deep Rock Galactic, Valheim and Terraria. Shows up to eight recent developer announcements, title-based patch/event filters, source links, browser-local history and separate per-Recipe Saved State. No Steam account, private library access, model or secret is needed. Every website preview has color/B&W and four size choices.
+
+Seventeen automated checks pass; anonymous production verifies eight posts in a 981-byte device payload, update filtering, honest empty results and invalid-input rejection. Full transform including memory stays below 4800 bytes even with multibyte titles and maximum history. Separate Recipe configuration/Shared/four layouts/transform/icon/setup are prepared. Native visual OG/X checks, Recipe creation, owner installation, marketplace assets and public submission remain deferred under the no-screen-control instruction; no Recipe ID or physical receipt is claimed. October 21 consumes one new-app slot; Local Morning Brief moves to October 22.

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,150 +10,165 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-21T07:43:57.316Z",
+    "generated_at": "2026-10-21T13:52:23.636Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
+        "id": "a3ac1c3df53059d9",
+        "importance": 38,
+        "reason": "Timely World Series discussion, but the title signals opinion rather than a consequential update."
+      },
+      {
         "id": "c541a5d6b2143c13",
-        "importance": 68,
-        "reason": "A timely video recap of a league championship series; the title gives no game outcome."
+        "importance": 55,
+        "reason": "Fresh postseason mini-movie covers an NLCS matchup; significance depends on video content."
       },
       {
-        "id": "192786cb0a5c9e4e",
-        "importance": 37,
-        "reason": "A recent player moment, but a single celebration is limited in broader baseball significance."
-      },
-      {
-        "id": "213debff1947dcd1",
-        "importance": 23,
-        "reason": "Promotional-looking World Series preview; title offers no substantive analysis or details."
+        "id": "06bb97f7f07bf841",
+        "importance": 61,
+        "reason": "Recent league-wide recap offers substantive coverage of the previous night's basketball."
       },
       {
         "id": "80e11dd2f36ec57d",
-        "importance": 53,
-        "reason": "Fresh nightly highlights offer a useful snapshot, though no single pivotal play is identified."
-      },
-      {
-        "id": "0678870c51812310",
-        "importance": 29,
-        "reason": "A recent individual shooting highlight, with no game or broader stakes supplied."
+        "importance": 50,
+        "reason": "Timely highlights package, but a top-plays roundup is less consequential than game news."
       },
       {
         "id": "7ec4e1c49c0f1d05",
-        "importance": 12,
-        "reason": "Vague acceleration teaser from a company feed, with no model or evidence in the title."
+        "importance": 17,
+        "reason": "Vague Tesla teaser gives no vehicle, specifications or substantive news."
+      },
+      {
+        "id": "950a9c1280afe633",
+        "importance": 48,
+        "reason": "A newly posted first-generation product review may inform buyers, but details are absent."
       },
       {
         "id": "465850fc793a90f6",
-        "importance": 36,
-        "reason": "A newly posted prologue demo trailer gives gamers a concrete preview, but little detail is supplied."
+        "importance": 44,
+        "reason": "A prologue demo trailer gives gamers a look at the title, but no launch or major update is stated."
       },
       {
         "id": "58374db242b2e5e8",
-        "importance": 23,
-        "reason": "A routine season trailer for a sports game; no significant new feature is stated."
+        "importance": 24,
+        "reason": "Season trailer is routine game promotion with no substantive changes described."
       },
       {
         "id": "c463c958a8a2cee4",
-        "importance": 31,
-        "reason": "A launch trailer signals a game release, but the title provides no release details."
+        "importance": 32,
+        "reason": "Launch trailer is timely, though the title alone provides no details about the release."
       },
       {
         "id": "3ef44e34f5a12b8e",
-        "importance": 15,
-        "reason": "Cryptic game promo title gives no clear information about the game or announcement."
+        "importance": 18,
+        "reason": "Cryptic game video title provides little basis to assess news value."
       },
       {
         "id": "b886ba922d4f53b7",
         "importance": 29,
-        "reason": "A timely crossover event trailer, but its title gives no event details."
+        "reason": "Crossover event trailer is gaming promotion; no broader impact is evident."
+      },
+      {
+        "id": "5771dd38bd7513bc",
+        "importance": 19,
+        "reason": "Seasonal Halloween trailer is routine promotion."
       },
       {
         "id": "c971e006e8866c3b",
-        "importance": 15,
-        "reason": "Cryptic game promo; little concrete information in the title."
-      },
-      {
-        "id": "fced035faf6ee240",
-        "importance": 34,
-        "reason": "A features overview may inform players about an upcoming game, but specifics are absent."
+        "importance": 18,
+        "reason": "Cryptic game video title provides little information beyond a likely promotional clip."
       },
       {
         "id": "dc5366d754b50d8a",
-        "importance": 48,
-        "reason": "A remaster announcement is notable gaming news, though no release or platform details are given."
+        "importance": 40,
+        "reason": "Remaster announcement is a concrete gaming update, though its reach and details are unknown."
       },
       {
         "id": "2466edb21261f152",
-        "importance": 45,
-        "reason": "A fresh shopping-agent demo signals an AI product direction; company claims remain unverified."
+        "importance": 56,
+        "reason": "Shopping-agent demo signals a potentially useful AI application, but is a company showcase."
       },
       {
         "id": "96239b7e2e959b59",
-        "importance": 11,
-        "reason": "Vague promotional pitch for a headshot-related offering, with no concrete details."
+        "importance": 13,
+        "reason": "Vague headline reads as promotional copy and gives no concrete AI news."
       },
       {
         "id": "c7c1db1d24f97b16",
-        "importance": 61,
-        "reason": "A timely regional digital-economy projection with AI implications; the supplied context is brief."
+        "importance": 62,
+        "reason": "Regional digital-economy forecast is potentially consequential, though the supplied context is brief."
       },
       {
-        "id": "64133903258a4e47",
-        "importance": 31,
-        "reason": "A regional AI accelerator initiative, but the excerpt gives little information on scale or impact."
+        "id": "8722385c6c33a846",
+        "importance": 48,
+        "reason": "NVIDIA event coverage points to local AI agent hardware, but concrete details are limited."
       },
       {
-        "id": "494a9fa3bb713759",
-        "importance": 28,
-        "reason": "Industrial-AI policy and partnership angle is relevant, but this is a company-promotional account."
+        "id": "12c1cb38a75e4a7b",
+        "importance": 70,
+        "reason": "General availability announcement for cloud AI infrastructure is a substantive, timely industry update."
       },
       {
         "id": "ec7a3b45638121f8",
-        "importance": 25,
-        "reason": "Routine NASA flight activity; the article is a repost and no scientific objective is specified."
+        "importance": 27,
+        "reason": "NASA flight story is an older republication and concerns a limited test activity."
       },
       {
         "id": "d84f2255ba8f6501",
-        "importance": 72,
-        "reason": "Progress on a planned space nuclear-power module is consequential; details and milestones are limited."
+        "importance": 62,
+        "reason": "Progress on a Mars-bound nuclear power module is a substantive space technology milestone."
+      },
+      {
+        "id": "804d4d957ec69082",
+        "importance": 42,
+        "reason": "AI cloud expansion across Europe may matter, but the announcement is broad and promotional."
+      },
+      {
+        "id": "f2380296be9197f1",
+        "importance": 44,
+        "reason": "Confidential-computing expansion is a relevant AI infrastructure update, with few specifics supplied."
+      },
+      {
+        "id": "fced035faf6ee240",
+        "importance": 28,
+        "reason": "Features overview is promotional; the title gives no notable release or change."
+      },
+      {
+        "id": "192786cb0a5c9e4e",
+        "importance": 31,
+        "reason": "A specific postseason homer moment is engaging but primarily a highlight."
       },
       {
         "id": "83699d5824a43d01",
-        "importance": 34,
-        "reason": "A postseason player montage is timely, but the title supplies no specific game-changing moment."
+        "importance": 35,
+        "reason": "Postseason player highlight spans multiple skills, but is not a broader game update."
       },
       {
-        "id": "c922f0b0415420c6",
-        "importance": 10,
-        "reason": "Light clubhouse content with little broader baseball significance."
+        "id": "0678870c51812310",
+        "importance": 27,
+        "reason": "Individual shooting highlight is timely but offers little context or wider significance."
       },
       {
         "id": "e49f4b550d9fcd1c",
-        "importance": 18,
-        "reason": "A slow-motion player clip is entertaining but not substantive news."
-      },
-      {
-        "id": "b1e5a9739b801579",
         "importance": 20,
-        "reason": "Season-opening player reaction is timely but primarily promotional and anecdotal."
+        "reason": "A slow-motion player clip is a routine highlight without game context."
       },
       {
         "id": "e210cf95d60b3f53",
-        "importance": 67,
-        "reason": "NASA is developing longer-flight Mars helicopter blades, a meaningful exploration advance."
+        "importance": 59,
+        "reason": "NASA is developing blade designs aimed at longer Mars helicopter flights, a substantive research update."
       },
       {
         "id": "e94a5ee8d763551a",
-        "importance": 58,
-        "reason": "A progress update on planned lunar rovers is relevant to Moon-base plans, but details are sparse."
+        "importance": 57,
+        "reason": "Progress on planned lunar rovers is relevant exploration news, though no specifics are supplied."
       }
     ],
-    "source_checked_at": "2026-10-21T07:43:40.727Z"
+    "source_checked_at": "2026-10-21T13:51:47.170Z"
   },
   "last_attempt_at": "2026-10-21T13:51:46.802Z",
   "pending_reservation_microusd": 5740,
   "pending_source_checked_at": "2026-10-21T13:51:47.170Z",
-  "last_success_at": "2026-10-21T07:43:57.316Z",
+  "last_success_at": "2026-10-21T13:52:23.636Z",
   "last_error_status": null
 }

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,180 +10,170 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-21T18:42:15.703Z",
+    "generated_at": "2026-10-21T22:24:58.971Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "91cf5c538f924d5d",
-        "importance": 65,
-        "reason": "Postseason highlight reel of Chourio’s stated 2 HR and 7 RBI; notable but retrospective."
+        "id": "bccf3be44fbddebc",
+        "importance": 36,
+        "reason": "Recent historical baseball feature; entertaining, but no current news development."
       },
       {
-        "id": "e1144780554f8332",
-        "importance": 56,
-        "reason": "Timely World Series preview, though analysis is not a new game result."
+        "id": "c0e2cab5c3dfd696",
+        "importance": 59,
+        "reason": "Timely World Series preview offers useful championship context, though it is promotional video."
       },
       {
         "id": "2c768c418dbcae6a",
-        "importance": 20,
-        "reason": "Lighthearted reaction clip, with little broader basketball significance."
+        "importance": 17,
+        "reason": "Lighthearted player reaction clip with little broader basketball significance."
       },
       {
         "id": "bbbf1d9a2a90fda0",
-        "importance": 29,
-        "reason": "A player’s first career block is a modest milestone, not a major development."
+        "importance": 21,
+        "reason": "A notable career milestone clip, but limited context and public impact."
       },
       {
         "id": "7b5f9626c5843232",
-        "importance": 72,
-        "reason": "Quarterly financial results and Q&A are consequential for Tesla and current, though details aren't supplied."
+        "importance": 68,
+        "reason": "Quarterly results and Q&A are consequential company news, though the webcast is two days old."
       },
       {
         "id": "7ec4e1c49c0f1d05",
-        "importance": 12,
-        "reason": "Vague acceleration promo offers no substantive vehicle details."
+        "importance": 7,
+        "reason": "Vague acceleration slogan reads as an advertisement, with no useful details."
       },
       {
         "id": "c970336f8ed35d8b",
-        "importance": 22,
-        "reason": "Unboxing video is timely but offers less substance than a review."
+        "importance": 13,
+        "reason": "Unboxing video is recent but mainly routine creator content."
       },
       {
         "id": "950a9c1280afe633",
-        "importance": 48,
-        "reason": "A first-generation iPhone Duo review is substantive consumer-tech coverage; claims aren't provided."
+        "importance": 27,
+        "reason": "A recent product review may inform buyers, but title offers no specific findings."
       },
       {
         "id": "465850fc793a90f6",
-        "importance": 43,
-        "reason": "A prologue demo trailer signals playable game content, but details and availability are unclear."
+        "importance": 30,
+        "reason": "A game demo trailer is a modest gaming update; no launch details supplied."
       },
       {
         "id": "58374db242b2e5e8",
-        "importance": 25,
-        "reason": "Season trailer is routine game promotion with no further context."
+        "importance": 16,
+        "reason": "Season trailer for a sports game is routine promotional content."
       },
       {
         "id": "c463c958a8a2cee4",
-        "importance": 39,
-        "reason": "Launch trailer marks a game release, but gives no details on the launch or game."
+        "importance": 24,
+        "reason": "Launch trailer signals a game release, but no further details or significance are given."
       },
       {
-        "id": "3ef44e34f5a12b8e",
-        "importance": 14,
-        "reason": "Cryptic title provides too little context to assess beyond likely game promotion."
+        "id": "668946bb7c009f95",
+        "importance": 47,
+        "reason": "Developer discussion of a major game covers several modes, but is promotional and lacks specifics."
       },
       {
-        "id": "b886ba922d4f53b7",
-        "importance": 32,
-        "reason": "Crossover event trailer may interest players, but is promotional and details are absent."
+        "id": "3bed8439c100c142",
+        "importance": 24,
+        "reason": "Expansion launch trailer is a timely, limited-scope gaming announcement."
       },
       {
         "id": "cda88e9501986664",
-        "importance": 40,
-        "reason": "Season announcement for an established game is timely, but supplied context lacks specifics."
+        "importance": 19,
+        "reason": "Season welcome video is routine promotion with little concrete news."
       },
       {
         "id": "b57a773a7e79c184",
         "importance": 20,
-        "reason": "Out-now announcement for a single game is routine promotional news."
+        "reason": "An out-now game announcement is useful to players but likely niche."
       },
       {
         "id": "dc5366d754b50d8a",
-        "importance": 37,
-        "reason": "Remaster announcement is a meaningful gaming reveal, though no release details are given."
+        "importance": 35,
+        "reason": "Remaster announcement may interest fans, but a trailer alone gives limited detail."
+      },
+      {
+        "id": "2bc4063d55e5ecf9",
+        "importance": 44,
+        "reason": "Claims large cost and accuracy gains for an AI model; first-party claims aren't independently verified."
       },
       {
         "id": "2466edb21261f152",
-        "importance": 47,
-        "reason": "Shopping-agent demo suggests a substantive AI product use case, but claims are unverified."
-      },
-      {
-        "id": "96239b7e2e959b59",
-        "importance": 15,
-        "reason": "Vague headshot-themed title gives little basis to judge significance."
+        "importance": 30,
+        "reason": "Shopping-agent demo shows a product concept, but it is promotional and dated yesterday."
       },
       {
         "id": "c7c1db1d24f97b16",
-        "importance": 63,
-        "reason": "Regional digital-economy forecast is consequential; context links growth to AI adoption."
+        "importance": 49,
+        "reason": "Regional digital-economy forecast is relevant, but context is brief and the source's claim isn't verified."
       },
       {
         "id": "8722385c6c33a846",
-        "importance": 42,
-        "reason": "NVIDIA outlines local-AI hardware at GTC, but the supplied context is broad."
+        "importance": 39,
+        "reason": "NVIDIA's local-AI showcase is a timely industry update, but details are sparse and promotional."
       },
       {
         "id": "12c1cb38a75e4a7b",
-        "importance": 70,
-        "reason": "Cloud infrastructure general availability is a substantive AI-computing development, though company-announced."
+        "importance": 63,
+        "reason": "Cloud infrastructure general availability is a substantive AI-computing development, planned for next month."
+      },
+      {
+        "id": "5097c0971b6330ab",
+        "importance": 56,
+        "reason": "A fresh RS-25 engine test supports future Artemis missions; no test results are provided."
       },
       {
         "id": "a51b31652d0be7c6",
-        "importance": 37,
-        "reason": "JPL's future-facing exploration plans are interesting, but the article appears retrospective and lacks specifics."
-      },
-      {
-        "id": "33222bfd33ec78e1",
-        "importance": 10,
-        "reason": "A university flyover and fan engagement are promotional, not a major space development."
+        "importance": 29,
+        "reason": "JPL's forward-looking exploration piece is interesting but chiefly aspirational, not a new mission."
       },
       {
         "id": "804d4d957ec69082",
-        "importance": 42,
-        "reason": "European AI-cloud expansion is a meaningful industry trend, described here in broad company terms."
+        "importance": 36,
+        "reason": "AI cloud expansion across Europe is an industry trend, but the supplied context is broad."
       },
       {
-        "id": "f2380296be9197f1",
-        "importance": 43,
-        "reason": "Secure scaling for frontier models is relevant AI infrastructure news; specifics are limited."
+        "id": "78c8c5b843d1b999",
+        "importance": 10,
+        "reason": "Gameplay trailer is routine promotion with no release or other details."
       },
       {
-        "id": "352d3ecb2c7f97a2",
-        "importance": 30,
-        "reason": "Demo-release trailer signals playable content, but title and context offer few details."
+        "id": "357e40c524ca15d7",
+        "importance": 13,
+        "reason": "Nostalgic personality clip is light entertainment rather than current baseball news."
       },
       {
-        "id": "5771dd38bd7513bc",
-        "importance": 14,
-        "reason": "Seasonal game trailer is routine promotion with no substantive news supplied."
-      },
-      {
-        "id": "7e5657ed80d4a4d4",
-        "importance": 91,
-        "reason": "A World Series berth is a major postseason turning point for the Brewers."
-      },
-      {
-        "id": "44c742807407315a",
-        "importance": 17,
-        "reason": "Nostalgic celebration reunion is a light feature, not a consequential baseball update."
+        "id": "eb88226e8312753f",
+        "importance": 34,
+        "reason": "A postseason highlights compilation is timely, but offers no specific turning-point news."
       },
       {
         "id": "fa874bb1823e038a",
-        "importance": 9,
-        "reason": "Celebrity-style hairstyle clip is peripheral basketball content."
+        "importance": 8,
+        "reason": "Celebrity-style hair clip is peripheral to basketball results or developments."
       },
       {
         "id": "4939243b023e6f6c",
-        "importance": 19,
-        "reason": "Practice access is a minor behind-the-scenes feature, with no game implications stated."
+        "importance": 22,
+        "reason": "Practice access is a fresh but routine behind-the-scenes basketball video."
+      },
+      {
+        "id": "33222bfd33ec78e1",
+        "importance": 12,
+        "reason": "A planned flyover and fan engagement are promotional outreach, not significant space news."
       },
       {
         "id": "a6bac8b60a7ca68c",
-        "importance": 44,
-        "reason": "Current astronaut science work offers substantive space coverage, though experiment details are absent."
-      },
-      {
-        "id": "ec7a3b45638121f8",
-        "importance": 20,
-        "reason": "Low-altitude research flights are potentially useful, but this is an older repost by context."
+        "importance": 25,
+        "reason": "Astronaut science activity on the station is relevant, but the brief context gives few specifics."
       }
     ],
-    "source_checked_at": "2026-10-21T18:41:45.233Z"
+    "source_checked_at": "2026-10-21T22:24:17.467Z"
   },
   "last_attempt_at": "2026-10-21T22:24:17.209Z",
   "pending_reservation_microusd": 5775,
   "pending_source_checked_at": "2026-10-21T22:24:17.467Z",
-  "last_success_at": "2026-10-21T18:42:15.703Z",
+  "last_success_at": "2026-10-21T22:24:58.971Z",
   "last_error_status": null
 }

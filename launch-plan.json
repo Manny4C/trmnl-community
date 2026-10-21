@@ -15,7 +15,7 @@
     "description": "Mac AI notetaker: bot-free meeting capture, notes, summaries and live assistance. Managed agents: teams build and run AI agents using conversations and connected tools to update customer records, coordinate follow-ups and onboarding.",
     "productDescriptions": {
       "desktopAiNotetaker": "Echo is an AI notetaker for Mac that captures meetings without a bot joining the call, turns conversations into clear notes and summaries, and offers live assistance while you talk.",
-      "managedAgentsPlatform": "Echo lets teams build and run AI agents that use context from conversations and connected tools to carry out work—from updating customer records to coordinating follow-ups and onboarding."
+      "managedAgentsPlatform": "Echo lets teams build and run AI agents that use context from conversations and connected tools to carry out work\u2014from updating customer records to coordinating follow-ups and onboarding."
     },
     "source": "Manuel supplied both public product descriptions and requested their use for his owner installation on October 16, 2026. Supersedes earlier description and editorial alternative.",
     "ownerConfigurationStatus": "saved_to_existing_trmnl_recipe",
@@ -52,7 +52,7 @@
       "name": "The Daily TRMNL",
       "slug": "what-changed",
       "status": "submitted_awaiting_review",
-      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1–20 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9–20.",
+      "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1\u201320 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9\u201320.",
       "websiteUrl": "https://the-daily-trmnl.vercel.app",
       "pluginId": 505118,
       "deviceInstallationStatus": "added_to_playlist",
@@ -60,7 +60,7 @@
       "buildCompletedOn": "2026-10-13",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
-      "testStatus": "35 checks passed, including 1–20 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
+      "testStatus": "35 checks passed, including 1\u201320 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
       "physicalDeviceVerification": "Count setting saved to 8 on owner installation, original news prompt retained; compact polling URL, memory transform and all four layouts saved. Actual OG full 1/8/20 and smaller layout previews verified; refreshed edition queued for device check-in. Physical receipt of this density upgrade is not confirmed.",
       "pendingActions": [
         "Monitor human Recipe review",
@@ -68,7 +68,7 @@
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "latestDeploymentId": "dpl_5nGvz8vtuyXEcCCjG9HXSdtA1DZe",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
@@ -138,7 +138,7 @@
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
       "latestDeploymentId": "dpl_4ijHM3TPSX97n9TEZGaf62BezTpN",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
@@ -195,7 +195,7 @@
         19473463,
         19473464
       ],
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel’s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "browserQaNotes": "Chrome viewport capability did not resize existing or new Chrome tabs; phone verification completed in the in-app browser at confirmed 390px. Reset both viewport overrides. Pop-out preview reloads can show a blank frame while the editor disables its inline preview; close the pop-out and reload the editor to restore it. For screenshot clips, use document coordinates (boundingClientRect plus scroll offsets).",
       "submittedOn": "2026-10-15",
       "completedOn": "2026-10-15",
@@ -264,7 +264,7 @@
       "name": "Newsflash",
       "slug": "newsflash",
       "status": "recipe_draft_installed_submission_pending",
-      "scope": "Completely rebuilt at Manuel’s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
+      "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
         "name": "Newsflash",
@@ -548,7 +548,7 @@
         "count": 8,
         "kind": "all"
       },
-      "sourcePolicy": "Documented public Steam News v2, steam_community_announcements only, max24 recent posts per1–6 games. No model/private library/Steam sign-in/key. Event labels from titles, not verified live event times.",
+      "sourcePolicy": "Documented public Steam News v2, steam_community_announcements only, max24 recent posts per1\u20136 games. No model/private library/Steam sign-in/key. Event labels from titles, not verified live event times.",
       "colorUpdate": {
         "websiteStatus": "implemented_color_bw_preview",
         "packageStatus": "shared_and_four_layouts_prepared",
@@ -620,7 +620,7 @@
       "localEvidence": "artifacts/review-status-2026-10-16.json",
       "dashboardStatusNotRechecked": false,
       "outboundFollowUpSent": true,
-      "officialTypicalReviewDays": "1–2 days; not an SLA.",
+      "officialTypicalReviewDays": "1\u20132 days; not an SLA.",
       "officialTimingSource": "https://help.trmnl.com/en/articles/9510536-private-plugins",
       "followUpSentOn": "2026-10-16",
       "followUpStatus": "User explicitly authorized one follow-up. Sent once in oldest existing review thread, covering all three submissions and asking about blockers/review ETA. Sent message verified in HEY. No authorization for additional outbound follow-ups. Private correspondence details are only in local ignored artifacts/review-status-2026-10-16.json.",
@@ -658,7 +658,7 @@
       "websiteUrl": "https://trmnl-draws.vercel.app",
       "vercelProject": "trmnl-draws",
       "vercelProjectId": "prj_NSKHBi7QCWakVslBnUclptaGD6wp",
-      "scope": "One shared100x60pixel canvas seeded once with an original black cat. Ten pixel placements per verified TRMNL account per UTC day.16colors, perceptual patterned B/W, full-bleed art/protected12%QR corner. Four-character daily public entry followed by unique account-bound access; a link never proves ownership. Fresh device/account check before each atomic1–10pixel batch, per-cell conflict detection, durable quota, idempotent nonce and versioned images.",
+      "scope": "One shared800x480native-pixel canvas (384,000cells;337,920editable,46,080protectedQRpixels). One editable pixel per OG display pixel, larger panels/mashups scale same canvas. Detailed original black cat,16colors and binary smartmono. Ten placements per verified TRMNL account/UTCday, unchanged daily QR/account ownership gating/atomic quota/conflict/idempotency rules.",
       "recipe": {
         "name": "TRMNL Draws",
         "status": "prepared",
@@ -669,7 +669,7 @@
       "deviceInstallationStatus": "not_installed",
       "publicationStatus": "prepared_not_submitted",
       "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Five-minute authorization remains expired.",
-      "testStatus": "23 new checks passed: PostgreSQL-engine quotas/races/25accounts/UTC reset/rollback/conflicts/noops/replay; entry expiry; anonymous/CSRF/revocation/forged identity failures; fixed-origin PKCE broker one-use server exchange/independent keys/expired sessions; full color/binary smart mono PNG; independent QR decode74/82/88/164px; four Liquid layouts/native palette and public browser drafts. Existing Tiny Planet32checks pass. Hosted Neon races, actual human OAuth/native rendering/physical receipt remain unverified.",
+      "testStatus": "27checks pass underNode22: prior23plus safe native migration preserving altered legacy cells/quotas/audit/immutable snapshots; real sub8pixel detail; exactly1nativecell changes including far edge; old-client writes rejected while accepted retries confirmed; legacy immutable images retained;16xzoom/fit/coordinatecenter DOM checks. NativeTRMNL rendering/physicalreceipt/realhumanconsent+paint remain unverified.",
       "database": {
         "provider": "Existing PERSONAL Neon Free PostgreSQL",
         "status": "production_schema_and_seed_initialized_verified",
@@ -688,15 +688,26 @@
       ],
       "buildCompletedOn": "2026-10-21",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_D6yiJC12hRChSCTMyMEiX1PEFJig",
-      "verificationTimestamp": "2026-10-21T17:16:31.421867+00:00",
+      "latestDeploymentId": "dpl_FgPcFtijSCXGiYVK4PtTKtY7foFr",
+      "verificationTimestamp": "2026-10-21T17:58:06.363Z",
       "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
-      "productionEvidence": "artifacts/trmnl-draws/production-2026-10-21.json",
-      "productionVerification": "World v0/6000pixels/zero fabricated edits. Device366bytes. ColorPNG3126bytes and binary smartBWPNG10198bytes match seed pixels; actual QR decodes. Daily entry sets valid cookie while anonymous remains disconnected. Auth redirects through Tiny Planet to registered TRMNL PKCE read/profile flow. Anonymous valid-shaped paint401; invalid handoff proof400. Original Tiny Planet world remains turn3 and live. Public website/JS/ZIP match saved source. Real consent/accepted human paint/native renderer/device receipt not verified.",
+      "productionEvidence": "artifacts/trmnl-draws/native-production-2026-10-21.json",
+      "productionVerification": "Version1native800x480/384000cells matches detailed cat seed; no fabricated edits (zeroevents). Device374bytes. ColorPNG13917B and binaryBWPNG13507B both800x480and pixel-for-pixel match source; actualQRindependentlydecoded. Anonymousnativepaint401. Originalv0imageunchanged. WebsiteJSandupdatedZIPmatch production. No browser/nativeUIused; Recipe remains prepared, noID/install/submission/physicalreceipt.",
       "iconStatus": "original_cat_svg_in_package",
       "featuredImageStatus": "not_generated_no_recipe_created",
-      "testRuntime": "All23new checks passed under production-compatible Node22, after the developer-machine Node26 filtered-run hook issue. Full suite remains passing; no production identity or drawing was fabricated.",
-      "cachePolicy": "Versioned public images and fixed QR images have immutable one-day CDN/browser cache; dynamic canvas/session/paint/entry/auth data is no-store."
+      "testRuntime": "All27checks passed under production-compatibleNode22 after native upgrade.",
+      "cachePolicy": "Versioned public images and fixed QR images have immutable one-day CDN/browser cache; dynamic canvas/session/paint/entry/auth data is no-store.",
+      "nativeResolutionUpgrade": {
+        "requestedOn": "2026-10-21",
+        "deployedOn": "2026-10-21",
+        "width": 800,
+        "height": 480,
+        "oneDrawingCellPerOGPixel": true,
+        "largerScreens": "Same sharedcanvas scaled, not nativeXresolution",
+        "webControls": "Fit, actual1x,2x,4x,8x,16x; coordinateentry and centerview",
+        "migration": "Atomic rowlock; only untouched oldseed areas replaced with detailedart. Changedlegacycells expanded to their original8x8footprint. Preservequota/audit/sessions/snapshots. Productionhad0communitychanges; versionincrement1doesnotfabricateaplayeredit. Old4argumentSQLpaintfunctiondropped, native5argumentformatrequired; oldtabsconfirmexistingnonceonly. Futuremigrate.mjsrerunnoreset. Neverreruninitialize-secret.",
+        "recipeStatus": "Updatedfour-layoutpackageprepared; nocreationorinstallationclaimed."
+      }
     }
   ]
 }

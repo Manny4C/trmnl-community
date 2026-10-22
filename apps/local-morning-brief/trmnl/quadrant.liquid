@@ -1,0 +1,6 @@
+<div class="layout layout--col gap--xsmall flex--top">
+{% render 'heading',city:city,date:date %}
+{% render 'weather',forecast:forecast %}
+{% render 'alert_line',alert_status:alert_status,alert_count:alert_count,alerts:alerts %}
+{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:1,lines:2 %}
+</div>{% render 'title_bar',checked_at:checked_at %}

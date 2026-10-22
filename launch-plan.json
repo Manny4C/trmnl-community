@@ -403,7 +403,17 @@
         "nativeQa": "data_test_200_actual_image_and_layout_visual_qa_pending",
         "physicalReceipt": "unconfirmed"
       },
-      "pluginId": 512643
+      "pluginId": 512643,
+      "budgetOct22Verification": {
+        "status": "ready",
+        "month": "2026-10",
+        "limitUsd": 15,
+        "conservativeReservations": 33,
+        "reservedUsd": 0.178909,
+        "lastReservedAt": "2026-10-22T13:50:31.664Z",
+        "latestSuccessfulRun": 39790428273,
+        "caveat": "Reservations/amount are not provider billing or a verified paid API request count."
+      }
     },
     {
       "day": 5,
@@ -505,6 +515,15 @@
         "addedOn": "2026-10-21",
         "scope": "Only a fixed-origin one-use PKCE handoff and server exchange for Draws. Upstream scopes/client/redirect and gameplay/quotas/playlist unchanged. Sensitive keys remain separate and are never exported.",
         "verification": "23Draws integration/security tests and32original tests pass; public auth chain verified. No human consent/token/player edit fabricated."
+      },
+      "autopilotOct22Verification": {
+        "turn": 4,
+        "quotaDay": "2026-10-22",
+        "actualExecutedAt": "2026-10-22T01:56:44.59087+00:00",
+        "action": "water",
+        "kind": "Owner autopilot",
+        "latestSuccessfulScheduledRun": 39793029563,
+        "result": "One autopilot event per UTC day October19\u201322; seven-day schedules remain enabled."
       }
     },
     {
@@ -570,17 +589,73 @@
       "targetDate": "2026-10-22",
       "name": "Local Morning Brief",
       "slug": "local-morning-brief",
-      "status": "planned",
-      "scope": "One verified location's local news, weather and transit disruption briefing using reliable supported sources.",
+      "status": "website_deployed_recipe_prepared",
+      "scope": "Bay Area city-center NWS forecast/active alerts, BART network advisories and official community notices. San Francisco example default; Oakland/Berkeley selectable. BART community RSS for all cities; SF Rec & Park RSS for SF. Not comprehensive journalism or route-specific transit.",
       "recipeRequired": true,
       "recipe": {
         "name": "Local Morning Brief",
-        "status": "not_created",
+        "status": "prepared",
         "pluginId": null,
         "settingsUrl": null,
         "publicInstallUrl": null
       },
-      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md."
+      "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
+      "sourceDirectory": "apps/local-morning-brief",
+      "vercelProject": "local-morning-brief",
+      "vercelProjectId": "prj_xFOg0LzAYJYqY1KxuqZx4R3flxct",
+      "websiteUrl": "https://local-morning-brief.vercel.app",
+      "buildCompletedOn": "2026-10-22",
+      "latestDeploymentId": "dpl_E3CCEoZZZF7cbKLrjih63JajWeqY",
+      "websiteDeploymentStatus": "ready_anonymous_production_verified",
+      "publicationStatus": "prepared_not_submitted",
+      "deviceInstallationStatus": "not_installed",
+      "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Screen-control permission remains expired.",
+      "testStatus": "13 Node22 checks pass: bounded config/SSRF, Pacific/DST dates, valid current forecast/F-C/unknown rain, alert expiry/test/cancel/future filtering, agency clock/wording, safe RSS/link/title/date/dedupe, cache concurrency, independent sources/partial/outage and dated fallback/hardexpiry, malformed/oversized reads, six multibyte device headlines under4700B, all four safe Liquid views/native palette, browser preferences/links/polling URL/Color-BW persistence. Native visual/physical receipt remain unverified.",
+      "pollingUrl": "https://local-morning-brief.vercel.app/api/brief?city={{ city }}&units={{ units }}&days={{ days }}&count={{ result_count }}&format=trmnl",
+      "productionEvidence": "artifacts/local-morning-brief/production-2026-10-22.json",
+      "iconStatus": "original_sunrise_svg_in_package",
+      "featuredImageStatus": "not_generated_no_recipe_created",
+      "productionVerification": "All three cities returned ready editions with real NWS forecasts/BART notices/source-linked community updates. Celsius verified. Default device SF1753/Oakland1544/Berkeley1547B. Oakland7daywindow honestly empty, invalidcity400. Website/JS/style/icon/release/ZIP match source. Final deployment appJS/defaultdevice reverified October22 17:14:46UTC. No native visual, marketplace, owner installation, submission or physical receipt confirmed.",
+      "configuration": {
+        "city": [
+          "sf",
+          "oakland",
+          "berkeley"
+        ],
+        "defaultCity": "San Francisco (explicit example, not owner home)",
+        "units": [
+          "F",
+          "C"
+        ],
+        "communityDays": [
+          7,
+          14,
+          30
+        ],
+        "fullHeadlines": [
+          3,
+          4,
+          6
+        ],
+        "defaults": {
+          "units": "F",
+          "days": 30,
+          "count": 4
+        },
+        "nativeViewLimits": {
+          "full": 6,
+          "half_horizontal": 2,
+          "half_vertical": 3,
+          "quadrant": 0
+        }
+      },
+      "freshnessPolicy": "Warm single-flight: NWS mapping24h/forecast15m, NWSalerts/BART2m, RSS30m. Forecast outage fallback<=2h onlyifperiod/issuevalid; RSS<=6h withinwindow. Original checktime retained. Alerts/transit NEVER outage replay. Failures never become no-alert/no-delay. Not durable storage; device refresh independent.",
+      "pendingActions": [
+        "After renewed browser authorization create ONE separate master and record ID immediately; save config/Shared/four layouts/icon and native OG color/BW/X orientations/marketplace QA",
+        "Install owner edition preserving every existing plugin/playlist entry; do not infer home city",
+        "Complete public submission under applicable final Community Plugin License confirmation after assets/QA, record real review status and approved install link",
+        "Confirm physical receipt separately"
+      ]
     }
   ],
   "executionRules": [
@@ -629,8 +704,8 @@
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       },
-      "latestCheckedOn": "2026-10-21",
-      "latestResult": "Read the same three HEY review threads October21: only original Submitted acknowledgments and our one authorizedOctober16 follow-up, no human reply/approval. No new email sent; private dashboard not revisited."
+      "latestCheckedOn": "2026-10-22",
+      "latestResult": "Same three HEY review threads rechecked October22: original Submitted acknowledgments and our one authorized October16 follow-up only. No human reply/approval; no new mail sent; private dashboard not revisited."
     }
   },
   "displayDesignPolicy": {
@@ -709,5 +784,11 @@
         "recipeStatus": "Updatedfour-layoutpackageprepared; nocreationorinstallationclaimed."
       }
     }
-  ]
+  ],
+  "launchSeriesBuildStatus": {
+    "updatedOn": "2026-10-22",
+    "state": "all_seven_websites_plus_additional_draws_deployed_recipe_followups_pending",
+    "nextNewApp": null,
+    "remainingWork": "No new scheduled apps. Finish existing private/prepared Recipes, native QA/assets/owner installation/submission and review/install-link followups when access is authorized; preserve no-screen-control preference."
+  }
 }

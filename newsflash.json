@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,180 +10,180 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-22T07:40:24.458Z",
+    "generated_at": "2026-10-22T13:50:47.076Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "bccf3be44fbddebc",
-        "importance": 42,
-        "reason": "An entertaining historical baseball story, but not a current game or development."
+        "id": "adf8f4e95f721f2e",
+        "importance": 30,
+        "reason": "Baseball team-building feature; no specific news or reporting detail supplied."
       },
       {
-        "id": "c0e2cab5c3dfd696",
-        "importance": 72,
-        "reason": "A timely World Series preview featuring two teams seeking their first title."
+        "id": "bccf3be44fbddebc",
+        "importance": 23,
+        "reason": "Historical World Series story, not a current development."
       },
       {
         "id": "dbef4d465f54097a",
-        "importance": 62,
-        "reason": "Fresh recap of the previous night's NBA action; details aren't provided."
+        "importance": 57,
+        "reason": "Timely recap of the previous night's NBA action."
       },
       {
         "id": "691c0a7efdebe8e8",
-        "importance": 49,
-        "reason": "Timely highlights package, but offers plays rather than consequential game context."
+        "importance": 47,
+        "reason": "Timely highlights package, but less substantive than a game recap."
       },
       {
         "id": "300c5113e38c2d22",
-        "importance": 5,
-        "reason": "Vague Tesla video title gives no indication of substantive news."
+        "importance": 4,
+        "reason": "Vague Tesla video title offers no assessable news context."
       },
       {
         "id": "7b5f9626c5843232",
-        "importance": 74,
-        "reason": "Recent quarterly results and Q&A could contain consequential company updates; figures aren't supplied."
+        "importance": 67,
+        "reason": "Recent quarterly results webcast is consequential, though no figures or findings are given."
       },
       {
         "id": "c970336f8ed35d8b",
-        "importance": 27,
-        "reason": "An unboxing video, less informative than a substantive product review."
+        "importance": 13,
+        "reason": "Unboxing video is consumer-content promotion, not substantive product analysis."
       },
       {
         "id": "950a9c1280afe633",
-        "importance": 43,
-        "reason": "A first-generation iPhone Duo review offers product information, though no findings are given."
+        "importance": 36,
+        "reason": "First-generation iPhone Duo review may inform buyers; no review findings supplied."
       },
       {
         "id": "465850fc793a90f6",
-        "importance": 30,
-        "reason": "A prologue demo trailer is a modest gaming update, not a major launch."
+        "importance": 31,
+        "reason": "Game demo trailer offers a preview, but little news detail or broader impact."
       },
       {
         "id": "58374db242b2e5e8",
-        "importance": 21,
-        "reason": "A season trailer for a sports game is routine promotional content."
+        "importance": 19,
+        "reason": "Season trailer is routine game promotion."
       },
       {
         "id": "c463c958a8a2cee4",
-        "importance": 37,
-        "reason": "A launch trailer signals a release, but provides no further game or launch details."
+        "importance": 27,
+        "reason": "Launch trailer signals a game release, with no further details supplied."
+      },
+      {
+        "id": "f640d5ac955c18a0",
+        "importance": 30,
+        "reason": "Fresh DLC release trailer; likely relevant to players, with no content details."
       },
       {
         "id": "4c76f12f0854ede4",
-        "importance": 38,
-        "reason": "A fresh game launch trailer is timely, but title alone gives little context."
+        "importance": 29,
+        "reason": "New-game launch trailer, but the title alone gives little context."
       },
       {
-        "id": "d6c5e360a26a5914",
-        "importance": 31,
-        "reason": "Release trailer is a modest gaming update with no details on the game."
+        "id": "44b1c963f4ed7315",
+        "importance": 34,
+        "reason": "Fresh PS5 launch trailer, though no details establish wider significance."
       },
       {
-        "id": "fe72100427b2f7c4",
-        "importance": 38,
-        "reason": "A fresh game launch trailer is timely, but title alone gives little context."
-      },
-      {
-        "id": "192df5c35b31065f",
-        "importance": 35,
-        "reason": "Launch trailer signals a release, but gives no information about the game's significance."
+        "id": "7b1fb44b36cbf959",
+        "importance": 27,
+        "reason": "Fresh game launch trailer; limited context about the release."
       },
       {
         "id": "2bc4063d55e5ecf9",
-        "importance": 51,
-        "reason": "Claims major cost and accuracy gains, but this first-party headline lacks supporting detail."
+        "importance": 48,
+        "reason": "Claims major cost and accuracy gains, but the first-party video claim is unverified."
       },
       {
         "id": "2466edb21261f152",
         "importance": 34,
-        "reason": "A shopping-agent demo is a product showcase, not evidence of a consequential launch."
+        "reason": "Shopping-agent demo shows a product concept, but impact and availability are unclear."
       },
       {
         "id": "c7c1db1d24f97b16",
-        "importance": 52,
-        "reason": "A sizable regional digital-economy projection, with AI adoption cited as a driver."
+        "importance": 45,
+        "reason": "Regional digital-economy forecast is relevant, but context gives no basis or detail."
+      },
+      {
+        "id": "c3c5d14bfc3aa83f",
+        "importance": 31,
+        "reason": "Cloud availability for a major game is useful to players, but details are sparse."
       },
       {
         "id": "4ab186bcd5d93e27",
-        "importance": 47,
-        "reason": "Reported financial-sector uptake of open models is notable, but the brief context is limited."
-      },
-      {
-        "id": "f8df91dc14194fe5",
-        "importance": 57,
-        "reason": "New tools for training and deploying world models may matter for physical AI development."
+        "importance": 38,
+        "reason": "Financial firms adopting open models is notable, though the first-party summary is broad."
       },
       {
         "id": "12c1cb38a75e4a7b",
-        "importance": 67,
-        "reason": "Infrastructure general availability is a notable AI-cloud development, though scheduled for next month."
+        "importance": 71,
+        "reason": "Cloud infrastructure reaching general availability next month is a notable AI-compute launch."
       },
       {
         "id": "5097c0971b6330ab",
-        "importance": 64,
-        "reason": "A newly conducted rocket-engine test supports future Artemis missions; no test results are given."
+        "importance": 63,
+        "reason": "Recent RS-25 engine test supports future Artemis missions; no test results are provided."
       },
       {
         "id": "a51b31652d0be7c6",
-        "importance": 31,
-        "reason": "A forward-looking JPL innovation feature, not a specific mission milestone."
+        "importance": 30,
+        "reason": "JPL look-ahead is an institutional feature, not a concrete mission update."
+      },
+      {
+        "id": "f8df91dc14194fe5",
+        "importance": 60,
+        "reason": "New tools for world-model development are a substantive AI release, with scope unclear."
       },
       {
         "id": "6f92d29565569592",
-        "importance": 35,
-        "reason": "A corporate use-case article on power constraints, with little detail in the supplied context."
+        "importance": 39,
+        "reason": "Discusses companies addressing AI power limits, but provides no concrete results."
       },
       {
         "id": "13b603cf56b69986",
-        "importance": 32,
-        "reason": "A promotional roundup of European retail uses, without specific outcomes or details."
+        "importance": 35,
+        "reason": "Retail AI use cases are promotional and broad, with limited specifics."
       },
       {
-        "id": "eeca00e7c8977b6d",
-        "importance": 32,
-        "reason": "A game launch trailer is a modest update; no further context is supplied."
+        "id": "c0e2cab5c3dfd696",
+        "importance": 64,
+        "reason": "World Series preview is timely ahead of a championship, but offers no matchup details."
       },
       {
         "id": "357e40c524ca15d7",
-        "importance": 18,
-        "reason": "Lighthearted player-focused content rather than a current baseball development."
-      },
-      {
-        "id": "eb88226e8312753f",
-        "importance": 53,
-        "reason": "A postseason highlights collection is timely, though it doesn't identify particular turning points."
+        "importance": 8,
+        "reason": "Lighthearted archival player feature, with little public-news value."
       },
       {
         "id": "25cf522b3e27b02c",
-        "importance": 58,
-        "reason": "A timely feature on Lillard's return game, but no performance details are included."
+        "importance": 39,
+        "reason": "Timely individual performance feature, but no game result or broader stakes given."
       },
       {
         "id": "6066b5b8355e7b69",
-        "importance": 59,
-        "reason": "A timely feature on Morant's team debut, though the headline alone gives no specifics."
+        "importance": 43,
+        "reason": "Debut performance is timely sports coverage, though details and outcome are absent."
       },
       {
         "id": "7ec4e1c49c0f1d05",
-        "importance": 9,
-        "reason": "Vague acceleration slogan is promotional and lacks vehicle or performance context."
+        "importance": 5,
+        "reason": "Vague acceleration teaser is promotional and supplies no verifiable detail."
       },
       {
         "id": "33222bfd33ec78e1",
-        "importance": 13,
-        "reason": "A fan-engagement flyover is an event promotion, not a substantive space update."
+        "importance": 10,
+        "reason": "Promotional fan-engagement flyover, not a consequential space update."
       },
       {
         "id": "a6bac8b60a7ca68c",
-        "importance": 24,
-        "reason": "A routine astronaut science feature, with no experiment details in the supplied context."
+        "importance": 20,
+        "reason": "Astronaut science feature may be informative, but the supplied context has no findings."
       }
     ],
-    "source_checked_at": "2026-10-22T07:40:09.887Z"
+    "source_checked_at": "2026-10-22T13:50:31.964Z"
   },
   "last_attempt_at": "2026-10-22T13:50:31.664Z",
   "pending_reservation_microusd": 5901,
   "pending_source_checked_at": "2026-10-22T13:50:31.964Z",
-  "last_success_at": "2026-10-22T07:40:24.458Z",
+  "last_success_at": "2026-10-22T13:50:47.076Z",
   "last_error_status": null
 }

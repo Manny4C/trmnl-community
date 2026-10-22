@@ -790,5 +790,31 @@
     "state": "all_seven_websites_plus_additional_draws_deployed_recipe_followups_pending",
     "nextNewApp": null,
     "remainingWork": "No new scheduled apps. Finish existing private/prepared Recipes, native QA/assets/owner installation/submission and review/install-link followups when access is authorized; preserve no-screen-control preference."
-  }
+  },
+  "futureIdeas": [
+    {
+      "name": "Sun & Moon",
+      "workingTitle": true,
+      "slug": "sun-and-moon",
+      "requestedOn": "2026-10-22",
+      "status": "backlog_not_scheduled",
+      "outsideCompletedSevenAppSeries": true,
+      "buildAuthorization": "Add to future ideas only; do not automatically build or assign a launch date.",
+      "requestedExperience": "A time-of-day sky display with accurate sun and moon, sunrise/sunset and moonrise/moonset times, weather and a clock. Slowly animate the scene during its time on screen.",
+      "plannedFeatures": [
+        "Location and IANA timezone configuration with correct local dates and daylight-saving transitions",
+        "Astronomically calculated sun and moon positions, moon phase and illumination, with sourced calculation method and validation",
+        "Sunrise, sunset, moonrise and moonset; label next-day events and days with no rise/set accurately",
+        "Time-of-day sky and weather scene with timestamps and clear observed/forecast labels",
+        "Slow animated companion website; investigate supported on-device motion before promising animation during a single screen appearance",
+        "Color and equally readable B&W, all four layouts, separate website and TRMNL Recipe when built"
+      ],
+      "deviceFeasibility": "Standard TRMNL Recipes deliver generated screen images; do not promise browser animation on the physical panel. If no supported on-device animation exists, show accurate timestamped snapshots progressing at supported refreshes and keep the slow animation on the companion website. Preserve the user's requested on-screen movement as a feasibility question, not a verified feature.",
+      "references": [
+        "https://help.trmnl.com/en/articles/10113695-how-refresh-rates-work",
+        "https://help.trmnl.com/en/articles/11479051-image-display"
+      ],
+      "budget": "Free sources/services or existing subscriptions; no new paid commitments."
+    }
+  ]
 }

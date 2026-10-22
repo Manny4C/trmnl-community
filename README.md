@@ -112,3 +112,7 @@ Seventeen automated checks pass; anonymous production verifies eight posts in a 
 ## TRMNL Draws — additional requested game
 
 [Website](https://trmnl-draws.vercel.app) · [Source](apps/trmnl-draws/README.md). Explicitly requested October21 after Game Night Radar, outside the scheduled seven-app series. One shared100×60 pixel canvas with an original black cat,16colors, smart monochrome and ten pixel placements per verified account/dayUTC. A four-character daily QR doorway is followed by real account/device verification; reconnecting/sharing links cannot multiply allowance. Full-screen art/protected QR corner, conflict-aware atomic batches, replay safety and versioned images. No paid model/new paid service. The existing Tiny Planet integration adds a narrow fixed-origin one-use server-to-server PKCE exchange; keys stay separate and original gameplay/playlists are intact.23new checks plus32existing checks pass. See launch-plan.json for actual deployment/Recipe status; native visual/publication/device steps remain deferred. Local Morning Brief remains October22.
+
+## Future ideas
+
+- **Sun & Moon** — Accurate sun/moon positions, sunrise/sunset and moonrise/moonset, moon phase, weather and local time. A slowly moving sky on the companion website; investigate device-supported motion, with refresh-based snapshots as the standard TRMNL fallback. Color and B&W. Requested October 22; backlog only, no build date assigned.

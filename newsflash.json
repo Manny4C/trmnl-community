@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,170 +10,85 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-21T22:24:58.971Z",
+    "generated_at": "2026-10-22T01:33:52.162Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "bccf3be44fbddebc",
-        "importance": 36,
-        "reason": "Recent historical baseball feature; entertaining, but no current news development."
-      },
-      {
-        "id": "c0e2cab5c3dfd696",
-        "importance": 59,
-        "reason": "Timely World Series preview offers useful championship context, though it is promotional video."
-      },
-      {
-        "id": "2c768c418dbcae6a",
-        "importance": 17,
-        "reason": "Lighthearted player reaction clip with little broader basketball significance."
-      },
-      {
-        "id": "bbbf1d9a2a90fda0",
-        "importance": 21,
-        "reason": "A notable career milestone clip, but limited context and public impact."
-      },
-      {
-        "id": "7b5f9626c5843232",
-        "importance": 68,
-        "reason": "Quarterly results and Q&A are consequential company news, though the webcast is two days old."
-      },
-      {
-        "id": "7ec4e1c49c0f1d05",
-        "importance": 7,
-        "reason": "Vague acceleration slogan reads as an advertisement, with no useful details."
-      },
-      {
-        "id": "c970336f8ed35d8b",
-        "importance": 13,
-        "reason": "Unboxing video is recent but mainly routine creator content."
-      },
-      {
-        "id": "950a9c1280afe633",
-        "importance": 27,
-        "reason": "A recent product review may inform buyers, but title offers no specific findings."
-      },
-      {
         "id": "465850fc793a90f6",
-        "importance": 30,
-        "reason": "A game demo trailer is a modest gaming update; no launch details supplied."
+        "importance": 24,
+        "reason": "A prologue demo trailer offers players a preview, but no major launch or broader impact is stated."
       },
       {
         "id": "58374db242b2e5e8",
-        "importance": 16,
-        "reason": "Season trailer for a sports game is routine promotional content."
+        "importance": 17,
+        "reason": "A routine season trailer; the supplied text gives no notable changes or wider significance."
       },
       {
         "id": "c463c958a8a2cee4",
-        "importance": 24,
-        "reason": "Launch trailer signals a game release, but no further details or significance are given."
-      },
-      {
-        "id": "668946bb7c009f95",
-        "importance": 47,
-        "reason": "Developer discussion of a major game covers several modes, but is promotional and lacks specifics."
-      },
-      {
-        "id": "3bed8439c100c142",
-        "importance": 24,
-        "reason": "Expansion launch trailer is a timely, limited-scope gaming announcement."
-      },
-      {
-        "id": "cda88e9501986664",
-        "importance": 19,
-        "reason": "Season welcome video is routine promotion with little concrete news."
-      },
-      {
-        "id": "b57a773a7e79c184",
-        "importance": 20,
-        "reason": "An out-now game announcement is useful to players but likely niche."
-      },
-      {
-        "id": "dc5366d754b50d8a",
-        "importance": 35,
-        "reason": "Remaster announcement may interest fans, but a trailer alone gives limited detail."
-      },
-      {
-        "id": "2bc4063d55e5ecf9",
-        "importance": 44,
-        "reason": "Claims large cost and accuracy gains for an AI model; first-party claims aren't independently verified."
-      },
-      {
-        "id": "2466edb21261f152",
-        "importance": 30,
-        "reason": "Shopping-agent demo shows a product concept, but it is promotional and dated yesterday."
+        "importance": 36,
+        "reason": "A launch trailer signals a new game release, though no details on the release or features are given."
       },
       {
         "id": "c7c1db1d24f97b16",
-        "importance": 49,
-        "reason": "Regional digital-economy forecast is relevant, but context is brief and the source's claim isn't verified."
+        "importance": 53,
+        "reason": "A sizable regional digital-economy forecast links growth to AI adoption, but no source or evidence is supplied."
       },
       {
         "id": "8722385c6c33a846",
-        "importance": 39,
-        "reason": "NVIDIA's local-AI showcase is a timely industry update, but details are sparse and promotional."
+        "importance": 35,
+        "reason": "NVIDIA previews local AI hardware and agents at GTC Berlin; details and independent validation are limited."
       },
       {
         "id": "12c1cb38a75e4a7b",
-        "importance": 63,
-        "reason": "Cloud infrastructure general availability is a substantive AI-computing development, planned for next month."
+        "importance": 61,
+        "reason": "Announced general availability of new AI infrastructure could matter to cloud capacity; rollout is planned for next month."
       },
       {
         "id": "5097c0971b6330ab",
-        "importance": 56,
-        "reason": "A fresh RS-25 engine test supports future Artemis missions; no test results are provided."
+        "importance": 58,
+        "reason": "A fresh RS-25 engine test supports future Artemis missions, though no test results are provided."
       },
       {
         "id": "a51b31652d0be7c6",
-        "importance": 29,
-        "reason": "JPL's forward-looking exploration piece is interesting but chiefly aspirational, not a new mission."
+        "importance": 25,
+        "reason": "JPL outlines future exploration concepts, but the supplied context describes no concrete decision or milestone."
       },
       {
         "id": "804d4d957ec69082",
-        "importance": 36,
-        "reason": "AI cloud expansion across Europe is an industry trend, but the supplied context is broad."
+        "importance": 32,
+        "reason": "NVIDIA describes European AI cloud expansion, but the promotional context offers no concrete scale or commitments."
       },
       {
-        "id": "78c8c5b843d1b999",
-        "importance": 10,
-        "reason": "Gameplay trailer is routine promotion with no release or other details."
+        "id": "86185ff09c24ae9f",
+        "importance": 28,
+        "reason": "A broad claim about industrial use of NVIDIA technology lacks specific deployments or measured results."
       },
       {
-        "id": "357e40c524ca15d7",
-        "importance": 13,
-        "reason": "Nostalgic personality clip is light entertainment rather than current baseball news."
+        "id": "f2380296be9197f1",
+        "importance": 30,
+        "reason": "Confidential-computing expansion may matter for AI security, but the supplied details are too limited to assess."
       },
       {
-        "id": "eb88226e8312753f",
-        "importance": 34,
-        "reason": "A postseason highlights compilation is timely, but offers no specific turning-point news."
-      },
-      {
-        "id": "fa874bb1823e038a",
-        "importance": 8,
-        "reason": "Celebrity-style hair clip is peripheral to basketball results or developments."
-      },
-      {
-        "id": "4939243b023e6f6c",
-        "importance": 22,
-        "reason": "Practice access is a fresh but routine behind-the-scenes basketball video."
+        "id": "65696a1c4b64084e",
+        "importance": 29,
+        "reason": "A game launch trailer is timely, but the supplied text gives no details beyond the release promotion."
       },
       {
         "id": "33222bfd33ec78e1",
         "importance": 12,
-        "reason": "A planned flyover and fan engagement are promotional outreach, not significant space news."
+        "reason": "A NASA flyover and fan engagement are outreach activities, not a substantive space milestone."
       },
       {
         "id": "a6bac8b60a7ca68c",
-        "importance": 25,
-        "reason": "Astronaut science activity on the station is relevant, but the brief context gives few specifics."
+        "importance": 15,
+        "reason": "Routine astronaut science activity is noted, but no experiment or finding is described."
       }
     ],
-    "source_checked_at": "2026-10-21T22:24:17.467Z"
+    "source_checked_at": "2026-10-22T01:33:39.233Z"
   },
   "last_attempt_at": "2026-10-22T01:33:38.984Z",
   "pending_reservation_microusd": 5005,
   "pending_source_checked_at": "2026-10-22T01:33:39.233Z",
-  "last_success_at": "2026-10-21T22:24:58.971Z",
+  "last_success_at": "2026-10-22T01:33:52.162Z",
   "last_error_status": null
 }

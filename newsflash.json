@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,165 +10,165 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-23T07:36:48.989Z",
+    "generated_at": "2026-10-23T18:24:47.757Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "869b0ec50f64af11",
-        "importance": 18,
-        "reason": "A player-history feature, with no current baseball development indicated."
+        "id": "bb229871771bfa49",
+        "importance": 66,
+        "reason": "Timely World Series preview, but the MLB source offers no details beyond the headline."
       },
       {
-        "id": "98957f63b3424447",
-        "importance": 35,
-        "reason": "A notable historic walk-off highlight, but the game is from 2009."
+        "id": "cad5637e251a81ae",
+        "importance": 32,
+        "reason": "Batting-practice highlight is timely but promotional and not a game result."
+      },
+      {
+        "id": "b3cbd9663f1fb49f",
+        "importance": 28,
+        "reason": "Player-preparation feature, with no substantive news indicated."
       },
       {
         "id": "53ff7698ca11f6db",
-        "importance": 52,
-        "reason": "Timely recap of the previous night's NBA action; no specific results provided."
-      },
-      {
-        "id": "70605068b5a9bb32",
-        "importance": 40,
-        "reason": "Timely nightly highlights, but a routine top-plays roundup."
+        "importance": 54,
+        "reason": "Recent nightly recap offers timely league coverage; details are absent."
       },
       {
         "id": "300c5113e38c2d22",
-        "importance": 15,
-        "reason": "Title gives no details; appears promotional and its significance is unclear."
+        "importance": 18,
+        "reason": "Title gives no details; likely promotional, with no launch or product news specified."
       },
       {
         "id": "7b5f9626c5843232",
-        "importance": 67,
-        "reason": "Recent quarterly financial results and Q&A are consequential, though details aren't supplied."
+        "importance": 62,
+        "reason": "Quarterly results and Q&A can provide consequential company news; figures aren't supplied."
       },
       {
         "id": "c970336f8ed35d8b",
-        "importance": 16,
-        "reason": "An unboxing video, with no substantive product findings indicated."
+        "importance": 18,
+        "reason": "ASMR unboxing is creator content, not substantive product analysis."
       },
       {
         "id": "950a9c1280afe633",
-        "importance": 38,
-        "reason": "A first-generation product review offers more substance, but no findings are supplied."
+        "importance": 51,
+        "reason": "A first-generation product review may inform buyers, but claims and findings aren't provided."
       },
       {
         "id": "5053ea5934e184e5",
-        "importance": 36,
-        "reason": "A timely games update, though the title gives no release or lineup details."
+        "importance": 39,
+        "reason": "A timely gaming update, but the title gives no details on included games."
       },
       {
         "id": "465850fc793a90f6",
-        "importance": 34,
-        "reason": "A prologue demo trailer signals playable content, but details are absent."
+        "importance": 38,
+        "reason": "A demo trailer may interest players, but it is a promotional item."
       },
       {
-        "id": "c463c958a8a2cee4",
-        "importance": 32,
-        "reason": "A launch trailer, with no details on the game's scope or reception."
+        "id": "3fbd9040268c1f53",
+        "importance": 36,
+        "reason": "Weekly Xbox promotional roundup; no specific news is given."
       },
       {
         "id": "1126e8291b4cc1e4",
-        "importance": 30,
-        "reason": "A game update is announced, but the title gives no change details."
-      },
-      {
-        "id": "1859bcbe8608df2b",
-        "importance": 34,
-        "reason": "An Xbox release trailer indicates a launch, but no further context is supplied."
+        "importance": 27,
+        "reason": "Routine game update announcement with no details on its contents."
       },
       {
         "id": "1053a9bebeeb97e2",
-        "importance": 34,
-        "reason": "A launch trailer indicates a game release, but no details are provided."
-      },
-      {
-        "id": "881fd6e76f162e5a",
-        "importance": 24,
-        "reason": "Anniversary content is promotional and no substantive news is specified."
-      },
-      {
-        "id": "37693f6d7ef05493",
         "importance": 39,
-        "reason": "A named game update launches, but its contents are not described."
+        "reason": "Launch trailer signals a game release, but offers no release details."
+      },
+      {
+        "id": "69feac97ce62d67c",
+        "importance": 14,
+        "reason": "Promotional pack video, not substantive game news."
+      },
+      {
+        "id": "72b25553fe663ad6",
+        "importance": 25,
+        "reason": "Launch trailer is promotional; context gives no information on the game."
       },
       {
         "id": "d38226f5fda027a7",
-        "importance": 12,
-        "reason": "A celebrity AI clip is promotional, with no product or policy news indicated."
+        "importance": 18,
+        "reason": "Celebrity AI demonstration is light promotional content, not a product development."
       },
       {
         "id": "2a9db06fe68f5321",
-        "importance": 68,
-        "reason": "Reported rollout to 30,000+ workers is a notable enterprise AI deployment; first-party claim."
+        "importance": 67,
+        "reason": "Reported deployment to 30,000+ staff suggests meaningful workplace AI adoption; source claim unverified."
       },
       {
         "id": "c7c1db1d24f97b16",
         "importance": 55,
-        "reason": "A major regional digital-economy projection, though the excerpt lacks methodology and detail."
+        "reason": "Regional economic forecast is substantive, but the context provides no methodology or further detail."
       },
       {
         "id": "f07d0bb3b14ff2bf",
-        "importance": 44,
-        "reason": "Reports expanding national AI compute, but the brief context gives few specifics."
+        "importance": 47,
+        "reason": "AI compute expansion may matter regionally, but the brief context is incomplete."
       },
       {
         "id": "af6b159eb6ea2f66",
-        "importance": 49,
-        "reason": "NVIDIA announces an AI-operations platform; significance is limited by sparse details."
+        "importance": 48,
+        "reason": "New AI operations platform launch, though its capabilities are only broadly described."
+      },
+      {
+        "id": "2dbe5da910a8a7ed",
+        "importance": 40,
+        "reason": "Energy-security partnership is potentially consequential, but specifics are absent."
       },
       {
         "id": "78a0ff249a66802c",
         "importance": 20,
-        "reason": "A Hubble image feature, with no scientific finding stated in the excerpt."
-      },
-      {
-        "id": "5097c0971b6330ab",
-        "importance": 57,
-        "reason": "A recent rocket-engine test supports future Artemis missions; no test results given."
+        "reason": "Hubble image feature is low-impact; context lacks scientific findings."
       },
       {
         "id": "c3c5d14bfc3aa83f",
-        "importance": 27,
-        "reason": "A game cloud-service availability announcement, with limited broader impact."
+        "importance": 25,
+        "reason": "Game cloud availability announcement is useful but routine and promotional."
       },
       {
         "id": "4ab186bcd5d93e27",
-        "importance": 45,
-        "reason": "Financial firms adopting open models is notable, but the article context is sparse."
+        "importance": 43,
+        "reason": "Financial firms adopting open models is a notable trend, but details are limited."
       },
       {
-        "id": "e178d3ea39db7cc0",
-        "importance": 13,
-        "reason": "A casual game-watching feature, not substantive baseball news."
+        "id": "81c881c48fc6ee69",
+        "importance": 23,
+        "reason": "Season launch trailer is promotional and gives no further context."
       },
       {
-        "id": "2ee5e4a0955249c7",
-        "importance": 19,
-        "reason": "A World Series correspondent announcement is promotional, not a competitive update."
+        "id": "c07a8752e5f09d73",
+        "importance": 12,
+        "reason": "Clickbait-style player clip title, with no substantive context."
+      },
+      {
+        "id": "3649d99da0fc2066",
+        "importance": 33,
+        "reason": "World Series matchup preview is timely, but framed as hype rather than news."
+      },
+      {
+        "id": "70605068b5a9bb32",
+        "importance": 42,
+        "reason": "Recent plays roundup offers sports highlights, but no game-changing event is specified."
       },
       {
         "id": "c082823d38f47a9e",
-        "importance": 44,
-        "reason": "Addresses the end of a long scoring streak, but no further game context is given."
+        "importance": 65,
+        "reason": "A 141-game scoring streak ending is a notable league milestone; no further details supplied."
       },
       {
-        "id": "2edc8549f3dabaee",
-        "importance": 37,
-        "reason": "A comeback-win clip may capture a notable game moment; headline wording is unclear."
-      },
-      {
-        "id": "a51b31652d0be7c6",
-        "importance": 39,
-        "reason": "Looks ahead to JPL exploration concepts, but describes no funded mission or decision."
+        "id": "5097c0971b6330ab",
+        "importance": 69,
+        "reason": "NASA tested a named RS-25 engine for future Artemis missions, a substantive program update."
       }
     ],
-    "source_checked_at": "2026-10-23T07:36:35.451Z"
+    "source_checked_at": "2026-10-23T18:24:33.851Z"
   },
   "last_attempt_at": "2026-10-23T18:24:33.576Z",
   "pending_reservation_microusd": 5684,
   "pending_source_checked_at": "2026-10-23T18:24:33.851Z",
-  "last_success_at": "2026-10-23T07:36:48.990Z",
+  "last_success_at": "2026-10-23T18:24:47.757Z",
   "last_error_status": null
 }

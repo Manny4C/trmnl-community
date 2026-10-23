@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,105 +10,165 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-23T01:34:38.322Z",
+    "generated_at": "2026-10-23T07:36:48.989Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
         "id": "869b0ec50f64af11",
-        "importance": 22,
-        "reason": "A baseball history video about players shared by the Rays and Brewers; no current news indicated."
+        "importance": 18,
+        "reason": "A player-history feature, with no current baseball development indicated."
       },
       {
         "id": "98957f63b3424447",
-        "importance": 31,
-        "reason": "Full replay of Ichiro's notable 2009 walk-off, but it is archival rather than current."
+        "importance": 35,
+        "reason": "A notable historic walk-off highlight, but the game is from 2009."
+      },
+      {
+        "id": "53ff7698ca11f6db",
+        "importance": 52,
+        "reason": "Timely recap of the previous night's NBA action; no specific results provided."
+      },
+      {
+        "id": "70605068b5a9bb32",
+        "importance": 40,
+        "reason": "Timely nightly highlights, but a routine top-plays roundup."
       },
       {
         "id": "300c5113e38c2d22",
-        "importance": 24,
-        "reason": "Tesla Roadster video title lacks detail; significance or whether it reveals anything new is unclear."
+        "importance": 15,
+        "reason": "Title gives no details; appears promotional and its significance is unclear."
       },
       {
         "id": "7b5f9626c5843232",
-        "importance": 52,
-        "reason": "Tesla's Q3 2026 results and Q&A offer timely financial information, though no figures are given."
+        "importance": 67,
+        "reason": "Recent quarterly financial results and Q&A are consequential, though details aren't supplied."
       },
       {
         "id": "c970336f8ed35d8b",
-        "importance": 20,
-        "reason": "Unboxing video is product-focused, with no substantive details in the title."
+        "importance": 16,
+        "reason": "An unboxing video, with no substantive product findings indicated."
       },
       {
         "id": "950a9c1280afe633",
+        "importance": 38,
+        "reason": "A first-generation product review offers more substance, but no findings are supplied."
+      },
+      {
+        "id": "5053ea5934e184e5",
+        "importance": 36,
+        "reason": "A timely games update, though the title gives no release or lineup details."
+      },
+      {
+        "id": "465850fc793a90f6",
+        "importance": 34,
+        "reason": "A prologue demo trailer signals playable content, but details are absent."
+      },
+      {
+        "id": "c463c958a8a2cee4",
+        "importance": 32,
+        "reason": "A launch trailer, with no details on the game's scope or reception."
+      },
+      {
+        "id": "1126e8291b4cc1e4",
+        "importance": 30,
+        "reason": "A game update is announced, but the title gives no change details."
+      },
+      {
+        "id": "1859bcbe8608df2b",
+        "importance": 34,
+        "reason": "An Xbox release trailer indicates a launch, but no further context is supplied."
+      },
+      {
+        "id": "1053a9bebeeb97e2",
+        "importance": 34,
+        "reason": "A launch trailer indicates a game release, but no details are provided."
+      },
+      {
+        "id": "881fd6e76f162e5a",
+        "importance": 24,
+        "reason": "Anniversary content is promotional and no substantive news is specified."
+      },
+      {
+        "id": "37693f6d7ef05493",
         "importance": 39,
-        "reason": "A first-generation iPhone Duo review may inform buyers, but the title gives little product context."
+        "reason": "A named game update launches, but its contents are not described."
+      },
+      {
+        "id": "d38226f5fda027a7",
+        "importance": 12,
+        "reason": "A celebrity AI clip is promotional, with no product or policy news indicated."
+      },
+      {
+        "id": "2a9db06fe68f5321",
+        "importance": 68,
+        "reason": "Reported rollout to 30,000+ workers is a notable enterprise AI deployment; first-party claim."
       },
       {
         "id": "c7c1db1d24f97b16",
-        "importance": 47,
-        "reason": "Reports a sizeable Southeast Asian digital-economy projection tied to AI adoption; details are limited."
+        "importance": 55,
+        "reason": "A major regional digital-economy projection, though the excerpt lacks methodology and detail."
+      },
+      {
+        "id": "f07d0bb3b14ff2bf",
+        "importance": 44,
+        "reason": "Reports expanding national AI compute, but the brief context gives few specifics."
       },
       {
         "id": "af6b159eb6ea2f66",
-        "importance": 48,
-        "reason": "NVIDIA says it launched an AI-factory observability platform; impact and capabilities are not detailed."
+        "importance": 49,
+        "reason": "NVIDIA announces an AI-operations platform; significance is limited by sparse details."
+      },
+      {
+        "id": "78a0ff249a66802c",
+        "importance": 20,
+        "reason": "A Hubble image feature, with no scientific finding stated in the excerpt."
+      },
+      {
+        "id": "5097c0971b6330ab",
+        "importance": 57,
+        "reason": "A recent rocket-engine test supports future Artemis missions; no test results given."
       },
       {
         "id": "c3c5d14bfc3aa83f",
         "importance": 27,
-        "reason": "GeForce NOW availability news for a named game, but limited broader significance."
-      },
-      {
-        "id": "78a0ff249a66802c",
-        "importance": 21,
-        "reason": "Hubble image release may interest space followers, but context provides little scientific detail."
-      },
-      {
-        "id": "5097c0971b6330ab",
-        "importance": 61,
-        "reason": "NASA conducted an RS-25 engine test supporting future Artemis missions; technical results are absent."
+        "reason": "A game cloud-service availability announcement, with limited broader impact."
       },
       {
         "id": "4ab186bcd5d93e27",
-        "importance": 28,
-        "reason": "NVIDIA describes financial firms adopting open models; the promotional title gives few concrete outcomes."
-      },
-      {
-        "id": "f8df91dc14194fe5",
-        "importance": 44,
-        "reason": "NVIDIA announced tools for building and evaluating world models, but capabilities and access are unclear."
-      },
-      {
-        "id": "6f92d29565569592",
-        "importance": 25,
-        "reason": "Promotional account of companies using NVIDIA DSX; no measurable power or deployment results supplied."
+        "importance": 45,
+        "reason": "Financial firms adopting open models is notable, but the article context is sparse."
       },
       {
         "id": "e178d3ea39db7cc0",
-        "importance": 12,
-        "reason": "Lifestyle video with Dodger spouses; little evident baseball or public-news significance."
+        "importance": 13,
+        "reason": "A casual game-watching feature, not substantive baseball news."
       },
       {
         "id": "2ee5e4a0955249c7",
-        "importance": 18,
-        "reason": "World Series correspondent announcement is promotional; no reporting or game developments described."
+        "importance": 19,
+        "reason": "A World Series correspondent announcement is promotional, not a competitive update."
+      },
+      {
+        "id": "c082823d38f47a9e",
+        "importance": 44,
+        "reason": "Addresses the end of a long scoring streak, but no further game context is given."
+      },
+      {
+        "id": "2edc8549f3dabaee",
+        "importance": 37,
+        "reason": "A comeback-win clip may capture a notable game moment; headline wording is unclear."
       },
       {
         "id": "a51b31652d0be7c6",
-        "importance": 32,
-        "reason": "NASA JPL outlines future exploration ideas, but this is a broad look ahead rather than a new mission."
-      },
-      {
-        "id": "33222bfd33ec78e1",
-        "importance": 13,
-        "reason": "Fan engagement and a planned university flyover are routine outreach, not substantive space news."
+        "importance": 39,
+        "reason": "Looks ahead to JPL exploration concepts, but describes no funded mission or decision."
       }
     ],
-    "source_checked_at": "2026-10-23T01:34:25.780Z"
+    "source_checked_at": "2026-10-23T07:36:35.451Z"
   },
   "last_attempt_at": "2026-10-23T07:36:35.145Z",
   "pending_reservation_microusd": 5686,
   "pending_source_checked_at": "2026-10-23T07:36:35.451Z",
-  "last_success_at": "2026-10-23T01:34:38.322Z",
+  "last_success_at": "2026-10-23T07:36:48.990Z",
   "last_error_status": null
 }

@@ -1,5 +1,5 @@
 import test,{before,beforeEach,after} from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {PGlite} from '@electric-sql/pglite';import {PNG} from 'pngjs';import QRCode from 'qrcode';import jsQR from 'jsqr';import {Liquid} from 'liquidjs';import {Window} from 'happy-dom';
-import {seed,protectedCell,PALETTE,monoValue,lightness,WIDTH,HEIGHT,CANVAS_FORMAT} from '../public/pixels.js';import {legacySeed} from '../lib/legacy-seed.js';
+import {seed} from '../lib/seed.js';import {seed as lineArtSeed,protectedCell,PALETTE,monoValue,lightness,WIDTH,HEIGHT,CANVAS_FORMAT} from '../public/pixels.js';import {legacySeed} from '../lib/legacy-seed.js';
 import {validatePaint,ORIGIN} from '../lib/game.js';import {renderCanvas} from '../lib/render.js';import {migrationStatements} from '../lib/migration.js';import {devicePayload,todayEntry,entryFor} from '../lib/db.js';import {csrf,hash,seal,session} from '../lib/auth.js';import {paintHandler} from '../api/paint.js';import {authHandler} from '../api/auth.js';import {exchangeHandler} from '../../tiny-planet/api/draws-exchange.js';import {seal as brokerSeal} from '../../tiny-planet/lib/auth.js';import {authHandler as brokerAuth} from '../../tiny-planet/api/auth.js';
 process.env.DRAWS_SESSION_SECRET='separate-draws-test-secret-abcdefghijklmnopqrstuvwxyz123456';
 process.env.TINY_PLANET_SESSION_SECRET='test-only-not-a-production-secret-abcdefghijklmnopqrstuvwxyz12345';
@@ -74,3 +74,14 @@ test('old tabs cannot create placements at wrongly mapped native coordinates',as
  assert.equal(out.code,409);assert.match(out.body.error,/800/);assert.equal((await board()).version,0);assert.equal((await pg.query('SELECT count(*)::int AS n FROM td_usage')).rows[0].n,0);
 });
 test('immutable legacy snapshots still render at their original full 800×480 output size',()=>{const p=PNG.sync.read(renderCanvas(legacySeed(),'color'));assert.equal(p.width,800);assert.equal(p.height,480);assert.deepEqual(p.data.subarray(0,4),p.data.subarray(4,8));});
+
+const photoUpgrade=await readFile('lib/photo-upgrade.sql','utf8');
+test('generated photo migration preserves touched/repainted cells and quotas/history/snapshots and cannot reseed twice',async()=>{
+ await pg.exec(photoUpgrade);await pg.exec('DELETE FROM td_artwork_upgrades;');
+ await pg.query('UPDATE td_canvas SET pixels=$1 WHERE id=1',[lineArtSeed()]);await pg.query('UPDATE td_snapshots SET pixels=$1 WHERE version=0',[lineArtSeed()]);
+ await paint(actor,[{x:10,y:10,color:4,expected:0}],nonce(501));await paint(actor,[{x:11,y:10,color:4,expected:0}],nonce(502));await paint(actor,[{x:11,y:10,color:0,expected:4}],nonce(503));
+ const old=await board(),usage=(await pg.query('SELECT used FROM td_usage')).rows[0].used;
+ const result=(await pg.query('SELECT td_photo_upgrade($1,$2) AS result',[lineArtSeed(),seed()])).rows[0].result;
+ assert.equal(result.upgraded,true);assert.equal(result.preserved_cells,2);const b=await board();assert.equal(b.pixels[8010],'4');assert.equal(b.pixels[8011],'0');assert.equal(b.version,old.version+1);assert.equal((await pg.query('SELECT used FROM td_usage')).rows[0].used,usage);assert.equal((await pg.query('SELECT count(*)::int AS n FROM td_edits')).rows[0].n,3);assert.equal((await pg.query('SELECT pixels FROM td_snapshots WHERE version=3')).rows[0].pixels,old.pixels);
+ assert.equal((await pg.query('SELECT td_photo_upgrade($1,$2) AS result',[lineArtSeed(),seed()])).rows[0].result.upgraded,false);assert.deepEqual(await board(),b);
+});

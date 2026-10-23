@@ -733,7 +733,7 @@
       "websiteUrl": "https://trmnl-draws.vercel.app",
       "vercelProject": "trmnl-draws",
       "vercelProjectId": "prj_NSKHBi7QCWakVslBnUclptaGD6wp",
-      "scope": "One shared800x480native-pixel canvas (384,000cells;337,920editable,46,080protectedQRpixels). One editable pixel per OG display pixel, larger panels/mashups scale same canvas. Detailed original black cat,16colors and binary smartmono. Ten placements per verified TRMNL account/UTCday, unchanged daily QR/account ownership gating/atomic quota/conflict/idempotency rules.",
+      "scope": "One shared800x480native-pixel canvas (384,000cells;337,920editable,46,080protectedQRpixels). One editable pixel per OG display pixel, larger panels/mashups scale same canvas. AI-generated photographic black cat,16colors and binary smartmono. Ten placements per verified TRMNL account/UTCday, unchanged daily QR/account ownership gating/atomic quota/conflict/idempotency rules.",
       "recipe": {
         "name": "TRMNL Draws",
         "status": "prepared",
@@ -744,7 +744,7 @@
       "deviceInstallationStatus": "not_installed",
       "publicationStatus": "prepared_not_submitted",
       "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Five-minute authorization remains expired.",
-      "testStatus": "27checks pass underNode22: prior23plus safe native migration preserving altered legacy cells/quotas/audit/immutable snapshots; real sub8pixel detail; exactly1nativecell changes including far edge; old-client writes rejected while accepted retries confirmed; legacy immutable images retained;16xzoom/fit/coordinatecenter DOM checks. NativeTRMNL rendering/physicalreceipt/realhumanconsent+paint remain unverified.",
+      "testStatus": "28checks pass: prior27 plus generated-photo artwork change preserving touched/repaint-to-original cells, quotas, history and immutable snapshots with one-time durable guard. No new native visual/physical/real-human verification.",
       "database": {
         "provider": "Existing PERSONAL Neon Free PostgreSQL",
         "status": "production_schema_and_seed_initialized_verified",
@@ -763,14 +763,14 @@
       ],
       "buildCompletedOn": "2026-10-21",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_FgPcFtijSCXGiYVK4PtTKtY7foFr",
-      "verificationTimestamp": "2026-10-21T17:58:06.363Z",
+      "latestDeploymentId": "dpl_6XuKNZXeNtSJB66FqF2KaDrLtjCb",
+      "verificationTimestamp": "2026-10-23T01:20:26.282Z",
       "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
-      "productionEvidence": "artifacts/trmnl-draws/native-production-2026-10-21.json",
-      "productionVerification": "Version1native800x480/384000cells matches detailed cat seed; no fabricated edits (zeroevents). Device374bytes. ColorPNG13917B and binaryBWPNG13507B both800x480and pixel-for-pixel match source; actualQRindependentlydecoded. Anonymousnativepaint401. Originalv0imageunchanged. WebsiteJSandupdatedZIPmatch production. No browser/nativeUIused; Recipe remains prepared, noID/install/submission/physicalreceipt.",
+      "productionEvidence": "artifacts/trmnl-draws/photo-production-2026-10-22.json",
+      "productionVerification": "Version2/384000cells/zeroevents matches generated-photo seed. Color/BW800x480PNG output pixel-for-pixel matches saved source. Originalv1line-artimage unchanged, websiteAIlabel andZIPverified. See photo-production-2026-10-22.json for byte counts. Recipe remains prepared only, no nativevisual/physicalreceipt/humanconsent verification.",
       "iconStatus": "original_cat_svg_in_package",
       "featuredImageStatus": "not_generated_no_recipe_created",
-      "testRuntime": "All27checks passed under production-compatibleNode22 after native upgrade.",
+      "testRuntime": "All28Draws checks pass under Node22 after generated-photo migration.",
       "cachePolicy": "Versioned public images and fixed QR images have immutable one-day CDN/browser cache; dynamic canvas/session/paint/entry/auth data is no-store.",
       "nativeResolutionUpgrade": {
         "requestedOn": "2026-10-21",
@@ -782,6 +782,16 @@
         "webControls": "Fit, actual1x,2x,4x,8x,16x; coordinateentry and centerview",
         "migration": "Atomic rowlock; only untouched oldseed areas replaced with detailedart. Changedlegacycells expanded to their original8x8footprint. Preservequota/audit/sessions/snapshots. Productionhad0communitychanges; versionincrement1doesnotfabricateaplayeredit. Old4argumentSQLpaintfunctiondropped, native5argumentformatrequired; oldtabsconfirmexistingnonceonly. Futuremigrate.mjsrerunnoreset. Neverreruninitialize-secret.",
         "recipeStatus": "Updatedfour-layoutpackageprepared; nocreationorinstallationclaimed."
+      },
+      "startingArtwork": {
+        "kind": "AI-generated black-cat studio photograph",
+        "requestedOn": "2026-10-22",
+        "generator": "built-in image_gen (existing tool/subscription, not Newsflash paid API)",
+        "originalAsset": "apps/trmnl-draws/assets/black-cat-photo-original.png",
+        "exactPrompt": "apps/trmnl-draws/assets/black-cat-photo-generation.json",
+        "adaptation": "Area-resampled800x480, existing sixteen-color palette with error diffusion; white protected QR area; binary smartmono variant. Color and mono previews retained in assets/.",
+        "migration": "One-time row-locked artwork update to version2. Retains every changed and audited touched cell including repaint-to-original. Quotas/sessions/audit/old snapshots untouched. Durable td_artwork_upgrades marker prevents reseeding. Production had zero community edits to preserve; no player event fabricated.",
+        "status": "production_verified"
       }
     }
   ],

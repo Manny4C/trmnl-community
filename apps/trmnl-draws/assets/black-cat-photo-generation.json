@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "generatedOn": "2026-10-22",
+  "prompt": "Use case: photorealistic-natural. Asset type: starting artwork for TRMNL Draws, a shared 800 by 480 pixel canvas. Create a genuine photorealistic studio portrait of one beautiful short-haired BLACK CAT with bright golden-yellow eyes, fine visible whiskers and detailed glossy black fur. Full cat seated with paws visible and a naturally curled tail, looking toward camera. Landscape 5:3 composition, cat centered slightly left, filling most of the height with clear unclipped ears and paws. Clean white seamless background with a very soft natural contact shadow; leave the bottom-right quarter of width and bottom half of height as clean white negative space reserved for an interface QR overlay, but DO NOT draw any QR, text or interface. Soft directional window-like light with good separation and visible fine fur highlights so the black cat stays readable when adapted to monochrome e-paper. Natural anatomy, realistic camera photograph, not a cartoon, not vector art, not a pixel illustration, not a painting. No collar, no accessories, no props, no watermark, no lettering. Keep composition simple and high contrast.",
+  "source": "black-cat-photo-original.png",
+  "usage": "Starting photo adapted to the existing 800x480 sixteen-color game canvas; existing community edits and allowances preserved."
+}

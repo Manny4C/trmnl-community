@@ -704,8 +704,8 @@
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       },
-      "latestCheckedOn": "2026-10-22",
-      "latestResult": "Same three HEY review threads rechecked October22: original Submitted acknowledgments and our one authorized October16 follow-up only. No human reply/approval; no new mail sent; private dashboard not revisited."
+      "latestCheckedOn": "2026-10-23",
+      "latestResult": "Three existing HEY review threads rechecked: only original Submitted acknowledgments and one authorized October16 follow-up, no human reply or approval. No mail sent, no browser used."
     }
   },
   "displayDesignPolicy": {
@@ -826,5 +826,50 @@
       ],
       "budget": "Free sources/services or existing subscriptions; no new paid commitments."
     }
-  ]
+  ],
+  "monitorState": {
+    "checkedAt": "2026-10-24T03:04:50.614321+00:00",
+    "localDate": "2026-10-23",
+    "recipeReviewChanged": false,
+    "browserPreferenceUnchanged": true,
+    "noNewAppsStarted": true,
+    "tinyPlanet": {
+      "status": "healthy",
+      "turn": 6,
+      "lastAutopilotUtcDay": "2026-10-24",
+      "latestExecutedAt": "2026-10-24T00:04:38.736089+00:00",
+      "priorUtcDayExecutedAt": "2026-10-23T02:00:36.823662+00:00",
+      "latestSuccessfulRun": 40043115315,
+      "note": "UTC October24 is still October23Pacific; do not reinterpret quota days as local dates. No manual move made."
+    },
+    "draws": {
+      "status": "healthy",
+      "version": 2,
+      "dailyDoorwayUtcDay": "2026-10-24",
+      "deviceBytes": 374,
+      "seedReset": false
+    },
+    "echoLinks": {
+      "url": "https://sounds-like-my-company.vercel.app/r/ECHO",
+      "httpStatus": 200
+    },
+    "newsflash": {
+      "status": "editor_unavailable",
+      "failedRun": 40046768951,
+      "failedRunUrl": "https://github.com/Manny4C/trmnl-community/actions/runs/40046768951",
+      "failedAt": "2026-10-24T00:48:20.742Z",
+      "lastSuccessfulEditionAt": "2026-10-23T22:15:27.497Z",
+      "lastSuccessfulRun": 40032378381,
+      "lastErrorHttpStatus": null,
+      "cause": "Undetermined. Curator stores a generic editor_unavailable status; no HTTP401/403 credential rejection recorded. Failure could be transport, incomplete output or validation. Do not invent a cause or replace the working key.",
+      "budgetMonth": "2026-10",
+      "limitUsd": 15,
+      "conservativeReservations": 41,
+      "reservedUsd": 0.223563,
+      "budgetMeaning": "Conservative reservations are not provider billing or a verified paid-call count. Failed reservation retained.",
+      "lastEditionPolicy": "Last valid snapshot retained; eligible AI decisions remain usable for six hours, then labeled freshness fallback. No automatic immediate retry or extra inference dispatched. Next normal hosted schedule remains enabled.",
+      "userNotificationPlannedForRun": 40046768951,
+      "notifyAgainOnlyIf": "New material failure state, sustained expiry/outage, recovery or required user action. Do not repeat the same known failed run."
+    }
+  }
 }

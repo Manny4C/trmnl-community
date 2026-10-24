@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,165 +10,155 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-23T22:15:27.497Z",
+    "generated_at": "2026-10-24T14:36:11.999Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "1f5177eca36fffe9",
-        "importance": 14,
-        "reason": "Lightweight player personality clip; no substantive news context."
+        "id": "23aaa0781234e012",
+        "importance": 53,
+        "reason": "Recent player interview tied to the World Series opener; details of the outing aren't provided."
       },
       {
-        "id": "2efe53375e0fe58c",
-        "importance": 17,
-        "reason": "World Series media-day interview, but the topic and substance are unspecified."
+        "id": "73398c6e276db975",
+        "importance": 78,
+        "reason": "Highlights the decisive Game 1 win in the World Series, a major baseball event."
       },
       {
-        "id": "93632019305b96e6",
-        "importance": 10,
-        "reason": "Mascot highlight is entertaining but routine."
+        "id": "c07df369832668b3",
+        "importance": 54,
+        "reason": "Timely broad recap of the previous night's NBA action."
       },
       {
-        "id": "a5ec881cdacacd52",
-        "importance": 20,
-        "reason": "Coaches discussion may offer insight, but the title gives no specific news."
+        "id": "3c130c51ccc12ddd",
+        "importance": 45,
+        "reason": "Routine nightly highlights package, useful but less consequential than a full recap."
       },
       {
         "id": "300c5113e38c2d22",
-        "importance": 10,
-        "reason": "Bare promotional video title provides no details about a vehicle update."
+        "importance": 42,
+        "reason": "Roadster video may interest EV fans, but the title gives no indication of news or substance."
       },
       {
         "id": "7b5f9626c5843232",
-        "importance": 64,
-        "reason": "Quarterly results and Q&A are consequential company news; figures are not supplied."
+        "importance": 70,
+        "reason": "Tesla's quarterly results and Q&A are substantive business news for EV and technology audiences."
       },
       {
-        "id": "c970336f8ed35d8b",
-        "importance": 15,
-        "reason": "Unboxing video is promotional and offers little beyond a product introduction."
-      },
-      {
-        "id": "950a9c1280afe633",
-        "importance": 35,
-        "reason": "A first-generation iPhone Duo review could inform buyers, but no findings are given."
+        "id": "4042553f458f0d41",
+        "importance": 38,
+        "reason": "Game launch trailer is timely but primarily promotional."
       },
       {
         "id": "d8f05e3c6332a410",
-        "importance": 48,
-        "reason": "New demo trailer signals a gaming release, though no launch details are provided."
-      },
-      {
-        "id": "b5274cd00981a8e2",
-        "importance": 48,
-        "reason": "Zelda-themed trailer may be a notable gaming announcement; specifics are unclear."
+        "importance": 30,
+        "reason": "Demo trailer is promotional, with no further details in the feed."
       },
       {
         "id": "6adc12be07d0e789",
-        "importance": 75,
-        "reason": "A GTA VI launch trailer is a major gaming release signal; details are absent."
+        "importance": 57,
+        "reason": "A launch trailer for a major game release draws broad gaming interest, though it is promotional."
       },
       {
         "id": "ba9456fc8d021d97",
-        "importance": 25,
-        "reason": "Launch trailer title gives no identifying context or broader significance."
+        "importance": 36,
+        "reason": "Launch trailer offers little context beyond promotion."
+      },
+      {
+        "id": "6185ddbea650eb8e",
+        "importance": 34,
+        "reason": "Preview showcase is game promotion, with no substantive details supplied."
       },
       {
         "id": "703141bca02253c6",
-        "importance": 48,
-        "reason": "Launch trailer indicates a game release, but no further details are supplied."
-      },
-      {
-        "id": "69feac97ce62d67c",
-        "importance": 24,
-        "reason": "Valor Pack appears to be a promotional game add-on, not a major update."
+        "importance": 43,
+        "reason": "Launch trailer is timely gaming news but remains promotional."
       },
       {
         "id": "8dd612a860f03e20",
         "importance": 18,
-        "reason": "Vague product-style video title lacks enough context to assess significance."
+        "reason": "Cryptic title and no context make this OpenAI video hard to assess."
       },
       {
         "id": "d01589cde4a487f6",
-        "importance": 18,
-        "reason": "Promotional customer example; no new product capability or evidence is detailed."
-      },
-      {
-        "id": "c7c1db1d24f97b16",
-        "importance": 47,
-        "reason": "Regional digital-economy forecast is potentially significant, but context is limited."
+        "importance": 25,
+        "reason": "Customer-use case video is promotional and offers no independent evidence."
       },
       {
         "id": "f07d0bb3b14ff2bf",
-        "importance": 45,
-        "reason": "AI-compute expansion is relevant infrastructure news; the supplied summary is truncated."
+        "importance": 49,
+        "reason": "AI compute expansion could matter regionally, but the supplied context is truncated."
       },
       {
         "id": "af6b159eb6ea2f66",
-        "importance": 58,
-        "reason": "NVIDIA announces an AI-factory observability platform, a substantive product launch."
+        "importance": 54,
+        "reason": "NVIDIA announces an AI operations platform; its significance is unclear from the brief context."
       },
       {
-        "id": "dad78058cd63c76b",
-        "importance": 53,
-        "reason": "NASA engine testing is substantive aerospace activity, though test results are not given."
+        "id": "57c0a5f2d9657bbd",
+        "importance": 75,
+        "reason": "Accelerating lunar lander development for 2028 missions is consequential space-program news."
+      },
+      {
+        "id": "452bf28ae114f7dc",
+        "importance": 72,
+        "reason": "Artemis III lander operations testing is a substantive step toward future lunar missions."
       },
       {
         "id": "2dbe5da910a8a7ed",
-        "importance": 33,
-        "reason": "Energy-security partnership is potentially useful, but the description offers few specifics."
+        "importance": 38,
+        "reason": "NASA energy partnership is a modest public-interest item, with few details supplied."
       },
       {
         "id": "c3c5d14bfc3aa83f",
-        "importance": 36,
-        "reason": "GeForce NOW availability is a practical gaming update, with little broader impact."
+        "importance": 30,
+        "reason": "Cloud availability announcement is routine gaming-service promotion."
       },
       {
         "id": "4ab186bcd5d93e27",
-        "importance": 48,
-        "reason": "Financial firms adopting open models is a meaningful AI trend; examples are unspecified."
+        "importance": 47,
+        "reason": "Financial firms adopting open AI models is notable, but the claim comes from NVIDIA."
       },
       {
         "id": "10a18dbe1712e1eb",
-        "importance": 16,
-        "reason": "Customer story promoting AI training use; no independent evidence or new feature stated."
+        "importance": 23,
+        "reason": "Customer case-study video is promotional and repeats the AI training theme."
       },
       {
         "id": "0cd5060b5bfe3436",
-        "importance": 23,
-        "reason": "AI IT-fix agents could be useful, but the title provides no capability details."
+        "importance": 28,
+        "reason": "AI IT-fix agents could be useful, but this is a partner promotional video without details."
       },
       {
-        "id": "82167b3ec6d97e9d",
-        "importance": 23,
-        "reason": "World Series matchup discussion is timely, but offers no reported development."
+        "id": "6268eab3ffbe6177",
+        "importance": 42,
+        "reason": "Quick recap of a major series opener, but a short recap offers limited depth."
       },
       {
-        "id": "2923af9b612bbf7b",
-        "importance": 14,
-        "reason": "Historical anniversary clip is nostalgic rather than current news."
+        "id": "deb3de8a64446002",
+        "importance": 59,
+        "reason": "Complete play-by-play video of the World Series opener is timely and substantive for fans."
       },
       {
-        "id": "8d6599bd4d5e8d20",
-        "importance": 20,
-        "reason": "Player reaction to a comeback is a sports highlight, not a fresh development."
+        "id": "a23c1feb2f1ba40b",
+        "importance": 35,
+        "reason": "Single-player highlight is routine NBA content, not a broader game recap."
       },
       {
-        "id": "e05b65527815264c",
-        "importance": 17,
-        "reason": "A single turnover from a scoring run is a routine highlight."
+        "id": "dd691343bd8b2c14",
+        "importance": 30,
+        "reason": "Brief social-style moment from a game, with little wider significance."
       },
       {
-        "id": "78a0ff249a66802c",
-        "importance": 21,
-        "reason": "Hubble image feature is visually interesting, but the release date is earlier and details are sparse."
+        "id": "dad78058cd63c76b",
+        "importance": 47,
+        "reason": "RS-25 engine testing is relevant NASA hardware progress, though the context is incomplete."
       }
     ],
-    "source_checked_at": "2026-10-23T22:15:14.519Z"
+    "source_checked_at": "2026-10-24T14:36:01.272Z"
   },
   "last_attempt_at": "2026-10-24T14:36:00.877Z",
   "pending_reservation_microusd": 5590,
   "pending_source_checked_at": "2026-10-24T14:36:01.272Z",
-  "last_success_at": "2026-10-23T22:15:27.497Z",
+  "last_success_at": "2026-10-24T14:36:11.999Z",
   "last_error_status": null
 }

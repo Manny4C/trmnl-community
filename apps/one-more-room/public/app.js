@@ -1,14 +1,14 @@
 import {newCampaign,advance,view,validCampaign,escapeHTML as e} from './game.js';
 import {renderScreen} from './render.js';
 const $=id=>document.getElementById(id),KEY='one-more-room:v1';
-let state,history=[],playing=true,seconds=15,remaining=15,layout='full',mono=false,storageOK=true;
-try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&validCampaign(saved.state)){state=saved.state;history=Array.isArray(saved.history)?saved.history.filter(h=>h&&Number.isInteger(h.turn)&&typeof h.text==='string').slice(-120):[];mono=saved.mono===true;layout=['full','half_horizontal','half_vertical','quadrant'].includes(saved.layout)?saved.layout:'full';seconds=[15,30,60].includes(saved.seconds)?saved.seconds:15;playing=saved.playing!==false;}}catch{storageOK=false;}
+let state,history=[],playing=true,seconds=15,remaining=15,layout='full',mono=false,mapMode='auto',storageOK=true;
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&validCampaign(saved.state)){state=saved.state;history=Array.isArray(saved.history)?saved.history.filter(h=>h&&Number.isInteger(h.turn)&&typeof h.text==='string').slice(-120):[];mono=saved.mono===true;mapMode=['auto','world','dungeon'].includes(saved.mapMode)?saved.mapMode:'auto';layout=['full','half_horizontal','half_vertical','quadrant'].includes(saved.layout)?saved.layout:'full';seconds=[15,30,60].includes(saved.seconds)?saved.seconds:15;playing=saved.playing!==false;}}catch{storageOK=false;}
 if(!state){state=newCampaign();state=advance(state);history=[{turn:0,text:state.log[0]},{turn:state.turn,text:state.last}];}
 remaining=seconds;
-function save(){try{localStorage.setItem(KEY,JSON.stringify({state,history,mono,layout,seconds,playing}));storageOK=true;}catch{storageOK=false;}$('saveNote').textContent=storageOK?'Saved in this browser · seed “'+state.seed+'” · choose a different action anytime.':'Storage unavailable: this expedition lasts for this tab only.';}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({state,history,mono,layout,mapMode,seconds,playing}));storageOK=true;}catch{storageOK=false;}$('saveNote').textContent=storageOK?'Saved in this browser · seed “'+state.seed+'” · choose a different action anytime.':'Storage unavailable: this expedition lasts for this tab only.';}
 function status(){const running=playing&&!document.hidden;$('pause').textContent=playing?'Ⅱ Pause':'▷ Resume';$('playStatus').textContent=playing?'AUTOPILOT ON':'AUTOPILOT PAUSED';$('liveDot').classList.toggle('paused',!running);$('frameLabel').textContent=!playing?'YOU CHOOSE THE PACE':document.hidden?'PAUSED WHILE AWAY':'NEXT FRAME IN '+remaining+'s';}
 function render(persist=true){
-  $('screen').classList.toggle('q-mono',mono);$('screen').innerHTML=renderScreen(view(state),{layout});$('device').className='device '+layout;$('layout').value=layout;$('speed').value=String(seconds);
+  $('screen').classList.toggle('q-mono',mono);$('screen').innerHTML=renderScreen(view(state,mapMode),{layout,mapMode});$('device').className='device '+layout;$('layout').value=layout;$('mapMode').value=mapMode;$('speed').value=String(seconds);
   $('color').classList.toggle('active',!mono);$('mono').classList.toggle('active',mono);$('color').setAttribute('aria-pressed',String(!mono));$('mono').setAttribute('aria-pressed',String(mono));status();if(persist)save();
 }
 function next(choice=null){
@@ -19,6 +19,7 @@ $('screen').addEventListener('click',event=>{const button=event.target.closest('
 $('next').addEventListener('click',()=>next());
 $('pause').addEventListener('click',()=>{playing=!playing;remaining=seconds;status();save();});
 $('speed').addEventListener('change',event=>{seconds=Number(event.target.value);remaining=seconds;status();save();});
+$('mapMode').addEventListener('change',event=>{mapMode=event.target.value;render();});
 $('layout').addEventListener('change',event=>{layout=event.target.value;render();});
 for(const [id,value]of [['color',false],['mono',true]])$(id).addEventListener('click',()=>{mono=value;render();});
 $('new').addEventListener('click',()=>{$('seed').value=state.seed;$('style').value=state.style;$('newDialog').showModal();});

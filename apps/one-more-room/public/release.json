@@ -8,5 +8,8 @@
   "approved": false,
   "physical_receipt": false,
   "engine": "procedural",
-  "layouts": 4
+  "layouts": 4,
+  "updated_on": "2026-10-25",
+  "artwork": "ImageGen v2 world/dungeon atlases and seven scenes",
+  "automatic_map_camera": true
 }

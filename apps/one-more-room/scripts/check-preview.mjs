@@ -8,19 +8,22 @@ const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_EXEC
 const results=[],errors=[];
 try{
  const page=await browser.newPage({viewport:{width:1440,height:1300},deviceScaleFactor:1});
+ await page.route('https://one-more-room-trmnl.vercel.app/art/**',async route=>{const name=new URL(route.request().url()).pathname.split('/').pop();await route.fulfill({path:'public/art/'+name});});
  page.on('pageerror',e=>errors.push(e.message));
- await page.goto('http://127.0.0.1:4331/');await page.locator('.q-tile').first().waitFor();
+ await page.goto('http://127.0.0.1:4331/');await page.locator('.q-waypoint').first().waitFor();
  await page.getByRole('button',{name:'Ⅱ Pause',exact:true}).click();
  assert.equal(await page.locator('.q-auto').count(),1);
  const turn=await page.locator('.q-header-meta').innerText();await page.getByRole('button',{name:'Next action',exact:false}).click();assert.notEqual(await page.locator('.q-header-meta').innerText(),turn);
  await page.getByRole('button',{name:'Black & white',exact:true}).click();assert.equal(await page.locator('#screen').evaluate(e=>e.classList.contains('q-mono')),true);
  await page.getByRole('button',{name:'Color',exact:true}).click();
  await page.screenshot({path:'artifacts/website-desktop.png',fullPage:true});
+ await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))));
  await page.locator('#screen').screenshot({path:'artifacts/game-full.png'});
  await page.getByRole('button',{name:'Journey log ↗'}).click();assert.ok(await page.locator('#journalEntries li').count()>1);await page.getByRole('button',{name:'Close',exact:true}).last().click();
- const prior=await page.locator('.q-header-meta').innerText();await page.reload();await page.locator('.q-tile').first().waitFor();assert.equal(await page.locator('.q-header-meta').innerText(),prior);
+ const prior=await page.locator('.q-header-meta').innerText();await page.reload();await page.locator('.q-waypoint').first().waitFor();assert.equal(await page.locator('.q-header-meta').innerText(),prior);
  await page.getByRole('button',{name:'New expedition ↺'}).click();await page.locator('#seed').fill('moonwell');await page.locator('#style').selectOption('careful');await page.getByRole('button',{name:'Begin expedition →'}).click();assert.match(await page.locator('#saveNote').innerText(),/moonwell/);
  const choice=page.locator('.q-choice').last();await choice.click();assert.match(await page.locator('.q-header-meta').innerText(),/TURN 2/);
+ await page.locator('#mapMode').selectOption('world');assert.equal(await page.locator('.q-atlas-world').count(),1);await page.locator('#mapMode').selectOption('dungeon');assert.equal(await page.locator('.q-atlas-dungeon').count(),1);await page.locator('#mapMode').selectOption('auto');
  results.push({check:'desktop controls, manual action, palette, journal, save/reload, seeded expedition',passed:true});
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:'artifacts/website-mobile.png',fullPage:true});
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);results.push({check:'390px mobile page has no horizontal overflow',passed:true});
@@ -35,6 +38,7 @@ try{
   const geometry=await page.evaluate(()=>Object.fromEntries(['.quest','.q-body','.q-left','.q-right','.q-party','.q-choices'].map(s=>{const e=document.querySelector(s),r=e.getBoundingClientRect();return [s,{x:r.x,y:r.y,width:r.width,height:r.height,scroll:e.scrollHeight,client:e.clientHeight}];})));
   results.push({layout,palette,geometry});
   for(const side of ['.q-left','.q-right'])assert.ok(geometry[side].scroll-geometry[side].client<=1,layout+' '+side+' content clipped');
+  await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))));
   await page.screenshot({path:'artifacts/native-'+layout+'-'+palette+'.png'});
  }
  const samples=new Map();let campaign=newCampaign('long winter');for(let i=0;i<500;i++){campaign=advance(campaign);const v=view(campaign),key=v.kind+':'+v.safe;if(!samples.has(key)||samples.get(key).text.length<v.text.length)samples.set(key,v);}

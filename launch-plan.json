@@ -806,16 +806,18 @@
       "vercelProject": "one-more-room-trmnl",
       "vercelProjectId": "prj_yHAxWV2JTnO6lVwIX8RTQDPn0hD6",
       "vercelTeam": "manny4c-personal",
-      "scope": "Original four-hero procedural dungeon adventure. Full screen: equal map/story left and illustrated scene/next options/party right. One automatic action per fresh plugin frame; cached playlist redisplays cannot trigger moves. Seeded connected floors, visible d20 checks, persistent health/resources/story, keeper battles, ember fragments, defeat recovery and continuing floors. Separate browser campaign with autopilot/pause/manual choices/seed/instinct/journal and all four color/BW previews.",
+      "scope": "Original four-hero procedural dungeon adventure. Full screen: illustrated world/dungeon atlas, quest/recent journey/party left; larger ImageGen encounter scene and next choices right. Automatic camera: world at start/entrances/keeper milestones, current dungeon and closer encounter framing otherwise. Actual explored connections and live party marker; current six-dungeon world chapter plus cumulative embers. Browser can pin world/dungeon without advancing. Persistent v1 saves preserved. One automatic action per fresh frame, no cached-screen move or missed-turn catch-up.",
       "generation": {
-        "method": "Deterministic procedural generation plus original authored story fragments; not LLM text generation",
-        "modelCalls": false,
-        "newPaidService": false
+        "method": "Deterministic procedural gameplay and authored story fragments. Nine original built-in ImageGen artworks generated during design: two atlas backgrounds and seven encounter vignettes. No model calls during gameplay.",
+        "runtimeModelCalls": false,
+        "designTimeImageGenAssets": 9,
+        "newPaidService": false,
+        "originalsAndPrompts": "apps/one-more-room/assets/imagegen-v2.json"
       },
       "persistence": {
         "trmnl": "Per-installation Saved State. Seed/floor-derived map, explored/cleared bitmasks, party/resources, six recent events and cumulative quest progress. Missing polls preserve state; duplicate/older minute tokens do not advance; no catch-up. Not a transaction guarantee for overlapping platform transforms.",
         "browser": "Local storage plus latest 120 actions; independent from device. Hidden/dialog state pauses autopilot; other tabs adopt progress and pause without write-back loops.",
-        "observedMaxMergeBytes": 1667,
+        "observedMaxMergeBytes": 3298,
         "observedMaxStateBytes": 853
       },
       "recipe": {
@@ -828,20 +830,30 @@
       "deviceInstallationStatus": "not_installed",
       "publicationStatus": "prepared_not_submitted",
       "physicalDeviceVerification": "Unconfirmed. Background headless Chromium QA only; no user screen/browser or TRMNL settings controlled. Existing limited October19 permission remains expired.",
-      "testStatus": "15 app tests and 8 existing cross-app color checks pass. Background browser controls/save/reload/mobile checked. Eight actual-Liquid color/BW dimension snapshots plus 52 longest-room/type/layout combinations have no clipping; native TRMNL server and physical device not verified.",
+      "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_Gn7ero1PX6uxXVmjPrfqgWeiyYBH",
-      "verificationTimestamp": "2026-10-25T06:57:36.565Z",
+      "latestDeploymentId": "dpl_8esXUL8ousQcFbemKJf7K2VmyAwV",
+      "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
-      "productionEvidence": "apps/one-more-room/artifacts/production.json",
+      "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
       "packageUrl": "https://one-more-room-trmnl.vercel.app/plugin.zip",
       "pendingActions": [
         "When screen control is explicitly authorized again, create ONE separate One More Room Recipe and record its ID immediately",
         "Save configuration/Serverless/Shared/four layouts/icon; verify native OG color/BW and X orientations, preserving all current playlist entries",
         "Generate marketplace previews and complete separate Recipe submission under applicable human license approval",
         "Record public approval/install URL and physical receipt separately"
-      ]
+      ],
+      "latestUpdateOn": "2026-10-25",
+      "artworkAndAtlasUpdate": {
+        "requestedOn": "2026-10-25",
+        "status": "deployed_verified",
+        "artwork": "Seven encounter-type illustrations and separate world/dungeon atlas backgrounds; finite design-time art library, not newly generated every turn. Exact prompts/originals retained.",
+        "map": "Original fantasy geography; current six-dungeon chapter on the world view. Floor plan and routes derive from actual dungeon state, with adaptive viewport and party marker.",
+        "overview": "Quest/ember count, two short recent-event summaries and party health moved to the left. Full browser journal retained.",
+        "website": "Automatic/world/dungeon map controls; color/BW and four sizes retained.",
+        "device": "Updated image-dither native four-layout ZIP prepared only; existing Recipe/install/publication state unchanged."
+      }
     }
   ],
   "launchSeriesBuildStatus": {

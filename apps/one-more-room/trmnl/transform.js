@@ -124,7 +124,24 @@ function advance(previous,choice=null,frame=null){
   }
   return s;
 }
-function view(s){
+function chart(s,map,cells,requested='auto'){
+  const complete=bit(s.cleared,map.gate),mode=requested==='world'||requested==='dungeon'?requested:(s.pos===0||s.turn<=1||complete?'world':'dungeon');
+  const curve=points=>points.length?'M'+points[0].join(',')+points.slice(1).map((p,i)=>{const a=points[i];return 'Q'+Math.round((a[0]+p[0])/2)+','+a[1]+' '+p.join(',');}).join(''):'';
+  if(mode==='world'){
+    const chapter=Math.floor((s.floor-1)/6),step=(s.floor-1)%6,places=[[75,165],[140,151],[106,97],[188,57],[260,118],[303,55]],regions=['The Lantern Marches','The Hollow Reaches','The Ashen Frontier','The Sunless Vale'];
+    const points=places.map((p,i)=>[...p,i===step?3:i<step?2:0,i<=step?dungeon(s.seed,chapter*6+i+1).theme[0].replace(/^The /,''):'',String(chapter*6+i+1)]);
+    return {map_mode:mode,map_title:regions[chapter%regions.length],map_context:'World · chapter '+(chapter+1),map_reason:complete?'Ember recovered · onward to the next dungeon':s.pos===0?'A new leg of the journey':'The journey begins',map_box:'0 0 360 210',map_points:points,map_roads:curve(places.slice(step,Math.min(6,step+2))),map_trail:curve(places.slice(0,step+1)),map_caption:Math.min(6,Math.max(0,s.relics-chapter*6))+'/6 dungeons · '+s.relics+' embers'};
+  }
+  const points=cells.map((c,i)=>{const j=hash(s.seed+':chart:'+s.floor+':'+i);return [28+(i%6)*60+(j%13)-6,28+Math.floor(i/6)*51+(Math.floor(j/13)%11)-5,c[0],i===s.pos?'Company':i===0?'Entrance':i===map.gate&&c[0]>=2?'Keeper':'',c[1]];});
+  const segments=[];for(let i=0;i<24;i++)if(bit(s.visited,i))for(const n of map.links[i])if(n>i&&bit(s.visited,n))segments.push(curve([[points[i][0],points[i][1]],[points[n][0],points[n][1]]]));
+  const queue=[[0]],seen=new Set([0]);let route=[0];while(queue.length){const path=queue.shift(),p=path.at(-1);if(p===s.pos){route=path;break;}for(const n of map.links[p])if(!seen.has(n)){seen.add(n);queue.push([...path,n]);}}
+  const active=!bit(s.cleared,s.pos),known=points.filter(p=>p[2]>0),xs=known.map(p=>p[0]),ys=known.map(p=>p[1]);
+  let width=active?245:Math.max(155,Math.max(...xs)-Math.min(...xs)+50,(Math.max(...ys)-Math.min(...ys)+42)*360/210);width=Math.min(360,width);
+  const height=width*210/360,cx=active?points[s.pos][0]:(Math.min(...xs)+Math.max(...xs))/2,cy=active?points[s.pos][1]:(Math.min(...ys)+Math.max(...ys))/2;
+  const x=Math.round(Math.max(0,Math.min(360-width,cx-width/2))),y=Math.round(Math.max(0,Math.min(210-height,cy-height/2)));
+  return {map_mode:mode,map_title:map.theme[0],map_context:active?'Dungeon · encounter detail':'Dungeon · explored route',map_reason:map.names[s.pos]+' · room '+(s.pos+1),map_box:[x,y,Math.round(width),Math.round(height)].join(' '),map_points:points,map_roads:segments.join(''),map_trail:curve(route.map(i=>[points[i][0],points[i][1]])),map_caption:'',};
+}
+function view(s,mapMode='auto'){
   const map=dungeon(s.seed,s.floor),kind=map.kinds[s.pos],done=bit(s.cleared,s.pos),auto=automatic(s);
   let text,title=map.names[s.pos];
   if(s.pos===0){title=map.theme[0];text='Beyond the lantern, '+map.theme[1]+'. Somewhere below waits '+map.theme[2]+'. The company chooses a path.';}
@@ -136,10 +153,13 @@ function view(s){
   const visible=map.links.reduce((mask,neighbors,i)=>bit(s.visited,i)?neighbors.reduce((m,n)=>m|(1<<n),mask):mask,s.visited);
   // Compact tuple cells: [status (0 fog, 1 frontier, 2 visited, 3 current), glyph, exits N/E/S/W bit mask].
   const cells=map.links.map((ns,i)=>[i===s.pos?3:bit(s.visited,i)?2:bit(visible,i)?1:0,i===s.pos?'◆':bit(s.visited,i)?(bit(s.cleared,i)&&i!==map.gate?'·':GLYPHS[map.kinds[i]]):'?',ns.reduce((m,n)=>m|(n===i-6?1:n===i+1?2:n===i+6?4:8),0)]);
-  return {turn:s.turn,floor:s.floor,seed:s.seed,theme:map.theme[0],title,text,kind:KINDS[kind],safe:done,cells,room:s.pos+1,explored:Array.from({length:24},(_,i)=>bit(s.visited,i)).filter(Boolean).length,
+  const explored=Array.from({length:24},(_,i)=>bit(s.visited,i)).filter(Boolean).length,atlas=chart(s,map,cells,mapMode);
+  if(atlas.map_mode==='dungeon')atlas.map_caption=explored+'/24 rooms mapped · floor '+s.floor;
+  return {turn:s.turn,floor:s.floor,seed:s.seed,theme:map.theme[0],title,text,kind:KINDS[kind],safe:done,cells,room:s.pos+1,explored,...atlas,
+    objective:done&&s.pos===map.gate?'Carry the ember into the next dungeon':'Find the keeper. Recover an ember of the sun.',
     party:s.hp.map((hp,i)=>({name:HEROES[i].name,role:HEROES[i].role,hp,max:maxHP(s,i)})),gold:s.gold,supplies:s.supplies,relics:s.relics,
     summary:s.relics?'The company has recovered '+s.relics+' ember fragment'+(s.relics===1?'':'s')+' of the stolen sun. The next keeper waits below.':'Four heroes seek the fragments of the stolen sun. Their lantern is the last light in the underworld.',
-    log:s.log.slice(-3),last:s.last,roll:s.roll||'The lantern remembers. The journey continues.',choices:options(s).map(o=>({...o,auto:o.id===auto})),autoLabel:options(s).find(o=>o.id===auto)?.label||'Continue'};
+    recap:s.log.slice(-2).map(l=>{const arrival=l.match(/(?:^|\. )([^.!?]+) lay beyond\.$/);const first=arrival?'Reached '+arrival[1]+'.':l.split(/(?<=[.!?])\s+/)[0];return first.length>98?first.slice(0,95).replace(/\s+\S*$/,'')+'…':first;}),log:s.log.slice(-3),last:s.last,roll:s.roll||'The lantern remembers. The journey continues.',choices:options(s).map(o=>({...o,auto:o.id===auto})),autoLabel:options(s).find(o=>o.id===auto)?.label||'Continue'};
 }
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 

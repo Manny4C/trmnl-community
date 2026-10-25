@@ -61,3 +61,13 @@ test('long-lived Serverless output fits both the standard data budget and Saved 
 test('map visibility does not reveal unexplored room contents',()=>{
  const v=view(newCampaign());assert.equal(v.cells.filter(c=>c[0]===3).length,1);assert.ok(v.cells.some(c=>c[0]===0));for(const c of v.cells)if(c[0]<2)assert.equal(c[1],'?');
 });
+test('automatic atlas camera pulls back at milestones and focuses on dungeon encounters',()=>{
+ let s=newCampaign('atlas');assert.equal(view(s).map_mode,'world');
+ let encounter,keeper;for(let i=0;i<600;i++){s=advance(s);const v=view(s);assert.equal(v.map_points.filter(p=>p[2]===3).length,1);if(v.map_mode==='dungeon'&&!v.safe&&!encounter)encounter=JSON.parse(JSON.stringify(s));if(v.kind==='keeper'&&v.safe){keeper=s;break;}}
+ assert.ok(encounter);assert.equal(view(encounter).map_mode,'dungeon');assert.equal(view(encounter,'world').map_mode,'world');assert.equal(view(newCampaign(),'dungeon').map_mode,'dungeon');
+ assert.match(view(encounter).map_context,/encounter/);assert.ok(keeper);assert.equal(view(keeper).map_mode,'world');const next=advance(keeper,'descend');assert.equal(view(next).map_mode,'world');assert.equal(next.floor,keeper.floor+1);
+ const saved=JSON.stringify(encounter);view(encounter,'world');view(encounter,'dungeon');assert.equal(JSON.stringify(encounter),saved,'changing camera never makes a move or mutates a save');
+});
+test('dungeon camera follows the party and reveals only visited landmarks',()=>{
+ let s=newCampaign('camera'),boxes=new Set();for(let i=0;i<150;i++){s=advance(s);const v=view(s,'dungeon'),box=v.map_box.split(' ').map(Number);assert.ok(box.every(Number.isFinite));assert.ok(box[0]>=0&&box[1]>=0);assert.ok(box[0]+box[2]<=361&&box[1]+box[3]<=211);boxes.add(v.map_box);assert.equal(v.map_points[s.pos][2],3);for(const p of v.map_points)if(p[2]===0)assert.equal(p[3],'');assert.ok(v.recap.every(l=>l.length<=98));}assert.ok(boxes.size>4);
+});

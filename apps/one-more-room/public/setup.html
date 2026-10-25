@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>One More Room — TRMNL setup</title><link rel="stylesheet" href="/style.css"></head><body><main class="page"><nav class="masthead"><a class="wordmark" href="/">← ONE MORE ROOM</a><a class="btn" href="/plugin.zip">Download package ↓</a></nav><pre style="font:14px/1.8 monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:30px 0"># One More Room — TRMNL setup
+
+New game built October 24, 2026. Website and installable source package are prepared. No Recipe has been created, installed, submitted or approved by this build. The project’s existing no-screen-control preference is preserved; existing playlists are untouched. Native renderer and physical receipt remain unverified.
+
+1. Create ONE separate private plugin named **One More Room**. Use **Polling**, GET, framework **3.4.3 or later**. No headers, body, key or new paid service is required. Do not use Async Polling; it does not run the state transform.
+2. Set its polling URL to `https://one-more-room-trmnl.vercel.app/api/frame`. A **15-minute refresh** is a reasonable starting point. The endpoint emits one token per minute; repeated fetches inside the same minute do not advance again. A plugin refresh is distinct from the device’s playlist cycle.
+3. Copy `form-fields.yml` into Custom Fields. Save a seed and party instinct. A seed change starts a new campaign; instinct changes preserve the campaign.
+4. In Edit Markup, put `shared.liquid` in Shared; copy the four matching `.liquid` layout files into Full, Half horizontal, Half vertical and Quadrant.
+5. Select JavaScript on Serverless and paste the complete `transform.js`. It includes all game rules and reads `input.trmnl.state`; do not paste only the `run` function. The seed and instinct are read from `input.trmnl.plugin_settings.custom_fields_values`.
+6. Save; Test/Force Refresh. The first fresh frame performs action 1. Later fresh frame tokens perform one additional action. Poll retries for the same token reuse the same turn. A long absence never simulates missed actions. Clear Saved State to restart with the same seed.
+7. Use `icon.svg` for the plugin icon. Review native color/B&amp;W in all four layouts and TRMNL X orientations before adding this separate plugin to your playlist. Keep all current playlist entries.
+
+Full layout is split evenly: map/story left; scene/action choices/party right. Half layouts compact the content; quadrant displays the map, scene and selected next action. The action options are informational on the e-ink device. The Serverless function automatically chooses the highlighted action on the next update. The website’s choices are clickable and affect only its local campaign.
+
+State is installation-specific and bounded. The transform has no network/model calls. Polling sends only a public minute token, never the campaign. The map derives from seed/floor; party health, resources, cleared rooms and a rolling story log persist in Saved State. Browser history retains up to 120 actions; TRMNL retains six recent story events plus cumulative quest progress. Defeated parties lose half their gold, recover at the entrance and continue.
+
+The platform has no reliable callback for every time a person sees a cached playlist image. A **fresh plugin update**, rather than every re-display of a stored frame, is the unit of play. An empty/failed poll leaves the previous journey intact. Same-token retries are idempotent; this does not claim transactional protection against two independently overlapping platform transforms.
+
+Public Recipe listing/submission, native visual verification and physical screen receipt are separate from deploying the companion site. Complete those steps before describing it as installed or publicly approved. Public Recipe submission may present a license agreement that requires the human owner.
+
+Official references: [Saved State](https://help.trmnl.com/en/articles/16777795-saved-state), [Serverless](https://help.trmnl.com/en/articles/14130649-serverless), [refresh rates](https://help.trmnl.com/en/articles/10113695-how-refresh-rates-work).
+</pre></main></body></html>

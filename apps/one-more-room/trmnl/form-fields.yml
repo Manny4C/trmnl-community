@@ -1,0 +1,21 @@
+- keyname: author
+  field_type: author_bio
+  name: One More Room
+  category: games
+  description: Follow four original heroes through an ever-unfolding dungeon. Every fresh plugin update resolves one automatic action. Your party, map, wounds and story persist in your installation. Procedural generation; no model or paid API. Replaying a cached screen does not advance play. Browser previews have a separate campaign.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://one-more-room-trmnl.vercel.app
+- keyname: campaign_seed
+  field_type: string
+  name: Campaign seed
+  description: Letters, numbers, spaces, dashes and underscores; up to 32 characters. Changing this starts a new expedition. Each installation remembers its own party.
+  default: lantern
+- keyname: party_style
+  field_type: select
+  name: Party instinct
+  description: Changes automatic battle choices without resetting your journey.
+  default: balanced
+  options:
+  - Balanced — trust the company: balanced
+  - Bold — Brann leads the charge: bold
+  - Careful — Mira leads with magic: careful

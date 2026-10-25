@@ -793,6 +793,55 @@
         "migration": "One-time row-locked artwork update to version2. Retains every changed and audited touched cell including repaint-to-original. Quotas/sessions/audit/old snapshots untouched. Durable td_artwork_upgrades marker prevents reseeding. Production had zero community edits to preserve; no player event fabricated.",
         "status": "production_verified"
       }
+    },
+    {
+      "name": "One More Room",
+      "slug": "one-more-room",
+      "requestedOn": "2026-10-24",
+      "explicitAdditionalBuild": true,
+      "outsideScheduledSevenAppSeries": true,
+      "status": "website_live_recipe_prepared",
+      "sourceDirectory": "apps/one-more-room",
+      "websiteUrl": "https://one-more-room-trmnl.vercel.app",
+      "vercelProject": "one-more-room-trmnl",
+      "vercelProjectId": "prj_yHAxWV2JTnO6lVwIX8RTQDPn0hD6",
+      "vercelTeam": "manny4c-personal",
+      "scope": "Original four-hero procedural dungeon adventure. Full screen: equal map/story left and illustrated scene/next options/party right. One automatic action per fresh plugin frame; cached playlist redisplays cannot trigger moves. Seeded connected floors, visible d20 checks, persistent health/resources/story, keeper battles, ember fragments, defeat recovery and continuing floors. Separate browser campaign with autopilot/pause/manual choices/seed/instinct/journal and all four color/BW previews.",
+      "generation": {
+        "method": "Deterministic procedural generation plus original authored story fragments; not LLM text generation",
+        "modelCalls": false,
+        "newPaidService": false
+      },
+      "persistence": {
+        "trmnl": "Per-installation Saved State. Seed/floor-derived map, explored/cleared bitmasks, party/resources, six recent events and cumulative quest progress. Missing polls preserve state; duplicate/older minute tokens do not advance; no catch-up. Not a transaction guarantee for overlapping platform transforms.",
+        "browser": "Local storage plus latest 120 actions; independent from device. Hidden/dialog state pauses autopilot; other tabs adopt progress and pause without write-back loops.",
+        "observedMaxMergeBytes": 1667,
+        "observedMaxStateBytes": 853
+      },
+      "recipe": {
+        "name": "One More Room",
+        "status": "prepared",
+        "pluginId": null,
+        "settingsUrl": null,
+        "publicInstallUrl": null
+      },
+      "deviceInstallationStatus": "not_installed",
+      "publicationStatus": "prepared_not_submitted",
+      "physicalDeviceVerification": "Unconfirmed. Background headless Chromium QA only; no user screen/browser or TRMNL settings controlled. Existing limited October19 permission remains expired.",
+      "testStatus": "15 app tests and 8 existing cross-app color checks pass. Background browser controls/save/reload/mobile checked. Eight actual-Liquid color/BW dimension snapshots plus 52 longest-room/type/layout combinations have no clipping; native TRMNL server and physical device not verified.",
+      "buildCompletedOn": "2026-10-24",
+      "websiteDeploymentStatus": "ready_anonymous_production_verified",
+      "latestDeploymentId": "dpl_Gn7ero1PX6uxXVmjPrfqgWeiyYBH",
+      "verificationTimestamp": "2026-10-25T06:57:36.565Z",
+      "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
+      "productionEvidence": "apps/one-more-room/artifacts/production.json",
+      "packageUrl": "https://one-more-room-trmnl.vercel.app/plugin.zip",
+      "pendingActions": [
+        "When screen control is explicitly authorized again, create ONE separate One More Room Recipe and record its ID immediately",
+        "Save configuration/Serverless/Shared/four layouts/icon; verify native OG color/BW and X orientations, preserving all current playlist entries",
+        "Generate marketplace previews and complete separate Recipe submission under applicable human license approval",
+        "Record public approval/install URL and physical receipt separately"
+      ]
     }
   ],
   "launchSeriesBuildStatus": {

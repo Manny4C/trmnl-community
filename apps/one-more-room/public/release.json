@@ -1,0 +1,12 @@
+{
+  "app": "One More Room",
+  "built_on": "2026-10-24",
+  "website": "https://one-more-room-trmnl.vercel.app",
+  "recipe_id": null,
+  "installed": false,
+  "submitted": false,
+  "approved": false,
+  "physical_receipt": false,
+  "engine": "procedural",
+  "layouts": 4
+}

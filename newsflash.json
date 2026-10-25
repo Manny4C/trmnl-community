@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,155 +10,150 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-25T14:25:12.017Z",
+    "generated_at": "2026-10-25T18:26:08.402Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "3483a650cbaca26d",
-        "importance": 45,
-        "reason": "Timely World Series Game 2 recap, but a short recap adds limited detail."
+        "id": "5a698b26768b5726",
+        "importance": 24,
+        "reason": "Entertainment preview shared during the World Series; not a baseball development."
       },
       {
-        "id": "34338dac516b9a85",
-        "importance": 53,
-        "reason": "Full-play coverage of a current World Series game is useful to baseball fans."
+        "id": "62a44f4b02c96048",
+        "importance": 17,
+        "reason": "Light behind-the-scenes feature, with little substantive baseball news."
       },
       {
         "id": "967b5cbd0ae5a137",
-        "importance": 34,
-        "reason": "Recent league-wide recap, though routine and without specifics in the title."
+        "importance": 48,
+        "reason": "Timely roundup of the previous night's NBA action."
       },
       {
         "id": "ac8bae83e6bea0d2",
-        "importance": 56,
-        "reason": "A dramatic overtime finish is a notable, timely game highlight."
+        "importance": 71,
+        "reason": "A dramatic overtime finish is a consequential game highlight."
       },
       {
         "id": "f3f30e46957f17b2",
-        "importance": 22,
-        "reason": "Tesla product teaser about app and screens; no concrete announcement given."
+        "importance": 28,
+        "reason": "Tesla video title suggests app and screen content, but provides no specifics."
       },
       {
         "id": "06b79fb24257b139",
-        "importance": 22,
-        "reason": "Roadster interface video appears promotional; title gives no substantive details."
+        "importance": 30,
+        "reason": "Roadster interface video may offer a product glimpse; details are absent."
       },
       {
         "id": "38d4538588dc76d4",
-        "importance": 26,
-        "reason": "Recent gaming event video, but the title provides no news or results."
+        "importance": 36,
+        "reason": "Recent tournament video, but no results or notable moments are described."
       },
       {
         "id": "9e140e65fdead342",
-        "importance": 26,
-        "reason": "Duplicate-looking event listing with no details about content or outcomes."
+        "importance": 34,
+        "reason": "Duplicate tournament listing; title gives no results or substantive context."
       },
       {
         "id": "4042553f458f0d41",
-        "importance": 39,
-        "reason": "Launch trailer marks a Switch 2 edition release, but impact is limited."
+        "importance": 41,
+        "reason": "Launch trailer marks a game release, though no further launch details are given."
       },
       {
         "id": "6adc12be07d0e789",
-        "importance": 45,
-        "reason": "A launch trailer for a major game is notable, though no release details are supplied."
+        "importance": 55,
+        "reason": "A GTA VI launch trailer is a major gaming release, though context is sparse."
       },
       {
         "id": "ba9456fc8d021d97",
-        "importance": 29,
-        "reason": "Launch trailer is promotional, and the title gives little context about the product."
+        "importance": 42,
+        "reason": "Launch trailer signals a release, but title gives little additional information."
+      },
+      {
+        "id": "f14357547add37e5",
+        "importance": 23,
+        "reason": "Promotional gameplay tease with no release or substantive news details."
       },
       {
         "id": "14de10c24dfee4c7",
-        "importance": 34,
-        "reason": "Free 10th-anniversary update trailer is timely but routine game promotion."
-      },
-      {
-        "id": "6185ddbea650eb8e",
-        "importance": 31,
-        "reason": "Preview showcase offers game content, but no substantive specifics are supplied."
+        "importance": 39,
+        "reason": "Free anniversary update is a concrete game update, but specifics are absent."
       },
       {
         "id": "703141bca02253c6",
-        "importance": 40,
-        "reason": "Launch trailer signals a game release, though the title lacks further details."
+        "importance": 50,
+        "reason": "A launch trailer is timely release news; no further details are supplied."
       },
       {
         "id": "8dd612a860f03e20",
-        "importance": 23,
-        "reason": "Cryptic OpenAI video title offers no clear information about its subject."
+        "importance": 14,
+        "reason": "Cryptic promotional title offers no clear AI news or context."
       },
       {
         "id": "d01589cde4a487f6",
         "importance": 20,
-        "reason": "Customer-use promotional video; no broader AI development is described."
+        "reason": "Promotional customer story; no details establish broader AI significance."
       },
       {
         "id": "f07d0bb3b14ff2bf",
-        "importance": 43,
-        "reason": "National AI compute expansion may matter, but the supplied context is truncated."
-      },
-      {
-        "id": "af6b159eb6ea2f66",
-        "importance": 45,
-        "reason": "NVIDIA announces an AI operations platform; significance is unclear from brief context."
+        "importance": 49,
+        "reason": "AI compute expansion may be consequential, but the truncated context limits assessment."
       },
       {
         "id": "57c0a5f2d9657bbd",
-        "importance": 59,
-        "reason": "Lander development for planned 2028 lunar missions is a substantive space-program update."
+        "importance": 66,
+        "reason": "Lander development for planned Moon missions is substantive space-program news."
       },
       {
         "id": "452bf28ae114f7dc",
-        "importance": 55,
-        "reason": "Artemis III lander-operation testing is a consequential mission-planning update."
+        "importance": 62,
+        "reason": "Artemis III operations testing is a meaningful step toward future lunar missions."
       },
       {
         "id": "2dbe5da910a8a7ed",
-        "importance": 28,
-        "reason": "NASA energy partnership is relevant but appears regional, with little detail supplied."
+        "importance": 34,
+        "reason": "NASA energy partnership is a concrete initiative, but its scope is unclear."
       },
       {
         "id": "10a18dbe1712e1eb",
         "importance": 20,
-        "reason": "Promotional customer case study about AI training, not a reported breakthrough."
+        "reason": "Promotional case study on AI training with no broader impact established."
       },
       {
         "id": "0cd5060b5bfe3436",
-        "importance": 25,
-        "reason": "AI IT-fix use case is potentially practical, but presented as a promotion."
+        "importance": 28,
+        "reason": "AI IT-fix agents sound relevant, but the title gives no capabilities or results."
       },
       {
-        "id": "cb5f7eb9a884a571",
-        "importance": 52,
-        "reason": "World Series reaction highlights a major series position, but is commentary."
+        "id": "2cfb113725de6596",
+        "importance": 64,
+        "reason": "Reported 10 scoreless outs from the bullpen is a notable World Series performance."
       },
       {
-        "id": "e51943afb990edd1",
-        "importance": 58,
-        "reason": "Game-tying home run calls focus on a pivotal moment in a current World Series game."
+        "id": "4c6c89235b659254",
+        "importance": 74,
+        "reason": "A go-ahead run in World Series Game 2 is a key game turning point."
       },
       {
         "id": "da0b668056937ad1",
-        "importance": 45,
-        "reason": "Impressive individual performance recap, but routine compared with a major game turning point."
+        "importance": 56,
+        "reason": "A 43-point game is a standout individual performance, based on the title."
       },
       {
         "id": "f8fc20b0e5fc140c",
-        "importance": 32,
-        "reason": "Nightly highlights are timely but routine and lack specific standout details."
+        "importance": 34,
+        "reason": "Routine nightly highlight compilation, with no specific turning point identified."
       },
       {
         "id": "dad78058cd63c76b",
-        "importance": 42,
-        "reason": "RS-25 engine testing is relevant to spaceflight hardware, but context is limited."
+        "importance": 41,
+        "reason": "Engine testing is relevant space hardware progress, but context is limited."
       }
     ],
-    "source_checked_at": "2026-10-25T14:25:00.991Z"
+    "source_checked_at": "2026-10-25T18:25:55.786Z"
   },
   "last_attempt_at": "2026-10-25T18:25:55.519Z",
   "pending_reservation_microusd": 5504,
   "pending_source_checked_at": "2026-10-25T18:25:55.786Z",
-  "last_success_at": "2026-10-25T14:25:12.017Z",
+  "last_success_at": "2026-10-25T18:26:08.402Z",
   "last_error_status": null
 }

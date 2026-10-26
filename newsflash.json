@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,60 +10,35 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-26T00:25:33.591Z",
+    "generated_at": "2026-10-26T06:19:34.987Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "f14357547add37e5",
-        "importance": 36,
-        "reason": "Recent game teaser; title offers little detail about gameplay or release."
-      },
-      {
-        "id": "14de10c24dfee4c7",
-        "importance": 44,
-        "reason": "Anniversary update trailer signals free content for an established game, but details are absent."
-      },
-      {
-        "id": "703141bca02253c6",
-        "importance": 52,
-        "reason": "Launch trailer is timely and substantive for an upcoming game, though no launch details are supplied."
-      },
-      {
-        "id": "f07d0bb3b14ff2bf",
-        "importance": 60,
-        "reason": "AI compute expansion could matter regionally; the brief context gives few concrete details."
-      },
-      {
         "id": "57c0a5f2d9657bbd",
-        "importance": 78,
-        "reason": "Lander development for planned 2028 Moon missions is a consequential space-program update."
+        "importance": 72,
+        "reason": "Lander development for planned 2028 lunar missions is a consequential program update; details are limited."
       },
       {
         "id": "452bf28ae114f7dc",
-        "importance": 73,
-        "reason": "Artemis III plans an operational test for future landers, a notable step toward lunar missions."
-      },
-      {
-        "id": "2dbe5da910a8a7ed",
-        "importance": 35,
-        "reason": "Energy-security partnership is relevant but its scope and outcomes are unclear."
-      },
-      {
-        "id": "6185ddbea650eb8e",
-        "importance": 37,
-        "reason": "Character preview showcase is mainly promotional, with no wider significance evident."
+        "importance": 67,
+        "reason": "Artemis III lander-operations testing matters to lunar plans, but the supplied context gives few specifics."
       },
       {
         "id": "dad78058cd63c76b",
-        "importance": 49,
-        "reason": "RS-25 engine testing is a meaningful spaceflight-development update, but details are sparse."
+        "importance": 48,
+        "reason": "Engine testing is a substantive program activity, though no test results or milestones are provided."
+      },
+      {
+        "id": "2dbe5da910a8a7ed",
+        "importance": 30,
+        "reason": "Energy-security partnership is broadly relevant but appears less central to space developments; details are sparse."
       }
     ],
-    "source_checked_at": "2026-10-26T00:25:26.877Z"
+    "source_checked_at": "2026-10-26T06:19:28.980Z"
   },
   "last_attempt_at": "2026-10-26T06:19:28.395Z",
   "pending_reservation_microusd": 4397,
   "pending_source_checked_at": "2026-10-26T06:19:28.980Z",
-  "last_success_at": "2026-10-26T00:25:33.591Z",
+  "last_success_at": "2026-10-26T06:19:34.987Z",
   "last_error_status": null
 }

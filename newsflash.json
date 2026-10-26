@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,150 +10,60 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-25T21:51:08.188Z",
+    "generated_at": "2026-10-26T00:25:33.591Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "80fea51c49a6155d",
-        "importance": 30,
-        "reason": "Personal reaction to a pivotal World Series homer; notable but less substantive than game footage."
-      },
-      {
-        "id": "feb90d934cbf23ad",
-        "importance": 8,
-        "reason": "Lighthearted player moment with little competitive or broader significance."
-      },
-      {
-        "id": "324b61a70913c832",
-        "importance": 88,
-        "reason": "All-angle highlights of a clutch, game-tying World Series homer; major timely baseball moment."
-      },
-      {
-        "id": "967b5cbd0ae5a137",
-        "importance": 35,
-        "reason": "Timely league-wide recap, but the title gives no standout result or detail."
-      },
-      {
-        "id": "ac8bae83e6bea0d2",
-        "importance": 69,
-        "reason": "A dramatic overtime finish is a consequential game highlight, though no outcome is specified."
-      },
-      {
-        "id": "f3f30e46957f17b2",
-        "importance": 25,
-        "reason": "Tesla product-focused video with no details establishing a major launch or development."
-      },
-      {
-        "id": "06b79fb24257b139",
-        "importance": 23,
-        "reason": "Interface showcase appears promotional; no substantive specs or announcement are given."
-      },
-      {
-        "id": "38d4538588dc76d4",
-        "importance": 18,
-        "reason": "Tournament video is timely, but title offers no result or broader competitive stakes."
-      },
-      {
-        "id": "9e140e65fdead342",
-        "importance": 17,
-        "reason": "Duplicate tournament listing; no result or broader stakes are provided."
-      },
-      {
-        "id": "4042553f458f0d41",
-        "importance": 38,
-        "reason": "A game launch trailer marks a release, but carries limited wider significance."
-      },
-      {
-        "id": "6adc12be07d0e789",
-        "importance": 30,
-        "reason": "GTA VI launch-trailer label suggests a major game promotion, but gives no release details."
-      },
-      {
-        "id": "ba9456fc8d021d97",
-        "importance": 24,
-        "reason": "Launch trailer is promotional and the title gives little context about the game."
-      },
-      {
         "id": "f14357547add37e5",
-        "importance": 14,
-        "reason": "Promotional teaser with no substantive announcement or gameplay details in the title."
+        "importance": 36,
+        "reason": "Recent game teaser; title offers little detail about gameplay or release."
       },
       {
         "id": "14de10c24dfee4c7",
-        "importance": 29,
-        "reason": "Free anniversary update is a concrete game update, though details and scale are absent."
+        "importance": 44,
+        "reason": "Anniversary update trailer signals free content for an established game, but details are absent."
       },
       {
         "id": "703141bca02253c6",
-        "importance": 39,
-        "reason": "Game launch trailer is a substantive release-related video, with no further context supplied."
-      },
-      {
-        "id": "8dd612a860f03e20",
-        "importance": 12,
-        "reason": "Cryptic promotional title does not establish what the video announces or demonstrates."
-      },
-      {
-        "id": "d01589cde4a487f6",
-        "importance": 16,
-        "reason": "Customer-use promotional video; no new AI capability or research is specified."
+        "importance": 52,
+        "reason": "Launch trailer is timely and substantive for an upcoming game, though no launch details are supplied."
       },
       {
         "id": "f07d0bb3b14ff2bf",
-        "importance": 47,
-        "reason": "AI-compute expansion may matter regionally, but the supplied context is truncated."
+        "importance": 60,
+        "reason": "AI compute expansion could matter regionally; the brief context gives few concrete details."
       },
       {
         "id": "57c0a5f2d9657bbd",
-        "importance": 74,
-        "reason": "Lander development for planned Moon missions is a substantive, timely space-program update."
+        "importance": 78,
+        "reason": "Lander development for planned 2028 Moon missions is a consequential space-program update."
       },
       {
         "id": "452bf28ae114f7dc",
-        "importance": 69,
-        "reason": "Artemis III lander-operations testing is a consequential mission-planning update."
+        "importance": 73,
+        "reason": "Artemis III plans an operational test for future landers, a notable step toward lunar missions."
       },
       {
         "id": "2dbe5da910a8a7ed",
-        "importance": 31,
-        "reason": "NASA energy partnership has regional relevance, but little detail is supplied."
+        "importance": 35,
+        "reason": "Energy-security partnership is relevant but its scope and outcomes are unclear."
       },
       {
-        "id": "10a18dbe1712e1eb",
-        "importance": 15,
-        "reason": "Customer case-study video is promotional and does not establish a new AI capability."
-      },
-      {
-        "id": "0cd5060b5bfe3436",
-        "importance": 26,
-        "reason": "AI IT-fix agents could be useful, but this partner video gives no deployment details."
-      },
-      {
-        "id": "3eaebf469a0f21b8",
-        "importance": 56,
-        "reason": "Postseason comeback highlights offer timely team-performance context, though the title is promotional."
-      },
-      {
-        "id": "da0b668056937ad1",
-        "importance": 53,
-        "reason": "A 43-point performance is a notable recent individual showing, but not a game outcome."
-      },
-      {
-        "id": "f8fc20b0e5fc140c",
-        "importance": 32,
-        "reason": "Routine nightly highlight compilation, with no single defining event specified."
+        "id": "6185ddbea650eb8e",
+        "importance": 37,
+        "reason": "Character preview showcase is mainly promotional, with no wider significance evident."
       },
       {
         "id": "dad78058cd63c76b",
-        "importance": 45,
-        "reason": "RS-25 engine testing is a meaningful spaceflight-development update; context is limited."
+        "importance": 49,
+        "reason": "RS-25 engine testing is a meaningful spaceflight-development update, but details are sparse."
       }
     ],
-    "source_checked_at": "2026-10-25T21:50:57.801Z"
+    "source_checked_at": "2026-10-26T00:25:26.877Z"
   },
   "last_attempt_at": "2026-10-26T00:25:26.598Z",
   "pending_reservation_microusd": 4667,
   "pending_source_checked_at": "2026-10-26T00:25:26.877Z",
-  "last_success_at": "2026-10-25T21:51:08.188Z",
+  "last_success_at": "2026-10-26T00:25:33.591Z",
   "last_error_status": null
 }

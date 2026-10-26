@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,150 +10,140 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-26T14:21:10.113Z",
+    "generated_at": "2026-10-26T20:32:53.064Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "982a163d1877997b",
-        "importance": 62,
-        "reason": "World Series game context makes this timely, but the Rays/Peralta claim is unclear."
+        "id": "040e57bab9d02936",
+        "importance": 48,
+        "reason": "A newly posted season highlight video on a major star; retrospective, not a specific game result."
       },
       {
-        "id": "b5c994330d922291",
-        "importance": 8,
-        "reason": "Vague humorous clip title gives no news or baseball context."
+        "id": "251b080ca21426b3",
+        "importance": 19,
+        "reason": "Sentimental player-focused clip, with no substantive baseball news evident."
       },
       {
-        "id": "a588dfed978bc053",
-        "importance": 49,
-        "reason": "Fresh opening-week plays roundup is timely basketball coverage."
+        "id": "27cac9cfc90e077a",
+        "importance": 22,
+        "reason": "World Series batting-practice stream is timely, but not game action or a result."
       },
       {
-        "id": "23be78205e948372",
-        "importance": 43,
-        "reason": "Recent nightly recap offers timely results, but no specific stakes are given."
+        "id": "077ee0d96ac96fcb",
+        "importance": 25,
+        "reason": "NBA app update video may matter to users, but title gives no details about changes."
+      },
+      {
+        "id": "d063c88bd6c542ad",
+        "importance": 12,
+        "reason": "A humorous player reaction clip, with little apparent news value."
       },
       {
         "id": "f3f30e46957f17b2",
-        "importance": 20,
-        "reason": "Tesla product-interface video; title provides little detail on what is new."
+        "importance": 23,
+        "reason": "Tesla interface feature teaser; title provides no details on availability or capabilities."
       },
       {
         "id": "06b79fb24257b139",
-        "importance": 19,
-        "reason": "Roadster interface teaser has no specifics about features or availability."
+        "importance": 22,
+        "reason": "Roadster interface reveal is potentially relevant, but the title gives no specifications."
       },
       {
-        "id": "38d4538588dc76d4",
-        "importance": 17,
-        "reason": "Tournament video, but title offers no results or notable development."
+        "id": "afe8b8032ee977c4",
+        "importance": 55,
+        "reason": "A game edition launch is timely and consequential for its audience; details are limited."
       },
       {
-        "id": "9e140e65fdead342",
-        "importance": 17,
-        "reason": "Duplicate tournament listing with no results or notable development."
+        "id": "f13c635177cd8c2e",
+        "importance": 24,
+        "reason": "Seasonal promotional video, with no clear announcement or substantive update in the title."
       },
       {
-        "id": "4042553f458f0d41",
-        "importance": 39,
-        "reason": "Launch trailer for a Switch 2 edition; notable gaming release, with no further details."
+        "id": "9debdcfa82b7f1d3",
+        "importance": 40,
+        "reason": "Official launch trailer for a game is timely, though the title offers no further context."
       },
       {
         "id": "e5f1f034f2557c3b",
-        "importance": 33,
-        "reason": "Recent launch trailer is timely, though the title gives no game details."
+        "importance": 40,
+        "reason": "Launch trailer marks a timely game release, but no details or reception are given."
       },
       {
-        "id": "6adc12be07d0e789",
-        "importance": 32,
-        "reason": "GTA VI launch trailer is a major gaming item, but the title alone gives no release context."
+        "id": "dac6061ba9692024",
+        "importance": 33,
+        "reason": "New game-mode DLC trailer is a relevant update, though its scope is unspecified."
       },
       {
         "id": "25cdcaa0c66dc5d8",
-        "importance": 33,
-        "reason": "PlayStation listing of the same recent Ayasa launch trailer; limited detail."
+        "importance": 40,
+        "reason": "Launch trailer marks a timely game release, but no details or reception are given."
       },
       {
-        "id": "f14357547add37e5",
-        "importance": 17,
-        "reason": "Promotional Star Wars racer tease, without substantive news."
+        "id": "3840d660e13cbbe0",
+        "importance": 31,
+        "reason": "Case study of Codex in legal work; potentially useful, but no results or details supplied."
       },
       {
-        "id": "8dd612a860f03e20",
-        "importance": 12,
-        "reason": "Vague OpenAI video title does not establish a meaningful product announcement."
+        "id": "fb9bfd647c59110d",
+        "importance": 29,
+        "reason": "Astra customer case study is promotional and the title gives few specifics."
       },
       {
-        "id": "d01589cde4a487f6",
+        "id": "b1d7eb2dedce5839",
         "importance": 18,
-        "reason": "Customer-use promotional video; title gives little information about broader AI impact."
+        "reason": "AI literacy lesson is educational content, not a reported research breakthrough."
+      },
+      {
+        "id": "89b82efc97f5f84f",
+        "importance": 17,
+        "reason": "Media invitation to tour a simulator is promotional access, not a mission milestone."
+      },
+      {
+        "id": "2ae86c2e6dfae3ef",
+        "importance": 15,
+        "reason": "Profile-style NASA item; context indicates a photo ahead of a test, with little news detail."
+      },
+      {
+        "id": "9745c4a6325fe904",
+        "importance": 12,
+        "reason": "Cryptic product-style title and no context make the claim or significance unclear."
+      },
+      {
+        "id": "9c42df546f7887c2",
+        "importance": 24,
+        "reason": "Team bullpen feature is baseball commentary, not a specific development or result."
+      },
+      {
+        "id": "d43f1a9d1aead94b",
+        "importance": 10,
+        "reason": "A playful high-five statistic gag, with little public or sports significance."
+      },
+      {
+        "id": "34c5cbaa1fa9e7ad",
+        "importance": 38,
+        "reason": "Scoring-leader claim is notable, but title gives no game details or verification."
+      },
+      {
+        "id": "5784d36e367b9baf",
+        "importance": 9,
+        "reason": "Personal pregame moment rather than substantive basketball news."
       },
       {
         "id": "4e6f5c4fdf0aa653",
-        "importance": 50,
-        "reason": "New NASA-USDA agreement links Earth science and agriculture, though scope is unclear."
+        "importance": 39,
+        "reason": "Interagency agreement could support Earth science and agriculture; specific commitments are unclear."
       },
       {
         "id": "57c0a5f2d9657bbd",
-        "importance": 63,
-        "reason": "Lander development for 2028 Moon missions is a consequential, timely program update."
-      },
-      {
-        "id": "2dbe5da910a8a7ed",
-        "importance": 35,
-        "reason": "NASA energy-security partnership is a substantive but localized update."
-      },
-      {
-        "id": "10a18dbe1712e1eb",
-        "importance": 19,
-        "reason": "Realpage customer example is promotional and adds little detail on ChatGPT Work."
-      },
-      {
-        "id": "0cd5060b5bfe3436",
-        "importance": 23,
-        "reason": "AI agent partnership video suggests IT automation, but provides no specifics here."
-      },
-      {
-        "id": "14de10c24dfee4c7",
-        "importance": 35,
-        "reason": "Free 10th-anniversary update trailer is a notable game update, though details are absent."
-      },
-      {
-        "id": "35beb5f3f20030a7",
-        "importance": 13,
-        "reason": "Lighthearted teammate clip, not a substantive baseball development."
-      },
-      {
-        "id": "80fea51c49a6155d",
-        "importance": 37,
-        "reason": "Player discusses the emotional significance of a World Series Game 2 homer."
-      },
-      {
-        "id": "f2c0be2b25a14073",
-        "importance": 38,
-        "reason": "Recent top-plays compilation is timely but not a major standalone development."
-      },
-      {
-        "id": "9cfd42e36da55439",
-        "importance": 40,
-        "reason": "Full game highlights are fresh; the listing gives no score or playoff stakes."
-      },
-      {
-        "id": "452bf28ae114f7dc",
-        "importance": 56,
-        "reason": "Artemis III lander-operations test plan is a meaningful Moon-program update."
-      },
-      {
-        "id": "dad78058cd63c76b",
-        "importance": 35,
-        "reason": "RS-25 engine testing supports NASA programs, but no test outcome is supplied."
+        "importance": 61,
+        "reason": "Lander development for 2028 Moon missions is a substantive program update, though several days old."
       }
     ],
-    "source_checked_at": "2026-10-26T14:20:58.378Z"
+    "source_checked_at": "2026-10-26T20:32:39.953Z"
   },
   "last_attempt_at": "2026-10-26T20:32:39.553Z",
   "pending_reservation_microusd": 5390,
   "pending_source_checked_at": "2026-10-26T20:32:39.953Z",
-  "last_success_at": "2026-10-26T14:21:10.113Z",
+  "last_success_at": "2026-10-26T20:32:53.064Z",
   "last_error_status": null
 }

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,35 +10,150 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-26T06:19:34.987Z",
+    "generated_at": "2026-10-26T14:21:10.113Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
+        "id": "982a163d1877997b",
+        "importance": 62,
+        "reason": "World Series game context makes this timely, but the Rays/Peralta claim is unclear."
+      },
+      {
+        "id": "b5c994330d922291",
+        "importance": 8,
+        "reason": "Vague humorous clip title gives no news or baseball context."
+      },
+      {
+        "id": "a588dfed978bc053",
+        "importance": 49,
+        "reason": "Fresh opening-week plays roundup is timely basketball coverage."
+      },
+      {
+        "id": "23be78205e948372",
+        "importance": 43,
+        "reason": "Recent nightly recap offers timely results, but no specific stakes are given."
+      },
+      {
+        "id": "f3f30e46957f17b2",
+        "importance": 20,
+        "reason": "Tesla product-interface video; title provides little detail on what is new."
+      },
+      {
+        "id": "06b79fb24257b139",
+        "importance": 19,
+        "reason": "Roadster interface teaser has no specifics about features or availability."
+      },
+      {
+        "id": "38d4538588dc76d4",
+        "importance": 17,
+        "reason": "Tournament video, but title offers no results or notable development."
+      },
+      {
+        "id": "9e140e65fdead342",
+        "importance": 17,
+        "reason": "Duplicate tournament listing with no results or notable development."
+      },
+      {
+        "id": "4042553f458f0d41",
+        "importance": 39,
+        "reason": "Launch trailer for a Switch 2 edition; notable gaming release, with no further details."
+      },
+      {
+        "id": "e5f1f034f2557c3b",
+        "importance": 33,
+        "reason": "Recent launch trailer is timely, though the title gives no game details."
+      },
+      {
+        "id": "6adc12be07d0e789",
+        "importance": 32,
+        "reason": "GTA VI launch trailer is a major gaming item, but the title alone gives no release context."
+      },
+      {
+        "id": "25cdcaa0c66dc5d8",
+        "importance": 33,
+        "reason": "PlayStation listing of the same recent Ayasa launch trailer; limited detail."
+      },
+      {
+        "id": "f14357547add37e5",
+        "importance": 17,
+        "reason": "Promotional Star Wars racer tease, without substantive news."
+      },
+      {
+        "id": "8dd612a860f03e20",
+        "importance": 12,
+        "reason": "Vague OpenAI video title does not establish a meaningful product announcement."
+      },
+      {
+        "id": "d01589cde4a487f6",
+        "importance": 18,
+        "reason": "Customer-use promotional video; title gives little information about broader AI impact."
+      },
+      {
+        "id": "4e6f5c4fdf0aa653",
+        "importance": 50,
+        "reason": "New NASA-USDA agreement links Earth science and agriculture, though scope is unclear."
+      },
+      {
         "id": "57c0a5f2d9657bbd",
-        "importance": 72,
-        "reason": "Lander development for planned 2028 lunar missions is a consequential program update; details are limited."
-      },
-      {
-        "id": "452bf28ae114f7dc",
-        "importance": 67,
-        "reason": "Artemis III lander-operations testing matters to lunar plans, but the supplied context gives few specifics."
-      },
-      {
-        "id": "dad78058cd63c76b",
-        "importance": 48,
-        "reason": "Engine testing is a substantive program activity, though no test results or milestones are provided."
+        "importance": 63,
+        "reason": "Lander development for 2028 Moon missions is a consequential, timely program update."
       },
       {
         "id": "2dbe5da910a8a7ed",
-        "importance": 30,
-        "reason": "Energy-security partnership is broadly relevant but appears less central to space developments; details are sparse."
+        "importance": 35,
+        "reason": "NASA energy-security partnership is a substantive but localized update."
+      },
+      {
+        "id": "10a18dbe1712e1eb",
+        "importance": 19,
+        "reason": "Realpage customer example is promotional and adds little detail on ChatGPT Work."
+      },
+      {
+        "id": "0cd5060b5bfe3436",
+        "importance": 23,
+        "reason": "AI agent partnership video suggests IT automation, but provides no specifics here."
+      },
+      {
+        "id": "14de10c24dfee4c7",
+        "importance": 35,
+        "reason": "Free 10th-anniversary update trailer is a notable game update, though details are absent."
+      },
+      {
+        "id": "35beb5f3f20030a7",
+        "importance": 13,
+        "reason": "Lighthearted teammate clip, not a substantive baseball development."
+      },
+      {
+        "id": "80fea51c49a6155d",
+        "importance": 37,
+        "reason": "Player discusses the emotional significance of a World Series Game 2 homer."
+      },
+      {
+        "id": "f2c0be2b25a14073",
+        "importance": 38,
+        "reason": "Recent top-plays compilation is timely but not a major standalone development."
+      },
+      {
+        "id": "9cfd42e36da55439",
+        "importance": 40,
+        "reason": "Full game highlights are fresh; the listing gives no score or playoff stakes."
+      },
+      {
+        "id": "452bf28ae114f7dc",
+        "importance": 56,
+        "reason": "Artemis III lander-operations test plan is a meaningful Moon-program update."
+      },
+      {
+        "id": "dad78058cd63c76b",
+        "importance": 35,
+        "reason": "RS-25 engine testing supports NASA programs, but no test outcome is supplied."
       }
     ],
-    "source_checked_at": "2026-10-26T06:19:28.980Z"
+    "source_checked_at": "2026-10-26T14:20:58.378Z"
   },
   "last_attempt_at": "2026-10-26T14:20:57.499Z",
   "pending_reservation_microusd": 5485,
   "pending_source_checked_at": "2026-10-26T14:20:58.378Z",
-  "last_success_at": "2026-10-26T06:19:34.987Z",
+  "last_success_at": "2026-10-26T14:21:10.113Z",
   "last_error_status": null
 }

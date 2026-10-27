@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,140 +10,20 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-27T00:30:19.435Z",
+    "generated_at": "2026-10-27T06:21:21.456Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "58a686e85dfdd988",
-        "importance": 38,
-        "reason": "World Series Game 3 ceremonial first pitch; timely, but not a game result or turning point."
-      },
-      {
-        "id": "45a28ab0289badfd",
-        "importance": 22,
-        "reason": "Timely anthem performance, but largely ceremonial content."
-      },
-      {
-        "id": "56fd265fe268c1e1",
-        "importance": 35,
-        "reason": "A timely individual NBA highlight, with no broader game context supplied."
-      },
-      {
-        "id": "cc8f597c2f8b1aef",
-        "importance": 35,
-        "reason": "A timely defensive highlight; no game stakes or outcome are given."
-      },
-      {
-        "id": "f3f30e46957f17b2",
-        "importance": 17,
-        "reason": "Vague Tesla promotional video title; no substantive details to assess."
-      },
-      {
-        "id": "06b79fb24257b139",
-        "importance": 17,
-        "reason": "Vague Roadster interface teaser; no specs or meaningful announcement details."
-      },
-      {
-        "id": "f0536f47cad2ae17",
-        "importance": 47,
-        "reason": "A launch trailer for a Switch 2 game; timely, but promotional and details are limited."
-      },
-      {
-        "id": "afe8b8032ee977c4",
-        "importance": 45,
-        "reason": "Switch 2 edition launch is timely for players, though the post offers no further details."
-      },
-      {
-        "id": "81364ef7146ae7c1",
-        "importance": 43,
-        "reason": "A launch trailer for a Flight Simulator world update; useful gaming news, with limited context."
-      },
-      {
-        "id": "9debdcfa82b7f1d3",
-        "importance": 38,
-        "reason": "Official launch trailer signals a game launch, but no details establish its wider significance."
-      },
-      {
-        "id": "dac6061ba9692024",
-        "importance": 40,
-        "reason": "New game-mode DLC trailer is relevant to players, but remains a promotional announcement."
-      },
-      {
-        "id": "25cdcaa0c66dc5d8",
-        "importance": 37,
-        "reason": "Launch trailer indicates a new PS5 game release; supplied details are sparse."
-      },
-      {
-        "id": "5ad7983a6fe1c4ff",
-        "importance": 32,
-        "reason": "Shows a legal firm's Codex use, but the first-party title gives little evidence of broader impact."
-      },
-      {
-        "id": "c07c7ff407e80370",
-        "importance": 37,
-        "reason": "AI-agent use beyond coding is notable, but the first-party title lacks supporting detail."
-      },
-      {
         "id": "b1d7eb2dedce5839",
-        "importance": 16,
-        "reason": "An AI-literacy lesson, not a reported neuroscience breakthrough."
-      },
-      {
-        "id": "dfc519dd5290724c",
-        "importance": 66,
-        "reason": "Mars rover dust measurements may inform crew protection; NASA context is truncated, limiting assessment."
-      },
-      {
-        "id": "89b82efc97f5f84f",
-        "importance": 18,
-        "reason": "Media invitation to a lunar landing simulator is mainly promotional, not a mission milestone."
-      },
-      {
-        "id": "4564656987a51b6a",
-        "importance": 32,
-        "reason": "Reports increased signups for an agent tool, but the first-party headline offers little context."
-      },
-      {
-        "id": "d0fdbdfd96883cc4",
-        "importance": 36,
-        "reason": "Claims a substantial AI-video duration increase, but details and independent validation are absent."
-      },
-      {
-        "id": "fcbd52247603eece",
-        "importance": 26,
-        "reason": "World Series team introductions are timely, but routine pregame material."
-      },
-      {
-        "id": "27cac9cfc90e077a",
-        "importance": 20,
-        "reason": "Live batting practice is timely but routine and not competitive game action."
-      },
-      {
-        "id": "bc12a6ecdbe44094",
-        "importance": 36,
-        "reason": "A timely NBA scoring highlight; no game stakes or result are supplied."
-      },
-      {
-        "id": "ace192f422982d31",
-        "importance": 39,
-        "reason": "A notable multi-player NBA highlight, but its game context and significance are unspecified."
-      },
-      {
-        "id": "2ae86c2e6dfae3ef",
-        "importance": 20,
-        "reason": "Pilot profile ahead of a first flight is limited-context coverage, not a stated test milestone."
-      },
-      {
-        "id": "4e6f5c4fdf0aa653",
-        "importance": 44,
-        "reason": "NASA-USDA agreement links Earth science and agriculture, though its practical terms are unspecified."
+        "importance": 27,
+        "reason": "A new AI-literacy lesson, but mainly educational promotion rather than a substantive brain-mapping advance."
       }
     ],
-    "source_checked_at": "2026-10-27T00:30:09.129Z"
+    "source_checked_at": "2026-10-27T06:21:15.581Z"
   },
   "last_attempt_at": "2026-10-27T06:21:15.309Z",
   "pending_reservation_microusd": 4217,
   "pending_source_checked_at": "2026-10-27T06:21:15.581Z",
-  "last_success_at": "2026-10-27T00:30:19.435Z",
+  "last_success_at": "2026-10-27T06:21:21.456Z",
   "last_error_status": null
 }

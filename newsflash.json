@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,155 +10,145 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-27T18:47:09.695Z",
+    "generated_at": "2026-10-27T22:59:24.726Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "128a63167d99b6b6",
-        "importance": 34,
-        "reason": "Historic World Series highlight, but the 2011 event is not current news."
+        "id": "24e5a437e0684fe4",
+        "importance": 18,
+        "reason": "Pre-game batting practice is timely but routine, not a game highlight."
       },
       {
-        "id": "72f89141e3c335ef",
-        "importance": 25,
-        "reason": "Timely fan-reaction clip, but its scoreboard context is unclear."
+        "id": "f7f081001a0fc66c",
+        "importance": 68,
+        "reason": "A rally-starting hit from the previous World Series game is a consequential highlight."
+      },
+      {
+        "id": "576844c91771b8dc",
+        "importance": 16,
+        "reason": "The title suggests a personality feature, with no clear news or game significance."
       },
       {
         "id": "ab898523aba2ecaf",
-        "importance": 59,
-        "reason": "A current-game career high is a notable individual basketball achievement."
+        "importance": 49,
+        "reason": "A career-high performance is a notable recent game highlight, though details are limited."
       },
       {
-        "id": "d7dbc8eb001cc505",
-        "importance": 47,
-        "reason": "Recent full-game highlights offer timely recap, without a stated turning point."
+        "id": "c654ae9db4c47ae5",
+        "importance": 42,
+        "reason": "A new technology video may be substantive, but the vague title gives little detail."
       },
       {
-        "id": "f3f30e46957f17b2",
-        "importance": 22,
-        "reason": "Tesla interface clip; title gives little detail on what is new."
-      },
-      {
-        "id": "06b79fb24257b139",
+        "id": "90d35f50aced6c66",
         "importance": 24,
-        "reason": "Roadster interface video may show product details, but context is sparse."
+        "reason": "A showcase trailer is a timely but promotional game preview."
       },
       {
-        "id": "f0536f47cad2ae17",
-        "importance": 37,
-        "reason": "A fresh game launch trailer, though no broader significance is given."
-      },
-      {
-        "id": "afe8b8032ee977c4",
-        "importance": 35,
-        "reason": "Launch item for a game edition; limited information beyond the title."
+        "id": "0157059ffc4ab603",
+        "importance": 32,
+        "reason": "A launch trailer signals a release, but remains promotional and offers no details."
       },
       {
         "id": "14c5a2b7d0549e0d",
-        "importance": 25,
-        "reason": "A new simulator aircraft add-on, a niche gaming update."
+        "importance": 17,
+        "reason": "A niche add-on video for a flight simulator has limited broader significance."
       },
       {
         "id": "7641b6b4f60c95a5",
-        "importance": 36,
-        "reason": "Current Xbox launch trailer; details and reception are not provided."
+        "importance": 30,
+        "reason": "A game launch trailer is timely, but promotional rather than substantive coverage."
       },
       {
         "id": "16b82065ca404a73",
         "importance": 29,
-        "reason": "Announcement trailer signals a PS5 game, but no further details."
+        "reason": "An announcement trailer signals a new game, but provides little beyond promotion."
       },
       {
         "id": "d67b8d66d7434cf6",
-        "importance": 31,
-        "reason": "Enhanced edition announcement is relevant to fans, with little context."
+        "importance": 30,
+        "reason": "An announcement trailer signals an updated game, but is promotional and thin on detail."
       },
       {
         "id": "8d0aa60ab6cde511",
-        "importance": 36,
-        "reason": "Recent PS5 launch trailer; significance beyond release is unclear."
+        "importance": 30,
+        "reason": "A launch trailer is timely but promotional, with no context on the game's significance."
       },
       {
         "id": "3b2ea178f0a8cf27",
-        "importance": 33,
-        "reason": "AI partnership-related video, but title alone reveals few substantive details."
+        "importance": 32,
+        "reason": "A named OpenAI partnership video could offer useful detail, but context is absent."
       },
       {
         "id": "dec31ab1e5fb5105",
-        "importance": 29,
-        "reason": "Codex user story is promotional and offers no specific findings."
+        "importance": 36,
+        "reason": "A Codex user's account may offer practical insights, though the title gives few specifics."
       },
       {
         "id": "bcbd51e5018d0249",
         "importance": 65,
-        "reason": "A new world-simulation model could be significant, but the title lacks evidence or detail."
+        "reason": "A new generation of world simulation is a potentially significant AI launch; claims are unverified."
       },
       {
         "id": "b1d7eb2dedce5839",
-        "importance": 19,
-        "reason": "Promotional AI-literacy lesson, not a reported neuroscience breakthrough."
+        "importance": 15,
+        "reason": "An AI literacy lesson is educational but not a substantive research announcement."
       },
       {
         "id": "85fdf95f1fdc5eec",
-        "importance": 44,
-        "reason": "AI and dementia research is consequential, but the supplied context is incomplete."
+        "importance": 36,
+        "reason": "Dementia research is consequential, but the brief context does not establish AI's results."
+      },
+      {
+        "id": "71e6962cecf66d3a",
+        "importance": 33,
+        "reason": "The completion of a yearlong Mars simulation is a timely research milestone, though details are sparse."
       },
       {
         "id": "6f7b94d4e0f7d4bc",
-        "importance": 38,
-        "reason": "A NASA hardware update, with no mission milestone or technical detail stated."
-      },
-      {
-        "id": "53cb4bae6e918f63",
-        "importance": 17,
-        "reason": "Mentorship profile is human-interest content rather than a major space update."
+        "importance": 24,
+        "reason": "A sunshade inspection is a routine project update, not a mission milestone."
       },
       {
         "id": "72f9fb4cdb821da2",
-        "importance": 28,
-        "reason": "Codex developer interview is a promotional use case, with limited specifics."
+        "importance": 31,
+        "reason": "A business user's Codex video may be informative, but the title gives limited substance."
       },
       {
-        "id": "37a680577732638e",
-        "importance": 19,
-        "reason": "Anniversary announcement trailer is promotional, with no substantive news stated."
+        "id": "5cd2fda9465100dd",
+        "importance": 7,
+        "reason": "A player-versus-character game is promotional filler."
       },
       {
-        "id": "5b9fc1b4144c2d6d",
-        "importance": 69,
-        "reason": "An eight-game postseason streak is a notable current run, as described by MLB."
+        "id": "128a63167d99b6b6",
+        "importance": 14,
+        "reason": "A retrospective on a 2011 World Series performance is not current game news."
       },
       {
-        "id": "dfe7c9b02381f0ab",
-        "importance": 45,
-        "reason": "Field breakdown of a recent World Series game is timely, but details are sparse."
+        "id": "d7dbc8eb001cc505",
+        "importance": 42,
+        "reason": "Extended highlights of a recent full game are useful sports coverage, though not a live turning point."
       },
       {
         "id": "2833d3977f01bff0",
-        "importance": 24,
-        "reason": "Season-series episode is broad programming, not a specific news development."
+        "importance": 22,
+        "reason": "A season-show episode is broad recap programming with no specific news in the title."
       },
       {
-        "id": "b5581de7da7dbeda",
-        "importance": 43,
-        "reason": "A timely nightly league recap, though no standout event is identified."
+        "id": "53cb4bae6e918f63",
+        "importance": 15,
+        "reason": "A student-mentor profile is human-interest content, not a major space development."
       },
       {
         "id": "dfc519dd5290724c",
-        "importance": 73,
-        "reason": "Perseverance measurements may inform crew protection from Mars dust; findings are not detailed."
-      },
-      {
-        "id": "89b82efc97f5f84f",
-        "importance": 23,
-        "reason": "Media invitation to a simulator is promotional access, not a mission milestone."
+        "importance": 63,
+        "reason": "Perseverance dust measurements may inform crew protection for Mars missions; the findings merit attention."
       }
     ],
-    "source_checked_at": "2026-10-27T18:46:53.910Z"
+    "source_checked_at": "2026-10-27T22:59:13.946Z"
   },
   "last_attempt_at": "2026-10-27T22:59:13.688Z",
   "pending_reservation_microusd": 5467,
   "pending_source_checked_at": "2026-10-27T22:59:13.946Z",
-  "last_success_at": "2026-10-27T18:47:09.695Z",
+  "last_success_at": "2026-10-27T22:59:24.726Z",
   "last_error_status": null
 }

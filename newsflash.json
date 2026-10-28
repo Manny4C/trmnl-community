@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,145 +10,145 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-28T09:46:27.518Z",
+    "generated_at": "2026-10-28T16:42:30.617Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "e481e0f11ff8d07a",
-        "importance": 72,
-        "reason": "Short recap of a World Series game featuring a reported walk-off; useful but abbreviated."
+        "id": "d98f6a479e302ea4",
+        "importance": 20,
+        "reason": "Lighthearted player moment; limited news value."
       },
       {
-        "id": "264c5fd56ecd1ed4",
-        "importance": 78,
-        "reason": "Full-play coverage of a World Series game; strong timely recap, though no game details supplied."
+        "id": "94682271a9350830",
+        "importance": 64,
+        "reason": "A rookie's four-hit game and go-ahead extra-inning homer are a notable result."
       },
       {
-        "id": "759e027b8440daa5",
-        "importance": 55,
-        "reason": "Timely league-wide nightly recap, but no specific results or standout developments given."
+        "id": "6924772a5aa059e0",
+        "importance": 54,
+        "reason": "Revisits two dramatic World Series walk-offs, but is retrospective."
       },
       {
-        "id": "42c7b2aed3129eb0",
-        "importance": 49,
-        "reason": "Routine nightly highlight compilation with no details about the plays."
+        "id": "fb5440ed56ca525a",
+        "importance": 48,
+        "reason": "Recent breakdown of a fourth-quarter takeover; sports analysis rather than a new result."
+      },
+      {
+        "id": "51d412653745818e",
+        "importance": 63,
+        "reason": "Recent highlight of the closing minutes, with a takeover implied by the title."
       },
       {
         "id": "c654ae9db4c47ae5",
-        "importance": 43,
-        "reason": "New technology-themed creator video, but title alone gives little substance."
+        "importance": 40,
+        "reason": "New technology video, but title alone gives little detail on its substance."
       },
       {
-        "id": "90d35f50aced6c66",
-        "importance": 37,
-        "reason": "Showcase trailer for a game update; promotional and details are absent."
+        "id": "ab63e93e7acbf2bc",
+        "importance": 68,
+        "reason": "A fresh Nintendo indie showcase can include multiple announcements; specifics are absent."
       },
       {
-        "id": "0157059ffc4ab603",
-        "importance": 50,
-        "reason": "Launch trailer for a major game on a new platform, but no launch specifics supplied."
-      },
-      {
-        "id": "14c5a2b7d0549e0d",
-        "importance": 32,
-        "reason": "Routine add-on announcement for a flight simulator; limited wider significance."
-      },
-      {
-        "id": "7641b6b4f60c95a5",
-        "importance": 42,
-        "reason": "Launch trailer signals availability, but provides no details about the game."
-      },
-      {
-        "id": "c9c3ab3e29ef3de7",
-        "importance": 39,
-        "reason": "New game is out now, though the title and context offer little further information."
-      },
-      {
-        "id": "16b82065ca404a73",
-        "importance": 36,
-        "reason": "Announcement trailer for a PS5 game; promotional, with no substantive details."
-      },
-      {
-        "id": "8d0aa60ab6cde511",
-        "importance": 43,
-        "reason": "Launch trailer indicates a game release; no details to judge its broader significance."
-      },
-      {
-        "id": "3b2ea178f0a8cf27",
-        "importance": 35,
-        "reason": "Corporate AI video title suggests a partnership, but offers no concrete news details."
-      },
-      {
-        "id": "dec31ab1e5fb5105",
+        "id": "aaab5c2c6199df49",
         "importance": 38,
-        "reason": "First-person Codex video may offer practical insight, but context is absent."
+        "reason": "A promotional sizzle reel, less substantive than the showcase itself."
+      },
+      {
+        "id": "389e19fac844d675",
+        "importance": 33,
+        "reason": "A game trailer is promotional; no release or gameplay details supplied."
+      },
+      {
+        "id": "a8af416e39b76a9c",
+        "importance": 42,
+        "reason": "Season launch trailer is timely, but provides no details on the update."
+      },
+      {
+        "id": "ee76f454c136de31",
+        "importance": 42,
+        "reason": "Same season launch trailer as another feed item; promotional and detail-light."
+      },
+      {
+        "id": "f9922eadd7270e6b",
+        "importance": 31,
+        "reason": "Story trailer is promotional, with no further game details supplied."
+      },
+      {
+        "id": "63ffcc4a58435325",
+        "importance": 30,
+        "reason": "Corporate interview about AI fluency; no broader development described."
+      },
+      {
+        "id": "b64d80a60f071a2f",
+        "importance": 31,
+        "reason": "Company-focused discussion of Codex use, not a product announcement."
       },
       {
         "id": "bcbd51e5018d0249",
-        "importance": 72,
-        "reason": "New world-simulation generation is a potentially notable AI development; claims are unverified."
+        "importance": 74,
+        "reason": "A new generation of world simulation could be a notable AI advance; claims are unverified."
       },
       {
         "id": "b1d7eb2dedce5839",
-        "importance": 30,
-        "reason": "AI literacy lesson about neuroscience, rather than a reported research breakthrough."
+        "importance": 22,
+        "reason": "An educational lesson, not a research breakthrough or major announcement."
+      },
+      {
+        "id": "9fa8e4999dc54776",
+        "importance": 49,
+        "reason": "New laptop models and tools are a substantive product update, though details are limited."
       },
       {
         "id": "85fdf95f1fdc5eec",
-        "importance": 60,
-        "reason": "AI and dementia discovery is consequential, but supplied context is incomplete and promotional."
+        "importance": 45,
+        "reason": "AI and dementia discovery is consequential, but the supplied context gives no findings."
+      },
+      {
+        "id": "8ca2f0d9390b6938",
+        "importance": 52,
+        "reason": "A recent Webb release showcases a star nursery; scientific findings aren't specified."
       },
       {
         "id": "71e6962cecf66d3a",
-        "importance": 45,
-        "reason": "NASA event concerns completion of a yearlong Mars simulation; operational implications are unclear."
+        "importance": 32,
+        "reason": "Media invite about a simulation milestone, not an actual Mars mission."
+      },
+      {
+        "id": "e7bc8435004f26e5",
+        "importance": 24,
+        "reason": "Business profile video with no broader AI news indicated."
+      },
+      {
+        "id": "2cc95fa95971e9f9",
+        "importance": 70,
+        "reason": "A fresh highlight of a World Series Game 4 thriller; the specific outcome isn't stated."
+      },
+      {
+        "id": "937a7e6a01768dae",
+        "importance": 18,
+        "reason": "Lighthearted summer banter, not a substantive current development."
+      },
+      {
+        "id": "711df70f8aa70d54",
+        "importance": 25,
+        "reason": "Practice access feature is routine and provides no game news."
       },
       {
         "id": "6f7b94d4e0f7d4bc",
-        "importance": 35,
-        "reason": "Image-caption-style NASA post about hardware inspection, with little news detail."
-      },
-      {
-        "id": "72f9fb4cdb821da2",
-        "importance": 36,
-        "reason": "Business-focused Codex video, but no concrete findings or details are supplied."
-      },
-      {
-        "id": "0d9867f9f94e893c",
-        "importance": 65,
-        "reason": "Reaction video follows the reported Rays walk-off in a World Series game; mainly commentary."
-      },
-      {
-        "id": "9300094882ccc7ac",
-        "importance": 70,
-        "reason": "Audio calls of the reported World Series walk-off offer a timely account of a key moment."
-      },
-      {
-        "id": "02abb8cc8a6c53ae",
-        "importance": 23,
-        "reason": "Casual player reaction post with no substantive game information."
-      },
-      {
-        "id": "97f79c47ded280b6",
-        "importance": 62,
-        "reason": "Full-game highlights provide a timely NBA recap, though no result or turning point is given."
+        "importance": 38,
+        "reason": "NASA hardware feature, but no mission milestone or technical details are supplied."
       },
       {
         "id": "53cb4bae6e918f63",
-        "importance": 23,
-        "reason": "Mentorship profile is human-interest content, not a major space development."
-      },
-      {
-        "id": "dfc519dd5290724c",
-        "importance": 67,
-        "reason": "Perseverance measurements may inform crew protection from Mars dust; supplied context is truncated."
+        "importance": 19,
+        "reason": "Human-interest mentoring profile with limited wider space-news significance."
       }
     ],
-    "source_checked_at": "2026-10-28T09:46:13.907Z"
+    "source_checked_at": "2026-10-28T16:42:18.563Z"
   },
   "last_attempt_at": "2026-10-28T16:42:17.954Z",
   "pending_reservation_microusd": 5507,
   "pending_source_checked_at": "2026-10-28T16:42:18.563Z",
-  "last_success_at": "2026-10-28T09:46:27.518Z",
+  "last_success_at": "2026-10-28T16:42:30.617Z",
   "last_error_status": null
 }

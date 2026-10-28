@@ -1,5 +1,5 @@
 <div class="layout layout--col gap--xsmall">
-{% if image_url %}<div class="nf-photo"><img class="image image-dither image--contain" src="{{ image_url | escape }}" alt="{{ image_caption | escape }}"></div>{% endif %}
+{% if image_url %}<div class="nf-photo"><img class="image image-dither image--cover" src="{{ image_url | escape }}" alt="{{ image_caption | escape }}"></div>{% endif %}
 <div class="nf-copy flex flex--col flex--left gap--xsmall w--full">
 <span class="label label--small lg:label--base" data-clamp="1">{{ source | escape }}{% if image_kind == 'video_thumbnail' %} · VIDEO PREVIEW{% endif %}</span>
 <div class="text--large lg:text--xlarge text--bold" data-clamp="3">{{ headline | escape }}</div>

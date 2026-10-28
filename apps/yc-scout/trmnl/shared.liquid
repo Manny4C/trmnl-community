@@ -3,7 +3,7 @@
 {% assign item_limit = 10 | default: 10 | plus: 0 %}
 <div class="layout layout--col gap--small sc--{{ mode }}">
 <span class="title title--small lg:title--base text--red 1bit:text--black 2bit:text--black 4bit:text--black" data-clamp="1">YC SCOUT</span>
-<span class="label label--small lg:label--base w--full" data-clamp="2">{{ filter_label | escape }} · {{ mode_label | escape }}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span>
+<span class="label label--small lg:label--base w--full" data-clamp="2">Launch HN · {{ filter_label | escape }} · {{ mode_label | escape }}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span>
 
 {% if companies.size > 0 %}
 <div class="columns stretch w--full" data-overflow-max-cols="{{ max_cols }}" data-overflow-max-cols-lg="2" data-overflow-max-cols-portrait="1" data-overflow-max-cols-lg-portrait="{{ portrait_cols }}" data-overflow-counter="true">
@@ -12,7 +12,7 @@
 <div class="item sc-card" data-launch-id="{{ company.id | escape }}"><div class="meta"><span class="index">{{ forloop.index }}</span></div><div class="content">
 <span class="title title--small lg:title--base sc-title" data-clamp="{{ title_lines }}" data-clamp-lg="2">{{ company.name | escape }}</span>
 <span class="description" data-clamp="{{ description_lines }}" data-clamp-lg="3">{{ company.description | escape }}</span>
-<span class="label label--small lg:label--base" data-clamp="1">YC {{ company.batch | escape }} · Launch HN · {{ company.published_at | date: "%b %d, %Y" }}</span>
+<span class="label label--small lg:label--base" data-clamp="1">YC {{ company.batch | escape }} · {{ company.published_at | date: "%b %d" }}</span>
 </div></div>
 {% endfor %}
 </div></div>

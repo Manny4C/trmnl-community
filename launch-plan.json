@@ -51,7 +51,7 @@
       "targetDate": "2026-10-13",
       "name": "The Daily TRMNL",
       "slug": "what-changed",
-      "status": "submitted_awaiting_review",
+      "status": "revisions_saved_native_verified_rereview_requested",
       "scope": "Prompt-based news briefing: ten Include/Exclude/Leave out interests, custom interests and place names, automatically composed prompt, real attributed articles, bounded per-prompt history and explicit no-match/outage states. Topic/phrase matching uses public source feeds and optional GDELT search. User-selectable 1\u201320 headlines (default 8), expanded detail for smaller full-screen editions and two columns for 9\u201320.",
       "websiteUrl": "https://the-daily-trmnl.vercel.app",
       "pluginId": 505118,
@@ -63,19 +63,19 @@
       "testStatus": "35 checks passed, including 1\u201320 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
       "physicalDeviceVerification": "Count setting saved to 8 on owner installation, original news prompt retained; compact polling URL, memory transform and all four layouts saved. Actual OG full 1/8/20 and smaller layout previews verified; refreshed edition queued for device check-in. Physical receipt of this density upgrade is not confirmed.",
       "pendingActions": [
-        "Save October27 native Framework Shared/four layouts on EXISTING master 505118; preserve configuration, verify native OG color/BW and X landscape/portrait and refresh marketplace previews before requesting review",
-        "Monitor human Recipe review",
-        "Confirm finished screen on physical device at next playlist appearance"
+        "Await human re-review and address any new feedback",
+        "Add only an actually approved public install URL",
+        "Confirm physical receipt separately"
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
-      "latestDeploymentId": "dpl_AFf5NVfv6jxa1cCi3NAjqQL6fpdP",
+      "reviewStatus": "Framework revisions saved/native-verified and re-review reply sent to Mario at support@trmnl.com October 28; delivery verified on existing thread.",
+      "latestDeploymentId": "dpl_A7WVQQKSkZzk6ikJtiotehErnZHw",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
       "recipe": {
         "name": "The Daily TRMNL",
-        "status": "in_review",
+        "status": "changes_requested_rereview_requested",
         "pluginId": 505118,
         "settingsUrl": "https://trmnl.com/plugin_settings/505118/edit",
         "publicInstallUrl": null,
@@ -105,14 +105,33 @@
         "physicalReceipt": "unconfirmed"
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "3bcea27327b9fe263e302b185a37e58b310c88bbfe40c68a0fd907b3fc754424"
+        "packageSha256": "3bcea27327b9fe263e302b185a37e58b310c88bbfe40c68a0fd907b3fc754424",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "humanReviewFeedback": {
+        "reviewer": "Mario",
+        "thread": "https://app.hey.com/topics/2155963789",
+        "receivedAtReported": "2026-10-28T06:39",
+        "summary": "Native Framework fonts/clamping and more data on X quadrant/half-vertical.",
+        "replySent": true
+      },
+      "rereviewReply": {
+        "sentOn": "2026-10-28",
+        "recipient": "support@trmnl.com",
+        "topicId": 2155963789,
+        "entryId": 2306937213,
+        "url": "https://app.hey.com/topics/2155963789#__entry_2306937213",
+        "delivery": "sent_and_read_back",
+        "explicitUserApproval": true
       }
     },
     {
@@ -120,12 +139,12 @@
       "targetDate": "2026-10-14",
       "name": "YC Scout",
       "slug": "yc-scout",
-      "status": "review_changes_requested_revision_prepared",
+      "status": "revisions_saved_native_verified_rereview_requested",
       "scope": "Launch HN startup radar with eight title-matched sectors, optional source-evidenced YC batch and product/company search, 30/90/365-day windows, latest or deterministic daily discovery. Each displayed announcement is verified via official HN API; no Show HN inference or YC directory scraping. Full-screen latest edition shows up to ten launches in descending posting order. Bounded coverage (79 announcements at launch), not all YC companies.",
       "recipeRequired": true,
       "recipe": {
         "name": "YC Scout",
-        "status": "changes_requested_revision_pending_native_verification",
+        "status": "changes_requested_rereview_requested",
         "pluginId": 506494,
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
@@ -145,14 +164,13 @@
       "testStatus": "13 automated checks passed, including ten newest in chronological order and ten multibyte rows under 4700 bytes; anonymous production returns ten launches (2586 bytes); actual OG ten-row full layout visually verified with the tenth row and footer visible. Ten-row X landscape/portrait and mobile width 390 also verified; the existing smaller layouts keep their own limits.",
       "physicalDeviceVerification": "Updated ten-launch full layout verified in actual TRMNL editor on owner OG B/W/R/Y and X landscape/portrait. Manual refresh generated the updated edition; actual physical receipt has not been confirmed.",
       "pendingActions": [
-        "Reconcile Shared/all four saved tabs against canonical source on EXISTING Recipe506494 after renewed browser authorization; all templates must use the same feed_view. Native saving started before the earlier restriction was discovered, then stopped; do not assume a complete matched save.",
-        "Verify actual native OG color/BW and X landscape/portrait/four views and long-source titles; regenerate marketplace previews if needed",
-        "Request re-review only after Recipe is saved/verified and explicit outbound-message authorization; no email sent for this new feedback",
-        "Record real human approval/public install URL and physical receipt separately"
+        "Await human re-review and address any new feedback",
+        "Add only an actually approved public install URL",
+        "Confirm physical receipt separately"
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
-      "latestDeploymentId": "dpl_BwcY6NqS2Q4Bq17EJqfXKVcq89aL",
-      "reviewStatus": "Mario requested native Framework items/automatic overflow and responsive use of larger screens in ticket145500957 (October27 Pacific). Revised source supplies all ten available launches in every layout. Native saving began before the prior screen restriction was discovered; complete saved-source comparison/native QA and re-review are pending. No new reviewer reply sent.",
+      "latestDeploymentId": "dpl_9RoMfsokJqRJbTQSEpjCzCdNwakq",
+      "reviewStatus": "Framework revisions saved/native-verified and re-review reply sent to Mario at support@trmnl.com October 28; delivery verified on existing thread.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
@@ -178,18 +196,29 @@
           "https://trmnl.com/framework/docs/trmnl_x_guide",
           "https://trmnl.com/blog/plugin-recipe-publishing-tips"
         ],
-        "replySent": false
+        "replySent": true
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "native_save_started_complete_comparison_and_qa_pending",
-        "nativeQa": "YC full OG preview checked; complete OG color/BW and X landscape/portrait/four-layout checks pending",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
         "packageSha256": "b2831cdcb15b1b90a17e07ad1555ff2f46742cfb9066f395f20ba75b91a47184",
-        "saveWarning": "Other chat modified local YC source during dashboard saves. Compare every saved tab with canonical source before relying on smaller layouts; do not assume templates match."
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "rereviewReply": {
+        "sentOn": "2026-10-28",
+        "recipient": "support@trmnl.com",
+        "topicId": 2156910252,
+        "entryId": 2306937217,
+        "url": "https://app.hey.com/topics/2156910252#__entry_2306937217",
+        "delivery": "sent_and_read_back",
+        "explicitUserApproval": true
       }
     },
     {
@@ -218,14 +247,12 @@
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
       "featuredImageStatus": "Redesigned OG and X marketplace previews regenerated and new blob IDs verified October 16.",
-      "latestDeploymentId": "dpl_GFfVU5t9qpWMbuWPKQfPN3YEc3J6",
+      "latestDeploymentId": "dpl_DpPraXhGHfuLVZU19LLijsFCNHYu",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
       "physicalDeviceVerification": "New radar design successfully rendered October 16 at 10:36:52/53 PDT; after playlist font override, render 10:37:19 PDT. Timeline has not recorded physical delivery of the redesigned Echo edition. Existing active playlist retained; next appearance scheduled in normal rotation. Earlier 10:08:43 delivery was the generic demo and is not evidence of new design receipt.",
       "pendingActions": [
-        "Save October27 native Framework Shared/four layouts on EXISTING master 507810; preserve configuration, verify native OG color/BW and X landscape/portrait and refresh marketplace previews before requesting review",
-        "Monitor human Recipe review; on approval publish the verified public installation URL",
-        "Verify physical delivery of redesigned Echo edition at next playlist rotation; native successful render last observed October 16 10:37:19 PDT, new-design delivery not yet logged.",
-        "When screen control is explicitly requested again, save updated Shared and all four markup tabs on existing Recipe 507810 and verify code/QR on actual OG/X renders; refresh previews if needed. Prepared package and live personal links are ready; no duplicate Recipe."
+        "Monitor human Recipe review; publish only the actually approved installation URL",
+        "Confirm physical display and real QR scan separately"
       ],
       "pollingUrl": "https://sounds-like-my-company.vercel.app/api/matches?name={{ company_name | url_encode }}&profile={{ profile | url_encode }}&audience={{ audience | url_encode }}&keywords={{ keywords | url_encode }}&exclude={{ exclude | url_encode }}&days={{ days }}&source={{ source }}&order={{ sort_order }}&count={{ result_count }}&format=trmnl",
       "licenseConfirmationRequestedAt": "2026-10-15T17:38:14.908730+00:00",
@@ -239,12 +266,10 @@
       "completedOn": "2026-10-15",
       "licenseApproval": "Manuel explicitly approved public submission under TRMNL Community Plugin License in this chat on October 15, 2026.",
       "reviewFeedbackResolution": {
-        "nativeFramework": "Shared title_bar render, native text/label/border/flex classes, lg: and portrait: adaptations. Seven equal-row sizing helpers remain; handwritten font sizes and clamping removed from device styles.",
-        "readability": "Full 6-row OG title 21 px, X title 38 px; one-line title for 6/8 avoids overlap. Native data-clamp controls title/reason truncation. Row fitting checked across all four OG layouts; X landscape/portrait verified. Native labels/title bar replace the previous tiny footer.",
-        "explicitDensity": "API result_count controls loop limit and 3/6/8 size branches explicitly. Eight OG rows fit at 16 px; three uses 26 px title with two-line detail.",
-        "privacy": "Public author text and generic developer-infrastructure demo contain no confidential company information. Form states that URL parameters can appear in standard hosting logs. Owner profile/name/audience and six-result setting restored and actual TRMNL Test request gives HTTP 200.",
-        "verifiedFalsePositives": "Current official docs explicitly support text--bold and border--h-black. company_name is mapped to the name query parameter by the polling URL and returned by the backend as name, which is displayed in the header. These suggestions do not indicate missing behavior.",
-        "latestAutomatedReview": "1198: well-built recipe, clean six-row OG and X views, neatly clamped titles, sensible field defaults; remaining suggestions/nitpicks, no critical findings. This does not establish human approval."
+        "nativeFramework": "Current revision uses native items, columns/overflow, responsive clamping/typography and title_bar; no card font/size CSS remains.",
+        "density": "Every slot supplies all selected 3/6/8 results to native fitting with counters; six owner results retained.",
+        "links": "ECHO code visible in every layout, real 82px QR in full and half-vertical; compact layouts hide QR and retain code.",
+        "verification": "Canonical tabs compared after reload; 16 default owner cases passed with zero clipping. Earlier automated review1198 was on the prior layout and is historical."
       },
       "ownerProfileUpdatedOn": "2026-10-16",
       "ownerProfileConfiguration": {
@@ -272,14 +297,14 @@
       },
       "personalizedLinks": {
         "implementedOn": "2026-10-16",
-        "status": "production_verified_recipe_markup_prepared_not_saved",
+        "status": "production_and_existing_recipe_markup_native_verified",
         "storage": "Private Vercel Blob sounds-company-links, store_Kzk66hJKySc7C7Dn, Production only on personal Hobby team manny4c-personal. Free usage quotas; no overage billing.",
         "operation": "Each successful device poll automatically saves the canonical public profile once and returns a stable four-character code, shareable page URL and QR image URL. Website code entry resolves the saved filters to current clickable HN links. Changing settings creates a new code. Same settings share one page. Anyone with code/link can view its public profile and matches; not account authentication or device verification.",
         "ownerLinksCode": "ECHO",
         "ownerLinksUrl": "https://sounds-like-my-company.vercel.app/r/ECHO",
         "ownerPageVerifiedMatches": 6,
         "verification": "Production POST saves Echo settings, independent GET resolves correct profile and six clickable launches, /r/ route HTTP 200, live 82px PNG decodes to exact personal URL; normal device poll returns same code and 1473-byte payload. 32 checks pass, including cold persistence, immutable/race-safe configs, errors, browser DOM opening/editing flows and 24 four-layout/count/link-presence Liquid render combinations. No actual browser/official renderer or physical QR scan QA under no-screen-control preference. Four-character collision, cold restart, lowercase entry and legacy-link migration tests pass. Production short-code and legacy lookups both return Echo as ECHO.",
-        "recipeRollout": "Existing Recipe 507810 remains installed/in review. Backend creates its profile on next successful poll, but new code/QR markup is only prepared in trmnl files/public ZIP and NOT saved in TRMNL. Full prepared view has native 82px QR; all four show code. No new Recipe or device receipt claimed.",
+        "recipeRollout": "Existing master 507810 retains owner Echo settings and six results. Shared/four revised layouts are saved and reloaded against source; all four show ECHO code, full/half-vertical display an actual loaded 82px undithered QR. Compact half-horizontal/quadrant retain the code while hiding the QR to leave space for matches. Sixteen native OG/BW/X cases passed; physical scan/receipt unconfirmed.",
         "failureBehavior": "Storage timeout/quota/outage omits code/QR but preserves launch data. Existing page lookup gives honest unavailable state; no reset, no ephemeral-only codes.",
         "testCount": 32,
         "lastVerifiedAt": "2026-10-16T19:18:48.980229+00:00",
@@ -296,14 +321,17 @@
         "physicalReceipt": "unconfirmed"
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "6aa1e3cc531e0e0324bbb0dcf7d59fd836281053b62bbf3b0ab7d67206098f22"
+        "packageSha256": "6aa1e3cc531e0e0324bbb0dcf7d59fd836281053b62bbf3b0ab7d67206098f22",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
       }
     },
     {
@@ -311,12 +339,12 @@
       "targetDate": "2026-10-16",
       "name": "Newsflash",
       "slug": "newsflash",
-      "status": "recipe_draft_installed_submission_pending",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "scope": "Completely rebuilt at Manuel\u2019s request as image-first AI news. User-selected interests and optional follow words select one source-linked visual headline. Existing official publisher images/video previews strongly preferred; eight interests, 24/48/72-hour windows, attribution, dates, grounded reasons and a labeled freshness fallback. Shared hourly cloud AI editor with durable CAS budget reservations and a $15 monthly application gate. No model call on viewer/device refresh; automatic paid image generation disabled.",
       "recipeRequired": true,
       "recipe": {
         "name": "Newsflash",
-        "status": "private_draft_installed",
+        "status": "private_draft_review_findings_fixed",
         "pluginId": 512643,
         "settingsUrl": "https://trmnl.com/plugin_settings/512643/edit",
         "publicInstallUrl": null
@@ -325,11 +353,11 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_GbnEwi1RpqVdH1zhLNJPLxsLopxr",
+      "latestDeploymentId": "dpl_EitBy7uG436Y3DsArrvXpvHP7nEo",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
-      "websiteDeploymentStatus": "ready_and_production_package_verified",
-      "publicationStatus": "private_draft_not_submitted",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "publicationStatus": "private_draft_pre_review_requested",
       "deviceInstallationStatus": "added_to_playlist",
       "physicalDeviceVerification": "Creation success confirms added to playlist October19. Configuration and Shared/all four image-first layouts saved; native data Test request returns HTTP200 with AI-selected MLB headline and source thumbnail. Full native render remained blank/loading in brief browser inspection; not verified. Physical receipt not confirmed.",
       "iconStatus": "original_svg_prepared_local_upload_blocked_by_Chrome_file_access",
@@ -350,9 +378,10 @@
         "follow": ""
       },
       "pendingActions": [
-        "Finish native OG/X image and layout QA on existing Recipe512643; data Test request is HTTP200 but actual image render not confirmed",
-        "Save icon, generate marketplace previews, submit public Recipe under applicable license confirmation",
-        "Record human review/public install URL and physical receipt separately"
+        "Proceed to final public human submission after icons/license",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "reviewStatus": "Separate Newsflash Recipe512643 created; private draft, NOT submitted or approved. No duplicate Desk Editor Recipe.",
       "verificationTimestamp": "2026-10-19T22:40:19Z",
@@ -463,14 +492,28 @@
         "caveat": "Reservations/amount are not provider billing or a verified paid API request count."
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "2ddbce846ba9ae5a5f0177fed233fda6cc7b8869b062d270e3a7fc52987c1d32"
+        "packageSha256": "2ddbce846ba9ae5a5f0177fed233fda6cc7b8869b062d270e3a7fc52987c1d32",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "findings_fixed_native_verified",
+        "url": "https://trmnl.com/plugin_settings/512643/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/desk-editor-review.txt",
+        "resolution": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility.",
+        "followupRequestedOn": null
       }
     },
     {
@@ -478,12 +521,12 @@
       "targetDate": "2026-10-19",
       "name": "TRMNL Plays: Tiny Planet",
       "slug": "tiny-planet",
-      "status": "shared_world_online_owner_verification_pending",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "scope": "One original shared cooperative world. Each server-verified TRMNL user can make one move per UTC calendar day; aggregate moves are unlimited. Public website shows world and event log; verified ownership is required to move. Durable database and atomic transactions enforce identity and quota. A transparently labeled owner autopilot makes at least one move every day including weekends, through a production scheduler with idempotency and catch-up checks. No client-only or shared-link-only access gate.",
       "recipeRequired": true,
       "recipe": {
         "name": "TRMNL Plays: Tiny Planet",
-        "status": "private_draft_installed",
+        "status": "private_draft_review_findings_fixed",
         "pluginId": 512639,
         "settingsUrl": "https://trmnl.com/plugin_settings/512639/edit",
         "publicInstallUrl": null
@@ -495,8 +538,8 @@
       "vercelProject": "tiny-planet",
       "vercelProjectId": "prj_AzCfpKbCm4q4RVBky3fhF18fM6w6",
       "buildCompletedOn": "2026-10-19",
-      "websiteDeploymentStatus": "ready_shared_world_and_production_package_verified",
-      "publicationStatus": "private_draft_not_submitted",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "publicationStatus": "private_draft_pre_review_requested",
       "deviceInstallationStatus": "added_to_playlist",
       "physicalDeviceVerification": "Creation success confirmed added to playlist October 19; Shared and all four markup tabs saved. Shared-world GET is live. Native visual render and physical receipt remain unverified.",
       "iconStatus": "original_black_white_svg_in_package",
@@ -550,9 +593,11 @@
         "publicStatusSynchronizedOn": "2026-10-21"
       },
       "pendingActions": [
-        "Verify a real owner TRMNL OAuth consent/callback and player move; public shared-world GET200 and secure sign-in redirect verified",
-        "Complete native OG color/B&W and X/four layouts, icon/marketplace assets and public submission on EXISTING Recipe512639; do not duplicate",
-        "Confirm physical receipt separately; only publish actual public install URL after approval"
+        "Proceed to final public human submission after icons/license",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL",
+        "Real human ownership/gameplay remains unverified; do not fabricate a player or consume quota as a test"
       ],
       "colorUpdate": {
         "updatedOn": "2026-10-19",
@@ -562,7 +607,7 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_CQugCMbLpsSqUJQu5fEE7iwgmb5g",
+      "latestDeploymentId": "dpl_mLfGHuEaENiSEGZURUWzMuzuB8Vy",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
       "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
@@ -584,14 +629,28 @@
         "result": "One autopilot event per UTC day October19\u201322; seven-day schedules remain enabled."
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "90ada0e656bc97cabe9d9cae83cdc60710957c38a2c83b4be516042d46135d66"
+        "packageSha256": "90ada0e656bc97cabe9d9cae83cdc60710957c38a2c83b4be516042d46135d66",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "findings_fixed_native_verified",
+        "url": "https://trmnl.com/plugin_settings/512639/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/tiny-planet-review.txt",
+        "resolution": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.",
+        "followupRequestedOn": null
       }
     },
     {
@@ -599,14 +658,14 @@
       "targetDate": "2026-10-21",
       "name": "Game Night Radar",
       "slug": "game-night-radar",
-      "status": "website_deployed_recipe_prepared",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "scope": "Follow Steam games, show developer updates, patches and announced events, with source links and new-since-previous-edition history.",
       "recipeRequired": true,
       "recipe": {
         "name": "Game Night Radar",
-        "status": "prepared",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_review_findings_fixed",
+        "pluginId": 522310,
+        "settingsUrl": "https://trmnl.com/plugin_settings/522310/edit",
         "publicInstallUrl": null
       },
       "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
@@ -614,16 +673,16 @@
       "websiteUrl": "https://game-night-radar.vercel.app",
       "vercelProject": "game-night-radar",
       "buildCompletedOn": "2026-10-21",
-      "publicationStatus": "prepared_not_submitted",
-      "deviceInstallationStatus": "not_installed",
+      "publicationStatus": "private_draft_pre_review_requested",
+      "deviceInstallationStatus": "added_to_playlist",
       "physicalDeviceVerification": "Not verified; no browser/native UI used under expired five-minute authorization.",
       "testStatus": "17 automated checks passed: strict App ID/URL options; developer feed/app/time/URL validation; per-game single-flight cache; newest/window/filter order; partial, cold and dated fallback outages; oversized/malformed response rejection; 8 multibyte rows under4600bytes; per-Recipe history/reset/cached handling and entire transform including Saved State under4800bytes; no runtime context is returned; HTTP400/405/503; all four safe Liquid layouts; browser DOM source links/settings/palette/history and cold failure. Native visual OG/X and actual browser/mobile QA remain unverified.",
       "pollingUrl": "https://game-night-radar.vercel.app/api/radar?apps={{ apps | url_encode }}&days={{ days }}&count={{ result_count }}&kind={{ kind }}&format=trmnl",
       "pendingActions": [
-        "Create ONE separate Game Night Radar Recipe after explicitly renewed browser authorization; record ID immediately, never duplicate another app",
-        "Verify native OG color/B&W and X orientations/four views, save icon and marketplace previews",
-        "Install preserving all playlist entries, submit public Recipe under applicable license confirmation, record actual review status",
-        "Confirm physical device receipt separately; publish only verified public install link after approval"
+        "Read targeted follow-up trmy report when ready",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "defaults": {
         "apps": [
@@ -644,22 +703,38 @@
         "physicalReceipt": "unconfirmed"
       },
       "vercelProjectId": "prj_0p8YgRq32xJBG36l1yfF7ECav5NP",
-      "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_AHVXG7hMBZeEi4XTTBVnqXiivxi6",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "latestDeploymentId": "dpl_AQYVp31QJqv21D49VXEDWXr1W35F",
       "verificationTimestamp": "2026-10-21T16:39:51.248064+00:00",
       "productionEvidence": "artifacts/game-night-radar-production-2026-10-21.json",
       "productionVerification": "Production website200, source8rows3271bytes, device8rows981bytes, Valheim7dayupdates1post, Terraria7dayempty200, invalidhost400, public ZIP/app.js match source, releaseprepared with no invented RecipeID/install URL. Native visual/mobile/physical checks remain unverified.",
       "iconStatus": "original_svg_in_prepared_package",
       "featuredImageStatus": "not_generated_no_recipe_created",
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "0c2361d4105a2a4f8f1630eaff2caa077d7cb195ac96ba9935517d0634ea93b4"
+        "packageSha256": "0c2361d4105a2a4f8f1630eaff2caa077d7cb195ac96ba9935517d0634ea93b4",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "pluginId": 522310,
+      "recipeCreatedOn": "2026-10-28",
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "followup_checking",
+        "url": "https://trmnl.com/plugin_settings/522310/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/game-night-radar-review.txt",
+        "resolution": "Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.",
+        "followupRequestedOn": "2026-10-28"
       }
     },
     {
@@ -667,14 +742,14 @@
       "targetDate": "2026-10-22",
       "name": "Local Morning Brief",
       "slug": "local-morning-brief",
-      "status": "website_deployed_recipe_prepared",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "scope": "Bay Area city-center NWS forecast/active alerts, BART network advisories and official community notices. San Francisco example default; Oakland/Berkeley selectable. BART community RSS for all cities; SF Rec & Park RSS for SF. Not comprehensive journalism or route-specific transit.",
       "recipeRequired": true,
       "recipe": {
         "name": "Local Morning Brief",
-        "status": "prepared",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_review_findings_fixed",
+        "pluginId": 522315,
+        "settingsUrl": "https://trmnl.com/plugin_settings/522315/edit",
         "publicInstallUrl": null
       },
       "displayPolicy": "Color accents with readable black/white fallback required; see DISPLAY-DESIGN.md.",
@@ -683,10 +758,10 @@
       "vercelProjectId": "prj_xFOg0LzAYJYqY1KxuqZx4R3flxct",
       "websiteUrl": "https://local-morning-brief.vercel.app",
       "buildCompletedOn": "2026-10-22",
-      "latestDeploymentId": "dpl_Gh2FvwusWc7b5rr8eXo3GRJsnKAf",
-      "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "publicationStatus": "prepared_not_submitted",
-      "deviceInstallationStatus": "not_installed",
+      "latestDeploymentId": "dpl_F9RhSmexGhix81pyuSDjbnAijtZH",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "publicationStatus": "private_draft_pre_review_requested",
+      "deviceInstallationStatus": "added_to_playlist",
       "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Screen-control permission remains expired.",
       "testStatus": "13 Node22 checks pass: bounded config/SSRF, Pacific/DST dates, valid current forecast/F-C/unknown rain, alert expiry/test/cancel/future filtering, agency clock/wording, safe RSS/link/title/date/dedupe, cache concurrency, independent sources/partial/outage and dated fallback/hardexpiry, malformed/oversized reads, six multibyte device headlines under4700B, all four safe Liquid views/native palette, browser preferences/links/polling URL/Color-BW persistence. Native visual/physical receipt remain unverified.",
       "pollingUrl": "https://local-morning-brief.vercel.app/api/brief?city={{ city }}&units={{ units }}&days={{ days }}&count={{ result_count }}&format=trmnl",
@@ -729,20 +804,36 @@
       },
       "freshnessPolicy": "Warm single-flight: NWS mapping24h/forecast15m, NWSalerts/BART2m, RSS30m. Forecast outage fallback<=2h onlyifperiod/issuevalid; RSS<=6h withinwindow. Original checktime retained. Alerts/transit NEVER outage replay. Failures never become no-alert/no-delay. Not durable storage; device refresh independent.",
       "pendingActions": [
-        "After renewed browser authorization create ONE separate master and record ID immediately; save config/Shared/four layouts/icon and native OG color/BW/X orientations/marketplace QA",
-        "Install owner edition preserving every existing plugin/playlist entry; do not infer home city",
-        "Complete public submission under applicable final Community Plugin License confirmation after assets/QA, record real review status and approved install link",
-        "Confirm physical receipt separately"
+        "Read targeted follow-up trmy report when ready",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "ea1392b781950a3f7e7ea95744a0e8d0fc81cbaefdbfe3c3c1aabd0f7423766c"
+        "packageSha256": "ea1392b781950a3f7e7ea95744a0e8d0fc81cbaefdbfe3c3c1aabd0f7423766c",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "pluginId": 522315,
+      "recipeCreatedOn": "2026-10-28",
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "followup_checking",
+        "url": "https://trmnl.com/plugin_settings/522315/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/local-morning-brief-review.txt",
+        "resolution": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.",
+        "followupRequestedOn": "2026-10-28"
       }
     }
   ],
@@ -757,7 +848,7 @@
   ],
   "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
   "publicLicenseApproval": "Approved by Manuel for this Recipe public submission on 2026-10-13, originally named What Changed? and now renamed The Daily TRMNL.",
-  "browserFileAccess": "Chrome local uploads remain unavailable; TRMNL built-in free icon generator completed, so local upload permission is no longer required for this release.",
+  "browserFileAccess": "Manuel explicitly approved enabling Chrome extension file URL access October 28. Browser policy rejected chrome://extensions (HTTP/HTTPS only), so manual user action remains necessary; six prepared original SVG icon uploads are pending. Original three submissions retain their existing icons.",
   "creatorFund": {
     "source": "https://trmnl.com/blog/creator-fund-09-2026",
     "verifiedOn": "2026-10-13",
@@ -771,7 +862,7 @@
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
   },
-  "computerUsePreference": "Manuel authorized screen control for FIVE MINUTES October19 starting about22:25UTC; scoped TRMNL app/Recipe and Neon setup completed during that window, then screen control stopped. Do not treat this as ongoing permission; continue background-only work unless explicitly authorized again.",
+  "computerUsePreference": "On October28, Manuel explicitly authorized browser work in chat01a1811f-9f72-7ce0-9cfe-890378ec5db1 to finish these revisions and coordinate with Plan TRMNL Creator Fund ideas. This is scoped to the current work, not unrelated automated screen control. He also explicitly approved enabling extension file URL access, but the browser URL policy blocked opening chrome://extensions; that setting still requires manual user action.",
   "lastPublicReviewCheck": {
     "checkedAt": "2026-10-16T19:28:25.427026+00:00",
     "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
@@ -816,7 +907,7 @@
       "requestedOn": "2026-10-21",
       "explicitAdditionalBuild": true,
       "outsideScheduledSevenAppSeries": true,
-      "status": "shared_canvas_online_recipe_prepared",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "sourceDirectory": "apps/trmnl-draws",
       "websiteUrl": "https://trmnl-draws.vercel.app",
       "vercelProject": "trmnl-draws",
@@ -824,13 +915,13 @@
       "scope": "One shared800x480native-pixel canvas (384,000cells;337,920editable,46,080protectedQRpixels). One editable pixel per OG display pixel, larger panels/mashups scale same canvas. AI-generated photographic black cat,16colors and binary smartmono. Ten placements per verified TRMNL account/UTCday, unchanged daily QR/account ownership gating/atomic quota/conflict/idempotency rules.",
       "recipe": {
         "name": "TRMNL Draws",
-        "status": "prepared",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_review_findings_fixed",
+        "pluginId": 522317,
+        "settingsUrl": "https://trmnl.com/plugin_settings/522317/edit",
         "publicInstallUrl": null
       },
-      "deviceInstallationStatus": "not_installed",
-      "publicationStatus": "prepared_not_submitted",
+      "deviceInstallationStatus": "added_to_playlist",
+      "publicationStatus": "private_draft_pre_review_requested",
       "physicalDeviceVerification": "Unconfirmed; no browser/native UI used. Five-minute authorization remains expired.",
       "testStatus": "28checks pass: prior27 plus generated-photo artwork change preserving touched/repaint-to-original cells, quotas, history and immutable snapshots with one-time durable guard. No new native visual/physical/real-human verification.",
       "database": {
@@ -845,13 +936,15 @@
         "status": "production_redirect_chain_verified_live_consent_pending"
       },
       "pendingActions": [
-        "Verify a real human consent/callback and pixel batch; never fabricate a player",
-        "After renewed browser authorization create ONE separate Recipe, recordID, verify native OG color/BW and X/four layouts/QR, save icon/marketplace, install preserving all entries, then public submission under applicable license confirmation",
-        "Confirm physical receipt and approved install URL separately"
+        "Read targeted follow-up trmy report when ready",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL",
+        "Real human ownership/gameplay remains unverified; do not fabricate a player or consume quota as a test"
       ],
       "buildCompletedOn": "2026-10-21",
-      "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_HjUJZHwzda14J9YEMR7CwysLHzk7",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "latestDeploymentId": "dpl_6fomXbSMJ3B7pGwhq1aYxa6z35YA",
       "verificationTimestamp": "2026-10-23T01:20:26.282Z",
       "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
       "productionEvidence": "artifacts/trmnl-draws/photo-production-2026-10-22.json",
@@ -882,14 +975,30 @@
         "status": "production_verified"
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "590bba319d1b63c273164366e096ae20d0d01a761d067185b027358ee58c0134"
+        "packageSha256": "590bba319d1b63c273164366e096ae20d0d01a761d067185b027358ee58c0134",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "pluginId": 522317,
+      "recipeCreatedOn": "2026-10-28",
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "followup_checking",
+        "url": "https://trmnl.com/plugin_settings/522317/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/trmnl-draws-review.txt",
+        "resolution": "Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square.",
+        "followupRequestedOn": "2026-10-28"
       }
     },
     {
@@ -898,7 +1007,7 @@
       "requestedOn": "2026-10-24",
       "explicitAdditionalBuild": true,
       "outsideScheduledSevenAppSeries": true,
-      "status": "website_live_recipe_prepared",
+      "status": "recipe_private_draft_review_fixes_saved_native_verified",
       "sourceDirectory": "apps/one-more-room",
       "websiteUrl": "https://one-more-room-trmnl.vercel.app",
       "vercelProject": "one-more-room-trmnl",
@@ -920,27 +1029,27 @@
       },
       "recipe": {
         "name": "One More Room",
-        "status": "prepared",
-        "pluginId": null,
-        "settingsUrl": null,
+        "status": "private_draft_review_findings_fixed",
+        "pluginId": 522318,
+        "settingsUrl": "https://trmnl.com/plugin_settings/522318/edit",
         "publicInstallUrl": null
       },
-      "deviceInstallationStatus": "not_installed",
-      "publicationStatus": "prepared_not_submitted",
+      "deviceInstallationStatus": "added_to_playlist",
+      "publicationStatus": "private_draft_pre_review_requested",
       "physicalDeviceVerification": "Unconfirmed. Background headless Chromium QA only; no user screen/browser or TRMNL settings controlled. Existing limited October19 permission remains expired.",
       "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
-      "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_4MtHPXh37WynE8jULAJZgnXRL1Nv",
+      "websiteDeploymentStatus": "ready_and_production_verified",
+      "latestDeploymentId": "dpl_57RgKrw6j1VRajHVvpKuMbXfyaRd",
       "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
       "packageUrl": "https://one-more-room-trmnl.vercel.app/plugin.zip",
       "pendingActions": [
-        "When screen control is explicitly authorized again, create ONE separate One More Room Recipe and record its ID immediately",
-        "Save configuration/Serverless/Shared/four layouts/icon; verify native OG color/BW and X orientations, preserving all current playlist entries",
-        "Generate marketplace previews and complete separate Recipe submission under applicable human license approval",
-        "Record public approval/install URL and physical receipt separately"
+        "Read targeted follow-up trmy report when ready",
+        "Upload prepared original icon after user manually enables Chrome extension file URL access",
+        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "latestUpdateOn": "2026-10-25",
       "artworkAndAtlasUpdate": {
@@ -953,14 +1062,30 @@
         "device": "Updated image-dither native four-layout ZIP prepared only; existing Recipe/install/publication state unchanged."
       },
       "frameworkRevision": {
-        "updatedOn": "2026-10-27",
+        "updatedOn": "2026-10-28",
         "sourceStatus": "tested_and_packaged",
         "websiteStatus": "production_zip_and_release_metadata_hash_verified",
-        "recipeStatus": "prepared_not_saved_to_recipe",
-        "nativeQa": "pending_renewed_browser_permission",
+        "recipeStatus": "canonical_shared_and_four_layouts_saved_and_reload_compared",
+        "nativeQa": "16_default_owner_cases_verified_OG_color_BW_X_landscape_portrait",
         "physicalReceipt": "unconfirmed",
         "approved": false,
-        "packageSha256": "93841b7aaf1448b8db0d23cb3797a80219e54b5d550cc8aba632b2dc61c81574"
+        "packageSha256": "93841b7aaf1448b8db0d23cb3797a80219e54b5d550cc8aba632b2dc61c81574",
+        "nativeQaEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+        "automatedReviewFixes": "Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.",
+        "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+        "marketplacePreviews": "OG_and_X_assets_generated_and_verified"
+      },
+      "pluginId": 522318,
+      "recipeCreatedOn": "2026-10-28",
+      "trmyReview": {
+        "requestedOn": "2026-10-28",
+        "status": "followup_checking",
+        "url": "https://trmnl.com/plugin_settings/522318/recipe_review",
+        "submittedForPublicHumanReview": false,
+        "firstReportRead": true,
+        "firstReport": "artifacts/framework-native-2026-10-28/one-more-room-review.txt",
+        "resolution": "Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.",
+        "followupRequestedOn": "2026-10-28"
       }
     }
   ],
@@ -1064,13 +1189,17 @@
     }
   },
   "frameworkReviewRevision": {
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "feedbackThread": "https://app.hey.com/topics/2156910252",
     "feedbackTicket": "145500957",
-    "scope": "all nine community apps audited; eight have layout updates, Draws retains required full-bleed canvas geometry and receives corrected 800x480/photo metadata",
-    "tests": 235,
-    "testsNote": "221 app checks plus 14 cross-app palette/content/overflow checks; not native rendered-fit verification",
-    "productionEvidence": "artifacts/framework-revision-2026-10-27-production.json",
-    "remaining": "Renew browser authorization, compare/save existing masters, native OG/X QA, marketplace images, create four missing masters and finish draft submissions under applicable final license confirmation; contact Mario only after verified native save/QA and explicit communication authorization. No new review email sent."
-  }
+    "scope": "All nine community apps revised, saved/reloaded and native-default verified. Six automated reports/images read and findings fixed; Draws now preserves a proportional 5:3 canvas by explicit owner choice.",
+    "tests": 236,
+    "testsNote": "222 app checks plus 14 cross-app checks passed under Node 22.23.1; native 144-case evidence is separate.",
+    "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
+    "remaining": "Daily/YC re-review replies sent and verified. Six automated reports read with images and findings fixed. Four targeted follow-up checks requested. Six icons require manual extension setting; six final public submissions require action-time license confirmation. No human approval or physical receipt is claimed.",
+    "nativeEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
+    "nativeCases": 144,
+    "nativeStatus": "all_nine_existing_masters_saved_and_native_default_views_verified"
+  },
+  "previousComputerUsePreference": "Manuel authorized screen control for FIVE MINUTES October19 starting about22:25UTC; scoped TRMNL app/Recipe and Neon setup completed during that window, then screen control stopped. Do not treat this as ongoing permission; continue background-only work unless explicitly authorized again."
 }

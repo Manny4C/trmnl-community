@@ -4,7 +4,7 @@
 <div class="layout layout--col gap--small sm--{{ mode }}">
 <span class="title title--small lg:title--base text--red 1bit:text--black 2bit:text--black 4bit:text--black" data-clamp="1">YOUR LAUNCH RADAR</span>
 <span class="label label--small lg:label--base w--full" data-clamp="2">{{ name | default: "Your company" | escape }} · {{ window_days }} days · {% if order == "latest" %}Newest first{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span>
-{% if links_code and links_qr_url %}<div class="flex flex--row gap--small flex--left w--full"><img class="w--[82px] h--[82px] shrink-0" src="{{ links_qr_url | escape }}" alt="Open launch links"><span class="label label--small" data-clamp="2">Links: {{ links_code | escape }} · Shared wording ≠ direct competitor</span></div>{% endif %}
+{% if links_code and links_qr_url %}<div class="flex flex--row gap--small flex--left w--full"><img class="{% if mode == 'half_horizontal' or mode == 'quadrant' %}hidden{% endif %} w--[82px] h--[82px] shrink-0" src="{{ links_qr_url | escape }}" alt="Open launch links"><span class="label label--small" data-clamp="2">Links: {{ links_code | escape }}{% unless mode == 'half_horizontal' or mode == 'quadrant' %} · Shared wording ≠ direct competitor{% endunless %}</span></div>{% endif %}
 {% if matches.size > 0 %}
 <div class="columns stretch w--full" data-overflow-max-cols="{{ max_cols }}" data-overflow-max-cols-lg="2" data-overflow-max-cols-portrait="1" data-overflow-max-cols-lg-portrait="{{ portrait_cols }}" data-overflow-counter="true">
 <div class="column">

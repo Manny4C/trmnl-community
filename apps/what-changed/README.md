@@ -1,5 +1,8 @@
 # The Daily TRMNL
 
+Latest Recipe status — October 28, 2026: master **505118** is saved and native-checked; re-review was requested by email on the existing ticket October 28. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 Prompt-based personalized news with ten include/exclude preset interests, custom interests and names, original-source headlines and excerpts, and per-prompt edition memory.
 
 Production: https://the-daily-trmnl.vercel.app. Existing Recipe master 505118 remains submitted for public review. Do not create a duplicate. Deploy from this directory to personal Vercel project `what-changed` in `manny4c-personal`.

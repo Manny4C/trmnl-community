@@ -1,8 +1,16 @@
 {
-  "recipe_status": "prepared",
-  "recipe_id": null,
+  "recipe_status": "draft_installed",
+  "recipe_id": 522317,
   "recipe_url": null,
   "ownership_status": "shared_trmnl_broker_implemented_live_owner_consent_unverified",
-  "framework_revision_on": "2026-10-27",
-  "framework_revision_status": "source_prepared_native_verification_pending"
+  "framework_revision_on": "2026-10-28",
+  "framework_revision_status": "saved_and_native_default_layouts_verified",
+  "physical_receipt": false,
+  "installed": true,
+  "submitted": false,
+  "approved": false,
+  "trmy_review_status": "followup_checking",
+  "icon_status": "prepared_upload_pending",
+  "trmy_findings_addressed_on": "2026-10-28",
+  "trmy_resolution": "Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square."
 }

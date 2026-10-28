@@ -1,5 +1,8 @@
 # YC Scout
 
+Latest Recipe status — October 28, 2026: master **506494** is saved and native-checked; re-review was requested by email on the existing ticket October 28. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 Production: https://yc-launch-scout.vercel.app
 
 Independent community launch radar for a TRMNL e-ink display, with a responsive live website and four Recipe layouts. No keys, accounts here, paid services or AI model required.

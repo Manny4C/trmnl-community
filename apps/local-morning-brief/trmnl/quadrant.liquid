@@ -1,8 +1,8 @@
 <div class="layout layout--col gap--xsmall flex--top">
-{% render 'heading',city:city,date:date %}
-{% render 'weather',forecast:forecast %}
+{% render 'heading',city:city,date:date,compact:true %}
+{% render 'weather',forecast:forecast,compact:true %}
 {% render 'alert_line',alert_status:alert_status,alert_count:alert_count,alerts:alerts %}
-{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:1,lines:1 %}
-{% render 'update_rows',items:items,max_cols:1 %}
+{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:1,lines:1,compact:true %}
+{% render 'update_rows',items:items,max_cols:1,max_cols_lg:1,lines:1 %}
 {% render 'status_line',sources:sources,partial:partial %}
 </div>{% render 'title_bar',checked_at:checked_at %}

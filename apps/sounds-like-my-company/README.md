@@ -1,5 +1,8 @@
 # Sounds Like My Company
 
+Latest Recipe status — October 28, 2026: master **507810** is saved and native-checked, still awaiting human review. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 A configurable, sourced product launch radar for TRMNL and a responsive public website. Describe a public product and customer group, optionally require or exclude words, choose Launch HN / Show HN and a 30/90/365-day window, then show 3/6/8 related announcements with evidence.
 
 Production: https://sounds-like-my-company.vercel.app

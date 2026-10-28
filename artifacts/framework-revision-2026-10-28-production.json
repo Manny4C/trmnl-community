@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-28",
+  "deployments": [
+    {
+      "app": "what-changed",
+      "url": "https://the-daily-trmnl.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 6031,
+        "sha256": "0eb2cf384f346bb33a0caa5c78ea445e6ead76d114f398f24c4efdb0b0564c12",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 534,
+        "sha256": "963a9958f52c64111a867a56ab156e6581ffbd8c7a6124c6dfa2501096719c01",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_A7WVQQKSkZzk6ikJtiotehErnZHw",
+      "deployment_ready": true
+    },
+    {
+      "app": "yc-scout",
+      "url": "https://yc-launch-scout.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 4412,
+        "sha256": "c6e22797437d9643c49a64ca0f6dce74d43cde996f069008dfb38c59a1d23ac6",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 594,
+        "sha256": "efdd97a36213467370fb522e081b76eaf12d699c8c0149c1fb7d227429f31406",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_9RoMfsokJqRJbTQSEpjCzCdNwakq",
+      "deployment_ready": true
+    },
+    {
+      "app": "sounds-like-my-company",
+      "url": "https://sounds-like-my-company.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 6100,
+        "sha256": "d349b2530842ae151e67cc9bf47f0c813d07635474ec32b25ab8eeaa0f1f8b24",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 226,
+        "sha256": "5e0358e8a851ca1ca353f94a0ccedb73729a4935b916e076786cd3bc77d7c783",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_DpPraXhGHfuLVZU19LLijsFCNHYu",
+      "deployment_ready": true
+    },
+    {
+      "app": "desk-editor",
+      "url": "https://newsflash-trmnl.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 7504,
+        "sha256": "7671465f6f2605367d88d9ef2cd608e4d4444dded00e61be27d06a5cc475a882",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 676,
+        "sha256": "756a95fad3d345012dcfb43366150b0f89c10eb2f6e333c4b3cba62468028343",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_EitBy7uG436Y3DsArrvXpvHP7nEo",
+      "deployment_ready": true
+    },
+    {
+      "app": "tiny-planet",
+      "url": "https://tiny-planet-trmnl.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 5820,
+        "sha256": "b9a5df04e0c1cca3f20195627b1cda7465ca57a955cf4ff85d93b595d759d3aa",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 836,
+        "sha256": "cc99a752d1b6e53f9cc01884eb14a7db71b06ab68c1df8ce7f0059dcecd6ad14",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_mLfGHuEaENiSEGZURUWzMuzuB8Vy",
+      "deployment_ready": true
+    },
+    {
+      "app": "game-night-radar",
+      "url": "https://game-night-radar.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 6999,
+        "sha256": "c5e67ae64505f6a789e4e2e8164824d8de436411a81363f44401b1929f63e75c",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 579,
+        "sha256": "b72d40b8e867ec130eeee017856c091596367b93bc098986f33f566b429c0207",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_AQYVp31QJqv21D49VXEDWXr1W35F",
+      "deployment_ready": true
+    },
+    {
+      "app": "local-morning-brief",
+      "url": "https://local-morning-brief.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 6018,
+        "sha256": "1fa5c56e09e721b318005e3dac2b2854bd9d4b83220bbabfad6e885895bf0ba8",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 642,
+        "sha256": "e662d01e487af623671133574098bd768155c39fe41917c9807fb548d90d19b0",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_F9RhSmexGhix81pyuSDjbnAijtZH",
+      "deployment_ready": true
+    },
+    {
+      "app": "one-more-room",
+      "url": "https://one-more-room-trmnl.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 15823,
+        "sha256": "e1d302942b6cc5b6835612ac6bd4a56a1e771b3f926607ecf87f2b030091df9c",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 874,
+        "sha256": "ee371f1045f73ab7e6eb3737dcc7f95dd6ca00b85e6c44122b2acacf0b634b0b",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_57RgKrw6j1VRajHVvpKuMbXfyaRd",
+      "deployment_ready": true
+    },
+    {
+      "app": "trmnl-draws",
+      "url": "https://trmnl-draws.vercel.app",
+      "plugin.zip": {
+        "status": 200,
+        "bytes": 5257,
+        "sha256": "0922ba1bd772694d3bc33f92d8f945eaa19139d96d29f22dddead5f3fb1aa584",
+        "matches_source": true
+      },
+      "release.json": {
+        "status": 200,
+        "bytes": 763,
+        "sha256": "f8bb2e4bf1ba44f320e0f18c8be794d6e31b31dca35ff85f0c25dd699cda17cb",
+        "matches_source": true
+      },
+      "page_status": 200,
+      "deployment_id": "dpl_6fomXbSMJ3B7pGwhq1aYxa6z35YA",
+      "deployment_ready": true
+    }
+  ],
+  "native_qa": "144 default-owner cases verified; six reports read and fixes saved; four targeted follow-up reviews checking",
+  "approval": "not confirmed",
+  "physical_receipt": "unconfirmed"
+}

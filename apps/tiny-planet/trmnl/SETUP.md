@@ -1,3 +1,5 @@
+Current owner status, October 28, 2026: existing master 512639 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; native verification passed. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+
 # TRMNL Plays: Tiny Planet
 
 Owner release state, October 19: the Neon Free database is initialized and the shared world is online. Public TRMNL PKCE app 262 is registered; the sign-in redirect works, while actual owner consent/callback and a player move remain unverified. The first protected production owner-autopilot move succeeded, and a same-day replay kept the world at turn 1. Hosted daily and hourly checks are enabled, including weekends; automatic scheduled execution is verified with one daily Owner autopilot move on October 19, 20 and 21.
@@ -15,3 +17,5 @@ Red/yellow accents use native utilities, with explicit 1bit/2bit/4bit black/whit
 Rules: plant a meadow for 1 seed, water a sapling for 1 water (+2 seeds/+1 wood), gather from water/grove/rock. A beacon on a meadow costs 6 wood+4 stone. Reach 8 groves and sail from a beacon to the next island. Clearing a sapling/grove/beacon makes room. A beacon returns 2 wood + 1 stone. Each verified account gets one accepted move per UTC day across all devices. Everyone can view. Owner autopilot is a separate, visibly labeled daily system actor; daily and hourly cloud checks include weekends and use atomic idempotency. Outages can delay jobs; catch-up entries show their original quota day and actual execution time.
 
 Support/source: https://github.com/Manny4C/trmnl-community/tree/main/apps/tiny-planet
+
+October 28 automated review resolution: Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.

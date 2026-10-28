@@ -5,7 +5,7 @@
 {% template quest_content %}
 <div class="layout layout--col gap--small">
 <div class="flex flex--row flex--between w--full gap--small"><span class="title title--small lg:title--base text--red 1bit:text--black 2bit:text--black 4bit:text--black">ONE MORE ROOM</span><span class="label label--small" data-clamp="1">TURN {{ turn }} · {{ status | escape }}</span></div>
-<div class="flex flex--row portrait:flex--col stretch w--full gap--small">
+<div class="flex {% if mode == 'half_vertical' %}flex--col{% else %}flex--row portrait:flex--col{% endif %} stretch w--full gap--small">
 <section class="flex flex--col flex--left stretch w--full gap--xsmall">
 <span class="label label--small" data-clamp="1">{{ map_context | escape }} · {{ map_title | escape }}</span>
 <div class="q-atlas stretch w--full"><img class="q-map-art image-dither" src="https://one-more-room-trmnl.vercel.app/art/{% if map_mode == 'world' %}atlas{% else %}dungeon-atlas{% endif %}-v2.jpg" alt="Original fantasy atlas"><svg class="q-map" viewBox="{{ map_box | escape }}" aria-label="{{ map_context | escape }}"><path class="q-map-roads" d="{{ map_roads | escape }}"/><path class="q-map-trail" d="{{ map_trail | escape }}"/>{% for point in map_points %}<g class="q-waypoint c{{ point[2] }}" transform="translate({{ point[0] }} {{ point[1] }})">{% if map_mode == 'world' %}<circle class="q-world-node" r="5"/>{% else %}<rect class="q-room-node" x="-11" y="-8" width="22" height="16" rx="2"/>{% endif %}<text class="q-node-glyph" y="3">{% if point[2] == 3 %}◆{% else %}{{ point[4] | escape }}{% endif %}</text>{% if point[3] != '' %}<text class="q-map-label" y="20">{{ point[3] | escape }}</text>{% endif %}</g>{% endfor %}</svg></div>
@@ -19,8 +19,8 @@
 <div class="q-art {% if mode == 'full' %}stretch{% else %}hidden{% endif %} w--full"><img class="q-scene-image image-dither" src="https://one-more-room-trmnl.vercel.app/art/{{ art_key }}-v2.jpg" alt="Illustrated {{ kind | escape }} encounter"></div>
 <span class="title title--small lg:title--base" data-clamp="2">{{ title | escape }}</span>
 <span class="description" data-clamp="{% if mode == 'full' %}4{% else %}2{% endif %}" data-clamp-lg="6">{{ text | escape }}</span>
-<span class="{% unless mode == 'full' %}hidden{% endunless %} label label--small" data-clamp="1">{{ roll | escape }}</span>
-<div class="flex flex--col w--full gap--xsmall" data-overflow="true" data-overflow-counter="true">{% for choice in choices %}{% if mode == 'full' or choice.auto %}<div class="item {% if choice.auto %}q-auto bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black{% endif %}"><div class="content"><span class="description" data-clamp="2">{% if choice.auto %}AUTO → {% endif %}{{ choice.label | escape }}</span></div></div>{% endif %}{% endfor %}</div>
+<span class="{% unless mode == 'full' %}hidden lg:visible{% endunless %} label label--small" data-clamp="1">{{ roll | escape }}</span>
+{% assign automatic_choices = choices | where: 'auto', true %}{% assign other_choices = choices | where: 'auto', false %}{% assign next_choices = automatic_choices | concat: other_choices %}<div class="flex flex--col {% unless mode == 'full' %}stretch{% endunless %} w--full gap--xsmall" data-overflow="true" data-overflow-counter="true">{% for choice in next_choices %}<div class="item {% unless mode == 'full' or choice.auto %}hidden lg:visible{% endunless %} {% if choice.auto %}q-auto bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black{% endif %}"><div class="content"><span class="description" data-clamp="2">{% if choice.auto %}AUTO → {% endif %}{{ choice.label | escape }}</span></div></div>{% endfor %}</div>
 </section></div></div>
-<div class="title_bar"><span class="title">One More Room</span><span class="instance">Floor {{ floor }} · {{ gold }} gold · {{ supplies }} supplies · {{ relics }} embers</span></div>
+<div class="title_bar"><span class="title">One More Room</span><span class="instance" data-clamp="1">Floor {{ floor }} · {{ gold }} gold · {{ supplies }} supplies · {{ relics }} embers</span></div>
 {% endtemplate %}

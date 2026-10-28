@@ -1,3 +1,5 @@
+Current owner status, October 28, 2026: existing master 522310 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+
 # Game Night Radar — prepared separate Recipe
 
 October 21, 2026: website, public data service and this package prepared. No Game Night Radar Recipe has been created, installed, submitted or approved. Browser-dependent native visual QA, marketplace images and owner installation remain deferred under Manuel's no-screen-control preference. Do not claim physical receipt. Never duplicate the other five existing Recipe masters.
@@ -22,3 +24,5 @@ Before actual publication: create ONE separate master, record its ID immediately
 
 Website: https://game-night-radar.vercel.app
 Source/support: https://github.com/Manny4C/trmnl-community/tree/main/apps/game-night-radar
+
+October 28 automated review resolution: Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.

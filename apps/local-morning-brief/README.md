@@ -1,5 +1,8 @@
 # Local Morning Brief
 
+Latest Recipe status — October 28, 2026: master **522315** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; follow-up pre-review is checking and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 Day7, built October22in Manuel's PERSONAL launch series. Separate website/plugin service for a Bay Area morning briefing: city-center NWS forecast/active alerts, BART network advisories and official community notices. San Francisco is an explicitly labeled example default, not an inferred home. Oakland/Berkeley have their own weather points. Community coverage is BART for all cities and SF Rec & Park RSS for SF; it does not claim comprehensive journalism or route-specific transit. No private location/login/API key/paid model/service.
 
 ## Local development

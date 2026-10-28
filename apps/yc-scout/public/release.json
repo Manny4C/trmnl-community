@@ -3,9 +3,13 @@
   "recipe_status": "changes_requested",
   "recipe_url": null,
   "support_url": "https://github.com/Manny4C/trmnl-community/issues",
-  "review_status": "Waiting on you: Framework rewrite requested",
-  "revision_status": "source_ready_recipe_save_requires_verification",
+  "review_status": "Revisions saved and tested; re-review requested October 28, 2026",
+  "revision_status": "saved_native_verified_rereview_requested",
   "review_feedback_on": "2026-10-27",
-  "framework_revision_on": "2026-10-27",
-  "framework_revision_status": "native_save_started_verification_pending"
+  "framework_revision_on": "2026-10-28",
+  "framework_revision_status": "saved_and_native_default_layouts_verified",
+  "recipe_id": 506494,
+  "physical_receipt": false,
+  "rereview_requested_on": "2026-10-28",
+  "rereview_message_id": 2306937217
 }

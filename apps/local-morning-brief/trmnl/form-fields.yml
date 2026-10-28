@@ -1,7 +1,7 @@
 - keyname: author
   field_type: author_bio
   name: About Local Morning Brief
-  category: news,weather
+  category: news
   description: Bay Area morning briefing with city-center NWS forecasts and alerts, BART network advisories, official BART community news and SF Rec & Park updates for San Francisco. Supported cities are San Francisco (example default), Oakland and Berkeley. This is agency information, not comprehensive local reporting, route-specific transit or a live alert service. No private address, account, API key, paid model or new paid service. Source links, coverage, privacy and data terms are on the website. Independent project; no agency or TRMNL endorsement.
   github_url: https://github.com/Manny4C/trmnl-community
   learn_more_url: https://local-morning-brief.vercel.app

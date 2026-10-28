@@ -1,0 +1,1220 @@
+{
+  "date": "2026-10-28",
+  "defaultOwnerCases": 144,
+  "cases": [
+    {
+      "app": "what-changed",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "what-changed",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "yc-scout",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": 0
+    },
+    {
+      "app": "sounds-like-my-company",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": 0
+    },
+    {
+      "app": "desk-editor",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "desk-editor",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "tiny-planet",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "game-night-radar",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "local-morning-brief",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "full",
+      "device": "OG color",
+      "width": 800,
+      "height": 480,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 800,
+      "height": 480,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1040,
+      "height": 780,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 780,
+      "height": 1040,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "trmnl-draws",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "full",
+      "device": "OG color",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_horizontal",
+      "device": "OG color",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_vertical",
+      "device": "OG color",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "quadrant",
+      "device": "OG color",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "full",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_horizontal",
+      "device": "OG B/W",
+      "width": 780,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_vertical",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 460,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "quadrant",
+      "device": "OG B/W",
+      "width": 385,
+      "height": 225,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "full",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_horizontal",
+      "device": "X landscape",
+      "width": 1020,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_vertical",
+      "device": "X landscape",
+      "width": 505,
+      "height": 760,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "quadrant",
+      "device": "X landscape",
+      "width": 505,
+      "height": 375,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "full",
+      "device": "X portrait",
+      "width": 760,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_horizontal",
+      "device": "X portrait",
+      "width": 760,
+      "height": 505,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "half_vertical",
+      "device": "X portrait",
+      "width": 375,
+      "height": 1020,
+      "clippedContent": []
+    },
+    {
+      "app": "one-more-room",
+      "layout": "quadrant",
+      "device": "X portrait",
+      "width": 375,
+      "height": 505,
+      "clippedContent": []
+    }
+  ],
+  "limitations": [
+    "Default owner views; first trmy reports expanded select options. Four follow-up reports are checking.",
+    "Native fitting and live data can change displayed item counts.",
+    "No physical receipt, human approval or real-player consent/gameplay verified."
+  ],
+  "testsPassed": 236,
+  "marketplacePreviews": [
+    {
+      "slug": "what-changed",
+      "id": 505118,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "yc-scout",
+      "id": 506494,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "sounds-like-my-company",
+      "id": 507810,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "tiny-planet",
+      "id": 512639,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "desk-editor",
+      "id": 512643,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "local-morning-brief",
+      "id": 522315,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "game-night-radar",
+      "id": 522310,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "one-more-room",
+      "id": 522318,
+      "generatedLinks": 2,
+      "pending": false
+    },
+    {
+      "slug": "trmnl-draws",
+      "id": 522317,
+      "generatedLinks": 2,
+      "pending": false
+    }
+  ]
+}

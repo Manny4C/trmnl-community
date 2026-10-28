@@ -1,3 +1,5 @@
+Current owner status, October 28, 2026: existing master 512643 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; native verification passed. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+
 # Newsflash — separate Recipe setup
 
 This completely replaces the earlier Desk Editor concept in the same Day 4 app and personal Vercel project. Existing owner Newsflash Recipe **512643** is created and added to Manuel’s playlist: https://trmnl.com/plugin_settings/512643/edit. Its configuration, Shared and all four layouts are saved, and the native data Test request returned HTTP 200 with a real AI-selected MLB headline and source thumbnail. The actual image/layout render has not been visually verified. Icon upload, marketplace images, native OG/X checks and public submission remain pending. It is a private draft, not submitted or approved; physical receipt is unconfirmed. Continue this Recipe and never create a duplicate Desk Editor or Newsflash master.
@@ -37,3 +39,5 @@ The cloud runner reserves budget, then posts the source candidates and exact res
 
 COLOR AND BLACK & WHITE
 Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.
+
+October 28 automated review resolution: Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility.

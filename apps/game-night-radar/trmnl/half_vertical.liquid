@@ -1,7 +1,7 @@
 <div class="layout layout--col gap--small lg:gap--medium flex--top">
 {% render 'radar_header',days:days %}
 <span class="label label--small lg:label--base w--full" data-clamp="1">{% for game in games %}{{ game[1] | escape }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
-{% render 'radar_rows', items:items, max_cols:1, lines:2 %}
+{% render 'radar_rows', items:items, max_cols:1, lines:2, title_size:'title--small lg:title--large', label_size:'label--small lg:label--large' %}
 {% render 'radar_status',stale:stale,partial:partial,status:status,source_checked_at:source_checked_at %}
 
 </div>{% render 'title_bar',checked_at:checked_at %}

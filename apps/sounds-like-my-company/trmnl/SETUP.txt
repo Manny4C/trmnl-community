@@ -1,3 +1,5 @@
+Current owner status, October 28, 2026: master 507810 has canonical Shared/all four layouts saved and compared after reload. All sixteen default-owner OG color/B&W and X landscape/portrait cases passed. Physical receipt remains unconfirmed. The ECHO code is now saved in every layout; full and half-vertical display the undithered 82px QR, while compact layouts retain the code and hide the QR to fit matches. Human review is still pending.
+
 Sounds Like My Company — private plugin setup
 
 1. Create a Private Plugin at https://trmnl.com/plugin_settings/new?keyname=private_plugin

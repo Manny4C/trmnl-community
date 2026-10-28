@@ -132,3 +132,25 @@ TRMNL reviewer Mario requested native items/automatic overflow and responsive OG
 All 235 automated checks pass. The nine downloadable packages and release metadata are deployed on personal Vercel and independently hash-verified against source. This verifies publication of source packages, not native layout fit, approval or physical receipt. Existing Daily/YC/Sounds review status and Newsflash/Tiny draft status remain separate from these package updates. Native saving started on YC 506494, then stopped when the previous screen-control restriction was discovered; a complete source-to-dashboard comparison is necessary, especially because another chat was editing its local templates at the same time. All other revised markup remains prepared for native saving. No new reviewer email was sent.
 
 Continue from `launch-plan.json`, preserving the five existing masters and playlist entries. Native OG color/B&W and X landscape/portrait/four-layout checks, refreshed marketplace previews, missing-master creation and final draft submissions remain pending renewed browser permission. New binding license acceptance remains a separate final action. Rebuild canonical ZIPs with `python3 scripts/package-recipes.py`; `apps/one-more-room/trmnl/shared.liquid` is now canonical and its package script no longer replaces native markup with browser CSS.
+
+## Native Recipe setup completed, October 28
+
+All nine community Recipe masters are now created, added to the owner playlist, and saved with canonical Shared/four layouts compared after reload. Default owner data was checked in144native cases: OG color/B&W plus X landscape/portrait across four views per app, with no clipped content. This is native preview verification; physical receipt remains unconfirmed.
+
+| Recipe | Master | Current publication phase |
+| --- | --- | --- |
+| The Daily TRMNL |505118| Framework revisions saved; re-review reply sent October 28 |
+| YC Scout |506494| Framework revisions saved; re-review reply sent October 28 |
+| Sounds Like My Company |507810| Native revision/code/QR saved; awaiting human review |
+| Newsflash |512643| Private draft; review findings fixed and native-verified |
+| Tiny Planet |512639| Private draft; review findings fixed and native-verified |
+| Game Night Radar |522310| Private draft; review fixes saved; follow-up trmy checking |
+| Local Morning Brief |522315| Private draft; review fixes saved; follow-up trmy checking |
+| TRMNL Draws |522317| Private draft; review fixes saved; follow-up trmy checking |
+| One More Room |522318| Private draft; review fixes saved; follow-up trmy checking |
+
+Native checks found and fixed the compact Sounds QR taking over the results area, Newsflash image letterboxing, narrow portrait column selection, compact Local weather sizing, the unsupported Local weather category, and numeric normalization of Game Night Radar defaults. The game default now uses Steam store URLs. One More Room's native content uses bounded overflow and prioritizes its automatic action. Author/support metadata is saved on Tiny Planet. Marketplace previews were regenerated.
+
+The six drafts still need their prepared original icons uploaded, final Community Plugin License acceptance, and public human submission. Manuel authorized the extension file-URL setting, but tool policy blocked opening Chrome's internal extensions page; the actual switch still needs manual action. No new reviewer email, public approval, physical receipt or real human game action is claimed. Existing state, services, credentials and playlist entries are preserved. Authoritative status and queued review URLs are in launch-plan.json.
+
+October 28 review follow-through: all six automated reports and their screenshots were read. Their layout/density/local-time findings are fixed and saved in the existing masters. Tiny Planet and Newsflash passed native verification after their fixes; four targeted follow-up checks are queued for the other drafts. Manuel chose proportional 5:3 drawing with margins rather than stretching; native dithering now handles the source at the final screen size. Re-review replies for Daily and YC Scout were explicitly approved, sent to Mario, and verified in HEY. Six draft icons and final license/publication steps remain pending; no approval or physical receipt is claimed.

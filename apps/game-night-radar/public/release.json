@@ -1,7 +1,15 @@
 {
-  "recipe_status": "prepared",
+  "recipe_status": "draft_installed",
   "recipe_url": null,
-  "recipe_id": null,
-  "framework_revision_on": "2026-10-27",
-  "framework_revision_status": "source_prepared_native_verification_pending"
+  "recipe_id": 522310,
+  "framework_revision_on": "2026-10-28",
+  "framework_revision_status": "saved_and_native_default_layouts_verified",
+  "physical_receipt": false,
+  "installed": true,
+  "submitted": false,
+  "approved": false,
+  "trmy_review_status": "followup_checking",
+  "icon_status": "prepared_upload_pending",
+  "trmy_findings_addressed_on": "2026-10-28",
+  "trmy_resolution": "Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts."
 }

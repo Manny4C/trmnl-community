@@ -9,7 +9,7 @@
   field_type: string
   name: Steam games (1–6 App IDs)
   description: Comma-separated Steam App IDs, or Steam store app URLs. Find the ID in store.steampowered.com/app/ID/. Quick picks are 548430 Deep Rock Galactic, 892970 Valheim and 105600 Terraria. Other IDs show as Steam app ID. Public information only.
-  default: 548430,892970,105600
+  default: 'https://store.steampowered.com/app/548430/,https://store.steampowered.com/app/892970/,https://store.steampowered.com/app/105600/'
   maxlength: 1000
 - keyname: days
   field_type: select

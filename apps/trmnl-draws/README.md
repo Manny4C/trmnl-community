@@ -1,5 +1,8 @@
 # TRMNL Draws
 
+Latest Recipe status — October 28, 2026: master **522317** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; follow-up pre-review is checking and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 Explicit additional game requested by Manuel after Game Night Radar; this does not replace Tiny Planet or consume Local Morning Brief's next weekday slot. One shared800×480 native-pixel canvas initialized once with an original black cat. Ten pixel placements per verified TRMNL account per UTC day. Public viewer/editor website, full-screen art, daily four-character QR doorway,16-color palette and smart mono rendering.
 
 No paid model or new paid service. Reuses existing PERSONAL Neon database and Tiny Planet OAuth app262. Credentials remain private runtime configuration; nothing goes into code/chat/logs. Each game keeps its own Sensitive credential-encryption key. A one-time server-to-server proof exchange transfers the verified session privately; no key is exported. Public browser access never receives upstream tokens. Tiny Planet's gameplay/quota/playlist remain independent.

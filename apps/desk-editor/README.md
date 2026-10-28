@@ -1,5 +1,8 @@
 # Newsflash
 
+Latest Recipe status — October 28, 2026: master **512643** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; native verification passed and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+
+
 Your world, in a flash. A complete replacement of Day 4’s Desk Editor: an image-first AI news screen with interests, one important headline, existing source imagery/video previews, dates, links and a grounded selection reason.
 
 Production target: https://newsflash-trmnl.vercel.app. Same personal Vercel project desk-editor, source folder apps/desk-editor. Legacy URLs and /api/editor remain compatible aliases; old Desk Editor query fields are ignored, the image-led Newsflash response replaces the old card contract. No deployed TRMNL Recipe depends on that old contract.

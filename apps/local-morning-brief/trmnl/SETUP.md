@@ -1,3 +1,5 @@
+Current owner status, October 28, 2026: existing master 522315 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+
 # Local Morning Brief — separate prepared Recipe
 
 Create ONE separate Polling plugin named Local Morning Brief, framework3.4.3 or later. No auth headers, API key, request body or Serverless transform. Copy the form fields and Shared/four layouts, then save the original icon. A30minute refresh is suggested.
@@ -13,10 +15,12 @@ Sources are independent; errors never become a healthy no-alert condition. Tempo
 
 Compact device response is bounded4700bytes. News is a tuple of title/source/date/date-label; article URLs live in the corresponding website edition. No SavedState, secret, account data or request context is returned.
 
-Recipe is PREPARED ONLY. Native OG color/B&W, X landscape/portrait and all four visual checks, icon/marketplace save, owner playlist installation and public submission await renewed browser authorization under Manuel's no-screen-control instruction. Record the new master ID immediately, preserve every existing playlist entry and seek applicable final Community Plugin License confirmation only once native assets/QA are ready. Never equate this ZIP or Vercel deployment with submission, approval or physical receipt. Public install URL stays null until approved.
+Earlier prepared-only status is superseded by the October 28 owner status above. Native OG color/B&W, X landscape/portrait and all four visual checks, icon/marketplace save, owner playlist installation and public submission await renewed browser authorization under Manuel's no-screen-control instruction. Record the new master ID immediately, preserve every existing playlist entry and seek applicable final Community Plugin License confirmation only once native assets/QA are ready. Never equate this ZIP or Vercel deployment with submission, approval or physical receipt. Public install URL stays null until approved.
 
 Source/support: https://github.com/Manny4C/trmnl-community/tree/main/apps/local-morning-brief
 Website: https://local-morning-brief.vercel.app
 Data terms: https://www.bart.gov/schedules/developers/developer-license-agreement
 NWS: https://www.weather.gov/documentation/services-web-API
 Agency RSS: https://www.bart.gov/news/rss and https://recpark.sf.gov/rss.aspx
+
+October 28 automated review resolution: Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.

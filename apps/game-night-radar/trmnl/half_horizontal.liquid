@@ -1,7 +1,7 @@
 <div class="layout layout--col gap--xsmall lg:gap--small flex--top">
 {% render 'radar_header',days:days %}
 
-{% render 'radar_rows',items:items,row_limit:4,lines:1,text_size:'text--base lg:text--large',list_gap:'gap--none',row_padding:'pt--0 lg:pt--1' %}
+{% render 'radar_rows', items:items, max_cols:2, lines:2 %}
 {% render 'radar_status',stale:stale,partial:partial,status:status,source_checked_at:source_checked_at %}
 
 </div>{% render 'title_bar',checked_at:checked_at %}

@@ -1,1 +1,8 @@
-{"recipe_status":"prepared","recipe_id":null,"recipe_url":null,"ownership_status":"shared_trmnl_broker_implemented_live_owner_consent_unverified"}
+{
+  "recipe_status": "prepared",
+  "recipe_id": null,
+  "recipe_url": null,
+  "ownership_status": "shared_trmnl_broker_implemented_live_owner_consent_unverified",
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "source_prepared_native_verification_pending"
+}

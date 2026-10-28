@@ -1,1 +1,9 @@
-{"name":"Local Morning Brief","recipe_status":"prepared","recipe_id":null,"recipe_url":null,"physical_receipt":"unverified"}
+{
+  "name": "Local Morning Brief",
+  "recipe_status": "prepared",
+  "recipe_id": null,
+  "recipe_url": null,
+  "physical_receipt": "unverified",
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "source_prepared_native_verification_pending"
+}

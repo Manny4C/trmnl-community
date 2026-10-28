@@ -1,10 +1,1 @@
-{% assign result_limit = result_count | default: 6 | plus: 0 %}
-{% if result_limit == 3 %}{% assign columns = 'grid--cols-1' %}{% assign title_size = 'text--large lg:text--xxlarge' %}{% assign title_lines = 1 %}{% elsif result_limit == 8 %}{% assign columns = 'grid--cols-2' %}{% assign title_size = 'text--base lg:text--xlarge' %}{% assign title_lines = 1 %}{% else %}{% assign columns = 'grid--cols-2' %}{% assign title_size = 'text--base lg:text--xlarge' %}{% assign title_lines = 2 %}{% endif %}
-{% if links_code %}{% assign title_lines = 1 %}{% endif %}
-{% if links_code and result_limit == 8 %}{% assign card_padding = 'p--1 lg:p--3' %}{% else %}{% assign card_padding = 'p--2 lg:p--3' %}{% endif %}
-<div class="layout layout--col gap--small sm--full">
-{% render 'radar_header', name: name, window_days: window_days, order: order, stale: stale, partial: partial, links_code: links_code, links_qr_url: links_qr_url %}
-<div class="sm-cards grid {{ columns }} gap--small w--full">{% for item in matches limit: result_limit %}{% render 'launch_card', item: item, index: forloop.index, title_size: title_size, title_lines: title_lines, card_padding: card_padding %}{% else %}<div class="sm-empty description lg:description--large">Nothing in your orbit yet.<br>Try a wider window or fewer filters.</div>{% endfor %}</div>
-<div class="flex flex--row flex--between w--full shrink-0"><span class="label label--small lg:label--base">{% if links_code %}Links: {{ links_code | escape }}{% else %}{{ matches.size }} launch{% unless matches.size == 1 %}es{% endunless %} to explore{% endif %}</span><span class="label label--small lg:label--base">Shared wording ≠ direct competitor</span></div>
-</div>
-{% render 'title_bar', checked_at: checked_at %}
+{% render 'feed_view', matches: matches, result_count: result_count, name: name, window_days: window_days, order: order, stale: stale, partial: partial, checked_at: checked_at, links_code: links_code, links_qr_url: links_qr_url, trmnl: trmnl, mode: 'full', max_cols: 2, portrait_cols: 2, title_lines: 1, description_lines: 1 %}

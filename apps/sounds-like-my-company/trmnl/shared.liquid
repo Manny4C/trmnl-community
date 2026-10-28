@@ -1,24 +1,22 @@
-{% template title_bar %}
-<div class="title_bar bg--white"><span class="title">Sounds Like My Company</span><span class="instance">{{ checked_at | date: "%H:%M" }} UTC</span></div>
-{% endtemplate %}
-{% template radar_header %}
-<div class="sm-masthead flex flex--row flex--between gap--small w--full shrink-0">
-  <div class="flex flex--row flex--left gap--small sm-heading">
-    <div class="sm-signal bg--red 1bit:bg--black 2bit:bg--black 4bit:bg--black text--white"><span></span><span></span><span></span></div>
-    <div class="flex flex--col flex--left gap--xsmall sm-heading"><span class="label label--small lg:label--base text--bold">YOUR LAUNCH RADAR{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span><div class="sm-company text--xlarge lg:text--xxlarge text--bold" data-clamp="1">{{ name | default: 'Your company' | escape }}</div></div>
-  </div>
-  <div class="sm-edition flex flex--col flex--right gap--xsmall"><span class="sm-window label label--small lg:label--base bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black px--2 py--1">{{ window_days }} DAY WINDOW</span><span class="label label--small lg:label--base">{% if order == 'latest' %}Newest first{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span></div>
-{% if links_code and links_qr_url %}<div class="sm-qr flex flex--col flex--center shrink-0"><img src="{{ links_qr_url | escape }}" width="82" height="82" alt="Open your launch links"></div>{% endif %}
+{% comment %}Native Framework items and overflow fit every available item to OG/X and portrait mashups.{% endcomment %}
+{% template feed_view %}
+{% assign item_limit = result_count | default: 6 | plus: 0 %}
+<div class="layout layout--col gap--small sm--{{ mode }}">
+<span class="title title--small lg:title--base text--red 1bit:text--black 2bit:text--black 4bit:text--black" data-clamp="1">YOUR LAUNCH RADAR</span>
+<span class="label label--small lg:label--base w--full" data-clamp="2">{{ name | default: "Your company" | escape }} · {{ window_days }} days · {% if order == "latest" %}Newest first{% else %}Closest wording{% endif %}{% if stale %} · CACHED{% endif %}{% if partial %} · PARTIAL{% endif %}</span>
+{% if links_code and links_qr_url %}<div class="flex flex--row gap--small flex--left w--full"><img class="w--[82px] h--[82px] shrink-0" src="{{ links_qr_url | escape }}" alt="Open launch links"><span class="label label--small" data-clamp="2">Links: {{ links_code | escape }} · Shared wording ≠ direct competitor</span></div>{% endif %}
+{% if matches.size > 0 %}
+<div class="columns stretch w--full" data-overflow-max-cols="{{ max_cols }}" data-overflow-max-cols-lg="2" data-overflow-max-cols-portrait="1" data-overflow-max-cols-lg-portrait="{{ portrait_cols }}" data-overflow-counter="true">
+<div class="column">
+{% for item in matches limit: item_limit %}
+<div class="item sm-card"><div class="meta"><span class="index">{{ forloop.index }}</span></div><div class="content">
+<span class="title title--small lg:title--base sm-title" data-clamp="{{ title_lines }}" data-clamp-lg="2">{{ item.title | escape }}</span>
+<span class="description" data-clamp="{{ description_lines }}" data-clamp-lg="3">{{ item.reason | remove: "Required keyword: " | remove: "Shared product wording: " | remove: "Related topic: " | escape }}</span>
+<span class="label label--small lg:label--base" data-clamp="1">{{ item.source | escape }} · {{ item.published_at | date: "%b %d, %Y" }}</span>
+</div></div>
+{% endfor %}
+</div></div>
+{% else %}<div class="flex flex--col flex--center stretch w--full"><span class="description">Nothing in your orbit yet. Try a wider window or fewer filters.</span></div>{% endif %}
 </div>
+<div class="title_bar"><span class="title text--red 1bit:text--black 2bit:text--black 4bit:text--black">Sounds Like My Company</span><span class="instance">{{ checked_at | date: "%b %d %H:%M" }} UTC</span></div>
 {% endtemplate %}
-{% template launch_card %}
-<article class="sm-card flex flex--col flex--left gap--xsmall bg--white {{ card_padding | default: 'p--2 lg:p--3' }}">
-  <div class="sm-card-meta flex flex--row flex--between w--full gap--small"><div class="flex flex--row flex--left gap--small"><span class="sm-number label label--small lg:label--base text--bold text--red 1bit:text--black 2bit:text--black 4bit:text--black">{% if index < 10 %}0{% endif %}{{ index }}</span><span class="sm-source label label--small lg:label--base text--bold {% if item.source == 'Launch HN' %}bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black{% else %}bg--black text--white{% endif %} px--1 py--0">{{ item.source | escape }}</span></div><span class="label label--small lg:label--base">{{ item.published_at | date: "%b %d" }}</span></div>
-  <div class="sm-title {{ title_size }} text--bold w--full" data-clamp="{{ title_lines }}" data-clamp-lg="{{ title_lines }}">{{ item.title | escape }}</div>
-  <div class="sm-reason label label--small lg:label--base w--full" data-clamp="1">↳ {{ item.reason | remove: 'Required keyword: ' | remove: 'Shared product wording: ' | remove: 'Related topic: ' | escape }}</div>
-</article>
-{% endtemplate %}
-<style>
-/* Fixed e-paper panels need equal card tracks; color and typography use framework utilities. */
-.sm-qr img{width:82px;height:82px;image-rendering:pixelated;background:white}.sm-qr{background:white}.sm--compact .sm-qr{display:none}.sm-heading,.sm-company,.sm-title{min-width:0}.sm-company{line-height:1.05}.sm-masthead{padding-bottom:10px;border-bottom:3px solid currentColor}.sm-signal{width:48px;height:48px;display:flex;align-items:center;justify-content:center;gap:4px;flex-shrink:0}.sm-signal span{display:block;width:4px;background:currentColor}.sm-signal span:nth-child(1){height:12px}.sm-signal span:nth-child(2){height:26px}.sm-signal span:nth-child(3){height:18px}.sm-window{border:1px solid currentColor;white-space:nowrap}.sm-edition{flex-shrink:0}.sm-cards{flex:1;min-height:0;min-width:0;grid-auto-rows:minmax(0,1fr)}.sm-card{min-height:0;min-width:0;overflow:hidden;border:1px solid currentColor;justify-content:flex-start}.sm-card-meta{flex-shrink:0}.sm-title{line-height:1.15;flex-shrink:0}.sm-reason{margin-top:auto;min-width:0;text-align:left}.sm-number{min-width:18px}.sm-source{white-space:nowrap}.sm-empty{grid-column:1/-1;align-self:center;justify-self:center}.sm--compact .sm-masthead{padding-bottom:6px;border-bottom-width:2px}.sm--compact .sm-signal{width:32px;height:32px;gap:3px}.sm--compact .sm-signal span{width:3px}.sm--compact .sm-signal span:nth-child(2){height:22px}.sm--compact .sm-edition{display:none}.sm--quadrant .sm-signal{display:none}.sm--quadrant .sm-card{border:0;padding:0}.sm--quadrant .sm-masthead{padding-bottom:4px}
-</style>

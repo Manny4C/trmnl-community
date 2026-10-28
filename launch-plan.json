@@ -63,13 +63,14 @@
       "testStatus": "35 checks passed, including 1\u201320 validation, 20-row compact payload and Saved State byte budgets, profile/count cache isolation, memory migration and outage fallback. Live production count 1/8/20 gives 1/8/20 matching rows below 5 kB; count 21 gives 400. All four actual OG layouts visually verified; full mode 1, 8 and 20 verified.",
       "physicalDeviceVerification": "Count setting saved to 8 on owner installation, original news prompt retained; compact polling URL, memory transform and all four layouts saved. Actual OG full 1/8/20 and smaller layout previews verified; refreshed edition queued for device check-in. Physical receipt of this density upgrade is not confirmed.",
       "pendingActions": [
+        "Save October27 native Framework Shared/four layouts on EXISTING master 505118; preserve configuration, verify native OG color/BW and X landscape/portrait and refresh marketplace previews before requesting review",
         "Monitor human Recipe review",
         "Confirm finished screen on physical device at next playlist appearance"
       ],
       "featuredImageStatus": "regenerated_for_the_daily_trmnl",
       "submittedOn": "2026-10-13",
       "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
-      "latestDeploymentId": "dpl_5nGvz8vtuyXEcCCjG9HXSdtA1DZe",
+      "latestDeploymentId": "dpl_AFf5NVfv6jxa1cCi3NAjqQL6fpdP",
       "completedOn": "2026-10-13",
       "recipeRequired": true,
       "recipe": {
@@ -102,6 +103,16 @@
         "recipeStatus": "saved_to_existing_recipe",
         "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
         "physicalReceipt": "unconfirmed"
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "3bcea27327b9fe263e302b185a37e58b310c88bbfe40c68a0fd907b3fc754424"
       }
     },
     {
@@ -114,7 +125,7 @@
       "recipeRequired": true,
       "recipe": {
         "name": "YC Scout",
-        "status": "changes_requested",
+        "status": "changes_requested_revision_pending_native_verification",
         "pluginId": 506494,
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
@@ -134,14 +145,14 @@
       "testStatus": "13 automated checks passed, including ten newest in chronological order and ten multibyte rows under 4700 bytes; anonymous production returns ten launches (2586 bytes); actual OG ten-row full layout visually verified with the tenth row and footer visible. Ten-row X landscape/portrait and mobile width 390 also verified; the existing smaller layouts keep their own limits.",
       "physicalDeviceVerification": "Updated ten-launch full layout verified in actual TRMNL editor on owner OG B/W/R/Y and X landscape/portrait. Manual refresh generated the updated edition; actual physical receipt has not been confirmed.",
       "pendingActions": [
-        "Save prepared Shared and all four layouts on EXISTING Recipe506494 after renewed dashboard authorization; never duplicate",
+        "Reconcile Shared/all four saved tabs against canonical source on EXISTING Recipe506494 after renewed browser authorization; all templates must use the same feed_view. Native saving started before the earlier restriction was discovered, then stopped; do not assume a complete matched save.",
         "Verify actual native OG color/BW and X landscape/portrait/four views and long-source titles; regenerate marketplace previews if needed",
         "Request re-review only after Recipe is saved/verified and explicit outbound-message authorization; no email sent for this new feedback",
         "Record real human approval/public install URL and physical receipt separately"
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
-      "latestDeploymentId": "dpl_7qfccaqz6oRwVWw5AL53HPD9P1jF",
-      "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
+      "latestDeploymentId": "dpl_BwcY6NqS2Q4Bq17EJqfXKVcq89aL",
+      "reviewStatus": "Mario requested native Framework items/automatic overflow and responsive use of larger screens in ticket145500957 (October27 Pacific). Revised source supplies all ten available launches in every layout. Native saving began before the prior screen restriction was discovered; complete saved-source comparison/native QA and re-review are pending. No new reviewer reply sent.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
       "completedOn": "2026-10-14",
@@ -170,16 +181,15 @@
         "replySent": false
       },
       "frameworkRevision": {
-        "preparedOn": "2026-10-27",
-        "status": "prepared_not_saved_on_existing_recipe",
-        "implementation": "Shared/four layouts use native item/content/meta/index, columns/column, responsive overflow and counters, clamping/typography/palette classes and title_bar. No custom stylesheet or inline styles. Full supplies10launches in sameAPIorder, halves2/quadrant1. Large-screen text and description lines adapt to landscape/portrait.",
-        "validation": "17YCchecks pass underNode22 plus2targeted YC cross-app palette checks. HTML/Liquid only; actual native OG/X fitting and marketplace QA remain unverified. Full cross-app suite has a pre-existing Daily fixture count mismatch (20rendered vs2expected), not caused by YCmarkup; not changed here.",
-        "recipeId": 506494,
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "native_save_started_complete_comparison_and_qa_pending",
+        "nativeQa": "YC full OG preview checked; complete OG color/BW and X landscape/portrait/four-layout checks pending",
         "physicalReceipt": "unconfirmed",
-        "websiteDeploymentId": "dpl_7qfccaqz6oRwVWw5AL53HPD9P1jF",
-        "productionEvidence": "artifacts/yc-scout/framework-revision-2026-10-27.json",
-        "websiteVerification": "Canonical site releasechanges_requested, appJSandZIPmatch source. API200withtenlaunches/2603bytes. NativeRecipe506494 NOT updated, no nativevisualQA or revieweremail.",
-        "revisionNotification": "Explained new reviewer feedback and prepared revision in the current user status response; no repeat alert needed for unchanged Waiting on you."
+        "approved": false,
+        "packageSha256": "b2831cdcb15b1b90a17e07ad1555ff2f46742cfb9066f395f20ba75b91a47184",
+        "saveWarning": "Other chat modified local YC source during dashboard saves. Compare every saved tab with canonical source before relying on smaller layouts; do not assume templates match."
       }
     },
     {
@@ -208,10 +218,11 @@
       "websiteDeploymentStatus": "ready_and_production_verified",
       "iconStatus": "generated_and_saved_in_trmnl",
       "featuredImageStatus": "Redesigned OG and X marketplace previews regenerated and new blob IDs verified October 16.",
-      "latestDeploymentId": "dpl_B1t7SRW81EVhAFPVkj2GLEbF7TX1",
+      "latestDeploymentId": "dpl_GFfVU5t9qpWMbuWPKQfPN3YEc3J6",
       "testStatus": "17 automated checks passed: official source verification, product/audience matching, compatibility/ranking false positives, exclusion precedence, recency/order, newest duplicate selection, empty results, concurrent caching, stale/cold outages and eight multibyte rows below 4800 bytes. Anonymous final production returns eight matches in 1617 bytes, zero for an unmatched required word, and 400 for an invalid profile. All four actual OG layouts reviewed; full six/eight density and X landscape/portrait verified. Phone browser at width 390 has page width 390 and six live rows, with no horizontal overflow.",
       "physicalDeviceVerification": "New radar design successfully rendered October 16 at 10:36:52/53 PDT; after playlist font override, render 10:37:19 PDT. Timeline has not recorded physical delivery of the redesigned Echo edition. Existing active playlist retained; next appearance scheduled in normal rotation. Earlier 10:08:43 delivery was the generic demo and is not evidence of new design receipt.",
       "pendingActions": [
+        "Save October27 native Framework Shared/four layouts on EXISTING master 507810; preserve configuration, verify native OG color/BW and X landscape/portrait and refresh marketplace previews before requesting review",
         "Monitor human Recipe review; on approval publish the verified public installation URL",
         "Verify physical delivery of redesigned Echo edition at next playlist rotation; native successful render last observed October 16 10:37:19 PDT, new-design delivery not yet logged.",
         "When screen control is explicitly requested again, save updated Shared and all four markup tabs on existing Recipe 507810 and verify code/QR on actual OG/X renders; refresh previews if needed. Prepared package and live personal links are ready; no duplicate Recipe."
@@ -283,6 +294,16 @@
         "recipeStatus": "saved_to_existing_recipe",
         "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
         "physicalReceipt": "unconfirmed"
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "6aa1e3cc531e0e0324bbb0dcf7d59fd836281053b62bbf3b0ab7d67206098f22"
       }
     },
     {
@@ -304,7 +325,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_3jbP5BnxPN6RSgcgX5aasZU8LxZr",
+      "latestDeploymentId": "dpl_GbnEwi1RpqVdH1zhLNJPLxsLopxr",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_package_verified",
@@ -440,6 +461,16 @@
         "lastReservedAt": "2026-10-22T13:50:31.664Z",
         "latestSuccessfulRun": 39790428273,
         "caveat": "Reservations/amount are not provider billing or a verified paid API request count."
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "2ddbce846ba9ae5a5f0177fed233fda6cc7b8869b062d270e3a7fc52987c1d32"
       }
     },
     {
@@ -531,7 +562,7 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_CQq9TZxCtuGKZFQ5wnYGNqETKTj6",
+      "latestDeploymentId": "dpl_CQugCMbLpsSqUJQu5fEE7iwgmb5g",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
       "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
@@ -551,6 +582,16 @@
         "kind": "Owner autopilot",
         "latestSuccessfulScheduledRun": 39793029563,
         "result": "One autopilot event per UTC day October19\u201322; seven-day schedules remain enabled."
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "90ada0e656bc97cabe9d9cae83cdc60710957c38a2c83b4be516042d46135d66"
       }
     },
     {
@@ -604,12 +645,22 @@
       },
       "vercelProjectId": "prj_0p8YgRq32xJBG36l1yfF7ECav5NP",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_7hDj6tGGwvUMo1uiedsGJpzsjCBf",
+      "latestDeploymentId": "dpl_AHVXG7hMBZeEi4XTTBVnqXiivxi6",
       "verificationTimestamp": "2026-10-21T16:39:51.248064+00:00",
       "productionEvidence": "artifacts/game-night-radar-production-2026-10-21.json",
       "productionVerification": "Production website200, source8rows3271bytes, device8rows981bytes, Valheim7dayupdates1post, Terraria7dayempty200, invalidhost400, public ZIP/app.js match source, releaseprepared with no invented RecipeID/install URL. Native visual/mobile/physical checks remain unverified.",
       "iconStatus": "original_svg_in_prepared_package",
-      "featuredImageStatus": "not_generated_no_recipe_created"
+      "featuredImageStatus": "not_generated_no_recipe_created",
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "0c2361d4105a2a4f8f1630eaff2caa077d7cb195ac96ba9935517d0634ea93b4"
+      }
     },
     {
       "day": 7,
@@ -632,7 +683,7 @@
       "vercelProjectId": "prj_xFOg0LzAYJYqY1KxuqZx4R3flxct",
       "websiteUrl": "https://local-morning-brief.vercel.app",
       "buildCompletedOn": "2026-10-22",
-      "latestDeploymentId": "dpl_E3CCEoZZZF7cbKLrjih63JajWeqY",
+      "latestDeploymentId": "dpl_Gh2FvwusWc7b5rr8eXo3GRJsnKAf",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
       "publicationStatus": "prepared_not_submitted",
       "deviceInstallationStatus": "not_installed",
@@ -682,7 +733,17 @@
         "Install owner edition preserving every existing plugin/playlist entry; do not infer home city",
         "Complete public submission under applicable final Community Plugin License confirmation after assets/QA, record real review status and approved install link",
         "Confirm physical receipt separately"
-      ]
+      ],
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "ea1392b781950a3f7e7ea95744a0e8d0fc81cbaefdbfe3c3c1aabd0f7423766c"
+      }
     }
   ],
   "executionRules": [
@@ -790,7 +851,7 @@
       ],
       "buildCompletedOn": "2026-10-21",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_6XuKNZXeNtSJB66FqF2KaDrLtjCb",
+      "latestDeploymentId": "dpl_HjUJZHwzda14J9YEMR7CwysLHzk7",
       "verificationTimestamp": "2026-10-23T01:20:26.282Z",
       "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
       "productionEvidence": "artifacts/trmnl-draws/photo-production-2026-10-22.json",
@@ -819,6 +880,16 @@
         "adaptation": "Area-resampled800x480, existing sixteen-color palette with error diffusion; white protected QR area; binary smartmono variant. Color and mono previews retained in assets/.",
         "migration": "One-time row-locked artwork update to version2. Retains every changed and audited touched cell including repaint-to-original. Quotas/sessions/audit/old snapshots untouched. Durable td_artwork_upgrades marker prevents reseeding. Production had zero community edits to preserve; no player event fabricated.",
         "status": "production_verified"
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "590bba319d1b63c273164366e096ae20d0d01a761d067185b027358ee58c0134"
       }
     },
     {
@@ -860,7 +931,7 @@
       "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_anonymous_production_verified",
-      "latestDeploymentId": "dpl_8esXUL8ousQcFbemKJf7K2VmyAwV",
+      "latestDeploymentId": "dpl_4MtHPXh37WynE8jULAJZgnXRL1Nv",
       "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
@@ -880,6 +951,16 @@
         "overview": "Quest/ember count, two short recent-event summaries and party health moved to the left. Full browser journal retained.",
         "website": "Automatic/world/dungeon map controls; color/BW and four sizes retained.",
         "device": "Updated image-dither native four-layout ZIP prepared only; existing Recipe/install/publication state unchanged."
+      },
+      "frameworkRevision": {
+        "updatedOn": "2026-10-27",
+        "sourceStatus": "tested_and_packaged",
+        "websiteStatus": "production_zip_and_release_metadata_hash_verified",
+        "recipeStatus": "prepared_not_saved_to_recipe",
+        "nativeQa": "pending_renewed_browser_permission",
+        "physicalReceipt": "unconfirmed",
+        "approved": false,
+        "packageSha256": "93841b7aaf1448b8db0d23cb3797a80219e54b5d550cc8aba632b2dc61c81574"
       }
     }
   ],
@@ -981,5 +1062,15 @@
       "latestActualExecution": "2026-10-28T00:46:13.30268+00:00",
       "note": "UTCdateOctober28isOctober27Pacific; normal daily owner autopilot remains healthy."
     }
+  },
+  "frameworkReviewRevision": {
+    "date": "2026-10-27",
+    "feedbackThread": "https://app.hey.com/topics/2156910252",
+    "feedbackTicket": "145500957",
+    "scope": "all nine community apps audited; eight have layout updates, Draws retains required full-bleed canvas geometry and receives corrected 800x480/photo metadata",
+    "tests": 235,
+    "testsNote": "221 app checks plus 14 cross-app palette/content/overflow checks; not native rendered-fit verification",
+    "productionEvidence": "artifacts/framework-revision-2026-10-27-production.json",
+    "remaining": "Renew browser authorization, compare/save existing masters, native OG/X QA, marketplace images, create four missing masters and finish draft submissions under applicable final license confirmation; contact Mario only after verified native save/QA and explicit communication authorization. No new review email sent."
   }
 }

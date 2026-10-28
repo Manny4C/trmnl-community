@@ -4,6 +4,8 @@
   "recipe_url": null,
   "support_url": "https://github.com/Manny4C/trmnl-community/issues",
   "review_status": "Waiting on you: Framework rewrite requested",
-  "revision_status": "prepared_not_saved_to_recipe",
-  "review_feedback_on": "2026-10-27"
+  "revision_status": "source_ready_recipe_save_requires_verification",
+  "review_feedback_on": "2026-10-27",
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "native_save_started_verification_pending"
 }

@@ -1,14 +1,1 @@
-<div class="layout layout--col"><div class="wc wc--horizontal">
-  <div class="wc-head"><span class="wc-brand text--red 1bit:text--black 2bit:text--black 4bit:text--black">THE DAILY TRMNL</span><span class="wc-topic">{{ topic_label | default: topic | capitalize }}</span></div>
-  <div class="wc-label">{{ briefing_label | escape }}{% if stale %} · Cached{% endif %}{% if unavailable_sources.size > 0 %} · Partial sources{% endif %}</div>
-  <div class="wc-list">
-  {% assign small_count = headline_count | at_most: 2 %}{% for story in stories limit: small_count %}
-    <div class="wc-card">
-      <div class="wc-title">{% if story.change != blank %}<span class="wc-badge bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ story.change }}</span>{% endif %}{{ story.title | escape }}</div>
-      <div class="wc-snippet">{{ story.snippet | escape }}</div>
-      <div class="wc-source">{{ story.source | escape }} · {% if story.time_kind == "indexed" %}Indexed {% endif %}{{ story.published_at | date: "%b %d" }}</div>
-    </div>
-  {% else %}<div class="wc-empty">{% if no_matches %}No matching stories yet.<br>Try a broader news prompt.{% else %}Briefing temporarily unavailable.<br>Please check again later.{% endif %}</div>{% endfor %}
-  </div>
-  <div class="wc-foot"><span>{{ topic_label | default: topic | capitalize }} · Checked {{ fetched_at | date: "%b %d %H:%M" }} UTC</span><span>the-daily-trmnl.vercel.app</span></div>
-</div></div>
+{% render 'feed_view', stories: stories, headline_count: headline_count, briefing_label: briefing_label, topic_label: topic_label, topic: topic, stale: stale, unavailable_sources: unavailable_sources, no_matches: no_matches, fetched_at: fetched_at, trmnl: trmnl, mode: 'half_horizontal', max_cols: 2, portrait_cols: 1, title_lines: 1, description_lines: 1 %}

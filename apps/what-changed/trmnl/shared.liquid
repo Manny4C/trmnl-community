@@ -1,22 +1,22 @@
-<style>
-.wc{width:100%;height:100%;display:flex;flex-direction:column;gap:0;text-align:left;color:#000}
-.wc-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #000;padding-bottom:8px;gap:10px}
-.wc-brand{font-size:26px;font-weight:800;letter-spacing:1px;white-space:nowrap}.wc-topic{font-size:15px}
-.wc-label{font-size:14px;margin:8px 0 5px}.wc-list{flex:1;display:flex;flex-direction:column;min-height:0}
-.wc-card{padding:12px 0;border-top:1px solid #777;flex:1;min-height:0}.wc-card:first-child{border-top:0}
-.wc-title{font-size:22px;font-weight:700;line-height:1.12;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.wc-snippet{font-size:16px;line-height:1.2;margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.wc-source{font-size:13px;line-height:1.2;margin-top:6px}.wc-badge{font-size:11px;font-weight:800;border:1px solid #000;padding:1px 3px;margin-right:5px}
-.wc-foot{font-size:12px;border-top:1px solid #000;padding-top:7px;display:flex;justify-content:space-between;gap:8px}.wc-empty{font-size:22px;margin:auto;line-height:1.3}
-.wc--vertical .wc-brand{font-size:20px}.wc--vertical .wc-topic{font-size:12px}.wc--vertical .wc-title{font-size:22px;-webkit-line-clamp:3}.wc--vertical .wc-snippet{font-size:16px;-webkit-line-clamp:3}
-.wc--horizontal .wc-brand{font-size:20px}.wc--horizontal .wc-label{margin:5px 0;font-size:12px}.wc--horizontal .wc-list{flex-direction:row;gap:20px}.wc--horizontal .wc-card{border:0;padding:8px 0;width:50%}.wc--horizontal .wc-card+.wc-card{border-left:1px solid #777;padding-left:20px}.wc--horizontal .wc-title{font-size:21px;-webkit-line-clamp:3}.wc--horizontal .wc-snippet{display:none}
-.wc--quadrant .wc-brand{font-size:19px}.wc--quadrant .wc-topic{display:none}.wc--quadrant .wc-label{font-size:11px;margin:5px 0}.wc--quadrant .wc-card{padding:6px 0}.wc--quadrant .wc-title{font-size:21px;-webkit-line-clamp:3}.wc--quadrant .wc-snippet{display:none}.wc--quadrant .wc-source{font-size:11px}.wc--quadrant .wc-foot{font-size:10px}
-.screen--lg .wc-brand{font-size:34px}.screen--lg .wc-title{font-size:30px}.screen--lg .wc-snippet{font-size:22px}.screen--lg .wc-label{font-size:18px}.screen--lg .wc-topic{font-size:19px}.screen--lg .wc-source{font-size:17px}.screen--lg .wc-foot{font-size:15px}.screen--lg .wc--quadrant .wc-brand{font-size:26px}.screen--lg .wc--quadrant .wc-title{font-size:27px}.screen--lg .wc--quadrant .wc-label{font-size:14px}.screen--lg .wc--quadrant .wc-foot{font-size:12px}
-.screen--portrait .wc--horizontal .wc-list{flex-direction:column;gap:0}.screen--portrait .wc--horizontal .wc-card{width:100%}.screen--portrait .wc--horizontal .wc-card+.wc-card{border-left:0;border-top:1px solid #777;padding-left:0}.screen--portrait .wc-head{flex-wrap:wrap}.screen--portrait .wc-foot{flex-wrap:wrap}
+{% comment %}Native Framework items and overflow fit every available item to OG/X and portrait mashups.{% endcomment %}
+{% template feed_view %}
+{% assign item_limit = headline_count | default: 8 | plus: 0 %}
+<div class="layout layout--col gap--small wc--{{ mode }}">
+<span class="title title--small lg:title--base text--red 1bit:text--black 2bit:text--black 4bit:text--black" data-clamp="1">THE DAILY TRMNL</span>
+<span class="label label--small lg:label--base w--full" data-clamp="2">{{ briefing_label | escape }} · {{ topic_label | default: topic | escape }}{% if stale %} · CACHED{% endif %}{% if unavailable_sources.size > 0 %} · PARTIAL{% endif %}</span>
 
-.wc-card{overflow:hidden}.wc--full{font-family:Arial,sans-serif}.wc--full .wc-head{padding-bottom:4px}.wc--full .wc-brand{font-size:24px;line-height:26px}.wc--full .wc-topic{font-size:12px}.wc--full .wc-label{font-size:11px;line-height:13px;margin:4px 0}.wc--full .wc-foot{font-size:10px;line-height:11px;padding-top:4px}.wc--full .wc-card{padding:2px 0}.wc--full .wc-title{font-size:16px;line-height:17px;-webkit-line-clamp:2}.wc--full .wc-snippet{display:none}.wc--full .wc-source{font-size:10px;line-height:11px;margin-top:1px}.wc--full .wc-badge{font-size:8px;padding:0 2px}
-.wc--compact .wc-card{padding:1px 0}.wc--compact .wc-source{line-height:10px}
-.wc--detail .wc-title{font-size:23px;line-height:26px;-webkit-line-clamp:2}.wc--detail .wc-snippet{display:-webkit-box;font-size:18px;line-height:21px;-webkit-line-clamp:3;margin-top:6px}.wc--detail .wc-source{font-size:12px;line-height:14px;margin-top:6px}.wc-count-1 .wc-title{font-size:30px;line-height:33px;-webkit-line-clamp:3}.wc-count-1 .wc-snippet{font-size:23px;line-height:27px;-webkit-line-clamp:8}.wc-count-2 .wc-snippet{-webkit-line-clamp:5}.wc--medium .wc-title{font-size:18px;line-height:20px;-webkit-line-clamp:2}.wc--medium .wc-snippet{display:-webkit-box;font-size:14px;line-height:16px;-webkit-line-clamp:1;margin-top:2px}
-.wc--columns .wc-list,.wc--dense .wc-list{display:grid;grid-auto-flow:column;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--wc-rows),minmax(0,1fr));column-gap:18px}.wc--columns .wc-card,.wc--dense .wc-card{flex:none;min-width:0}.wc--columns .wc-title{font-size:15px;line-height:16px}.wc--columns .wc-source{font-size:9px;line-height:10px}.wc--dense .wc-card{padding:0}.wc--dense .wc-title{font-size:13px;line-height:14px}.wc--dense .wc-source{font-size:9px;line-height:10px;margin:0}.wc--columns .wc-empty,.wc--dense .wc-empty{grid-column:1/-1;grid-row:1/-1}
-.screen--lg .wc--full .wc-title{font-size:23px;line-height:26px}.screen--lg .wc--full .wc-source{font-size:14px;line-height:16px}.screen--lg .wc--full .wc-brand{font-size:30px;line-height:33px}.screen--lg .wc--full .wc-label{font-size:14px;line-height:17px}.screen--lg .wc--full .wc-foot{font-size:13px;line-height:15px}.screen--lg .wc--detail .wc-snippet{font-size:24px;line-height:28px}.screen--lg .wc-count-1 .wc-title{font-size:38px;line-height:42px}.screen--lg .wc-count-1 .wc-snippet{font-size:28px;line-height:33px;-webkit-line-clamp:12}.screen--lg .wc--medium .wc-snippet{font-size:19px;line-height:22px}.screen--lg .wc--columns .wc-title{font-size:21px;line-height:23px}.screen--lg .wc--dense .wc-title{font-size:18px;line-height:20px}.screen--lg .wc--columns .wc-source,.screen--lg .wc--dense .wc-source{font-size:12px;line-height:14px}.screen--lg.screen--portrait .wc--columns .wc-title,.screen--lg.screen--portrait .wc--dense .wc-title{font-size:19px;line-height:22px;-webkit-line-clamp:3}
-</style>
+{% if stories.size > 0 %}
+<div class="columns stretch w--full" data-overflow-max-cols="{{ max_cols }}" data-overflow-max-cols-lg="2" data-overflow-max-cols-portrait="1" data-overflow-max-cols-lg-portrait="{{ portrait_cols }}" data-overflow-counter="true">
+<div class="column gap--xsmall">
+{% for story in stories limit: item_limit %}
+<div class="item wc-card"><div class="meta"><span class="index">{{ forloop.index }}</span></div><div class="content gap--none">
+<span class="title title--small lg:title--base wc-title" data-clamp="{{ title_lines }}" data-clamp-lg="2">{% if story.change != blank %}<span class="label label--small bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ story.change | escape }}</span> {% endif %}{{ story.title | escape }}</span>
+{% if item_limit <= 8 %}<span class="description {% if item_limit <= 3 %}description--large lg:description--xlarge{% endif %}" data-clamp="{% if item_limit <= 3 %}8{% else %}{{ description_lines }}{% endif %}" data-clamp-lg="{% if item_limit <= 3 %}12{% else %}3{% endif %}">{{ story.snippet | escape }}</span>{% endif %}
+<span class="label label--small lg:label--base" data-clamp="1">{{ story.source | escape }} · {% if story.time_kind == "indexed" %}Indexed {% endif %}{{ story.published_at | date: "%b %d" }}</span>
+</div></div>
+{% endfor %}
+</div></div>
+{% else %}<div class="flex flex--col flex--center stretch w--full"><span class="description">{% if no_matches %}No matching stories yet. Try a broader news prompt.{% else %}Briefing temporarily unavailable. Please check again later.{% endif %}</span></div>{% endif %}
+</div>
+<div class="title_bar"><span class="title text--red 1bit:text--black 2bit:text--black 4bit:text--black">The Daily TRMNL</span><span class="instance">{{ fetched_at | date: "%b %d %H:%M" }} UTC</span></div>
+{% endtemplate %}

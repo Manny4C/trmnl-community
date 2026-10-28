@@ -1,3 +1,7 @@
-# No custom fields: every device watches the same shared island.
-# Playing is handled by verified TRMNL sign-in on the website.
-custom_fields: []
+- keyname: author
+  field_type: author_bio
+  name: About Tiny Planet
+  category: games
+  description: One shared original island. Every verified TRMNL account can make one move per UTC day on the website; all screens view the same world. A separately labeled daily owner autopilot keeps the island moving. Uses TRMNL sign-in to verify ownership; the website explains gameplay, privacy and support. Device viewing needs no account secret or configuration. Independent community project, not affiliated with TRMNL.
+  github_url: https://github.com/Manny4C/trmnl-community
+  learn_more_url: https://tiny-planet-trmnl.vercel.app

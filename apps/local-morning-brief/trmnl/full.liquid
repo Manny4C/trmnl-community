@@ -2,9 +2,7 @@
 {% render 'heading',city:city,date:date %}
 {% render 'weather',forecast:forecast %}
 {% render 'alert_line',alert_status:alert_status,alert_count:alert_count,alerts:alerts %}
-{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:2,lines:2 %}
-{% assign split = items.size | plus: 1 | divided_by: 2 %}
-<div class="grid grid--cols-2 gap--small w--full"><div class="col col--span-1">{% render 'update_rows',items:items,limit:split %}</div><div class="col col--span-1">{% assign more = items | slice: split, 3 %}{% if more.size > 0 %}{% render 'update_rows',items:more,limit:3 %}{% endif %}</div></div>
+{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:1,lines:1 %}
+{% render 'update_rows',items:items,max_cols:2 %}
 {% render 'status_line',sources:sources,partial:partial %}
-<span class="label label--small">Links &amp; source times: local-morning-brief.vercel.app</span>
 </div>{% render 'title_bar',checked_at:checked_at %}

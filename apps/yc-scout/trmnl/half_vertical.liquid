@@ -1,9 +1,1 @@
-<div class="layout layout--col gap--small lg:gap--large flex--top">
-{% render 'scout_heading',mode_label:mode_label,filter_label:filter_label,stale:stale,partial:partial %}
-{% if companies.size > 0 %}
-<div class="columns" data-overflow-max-cols="1" data-overflow-counter="true"><div class="column gap--small lg:gap--large">
-{% render 'scout_items',companies:companies,row_limit:2,name_size:'title title--small lg:title--xxlarge',description_size:'description lg:description--xlarge',lines:3,large_lines:4,portrait_lines:4 %}
-</div></div>
-{% else %}{% render 'scout_empty',total:total %}{% endif %}
-{% render 'scout_links' %}
-</div>{% render 'title_bar',fetched_at:fetched_at %}
+{% render 'feed_view', companies: companies, mode_label: mode_label, filter_label: filter_label, stale: stale, partial: partial, total: total, fetched_at: fetched_at, trmnl: trmnl, mode: 'half_vertical', max_cols: 1, portrait_cols: 1, title_lines: 2, description_lines: 2 %}

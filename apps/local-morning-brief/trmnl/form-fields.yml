@@ -30,7 +30,7 @@
   - Past 30 days: '30'
 - keyname: result_count
   field_type: select
-  name: Maximum community headlines (full screen)
+  name: Maximum community headlines
   default: '4'
   options:
   - Three: '3'

@@ -2,6 +2,6 @@
   field_type: author_bio
   name: About TRMNL Draws
   category: games
-  description: One shared 100 by 60 pixel drawing, starting with an original black cat. Verified TRMNL accounts receive 10 pixel placements per UTC day, across devices and sign-ins. Scan the daily QR or type its four-character code, then verify ownership through our existing Tiny Planet TRMNL sign-in integration. A QR or code alone never proves ownership. The reserved QR corner cannot be edited. Full-bleed color artwork and smart patterned monochrome; all four layouts supported. The website has clickable setup, rules, privacy, support and source. Independent community project, not affiliated with TRMNL.
+  description: One shared 800 by 480 pixel canvas, starting with an AI-generated black cat photo adapted to sixteen colors. Verified TRMNL accounts receive 10 pixel placements per UTC day, across devices and sign-ins. Scan the daily QR or type its four-character code, then verify ownership through our existing Tiny Planet TRMNL sign-in integration. A QR or code alone never proves ownership. The reserved QR corner cannot be edited. Full-bleed color artwork and smart patterned monochrome; all four layouts supported. The website has clickable setup, rules, privacy, support and source. Independent community project, not affiliated with TRMNL.
   github_url: https://github.com/Manny4C/trmnl-community
   learn_more_url: https://trmnl-draws.vercel.app

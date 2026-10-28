@@ -4,5 +4,7 @@
   "recipe_url": null,
   "shared_world_status": "online",
   "ownership_status": "oauth_app_registered_live_verification_pending",
-  "autopilot_status": "enabled_scheduled_execution_verified"
+  "autopilot_status": "enabled_scheduled_execution_verified",
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "source_prepared_native_verification_pending"
 }

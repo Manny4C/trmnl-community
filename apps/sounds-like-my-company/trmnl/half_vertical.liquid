@@ -1,6 +1,1 @@
-<div class="layout layout--col gap--small sm--compact sm--vertical">
-{% render 'radar_header', name: name, window_days: window_days, order: order, stale: stale, partial: partial, links_code: links_code, links_qr_url: links_qr_url %}
-<div class="sm-cards grid grid--cols-1 gap--small w--full">{% for item in matches limit: 2 %}{% render 'launch_card', item: item, index: forloop.index, title_size: 'text--large lg:text--xxlarge', title_lines: 3 %}{% else %}<div class="sm-empty description">Nothing in your orbit yet.<br>Try fewer filters.</div>{% endfor %}</div>
-{% if links_code %}<div class="label label--small lg:label--base shrink-0 w--full">Open links: {{ links_code | escape }}</div>{% endif %}
-</div>
-{% render 'title_bar', checked_at: checked_at %}
+{% render 'feed_view', matches: matches, result_count: result_count, name: name, window_days: window_days, order: order, stale: stale, partial: partial, checked_at: checked_at, links_code: links_code, links_qr_url: links_qr_url, trmnl: trmnl, mode: 'half_vertical', max_cols: 1, portrait_cols: 1, title_lines: 2, description_lines: 2 %}

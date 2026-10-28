@@ -21,7 +21,7 @@
   - Past 90 days: '90'
 - keyname: result_count
   field_type: select
-  name: Maximum posts (full screen)
+  name: Maximum posts
   default: '8'
   options:
   - Four posts: '4'

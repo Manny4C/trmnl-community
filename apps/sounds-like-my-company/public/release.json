@@ -1,5 +1,7 @@
 {
   "recipe_status": "submitted",
   "recipe_url": null,
-  "recipe_id": 507810
+  "recipe_id": 507810,
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "source_prepared_native_verification_pending"
 }

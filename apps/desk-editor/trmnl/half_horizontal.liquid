@@ -1,4 +1,4 @@
-<div class="layout layout--row portrait:flex--col gap--small">
+<div class="layout layout--row portrait:layout--col gap--small">
 {% if image_url %}<div class="nf-row-photo"><img class="image image-dither image--contain" src="{{ image_url | escape }}" alt="{{ image_caption | escape }}"></div>{% endif %}
 <div class="nf-row-copy flex flex--col flex--left flex--center-y gap--xsmall">
 <span class="label label--small lg:label--base" data-clamp="1">{{ source | escape }}{% if image_kind == 'video_thumbnail' %} · VIDEO{% endif %}</span>

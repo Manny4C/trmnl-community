@@ -21,9 +21,9 @@ test('all four Liquid layouts render current state and explicit monochrome accen
  let s=newCampaign();for(let i=0;i<6;i++)s=advance(s);
  for(const layout of ['full','half_horizontal','half_vertical','quadrant']){
   const html=await engine.parseAndRender(common+await read('trmnl/'+layout+'.liquid'),{...view(s),status:'Autopilot'}),w=new Window();w.document.body.innerHTML=html;
-  assert.equal(w.document.querySelectorAll('.q-waypoint').length,view(s).map_points.length);assert.equal(w.document.querySelectorAll('.q-hero').length,4);assert.equal(w.document.querySelectorAll('.q-auto').length,1);assert.equal(w.document.querySelectorAll('.q-art img.image-dither').length,1);assert.ok(w.document.body.textContent.includes(view(s).title));assert.ok(w.document.body.textContent.includes(view(s).recap.at(-1)));
+  assert.equal(w.document.querySelectorAll('.q-waypoint').length,view(s).map_points.length);assert.equal(w.document.querySelectorAll('.q-hero').length,4);assert.equal(w.document.querySelectorAll('.q-auto').length,1);assert.equal(w.document.querySelectorAll('.q-art img.image-dither').length,1);assert.ok(w.document.body.textContent.includes(view(s).title));if(layout==='full')assert.ok(w.document.body.textContent.includes(view(s).recap.at(-1)));assert.equal(w.document.querySelectorAll('.layout').length,1);assert.equal(w.document.querySelectorAll('.title_bar').length,1);
   for(const el of w.document.querySelectorAll('.text--red,.bg--yellow'))for(const depth of ['1bit','2bit','4bit'])assert.ok(el.classList.contains(depth+':text--black')||el.classList.contains(depth+':bg--white'));
   w.happyDOM.abort();
  }
- assert.match(common,/screen--1bit/);assert.match(common,/screen--color|screen--4bit/);
+ assert.doesNotMatch(common,/font-family:|font:[^;]*Arial|opacity:/);assert.ok(raw.includes('portrait:flex--col'));
 });

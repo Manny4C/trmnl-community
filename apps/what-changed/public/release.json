@@ -1,5 +1,7 @@
 {
   "recipe_url": null,
   "recipe_status": "submitted",
-  "support_url": "https://github.com/Manny4C/trmnl-community/issues"
+  "support_url": "https://github.com/Manny4C/trmnl-community/issues",
+  "framework_revision_on": "2026-10-27",
+  "framework_revision_status": "source_prepared_native_verification_pending"
 }

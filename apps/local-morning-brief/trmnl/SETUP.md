@@ -1,4 +1,4 @@
-Current owner status, October 28, 2026: existing master 522315 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+Current owner status, October 28, 2026: existing master 522315 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; the targeted follow-up report is read and its remaining findings are fixed. Original icon is uploaded and saved. Final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
 
 # Local Morning Brief — separate prepared Recipe
 
@@ -24,3 +24,5 @@ NWS: https://www.weather.gov/documentation/services-web-API
 Agency RSS: https://www.bart.gov/news/rss and https://recpark.sf.gov/rss.aspx
 
 October 28 automated review resolution: Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.
+
+October 28 targeted follow-up: Follow-up: full view adds supplied NWS forecast detail and up to two advisories, uses larger portrait headlines, and defaults to six updates across API/site/Recipe. Existing public city/unit/window scope is unchanged.

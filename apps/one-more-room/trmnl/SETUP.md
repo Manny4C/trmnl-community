@@ -1,4 +1,4 @@
-Current owner status, October 28, 2026: existing master 522318 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+Current owner status, October 28, 2026: existing master 522318 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; the targeted follow-up report is read and its remaining findings are fixed. Original icon is uploaded and saved. Final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
 
 # One More Room — TRMNL setup
 
@@ -23,3 +23,5 @@ Public Recipe listing/submission, native visual verification and physical screen
 Official references: [Saved State](https://help.trmnl.com/en/articles/16777795-saved-state), [Serverless](https://help.trmnl.com/en/articles/14130649-serverless), [refresh rates](https://help.trmnl.com/en/articles/10113695-how-refresh-rates-work).
 
 October 28 automated review resolution: Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.
+
+October 28 targeted follow-up: Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.

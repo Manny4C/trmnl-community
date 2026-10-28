@@ -1,4 +1,4 @@
-Current owner status, October 28, 2026: existing master 522310 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+Current owner status, October 28, 2026: existing master 522310 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; the targeted follow-up report is read and its remaining findings are fixed. Original icon is uploaded and saved. Final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
 
 # Game Night Radar — prepared separate Recipe
 
@@ -26,3 +26,5 @@ Website: https://game-night-radar.vercel.app
 Source/support: https://github.com/Manny4C/trmnl-community/tree/main/apps/game-night-radar
 
 October 28 automated review resolution: Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.
+
+October 28 targeted follow-up: Follow-up: full X portrait titles step up for readability; selected result/window limits remain explicit rather than padding with invented posts.

@@ -9,7 +9,7 @@
   "submitted": false,
   "approved": false,
   "trmy_review_status": "findings_fixed_native_verified",
-  "icon_status": "prepared_upload_pending",
+  "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
   "trmy_resolution": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility."
 }

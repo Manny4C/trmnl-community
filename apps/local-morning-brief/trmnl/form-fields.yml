@@ -31,7 +31,7 @@
 - keyname: result_count
   field_type: select
   name: Maximum community headlines
-  default: '4'
+  default: '6'
   options:
   - Three: '3'
   - Four: '4'

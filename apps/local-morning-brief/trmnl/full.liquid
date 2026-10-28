@@ -1,8 +1,9 @@
 <div class="layout layout--col gap--xsmall flex--top">
 {% render 'heading',city:city,date:date %}
 {% render 'weather',forecast:forecast %}
+{% if forecast.detail %}<span class="description w--full" data-clamp="2" data-clamp-lg="3">{{ forecast.detail | escape }}</span>{% endif %}
 {% render 'alert_line',alert_status:alert_status,alert_count:alert_count,alerts:alerts %}
-{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:1,lines:1 %}
-{% render 'update_rows',items:items,max_cols:2,title_size:'title--base lg:title--large' %}
+{% render 'transit_rows',transit_status:transit_status,transit:transit,limit:2,lines:2 %}
+{% render 'update_rows',items:items,max_cols:2,title_size:'title--base lg:title--large lg:portrait:title--xlarge' %}
 {% render 'status_line',sources:sources,partial:partial %}
 </div>{% render 'title_bar',checked_at:checked_at %}

@@ -1,4 +1,4 @@
-Current owner status, October 28, 2026: existing master 522317 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; a targeted follow-up review is checking. Original icon upload, applicable final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+Current owner status, October 28, 2026: existing master 522317 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; the targeted follow-up report is read and its remaining findings are fixed. Original icon is uploaded and saved. Final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
 
 # TRMNL Draws — separate prepared Recipe
 
@@ -23,3 +23,5 @@ Website/source/support: https://trmnl-draws.vercel.app / https://github.com/Mann
 October22 starting artwork is an AI-generated black-cat photo, adapted to the same800×480sixteen-color editable grid. No Recipe markup, polling URL, allowance, palette or ownership change is needed. Original generated photo and prompt live under assets/ in source. Smart monochrome remains binary; source photograph is not sent as a large merge variable. The one-time seed change is not a player edit. Existing shared edits and all daily quotas remain intact.
 
 October 28 automated review resolution: Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square.
+
+October 28 targeted follow-up: Follow-up: separate code/allowance lines, native pixel-perfect labels and whole-pixel canvas/QR geometry prevent text clipping and broken OG glyphs; unused monochrome argument removed and description corrected.

@@ -353,7 +353,7 @@
       "websiteUrl": "https://newsflash-trmnl.vercel.app",
       "vercelProject": "desk-editor",
       "vercelProjectId": "prj_TDBQYSBMNjahZwjRUNPMfJKFpYuw",
-      "latestDeploymentId": "dpl_EitBy7uG436Y3DsArrvXpvHP7nEo",
+      "latestDeploymentId": "dpl_2NpgPaKjv9oRjFJ9LzC1wsW1HXph",
       "buildCompletedOn": "2026-10-16",
       "startedEarly": true,
       "websiteDeploymentStatus": "ready_and_production_verified",
@@ -378,9 +378,8 @@
         "follow": ""
       },
       "pendingActions": [
-        "Proceed to final public human submission after icons/license",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "reviewStatus": "Separate Newsflash Recipe512643 created; private draft, NOT submitted or approved. No duplicate Desk Editor Recipe.",
@@ -514,6 +513,11 @@
         "firstReport": "artifacts/framework-native-2026-10-28/desk-editor-review.txt",
         "resolution": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility.",
         "followupRequestedOn": null
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/desk-editor/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     },
     {
@@ -593,9 +597,8 @@
         "publicStatusSynchronizedOn": "2026-10-21"
       },
       "pendingActions": [
-        "Proceed to final public human submission after icons/license",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL",
         "Real human ownership/gameplay remains unverified; do not fabricate a player or consume quota as a test"
       ],
@@ -607,7 +610,7 @@
         "nativeQa": "not_verified",
         "physicalReceipt": "unconfirmed"
       },
-      "latestDeploymentId": "dpl_mLfGHuEaENiSEGZURUWzMuzuB8Vy",
+      "latestDeploymentId": "dpl_H3caJbHy3kfvhKhyWtsuQ3kqMNtz",
       "pluginId": 512639,
       "latestActivationDeploymentId": "dpl_9Q3oGum2j3ue5kqB5mAgM6ZkD6oB",
       "activationRetryDeploymentId": "dpl_HRYR55eJ1yPv2tikVf6MWHX6zTPy",
@@ -651,6 +654,11 @@
         "firstReport": "artifacts/framework-native-2026-10-28/tiny-planet-review.txt",
         "resolution": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.",
         "followupRequestedOn": null
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/tiny-planet/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     },
     {
@@ -679,9 +687,8 @@
       "testStatus": "17 automated checks passed: strict App ID/URL options; developer feed/app/time/URL validation; per-game single-flight cache; newest/window/filter order; partial, cold and dated fallback outages; oversized/malformed response rejection; 8 multibyte rows under4600bytes; per-Recipe history/reset/cached handling and entire transform including Saved State under4800bytes; no runtime context is returned; HTTP400/405/503; all four safe Liquid layouts; browser DOM source links/settings/palette/history and cold failure. Native visual OG/X and actual browser/mobile QA remain unverified.",
       "pollingUrl": "https://game-night-radar.vercel.app/api/radar?apps={{ apps | url_encode }}&days={{ days }}&count={{ result_count }}&kind={{ kind }}&format=trmnl",
       "pendingActions": [
-        "Read targeted follow-up trmy report when ready",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "defaults": {
@@ -704,7 +711,7 @@
       },
       "vercelProjectId": "prj_0p8YgRq32xJBG36l1yfF7ECav5NP",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_AQYVp31QJqv21D49VXEDWXr1W35F",
+      "latestDeploymentId": "dpl_3ywN3XrsLxFYZRmrUMEAJ8jgviyD",
       "verificationTimestamp": "2026-10-21T16:39:51.248064+00:00",
       "productionEvidence": "artifacts/game-night-radar-production-2026-10-21.json",
       "productionVerification": "Production website200, source8rows3271bytes, device8rows981bytes, Valheim7dayupdates1post, Terraria7dayempty200, invalidhost400, public ZIP/app.js match source, releaseprepared with no invented RecipeID/install URL. Native visual/mobile/physical checks remain unverified.",
@@ -728,13 +735,20 @@
       "recipeCreatedOn": "2026-10-28",
       "trmyReview": {
         "requestedOn": "2026-10-28",
-        "status": "followup_checking",
+        "status": "followup_findings_fixed_native_verified",
         "url": "https://trmnl.com/plugin_settings/522310/recipe_review",
         "submittedForPublicHumanReview": false,
         "firstReportRead": true,
         "firstReport": "artifacts/framework-native-2026-10-28/game-night-radar-review.txt",
         "resolution": "Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.",
-        "followupRequestedOn": "2026-10-28"
+        "followupRequestedOn": "2026-10-28",
+        "followupResolution": "Follow-up: full X portrait titles step up for readability; selected result/window limits remain explicit rather than padding with invented posts.",
+        "followupReportRead": true
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/game-night-radar/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     },
     {
@@ -758,7 +772,7 @@
       "vercelProjectId": "prj_xFOg0LzAYJYqY1KxuqZx4R3flxct",
       "websiteUrl": "https://local-morning-brief.vercel.app",
       "buildCompletedOn": "2026-10-22",
-      "latestDeploymentId": "dpl_F9RhSmexGhix81pyuSDjbnAijtZH",
+      "latestDeploymentId": "dpl_BPh49y63L8iPJQVJdf46DSo7bd5u",
       "websiteDeploymentStatus": "ready_and_production_verified",
       "publicationStatus": "private_draft_pre_review_requested",
       "deviceInstallationStatus": "added_to_playlist",
@@ -804,9 +818,8 @@
       },
       "freshnessPolicy": "Warm single-flight: NWS mapping24h/forecast15m, NWSalerts/BART2m, RSS30m. Forecast outage fallback<=2h onlyifperiod/issuevalid; RSS<=6h withinwindow. Original checktime retained. Alerts/transit NEVER outage replay. Failures never become no-alert/no-delay. Not durable storage; device refresh independent.",
       "pendingActions": [
-        "Read targeted follow-up trmy report when ready",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "frameworkRevision": {
@@ -827,13 +840,20 @@
       "recipeCreatedOn": "2026-10-28",
       "trmyReview": {
         "requestedOn": "2026-10-28",
-        "status": "followup_checking",
+        "status": "followup_findings_fixed_native_verified",
         "url": "https://trmnl.com/plugin_settings/522315/recipe_review",
         "submittedForPublicHumanReview": false,
         "firstReportRead": true,
         "firstReport": "artifacts/framework-native-2026-10-28/local-morning-brief-review.txt",
         "resolution": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.",
-        "followupRequestedOn": "2026-10-28"
+        "followupRequestedOn": "2026-10-28",
+        "followupResolution": "Follow-up: full view adds supplied NWS forecast detail and up to two advisories, uses larger portrait headlines, and defaults to six updates across API/site/Recipe. Existing public city/unit/window scope is unchanged.",
+        "followupReportRead": true
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/local-morning-brief/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     }
   ],
@@ -848,7 +868,7 @@
   ],
   "repositoryUrl": "https://github.com/Manny4C/trmnl-community",
   "publicLicenseApproval": "Approved by Manuel for this Recipe public submission on 2026-10-13, originally named What Changed? and now renamed The Daily TRMNL.",
-  "browserFileAccess": "Manuel explicitly approved enabling Chrome extension file URL access October 28. Browser policy rejected chrome://extensions (HTTP/HTTPS only), so manual user action remains necessary; six prepared original SVG icon uploads are pending. Original three submissions retain their existing icons.",
+  "browserFileAccess": "Manuel confirmed Chrome extension file URL access enabled October 28. All six prepared original SVG icons were uploaded, saved and verified after reloading the existing masters.",
   "creatorFund": {
     "source": "https://trmnl.com/blog/creator-fund-09-2026",
     "verifiedOn": "2026-10-13",
@@ -936,15 +956,14 @@
         "status": "production_redirect_chain_verified_live_consent_pending"
       },
       "pendingActions": [
-        "Read targeted follow-up trmy report when ready",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL",
         "Real human ownership/gameplay remains unverified; do not fabricate a player or consume quota as a test"
       ],
       "buildCompletedOn": "2026-10-21",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_6fomXbSMJ3B7pGwhq1aYxa6z35YA",
+      "latestDeploymentId": "dpl_7xVxpNY6e3ph2kVa1bUPHJyiVxLi",
       "verificationTimestamp": "2026-10-23T01:20:26.282Z",
       "pollingUrl": "https://trmnl-draws.vercel.app/api/canvas?format=trmnl",
       "productionEvidence": "artifacts/trmnl-draws/photo-production-2026-10-22.json",
@@ -992,13 +1011,20 @@
       "recipeCreatedOn": "2026-10-28",
       "trmyReview": {
         "requestedOn": "2026-10-28",
-        "status": "followup_checking",
+        "status": "followup_findings_fixed_native_verified",
         "url": "https://trmnl.com/plugin_settings/522317/recipe_review",
         "submittedForPublicHumanReview": false,
         "firstReportRead": true,
         "firstReport": "artifacts/framework-native-2026-10-28/trmnl-draws-review.txt",
         "resolution": "Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square.",
-        "followupRequestedOn": "2026-10-28"
+        "followupRequestedOn": "2026-10-28",
+        "followupResolution": "Follow-up: separate code/allowance lines, native pixel-perfect labels and whole-pixel canvas/QR geometry prevent text clipping and broken OG glyphs; unused monochrome argument removed and description corrected.",
+        "followupReportRead": true
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/trmnl-draws/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     },
     {
@@ -1040,15 +1066,14 @@
       "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_57RgKrw6j1VRajHVvpKuMbXfyaRd",
+      "latestDeploymentId": "dpl_84MAUr3AYQeX1NEyN1zeB1LqF7x8",
       "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
       "packageUrl": "https://one-more-room-trmnl.vercel.app/plugin.zip",
       "pendingActions": [
-        "Read targeted follow-up trmy report when ready",
-        "Upload prepared original icon after user manually enables Chrome extension file URL access",
-        "Obtain action-time Community Plugin License confirmation and submit this existing master for public human review",
+        "Obtain final action-time Community Plugin License confirmation, then submit this existing master for public human review",
+        "Await human review and address any new feedback",
         "Confirm physical receipt separately; publish only an actually approved public install URL"
       ],
       "latestUpdateOn": "2026-10-25",
@@ -1079,13 +1104,20 @@
       "recipeCreatedOn": "2026-10-28",
       "trmyReview": {
         "requestedOn": "2026-10-28",
-        "status": "followup_checking",
+        "status": "followup_findings_fixed_native_verified",
         "url": "https://trmnl.com/plugin_settings/522318/recipe_review",
         "submittedForPublicHumanReview": false,
         "firstReportRead": true,
         "firstReport": "artifacts/framework-native-2026-10-28/one-more-room-review.txt",
         "resolution": "Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.",
-        "followupRequestedOn": "2026-10-28"
+        "followupRequestedOn": "2026-10-28",
+        "followupResolution": "Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.",
+        "followupReportRead": true
+      },
+      "iconUpload": {
+        "status": "uploaded_saved_and_reload_verified",
+        "source": "apps/one-more-room/trmnl/icon.svg",
+        "date": "2026-10-28"
       }
     }
   ],
@@ -1196,7 +1228,7 @@
     "tests": 236,
     "testsNote": "222 app checks plus 14 cross-app checks passed under Node 22.23.1; native 144-case evidence is separate.",
     "productionEvidence": "artifacts/framework-revision-2026-10-28-production.json",
-    "remaining": "Daily/YC re-review replies sent and verified. Six automated reports read with images and findings fixed. Four targeted follow-up checks requested. Six icons require manual extension setting; six final public submissions require action-time license confirmation. No human approval or physical receipt is claimed.",
+    "remaining": "Daily/YC re-review replies sent and verified. All six initial reports and four targeted follow-up reports read, with remaining findings fixed and native-verified. Six icons uploaded and saved. Six final public submissions await action-time Community Plugin License confirmation. No human approval or physical receipt is claimed.",
     "nativeEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json",
     "nativeCases": 144,
     "nativeStatus": "all_nine_existing_masters_saved_and_native_default_views_verified"

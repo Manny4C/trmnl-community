@@ -1156,9 +1156,9 @@
     }
   ],
   "limitations": [
-    "Default owner views; first trmy reports expanded select options. Four follow-up reports are checking.",
-    "Native fitting and live data can change displayed item counts.",
-    "No physical receipt, human approval or real-player consent/gameplay verified."
+    "Default-owner native checks, with automated select-option coverage in initial and follow-up reports.",
+    "Low result counts and limited upstream data can leave empty space; no posts or alerts were invented to fill it.",
+    "No physical receipt, human public approval or real-player consent/gameplay verified."
   ],
   "testsPassed": 236,
   "marketplacePreviews": [
@@ -1215,6 +1215,160 @@
       "id": 522317,
       "generatedLinks": 2,
       "pending": false
+    }
+  ],
+  "iconUploads": [
+    {
+      "slug": "desk-editor",
+      "id": 512643,
+      "saved": true
+    },
+    {
+      "slug": "tiny-planet",
+      "id": 512639,
+      "saved": true
+    },
+    {
+      "slug": "game-night-radar",
+      "id": 522310,
+      "saved": true
+    },
+    {
+      "slug": "local-morning-brief",
+      "id": 522315,
+      "saved": true
+    },
+    {
+      "slug": "trmnl-draws",
+      "id": 522317,
+      "saved": true
+    },
+    {
+      "slug": "one-more-room",
+      "id": 522318,
+      "saved": true
+    }
+  ],
+  "followupReportsRead": [
+    "one-more-room",
+    "trmnl-draws",
+    "local-morning-brief",
+    "game-night-radar"
+  ],
+  "followupFindingsStatus": "fixed_and_native_verified",
+  "wholePixelStoryOrigins": true,
+  "drawingProportionsAndLabels": [
+    {
+      "device": "OG color",
+      "layout": "full",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG color",
+      "layout": "half_horizontal",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG color",
+      "layout": "half_vertical",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG color",
+      "layout": "quadrant",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG B/W",
+      "layout": "full",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG B/W",
+      "layout": "half_horizontal",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG B/W",
+      "layout": "half_vertical",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "OG B/W",
+      "layout": "quadrant",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X landscape",
+      "layout": "full",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X landscape",
+      "layout": "half_horizontal",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X landscape",
+      "layout": "half_vertical",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X landscape",
+      "layout": "quadrant",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X portrait",
+      "layout": "full",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X portrait",
+      "layout": "half_horizontal",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X portrait",
+      "layout": "half_vertical",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
+    },
+    {
+      "device": "X portrait",
+      "layout": "quadrant",
+      "ratio": 1.6666666666666667,
+      "labelsFit": true,
+      "labelOriginsWholePixels": true
     }
   ]
 }

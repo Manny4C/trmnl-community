@@ -9,8 +9,9 @@
   "installed": true,
   "submitted": false,
   "approved": false,
-  "trmy_review_status": "followup_checking",
-  "icon_status": "prepared_upload_pending",
+  "trmy_review_status": "followup_findings_fixed_native_verified",
+  "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
-  "trmy_resolution": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time."
+  "trmy_resolution": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.",
+  "trmy_followup_resolution": "Follow-up: full view adds supplied NWS forecast detail and up to two advisories, uses larger portrait headlines, and defaults to six updates across API/site/Recipe. Existing public city/unit/window scope is unchanged."
 }

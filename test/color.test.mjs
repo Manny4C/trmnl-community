@@ -18,7 +18,7 @@ for(const app of apps)test(`${app}: every layout retains readable content and ex
   const accents=[...w.document.querySelectorAll('[class]')].filter(el=>el.classList.contains('text--red')||el.classList.contains('bg--red')||el.classList.contains('bg--yellow'));
   assert.ok(accents.length>0,`${layout} has color accents`);
   for(const el of accents){for(const depth of ['1bit','2bit','4bit']){const classes=el.classList;assert.ok(classes.contains(`${depth}:text--black`)||classes.contains(`${depth}:bg--black`)||classes.contains(`${depth}:bg--white`),`${layout}: ${el.className} missing ${depth} fallback`);}if(el.classList.contains('bg--yellow'))assert.ok(el.classList.contains('text--black'),'yellow never carries low-contrast white text');}
-  if(app==='what-changed'){assert.equal(w.document.querySelectorAll('.wc-card').length,20);assert.ok(w.document.body.textContent.includes('NEW'));}
+  if(app==='what-changed'){assert.equal(w.document.querySelectorAll('.wc-card').length,layout==='full'?20:layout==='quadrant'?1:2);assert.ok(w.document.body.textContent.includes('NEW'));}
   if(app==='yc-scout')assert.equal(w.document.querySelectorAll('.item[data-launch-id]').length,layout==='full'?10:layout==='quadrant'?1:2);
   if(app==='sounds-like-my-company'){assert.ok(w.document.body.textContent.includes('ECHO'));for(const img of w.document.querySelectorAll('img'))assert.ok(!img.classList.contains('image-dither'),'QR must not be dithered');}
   if(app==='desk-editor'){assert.ok(w.document.querySelector('img.image-dither'),'source photo adapts to device palette');assert.ok(w.document.body.textContent.includes(context.headline));}

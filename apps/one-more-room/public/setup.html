@@ -2,9 +2,9 @@
 
 # One More Room — TRMNL setup
 
-New game built October 24, 2026. Website and installable source package are prepared. The owner Recipe is now created and installed as recorded above. Public submission/approval and physical receipt remain unverified.
+New game built October 24, 2026. Website and installable source package are prepared. The owner Recipe is now created and installed as recorded above. Submission is verified; approval and physical receipt remain unconfirmed.
 
-1. Create ONE separate private plugin named **One More Room**. Use **Polling**, GET, framework **3.4.3 or later**. No headers, body, key or new paid service is required. Do not use Async Polling; it does not run the state transform.
+1. For the existing owner installation, continue Recipe **522318**; do not create another. New independent users can create a private plugin named **One More Room**. Use **Polling**, GET, framework **3.4.3 or later**. No headers, body, key or new paid service is required. Do not use Async Polling; it does not run the state transform.
 2. Set its polling URL to `https://one-more-room-trmnl.vercel.app/api/frame`. A **15-minute refresh** is a reasonable starting point. The endpoint emits one token per minute; repeated fetches inside the same minute do not advance again. A plugin refresh is distinct from the device’s playlist cycle.
 3. Copy `form-fields.yml` into Custom Fields. Save a seed and party instinct. A seed change starts a new campaign; instinct changes preserve the campaign.
 4. In Edit Markup, put `shared.liquid` in Shared; copy the four matching `.liquid` layout files into Full, Half horizontal, Half vertical and Quadrant.
@@ -25,4 +25,16 @@ Official references: [Saved State](https://help.trmnl.com/en/articles/16777795-s
 October 28 automated review resolution: Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.
 
 October 28 targeted follow-up: Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.
+
+## Weekly chapter bridge — prepared, not yet saved to Recipe 522318
+
+After renewed authorization for this native update, keep the existing canonical Shared/four layouts and owner settings. Replace Serverless with the complete current `transform.js`, and change the polling URL to:
+
+```text
+https://one-more-room-trmnl.vercel.app/api/frame?story=1&amp;release={{ trmnl.state.story.release | default: &#39;&#39; | url_encode }}
+```
+
+The endpoint returns the immutable active chapter and latest chapter; no seed, party health, choice history or secret is sent. The transform validates the data, resolves one action and saves compact progress. A new chapter waits for the active required arc and accepted side thread to finish, then adopts at a floor boundary. The unchanged default `/api/frame` remains backward-compatible for the currently installed older transform.
+
+Source, DOM/Liquid tests and simulated content-aware transforms are verified in this build. The one-time bridge has **not** been saved in native settings by this chat, so the existing device does not yet receive weekly authored chapters. Do not claim otherwise based on web deployment or ZIP generation. Once the bridge is saved and verified, normal data-only weekly releases can be delivered without rewriting the native template or Serverless function.
 </pre></main></body></html>

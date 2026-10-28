@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "version": 1,
+  "established_on": "2026-10-28",
+  "premise": "Four heroes carry a lantern through the underworld to recover fragments of a stolen sun.",
+  "immutable_rules": [
+    {
+      "id": "light_is_carried",
+      "text": "Light is limited; ordinary lamps do not create sun embers.",
+      "source": "WORLD-BIBLE.md#fixed-laws"
+    },
+    {
+      "id": "defeat_is_not_universal_resurrection",
+      "text": "Only the company has the established lantern recovery; unrelated deaths are not undone.",
+      "source": "WORLD-BIBLE.md#fixed-laws"
+    },
+    {
+      "id": "knowledge_has_sources",
+      "text": "A rumor is not a proven fact and an NPC cannot know an unseen player action.",
+      "source": "WORLD-BIBLE.md#fixed-laws"
+    },
+    {
+      "id": "separate_party_histories",
+      "text": "Private playthrough outcomes never become universal shared canon.",
+      "source": "WORLD-BIBLE.md#fixed-laws"
+    },
+    {
+      "id": "one_action_per_frame",
+      "text": "A refresh resolves one action; authoring runs never move a player.",
+      "source": "WORLD-BIBLE.md#fixed-laws"
+    }
+  ],
+  "regions": [
+    {
+      "id": "abbey",
+      "name": "The Sunken Abbey",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    },
+    {
+      "id": "briar",
+      "name": "The Briar Archive",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    },
+    {
+      "id": "clockwork",
+      "name": "The Clockwork Crypt",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    },
+    {
+      "id": "glass",
+      "name": "The Glass Catacombs",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    },
+    {
+      "id": "ember",
+      "name": "The Ember Observatory",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    },
+    {
+      "id": "orchard",
+      "name": "The Hollow Orchard",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#places-already-on-the-atlas"
+    }
+  ],
+  "people": [
+    {
+      "id": "nessa",
+      "name": "Nessa Reed",
+      "home": "abbey",
+      "route": null,
+      "goal": "Maintain safe ferry crossings",
+      "knowledge_limit": "Local currents, bell signals and actual travelers",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    },
+    {
+      "id": "orin",
+      "name": "Orin Vale",
+      "home": null,
+      "route": "maintained_waystones",
+      "goal": "Keep the waystone courier network useful",
+      "knowledge_limit": "Only visited routes, completed repairs and delivered messages",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    },
+    {
+      "id": "tamsin",
+      "name": "Tamsin Quill",
+      "home": "briar",
+      "route": null,
+      "goal": "Preserve records while making careful copies useful",
+      "knowledge_limit": "Her collection and its explicitly recorded gaps",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    },
+    {
+      "id": "ada",
+      "name": "Ada Flint",
+      "home": "clockwork",
+      "route": null,
+      "goal": "Make lamps and tools maintainable by their users",
+      "knowledge_limit": "Ordinary mechanisms and the limits of her workshop",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    },
+    {
+      "id": "sel",
+      "name": "Sel Marr",
+      "home": "glass",
+      "route": null,
+      "goal": "Make warnings useful without hiding uncertainty",
+      "knowledge_limit": "Reports compared with independent sources",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    },
+    {
+      "id": "ivo",
+      "name": "Ivo Moss",
+      "home": "orchard",
+      "route": null,
+      "goal": "Protect viable seed and promises of future care",
+      "knowledge_limit": "Their own stores, shelters and entrusted seeds",
+      "status": "established",
+      "source": "WORLD-BIBLE.md#people-to-return-to"
+    }
+  ],
+  "factions": [
+    {
+      "id": "lantern_road",
+      "name": "The Lantern Road",
+      "goal": "Keep ordinary routes usable",
+      "clock": {
+        "id": "broken_signals",
+        "step": 0,
+        "max": 4,
+        "status": "starting_condition_not_player_outcome"
+      },
+      "source": "WORLD-BIBLE.md#factions-and-limits"
+    },
+    {
+      "id": "briar_custodians",
+      "name": "The Briar Custodians",
+      "goal": "Preserve useful records and living stores",
+      "clock": {
+        "id": "missing_names",
+        "step": 0,
+        "max": 4,
+        "status": "starting_condition_not_player_outcome"
+      },
+      "source": "WORLD-BIBLE.md#factions-and-limits"
+    },
+    {
+      "id": "quiet_measure",
+      "name": "The Quiet Measure",
+      "goal": "Allocate limited light from trustworthy measurements",
+      "clock": {
+        "id": "forecast_of_dawn",
+        "step": 0,
+        "max": 4,
+        "status": "starting_condition_not_player_outcome"
+      },
+      "source": "WORLD-BIBLE.md#factions-and-limits"
+    }
+  ],
+  "earned_fact_ids": [
+    "road_signal_restored",
+    "letter_kept_safe",
+    "letter_wrapped",
+    "archive_copy_saved",
+    "lamp_repaired",
+    "ferry_favor",
+    "warning_checked",
+    "forecast_uncertain",
+    "seed_shelter_helped",
+    "ration_shared",
+    "road_tool_fixed",
+    "company_listened"
+  ],
+  "plans": [
+    {
+      "id": "sun_motive",
+      "status": "draft",
+      "question": "Was dividing the sun an attempt to prevent a destructive use?"
+    },
+    {
+      "id": "missing_names_cause",
+      "status": "draft",
+      "question": "Who benefits when a community disappears from a supply record?"
+    }
+  ],
+  "amendments": []
+}

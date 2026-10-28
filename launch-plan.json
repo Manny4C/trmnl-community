@@ -1163,7 +1163,7 @@
       "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_BfLMuXpaYU6eVBKPCvEcgMsAV9yJ",
+      "latestDeploymentId": "dpl_5DMA4DDdZ3N9nCUiakB8hPRqkPCN",
       "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
@@ -1171,7 +1171,8 @@
       "pendingActions": [
         "Await human review and address new feedback",
         "Add only an actually approved public install URL",
-        "Confirm physical receipt separately"
+        "Confirm physical receipt separately",
+        "Apply prepared weekly-campaign bridge to existing Recipe 522318 after renewed direct native screen-control authorization; preserve state and all playlist entries"
       ],
       "latestUpdateOn": "2026-10-25",
       "artworkAndAtlasUpdate": {
@@ -1232,6 +1233,42 @@
         "url": "https://app.hey.com/topics/2169999054",
         "status": "Submitted acknowledgment only; human review pending",
         "checkedAt": "2026-10-28T19:28:40.303696+00:00"
+      },
+      "weeklyCampaign": {
+        "requestedOn": "2026-10-28",
+        "automationId": "one-more-room-weekly-worldbuilding",
+        "automationStatus": "ACTIVE",
+        "schedule": "Mondays at 10:00 America/Los_Angeles",
+        "firstScheduledRun": "2026-11-02",
+        "workflow": "apps/one-more-room/campaign/WEEKLY-RUNBOOK.md",
+        "model": "apps/one-more-room/campaign/CAMPAIGN-MODEL.md",
+        "worldBible": "apps/one-more-room/campaign/WORLD-BIBLE.md",
+        "canon": "apps/one-more-room/campaign/canon.json",
+        "ledger": "apps/one-more-room/campaign/ledger.json",
+        "foundationRelease": "foundation_2026_10_28",
+        "foundationCards": 16,
+        "sourceStatus": "validated_and_published_web",
+        "websiteStatus": "production_catalog_pack_modules_notebook_and_zip_hash_verified",
+        "nativeBridgeStatus": "prepared_not_saved_to_existing_recipe_522318",
+        "nativeBridgeRequiredChanges": [
+          "Replace existing Serverless with prepared transform.js without clearing saved state",
+          "Change existing polling URL to /api/frame?story=1&release={{ trmnl.state.story.release | default: '' | url_encode }}",
+          "Verify native saved fields and rendered data under renewed direct screen-control authorization"
+        ],
+        "existingRecipePreserved": true,
+        "existingEndpointPreserved": true,
+        "noRuntimeModelCalls": true,
+        "memory": "Pinned immutable chapter until required and accepted side stories end; adopt at a floor boundary. Permanent earned facts use stable compact indices; old v1 games migrate at a boundary.",
+        "validation": {
+          "appTests": 33,
+          "sharedTests": 14,
+          "reachableObligationStates": 33,
+          "observedMaxStoryMergeBytes": 3387,
+          "observedMaxStoryStateBytes": 1297,
+          "productionRoutesVerified": 13,
+          "compiledBridgeWithProductionData": true
+        },
+        "productionEvidence": "apps/one-more-room/artifacts/weekly-foundation-production.json"
       }
     }
   ],

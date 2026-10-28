@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "latest": "foundation_2026_10_28",
+  "releases": [
+    {
+      "id": "foundation_2026_10_28",
+      "file": "packs/foundation_2026_10_28.json",
+      "sha256": "71e6971c0b10007d00b2030e9cbf6f5b457d17245bb5c9900624932a20ec18e2",
+      "title": "The Bell Without a Rope",
+      "published_on": "2026-10-28"
+    }
+  ]
+}

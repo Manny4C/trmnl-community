@@ -22,5 +22,8 @@
   "trmy_followup_resolution": "Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.",
   "submitted_on": "2026-10-28",
   "license_accepted_on": "2026-10-28",
-  "submission_verification": "Plugin in review observed after reload"
+  "submission_verification": "Plugin in review observed after reload",
+  "campaign_content_release": "foundation_2026_10_28",
+  "campaign_schedule": "Mondays at 10:00 America/Los_Angeles",
+  "native_campaign_bridge_status": "prepared_not_saved"
 }

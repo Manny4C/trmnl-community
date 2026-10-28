@@ -1,3 +1,4 @@
+import {validStoryState,storyPack,storyChapterDone,storyScene,storyOptions,automaticStoryOption,storyAction,adoptStoryChapter,offerStoryScene,applyStoryOutcome} from './campaign.js';
 // Shared, deterministic rules for the browser and the TRMNL Serverless bundle.
 // Original procedural fiction. No model service, secret or paid API is used.
 export const HEROES = [
@@ -14,6 +15,7 @@ const THEMES = [
   ['The Ember Observatory','ash falls like snow','a fallen star','Ash Astronomer','the night the sun disappeared'],
   ['The Hollow Orchard','silver fruit hums softly','a sleeping seed','Root King','the first tree beneath the world']
 ];
+const REGION_IDS=['abbey','briar','clockwork','glass','ember','orchard'];
 const ROOMS = ['Flooded Vestry','Whispering Hall','Broken Reliquary','Moss Stair','Silent Gallery','Lantern Vault','Pilgrim Cell','Salt Library','Moon Well','Crooked Chapel','Dust Chamber','Hidden Nursery','Oath Room','Echo Bridge','Watch Post','Ivory Passage','Star Garden','Raven Niche','Candle Court','Bone Workshop','Sunken Study','Hushed Crossing','Winding Landing','Last Threshold'];
 const FOES = ['Lantern Wisp','Hollow Knight','Ink Familiar','Briar Hound','Clockwork Spider','Candle Shade','Paper Drake','Salt Revenant'];
 const GLYPHS = ['·','!','^','?','$','+','▼'];
@@ -32,7 +34,7 @@ export function dungeon(seed,floor){
   for(const p of queue)for(const n of links[p])if(distance[n]<0){distance[n]=distance[p]+1;queue.push(n);}
   const gate=distance.indexOf(Math.max(...distance)),theme=THEMES[hash(seed+':theme:'+floor)%THEMES.length];
   const kinds=Array.from({length:24},(_,i)=>i===0?0:i===gate?6:pick(source,[1,1,2,3,3,4,4,5]));
-  return {links,gate,kinds,theme,names:Array.from({length:24},(_,i)=>ROOMS[(hash(seed+':room:'+floor+':'+i))%ROOMS.length])};
+  return {links,gate,kinds,theme,region:REGION_IDS[hash(seed+':theme:'+floor)%THEMES.length],names:Array.from({length:24},(_,i)=>ROOMS[(hash(seed+':room:'+floor+':'+i))%ROOMS.length])};
 }
 export function validCampaign(s){
   return !!s&&s.v===1&&typeof s.seed==='string'&&s.seed===seedText(s.seed)&&Number.isInteger(s.rng)&&s.rng>0&&s.rng<=4294967295&&
@@ -40,14 +42,14 @@ export function validCampaign(s){
     Number.isInteger(s.pos)&&s.pos>=0&&s.pos<24&&Array.isArray(s.hp)&&s.hp.length===4&&s.hp.every((n,i)=>Number.isInteger(n)&&n>=0&&n<=HEROES[i].max+2*level(s))&&
     ['visited','cleared','gold','supplies','relics','enemy','turnsHere'].every(k=>Number.isInteger(s[k])&&s[k]>=0&&s[k]<1e9)&&
     s.visited<16777216&&s.cleared<16777216&&s.supplies<=9&&s.enemy<=100&&typeof s.frame==='string'&&s.frame.length<=80&&
-    ['balanced','bold','careful'].includes(s.style)&&Array.isArray(s.log)&&s.log.length<=6&&s.log.every(l=>typeof l==='string'&&l.length<=190)&&typeof s.last==='string'&&s.last.length<=190&&typeof s.roll==='string'&&s.roll.length<=190;
+    ['balanced','bold','careful'].includes(s.style)&&Array.isArray(s.log)&&s.log.length<=6&&s.log.every(l=>typeof l==='string'&&l.length<=190)&&typeof s.last==='string'&&s.last.length<=190&&typeof s.roll==='string'&&s.roll.length<=190&&validStoryState(s.story);
 }
 export function level(s){return Math.min(12,Math.floor((s.floor-1)/2));}
 export function maxHP(s,i){return HEROES[i].max+2*level(s);}
 function note(s,text){s.last=text.slice(0,190);s.log.push(s.last);s.log=s.log.slice(-6);}
 export function newCampaign(seed='lantern',style='balanced'){
   const s={v:1,seed:seedText(seed),style:['balanced','bold','careful'].includes(style)?style:'balanced',rng:hash(seedText(seed)+':party'),turn:0,floor:1,pos:0,visited:1,cleared:1,hp:HEROES.map(h=>h.max),gold:12,supplies:3,relics:0,enemy:0,turnsHere:0,frame:'',log:[],last:'',roll:''};
-  note(s,'The Lantern Company entered the underworld to rekindle the stolen sun.');return s;
+  note(s,'The Lantern Company entered the underworld to rekindle the stolen sun.');adoptStoryChapter(s);return s;
 }
 function route(s,map){
   const queue=[[s.pos]],seen=new Set([s.pos]);
@@ -66,8 +68,9 @@ function baseOptions(s){
   if(kind===4)return [{id:'search',label:'Search for hidden treasure',actor:'Pip',hint:'Finesse · DC 11'},{id:'listen',label:'Listen before opening it',actor:'Fern',hint:'Instinct · DC 12'},{id:'ritual',label:'Lift the seal with a ritual',actor:'Mira',hint:'Lore · DC 13'}];
   return [{id:'rest',label:'Share supplies and recover',actor:'Fern',hint:s.supplies?'1 supply · heal all':'No supplies · small recovery'},{id:'offering',label:'Leave an offering of gold',actor:'Brann',hint:s.gold>=5?'5 gold · heal all':'Small recovery'},{id:'commune',label:'Ask the shrine for guidance',actor:'Mira',hint:'Lore · DC 10'}];
 }
-export function options(s){return baseOptions(s).map(o=>{const who=HEROES.findIndex(h=>h.name===o.actor);return who>=0&&s.hp[who]===0?{id:'revive:'+who,label:'Help '+o.actor+' back to their feet',actor:'Party',hint:'Recover 4 HP'}:o;});}
+export function options(s){return (storyOptions(s)||baseOptions(s)).map(o=>{const who=HEROES.findIndex(h=>h.name===o.actor);return who>=0&&s.hp[who]===0?{id:'revive:'+who,label:'Help '+o.actor+' back to their feet',actor:'Party',hint:'Recover 4 HP'}:o;});}
 export function automatic(s){
+  const storyAuto=automaticStoryOption(s);if(storyAuto){const available=options(s);return available.some(o=>o.id===storyAuto)?storyAuto:available[0].id;}
   const o=options(s),map=dungeon(s.seed,s.floor),kind=map.kinds[s.pos];
   if(bit(s.cleared,s.pos))return s.pos===map.gate&&wounded(s)>30&&s.supplies?o[1].id:o[0].id;
   if(kind===5){const preferred=wounded(s)>10?'rest':'commune';return o.some(a=>a.id===preferred)?preferred:o[0].id;}
@@ -81,16 +84,21 @@ export function advance(previous,choice=null,frame=null){
   if(!validCampaign(previous))throw new Error('Invalid campaign state');
   const s=JSON.parse(JSON.stringify(previous));
   if(frame!==null&&(String(frame).slice(0,80)===s.frame||(/^minute:\d+$/.test(String(frame))&&/^minute:\d+$/.test(s.frame)&&Number(String(frame).slice(7))<=Number(s.frame.slice(7)))))return s;
+  if(s.story&&!storyPack(s))throw Error('This chapter is unavailable. Your progress is safe; retry when its content returns.');
   const list=options(s),id=choice??automatic(s);if(!list.some(o=>o.id===id))throw new Error('That action is no longer available');
   s.turn++;s.turnsHere++;s.frame=frame===null?'browser:'+s.turn:String(frame).slice(0,80);s.roll='';
   const map=dungeon(s.seed,s.floor),kind=map.kinds[s.pos],done=bit(s.cleared,s.pos);
-  if(id.startsWith('revive:')){
+  if(id.startsWith('story:')){
+    const action=storyAction(s,id),{ok}=check(s,action.actor,action.dc),result=ok?action.success:action.setback;
+    applyStoryOutcome(s,result);if(result.heal)heal(s,result.heal);if(result.hurt)hurt(s,result.hurt);s.cleared|=1<<s.pos;note(s,result.text);
+  }else if(id.startsWith('revive:')){
     const who=Number(id.split(':')[1]);s.hp[who]=4;note(s,'The company helped '+HEROES[who].name+' back to their feet. Nobody gets left behind.');
   }else if(id.startsWith('move:')){
     const next=Number(id.split(':')[1]),known=bit(s.visited,next);s.pos=next;s.visited|=1<<next;s.turnsHere=0;s.enemy=bit(s.cleared,next)?0:([1,6].includes(map.kinds[next])?threat(s,map):0);
+    offerStoryScene(s,KINDS[map.kinds[next]],map.region,bit(s.cleared,next));
     note(s,known?'The company retraced its steps to '+map.names[next]+'.':pick(s,['Fern lifted the lantern.','Brann pushed the door open.','Pip found a narrow way through.','Mira followed a thread of light.'])+' '+map.names[next]+' lay beyond.');
   }else if(id==='descend'){
-    s.floor++;s.pos=0;s.visited=1;s.cleared=1;s.enemy=0;s.turnsHere=0;s.supplies=Math.min(9,s.supplies+2);heal(s,6);
+    s.floor++;s.pos=0;s.visited=1;s.cleared=1;s.enemy=0;s.turnsHere=0;s.supplies=Math.min(9,s.supplies+2);heal(s,6);adoptStoryChapter(s);
     note(s,'Fragment '+s.relics+' lit the way down. The company reached '+dungeon(s.seed,s.floor).theme[0]+'.');
   }else if(id==='reflect'){
     heal(s,1);note(s,'Mira read the ember: “'+pick(s,['No dawn is lost while someone carries its light.','The sun remembers every name.','Below the last door, morning is waiting.','A small flame can wake a sleeping world.'])+'”');
@@ -119,7 +127,7 @@ export function advance(previous,choice=null,frame=null){
     else {const paid=id==='rest'?s.supplies>0:s.gold>=5;if(paid){if(id==='rest')s.supplies--;else s.gold-=5;}heal(s,paid?10:3);note(s,'The company rested at the '+pick(s,['moss-covered','candlelit','sun-carved','forgotten'])+' shrine. '+(paid?'Shared hope restored their strength.':'They caught their breath.'));}
   }
   if(s.hp.every(h=>h===0)){
-    s.hp=s.hp.map((_,i)=>Math.ceil(maxHP(s,i)*0.65));s.gold=Math.floor(s.gold/2);s.pos=0;s.enemy=0;s.turnsHere=0;
+    s.hp=s.hp.map((_,i)=>Math.ceil(maxHP(s,i)*0.65));s.gold=Math.floor(s.gold/2);s.pos=0;s.enemy=0;s.turnsHere=0;if(s.story)s.story.scene=null;
     note(s,'The lantern flared and carried everyone to the entrance. Half their gold was lost; their journey continues.');
   }
   return s;
@@ -150,13 +158,17 @@ export function view(s,mapMode='auto'){
   else if(kind===3)text=done?'The old inscription has given up its secrets. The party carries its story onward.':'A sun is carved into the stone. Beneath it, an inscription remembers '+map.theme[4]+'.';
   else if(kind===4)text=done?'The chest is empty. Its treasures are safely stowed; the lantern points onward.':'A sealed coffer rests beneath a weathered statue. A tiny light leaks through the keyhole. Nothing else in the room moves.';
   else text=done?'The shrine fades to a gentle glow. Rested or wiser, the company prepares to leave.':'Warm light gathers around a forgotten shrine. For the first time in hours, this place feels safe.';
+  const chapter=storyPack(s),scene=storyScene(s);
+  if(chapter&&s.pos===0){title=storyChapterDone(s)?'A promise kept':chapter.title;text=storyChapterDone(s)?chapter.ending:chapter.intro;}
+  if(scene){title=scene.title;text=done?scene.after:scene.text;}
   const visible=map.links.reduce((mask,neighbors,i)=>bit(s.visited,i)?neighbors.reduce((m,n)=>m|(1<<n),mask):mask,s.visited);
   // Compact tuple cells: [status (0 fog, 1 frontier, 2 visited, 3 current), glyph, exits N/E/S/W bit mask].
   const cells=map.links.map((ns,i)=>[i===s.pos?3:bit(s.visited,i)?2:bit(visible,i)?1:0,i===s.pos?'◆':bit(s.visited,i)?(bit(s.cleared,i)&&i!==map.gate?'·':GLYPHS[map.kinds[i]]):'?',ns.reduce((m,n)=>m|(n===i-6?1:n===i+1?2:n===i+6?4:8),0)]);
   const explored=Array.from({length:24},(_,i)=>bit(s.visited,i)).filter(Boolean).length,atlas=chart(s,map,cells,mapMode);
   if(atlas.map_mode==='dungeon')atlas.map_caption=explored+'/24 rooms mapped · floor '+s.floor;
   return {turn:s.turn,floor:s.floor,seed:s.seed,theme:map.theme[0],title,text,kind:KINDS[kind],safe:done,cells,room:s.pos+1,explored,...atlas,
-    objective:done&&s.pos===map.gate?'Carry the ember into the next dungeon':'Find the keeper. Recover an ember of the sun.',
+    chapter_title:chapter?.title||'',chapter_complete:chapter?storyChapterDone(s):false,
+    objective:chapter?(storyChapterDone(s)?'Carry the light onward. The road remembers.':'Restore the sun. Keep the road and its promises.'):done&&s.pos===map.gate?'Carry the ember into the next dungeon':'Find the keeper. Recover an ember of the sun.',
     party:s.hp.map((hp,i)=>({name:HEROES[i].name,role:HEROES[i].role,hp,max:maxHP(s,i)})),gold:s.gold,supplies:s.supplies,relics:s.relics,
     summary:s.relics?'The company has recovered '+s.relics+' ember fragment'+(s.relics===1?'':'s')+' of the stolen sun. The next keeper waits below.':'Four heroes seek the fragments of the stolen sun. Their lantern is the last light in the underworld.',
     recap:s.log.slice(-2).map(l=>{const arrival=l.match(/(?:^|\. )([^.!?]+) lay beyond\.$/);const first=arrival?'Reached '+arrival[1]+'.':l.split(/(?<=[.!?])\s+/)[0];return first.length>98?first.slice(0,95).replace(/\s+\S*$/,'')+'…':first;}),log:s.log.slice(-3),last:s.last,roll:s.roll||'The lantern remembers. The journey continues.',choices:options(s).map(o=>({...o,auto:o.id===auto})),autoLabel:options(s).find(o=>o.id===auto)?.label||'Continue'};

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "automation_id": "one-more-room-weekly-worldbuilding",
+  "timezone": "America/Los_Angeles",
+  "schedule": "Mondays at 10:00",
+  "first_scheduled_run": "2026-11-02",
+  "releases": [
+    {
+      "id": "foundation_2026_10_28",
+      "week_key": "2026-10-26",
+      "status": "published_web_verified",
+      "kind": "foundation_before_first_monday",
+      "dossier": "releases/2026-10-28-the-bell-without-a-rope.md",
+      "sha256": "71e6971c0b10007d00b2030e9cbf6f5b457d17245bb5c9900624932a20ec18e2",
+      "published_at": "2026-10-28T20:16:37.003Z",
+      "deployment_id": "dpl_5DMA4DDdZ3N9nCUiakB8hPRqkPCN",
+      "production_evidence": "../artifacts/weekly-foundation-production.json",
+      "native_status": "bridge_prepared_not_saved",
+      "checks": {
+        "app_tests": 33,
+        "shared_palette_framework_tests": 14,
+        "reachable_obligation_states": 33,
+        "legacy_endpoint_unchanged": true,
+        "compiled_bridge_with_live_data": true
+      }
+    }
+  ],
+  "future_horizon": [
+    {
+      "week": "2026-11-02",
+      "focus": "A kept signal has a practical consequence"
+    },
+    {
+      "week": "2026-11-09",
+      "focus": "A disputed record and an independent source"
+    },
+    {
+      "week": "2026-11-16",
+      "focus": "A repair with two fair beneficiaries"
+    },
+    {
+      "week": "2026-11-23",
+      "focus": "Quiet travel and an earned local payoff"
+    },
+    {
+      "week": "2026-11-30",
+      "focus": "A reasonable faction disagreement"
+    },
+    {
+      "week": "2026-12-07",
+      "focus": "Resolve a local question and open the next duty"
+    }
+  ]
+}

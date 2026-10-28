@@ -528,6 +528,14 @@
         "recipeId": 512643,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169998235,
+        "ticketNumber": "150450994",
+        "acknowledgmentEntryId": 2306973252,
+        "url": "https://app.hey.com/topics/2169998235",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     },
     {
@@ -680,6 +688,14 @@
         "recipeId": 512639,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169998855,
+        "ticketNumber": "150451338",
+        "acknowledgmentEntryId": 2306973961,
+        "url": "https://app.hey.com/topics/2169998855",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     },
     {
@@ -781,6 +797,14 @@
         "recipeId": 522310,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169998883,
+        "ticketNumber": "150451358",
+        "acknowledgmentEntryId": 2306973991,
+        "url": "https://app.hey.com/topics/2169998883",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     },
     {
@@ -897,6 +921,14 @@
         "recipeId": 522315,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169998995,
+        "ticketNumber": "150451403",
+        "acknowledgmentEntryId": 2306974111,
+        "url": "https://app.hey.com/topics/2169998995",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     }
   ],
@@ -927,12 +959,12 @@
   },
   "computerUsePreference": "On October28, Manuel explicitly authorized browser work in chat01a1811f-9f72-7ce0-9cfe-890378ec5db1 to finish these revisions and coordinate with Plan TRMNL Creator Fund ideas. This is scoped to the current work, not unrelated automated screen control. He also explicitly approved enabling extension file URL access, but the browser URL policy blocked opening chrome://extensions; that setting still requires manual user action.",
   "lastPublicReviewCheck": {
-    "checkedAt": "2026-10-16T19:28:25.427026+00:00",
-    "result": "No approval confirmed. Public Recipe searches did not return any of the three submitted IDs/names. Direct public ID JSON endpoints returned HTTP 403; cannot infer private status from that. Connected Gmail search since October 13 returned no TRMNL or named-app messages.",
-    "privateDashboard": "Rechecked live October 16 after Manuel explicitly asked to open the review pages. All three settings show Plugin in review and submitted confirmation; Messenger Tickets list shows all three Submitted. This was a scoped read-only browser request, not permission for unrelated screen control or Recipe editing.",
-    "remainingOwnerAction": "No new API key or paid commitment is required. Live owner sign-in/play verification and native visual/public-submission steps remain on existing Tiny Planet 512639 and Newsflash 512643. Sounds 507810 four-character-code/QR markup remains prepared but unsaved.",
+    "checkedAt": "2026-10-28T19:28:40.303696+00:00",
+    "result": "Ten overnight automated review notifications were read and mapped to six live reports. All six reports are unchanged from the already-addressed versions; six public submission acknowledgments confirmed. No newer human reviewer email found. All nine native settings show Plugin in review.",
+    "privateDashboard": "All nine existing masters checked via authenticated native UI; all show Plugin in review. No native settings changed and no duplicate submission made.",
+    "remainingOwnerAction": "Await human feedback and actual approved install URLs. No action is needed to complete the existing submissions. Physical receipt and real-player gameplay remain separately unconfirmed.",
     "heyReviewCheck": {
-      "checkedAt": "2026-10-16T19:31:22.142368+00:00",
+      "checkedAt": "2026-10-28T19:28:40.303696+00:00",
       "result": "All three actual review-ticket threads found in HEY. Latest email in each is automated Submitted / pick up soon acknowledgment, dated October13,14,15 respectively. No approval or human reviewer feedback in those threads. These messages were missed by earlier sender-name search; exact Recipe Review subject search found them.",
       "localEvidence": "artifacts/review-status-2026-10-16.json",
       "dashboardStatusNotRechecked": false,
@@ -946,8 +978,9 @@
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       },
-      "latestCheckedOn": "2026-10-27",
-      "latestResult": "New human feedback on YCScout: Framework rewrite requested, ticket Waiting on you. Daily and Sounds still only Submitted acknowledgments/one prior follow-up. No approval found. No new email sent and dashboard not revisited."
+      "latestCheckedOn": "2026-10-28",
+      "latestResult": "Sender, Recipe-subject and TRMNL-text searches checked across the only linked HEY account. Read all nine review-ticket threads and ten automated-review notification threads. Latest email is a six-app Submitted acknowledgment at 2026-10-28T09:47:42Z; no newer human reviewer response found.",
+      "latestOutboundMessagesSent": false
     }
   },
   "displayDesignPolicy": {
@@ -1079,6 +1112,14 @@
         "recipeId": 522317,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169999014,
+        "ticketNumber": "150451409",
+        "acknowledgmentEntryId": 2306974133,
+        "url": "https://app.hey.com/topics/2169999014",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     },
     {
@@ -1183,6 +1224,14 @@
         "recipeId": 522318,
         "licenseExplicitlyAccepted": true,
         "evidence": "artifacts/public-submission-verification-2026-10-28.json"
+      },
+      "humanReviewTicket": {
+        "topicId": 2169999054,
+        "ticketNumber": "150451433",
+        "acknowledgmentEntryId": 2306974186,
+        "url": "https://app.hey.com/topics/2169999054",
+        "status": "Submitted acknowledgment only; human review pending",
+        "checkedAt": "2026-10-28T19:28:40.303696+00:00"
       }
     }
   ],
@@ -1312,5 +1361,65 @@
     },
     "license": "https://trmnl.com/plugin-license",
     "submitted": true
+  },
+  "feedbackEmailAudit": {
+    "checkedAt": "2026-10-28T19:28:40.303696+00:00",
+    "mailAccountId": 18634,
+    "automatedFeedbackMessages": 10,
+    "uniqueAutomatedReports": 6,
+    "reportsChangedSinceFixes": false,
+    "newHumanFeedback": false,
+    "nativeStatuses": [
+      {
+        "slug": "what-changed",
+        "id": 505118,
+        "inReview": true
+      },
+      {
+        "slug": "yc-scout",
+        "id": 506494,
+        "inReview": true
+      },
+      {
+        "slug": "sounds-like-my-company",
+        "id": 507810,
+        "inReview": true
+      },
+      {
+        "slug": "desk-editor",
+        "id": 512643,
+        "inReview": true
+      },
+      {
+        "slug": "tiny-planet",
+        "id": 512639,
+        "inReview": true
+      },
+      {
+        "slug": "game-night-radar",
+        "id": 522310,
+        "inReview": true
+      },
+      {
+        "slug": "local-morning-brief",
+        "id": 522315,
+        "inReview": true
+      },
+      {
+        "slug": "trmnl-draws",
+        "id": 522317,
+        "inReview": true
+      },
+      {
+        "slug": "one-more-room",
+        "id": 522318,
+        "inReview": true
+      }
+    ],
+    "result": "No additional app code changes needed. Previously deployed fixes cover all reviewed findings; low result counts can leave space without inventing content.",
+    "appCodeChanged": false,
+    "resubmissions": 0,
+    "outboundMessagesSent": 0,
+    "evidence": "artifacts/feedback-email-audit-2026-10-28.json"
   }
 }

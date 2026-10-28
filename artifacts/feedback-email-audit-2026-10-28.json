@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-28T19:28:40.303696+00:00",
+  "searches": [
+    "sender trmnl, last 7 days, all result pages",
+    "Recipe subject, last 7 days, all result pages",
+    "TRMNL text, last 7 days, all result pages"
+  ],
+  "matchingSenderThreads": 18,
+  "readReviewTicketThreads": 9,
+  "automatedReviewNotificationThreadsRead": 10,
+  "currentReportComparison": "All six reports identical to versions already addressed before submission.",
+  "latestInboundEmailAt": "2026-10-28T09:47:42Z",
+  "humanFeedbackAfterReReviewReplies": false,
+  "nativeStatuses": [
+    {
+      "slug": "what-changed",
+      "id": 505118,
+      "inReview": true
+    },
+    {
+      "slug": "yc-scout",
+      "id": 506494,
+      "inReview": true
+    },
+    {
+      "slug": "sounds-like-my-company",
+      "id": 507810,
+      "inReview": true
+    },
+    {
+      "slug": "desk-editor",
+      "id": 512643,
+      "inReview": true
+    },
+    {
+      "slug": "tiny-planet",
+      "id": 512639,
+      "inReview": true
+    },
+    {
+      "slug": "game-night-radar",
+      "id": 522310,
+      "inReview": true
+    },
+    {
+      "slug": "local-morning-brief",
+      "id": 522315,
+      "inReview": true
+    },
+    {
+      "slug": "trmnl-draws",
+      "id": 522317,
+      "inReview": true
+    },
+    {
+      "slug": "one-more-room",
+      "id": 522318,
+      "inReview": true
+    }
+  ],
+  "codeChangesNeeded": false,
+  "appCodeChanged": false,
+  "duplicateSubmissions": 0,
+  "outboundEmailsSent": 0,
+  "existingFixEvidence": "artifacts/framework-native-review-fixes-2026-10-28.json"
+}

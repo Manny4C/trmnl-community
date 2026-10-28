@@ -44,6 +44,7 @@ function installStoryContent({latest,packs}){
 function storyContentSnapshot(pinned=''){return {latest:LATEST_STORY,packs:[...new Set([pinned,LATEST_STORY].filter(Boolean))].map(id=>STORY_PACKS.get(id)).filter(Boolean)};}
 function validStoryState(s){return !s||s.v===1&&storyId(s.release)&&storyIds(s.flags)&&storyIds(s.seen,32)&&typeof s.facts==='string'&&/^[0-9a-f]{0,1024}$/.test(s.facts)&&Array.isArray(s.history)&&s.history.length<=2&&s.history.every(x=>storyText(x,110))&&(!s.scene||storyId(s.scene.id)&&Number.isInteger(s.scene.pos)&&s.scene.pos>=0&&s.scene.pos<24&&Number.isInteger(s.scene.floor)&&s.scene.floor>0);}
 function storyPack(s){return s.story?STORY_PACKS.get(s.story.release):null;}
+function storyRequiredDone(s){const p=storyPack(s);return Boolean(p&&p.arcs.filter(a=>a.required).every(a=>s.story.flags.includes(a.completes)));}
 function storyChapterDone(s){const p=storyPack(s);if(!p)return false;return p.arcs.every(a=>(!a.required&&!s.story.flags.includes(a.starts))||s.story.flags.includes(a.completes));}
 function adoptStoryChapter(s){
   if(!LATEST_STORY)return;
@@ -240,7 +241,7 @@ function view(s,mapMode='auto'){
   else if(kind===4)text=done?'The chest is empty. Its treasures are safely stowed; the lantern points onward.':'A sealed coffer rests beneath a weathered statue. A tiny light leaks through the keyhole. Nothing else in the room moves.';
   else text=done?'The shrine fades to a gentle glow. Rested or wiser, the company prepares to leave.':'Warm light gathers around a forgotten shrine. For the first time in hours, this place feels safe.';
   const chapter=storyPack(s),scene=storyScene(s);
-  if(chapter&&s.pos===0){title=storyChapterDone(s)?'A promise kept':chapter.title;text=storyChapterDone(s)?chapter.ending:chapter.intro;}
+  if(chapter&&s.pos===0){title=storyChapterDone(s)?'A promise kept':storyRequiredDone(s)?'An unfinished promise':chapter.title;text=storyChapterDone(s)?chapter.ending:storyRequiredDone(s)?'The main task is done. The company still has a promise to keep before beginning another chapter.':chapter.intro;}
   if(scene){title=scene.title;text=done?scene.after:scene.text;}
   const visible=map.links.reduce((mask,neighbors,i)=>bit(s.visited,i)?neighbors.reduce((m,n)=>m|(1<<n),mask):mask,s.visited);
   // Compact tuple cells: [status (0 fog, 1 frontier, 2 visited, 3 current), glyph, exits N/E/S/W bit mask].

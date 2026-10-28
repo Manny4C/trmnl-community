@@ -13,16 +13,17 @@
       "dossier": "releases/2026-10-28-the-bell-without-a-rope.md",
       "sha256": "71e6971c0b10007d00b2030e9cbf6f5b457d17245bb5c9900624932a20ec18e2",
       "published_at": "2026-10-28T20:16:37.003Z",
-      "deployment_id": "dpl_5DMA4DDdZ3N9nCUiakB8hPRqkPCN",
+      "deployment_id": "dpl_SwU8vNn4N7Tafcs4S8xEUB8enKFG",
       "production_evidence": "../artifacts/weekly-foundation-production.json",
       "native_status": "bridge_prepared_not_saved",
       "checks": {
-        "app_tests": 33,
+        "app_tests": 34,
         "shared_palette_framework_tests": 14,
         "reachable_obligation_states": 33,
         "legacy_endpoint_unchanged": true,
         "compiled_bridge_with_live_data": true
-      }
+      },
+      "verified_at": "2026-10-28T20:28:43.739Z"
     }
   ],
   "future_horizon": [

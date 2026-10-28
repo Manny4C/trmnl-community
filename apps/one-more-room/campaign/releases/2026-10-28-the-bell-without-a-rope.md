@@ -92,4 +92,4 @@ The first Monday run should choose a connected consequence, write it fully, and 
 
 ## Publication record
 
-The live website and 13 production routes were verified, including the backward-compatible minute endpoint and opt-in pinned-content endpoint. All 33 app tests and 14 shared palette/framework tests pass. The compiled native bridge also resolved and replayed a frame using actual production chapter data. No user-screen control or native settings were used. Deployment ID and dated verification evidence are recorded in `../ledger.json`.
+The live website and 13 production routes were verified, including the backward-compatible minute endpoint and opt-in pinned-content endpoint. All 34 app tests and 14 shared palette/framework tests pass. The compiled native bridge also resolved and replayed a frame using actual production chapter data. No user-screen control or native settings were used. Deployment ID and dated verification evidence are recorded in `../ledger.json`.

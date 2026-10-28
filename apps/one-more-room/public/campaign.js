@@ -44,6 +44,7 @@ export function installStoryContent({latest,packs}){
 export function storyContentSnapshot(pinned=''){return {latest:LATEST_STORY,packs:[...new Set([pinned,LATEST_STORY].filter(Boolean))].map(id=>STORY_PACKS.get(id)).filter(Boolean)};}
 export function validStoryState(s){return !s||s.v===1&&storyId(s.release)&&storyIds(s.flags)&&storyIds(s.seen,32)&&typeof s.facts==='string'&&/^[0-9a-f]{0,1024}$/.test(s.facts)&&Array.isArray(s.history)&&s.history.length<=2&&s.history.every(x=>storyText(x,110))&&(!s.scene||storyId(s.scene.id)&&Number.isInteger(s.scene.pos)&&s.scene.pos>=0&&s.scene.pos<24&&Number.isInteger(s.scene.floor)&&s.scene.floor>0);}
 export function storyPack(s){return s.story?STORY_PACKS.get(s.story.release):null;}
+export function storyRequiredDone(s){const p=storyPack(s);return Boolean(p&&p.arcs.filter(a=>a.required).every(a=>s.story.flags.includes(a.completes)));}
 export function storyChapterDone(s){const p=storyPack(s);if(!p)return false;return p.arcs.every(a=>(!a.required&&!s.story.flags.includes(a.starts))||s.story.flags.includes(a.completes));}
 export function adoptStoryChapter(s){
   if(!LATEST_STORY)return;

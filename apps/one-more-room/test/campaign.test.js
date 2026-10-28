@@ -23,3 +23,5 @@ test('content-aware Serverless bridge advances one action and keeps merge/state 
 test('a finished chapter acknowledges its ending instead of restarting its old problem',()=>{install();const s=newCampaign('ending');s.story.flags=['bell_done'];assert.equal(storyChapterDone(s),true);assert.equal(view(s).text,pack.ending);assert.notEqual(view(s).title,pack.title);assert.equal(view(s).chapter_complete,true);});
 
 test('the company cannot share nonexistent supplies or buy a repair with nonexistent gold',()=>{install();const s=newCampaign('resources');s.story.scene={id:'ferry_rail',pos:s.pos,floor:s.floor};s.cleared&=~(1<<s.pos);s.supplies=0;assert.ok(!options(s).some(o=>o.id==='story:share_food'));assert.ok(options(s).length>=1);assert.throws(()=>advance(s,'story:share_food'),/no longer available/);});
+
+test('a completed main task with an outstanding side promise does not replay the broken-signal opening',()=>{install();const s=newCampaign('pending-side');s.story.flags=['bell_done','letter_taken'];assert.equal(storyChapterDone(s),false);assert.equal(view(s).title,'An unfinished promise');assert.notEqual(view(s).text,pack.intro);});

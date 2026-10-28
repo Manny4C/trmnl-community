@@ -1163,7 +1163,7 @@
       "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_5DMA4DDdZ3N9nCUiakB8hPRqkPCN",
+      "latestDeploymentId": "dpl_SwU8vNn4N7Tafcs4S8xEUB8enKFG",
       "verificationTimestamp": "2026-10-25T07:30:01.806Z",
       "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
@@ -1260,7 +1260,7 @@
         "noRuntimeModelCalls": true,
         "memory": "Pinned immutable chapter until required and accepted side stories end; adopt at a floor boundary. Permanent earned facts use stable compact indices; old v1 games migrate at a boundary.",
         "validation": {
-          "appTests": 33,
+          "appTests": 34,
           "sharedTests": 14,
           "reachableObligationStates": 33,
           "observedMaxStoryMergeBytes": 3387,
@@ -1268,7 +1268,8 @@
           "productionRoutesVerified": 13,
           "compiledBridgeWithProductionData": true
         },
-        "productionEvidence": "apps/one-more-room/artifacts/weekly-foundation-production.json"
+        "productionEvidence": "apps/one-more-room/artifacts/weekly-foundation-production.json",
+        "preparedPackageSha256": "7157d38fea6ff353ac774e3e531a1fda18b9c67e1e78c9bf97fb7b81cdb27c12"
       }
     }
   ],

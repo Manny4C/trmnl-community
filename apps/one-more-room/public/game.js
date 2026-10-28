@@ -1,4 +1,4 @@
-import {validStoryState,storyPack,storyChapterDone,storyScene,storyOptions,automaticStoryOption,storyAction,adoptStoryChapter,offerStoryScene,applyStoryOutcome} from './campaign.js';
+import {validStoryState,storyPack,storyChapterDone,storyRequiredDone,storyScene,storyOptions,automaticStoryOption,storyAction,adoptStoryChapter,offerStoryScene,applyStoryOutcome} from './campaign.js';
 // Shared, deterministic rules for the browser and the TRMNL Serverless bundle.
 // Original procedural fiction. No model service, secret or paid API is used.
 export const HEROES = [
@@ -159,7 +159,7 @@ export function view(s,mapMode='auto'){
   else if(kind===4)text=done?'The chest is empty. Its treasures are safely stowed; the lantern points onward.':'A sealed coffer rests beneath a weathered statue. A tiny light leaks through the keyhole. Nothing else in the room moves.';
   else text=done?'The shrine fades to a gentle glow. Rested or wiser, the company prepares to leave.':'Warm light gathers around a forgotten shrine. For the first time in hours, this place feels safe.';
   const chapter=storyPack(s),scene=storyScene(s);
-  if(chapter&&s.pos===0){title=storyChapterDone(s)?'A promise kept':chapter.title;text=storyChapterDone(s)?chapter.ending:chapter.intro;}
+  if(chapter&&s.pos===0){title=storyChapterDone(s)?'A promise kept':storyRequiredDone(s)?'An unfinished promise':chapter.title;text=storyChapterDone(s)?chapter.ending:storyRequiredDone(s)?'The main task is done. The company still has a promise to keep before beginning another chapter.':chapter.intro;}
   if(scene){title=scene.title;text=done?scene.after:scene.text;}
   const visible=map.links.reduce((mask,neighbors,i)=>bit(s.visited,i)?neighbors.reduce((m,n)=>m|(1<<n),mask):mask,s.visited);
   // Compact tuple cells: [status (0 fog, 1 frontier, 2 visited, 3 current), glyph, exits N/E/S/W bit mask].

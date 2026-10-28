@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,45 +10,145 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-28T02:20:24.425Z",
+    "generated_at": "2026-10-28T09:46:27.518Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
+        "id": "e481e0f11ff8d07a",
+        "importance": 72,
+        "reason": "Short recap of a World Series game featuring a reported walk-off; useful but abbreviated."
+      },
+      {
+        "id": "264c5fd56ecd1ed4",
+        "importance": 78,
+        "reason": "Full-play coverage of a World Series game; strong timely recap, though no game details supplied."
+      },
+      {
+        "id": "759e027b8440daa5",
+        "importance": 55,
+        "reason": "Timely league-wide nightly recap, but no specific results or standout developments given."
+      },
+      {
+        "id": "42c7b2aed3129eb0",
+        "importance": 49,
+        "reason": "Routine nightly highlight compilation with no details about the plays."
+      },
+      {
+        "id": "c654ae9db4c47ae5",
+        "importance": 43,
+        "reason": "New technology-themed creator video, but title alone gives little substance."
+      },
+      {
+        "id": "90d35f50aced6c66",
+        "importance": 37,
+        "reason": "Showcase trailer for a game update; promotional and details are absent."
+      },
+      {
+        "id": "0157059ffc4ab603",
+        "importance": 50,
+        "reason": "Launch trailer for a major game on a new platform, but no launch specifics supplied."
+      },
+      {
+        "id": "14c5a2b7d0549e0d",
+        "importance": 32,
+        "reason": "Routine add-on announcement for a flight simulator; limited wider significance."
+      },
+      {
+        "id": "7641b6b4f60c95a5",
+        "importance": 42,
+        "reason": "Launch trailer signals availability, but provides no details about the game."
+      },
+      {
+        "id": "c9c3ab3e29ef3de7",
+        "importance": 39,
+        "reason": "New game is out now, though the title and context offer little further information."
+      },
+      {
+        "id": "16b82065ca404a73",
+        "importance": 36,
+        "reason": "Announcement trailer for a PS5 game; promotional, with no substantive details."
+      },
+      {
+        "id": "8d0aa60ab6cde511",
+        "importance": 43,
+        "reason": "Launch trailer indicates a game release; no details to judge its broader significance."
+      },
+      {
+        "id": "3b2ea178f0a8cf27",
+        "importance": 35,
+        "reason": "Corporate AI video title suggests a partnership, but offers no concrete news details."
+      },
+      {
+        "id": "dec31ab1e5fb5105",
+        "importance": 38,
+        "reason": "First-person Codex video may offer practical insight, but context is absent."
+      },
+      {
+        "id": "bcbd51e5018d0249",
+        "importance": 72,
+        "reason": "New world-simulation generation is a potentially notable AI development; claims are unverified."
+      },
+      {
         "id": "b1d7eb2dedce5839",
-        "importance": 24,
-        "reason": "An AI-literacy lesson, not a reported research breakthrough; mainly educational promotion."
+        "importance": 30,
+        "reason": "AI literacy lesson about neuroscience, rather than a reported research breakthrough."
       },
       {
         "id": "85fdf95f1fdc5eec",
-        "importance": 48,
-        "reason": "Potentially consequential AI-and-dementia work, but the supplied context gives few details."
+        "importance": 60,
+        "reason": "AI and dementia discovery is consequential, but supplied context is incomplete and promotional."
       },
       {
         "id": "71e6962cecf66d3a",
-        "importance": 43,
-        "reason": "The yearlong Mars simulation is nearing completion; an event update, not a mission milestone."
+        "importance": 45,
+        "reason": "NASA event concerns completion of a yearlong Mars simulation; operational implications are unclear."
       },
       {
         "id": "6f7b94d4e0f7d4bc",
+        "importance": 35,
+        "reason": "Image-caption-style NASA post about hardware inspection, with little news detail."
+      },
+      {
+        "id": "72f9fb4cdb821da2",
         "importance": 36,
-        "reason": "A construction image/update for an asteroid survey mission; limited substantive context."
+        "reason": "Business-focused Codex video, but no concrete findings or details are supplied."
+      },
+      {
+        "id": "0d9867f9f94e893c",
+        "importance": 65,
+        "reason": "Reaction video follows the reported Rays walk-off in a World Series game; mainly commentary."
+      },
+      {
+        "id": "9300094882ccc7ac",
+        "importance": 70,
+        "reason": "Audio calls of the reported World Series walk-off offer a timely account of a key moment."
+      },
+      {
+        "id": "02abb8cc8a6c53ae",
+        "importance": 23,
+        "reason": "Casual player reaction post with no substantive game information."
+      },
+      {
+        "id": "97f79c47ded280b6",
+        "importance": 62,
+        "reason": "Full-game highlights provide a timely NBA recap, though no result or turning point is given."
       },
       {
         "id": "53cb4bae6e918f63",
-        "importance": 18,
-        "reason": "A human-interest mentoring feature with little broader space-news significance."
+        "importance": 23,
+        "reason": "Mentorship profile is human-interest content, not a major space development."
       },
       {
         "id": "dfc519dd5290724c",
-        "importance": 64,
-        "reason": "Perseverance measurements may inform crew protection from Martian dust; evidence details are sparse."
+        "importance": 67,
+        "reason": "Perseverance measurements may inform crew protection from Mars dust; supplied context is truncated."
       }
     ],
-    "source_checked_at": "2026-10-28T02:20:18.458Z"
+    "source_checked_at": "2026-10-28T09:46:13.907Z"
   },
   "last_attempt_at": "2026-10-28T09:46:13.551Z",
   "pending_reservation_microusd": 5451,
   "pending_source_checked_at": "2026-10-28T09:46:13.907Z",
-  "last_success_at": "2026-10-28T02:20:24.425Z",
+  "last_success_at": "2026-10-28T09:46:27.518Z",
   "last_error_status": null
 }

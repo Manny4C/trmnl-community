@@ -35,3 +35,9 @@ Filters are allowlisted/length-limited. No user-provided URL is fetched. The web
 Support: https://github.com/Manny4C/trmnl-community/issues
 
 Preserve existing plugins and playlist entries. Creating this separate private plugin automatically adds it to Manuel's playlist. Device receipt must be verified separately from rendering and installation.
+
+## Human review revision, October 27
+
+Mario requested a Framework rewrite for large-screen compatibility. The prepared Shared/four layouts now use native items/content, responsive columns/overflow with hidden counters, native text/clamping/color classes and title_bar. No custom CSS or inline style remains in Recipe markup. Full still receives ten launches in original newest-first order; half layouts keep two and quadrant one. Larger screens get larger text and more description lines, with explicit portrait fitting. The HTML/Liquid tests do not verify actual rendered fit: native OG/X visual QA remains pending.
+
+This update is saved in source and the website ZIP, but NOT yet on existing master506494 under Manuel's no-screen-control preference. Website release status is changes_requested. No new Recipe, public install URL, reviewer acceptance, physical receipt or outbound review reply is claimed. Remaining work is to save Shared/all four on master506494, verify official renders and marketplace assets and request re-review after explicit authorization to contact the reviewer. Data filters, hourly refresh, color/BW controls and source budget are unchanged.

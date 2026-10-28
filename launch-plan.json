@@ -109,17 +109,18 @@
       "targetDate": "2026-10-14",
       "name": "YC Scout",
       "slug": "yc-scout",
-      "status": "submitted_awaiting_review",
+      "status": "review_changes_requested_revision_prepared",
       "scope": "Launch HN startup radar with eight title-matched sectors, optional source-evidenced YC batch and product/company search, 30/90/365-day windows, latest or deterministic daily discovery. Each displayed announcement is verified via official HN API; no Show HN inference or YC directory scraping. Full-screen latest edition shows up to ten launches in descending posting order. Bounded coverage (79 announcements at launch), not all YC companies.",
       "recipeRequired": true,
       "recipe": {
         "name": "YC Scout",
-        "status": "in_review",
+        "status": "changes_requested",
         "pluginId": 506494,
         "settingsUrl": "https://trmnl.com/plugin_settings/506494/edit",
         "publicInstallUrl": null,
         "aiReviewId": 1185,
-        "reviewVerifiedAt": "2026-10-16T20:03:59.932617+00:00"
+        "reviewVerifiedAt": "2026-10-16T20:03:59.932617+00:00",
+        "reviewEvidence": "HEY review thread2156910252, ticket145500957; human reviewer Mario requested revisions. Dashboard not revisited."
       },
       "sourceDirectory": "apps/yc-scout",
       "websiteUrl": "https://yc-launch-scout.vercel.app",
@@ -133,11 +134,13 @@
       "testStatus": "13 automated checks passed, including ten newest in chronological order and ten multibyte rows under 4700 bytes; anonymous production returns ten launches (2586 bytes); actual OG ten-row full layout visually verified with the tenth row and footer visible. Ten-row X landscape/portrait and mobile width 390 also verified; the existing smaller layouts keep their own limits.",
       "physicalDeviceVerification": "Updated ten-launch full layout verified in actual TRMNL editor on owner OG B/W/R/Y and X landscape/portrait. Manual refresh generated the updated edition; actual physical receipt has not been confirmed.",
       "pendingActions": [
-        "Monitor human Recipe review; after approval publish the verified public install URL",
-        "Confirm actual device receipt at next playlist appearance"
+        "Save prepared Shared and all four layouts on EXISTING Recipe506494 after renewed dashboard authorization; never duplicate",
+        "Verify actual native OG color/BW and X landscape/portrait/four views and long-source titles; regenerate marketplace previews if needed",
+        "Request re-review only after Recipe is saved/verified and explicit outbound-message authorization; no email sent for this new feedback",
+        "Record real human approval/public install URL and physical receipt separately"
       ],
       "pollingUrl": "https://yc-launch-scout.vercel.app/api/scout?sector={{ sector }}&batch={{ batch | url_encode }}&days={{ days }}&mode={{ edition }}&q={{ search | url_encode }}",
-      "latestDeploymentId": "dpl_4ijHM3TPSX97n9TEZGaf62BezTpN",
+      "latestDeploymentId": "dpl_7qfccaqz6oRwVWw5AL53HPD9P1jF",
       "reviewStatus": "Live authenticated TRMNL settings rechecked October 16 at Manuel\u2019s explicit request to open the submission pages. Plugin in review / This plugin has been submitted to our team. Stand by. Support Messenger Tickets list also confirms Submitted for all three. No human approval confirmed.",
       "licenseConfirmationRequestedAt": "2026-10-14T17:18:17.056126+00:00",
       "submittedOn": "2026-10-14",
@@ -153,6 +156,30 @@
         "recipeStatus": "saved_to_existing_recipe",
         "nativeQa": "all_four_OG_color_and_1bit_layouts_verified",
         "physicalReceipt": "unconfirmed"
+      },
+      "humanReviewFeedback": {
+        "receivedAtReported": "2026-10-28T05:51",
+        "localDate": "2026-10-27",
+        "reviewer": "Mario",
+        "ticketStatus": "Waiting on you",
+        "summary": "Rewrite custom CSS with native Framework items/content, automatic overflow and responsive OG/X landscape/portrait classes to use larger-screen space and prevent clipping/whitespace.",
+        "references": [
+          "https://trmnl.com/framework/docs/trmnl_x_guide",
+          "https://trmnl.com/blog/plugin-recipe-publishing-tips"
+        ],
+        "replySent": false
+      },
+      "frameworkRevision": {
+        "preparedOn": "2026-10-27",
+        "status": "prepared_not_saved_on_existing_recipe",
+        "implementation": "Shared/four layouts use native item/content/meta/index, columns/column, responsive overflow and counters, clamping/typography/palette classes and title_bar. No custom stylesheet or inline styles. Full supplies10launches in sameAPIorder, halves2/quadrant1. Large-screen text and description lines adapt to landscape/portrait.",
+        "validation": "17YCchecks pass underNode22 plus2targeted YC cross-app palette checks. HTML/Liquid only; actual native OG/X fitting and marketplace QA remain unverified. Full cross-app suite has a pre-existing Daily fixture count mismatch (20rendered vs2expected), not caused by YCmarkup; not changed here.",
+        "recipeId": 506494,
+        "physicalReceipt": "unconfirmed",
+        "websiteDeploymentId": "dpl_7qfccaqz6oRwVWw5AL53HPD9P1jF",
+        "productionEvidence": "artifacts/yc-scout/framework-revision-2026-10-27.json",
+        "websiteVerification": "Canonical site releasechanges_requested, appJSandZIPmatch source. API200withtenlaunches/2603bytes. NativeRecipe506494 NOT updated, no nativevisualQA or revieweremail.",
+        "revisionNotification": "Explained new reviewer feedback and prepared revision in the current user status response; no repeat alert needed for unchanged Waiting on you."
       }
     },
     {
@@ -704,8 +731,8 @@
         "result": "Oldest ticket shows our sent follow-up in the TRMNL Messenger, Not seen yet, Waiting for a teammate; no human response. All three tickets show Submitted.",
         "ticketPageUrl": "https://trmnl.com/messages/tickets/215476374598561"
       },
-      "latestCheckedOn": "2026-10-23",
-      "latestResult": "Three existing HEY review threads rechecked: only original Submitted acknowledgments and one authorized October16 follow-up, no human reply or approval. No mail sent, no browser used."
+      "latestCheckedOn": "2026-10-27",
+      "latestResult": "New human feedback on YCScout: Framework rewrite requested, ticket Waiting on you. Daily and Sounds still only Submitted acknowledgments/one prior follow-up. No approval found. No new email sent and dashboard not revisited."
     }
   },
   "displayDesignPolicy": {
@@ -931,6 +958,28 @@
       "lastEditionPolicy": "Last valid snapshot retained; eligible AI decisions remain usable for six hours, then labeled freshness fallback. No automatic immediate retry or extra inference dispatched. Next normal hosted schedule remains enabled.",
       "userNotificationPlannedForRun": 40046768951,
       "notifyAgainOnlyIf": "New material failure state, sustained expiry/outage, recovery or required user action. Do not repeat the same known failed run."
+    },
+    "reviewOutcomeOct27": {
+      "yc": "changes_requested",
+      "daily": "no_new_reply",
+      "sounds": "no_new_reply",
+      "source": "HEY threads read; no dashboard access"
+    },
+    "newsflashRecoveryOct27": {
+      "status": "ready",
+      "lastSuccessAt": "2026-10-28T02:20:24.425Z",
+      "latestRun": "40620309035",
+      "conservativeReservations": 62,
+      "reservedUsd": 0.333633,
+      "limitUsd": 15,
+      "note": "Recovered from prior editor_unavailable. Reservations are not actual billing or paid-call count.",
+      "notification": "Recovery included in current user status response; do not repeatedly notify unchanged ready state."
+    },
+    "tinyPlanetOct27": {
+      "turn": 10,
+      "lastAutopilotUtcDay": "2026-10-28",
+      "latestActualExecution": "2026-10-28T00:46:13.30268+00:00",
+      "note": "UTCdateOctober28isOctober27Pacific; normal daily owner autopilot remains healthy."
     }
   }
 }

@@ -12,3 +12,9 @@ Support/source: https://github.com/Manny4C/trmnl-community/issues
 
 COLOR AND BLACK & WHITE
 Use TRMNL framework 3.4.3 or later. Red/yellow accents adapt to the device palette automatically. Every grayscale tier uses explicit black/white text and badge fallbacks; labels and borders carry meaning without color. Headlines and sources remain black. Photos use image-dither for the target device palette; QR codes remain pure black/white. Website palette controls affect only the web preview, not your TRMNL settings.
+
+OCTOBER 27 REVIEW REVISION — EXISTING MASTER 506494
+Mario requested native Framework items/automatic overflow and better use of OG/X landscape/portrait space. Shared and all four layouts are rewritten with NO custom stylesheet/inline styling: native item/content/meta/index, columns/column, responsive overflow and clamping, native typography/color utilities and title_bar. Full still supplies ten launches in original API order; the fitting engine may use up to two columns and indicates hidden items rather than clipping. X has larger text/more description lines, with one portrait column; smaller layouts retain2/2/1 item limits. Website preview is an OG content approximation, not official renderer QA.
+
+This revised package is PREPARED, NOT saved on master506494. Do not create another Recipe. Save Shared and all four tabs after renewed browser authorization, verify native OG/BW/color and X landscape/portrait plus longest source titles, regenerate actual marketplace previews if necessary, and only then request re-review. Do not claim these changes are on the installed device or accepted by the reviewer. No reply email has been authorized or sent for this feedback.
+Official references: https://trmnl.com/framework/docs/3.4/overflow and https://trmnl.com/framework/docs/trmnl_x_guide

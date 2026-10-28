@@ -1,6 +1,9 @@
-<div class="layout layout--col"><div class="sc sc--vertical">
-<div class="sc-head"><span class="sc-brand text--red 1bit:text--black 2bit:text--black 4bit:text--black">↗ YC SCOUT</span><span class="sc-edition bg--yellow 1bit:bg--white 2bit:bg--white 4bit:bg--white text--black">{{ mode_label | escape }}</span></div>
-<div class="sc-filter">{{ filter_label | escape }}{% if stale %} · CACHED{% endif %}{% if partial %} · Partial sources{% endif %}</div>
-<div class="sc-cards">{% for company in companies limit: 2 %}<div class="sc-card"><div class="sc-name">{{ company.name | escape }}</div><div class="sc-desc">{{ company.description | escape }}</div><div class="sc-meta">YC {{ company.batch | escape }} · Launch HN · {{ company.published_at | date: "%b %d, %Y" }}</div></div>{% else %}<div class="sc-empty">{% if total == 0 %}No matching launches.<br>Try fewer filters or a wider window.{% else %}Launch sources unavailable.<br>Please check again later.{% endif %}</div>{% endfor %}</div>
-<div class="sc-foot"><span>Checked {{ fetched_at | date: "%b %d %H:%M" }} UTC</span><span>yc-launch-scout.vercel.app</span></div>
+<div class="layout layout--col gap--small lg:gap--large flex--top">
+{% render 'scout_heading',mode_label:mode_label,filter_label:filter_label,stale:stale,partial:partial %}
+{% if companies.size > 0 %}
+<div class="columns" data-overflow-max-cols="1" data-overflow-counter="true"><div class="column gap--small lg:gap--large">
+{% render 'scout_items',companies:companies,row_limit:2,name_size:'title title--small lg:title--xxlarge',description_size:'description lg:description--xlarge',lines:3,large_lines:4,portrait_lines:4 %}
 </div></div>
+{% else %}{% render 'scout_empty',total:total %}{% endif %}
+{% render 'scout_links' %}
+</div>{% render 'title_bar',fetched_at:fetched_at %}

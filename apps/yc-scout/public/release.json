@@ -1,6 +1,9 @@
 {
   "name": "YC Scout",
-  "recipe_status": "submitted",
+  "recipe_status": "changes_requested",
   "recipe_url": null,
-  "support_url": "https://github.com/Manny4C/trmnl-community/issues"
+  "support_url": "https://github.com/Manny4C/trmnl-community/issues",
+  "review_status": "Waiting on you: Framework rewrite requested",
+  "revision_status": "prepared_not_saved_to_recipe",
+  "review_feedback_on": "2026-10-27"
 }

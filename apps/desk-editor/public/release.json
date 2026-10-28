@@ -1,15 +1,18 @@
 {
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "recipe_url": null,
   "recipe_id": 512643,
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "physical_receipt": false,
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "trmy_review_status": "findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
-  "trmy_resolution": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility."
+  "trmy_resolution": "Half-horizontal photo stretches vertically, reason uses two X lines; publication and checked times use installer UTC offset. Optional interests multi-select deferred to preserve existing field compatibility.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

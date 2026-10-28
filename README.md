@@ -142,12 +142,12 @@ All nine community Recipe masters are now created, added to the owner playlist, 
 | The Daily TRMNL |505118| Framework revisions saved; re-review reply sent October 28 |
 | YC Scout |506494| Framework revisions saved; re-review reply sent October 28 |
 | Sounds Like My Company |507810| Native revision/code/QR saved; awaiting human review |
-| Newsflash |512643| Private draft; review findings fixed and native-verified |
-| Tiny Planet |512639| Private draft; review findings fixed and native-verified |
-| Game Night Radar |522310| Private draft; review fixes saved; follow-up trmy checking |
-| Local Morning Brief |522315| Private draft; review fixes saved; follow-up trmy checking |
-| TRMNL Draws |522317| Private draft; review fixes saved; follow-up trmy checking |
-| One More Room |522318| Private draft; review fixes saved; follow-up trmy checking |
+| Newsflash |512643| Submitted for public human review; approval pending |
+| Tiny Planet |512639| Submitted for public human review; approval pending |
+| Game Night Radar |522310| Submitted for public human review; approval pending |
+| Local Morning Brief |522315| Submitted for public human review; approval pending |
+| TRMNL Draws |522317| Submitted for public human review; approval pending |
+| One More Room |522318| Submitted for public human review; approval pending |
 
 Native checks found and fixed the compact Sounds QR taking over the results area, Newsflash image letterboxing, narrow portrait column selection, compact Local weather sizing, the unsupported Local weather category, and numeric normalization of Game Night Radar defaults. The game default now uses Steam store URLs. One More Room's native content uses bounded overflow and prioritizes its automatic action. Author/support metadata is saved on Tiny Planet. Marketplace previews were regenerated.
 
@@ -156,3 +156,5 @@ The six drafts still need their prepared original icons uploaded, final Communit
 October 28 review follow-through: all six automated reports and their screenshots were read. Their layout/density/local-time findings are fixed and saved in the existing masters. Tiny Planet and Newsflash passed native verification after their fixes; four targeted follow-up checks are queued for the other drafts. Manuel chose proportional 5:3 drawing with margins rather than stretching; native dithering now handles the source at the final screen size. Re-review replies for Daily and YC Scout were explicitly approved, sent to Mario, and verified in HEY. Six draft icons and final license/publication steps remain pending; no approval or physical receipt is claimed.
 
 October 28 upload/follow-up completion: all six original draft icons are saved and reload-verified. All four follow-up reports are read and remaining issues addressed. The six drafts are ready for final Community Plugin License confirmation and public human submission; none is claimed approved.
+
+October 28 public submissions: Manuel explicitly accepted the Community Plugin License for Newsflash 512643, Tiny Planet 512639, Game Night Radar 522310, Local Morning Brief 522315, TRMNL Draws 522317 and One More Room 522318. All six submission actions succeeded and reloaded native settings show **Plugin in review**. One More Room’s final static-image validation issue was resolved by moving the atlas conditional outside the literal image URL; both atlas URLs return HTTP 200. Together with the existing three submissions, all nine now have active Recipe submissions. No human approval or public installation URL is claimed.

@@ -1,5 +1,5 @@
 {
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "recipe_id": 522317,
   "recipe_url": null,
   "ownership_status": "shared_trmnl_broker_implemented_live_owner_consent_unverified",
@@ -7,11 +7,14 @@
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "physical_receipt": false,
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "trmy_review_status": "followup_findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
   "trmy_resolution": "Owner approved proportional 5:3 canvas with margins on differing screen shapes. Native image-dither now scales a single color source on all palettes; pre-dithered mono selection removed. QR remains undithered and square.",
-  "trmy_followup_resolution": "Follow-up: separate code/allowance lines, native pixel-perfect labels and whole-pixel canvas/QR geometry prevent text clipping and broken OG glyphs; unused monochrome argument removed and description corrected."
+  "trmy_followup_resolution": "Follow-up: separate code/allowance lines, native pixel-perfect labels and whole-pixel canvas/QR geometry prevent text clipping and broken OG glyphs; unused monochrome argument removed and description corrected.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

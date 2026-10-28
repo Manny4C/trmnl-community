@@ -1,5 +1,5 @@
 {
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "recipe_id": 512639,
   "recipe_url": null,
   "shared_world_status": "online",
@@ -9,10 +9,13 @@
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "physical_receipt": false,
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "trmy_review_status": "findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
-  "trmy_resolution": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC."
+  "trmy_resolution": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

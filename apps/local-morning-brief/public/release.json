@@ -1,17 +1,20 @@
 {
   "name": "Local Morning Brief",
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "recipe_id": 522315,
   "recipe_url": null,
   "physical_receipt": false,
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "trmy_review_status": "followup_findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
   "trmy_resolution": "Larger full-view headlines, valid X weather value tier, single-column quadrant fitting, compact inline BART attribution and installer-local checked time.",
-  "trmy_followup_resolution": "Follow-up: full view adds supplied NWS forecast detail and up to two advisories, uses larger portrait headlines, and defaults to six updates across API/site/Recipe. Existing public city/unit/window scope is unchanged."
+  "trmy_followup_resolution": "Follow-up: full view adds supplied NWS forecast detail and up to two advisories, uses larger portrait headlines, and defaults to six updates across API/site/Recipe. Existing public city/unit/window scope is unchanged.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

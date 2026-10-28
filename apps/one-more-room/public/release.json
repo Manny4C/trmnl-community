@@ -4,7 +4,7 @@
   "website": "https://one-more-room-trmnl.vercel.app",
   "recipe_id": 522318,
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "physical_receipt": false,
   "engine": "procedural",
@@ -14,10 +14,13 @@
   "automatic_map_camera": true,
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "trmy_review_status": "followup_findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
   "trmy_resolution": "Half-vertical stacks map/story; compact X shows roll/all choices while party stays hidden; full maps/art consume freed stretch space; title-bar instance clamps.",
-  "trmy_followup_resolution": "Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space."
+  "trmy_followup_resolution": "Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

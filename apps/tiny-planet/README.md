@@ -1,6 +1,8 @@
 # TRMNL Plays: Tiny Planet
 
-Latest Recipe status — October 28, 2026: master **512639** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; native verification passed and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+Latest Recipe status — October 28, 2026: master **512639** is submitted for public human review. Icons and OG/X marketplace assets are saved, native views checked, and Community Plugin License acceptance explicitly approved by Manuel. Reloaded native settings show **Plugin in review**. Approval, public installation URL and physical receipt remain unconfirmed.
+
+
 
 
 An original shared island game: one accepted move per verified TRMNL account per UTC day, no aggregate daily community cap, public viewer, four e-ink layouts and a separately labeled daily owner autopilot.

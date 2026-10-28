@@ -1370,5 +1370,16 @@
       "labelsFit": true,
       "labelOriginsWholePixels": true
     }
-  ]
+  ],
+  "publicSubmissionEvidence": "artifacts/public-submission-verification-2026-10-28.json",
+  "sixNewSubmissionsVerifiedAfterReload": true,
+  "remaining": "Human approval, actual public install URLs and physical receipt unconfirmed.",
+  "atlasStaticUrlValidation": {
+    "issue": "Liquid conditional inside a literal image URL failed final static-asset GET validation",
+    "fix": "Conditional now surrounds the two valid image elements",
+    "atlasHttpStatus": 200,
+    "dungeonAtlasHttpStatus": 200,
+    "nativeSaveCompared": true,
+    "submissionAfterFix": "Plugin in review"
+  }
 }

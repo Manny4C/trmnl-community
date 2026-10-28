@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-28",
+  "licenseExplicitlyAccepted": true,
+  "license": "https://trmnl.com/plugin-license",
+  "submissions": [
+    {
+      "slug": "desk-editor",
+      "id": 512643,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    },
+    {
+      "slug": "tiny-planet",
+      "id": 512639,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    },
+    {
+      "slug": "game-night-radar",
+      "id": 522310,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    },
+    {
+      "slug": "local-morning-brief",
+      "id": 522315,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    },
+    {
+      "slug": "trmnl-draws",
+      "id": 522317,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    },
+    {
+      "slug": "one-more-room",
+      "id": 522318,
+      "status": "submitted",
+      "verifiedAfterReload": true
+    }
+  ],
+  "approved": false,
+  "physicalReceipt": "unconfirmed"
+}

@@ -1,16 +1,19 @@
 {
-  "recipe_status": "draft_installed",
+  "recipe_status": "submitted",
   "recipe_url": null,
   "recipe_id": 522310,
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "physical_receipt": false,
   "installed": true,
-  "submitted": false,
+  "submitted": true,
   "approved": false,
   "trmy_review_status": "followup_findings_fixed_native_verified",
   "icon_status": "uploaded_saved_and_reload_verified",
   "trmy_findings_addressed_on": "2026-10-28",
   "trmy_resolution": "Larger full/half-vertical X titles and labels, installer-local timestamps, native fitting supplied with all selected posts.",
-  "trmy_followup_resolution": "Follow-up: full X portrait titles step up for readability; selected result/window limits remain explicit rather than padding with invented posts."
+  "trmy_followup_resolution": "Follow-up: full X portrait titles step up for readability; selected result/window limits remain explicit rather than padding with invented posts.",
+  "submitted_on": "2026-10-28",
+  "license_accepted_on": "2026-10-28",
+  "submission_verification": "Plugin in review observed after reload"
 }

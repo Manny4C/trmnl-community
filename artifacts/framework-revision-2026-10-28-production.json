@@ -63,18 +63,18 @@
       "url": "https://newsflash-trmnl.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 7507,
-        "sha256": "5a111675ec3d969966e6cfc26088e090e1f9113f3ede2e451391c0921ec96e42",
+        "bytes": 7484,
+        "sha256": "a3f2da1875718079797d4b715d7e5a8f7e3c457c09345393863767ee12b5481b",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 687,
-        "sha256": "cabe0d185d13e46cde4b6defcafce23ae5cc310d0e3bafd15edae4d1059b2036",
+        "bytes": 822,
+        "sha256": "2405ebcfa24c7f110fb114f1af190b4e618103d2d0786e8544dedaa01bd70918",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_2NpgPaKjv9oRjFJ9LzC1wsW1HXph",
+      "deployment_id": "dpl_33LTqAKSNGpawGpi9N6c2TubwXiP",
       "deployment_ready": true
     },
     {
@@ -82,18 +82,18 @@
       "url": "https://tiny-planet-trmnl.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 5823,
-        "sha256": "0407c0f4923a2bdf8540b33977ea3679e67cc064dbc6d4c0a0510d3d346a9481",
+        "bytes": 5804,
+        "sha256": "1b0be2a9d25ca9004401b309ed38ba7bfc30869e4a4b3daf284dda8c22a24b83",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 847,
-        "sha256": "6c23693459edf2267dfd5c3147ee5486956dbb46d38c4d282b18d157924c2750",
+        "bytes": 982,
+        "sha256": "6f6ef84e46911dc24e766ab2a7829b045e1cef078715c8ca9fcd003260a55d92",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_H3caJbHy3kfvhKhyWtsuQ3kqMNtz",
+      "deployment_id": "dpl_Bd7QKyAV7NJvaftZFWaKdqegGsdH",
       "deployment_ready": true
     },
     {
@@ -101,18 +101,18 @@
       "url": "https://game-night-radar.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 7088,
-        "sha256": "77eaf8bbc743f536fdaf3afeff7245ae3b264c641d3b06ae103c0da036e9d9b0",
+        "bytes": 7052,
+        "sha256": "9cb7aca672c1cba581a78a3b8e1662fddd78e7b757fe7c0829acdc5a6b719cec",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 791,
-        "sha256": "71ee811226b1531859ca41295d3adafd7c1e74062b7ce436e007469eacacc231",
+        "bytes": 926,
+        "sha256": "1dd538a55576f56310b6429f82bf16af1bf42023389f1266f57f7bd81d52554e",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_3ywN3XrsLxFYZRmrUMEAJ8jgviyD",
+      "deployment_id": "dpl_33che4F7HDUXbHmgcgLmajGrQugg",
       "deployment_ready": true
     },
     {
@@ -120,18 +120,18 @@
       "url": "https://local-morning-brief.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 6214,
-        "sha256": "d6df9b862820e42bdc2ecef1d95720834071729807480a8c9c26831e350135b4",
+        "bytes": 6189,
+        "sha256": "0defc1aa2146c6a150dad652f64d897be04c7f7ee8e0f1fab7cafd12c3a82ee6",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 926,
-        "sha256": "7fa9dda9447cc8f2ca50bf47ceafe887ca93b119dc4b73188845c5d8430e1068",
+        "bytes": 1061,
+        "sha256": "11e657fd8e8799682153fb1061609c6fb9a97b8e4e32cad5dce647c21dc67488",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_BPh49y63L8iPJQVJdf46DSo7bd5u",
+      "deployment_id": "dpl_EfPFTnDRsh9AwffHbJ7ZgkSg9n8q",
       "deployment_ready": true
     },
     {
@@ -139,18 +139,18 @@
       "url": "https://one-more-room-trmnl.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 15929,
-        "sha256": "335b5a8ca8a360b1e0e8baa9173cc827eed51761e468865b892049aaae2cda50",
+        "bytes": 15901,
+        "sha256": "7c31484d924b9ce0128515e5b4c00f96f93cf69ddbbdffe05291dd0755f7c561",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 1064,
-        "sha256": "41fc48b53c364eac03d32e1c61af9b8f01ea84691ccb088b1f071a0ca9fcfa7a",
+        "bytes": 1199,
+        "sha256": "6efe73bd5560f3c6d09a22f1d3fc41fa5bd60111545471b500b72d7935d730c7",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_84MAUr3AYQeX1NEyN1zeB1LqF7x8",
+      "deployment_id": "dpl_BfLMuXpaYU6eVBKPCvEcgMsAV9yJ",
       "deployment_ready": true
     },
     {
@@ -158,22 +158,22 @@
       "url": "https://trmnl-draws.vercel.app",
       "plugin.zip": {
         "status": 200,
-        "bytes": 5448,
-        "sha256": "62cb6f20ebe7000760fb38a951448f5c1107710a4e041dbf3f5d1aff8f42ca68",
+        "bytes": 5417,
+        "sha256": "5a0a06b95604e57a7198edff54a0390849f335d9398fb738a68e1f1acf764749",
         "matches_source": true
       },
       "release.json": {
         "status": 200,
-        "bytes": 1040,
-        "sha256": "8bc5839b8b0553005369beb6ec2f1abab59b7b96fe451bbad0232489e4cc80cf",
+        "bytes": 1175,
+        "sha256": "3df66ee4cc50f22e83649a0df8464d43efcf11eae583e4df8e4179e5cbb3d55f",
         "matches_source": true
       },
       "page_status": 200,
-      "deployment_id": "dpl_7xVxpNY6e3ph2kVa1bUPHJyiVxLi",
+      "deployment_id": "dpl_FL2oqThTW48EjzxLkzcSDPqjp2SX",
       "deployment_ready": true
     }
   ],
-  "native_qa": "All six original icons saved; all four follow-up reports read with remaining findings fixed/native-verified. Public license confirmation and human submission are pending.",
+  "native_qa": "All nine have active Recipe submissions. Six new public submissions succeeded and Plugin in review was verified after reload. Native layouts, original icons and marketplace assets are saved; human approval is pending.",
   "approval": "not confirmed",
   "physical_receipt": "unconfirmed"
 }

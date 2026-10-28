@@ -1,6 +1,8 @@
 # Game Night Radar
 
-Latest Recipe status — October 28, 2026: master **522310** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; follow-up findings are fixed and native-verified and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+Latest Recipe status — October 28, 2026: master **522310** is submitted for public human review. Icons and OG/X marketplace assets are saved, native views checked, and Community Plugin License acceptance explicitly approved by Manuel. Reloaded native settings show **Plugin in review**. Approval, public installation URL and physical receipt remain unconfirmed.
+
+
 
 
 A personal Vercel app for public Steam developer announcements. Default games: Deep Rock Galactic, Valheim and Terraria; any 1–6 numeric Steam App IDs or store URLs work. Unknown IDs keep their numeric name rather than guessing a title. No Steam sign-in, AI model, private library access or new paid service.

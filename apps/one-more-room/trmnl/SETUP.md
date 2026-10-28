@@ -1,4 +1,4 @@
-Current owner status, October 28, 2026: existing master 522318 is created and added to the owner playlist, with canonical Shared/four layouts saved and reloaded against source. Native OG color/B&W and X landscape/portrait checks passed at owner defaults. The first automated trmy review is read and its findings are fixed; the targeted follow-up report is read and its remaining findings are fixed. Original icon is uploaded and saved. Final Community Plugin License acceptance and public submission remain pending. No approval or physical receipt is claimed. Continue this master; never create a duplicate.
+Current owner status, October 28, 2026: existing master 522318 is submitted for public human review. Canonical Shared/four layouts are saved/reloaded against source, original icon and marketplace assets are saved, and native OG/X checks passed. Manuel explicitly accepted the Community Plugin License for this submission. Reloaded settings show Plugin in review. Public approval, installation URL and physical receipt remain unconfirmed. Continue this existing master; never create a duplicate.
 
 # One More Room — TRMNL setup
 

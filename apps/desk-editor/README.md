@@ -1,6 +1,8 @@
 # Newsflash
 
-Latest Recipe status — October 28, 2026: master **512643** is created, added to the owner playlist and native-checked as a private draft; trmy feedback is addressed; native verification passed and public submission is pending. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.
+Latest Recipe status — October 28, 2026: master **512643** is submitted for public human review. Icons and OG/X marketplace assets are saved, native views checked, and Community Plugin License acceptance explicitly approved by Manuel. Reloaded native settings show **Plugin in review**. Approval, public installation URL and physical receipt remain unconfirmed.
+
+
 
 
 Your world, in a flash. A complete replacement of Day 4’s Desk Editor: an image-first AI news screen with interests, one important headline, existing source imagery/video previews, dates, links and a grounded selection reason.

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,140 +10,130 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-29T16:13:10.216Z",
+    "generated_at": "2026-10-29T21:12:42.311Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "2cfd501e35eedc20",
-        "importance": 68,
-        "reason": "Fresh championship highlight reel for a historic first title; retrospective rather than live coverage."
+        "id": "0c99cb9ef16a0613",
+        "importance": 82,
+        "reason": "Fresh World Series top-plays recap, framed around the Brewers winning the title."
       },
       {
-        "id": "34a303470b809093",
-        "importance": 47,
-        "reason": "Brief post-win moment tied to a major championship, but title gives little detail."
+        "id": "548be7210cc4b901",
+        "importance": 28,
+        "reason": "Team-song video is celebratory filler after the Brewers' reported title win."
+      },
+      {
+        "id": "a36ba642b58b29a0",
+        "importance": 24,
+        "reason": "Predictions and a guest appearance; limited immediate sports significance."
       },
       {
         "id": "4d8039c7f0ff8821",
-        "importance": 49,
-        "reason": "Timely highlight video promises buzzer beaters, but gives no game or outcome details."
-      },
-      {
-        "id": "f8ed7961a9cc9ce2",
-        "importance": 43,
-        "reason": "Recent league recap is useful, though routine and lacking specific developments here."
+        "importance": 56,
+        "reason": "Buzzer-beater night could be a notable NBA highlight, but specifics are absent."
       },
       {
         "id": "9a9937104629f830",
-        "importance": 14,
-        "reason": "Seasonal Tesla mode video appears promotional, with no substantive news stated."
+        "importance": 12,
+        "reason": "Halloween-themed product video; no substantive update stated."
       },
       {
         "id": "3cab141fc411378d",
-        "importance": 40,
-        "reason": "Recent impressions video may inform tech enthusiasts, but the product claim is unclear."
+        "importance": 49,
+        "reason": "Impressions of a purported MacBook display are timely tech coverage, but details are unclear."
       },
       {
         "id": "c654ae9db4c47ae5",
-        "importance": 31,
-        "reason": "Intriguing tech video title, but offers no context to assess its substance."
+        "importance": 42,
+        "reason": "Potentially interesting technology video, but title alone gives little substance."
       },
       {
-        "id": "6ff0c79480990a13",
-        "importance": 24,
-        "reason": "New game announcement trailer; limited significance beyond a routine reveal."
+        "id": "7ac79e67ec8916ed",
+        "importance": 40,
+        "reason": "A fresh launch trailer, though no game details or broader significance are supplied."
       },
       {
-        "id": "41c302b26419386b",
+        "id": "26bda83229c711ce",
+        "importance": 27,
+        "reason": "New game launch trailer; niche release with no further context."
+      },
+      {
+        "id": "a10cf82f12d39335",
+        "importance": 34,
+        "reason": "Fresh Xbox launch trailer, but title provides little about the game's significance."
+      },
+      {
+        "id": "f3b86553fc780125",
         "importance": 23,
-        "reason": "Routine game announcement trailer with no further details."
+        "reason": "Promotional game trailer, with no launch or substantive news stated."
       },
       {
-        "id": "5d509e4752787283",
-        "importance": 25,
-        "reason": "Launch trailer marks a game release, but no broader significance is supplied."
+        "id": "af1587bdb25bba9a",
+        "importance": 33,
+        "reason": "Fresh launch trailer for a game, but broader relevance is unclear."
       },
       {
-        "id": "d6a7144d23215106",
-        "importance": 44,
-        "reason": "A next-gen update launches now, a concrete game update with modest broader impact."
+        "id": "e1c2e1404a38809e",
+        "importance": 38,
+        "reason": "Next-gen update launch trailer is a useful game update, though details are absent."
       },
       {
-        "id": "6f026096ea828e33",
-        "importance": 19,
-        "reason": "Routine story trailer; no release or gameplay details provided."
-      },
-      {
-        "id": "5a683582f7624c34",
-        "importance": 18,
-        "reason": "Duplicate platform-specific story trailer with no substantive details."
-      },
-      {
-        "id": "f8a03c61914afc69",
-        "importance": 21,
-        "reason": "Developer diary offers some behind-the-scenes content, but no key news is specified."
-      },
-      {
-        "id": "d7108fb05842c914",
-        "importance": 26,
-        "reason": "Launch trailer indicates a game release, though title alone gives little context."
+        "id": "0dbc5940df66eb5f",
+        "importance": 35,
+        "reason": "Enterprise AI customer-use video, but no results or product changes are specified."
       },
       {
         "id": "c19e2dff4ded2643",
-        "importance": 64,
-        "reason": "Plan change involving API credits is a concrete, timely product update; details are absent."
-      },
-      {
-        "id": "63ffcc4a58435325",
-        "importance": 23,
-        "reason": "Interview-style leadership commentary, not a clear product or policy development."
+        "importance": 55,
+        "reason": "Plan change involving API credits is a substantive update for ChatGPT users."
       },
       {
         "id": "bcbd51e5018d0249",
         "importance": 71,
-        "reason": "New generation of a world-simulation system is a potentially consequential AI announcement; specifics absent."
+        "reason": "New world-simulation generation signals a potentially consequential AI research release."
       },
       {
         "id": "5beef147a7815df4",
-        "importance": 34,
-        "reason": "AI simulation article may offer useful technical detail, but the supplied excerpt is incomplete."
+        "importance": 33,
+        "reason": "Article on AI simulation workflows, but supplied context is incomplete."
       },
       {
         "id": "84f5c4345b63da3c",
-        "importance": 40,
-        "reason": "Game availability on a cloud service is a timely update, with limited scope."
+        "importance": 42,
+        "reason": "Game availability on GeForce NOW is timely but a narrow platform update."
       },
       {
         "id": "9fa8e4999dc54776",
-        "importance": 43,
-        "reason": "New laptop models and agent tools are a substantive tech announcement, though specifics are limited."
+        "importance": 45,
+        "reason": "New laptop models and tools are a substantive hardware update, though details are sparse."
       },
       {
-        "id": "73ffe7ada0bdfb43",
-        "importance": 94,
-        "reason": "Fresh full-series highlights document the Brewers' first World Series championship."
+        "id": "35f42a33e5990132",
+        "importance": 80,
+        "reason": "Fresh World Series highlights spotlight a player credited with two wins in the title run."
       },
       {
-        "id": "7d947fe2088009ef",
-        "importance": 72,
-        "reason": "Timely reaction to a major championship, but less direct coverage than game highlights."
+        "id": "4bd14539346e1377",
+        "importance": 67,
+        "reason": "World Series player highlights offer timely detail on a key contributor to the reported run."
+      },
+      {
+        "id": "f8ed7961a9cc9ce2",
+        "importance": 40,
+        "reason": "Recent NBA recap is timely, but no specific game outcome or turning point is given."
       },
       {
         "id": "b6b69b3662e1c843",
-        "importance": 45,
-        "reason": "Recent nightly highlights offer timely basketball moments but are routine."
-      },
-      {
-        "id": "a07bf7233d67c84e",
-        "importance": 56,
-        "reason": "Full highlights of a recent Lakers-Clippers game provide substantive game coverage; outcome unstated."
+        "importance": 46,
+        "reason": "Fresh nightly NBA highlights provide timely action, with no standout play identified."
       }
     ],
-    "source_checked_at": "2026-10-29T16:12:57.325Z"
+    "source_checked_at": "2026-10-29T21:12:31.720Z"
   },
   "last_attempt_at": "2026-10-29T21:12:31.411Z",
   "pending_reservation_microusd": 5303,
   "pending_source_checked_at": "2026-10-29T21:12:31.720Z",
-  "last_success_at": "2026-10-29T16:13:10.216Z",
+  "last_success_at": "2026-10-29T21:12:42.311Z",
   "last_error_status": null
 }

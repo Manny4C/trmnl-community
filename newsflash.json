@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,155 +10,70 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-28T21:41:58.395Z",
+    "generated_at": "2026-10-29T01:51:27.484Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "490279b16cf75bc6",
-        "importance": 38,
-        "reason": "A fresh postseason-history montage; archival highlights, not a new result."
+        "id": "7ff36fe2fcec49e0",
+        "importance": 80,
+        "reason": "Live World Series Game 5 update: a lead-extending play, with immediate game significance."
       },
       {
-        "id": "1baf0dd6ed19a9b7",
-        "importance": 43,
-        "reason": "A timely World Series walk-off compilation, though it recaps past moments."
-      },
-      {
-        "id": "93e05e20bbf4c65d",
-        "importance": 30,
-        "reason": "A fresh celebratory player clip, with little broader game context."
-      },
-      {
-        "id": "fb5440ed56ca525a",
-        "importance": 52,
-        "reason": "Recent interview on a fourth-quarter takeover, but no further game details supplied."
-      },
-      {
-        "id": "c654ae9db4c47ae5",
-        "importance": 38,
-        "reason": "A recent tech video with an intriguing premise; specifics are not provided."
-      },
-      {
-        "id": "55efa779d93d38ce",
-        "importance": 27,
-        "reason": "New game announcement trailer; no release details or broader significance supplied."
-      },
-      {
-        "id": "71b5a5c95d7383ac",
-        "importance": 24,
-        "reason": "Announcement trailer for a game, with little information beyond its title."
-      },
-      {
-        "id": "4b23ce808431256b",
-        "importance": 22,
-        "reason": "Accolades trailer is promotional material rather than substantive news."
-      },
-      {
-        "id": "e25377525623e036",
-        "importance": 23,
-        "reason": "A story trailer offers a game update but limited context on its significance."
-      },
-      {
-        "id": "a8af416e39b76a9c",
-        "importance": 35,
-        "reason": "Season 1 launch trailer is timely game news, though promotional in nature."
-      },
-      {
-        "id": "558b36751b37a4d2",
-        "importance": 25,
-        "reason": "Release-date trailer for a game; no date or other details supplied."
-      },
-      {
-        "id": "5b280e42864c0bff",
-        "importance": 26,
-        "reason": "Release-date announcement is useful to players but details are absent."
-      },
-      {
-        "id": "ee76f454c136de31",
-        "importance": 35,
-        "reason": "Timely Season 1 launch trailer, but it is promotional and duplicates another feed item."
-      },
-      {
-        "id": "63ffcc4a58435325",
-        "importance": 32,
-        "reason": "A company CEO discusses AI fluency; specific claims or findings are not given."
-      },
-      {
-        "id": "b64d80a60f071a2f",
-        "importance": 30,
-        "reason": "A CEO interview on Codex use, with limited detail in the supplied context."
-      },
-      {
-        "id": "bcbd51e5018d0249",
-        "importance": 69,
-        "reason": "A new world-simulation generation is a potentially consequential AI release; details are sparse."
+        "id": "2ffb7a7277e488a6",
+        "importance": 76,
+        "reason": "Historic rookie World Series hitting streak, reported during Game 5; a notable live milestone."
       },
       {
         "id": "b1d7eb2dedce5839",
-        "importance": 16,
-        "reason": "An educational AI lesson, not a reported neuroscience breakthrough."
+        "importance": 20,
+        "reason": "Educational AI lesson, but not a substantive research or technology announcement."
       },
       {
         "id": "9fa8e4999dc54776",
-        "importance": 45,
-        "reason": "New laptop models and tools are a notable product update, but the excerpt is incomplete."
+        "importance": 39,
+        "reason": "New laptop models and tools are a relevant product update, though largely promotional."
       },
       {
         "id": "85fdf95f1fdc5eec",
-        "importance": 39,
-        "reason": "AI and dementia discovery is consequential, but the item gives no specific findings."
+        "importance": 38,
+        "reason": "AI and dementia discovery is potentially consequential, but the supplied context gives few details."
+      },
+      {
+        "id": "04fe104cafb4728a",
+        "importance": 47,
+        "reason": "Vietnam joining the Artemis Accords is a notable international space-policy development."
       },
       {
         "id": "132dca1045a75f55",
-        "importance": 72,
-        "reason": "Artemis III hardware integration is a meaningful milestone in a major space program."
+        "importance": 65,
+        "reason": "Artemis III hardware integration is a substantial, timely milestone in the lunar program."
+      },
+      {
+        "id": "73273ce63c42aa19",
+        "importance": 53,
+        "reason": "A fresh defensive highlight from the ongoing World Series, with less stated game impact."
+      },
+      {
+        "id": "4a6b5947560fb5b6",
+        "importance": 74,
+        "reason": "Game 5 scoring highlight with clutch framing; consequential to the live World Series."
       },
       {
         "id": "23fc4b02995c7c16",
-        "importance": 20,
-        "reason": "An entrepreneur profile tied to a NASA challenge, with limited wider impact."
-      },
-      {
-        "id": "e7bc8435004f26e5",
-        "importance": 18,
-        "reason": "A business case-study video; no substantive AI development is described."
-      },
-      {
-        "id": "11621aa5c1675bea",
-        "importance": 26,
-        "reason": "A recent archival baseball highlight, not current game news."
-      },
-      {
-        "id": "53821f671b4b22a4",
-        "importance": 12,
-        "reason": "Light World Series humor with little public or sports significance."
-      },
-      {
-        "id": "51d412653745818e",
-        "importance": 64,
-        "reason": "A recent final-minute game highlight involving a takeover, though no outcome is supplied."
-      },
-      {
-        "id": "937a7e6a01768dae",
-        "importance": 13,
-        "reason": "Off-court banter is light, retrospective content."
+        "importance": 23,
+        "reason": "An entrepreneur profile tied to a NASA challenge; limited broader significance."
       },
       {
         "id": "8ca2f0d9390b6938",
-        "importance": 60,
-        "reason": "A new Webb observation of a star nursery is a substantive astronomy update."
-      },
-      {
-        "id": "71e6962cecf66d3a",
-        "importance": 32,
-        "reason": "A yearlong Mars simulation milestone is timely, though the supplied text gives few details."
+        "importance": 41,
+        "reason": "A recent Webb image release offers science interest, but context gives no specific discovery."
       }
     ],
-    "source_checked_at": "2026-10-28T21:41:45.408Z"
+    "source_checked_at": "2026-10-29T01:51:18.952Z"
   },
   "last_attempt_at": "2026-10-29T01:51:18.524Z",
   "pending_reservation_microusd": 4795,
   "pending_source_checked_at": "2026-10-29T01:51:18.952Z",
-  "last_success_at": "2026-10-28T21:41:58.395Z",
+  "last_success_at": "2026-10-29T01:51:27.484Z",
   "last_error_status": null
 }

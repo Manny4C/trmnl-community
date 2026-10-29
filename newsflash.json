@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,70 +10,165 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-29T01:51:27.484Z",
+    "generated_at": "2026-10-29T08:35:26.885Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "7ff36fe2fcec49e0",
-        "importance": 80,
-        "reason": "Live World Series Game 5 update: a lead-extending play, with immediate game significance."
+        "id": "7d947fe2088009ef",
+        "importance": 98,
+        "reason": "World Series title win is a major baseball outcome; immediate reaction is highly timely."
       },
       {
-        "id": "2ffb7a7277e488a6",
-        "importance": 76,
-        "reason": "Historic rookie World Series hitting streak, reported during Game 5; a notable live milestone."
+        "id": "68bef76cb582c97f",
+        "importance": 87,
+        "reason": "Complete play-by-play coverage of the decisive World Series Game 5 is timely and substantive."
+      },
+      {
+        "id": "f8ed7961a9cc9ce2",
+        "importance": 67,
+        "reason": "Fresh league-wide recap offers substantive coverage of the previous night's NBA action."
+      },
+      {
+        "id": "b6b69b3662e1c843",
+        "importance": 53,
+        "reason": "Timely highlights package, but less consequential than full game coverage."
+      },
+      {
+        "id": "9a9937104629f830",
+        "importance": 13,
+        "reason": "Seasonal Tesla promotional content, with no substantive product news indicated."
+      },
+      {
+        "id": "3cab141fc411378d",
+        "importance": 56,
+        "reason": "New tech impressions may offer useful analysis, though the title gives few specifics."
+      },
+      {
+        "id": "c654ae9db4c47ae5",
+        "importance": 48,
+        "reason": "Potentially interesting technology video, but the clickbait-style title provides little context."
+      },
+      {
+        "id": "6ff0c79480990a13",
+        "importance": 26,
+        "reason": "Announcement trailer for a game; limited details or broader significance supplied."
+      },
+      {
+        "id": "41c302b26419386b",
+        "importance": 24,
+        "reason": "Routine announcement trailer with no release or gameplay details in the supplied text."
+      },
+      {
+        "id": "5d509e4752787283",
+        "importance": 25,
+        "reason": "A launch trailer marks availability, but the supplied title suggests a niche release."
+      },
+      {
+        "id": "1e508c3250351def",
+        "importance": 22,
+        "reason": "Routine game collection launch trailer; no further details about its significance."
+      },
+      {
+        "id": "a61973c00945256e",
+        "importance": 30,
+        "reason": "A console release-date announcement is useful to players, though details are absent."
+      },
+      {
+        "id": "605a1822c006994f",
+        "importance": 19,
+        "reason": "Halloween-themed trailer for a VR game; limited broader gaming significance."
+      },
+      {
+        "id": "558b36751b37a4d2",
+        "importance": 25,
+        "reason": "Release-date announcement offers practical news, but the title gives no date or context."
+      },
+      {
+        "id": "ee76f454c136de31",
+        "importance": 58,
+        "reason": "A new season launch for a major game is timely, though the title gives no season details."
+      },
+      {
+        "id": "c19e2dff4ded2643",
+        "importance": 69,
+        "reason": "Plan changes involving API credits could matter to ChatGPT Pro and Business users."
+      },
+      {
+        "id": "63ffcc4a58435325",
+        "importance": 34,
+        "reason": "Executive interview on AI fluency is informative but not a major development."
+      },
+      {
+        "id": "bcbd51e5018d0249",
+        "importance": 77,
+        "reason": "A newly announced world-simulation generation could be a notable AI advance; specifics are limited."
       },
       {
         "id": "b1d7eb2dedce5839",
-        "importance": 20,
-        "reason": "Educational AI lesson, but not a substantive research or technology announcement."
+        "importance": 17,
+        "reason": "An educational lesson promotion, not a reported neuroscience breakthrough."
       },
       {
         "id": "9fa8e4999dc54776",
-        "importance": 39,
-        "reason": "New laptop models and tools are a relevant product update, though largely promotional."
+        "importance": 58,
+        "reason": "New laptop models and tools may matter to technology buyers, but supplied context is truncated."
       },
       {
         "id": "85fdf95f1fdc5eec",
-        "importance": 38,
-        "reason": "AI and dementia discovery is potentially consequential, but the supplied context gives few details."
+        "importance": 43,
+        "reason": "AI and dementia research is consequential, but the title gives no findings or evidence."
+      },
+      {
+        "id": "2d88ce8f7f5eb856",
+        "importance": 57,
+        "reason": "Notable NASA leadership appointment involving the Artemis II commander; limited details supplied."
       },
       {
         "id": "04fe104cafb4728a",
-        "importance": 47,
-        "reason": "Vietnam joining the Artemis Accords is a notable international space-policy development."
+        "importance": 64,
+        "reason": "Vietnam joining the Artemis Accords is a substantive international space-policy development."
+      },
+      {
+        "id": "b64d80a60f071a2f",
+        "importance": 30,
+        "reason": "CEO profile on using Codex is promotional or explanatory, not a major product announcement."
+      },
+      {
+        "id": "09e894143b194516",
+        "importance": 49,
+        "reason": "Quick recap of the World Series clincher, but less comprehensive than full-game coverage."
+      },
+      {
+        "id": "95cbb8f5e687d8e0",
+        "importance": 73,
+        "reason": "Focuses on the decisive final out of the World Series; highly timely, concise coverage."
+      },
+      {
+        "id": "a07bf7233d67c84e",
+        "importance": 61,
+        "reason": "Full highlights of a recent Lakers-Clippers game provide useful, timely basketball coverage."
+      },
+      {
+        "id": "1f3db24c9c7c847c",
+        "importance": 10,
+        "reason": "Vague engagement prompt with no clear news or basketball detail."
       },
       {
         "id": "132dca1045a75f55",
-        "importance": 65,
-        "reason": "Artemis III hardware integration is a substantial, timely milestone in the lunar program."
-      },
-      {
-        "id": "73273ce63c42aa19",
-        "importance": 53,
-        "reason": "A fresh defensive highlight from the ongoing World Series, with less stated game impact."
-      },
-      {
-        "id": "4a6b5947560fb5b6",
-        "importance": 74,
-        "reason": "Game 5 scoring highlight with clutch framing; consequential to the live World Series."
+        "importance": 75,
+        "reason": "Artemis III core-stage integration is a tangible, timely milestone in a major space program."
       },
       {
         "id": "23fc4b02995c7c16",
-        "importance": 23,
-        "reason": "An entrepreneur profile tied to a NASA challenge; limited broader significance."
-      },
-      {
-        "id": "8ca2f0d9390b6938",
-        "importance": 41,
-        "reason": "A recent Webb image release offers science interest, but context gives no specific discovery."
+        "importance": 27,
+        "reason": "Human-interest profile about a university challenge, with limited broader space significance."
       }
     ],
-    "source_checked_at": "2026-10-29T01:51:18.952Z"
+    "source_checked_at": "2026-10-29T08:35:13.721Z"
   },
   "last_attempt_at": "2026-10-29T08:35:13.328Z",
   "pending_reservation_microusd": 5675,
   "pending_source_checked_at": "2026-10-29T08:35:13.721Z",
-  "last_success_at": "2026-10-29T01:51:27.484Z",
+  "last_success_at": "2026-10-29T08:35:26.885Z",
   "last_error_status": null
 }

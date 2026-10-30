@@ -1,10 +1,10 @@
 <div class="layout layout--col gap--small tp--full">
 {% render 'tp_head', chapter: chapter %}
-{% if tiles.size > 0 %}<div class="flex flex--row portrait:flex--col stretch w--full gap--small"><div class="stretch w--full h--full">{% render 'tp_map',tiles:tiles %}</div><div class="flex flex--col flex--left gap--small">
-<span class="title title--small lg:title--large">{{ groves }} / 8 groves</span><span class="description">Grow 8 groves.<br>Build a beacon.<br>Then sail together.</span>
+{% if tiles.size > 0 %}<div class="flex flex--row portrait:flex--col stretch w--full gap--small"><div class="stretch w--full h--full">{% render 'tp_map',tiles:tiles,planet_image:planet_image %}</div><div class="flex flex--col flex--left gap--small">
+<span class="title title--small lg:title--large">{{ groves }} / 8 groves</span><span class="description">A little more alive,<br>one day at a time.<br>8 groves + beacon → Sail.</span>
 {% render 'tp_resources',water:water,seeds:seeds,wood:wood,stone:stone %}
 {% if events.size > 0 %}{% assign latest=events.first %}<span class="label label--small lg:label--base" data-clamp="3">{% if latest.kind == 'autopilot' %}Owner autopilot{% else %}Player{% endif %}: {{ latest.message | escape }}</span>{% endif %}
 <span class="label label--small lg:label--base">Owner autopilot: {{ last_autopilot_day | default: 'awaiting first move' }}</span>
-</div></div><span class="label label--small">. meadow · ~ water · # rock · s sapling · T grove · B beacon</span><span class="label label--small">Move at tiny-planet-trmnl.vercel.app · 1/account/day UTC</span>
+</div></div><span class="label label--small">Saplings become forests. A beacon opens a new horizon.</span><span class="label label--small">Move at tiny-planet-trmnl.vercel.app · 1/account/day UTC</span>
 {% else %}<span class="description">The shared planet is unavailable.<br>Please check the website.</span>{% endif %}
 </div>{% render 'title_bar',turn:turn,checked_at:checked_at %}

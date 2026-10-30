@@ -1,5 +1,7 @@
 # TRMNL Plays: Tiny Planet
 
+October 30, 2026 visual update: the website now renders a slowly rotating 3D planet with faceted terrain, raised forests, mountains, clouds and a lighthouse beacon. The shared renderer reads the existing saved tiles; accepted planting/watering/building/sailing moves change the landscape. Daily owner autopilot continues to evolve the world. Drag to orbit, pause/select a globe location, or use the accessible map below. Reduced-motion preferences stop automatic rotation. All four TRMNL layouts show a server-rendered PNG snapshot with native image dithering; the device does not animate or run the game. `/api/planet` supports `?ink=bw`; both image and JSON services fail honestly when the database is unavailable. No game rules or database migration changed.
+
 Latest Recipe status — October 28, 2026: master **512639** is submitted for public human review. Icons and OG/X marketplace assets are saved, native views checked, and Community Plugin License acceptance explicitly approved by Manuel. Reloaded native settings show **Plugin in review**. Approval, public installation URL and physical receipt remain unconfirmed.
 
 

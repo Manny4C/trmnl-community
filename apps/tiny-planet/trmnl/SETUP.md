@@ -1,3 +1,5 @@
+October 30, 2026: all four layouts now show the shared 3D planet illustration rather than the symbol grid. Trees, mountains and the beacon come from saved game tiles; a new still image is rendered at refresh. The existing daily owner autopilot makes the world evolve over time. Shared uses a public image URL (no secrets) and native image-dither. Continue the existing Recipe 512639.
+
 Current owner status, October 28, 2026: existing master 512639 is submitted for public human review. Canonical Shared/four layouts are saved/reloaded against source, original icon and marketplace assets are saved, and native OG/X checks passed. Manuel explicitly accepted the Community Plugin License for this submission. Reloaded settings show Plugin in review. Public approval, installation URL and physical receipt remain unconfirmed. Continue this existing master; never create a duplicate.
 
 # TRMNL Plays: Tiny Planet

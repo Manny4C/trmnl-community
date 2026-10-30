@@ -17,5 +17,9 @@
   "trmy_resolution": "Text panels no longer take unused stretch space, enlarging the board in half-vertical and X portrait views; viewed check time uses installer UTC offset. Daily gameplay cutoff remains explicitly UTC.",
   "submitted_on": "2026-10-28",
   "license_accepted_on": "2026-10-28",
-  "submission_verification": "Plugin in review observed after reload"
+  "submission_verification": "Plugin in review observed after reload",
+  "visual_revision_on": "2026-10-30",
+  "visual_revision": "shared_3d_planet_with_daily_evolution",
+  "visual_revision_native_status": "five_markup_tabs_saved_and_reloaded",
+  "visual_revision_physical_receipt": false
 }

@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,130 +10,80 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-29T21:12:42.311Z",
+    "generated_at": "2026-10-30T01:06:22.116Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "0c99cb9ef16a0613",
-        "importance": 82,
-        "reason": "Fresh World Series top-plays recap, framed around the Brewers winning the title."
-      },
-      {
-        "id": "548be7210cc4b901",
-        "importance": 28,
-        "reason": "Team-song video is celebratory filler after the Brewers' reported title win."
-      },
-      {
-        "id": "a36ba642b58b29a0",
-        "importance": 24,
-        "reason": "Predictions and a guest appearance; limited immediate sports significance."
-      },
-      {
-        "id": "4d8039c7f0ff8821",
-        "importance": 56,
-        "reason": "Buzzer-beater night could be a notable NBA highlight, but specifics are absent."
-      },
-      {
-        "id": "9a9937104629f830",
-        "importance": 12,
-        "reason": "Halloween-themed product video; no substantive update stated."
-      },
-      {
         "id": "3cab141fc411378d",
-        "importance": 49,
-        "reason": "Impressions of a purported MacBook display are timely tech coverage, but details are unclear."
+        "importance": 57,
+        "reason": "Recent hands-on impressions of a possibly notable MacBook display; details are limited."
       },
       {
         "id": "c654ae9db4c47ae5",
-        "importance": 42,
-        "reason": "Potentially interesting technology video, but title alone gives little substance."
+        "importance": 39,
+        "reason": "Recent technology video, but the teaser-like title gives little detail on its substance."
       },
       {
-        "id": "7ac79e67ec8916ed",
-        "importance": 40,
-        "reason": "A fresh launch trailer, though no game details or broader significance are supplied."
-      },
-      {
-        "id": "26bda83229c711ce",
-        "importance": 27,
-        "reason": "New game launch trailer; niche release with no further context."
-      },
-      {
-        "id": "a10cf82f12d39335",
-        "importance": 34,
-        "reason": "Fresh Xbox launch trailer, but title provides little about the game's significance."
-      },
-      {
-        "id": "f3b86553fc780125",
-        "importance": 23,
-        "reason": "Promotional game trailer, with no launch or substantive news stated."
-      },
-      {
-        "id": "af1587bdb25bba9a",
-        "importance": 33,
-        "reason": "Fresh launch trailer for a game, but broader relevance is unclear."
-      },
-      {
-        "id": "e1c2e1404a38809e",
-        "importance": 38,
-        "reason": "Next-gen update launch trailer is a useful game update, though details are absent."
+        "id": "fe1157e4a0c85688",
+        "importance": 48,
+        "reason": "Recent enterprise AI deployment case study, though the source's promotional framing limits certainty."
       },
       {
         "id": "0dbc5940df66eb5f",
-        "importance": 35,
-        "reason": "Enterprise AI customer-use video, but no results or product changes are specified."
-      },
-      {
-        "id": "c19e2dff4ded2643",
-        "importance": 55,
-        "reason": "Plan change involving API credits is a substantive update for ChatGPT users."
+        "importance": 43,
+        "reason": "Enterprise AI case study with limited context; an earlier duplicate of the newer post."
       },
       {
         "id": "bcbd51e5018d0249",
         "importance": 71,
-        "reason": "New world-simulation generation signals a potentially consequential AI research release."
+        "reason": "A new generation of world simulation could be a significant AI research advance; details are absent."
       },
       {
         "id": "5beef147a7815df4",
-        "importance": 33,
-        "reason": "Article on AI simulation workflows, but supplied context is incomplete."
+        "importance": 54,
+        "reason": "Covers AI agents for simulation development, but appears primarily a product-focused article."
       },
       {
         "id": "84f5c4345b63da3c",
-        "importance": 42,
-        "reason": "Game availability on GeForce NOW is timely but a narrow platform update."
+        "importance": 50,
+        "reason": "Reports a game launch on GeForce NOW, a timely but platform-specific gaming update."
+      },
+      {
+        "id": "ed6e3d4d78aea935",
+        "importance": 22,
+        "reason": "Seasonal ISS feature; timely, but little substantive news is evident."
+      },
+      {
+        "id": "4b2c059bd94e7ed8",
+        "importance": 68,
+        "reason": "NASA study on a notably ancient Mars meteorite offers substantive planetary-science news."
       },
       {
         "id": "9fa8e4999dc54776",
-        "importance": 45,
-        "reason": "New laptop models and tools are a substantive hardware update, though details are sparse."
+        "importance": 38,
+        "reason": "Announces laptop models and tools in a broad, promotional product roundup."
       },
       {
-        "id": "35f42a33e5990132",
-        "importance": 80,
-        "reason": "Fresh World Series highlights spotlight a player credited with two wins in the title run."
+        "id": "c19e2dff4ded2643",
+        "importance": 44,
+        "reason": "Plan feature update for ChatGPT users; useful but limited in broader significance."
       },
       {
-        "id": "4bd14539346e1377",
-        "importance": 67,
-        "reason": "World Series player highlights offer timely detail on a key contributor to the reported run."
+        "id": "6a8e8f4a60c54205",
+        "importance": 28,
+        "reason": "A recent agency leadership appointment, with limited public impact indicated."
       },
       {
-        "id": "f8ed7961a9cc9ce2",
-        "importance": 40,
-        "reason": "Recent NBA recap is timely, but no specific game outcome or turning point is given."
-      },
-      {
-        "id": "b6b69b3662e1c843",
-        "importance": 46,
-        "reason": "Fresh nightly NBA highlights provide timely action, with no standout play identified."
+        "id": "dbf41850dbaefd91",
+        "importance": 33,
+        "reason": "Challenge announcement connects quantum methods and safety research, but context is sparse."
       }
     ],
-    "source_checked_at": "2026-10-29T21:12:31.720Z"
+    "source_checked_at": "2026-10-30T01:06:13.216Z"
   },
   "last_attempt_at": "2026-10-30T01:06:12.904Z",
   "pending_reservation_microusd": 4882,
   "pending_source_checked_at": "2026-10-30T01:06:13.216Z",
-  "last_success_at": "2026-10-29T21:12:42.311Z",
+  "last_success_at": "2026-10-30T01:06:22.116Z",
   "last_error_status": null
 }

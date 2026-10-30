@@ -1,3 +1,5 @@
+Published status — October 30, 2026: [Sounds Like My Company](https://trmnl.com/recipes/sounds-like-my-company-507810) is published on TRMNL. The exact public link is listed in the official Recipe directory and Mario’s existing review thread reports Published. Physical receipt remains separately unconfirmed.
+
 # Sounds Like My Company
 
 Latest Recipe status — October 28, 2026: master **507810** is saved and native-checked, still awaiting human review. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.

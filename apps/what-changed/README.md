@@ -1,3 +1,5 @@
+Published status — October 30, 2026: [The Daily TRMNL](https://trmnl.com/recipes/the-daily-trmnl-505118) is published on TRMNL. The exact public link is listed in the official Recipe directory and Mario’s existing review thread reports Published. Physical receipt remains separately unconfirmed.
+
 # The Daily TRMNL
 
 Latest Recipe status — October 28, 2026: master **505118** is saved and native-checked; re-review was requested by email on the existing ticket October 28. Physical receipt is unconfirmed. Current details are in `../../launch-plan.json`; earlier dated setup/review notes below are historical.

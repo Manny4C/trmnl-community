@@ -1,13 +1,17 @@
 {
-  "recipe_url": null,
-  "recipe_status": "changes_requested",
+  "recipe_url": "https://trmnl.com/recipes/the-daily-trmnl-505118",
+  "recipe_status": "approved",
   "support_url": "https://github.com/Manny4C/trmnl-community/issues",
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
   "recipe_id": 505118,
   "physical_receipt": false,
   "revision_status": "saved_native_verified_rereview_requested",
-  "review_status": "Revisions saved and tested; re-review requested October 28, 2026",
+  "review_status": "Published by TRMNL; public directory listing verified October 30, 2026",
   "rereview_requested_on": "2026-10-28",
-  "rereview_message_id": 2306937213
+  "rereview_message_id": 2306937213,
+  "approved": true,
+  "published": true,
+  "published_at": "2026-10-30T03:27:44Z",
+  "public_url_verification": "Exact link present in TRMNL public Recipes directory; Published notice from Mario in existing review thread. Detail-page automated requests were blocked; no public install action performed."
 }

@@ -1,8 +1,13 @@
 {
-  "recipe_status": "submitted",
-  "recipe_url": null,
+  "recipe_status": "approved",
+  "recipe_url": "https://trmnl.com/recipes/sounds-like-my-company-507810",
   "recipe_id": 507810,
   "framework_revision_on": "2026-10-28",
   "framework_revision_status": "saved_and_native_default_layouts_verified",
-  "physical_receipt": false
+  "physical_receipt": false,
+  "approved": true,
+  "published": true,
+  "published_at": "2026-10-29T06:42:09Z",
+  "review_status": "Published by TRMNL; public directory listing verified October 30, 2026",
+  "public_url_verification": "Exact link present in TRMNL public Recipes directory; Published notice from Mario in existing review thread. Detail-page automated requests were blocked; no public install action performed."
 }

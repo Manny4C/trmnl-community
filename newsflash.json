@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,161 +10,61 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-30T19:56:46.174Z",
+    "generated_at": "2026-10-30T23:52:00.975Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "bce8db41a8538b8f",
-        "importance": 17,
-        "reason": "Recent celebratory postseason clip, but no specific game result or context is given."
-      },
-      {
-        "id": "35d9c4b4f20e00d4",
-        "importance": 25,
-        "reason": "Recent postseason pitching highlights; entertainment-focused, with no news or game specifics."
-      },
-      {
-        "id": "fb7372fb1f171f14",
-        "importance": 23,
-        "reason": "A fresh look at the Brewers' World Series run, though framed as a highlights feature."
-      },
-      {
-        "id": "981fb319d6614946",
-        "importance": 16,
-        "reason": "Recent NBA trivia video, more entertainment than substantive league news."
-      },
-      {
-        "id": "3ba084d6e1e733d9",
-        "importance": 15,
-        "reason": "Career-play compilation is routine sports content, not a new development."
-      },
-      {
-        "id": "9a9937104629f830",
-        "importance": 10,
-        "reason": "Halloween-themed Tesla video appears promotional and offers no substantive product details."
-      },
-      {
         "id": "3cab141fc411378d",
-        "importance": 35,
-        "reason": "Recent impressions of a purported MacBook display change; details and significance are unclear."
-      },
-      {
-        "id": "c654ae9db4c47ae5",
-        "importance": 34,
-        "reason": "Technology video suggests an unusual sound-visualization capability, but title gives little detail."
-      },
-      {
-        "id": "e28265c20863b3e0",
-        "importance": 28,
-        "reason": "Nintendo video tied to a notable classic game and Switch 2, but launch or product details are absent."
-      },
-      {
-        "id": "604d3bfea439a3f9",
-        "importance": 17,
-        "reason": "A Fortnite trailer is timely gaming content, but the title offers no substantive update."
-      },
-      {
-        "id": "25aeb93c20a2a748",
-        "importance": 35,
-        "reason": "Launch trailer signals a game release on Switch 2; broader significance is unclear."
-      },
-      {
-        "id": "b5fed7662d301f5e",
-        "importance": 8,
-        "reason": "Likely controller promotion, with no substantive product information in the title."
-      },
-      {
-        "id": "22d61b8543689ed8",
-        "importance": 27,
-        "reason": "A launch video may mark a new game release, but no details are provided."
-      },
-      {
-        "id": "512c9e4f0d790aaf",
-        "importance": 22,
-        "reason": "Update trailer indicates a game change, but its content and significance are unspecified."
-      },
-      {
-        "id": "4995347de166df4e",
-        "importance": 35,
-        "reason": "Launch trailer signals a new game release; the title gives no further context."
-      },
-      {
-        "id": "c0fcda429e3eca44",
-        "importance": 25,
-        "reason": "OpenAI case-study video describes workplace use, but is first-party promotion rather than independent evidence."
-      },
-      {
-        "id": "fc3272440d2685bc",
-        "importance": 25,
-        "reason": "Duplicate of the OpenAI workplace-use video; promotional case study with limited details."
+        "importance": 44,
+        "reason": "Recent hands-on tech video, but the cryptic title and absent context limit its significance."
       },
       {
         "id": "d5d3db1f3a9a1503",
-        "importance": 49,
-        "reason": "Reports agentic AI joining the search for extraterrestrial signals; provided context is truncated."
+        "importance": 61,
+        "reason": "Fresh report on AI assisting the search for extraterrestrial signals; details and results are unclear."
       },
       {
         "id": "5beef147a7815df4",
-        "importance": 28,
-        "reason": "Explains AI agents for simulation development, but context is limited and source is promotional."
+        "importance": 43,
+        "reason": "Explains AI agents for simulation development, but appears chiefly a developer-focused product piece."
       },
       {
         "id": "41fa33a940a90fd4",
-        "importance": 12,
-        "reason": "Event logistics announcement, with little public significance beyond participants and media."
+        "importance": 20,
+        "reason": "Media and participant event details are logistical, not a substantive aerospace development."
       },
       {
         "id": "9fe773cbfea8af21",
-        "importance": 56,
-        "reason": "New Webb telescope nebula observation is timely space-science news; context offers limited detail."
+        "importance": 67,
+        "reason": "New Webb observation of a nebula is a timely space-science visual release."
       },
       {
         "id": "84f5c4345b63da3c",
-        "importance": 20,
-        "reason": "Cloud-gaming lineup update is useful to players but routine and not broadly consequential."
+        "importance": 32,
+        "reason": "Cloud-gaming catalog news names a game launch, but its broader impact is limited."
       },
       {
-        "id": "fe1157e4a0c85688",
-        "importance": 22,
-        "reason": "Enterprise customer case study is promotional and provides no independent assessment."
-      },
-      {
-        "id": "9c92d036e4581ed1",
-        "importance": 25,
-        "reason": "Near-duplicate postseason pitching highlights; sports entertainment rather than substantive news."
-      },
-      {
-        "id": "d69e1076a5d6d135",
-        "importance": 22,
-        "reason": "Recent tribute to Bob Uecker, but the title provides no further context."
-      },
-      {
-        "id": "8ed0c8e64d6fd7d2",
-        "importance": 9,
-        "reason": "Lighthearted NBA social clip with no reported league development."
-      },
-      {
-        "id": "717f2ff77445182d",
-        "importance": 37,
-        "reason": "Recent nightly recap may cover current NBA results, but no game details are supplied."
+        "id": "9fa8e4999dc54776",
+        "importance": 28,
+        "reason": "Promotional roundup of laptop models, tools and games; little detail on significance."
       },
       {
         "id": "ed6e3d4d78aea935",
-        "importance": 13,
-        "reason": "Seasonal ISS feature is light-interest content, not a scientific development."
+        "importance": 18,
+        "reason": "Seasonal ISS feature with no substantive mission or science news indicated."
       },
       {
         "id": "4b2c059bd94e7ed8",
-        "importance": 59,
-        "reason": "NASA-funded study of a very ancient Mars meteorite is substantive science news; specifics are limited."
+        "importance": 72,
+        "reason": "NASA-funded research on an exceptionally old Mars meteorite offers substantive planetary-science findings."
       }
     ],
-    "source_checked_at": "2026-10-30T19:56:33.953Z"
+    "source_checked_at": "2026-10-30T23:51:53.817Z"
   },
   "last_attempt_at": "2026-10-30T23:51:53.557Z",
   "pending_reservation_microusd": 4733,
   "pending_source_checked_at": "2026-10-30T23:51:53.817Z",
-  "last_success_at": "2026-10-30T19:56:46.174Z",
+  "last_success_at": "2026-10-30T23:52:00.975Z",
   "last_error_status": null,
   "last_error_code": null,
   "last_error_at": null

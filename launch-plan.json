@@ -982,7 +982,7 @@
     "followUp": "After human approval, expose the verified Recipe install link on the website and track connections, actual use and uninstall reasons in TRMNL Analytics. Verify the then-current threshold and payout setup before representing earnings.",
     "earningsStatus": "No earnings or eligibility confirmed"
   },
-  "computerUsePreference": "On October28, Manuel explicitly authorized browser work in chat01a1811f-9f72-7ce0-9cfe-890378ec5db1 to finish these revisions and coordinate with Plan TRMNL Creator Fund ideas. This is scoped to the current work, not unrelated automated screen control. He also explicitly approved enabling extension file URL access, but the browser URL policy blocked opening chrome://extensions; that setting still requires manual user action.",
+  "computerUsePreference": "On October28, Manuel explicitly authorized browser work in chat01a1811f-9f72-7ce0-9cfe-890378ec5db1 to finish these revisions and coordinate with Plan TRMNL Creator Fund ideas. This is scoped to the current work, not unrelated automated screen control. He also explicitly approved enabling extension file URL access, but the browser URL policy blocked opening chrome://extensions; that setting still requires manual user action. October 30, 2026: in the One More Room chat, Manuel gave standing authorization to keep building and improving this game at any time without waiting, including native Recipe 522318 updates and browser verification during weekly runs. This supersedes earlier screen-control limits for One More Room only; preserve unrelated projects and follow applicable action-specific tool requirements.",
   "lastPublicReviewCheck": {
     "checkedAt": "2026-10-30T17:23:28.630994+00:00",
     "result": "Daily and Sounds Published notices verified and public directory lists both exact Recipe URLs. Other seven email threads remain under review. No browser/native UI or outbound email used.",
@@ -1184,22 +1184,21 @@
       },
       "deviceInstallationStatus": "added_to_playlist",
       "publicationStatus": "submitted_pending_human_approval",
-      "physicalDeviceVerification": "Unconfirmed. Background headless Chromium QA only; no user screen/browser or TRMNL settings controlled. Existing limited October19 permission remains expired.",
-      "testStatus": "17 app tests and 8 existing cross-app palette checks pass. Background browser QA covers controls, camera pins, saving, mobile and images; eight Liquid color/BW snapshots and 52 longest-room/layout cases have no clipping. Live production verifies 27 routes/files, all 18 image delivery assets and 26 source hashes. Original v1 turn-40 save is preserved field-for-field; manual action, reload and timed autopilot verified. Native TRMNL server and physical receipt remain unverified.",
+      "physicalDeviceVerification": "Physical receipt remains unconfirmed. October30 native source and polling settings saved/reloaded; native rendered the preserved owner party at turn27. Standing authorization covers One More Room maintenance and browser verification.",
+      "testStatus": "34 app tests and 14 shared palette/framework checks pass. October30 native campaign transform saved and exact-source compared after save; polling URL saved/reloaded; native full preview rendered turn27 from prior turn26 without resetting the campaign. Active legacy game adopts authored chapters at a floor boundary. Physical receipt remains unconfirmed.",
       "buildCompletedOn": "2026-10-24",
       "websiteDeploymentStatus": "ready_and_production_verified",
-      "latestDeploymentId": "dpl_SwU8vNn4N7Tafcs4S8xEUB8enKFG",
-      "verificationTimestamp": "2026-10-25T07:30:01.806Z",
-      "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame",
+      "latestDeploymentId": "dpl_eXx52zeczk33SnDojXggbh1smAfd",
+      "verificationTimestamp": "2026-10-30T19:18:20.700123+00:00",
+      "pollingUrl": "https://one-more-room-trmnl.vercel.app/api/frame?story=1&release={{ trmnl.state.story.release | default: '' | url_encode }}",
       "productionEvidence": "apps/one-more-room/artifacts/production-v2.json",
       "packageUrl": "https://one-more-room-trmnl.vercel.app/plugin.zip",
       "pendingActions": [
         "Await human review and address new feedback",
         "Add only an actually approved public install URL",
-        "Confirm physical receipt separately",
-        "Apply prepared weekly-campaign bridge to existing Recipe 522318 after renewed direct native screen-control authorization; preserve state and all playlist entries"
+        "Confirm physical receipt separately"
       ],
-      "latestUpdateOn": "2026-10-25",
+      "latestUpdateOn": "2026-10-30",
       "artworkAndAtlasUpdate": {
         "requestedOn": "2026-10-25",
         "status": "deployed_verified",
@@ -1274,12 +1273,8 @@
         "foundationCards": 16,
         "sourceStatus": "validated_and_published_web",
         "websiteStatus": "production_catalog_pack_modules_notebook_and_zip_hash_verified",
-        "nativeBridgeStatus": "prepared_not_saved_to_existing_recipe_522318",
-        "nativeBridgeRequiredChanges": [
-          "Replace existing Serverless with prepared transform.js without clearing saved state",
-          "Change existing polling URL to /api/frame?story=1&release={{ trmnl.state.story.release | default: '' | url_encode }}",
-          "Verify native saved fields and rendered data under renewed direct screen-control authorization"
-        ],
+        "nativeBridgeStatus": "saved_reload_verified_native_rendered_recipe_522318",
+        "nativeBridgeRequiredChanges": [],
         "existingRecipePreserved": true,
         "existingEndpointPreserved": true,
         "noRuntimeModelCalls": true,
@@ -1294,7 +1289,13 @@
           "compiledBridgeWithProductionData": true
         },
         "productionEvidence": "apps/one-more-room/artifacts/weekly-foundation-production.json",
-        "preparedPackageSha256": "7157d38fea6ff353ac774e3e531a1fda18b9c67e1e78c9bf97fb7b81cdb27c12"
+        "preparedPackageSha256": "7157d38fea6ff353ac774e3e531a1fda18b9c67e1e78c9bf97fb7b81cdb27c12",
+        "standingAuthorizationOn": "2026-10-30",
+        "nativeBridgeVerifiedOn": "2026-10-30",
+        "nativeBridgeEvidence": "apps/one-more-room/artifacts/native-campaign-bridge-2026-10-30.json",
+        "autonomousImprovements": "Standing authorization for game content, code, art, tests, deployment and native Recipe maintenance; weekly Monday 10am Pacific run retained.",
+        "nativeProductionEvidence": "apps/one-more-room/artifacts/native-campaign-production-2026-10-30.json",
+        "currentPackageSha256": "644060adad6b06f5741bbfc0db17acaf5ad754e55cf23afa78a6bcbc4c4b4e87"
       }
     }
   ],

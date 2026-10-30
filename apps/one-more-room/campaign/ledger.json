@@ -15,7 +15,7 @@
       "published_at": "2026-10-28T20:16:37.003Z",
       "deployment_id": "dpl_SwU8vNn4N7Tafcs4S8xEUB8enKFG",
       "production_evidence": "../artifacts/weekly-foundation-production.json",
-      "native_status": "bridge_prepared_not_saved",
+      "native_status": "bridge_saved_reload_verified_native_rendered_2026_10_30",
       "checks": {
         "app_tests": 34,
         "shared_palette_framework_tests": 14,
@@ -23,7 +23,8 @@
         "legacy_endpoint_unchanged": true,
         "compiled_bridge_with_live_data": true
       },
-      "verified_at": "2026-10-28T20:28:43.739Z"
+      "verified_at": "2026-10-28T20:28:43.739Z",
+      "native_evidence": "../artifacts/native-campaign-bridge-2026-10-30.json"
     }
   ],
   "future_horizon": [
@@ -51,5 +52,9 @@
       "week": "2026-12-07",
       "focus": "Resolve a local question and open the next duty"
     }
-  ]
+  ],
+  "standing_authorization": {
+    "date": "2026-10-30",
+    "scope": "Autonomously improve and publish One More Room, including existing native Recipe 522318 and browser verification; preserve private campaign state and unrelated work."
+  }
 }

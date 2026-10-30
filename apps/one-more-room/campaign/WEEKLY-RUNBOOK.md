@@ -6,7 +6,7 @@ Schedule: Mondays at 10:00 a.m. America/Los_Angeles, returning to this chat. Fir
 
 The user asked for sustained, generous work to grow a simpler tabletop-style campaign. Spend meaningful effort on causes, continuity, choices, callbacks and actual playable content. A short brainstorming list does not satisfy the run. Long output alone does not satisfy it either.
 
-Read the latest source and project state. This runbook, CAMPAIGN-MODEL.md, WORLD-BIBLE.md, canon.json and ledger.json make the task durable across context loss. Existing public-review and native-screen restrictions remain in force. Website source and prepared packages may be updated through authorized CLI work; do not use browser/native UI or another automation method to work around screen-control limits. Recipe 522318 exists, is installed, and is in human review; never recreate it or confuse source changes with saved native rules.
+Read the latest source and project state. This runbook, CAMPAIGN-MODEL.md, WORLD-BIBLE.md, canon.json and ledger.json make the task durable across context loss. Manuel gave standing authorization on October 30, 2026 to keep improving this game without waiting, including website deployment, existing native Recipe updates and browser verification during weekly runs. Follow applicable tool requirements; preserve unrelated work and private saved progress. Recipe 522318 exists, is installed, and is in human review; never recreate it or confuse source changes with saved native rules.
 
 ## 1. Reconcile and choose the week
 
@@ -77,7 +77,7 @@ Run applicable cross-app palette/native-framework tests from the repository root
 
 A content release should not require a rules change. If it does, explain and implement the smallest general capability. Do not create a new combat subsystem each Monday. Test success, setback, replay, adoption boundaries, missing pinned packs and eventual chapter completion. Existing parties must retain their active pack until its required arc and any started side thread finish.
 
-Unattended runs use CLI/HTTP/DOM/Liquid validation. Browser or native visual work needs new direct human authorization. If needed, record the exact prepared native step rather than repeatedly treating the standing restriction as a new failure.
+Use CLI/HTTP/DOM/Liquid validation routinely. Browser and native verification for One More Room are authorized by the October 30 standing instruction. Ship worthwhile focused improvements alongside the weekly chapter when evidence supports them. Verify saved native fields and output whenever native code changes. Do not request ordinary release approval again.
 
 ## 6. Publish and prove it
 

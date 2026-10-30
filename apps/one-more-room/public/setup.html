@@ -5,7 +5,7 @@
 New game built October 24, 2026. Website and installable source package are prepared. The owner Recipe is now created and installed as recorded above. Submission is verified; approval and physical receipt remain unconfirmed.
 
 1. For the existing owner installation, continue Recipe **522318**; do not create another. New independent users can create a private plugin named **One More Room**. Use **Polling**, GET, framework **3.4.3 or later**. No headers, body, key or new paid service is required. Do not use Async Polling; it does not run the state transform.
-2. Set its polling URL to `https://one-more-room-trmnl.vercel.app/api/frame`. A **15-minute refresh** is a reasonable starting point. The endpoint emits one token per minute; repeated fetches inside the same minute do not advance again. A plugin refresh is distinct from the device’s playlist cycle.
+2. Set its polling URL to the chapter-aware URL shown under Weekly chapter bridge below. A **15-minute refresh** is a reasonable starting point. The endpoint emits one token per minute; repeated fetches inside the same minute do not advance again. A plugin refresh is distinct from the device’s playlist cycle.
 3. Copy `form-fields.yml` into Custom Fields. Save a seed and party instinct. A seed change starts a new campaign; instinct changes preserve the campaign.
 4. In Edit Markup, put `shared.liquid` in Shared; copy the four matching `.liquid` layout files into Full, Half horizontal, Half vertical and Quadrant.
 5. Select JavaScript on Serverless and paste the complete `transform.js`. It includes all game rules and reads `input.trmnl.state`; do not paste only the `run` function. The seed and instinct are read from `input.trmnl.plugin_settings.custom_fields_values`.
@@ -14,7 +14,7 @@ New game built October 24, 2026. Website and installable source package are prep
 
 Full layout is split evenly: an illustrated atlas, recent journey, quest and party status on the left; ImageGen scene art and action choices on the right. The camera automatically shows the world at the start, entrances and keeper milestones, then focuses on the current dungeon and active encounter. The world chart shows six dungeon locations per chapter; dungeon paths derive from actual explored connections and the live party position. Labels and route overlays are generated from game state, not baked into the art. Half layouts compact the content; quadrant displays the map, scene and selected next action. Artwork is generated once during design and served from the companion site; no model calls occur on refresh. Scene art is an encounter-type illustration, not an exact newly generated depiction of each seeded enemy or room. Native images use the image-dither class; the website’s B&amp;W control is an approximation. The action options are informational on the e-ink device. The Serverless function automatically chooses the highlighted action on the next update. The website’s choices are clickable and affect only its local campaign.
 
-State is installation-specific and bounded. The transform has no network/model calls. Polling sends only a public minute token, never the campaign. The map derives from seed/floor; party health, resources, cleared rooms and a rolling story log persist in Saved State. Browser history retains up to 120 actions; TRMNL retains six recent story events plus cumulative quest progress. Defeated parties lose half their gold, recover at the entrance and continue.
+State is installation-specific and bounded. The transform has no network/model calls. Polling delivers a public minute token and chapter content; its URL includes only the public pinned chapter ID, never private campaign details. The map derives from seed/floor; party health, resources, cleared rooms and a rolling story log persist in Saved State. Browser history retains up to 120 actions; TRMNL retains six recent story events plus cumulative quest progress. Defeated parties lose half their gold, recover at the entrance and continue.
 
 The platform has no reliable callback for every time a person sees a cached playlist image. A **fresh plugin update**, rather than every re-display of a stored frame, is the unit of play. An empty/failed poll leaves the previous journey intact. Same-token retries are idempotent; this does not claim transactional protection against two independently overlapping platform transforms.
 
@@ -26,15 +26,15 @@ October 28 automated review resolution: Half-vertical stacks map/story; compact 
 
 October 28 targeted follow-up: Follow-up: medium row gap lands OG story text on whole pixels; half-vertical story no longer reserves unused stretch space.
 
-## Weekly chapter bridge — prepared, not yet saved to Recipe 522318
+## Weekly chapter bridge — saved and verified October 30, 2026
 
-After renewed authorization for this native update, keep the existing canonical Shared/four layouts and owner settings. Replace Serverless with the complete current `transform.js`, and change the polling URL to:
+The existing Recipe 522318 now uses the complete current `transform.js` and the polling URL below. Saved source was compared exactly; saved polling settings and native Full output were verified. The seed, instinct, canonical Shared/four layouts and campaign progress were preserved. For another independent installation, use:
 
 ```text
 https://one-more-room-trmnl.vercel.app/api/frame?story=1&amp;release={{ trmnl.state.story.release | default: &#39;&#39; | url_encode }}
 ```
 
-The endpoint returns the immutable active chapter and latest chapter; no seed, party health, choice history or secret is sent. The transform validates the data, resolves one action and saves compact progress. A new chapter waits for the active required arc and accepted side thread to finish, then adopts at a floor boundary. The unchanged default `/api/frame` remains backward-compatible for the currently installed older transform.
+The endpoint returns the immutable active chapter and latest chapter; no seed, party health, choice history or secret is sent. The transform validates the data, resolves one action and saves compact progress. A new chapter waits for the active required arc and accepted side thread to finish, then adopts at a floor boundary. The default `/api/frame` remains backward-compatible for other installations still using an older transform.
 
-Source, DOM/Liquid tests and simulated content-aware transforms are verified in this build. The one-time bridge has **not** been saved in native settings by this chat, so the existing device does not yet receive weekly authored chapters. Do not claim otherwise based on web deployment or ZIP generation. Once the bridge is saved and verified, normal data-only weekly releases can be delivered without rewriting the native template or Serverless function.
+The preserved owner campaign rendered turn 27 after its previous turn 26. Because it began under older rules, it adopts authored chapters at its next floor boundary. Normal data-only weekly releases now arrive through this bridge without rewriting native templates or Serverless source. Physical screen receipt remains unconfirmed. Manuel’s October 30 standing authorization covers future One More Room improvements and native maintenance.
 </pre></main></body></html>

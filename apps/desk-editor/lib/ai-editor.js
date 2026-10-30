@@ -1,4 +1,5 @@
 import {INTERESTS,FEEDS,fallbackScore,clean} from './editor.js';
+import {editorFailure} from './editor-failure.js';
 export const MODEL='gpt-6-luna';
 import {MONTHLY_LIMIT_MICROUSD,MONTHLY_LIMIT_USD} from './budget.js';
 export {MONTHLY_LIMIT_MICROUSD} from './budget.js';
@@ -28,15 +29,23 @@ export function reserveBudget(previous,amount,now=new Date(),runId='manual'){
  return {month,limit_usd:MONTHLY_LIMIT_USD,reserved_microusd:old.reserved_microusd+amount,calls:old.calls+1,last_run:runId,last_reserved_at:now.toISOString(),pricing_policy:'2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called.'};
 }
 export function parseDecisions(response,stories){
- if(response.status&&response.status!=='completed')throw Error('AI response incomplete.');
- const parts=(response.output||[]).flatMap(o=>o.type==='message'?o.content||[]:[]);if(parts.some(p=>p.type==='refusal'))throw Error('AI declined.');
- const raw=parts.filter(p=>p.type==='output_text').map(p=>p.text).join('');if(!raw||raw.length>40000)throw Error('Missing AI output.');
- const parsed=JSON.parse(raw);if(!Array.isArray(parsed.decisions))throw Error('Invalid decisions.');const allowed=new Set(stories.map(s=>s.id)),seen=new Set();
- const result=parsed.decisions.map(d=>{if(!allowed.has(d.id)||seen.has(d.id)||!Number.isInteger(d.importance)||d.importance<0||d.importance>100||typeof d.reason!=='string'||!d.reason.trim()||d.reason.length>180)throw Error('AI decision failed validation.');seen.add(d.id);return {id:d.id,importance:d.importance,reason:clean(d.reason,140)};});
- if(result.length!==stories.length)throw Error('Incomplete decision coverage.');return result;
+ if(!response||typeof response!=='object')throw editorFailure('output_invalid');
+ if(response.status&&response.status!=='completed'){
+  if(response.status==='failed')throw editorFailure('response_failed');
+  const reason=response.incomplete_details?.reason;
+  throw editorFailure(reason==='max_output_tokens'?'response_incomplete_tokens':reason==='content_filter'?'response_incomplete_filter':'response_incomplete');
+ }
+ if(response.output!=null&&!Array.isArray(response.output))throw editorFailure('output_invalid');
+ const parts=(response.output||[]).flatMap(o=>o?.type==='message'&&Array.isArray(o.content)?o.content:[]);if(parts.some(p=>p?.type==='refusal'))throw editorFailure('response_refused');
+ const raw=parts.filter(p=>p?.type==='output_text'&&typeof p.text==='string').map(p=>p.text).join('');if(!raw||raw.length>40000)throw editorFailure('output_missing');
+ let parsed;try{parsed=JSON.parse(raw);}catch{throw editorFailure('output_json_invalid');}
+ if(!Array.isArray(parsed?.decisions))throw editorFailure('output_invalid');const allowed=new Set(stories.map(s=>s.id)),seen=new Set();
+ const result=parsed.decisions.map(d=>{if(!d||!allowed.has(d.id)||seen.has(d.id)||!Number.isInteger(d.importance)||d.importance<0||d.importance>100||typeof d.reason!=='string'||!d.reason.trim()||d.reason.length>180)throw editorFailure('output_invalid');seen.add(d.id);return {id:d.id,importance:d.importance,reason:clean(d.reason,140)};});
+ if(result.length!==stories.length)throw editorFailure('output_coverage_invalid');return result;
 }
 export async function callEditor(body,key,{fetcher=fetch}={}){
- if(!key)throw Error('AI key not configured.');
- const r=await fetcher('https://api.openai.com/v1/responses',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${key}`},body:JSON.stringify(body),signal:AbortSignal.timeout(90000),redirect:'error'});
- if(!r.ok){const error=Error(`AI request failed (${r.status}); no automatic retry.`);error.status=r.status;throw error;}return r.json();
+ if(!key)throw editorFailure('credential_missing');
+ let r;try{r=await fetcher('https://api.openai.com/v1/responses',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${key}`},body:JSON.stringify(body),signal:AbortSignal.timeout(90000),redirect:'error'});}catch(e){throw editorFailure(['TimeoutError','AbortError'].includes(e?.name)?'provider_timeout':'provider_network_error');}
+ if(!r.ok)throw editorFailure('provider_http_error',r.status);
+ try{return await r.json();}catch{throw editorFailure('provider_json_invalid');}
 }

@@ -1,5 +1,6 @@
 import {requestBody,reservationFor,parseDecisions,MODEL} from './ai-editor.js';
 import {validLedger} from './store.js';
+import {editorFailure,diagnosticCode} from './editor-failure.js';
 export async function curate(payload,{store,editor,clock=()=>new Date()}={}){
  if(!payload||typeof payload.run_id!=='string'||payload.run_id.length>100||typeof payload.state_sha!=='string'||!Array.isArray(payload.stories)||!payload.stories.length||payload.stories.length>40)throw Error('Invalid editor request.');
  for(const s of payload.stories){if(typeof s.id!=='string'||s.id.length>40||typeof s.title!=='string'||typeof s.source!=='string'||s.source.length>80||!Array.isArray(s.interests)||s.interests.length>8||!Number.isFinite(Date.parse(s.published_at)))throw Error('Invalid story record.');}
@@ -7,6 +8,10 @@ export async function curate(payload,{store,editor,clock=()=>new Date()}={}){
  if(!validLedger(state)||state.budget.month!==now.toISOString().slice(0,7)||state.status!=='editing'||state.budget.last_run!==payload.run_id||sha!==payload.state_sha||!Number.isSafeInteger(state.pending_reservation_microusd)||state.pending_reservation_microusd<amount||state.budget.reserved_microusd<state.pending_reservation_microusd||!Number.isFinite(Date.parse(state.budget.last_reserved_at))||now.getTime()-Date.parse(state.budget.last_reserved_at)>10*60000||Date.parse(state.budget.last_reserved_at)>now.getTime()+60000)throw Error('No matching current budget reservation.');
  // A one-time CAS claim requires write access to the exact repository. Replays fail before inference.
  state={...state,status:'inference_claimed'};sha=await store.write(state,sha,'Newsflash: claim reserved inference exactly once');
- try{const response=await editor(body);const decisions=parseDecisions(response,payload.stories);state={...state,status:'ready',snapshot:{generated_at:clock().toISOString(),model:MODEL,decisions,source_checked_at:state.pending_source_checked_at},last_success_at:clock().toISOString()};sha=await store.write(state,sha,'Newsflash: publish grounded AI choices');return {ok:true,edited_count:decisions.length,generated_at:state.snapshot.generated_at};}
- catch(error){state.status=[401,403].includes(error.status)?'credential_unavailable':'editor_unavailable';state.last_error_status=Number.isInteger(error.status)?error.status:null;await store.write(state,sha,'Newsflash: editor unavailable; keep dated snapshot');throw Error('AI editor failed; reservation retained and no automatic retry.');}
+ try{const response=await editor(body);const decisions=parseDecisions(response,payload.stories);const next={...state,status:'ready',snapshot:{generated_at:clock().toISOString(),model:MODEL,decisions,source_checked_at:state.pending_source_checked_at},last_success_at:clock().toISOString(),last_error_status:null,last_error_code:null,last_error_at:null};
+  try{sha=await store.write(next,sha,'Newsflash: publish grounded AI choices');}catch{throw editorFailure('snapshot_publish_failed');}
+  return {ok:true,edited_count:decisions.length,generated_at:next.snapshot.generated_at};}
+ catch(error){const code=diagnosticCode(error);state.status=[401,403].includes(error.status)?'credential_unavailable':'editor_unavailable';state.last_error_status=Number.isInteger(error.status)&&error.status>=100&&error.status<=599?error.status:null;state.last_error_code=code;state.last_error_at=clock().toISOString();
+  try{await store.write(state,sha,'Newsflash: editor unavailable; keep dated snapshot');}catch{throw editorFailure('snapshot_publish_failed');}
+  throw editorFailure(code,state.last_error_status);}
 }

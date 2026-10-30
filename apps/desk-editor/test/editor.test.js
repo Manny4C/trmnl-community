@@ -49,3 +49,40 @@ test('broad NVIDIA feed does not put AI-only model news in the gaming interest',
 test('an unreviewed fresh clip cannot displace an eligible AI-reviewed lead',()=>{const p=pool([story('reviewed'),story('unreviewed',{title:'New launch event',published_at:new Date(NOW).toISOString()})]);const e={status:'ready',snapshot:{generated_at:new Date(NOW).toISOString(),decisions:[{id:'reviewed',importance:25,reason:'The editor reviewed this source.'}]}};assert.equal(select(p,cfg('interests=baseball'),e,NOW).lead.id,'reviewed');});
 
 test('the $15 cap preserves existing spend, permits its exact boundary and rejects an over-cap ledger',()=>{const old={month:'2026-10',limit_usd:15,reserved_microusd:5_000_000,calls:7};const next=reserveBudget(old,10_000_000,new Date(NOW),'new-limit');assert.equal(next.limit_usd,15);assert.equal(next.reserved_microusd,15_000_000);assert.equal(next.calls,8);assert.ok(validLedger({budget:next}));assert.equal(reserveBudget(next,1,new Date(NOW),'over-limit'),null);assert.equal(validLedger({budget:{...next,reserved_microusd:15_000_001}}),false);assert.equal(validLedger({budget:{...next,limit_usd:5}}),false);});
+
+test('AI failures distinguish output limits, refusals and invalid coverage without exposing response text',()=>{
+ const cases=[
+  [{status:'incomplete',incomplete_details:{reason:'max_output_tokens'}},'response_incomplete_tokens'],
+  [{status:'incomplete',incomplete_details:{reason:'content_filter'}},'response_incomplete_filter'],
+  [{status:'failed',error:{message:'DO_NOT_LOG_PROVIDER_TEXT'}},'response_failed'],
+  [{output:[{type:'message',content:[{type:'refusal',refusal:'DO_NOT_LOG_REFUSAL'}]}]},'response_refused'],
+  [{output:[{type:'message',content:[{type:'output_text',text:'DO_NOT_LOG_INVALID_JSON'}]}]},'output_json_invalid'],
+  [result([]),'output_coverage_invalid']
+ ];
+ for(const [response,code] of cases)assert.throws(()=>parseDecisions(response,[story('one')]),e=>e.editorDiagnosticCode===code&&!e.message.includes('DO_NOT_LOG'));
+});
+test('one failed inference keeps its reservation and dated snapshot and records only safe diagnostics',async()=>{
+ const f=curatorFixture();const old={generated_at:new Date(NOW-3600000).toISOString(),decisions:[]};f.state.snapshot=old;const budget=structuredClone(f.state.budget);let calls=0;
+ await assert.rejects(curate(f.payload,{store:f.store,clock:()=>new Date(NOW),editor:async()=>{calls++;return {status:'incomplete',incomplete_details:{reason:'max_output_tokens'},output:[{private:'DO_NOT_LOG_RESPONSE'}]};}}),e=>e.editorDiagnosticCode==='response_incomplete_tokens');
+ assert.equal(calls,1);assert.deepEqual(f.state.budget,budget);assert.deepEqual(f.state.snapshot,old);assert.equal(f.state.last_error_code,'response_incomplete_tokens');assert.equal(f.state.last_error_status,null);assert.equal(f.state.last_error_at,new Date(NOW).toISOString());assert.ok(!JSON.stringify(f.state).includes('DO_NOT_LOG'));
+});
+test('snapshot publication failure retains the last committed edition and never invokes the model twice',async()=>{
+ const f=curatorFixture();const old={generated_at:new Date(NOW-3600000).toISOString(),decisions:[]};f.state.snapshot=old;const write=f.store.write;let calls=0;
+ f.store.write=async(next,sha)=>{if(next.status==='ready')throw Error('DO_NOT_LOG_STORAGE_DETAILS');return write(next,sha);};
+ await assert.rejects(curate(f.payload,{store:f.store,clock:()=>new Date(NOW),editor:async()=>{calls++;return result([{id:'one',importance:90,reason:'A source-supported event.'}]);}}),e=>e.editorDiagnosticCode==='snapshot_publish_failed');
+ assert.equal(calls,1);assert.deepEqual(f.state.snapshot,old);assert.equal(f.state.last_error_code,'snapshot_publish_failed');assert.ok(!JSON.stringify(f.state).includes('DO_NOT_LOG'));
+});
+test('successful scheduled edit clears historical failure labels',async()=>{
+ const f=curatorFixture();Object.assign(f.state,{last_error_code:'provider_timeout',last_error_status:503,last_error_at:new Date(NOW-3600000).toISOString()});
+ await curate(f.payload,{store:f.store,clock:()=>new Date(NOW),editor:async()=>result([{id:'one',importance:90,reason:'A source-supported event.'}])});
+ assert.equal(f.state.status,'ready');assert.equal(f.state.last_error_code,null);assert.equal(f.state.last_error_status,null);assert.equal(f.state.last_error_at,null);
+});
+test('network, timeout and malformed-response diagnostics make one request and discard unsafe messages',async()=>{
+ const cases=[
+  [async()=>{throw Error('DO_NOT_LOG_NETWORK');},'provider_network_error'],
+  [async()=>{throw Object.assign(Error('DO_NOT_LOG_TIMEOUT'),{name:'TimeoutError'});},'provider_timeout'],
+  [async()=>new Response('DO_NOT_LOG_BODY'),'provider_json_invalid'],
+  [async()=>new Response('DO_NOT_LOG_BODY',{status:429}),'provider_http_error']
+ ];
+ for(const [reply,code] of cases){let calls=0;await assert.rejects(callEditor(requestBody([story('one')]),'test-only-key',{fetcher:async()=>{calls++;return reply();}}),e=>e.editorDiagnosticCode===code&&!e.message.includes('DO_NOT_LOG')&&!e.message.includes('test-only-key'));assert.equal(calls,1);}
+});

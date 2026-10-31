@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "credential_unavailable",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -155,7 +155,7 @@
   "pending_reservation_microusd": 5563,
   "pending_source_checked_at": "2026-10-31T17:48:15.199Z",
   "last_success_at": "2026-10-31T12:40:50.779Z",
-  "last_error_status": null,
-  "last_error_code": null,
-  "last_error_at": null
+  "last_error_status": 401,
+  "last_error_code": "provider_http_error",
+  "last_error_at": "2026-10-31T17:48:18.467Z"
 }

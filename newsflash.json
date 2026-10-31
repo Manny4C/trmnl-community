@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,71 +10,151 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-31T05:51:29.666Z",
+    "generated_at": "2026-10-31T12:40:50.779Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
+        "id": "e4e73f2a49162468",
+        "importance": 54,
+        "reason": "A postseason highlights compilation offers timely baseball viewing, but is retrospective."
+      },
+      {
+        "id": "1bb834e157559869",
+        "importance": 39,
+        "reason": "Postseason radio-call highlights are timely retrospective content, not a new development."
+      },
+      {
+        "id": "6adf507860ae498c",
+        "importance": 83,
+        "reason": "Parade coverage celebrates the Brewers' first championship, a major baseball milestone."
+      },
+      {
+        "id": "b01c82ad205f0d4d",
+        "importance": 46,
+        "reason": "A fresh nightly NBA recap is timely, though routine and lacking game details here."
+      },
+      {
+        "id": "c828b7cbd2df65c8",
+        "importance": 43,
+        "reason": "A timely nightly plays roundup, but the title gives no standout game context."
+      },
+      {
+        "id": "9a9937104629f830",
+        "importance": 14,
+        "reason": "A Halloween-themed Tesla video sounds promotional; no substantive product news is given."
+      },
+      {
+        "id": "3cab141fc411378d",
+        "importance": 40,
+        "reason": "Impressions suggest a technology review, but the title alone gives few substantive details."
+      },
+      {
         "id": "e28265c20863b3e0",
-        "importance": 37,
-        "reason": "Recent Nintendo video about a classic game; context gives no new release or major announcement."
+        "importance": 24,
+        "reason": "A Zelda-themed video, but the title does not clarify whether it announces new content."
       },
       {
         "id": "604d3bfea439a3f9",
-        "importance": 23,
-        "reason": "Recent game trailer, but no consequential news or details are provided."
+        "importance": 20,
+        "reason": "A game trailer is promotional, with no launch or major update details in the title."
       },
       {
         "id": "25aeb93c20a2a748",
-        "importance": 34,
-        "reason": "Launch trailer suggests a game release, though no further significance or details are given."
+        "importance": 39,
+        "reason": "A launch trailer signals a game release, though no further launch details are supplied."
+      },
+      {
+        "id": "b5fed7662d301f5e",
+        "importance": 10,
+        "reason": "Controller-themed promotional post with no substantive news."
+      },
+      {
+        "id": "22d61b8543689ed8",
+        "importance": 33,
+        "reason": "A launch video may mark a release, but the title provides no game or launch context."
+      },
+      {
+        "id": "8e6d346831e3d802",
+        "importance": 9,
+        "reason": "Halloween-themed game promotion, with no meaningful announcement in the title."
+      },
+      {
+        "id": "512c9e4f0d790aaf",
+        "importance": 32,
+        "reason": "An update trailer signals game content, but no scale or release details are given."
+      },
+      {
+        "id": "4995347de166df4e",
+        "importance": 39,
+        "reason": "A launch trailer suggests a game release; broader significance is unclear."
+      },
+      {
+        "id": "441c6ff87f648227",
+        "importance": 9,
+        "reason": "Vague promotional video title gives no concrete AI announcement."
+      },
+      {
+        "id": "c0fcda429e3eca44",
+        "importance": 28,
+        "reason": "A customer-use case for ChatGPT Work, but it appears promotional rather than a product launch."
       },
       {
         "id": "d5d3db1f3a9a1503",
-        "importance": 52,
-        "reason": "AI-assisted search for extraterrestrial signals is a substantive research topic; context is limited."
+        "importance": 42,
+        "reason": "AI-assisted search for extraterrestrial signals is an intriguing research application; details are limited."
       },
       {
         "id": "5beef147a7815df4",
-        "importance": 41,
-        "reason": "Covers AI agents for building simulations, but appears primarily a developer-focused feature."
+        "importance": 36,
+        "reason": "Explores AI agents for simulation development, but the supplied excerpt is incomplete."
       },
       {
         "id": "41fa33a940a90fd4",
-        "importance": 18,
-        "reason": "Media-event schedule for an aerospace expo is logistical rather than a major space development."
+        "importance": 15,
+        "reason": "An event schedule announcement, not a major space or aerospace development."
       },
       {
         "id": "9fe773cbfea8af21",
-        "importance": 44,
-        "reason": "New Webb observation of nebula structures is relevant space-science news, though no findings are detailed."
+        "importance": 56,
+        "reason": "A new Webb observation is a substantive space-science release, though context is brief."
       },
       {
         "id": "84f5c4345b63da3c",
-        "importance": 26,
-        "reason": "Cloud-gaming availability update is useful to players but limited in broader significance."
+        "importance": 22,
+        "reason": "Gaming-service availability update; routine and limited in scope."
       },
       {
-        "id": "9fa8e4999dc54776",
-        "importance": 35,
-        "reason": "New laptop models and tools are a product update; the supplied context lacks specifics."
+        "id": "fc3272440d2685bc",
+        "importance": 27,
+        "reason": "A ChatGPT Work case study, likely promotional and duplicated in the feed."
       },
       {
-        "id": "68c0fbddee039497",
-        "importance": 25,
-        "reason": "Game launch trailer is timely but offers little evidence of broader importance."
+        "id": "49b281751789ec19",
+        "importance": 20,
+        "reason": "A personal baseball story, appealing but not a consequential news development."
+      },
+      {
+        "id": "7b28bab43b4b6926",
+        "importance": 27,
+        "reason": "A Curry career reflection is timely but offers no game result or major news."
+      },
+      {
+        "id": "0ff738a14be1666f",
+        "importance": 24,
+        "reason": "Teasing arena reactions without explaining what happened makes the item thin."
       },
       {
         "id": "ed6e3d4d78aea935",
-        "importance": 13,
-        "reason": "Seasonal ISS feature, with no substantive new mission or science information in the context."
+        "importance": 17,
+        "reason": "Seasonal ISS feature, rather than substantive space news."
       }
     ],
-    "source_checked_at": "2026-10-31T05:51:21.739Z"
+    "source_checked_at": "2026-10-31T12:40:38.403Z"
   },
   "last_attempt_at": "2026-10-31T12:40:38.136Z",
   "pending_reservation_microusd": 5562,
   "pending_source_checked_at": "2026-10-31T12:40:38.403Z",
-  "last_success_at": "2026-10-31T05:51:29.666Z",
+  "last_success_at": "2026-10-31T12:40:50.779Z",
   "last_error_status": null,
   "last_error_code": null,
   "last_error_at": null

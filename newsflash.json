@@ -1,5 +1,5 @@
 {
-  "status": "inference_claimed",
+  "status": "ready",
   "budget": {
     "month": "2026-10",
     "limit_usd": 15,
@@ -10,61 +10,71 @@
     "pricing_policy": "2x standard token price, input UTF-8 bytes + 4096 overhead, maximum output. Reservations never refunded, even on failure. No tools or images called."
   },
   "snapshot": {
-    "generated_at": "2026-10-30T23:52:00.975Z",
+    "generated_at": "2026-10-31T05:51:29.666Z",
     "model": "gpt-6-luna",
     "decisions": [
       {
-        "id": "3cab141fc411378d",
-        "importance": 44,
-        "reason": "Recent hands-on tech video, but the cryptic title and absent context limit its significance."
+        "id": "e28265c20863b3e0",
+        "importance": 37,
+        "reason": "Recent Nintendo video about a classic game; context gives no new release or major announcement."
+      },
+      {
+        "id": "604d3bfea439a3f9",
+        "importance": 23,
+        "reason": "Recent game trailer, but no consequential news or details are provided."
+      },
+      {
+        "id": "25aeb93c20a2a748",
+        "importance": 34,
+        "reason": "Launch trailer suggests a game release, though no further significance or details are given."
       },
       {
         "id": "d5d3db1f3a9a1503",
-        "importance": 61,
-        "reason": "Fresh report on AI assisting the search for extraterrestrial signals; details and results are unclear."
+        "importance": 52,
+        "reason": "AI-assisted search for extraterrestrial signals is a substantive research topic; context is limited."
       },
       {
         "id": "5beef147a7815df4",
-        "importance": 43,
-        "reason": "Explains AI agents for simulation development, but appears chiefly a developer-focused product piece."
+        "importance": 41,
+        "reason": "Covers AI agents for building simulations, but appears primarily a developer-focused feature."
       },
       {
         "id": "41fa33a940a90fd4",
-        "importance": 20,
-        "reason": "Media and participant event details are logistical, not a substantive aerospace development."
+        "importance": 18,
+        "reason": "Media-event schedule for an aerospace expo is logistical rather than a major space development."
       },
       {
         "id": "9fe773cbfea8af21",
-        "importance": 67,
-        "reason": "New Webb observation of a nebula is a timely space-science visual release."
+        "importance": 44,
+        "reason": "New Webb observation of nebula structures is relevant space-science news, though no findings are detailed."
       },
       {
         "id": "84f5c4345b63da3c",
-        "importance": 32,
-        "reason": "Cloud-gaming catalog news names a game launch, but its broader impact is limited."
+        "importance": 26,
+        "reason": "Cloud-gaming availability update is useful to players but limited in broader significance."
       },
       {
         "id": "9fa8e4999dc54776",
-        "importance": 28,
-        "reason": "Promotional roundup of laptop models, tools and games; little detail on significance."
+        "importance": 35,
+        "reason": "New laptop models and tools are a product update; the supplied context lacks specifics."
+      },
+      {
+        "id": "68c0fbddee039497",
+        "importance": 25,
+        "reason": "Game launch trailer is timely but offers little evidence of broader importance."
       },
       {
         "id": "ed6e3d4d78aea935",
-        "importance": 18,
-        "reason": "Seasonal ISS feature with no substantive mission or science news indicated."
-      },
-      {
-        "id": "4b2c059bd94e7ed8",
-        "importance": 72,
-        "reason": "NASA-funded research on an exceptionally old Mars meteorite offers substantive planetary-science findings."
+        "importance": 13,
+        "reason": "Seasonal ISS feature, with no substantive new mission or science information in the context."
       }
     ],
-    "source_checked_at": "2026-10-30T23:51:53.817Z"
+    "source_checked_at": "2026-10-31T05:51:21.739Z"
   },
   "last_attempt_at": "2026-10-31T05:51:21.454Z",
   "pending_reservation_microusd": 4811,
   "pending_source_checked_at": "2026-10-31T05:51:21.739Z",
-  "last_success_at": "2026-10-30T23:52:00.975Z",
+  "last_success_at": "2026-10-31T05:51:29.666Z",
   "last_error_status": null,
   "last_error_code": null,
   "last_error_at": null
